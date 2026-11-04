@@ -1,0 +1,16 @@
+sector,start_calendar_day,end_calendar_day,pointing_ra_dec,pointing_roll,source_comment,sealed_calendar_overlap,strict_A_calendar_class,schedule_status_on_2026_11_05,precision
+97,2025-09-15,2025-11-09,"41.6581, -41.8452",210.3682,Cycle 8 begins; extended sector length,False,wholly_before_conservative_issue_boundary,ended,calendar dates only; not target exposure windows
+98,2025-11-09,2026-01-05,"80.1656,-31.0553",186.6394,extended sector length,True,wholly_before_conservative_issue_boundary,ended,calendar dates only; not target exposure windows
+99,2026-01-05,2026-01-15,"157.205,-41.1581",215.9362,,True,wholly_before_conservative_issue_boundary,ended,calendar dates only; not target exposure windows
+99,2026-01-22,2026-02-02,"157.205,-41.1581",215.9362,,True,wholly_before_conservative_issue_boundary,ended,calendar dates only; not target exposure windows
+100,2026-02-02,2026-03-01,"180.5352,-51.9138",212.8651,,True,straddles_conservative_issue_boundary,ended,calendar dates only; not target exposure windows
+101,2026-03-01,2026-03-27,"209.0229,-62.0323",217.7538,,True,wholly_after_conservative_issue_boundary,ended,calendar dates only; not target exposure windows
+102,2026-03-27,2026-04-21,"249.1776,-68.7051",236.0704,,True,wholly_after_conservative_issue_boundary,ended,calendar dates only; not target exposure windows
+103,2026-04-21,2026-05-17,"297.5431,-68.1075",263.1873,,True,wholly_after_conservative_issue_boundary,ended,calendar dates only; not target exposure windows
+104,2026-05-17,2026-06-13,"335.4613,-60.7536",279.238,,True,wholly_after_conservative_issue_boundary,ended,calendar dates only; not target exposure windows
+105,2026-06-13,2026-07-11,"2.5764,-50.5513",282.7413,,True,wholly_after_conservative_issue_boundary,ended,calendar dates only; not target exposure windows
+106,2026-07-11,2026-08-09,"25.0148,-40.1221",279.1045,,True,wholly_after_conservative_issue_boundary,ended,calendar dates only; not target exposure windows
+107,2026-08-09,2026-09-07,"45.8709,-31.2349",271.3363,,True,wholly_after_conservative_issue_boundary,ended,calendar dates only; not target exposure windows
+108,2026-09-07,2026-10-05,"66.27, -25.18",261.16,Cycle 9 begins,True,wholly_after_conservative_issue_boundary,ended,calendar dates only; not target exposure windows
+109,2026-10-05,2026-10-31,"86.38, -22.67",249.90,,True,wholly_after_conservative_issue_boundary,ended,calendar dates only; not target exposure windows
+110,2026-10-31,2026-11-26,"106.07, -23.79",238.70,,True,wholly_after_conservative_issue_boundary,in_progress,calendar dates only; not target exposure windows

@@ -1,0 +1,24 @@
+{
+  "held_out_densities_checked": 1264,
+  "max_abs_q384_minus_adaptive": 2.406741543836688e-07,
+  "max_abs_q384_minus_q192": 0.0019883622451875027,
+  "max_adaptive_relative_error": 1.983680566710211e-10,
+  "max_abs_posterior_mode_z": 6.52270848242715,
+  "note": "q192 versus q384 includes separately fitted parameter changes; adaptive uses q384 fitted parameters",
+  "command": "python scripts/review_tranche2_predictors.py --verify",
+  "script_sha256": "3112f3cf9ba096116d2bfc5f3ca4250725c618d79707b355f3cbfccced11175a",
+  "inputs": [
+    {
+      "path": "results/pilot_v1/tranche2_review/predictor_fits_q384.csv",
+      "sha256": "5d562e03f07fa515b8c8b9d1cc6f9523ebb65b82d50eb96e380862fb013e094f"
+    },
+    {
+      "path": "results/pilot_v1/tranche2_review/predictor_host_cv_q384.csv",
+      "sha256": "bbc7af573f175c746449ad8c1ce2676037473eeb25b365e53b347965de5d5d8d"
+    },
+    {
+      "path": "results/pilot_v1/tranche2_review/predictor_host_cv_q192.csv",
+      "sha256": "7fcabe55a3c75f8021b734e915d9b297ef08e748c57217959072176e21182891"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "status": "metadata tranche only; no regressions or outcome scores",
+  "release": "DRC / ExoClock III",
+  "release_readme_detail": {
+    "all_mid_time_data_schema": [
+      "Planet",
+      "Tmid (BJD_TDB)",
+      "Tmid unc.",
+      "source",
+      "ID"
+    ],
+    "catalogue_schema": [
+      "Planet",
+      "T0 (BJD_TDB)",
+      "T0 unc.",
+      "P (days)",
+      "P unc. (days)"
+    ],
+    "source_values_observed": [
+      "etd",
+      "exoclock",
+      "literature",
+      "space"
+    ],
+    "record_date_rule": "Dates are counted only when an explicit YYYY-MM-DD occurs in the record ID; no date is inferred from an ADS-style literature identifier."
+  },
+  "cohort_rule": {
+    "candidate": "DRC catalogue planets with at least one DRD metadata-only space record whose explicit ID ends _TESS and date is 2022-01-01 through 2024-01-03",
+    "candidate_planets": 330,
+    "origin_flags_removed": 14,
+    "origin_only_planets": 316,
+    "flagged_planets_in_drc_catalogue": 19,
+    "flag_source": "data/fixtures/exoclock_ttv_flags.csv; article locator arXiv:2209.09673v1 Table tab:ttvs"
+  },
+  "date_semantics": "training_first/last_observed_bjd_tdb are dates in the DRC release; they do not establish first-public availability of each observation",
+  "availability": {
+    "drc_training_end_anchor": "2021-12-31",
+    "drc_issue_anchors": {
+      "osf_upload": "2022-09-27",
+      "arxiv_v1": "2022-09-20",
+      "journal": "2023-02-14"
+    },
+    "event_level_first_public_dates": "unresolved"
+  },
+  "historical_multiplicity": "unavailable from these release tables; n_unique_epochs/dates describe rows in the released DRC input, not independent exposures",
+  "input_row_diagnostics": {
+    "drc_planets": 450,
+    "drc_timing_rows": 18170,
+    "source_counts": {
+      "etd": 184,
+      "exoclock": 2911,
+      "literature": 2442,
+      "space": 12633
+    },
+    "duplicate_record_id_rows": 1731,
+    "exact_duplicate_rows": 3,
+    "max_abs_nearest_epoch_phase": 0.14508515956207368,
+    "period_mismatch": "No independent period is supplied. The nearest-epoch phase residual is descriptive only and is not a cycle-validation test.",
+    "duplicate_record_id_rows_by_source": {
+      "etd": 0,
+      "exoclock": 7,
+      "literature": 1724,
+      "space": 0
+    }
+  },
+  "source_provenance": {
+    "drc_mid_times": {
+      "path": "data/raw/osf/p298n/all_mid_time_data.txt",
+      "sha256": "68231e16f2de416b2070570ec71085db6ee91622cc231ef942bb91cc747c8f09",
+      "role": "all DRC released timing rows, treated as the release's fitted-input collection for metadata; completeness of the fitted set is not independently verified"
+    },
+    "drc_catalogue": {
+      "path": "data/raw/osf/p298n/catalogue_of_ephemerides.txt",
+      "sha256": "2f1e4a3ad9dd3cc9f78e38f25c3a1d1e0ead1604ea0a86f66cc752ff1a666033",
+      "role": "issued DRC T0/P and marginal uncertainties"
+    },
+    "drd_tess_index": {
+      "path": "data/raw/osf/wpjtn/all_mid_time_data.txt",
+      "sha256": "533449b7a9bede2541d78c6a2697913762ad30262bce319c79d87f02f538348c",
+      "role": "metadata-only cohort membership index; IDs/dates/source parsed, Tmid and uncertainty ignored"
+    },
+    "drc_origin_flags": {
+      "path": "data/fixtures/exoclock_ttv_flags.csv",
+      "sha256": "7eff71a7a435941d619a3caca995e6eb3eed8db1d229e3b372dc63cf643b23a0",
+      "role": "19 DRC TTV flags, sourced in fixture from ExoClock III arXiv v1 Table tab:ttvs"
+    }
+  },
+  "manifest_gate": {
+    "path": "results/pilot_v1/source_manifest.csv",
+    "verified_before_parsing": true,
+    "rows": [
+      {
+        "source_id": "osf_p298n_catalogue_of_ephemerides.txt",
+        "sha256": "2f1e4a3ad9dd3cc9f78e38f25c3a1d1e0ead1604ea0a86f66cc752ff1a666033",
+        "sha256_observed": "2f1e4a3ad9dd3cc9f78e38f25c3a1d1e0ead1604ea0a86f66cc752ff1a666033",
+        "hash_match": "true"
+      },
+      {
+        "source_id": "osf_p298n_all_mid_time_data.txt",
+        "sha256": "68231e16f2de416b2070570ec71085db6ee91622cc231ef942bb91cc747c8f09",
+        "sha256_observed": "68231e16f2de416b2070570ec71085db6ee91622cc231ef942bb91cc747c8f09",
+        "hash_match": "true"
+      },
+      {
+        "source_id": "osf_wpjtn_catalogue_of_ephemerides.txt",
+        "sha256": "582a6ca8e65d85a5c840452f93e8dd5f0f0ef404b4c28fb4836e7b15efc094af",
+        "sha256_observed": "582a6ca8e65d85a5c840452f93e8dd5f0f0ef404b4c28fb4836e7b15efc094af",
+        "hash_match": "true"
+      },
+      {
+        "source_id": "osf_wpjtn_all_mid_time_data.txt",
+        "sha256": "533449b7a9bede2541d78c6a2697913762ad30262bce319c79d87f02f538348c",
+        "sha256_observed": "533449b7a9bede2541d78c6a2697913762ad30262bce319c79d87f02f538348c",
+        "hash_match": "true"
+      },
+      {
+        "source_id": "osf_wpjtn_by_source.zip",
+        "sha256": "804f64929984599c56f5873b823414f6833a5e73f4d6d4c8b7bcfbbfbebd217f",
+        "sha256_observed": "804f64929984599c56f5873b823414f6833a5e73f4d6d4c8b7bcfbbfbebd217f",
+        "hash_match": "true"
+      }
+    ]
+  },
+  "no_protected_outcomes_opened": true,
+  "no_tess_light_curves_opened": true,
+  "output_schema": "metadata_per_planet.csv; raw line ranges and per-planet raw-row SHA-256 retain traceability",
+  "run_provenance": {
+    "command": "python3 scripts/review_tranche2_metadata.py",
+    "script_sha256": "a05680081a699694eab0b7c3c869195a51a46443909d981a94921d755d44a972",
+    "source_commit": "7a9f1a62583b2a1a9fec9f2a13163835bd66c5b3"
+  }
+}

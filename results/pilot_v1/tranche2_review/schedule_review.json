@@ -1,0 +1,39 @@
+{
+  "metadata_only": true,
+  "light_curves_opened": 0,
+  "command": "python scripts/review_tranche2_schedule.py --acquire",
+  "script_sha256": "4285dd6e5f1a9be8b9818d3d89985b1f74a27a48e259c91e9fdb9aa64d9bdac7",
+  "sources": [
+    {
+      "path": "data/raw/tess_schedule/heasarc_sectors_2026-11-05.html",
+      "url": "https://heasarc.gsfc.nasa.gov/docs/tess/sector.html",
+      "retrieved_utc": "2026-11-04T22:37:45.837161+00:00",
+      "sha256": "ecf1150e5a1f4a50b323808efc6b8efdad9a8670a3c6f6c3871f3ce241e0e9d1",
+      "bytes": 92657,
+      "metadata_only": true
+    },
+    {
+      "path": "data/raw/tess_schedule/orbit_times_2026-11-05.csv",
+      "url": "https://archive.stsci.edu/missions/tess/doc/tess_drn/tess_orbit_times_by_sector.csv",
+      "retrieved_utc": "2026-11-04T22:37:41.515852+00:00",
+      "sha256": "c65330d487b20c220d6c9ba7c6573a0cf32cb21c465bb399e707571a2ad8aefc",
+      "bytes": 7087,
+      "metadata_only": true
+    }
+  ],
+  "orbit_csv_max_sector": 42,
+  "orbit_csv_status": "Stale: ends at sector 42; cannot resolve sealed-era exact orbit windows",
+  "old_strict_A_constant_jd": 2461082.5,
+  "old_constant_actual_UTC": "2026-02-11T00:00:00+00:00",
+  "intended_day_after_publication_UTC": "2026-02-12T00:00:00+00:00",
+  "corrected_UTC_JD": 2461083.5,
+  "findings": [
+    "S98 spans Nov 9 to Jan 5, not a 27.4-day window",
+    "S99 has a documented Jan 15-22 interruption; special sector 1751 is outside the standard-sector inventory",
+    "S100 straddles the conservative issue boundary; event eligibility cannot be assigned from sector label alone",
+    "S110 is in progress on Nov 5; full-sector future predictions are not already observed transits",
+    "Calendar schedule does not prove target cadence availability, usable data or transit detection",
+    "No BJD_TDB forecast values were subtracted from UTC/date-only schedule values in this audit"
+  ],
+  "counts_recomputed": false
+}

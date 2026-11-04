@@ -1,0 +1,70 @@
+{
+  "development_only": true,
+  "protected_light_curves_opened": 0,
+  "command": ".venv/bin/python scripts/review_tranche2_mixture.py --reuse-converged-fit",
+  "source_commit": "7a9f1a62583b2a1a9fec9f2a13163835bd66c5b3",
+  "script_sha256": "90836195e88df42fb363ba2a7022c61ab5b2cbafb2245cbb06d39e1e31351722",
+  "python": "3.15.0",
+  "numpy": "2.5.4",
+  "quadrature": "scipy roots_hermitenorm; adaptive scipy.integrate.quad over z in [-12,12]",
+  "manifest_inputs_verified": [
+    {
+      "path": "data/raw/osf/wna5e/updated_ephemerides.txt",
+      "sha256": "086e964793d40cf99d534a806be885aaa61d172072c8810f994e197dc3a18357"
+    },
+    {
+      "path": "data/raw/osf/wna5e/4_updated_ecc.txt",
+      "sha256": "1439184879589f5ae4d426010a8ec498d08c6ff4dae45161ca40261f1fab0cb5"
+    },
+    {
+      "path": "data/raw/osf/wna5e/5_complete_ExoClock_DRB.zip",
+      "sha256": "f8a43bf718015f97db36ee3c220e654b98f008646396be8a380c137ce8f50df4"
+    },
+    {
+      "path": "data/raw/osf/p298n/catalogue_of_ephemerides.txt",
+      "sha256": "2f1e4a3ad9dd3cc9f78e38f25c3a1d1e0ead1604ea0a86f66cc752ff1a666033"
+    },
+    {
+      "path": "data/raw/osf/p298n/all_mid_time_data.txt",
+      "sha256": "68231e16f2de416b2070570ec71085db6ee91622cc231ef942bb91cc747c8f09"
+    },
+    {
+      "path": "data/raw/osf/wpjtn/catalogue_of_ephemerides.txt",
+      "sha256": "582a6ca8e65d85a5c840452f93e8dd5f0f0ef404b4c28fb4836e7b15efc094af"
+    },
+    {
+      "path": "data/raw/osf/wpjtn/all_mid_time_data.txt",
+      "sha256": "533449b7a9bede2541d78c6a2697913762ad30262bce319c79d87f02f538348c"
+    },
+    {
+      "path": "data/raw/osf/wpjtn/by_source.zip",
+      "sha256": "804f64929984599c56f5873b823414f6833a5e73f4d6d4c8b7bcfbbfbebd217f"
+    }
+  ],
+  "other_inputs": [
+    {
+      "path": "scripts/forecast_variance_components.py",
+      "sha256": "e02a41c98abe60d5c93e105ac2c4ab1488d64cacd84657797c7bbc8d68298470"
+    },
+    {
+      "path": "results/pilot_v1/source_manifest.csv",
+      "sha256": "00fd83688d2cdeeae888fd0f2a2c0d2524b926561a121830d3feb65d217287d9"
+    },
+    {
+      "path": "data/raw/osf/wpjtn/all_mid_time_data.txt",
+      "sha256": "533449b7a9bede2541d78c6a2697913762ad30262bce319c79d87f02f538348c"
+    },
+    {
+      "path": "data/raw/osf/wna5e/updated_ephemerides.txt",
+      "sha256": "086e964793d40cf99d534a806be885aaa61d172072c8810f994e197dc3a18357"
+    },
+    {
+      "path": "data/raw/osf/p298n/catalogue_of_ephemerides.txt",
+      "sha256": "2f1e4a3ad9dd3cc9f78e38f25c3a1d1e0ead1604ea0a86f66cc752ff1a666033"
+    },
+    {
+      "path": "data/fixtures/exoclock_ttv_flags.csv",
+      "sha256": "7eff71a7a435941d619a3caca995e6eb3eed8db1d229e3b372dc63cf643b23a0"
+    }
+  ]
+}

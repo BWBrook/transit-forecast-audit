@@ -1,0 +1,77 @@
+{
+  "development_only": true,
+  "light_curves_opened": 0,
+  "source_commit": "7a9f1a6",
+  "command": "python scripts/review_tranche2_noise.py --bootstrap 400",
+  "python": "3.15.0",
+  "numpy": "2.5.4",
+  "script_sha256": "e68fa3062622a690c2cd5c8bf18dbd958270d8e708b0d28d509579459ab61f73",
+  "inputs": [
+    {
+      "path": "data/raw/osf/wna5e/updated_ephemerides.txt",
+      "sha256": "086e964793d40cf99d534a806be885aaa61d172072c8810f994e197dc3a18357"
+    },
+    {
+      "path": "data/raw/osf/wna5e/4_updated_ecc.txt",
+      "sha256": "1439184879589f5ae4d426010a8ec498d08c6ff4dae45161ca40261f1fab0cb5"
+    },
+    {
+      "path": "data/raw/osf/wna5e/5_complete_ExoClock_DRB.zip",
+      "sha256": "f8a43bf718015f97db36ee3c220e654b98f008646396be8a380c137ce8f50df4"
+    },
+    {
+      "path": "data/raw/osf/p298n/catalogue_of_ephemerides.txt",
+      "sha256": "2f1e4a3ad9dd3cc9f78e38f25c3a1d1e0ead1604ea0a86f66cc752ff1a666033"
+    },
+    {
+      "path": "data/raw/osf/p298n/all_mid_time_data.txt",
+      "sha256": "68231e16f2de416b2070570ec71085db6ee91622cc231ef942bb91cc747c8f09"
+    },
+    {
+      "path": "data/raw/osf/wpjtn/catalogue_of_ephemerides.txt",
+      "sha256": "582a6ca8e65d85a5c840452f93e8dd5f0f0ef404b4c28fb4836e7b15efc094af"
+    },
+    {
+      "path": "data/raw/osf/wpjtn/all_mid_time_data.txt",
+      "sha256": "533449b7a9bede2541d78c6a2697913762ad30262bce319c79d87f02f538348c"
+    },
+    {
+      "path": "data/raw/osf/wpjtn/by_source.zip",
+      "sha256": "804f64929984599c56f5873b823414f6833a5e73f4d6d4c8b7bcfbbfbebd217f"
+    }
+  ],
+  "groups": 726,
+  "events": 4173,
+  "residual_df": 2721,
+  "hosts": 334,
+  "planets": 336,
+  "independent_fit": {
+    "a": 1.0865764688146853,
+    "tau_seconds": 5.004615020392654,
+    "nll": 1961.1795107034714,
+    "scale_only_a": 1.0938461139984066,
+    "scale_only_nll": 1961.9175847173965,
+    "jitter_only_tau_seconds": 11.91628255995354,
+    "jitter_only_nll": 1974.8742777724517,
+    "lr_jitter_given_scale": 1.4761480278502859,
+    "lr_scale_given_jitter": 27.38953413796071
+  },
+  "normal_equation_minus_contrast_nll": [
+    1665.3882525182767,
+    1665.3882525182821,
+    1665.3882525182846,
+    1665.3882525182776
+  ],
+  "bootstrap_seed": 20261105,
+  "host_bootstrap_replicates": 400,
+  "a_host_percentile95": [
+    1.0498397798941896,
+    1.1209089161272319
+  ],
+  "tau_seconds_host_percentile95": [
+    1.2193923318328335,
+    11.557998218781492
+  ],
+  "bootstrap_tau_at_boundary": 8,
+  "inference": "Supports a common scale over a common homoscedastic jitter under the conditional REML model; does not identify measurement versus sigma-proportional physical/model error."
+}

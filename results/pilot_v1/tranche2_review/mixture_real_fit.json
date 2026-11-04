@@ -1,0 +1,66 @@
+{
+  "DRB": {
+    "b": 2.249488984389779,
+    "s": 1.0931432977422186,
+    "nll": 493.21582211626117,
+    "success": true,
+    "iterations": 29,
+    "evaluations": 59,
+    "cache_size": 59,
+    "max_relative_quad_error": 1.9931960744450755e-10,
+    "max_abs_posterior_mode_z": 2.112301253256194,
+    "planets": 134,
+    "visits": 343,
+    "posterior_median_lambda_gt_10": 2,
+    "posterior_median_lambda_gt_100": 0,
+    "model_population_probability_lambda_gt_10": 0.017585285021935102,
+    "model_population_probability_lambda_gt_100": 1.2612440281649847e-05,
+    "posterior_expected_planets_lambda_gt_10": 2.680228517111133,
+    "posterior_expected_planets_lambda_gt_100": 0.0016636956958010485,
+    "max_abs_log_median_lambda_change_halved_grid": 2.379918589884882e-07,
+    "stable_profile_ci95": {
+      "order": 384,
+      "delta_nll": 1.920729,
+      "b": [
+        1.8277962280625606,
+        2.72334889903711
+      ],
+      "s": [
+        0.7081583256360691,
+        1.5678854386069419
+      ]
+    }
+  },
+  "DRC": {
+    "b": 0.9762595787312389,
+    "s": 3.1486828869022037,
+    "nll": 1378.649781092869,
+    "success": true,
+    "iterations": 28,
+    "evaluations": 55,
+    "cache_size": 55,
+    "max_relative_quad_error": 1.958215661644323e-10,
+    "max_abs_posterior_mode_z": 4.380624129468699,
+    "planets": 316,
+    "visits": 837,
+    "posterior_median_lambda_gt_10": 29,
+    "posterior_median_lambda_gt_100": 9,
+    "model_population_probability_lambda_gt_10": 0.2323024941234474,
+    "model_population_probability_lambda_gt_100": 0.07179249266637683,
+    "posterior_expected_planets_lambda_gt_10": 61.21004631445989,
+    "posterior_expected_planets_lambda_gt_100": 16.233761111273385,
+    "max_abs_log_median_lambda_change_halved_grid": 3.28711143158223e-06,
+    "stable_profile_ci95": {
+      "order": 384,
+      "delta_nll": 1.920729,
+      "b": [
+        0.6985577072965448,
+        1.3011016388916523
+      ],
+      "s": [
+        2.690296549344227,
+        3.7240894468642547
+      ]
+    }
+  }
+}

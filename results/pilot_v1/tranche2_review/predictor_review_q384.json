@@ -1,0 +1,75 @@
+{
+  "development_only": true,
+  "light_curves_opened": 0,
+  "source_commit": "7a9f1a6",
+  "command": "python scripts/review_tranche2_predictors.py --order 384",
+  "script_sha256": "3112f3cf9ba096116d2bfc5f3ca4250725c618d79707b355f3cbfccced11175a",
+  "dependencies": [
+    {
+      "path": "scripts/review_tranche2_mixture.py",
+      "sha256": "90836195e88df42fb363ba2a7022c61ab5b2cbafb2245cbb06d39e1e31351722"
+    },
+    {
+      "path": "scripts/forecast_variance_components.py",
+      "sha256": "e02a41c98abe60d5c93e105ac2c4ab1488d64cacd84657797c7bbc8d68298470"
+    },
+    {
+      "path": "results/pilot_v1/source_manifest.csv",
+      "sha256": "00fd83688d2cdeeae888fd0f2a2c0d2524b926561a121830d3feb65d217287d9"
+    }
+  ],
+  "metadata_sha256": "60ef691a1a6ec966dc7d3f439c08f03eebd9c65485c814a60c345d3bc7be7359",
+  "quadrature_order": 384,
+  "fold_seed": 20261105,
+  "hosts": 309,
+  "planets": 316,
+  "population_model": "median SD multiplier exp(intercept + beta*x); log(lambda) ~ N(0,s^2)",
+  "comparison": [
+    {
+      "model": "constant_mixture",
+      "planet_balanced_mean_delta_log_density_per_window": 0.0,
+      "paired_host_bootstrap_low": 0.0,
+      "paired_host_bootstrap_high": 0.0,
+      "median_delta_per_window": 0.0,
+      "fraction_planets_improved": 0.0
+    },
+    {
+      "model": "log10_training_span",
+      "planet_balanced_mean_delta_log_density_per_window": 0.027086510621453116,
+      "paired_host_bootstrap_low": 0.006731757547818427,
+      "paired_host_bootstrap_high": 0.05398815477807168,
+      "median_delta_per_window": 0.011581362126378725,
+      "fraction_planets_improved": 0.620253164556962
+    },
+    {
+      "model": "log10_unique_training_epochs",
+      "planet_balanced_mean_delta_log_density_per_window": 0.008685450983257233,
+      "paired_host_bootstrap_low": -0.0035178932626288304,
+      "paired_host_bootstrap_high": 0.023156657416251853,
+      "median_delta_per_window": 0.005606633501226291,
+      "fraction_planets_improved": 0.5886075949367089
+    },
+    {
+      "model": "training_includes_TESS",
+      "planet_balanced_mean_delta_log_density_per_window": -0.0012931109707050947,
+      "paired_host_bootstrap_low": -0.0027992800450830574,
+      "paired_host_bootstrap_high": 1.9118180792386777e-05,
+      "median_delta_per_window": -0.0002617482901867696,
+      "fraction_planets_improved": 0.45569620253164556
+    }
+  ],
+  "unavailable_predictors": {
+    "historical_multiplicity": "Not established by acquired issued-release artifacts",
+    "literature_only": "No variation in the 316-planet development cohort"
+  },
+  "limitations": [
+    "Host-held-out development exercise, not chronological or sealed evaluation",
+    "Three univariate covariates explored; no final model selected or frozen",
+    "Single random host split; intervals do not account for model search or split variability",
+    "Fixed a=1.087 was estimated from the whole development era, including held-out hosts; this is conditional comparison, not end-to-end refitted cross-validation",
+    "Log score is joint per-planet predictive density divided by number of retained windows",
+    "Bootstrap is conditional on fitted folds; no nested refitting or parameter-uncertainty integration",
+    "Predictors describe issued-release inputs, not verified cadence independence or event-level first availability",
+    "Diagonal published covariance convention and fixed a=1.087 remain sensitivities"
+  ]
+}
