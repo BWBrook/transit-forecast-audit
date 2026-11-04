@@ -9,7 +9,7 @@ claim of completion.
 |---|---|---|---|---|
 | T001 | Revisit closest literature and novelty | A written prior-art comparison selects one meaningful extension or recommends narrowing | None | **Partly done** (Claude): ExoClock II–IV sources re-read, Table 5 definition recovered from DRD TeX source. **Open for Codex:** full citing-literature sweep of ExoClock IV and III (ADS/Google Scholar), plus prior art on separating TESS timing-error calibration from ephemeris calibration |
 | T002 | Acquire original DRB artifact and version evidence | Exact bytes/table, hash, issue evidence and uncertainty convention recorded | None | **Done** (Claude): `results/pilot_v1/source_manifest.csv`, D012–D013 |
-| T003 | Establish one independent later TESS outcome | Full source-to-event chain, time standard, uncertainty and independence verified | T002 for pairing | **Partial**: DRD TESS mid-times are date-independent of DRB/DRC inputs; sector/cadence lineage and the ExoClock fit prior are not released. Next: re-measure 3–5 events from SPOC light curves at MAST |
+| T003 | Establish one independent later TESS outcome | Full source-to-event chain, time standard, uncertainty and independence verified | T002 for pairing | **Done for 27 development events** (Claude, D034): SPOC file + SHA-256 + CADENCENO range + TDB keywords per event in `results/t015/`; forecast-independent timing. BJD_TDB is SPOC-stated, not reconverted |
 | T004 | Build 5–10 planet metadata pilot | Traceable dossiers and all inclusion/exclusion reasons; inspected pilot marked development | T002–T003 | **Done** (Claude): `results/pilot_v1/` dossiers, pairs, plots, DRB flow; development only (D014) |
 | T005 | Specify and reproduce Table 5 | Event list/denominators and conventions reconciled; exact match or explained differences | T002–T004 | **DRB/DRC independently reproduced** (Codex, base R): `results/pilot_v1/independent_review/table5_*`, D020. DRD boundary unresolved; Initial unreproduced; reconstructed rule not verified publisher code |
 | T006 | Decide Track A feasibility and one primary extension | Signed decision entry with novelty, metadata and precision evidence | T001,T004,T005 | Open |
@@ -21,10 +21,15 @@ claim of completion.
 | T012 | Independent scientific review | Reproduction/criticism with concrete evidence; findings resolved or reported | T011 | Open |
 | T013 | Write manuscript and release artifacts | Every result traceable to analysis; scope and citations verified | T012 | Open |
 | T014 | Identifiable variance-components model on the development era | Outcome scale independently constrained or declared a sensitivity; shared ephemeris covariance specified; simulation checks separation of b and any extra variance before fitting | T005, D021–D024 | **Development model in place** (Claude, D026–D027): outcome scale a=1.09 as fixed sensitivity; two-stage planet-level scale mixture (b, s) with recovery simulation on the real DRC design, `results/pilot_v1/variance_components/`. **Reviewed (D030–D032):** point estimates survive; posterior labels require stable integration; training span nominated for chronological validation; host-aware intervals remain open |
-| T015 | Forecast-independent TESS mid-time pipeline | Re-measures a sample of DRD 2022–2023 TESS mid-times from SPOC light curves with a broad timing prior; agreement and σ calibration documented; then frozen | T003 | Open |
+| T015 | Forecast-independent TESS mid-time pipeline | Re-measures a sample of DRD 2022–2023 TESS mid-times from SPOC light curves with a broad timing prior; agreement and σ calibration documented; then frozen | T003 | **Development validation done** (Claude, D034): 27 transits / 4 planets, 261 injections, `results/t015/`. Open: FFI/200-s and faint-target validation, a stratified injection sample to constrain a, then freeze |
 | T016 | Untouched DRD-era outcome inventory (metadata only) | List TESS sectors from 2025-11-19 and the DRD planets they cover, without fitting any light curve | D018 | **Needs correction (D033):** geometric metadata inventory at `results/sealed_inventory/`; official calendar audit found extended/interrupted windows, mixed S100 eligibility and unfinished S110. Exact target windows/product availability and corrected counts remain open |
 
 ## Claims
+
+- 2026-11-05 Claude (Opus 5.5): T015 development validation and the D031/D033
+  repairs (rank-2 likelihood algebra, strict Track A JD), on `main`. Owns
+  `scripts/t015_timing_pipeline.py`, `results/t015/`,
+  `docs/t015_pipeline_report.md`. No post-2025-11-18 data requested.
 
 - 2026-11-05 Codex: claims independent review of D026–D029, a bounded
   issue-time metadata test and the heavy-tail portion of T001, on `main` from

@@ -1,0 +1,37 @@
+{
+  "development_only": true,
+  "max_sector": 73,
+  "max_btjd": 3313.5,
+  "forecast_independent": "blind BLS 0.5-12 d; uniform +/-60 min timing prior; no ExoClock ephemeris used",
+  "planets": [
+    "HD209458b",
+    "WASP-69b",
+    "WASP-80b",
+    "HAT-P-12b"
+  ],
+  "transits_timed": 27,
+  "transits_excluded": 2,
+  "matched_exoclock": 27,
+  "vs_exoclock": {
+    "median_delta_s": -2.66,
+    "rms_z": 0.311,
+    "max_abs_z": 0.663,
+    "median_sigma_ratio_ours_over_exoclock": 1.083
+  },
+  "injections": {
+    "n": 261,
+    "median_bias_s": -1.68,
+    "rms_z_beta_scaled": 1.033,
+    "rms_z_white": 1.254,
+    "frac_abs_z_lt_1": 0.663,
+    "per_planet_rms_z": {
+      "HD209458b": 1.166,
+      "WASP-69b": 1.065,
+      "WASP-80b": 0.85,
+      "HAT-P-12b": 0.973
+    }
+  },
+  "seed": 20261105,
+  "light_curves_opened_after_2025_11_18": 0,
+  "command": "uv run scripts/t015_timing_pipeline.py"
+}

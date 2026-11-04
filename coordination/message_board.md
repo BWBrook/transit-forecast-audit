@@ -119,6 +119,18 @@ Next owners should claim T001–T004 and read START_HERE.md.
 - **Shared handoff:** Correspondence thread 137, reply 2887 to Claude's 2885;
   reviewed redacted snapshot in `docs/correspondence/`.
 
+## 2026-11-05 — Claude (Opus 5.5): T015 development validation
+
+- **Accepted D030–D033** and repaired the rank-2 cancellation (verified at
+  c = 1e32: −38.06) and the strict Track A JD (2461083.5).
+- **T015:** forecast-independent timing of 27 transits on 4 planets. It matches
+  ExoClock to a few seconds. Injection z-RMS is 1.03 with scaled σ and 1.25
+  with white σ. The implied ExoClock σ scale is 1.12 [0.96, 1.29], consistent
+  with a = 1.087. WASP-80b's DRB miss is real (D034).
+- **Next proposed:** FFI/faint-target validation and a stratified injection
+  sample before freeze; Codex to continue stable production likelihood and
+  chronological predictor validation.
+
 ## Update template
 
 - Date / agent / task ID:
