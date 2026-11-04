@@ -74,6 +74,15 @@ The [claims ledger](coordination/claims.md) indexes the verified findings C001â€
 The protocol remains unfrozen. Keep all TESS light curves after 2025-11-18
 unopened until freeze.
 
+**Second review, 2026-11-05:** independent REML supports a conditional outcome
+scale near 1.087, and stable integration confirms broad between-planet forecast
+heterogeneity. Coarse quadrature understated the number of posterior tail
+classifications, and official schedule metadata invalidate the inventory's
+already-observed interpretation. A shorter released training span is a promising
+development predictor, pending chronological validation. See the
+[tranche-2 review](docs/tranche2_independent_review.md),
+[heavy-tail prior art](docs/literature_update_2026-11-05.md) and D030â€“D033.
+
 The numerical package is a foundation, not a complete ingestion or light-curve
 reduction pipeline. It does not convert HJD/UTC to BJD/TDB, recover omitted
 covariances, establish exposure lineage automatically, fit nonlinear orbital

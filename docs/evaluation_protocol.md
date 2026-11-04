@@ -9,6 +9,13 @@ availability, outcome lineage and model identifiability first. The sealed
 interval is not automatically eligible for strict Track A: absent earlier
 verified availability, DRD's conservative issue anchor is 2026-02-11.
 
+The 5 November development review (D030–D033) nominates a stable population
+scale mixture and training-span predictor for further testing; neither is frozen.
+Resolve numerical posterior summaries, host-aware uncertainty, chronological
+validation and exact target coverage first. S100 straddles the availability
+boundary; S110 was still in progress at the metadata audit. See
+[the review](tranche2_independent_review.md).
+
 ## 1. Scientific question and contribution boundary
 
 **Central question:** For a historically defined cohort of transiting planets, how well do previously available ephemerides predict later independent transit mid-times, and how do calibration and precision vary with forecast lead time?

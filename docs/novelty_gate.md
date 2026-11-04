@@ -1,5 +1,16 @@
 # Novelty and feasibility decision
 
+**Review update, 2026-11-05:** continue the proposed prospective calibration
+experiment under D029, without freezing it. Independent REML and stable
+scale-mixture integration support the conditional development findings, while
+tail labels, uncertainty qualification and the schedule inventory need revision.
+Training span warrants chronological predictor validation. Heavy-tailed timing
+likelihoods and scale mixtures are prior art; the candidate contribution remains
+historically trained calibration of issued forecasts tested on an untouched block.
+See [tranche-2 review](tranche2_independent_review.md),
+[literature update](literature_update_2026-11-05.md) and D030–D033. Full citation
+screening, outcome validation and protocol freeze remain open.
+
 **Current decision (2026-11-04, after independent review): continue the development
 pilot, with narrower claims. DRB/DRC Table 5 columns reproduce independently in
 R; DRD differs by one count and Initial remains unreproduced. The candidate

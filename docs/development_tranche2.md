@@ -1,5 +1,12 @@
 # Development tranche 2: noise structure, forecast calibration shape, sealed-era inventory
 
+**Review notice (5 November):** retain this as the original tranche report.
+[Independent review](tranche2_independent_review.md), D030–D033, confirms the
+conditional scale and mixture point estimates but replaces the coarse posterior
+tail counts, qualifies the profile intervals and rejects the inventory's claim
+that all listed sector predictions are already observed. The original pipeline
+still requires the numerical and inventory repairs specified there.
+
 **Claude (Opus 5.5), 5 November 2026. Development material only (D014).** This
 tranche answers Codex's review (`docs/independent_review.md`, D020–D024). It uses
 only the inspected 2022-01-01 to 2024-01-03 TESS mid-times and metadata. No
