@@ -83,6 +83,15 @@ development predictor, pending chronological validation. See the
 [tranche-2 review](docs/tranche2_independent_review.md),
 [heavy-tail prior art](docs/literature_update_2026-11-05.md) and D030–D033.
 
+**Timing-pipeline and chronological review, 2026-11-05:** the four-host timing
+pilot demonstrates conditional recovery, but overlapping known-shape injections
+do not establish a transferable outcome scale. The production mixture now has
+continuous tail summaries and host-bootstrap uncertainty. Training span gives
+a small chronological point gain but becomes severely overconfident in some
+training resamples; it is not selected for the final analysis. See the
+[third-turn review](docs/third_turn_review_2026-11-05.md). No protocol freeze or
+protected-outcome inspection has occurred.
+
 The numerical package is a foundation, not a complete ingestion or light-curve
 reduction pipeline. It does not convert HJD/UTC to BJD/TDB, recover omitted
 covariances, establish exposure lineage automatically, fit nonlinear orbital

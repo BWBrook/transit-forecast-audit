@@ -1,5 +1,13 @@
 # Novelty and feasibility decision
 
+**Latest development decision (5 November, third turn):** continue the forecast
+audit and outcome validation, without selecting the training-span rule or
+per-outcome injection scale. Independent chronological resampling revealed
+tail collapse and severe extrapolation failures. The known-shape timing pilot
+is feasible but does not validate the complete outcome model. These adverse
+findings strengthen the need for an untouched prospective test; they do not
+establish improvement or novelty. See [the review](third_turn_review_2026-11-05.md).
+
 **Review update, 2026-11-05:** continue the proposed prospective calibration
 experiment under D029, without freezing it. Independent REML and stable
 scale-mixture integration support the conditional development findings, while

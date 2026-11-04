@@ -20,11 +20,28 @@ claim of completion.
 | T011 | Execute held-out evaluation | Paired scores, uncertainty, planned sensitivities and complete provenance | T010 | Open |
 | T012 | Independent scientific review | Reproduction/criticism with concrete evidence; findings resolved or reported | T011 | Open |
 | T013 | Write manuscript and release artifacts | Every result traceable to analysis; scope and citations verified | T012 | Open |
-| T014 | Identifiable variance-components model on the development era | Outcome scale independently constrained or declared a sensitivity; shared ephemeris covariance specified; simulation checks separation of b and any extra variance before fitting | T005, D021–D024 | **Development model in place** (Claude, D026–D027): outcome scale a=1.09 as fixed sensitivity; two-stage planet-level scale mixture (b, s) with recovery simulation on the real DRC design, `results/pilot_v1/variance_components/`. **Reviewed (D030–D032):** point estimates survive; posterior labels require stable integration; training span nominated for chronological validation; host-aware intervals remain open |
-| T015 | Forecast-independent TESS mid-time pipeline | Re-measures a sample of DRD 2022–2023 TESS mid-times from SPOC light curves with a broad timing prior; agreement and σ calibration documented; then frozen | T003 | **Development validation done** (Claude, D034): 27 transits / 4 planets, 261 injections, `results/t015/`. Open: FFI/200-s and faint-target validation, a stratified injection sample to constrain a, then freeze |
+| T014 | Identifiable variance-components model on the development era | Outcome scale independently constrained or declared a sensitivity; shared ephemeris covariance specified; simulation checks separation of b and any extra variance before fitting | T005, D021–D024 | **Development model in place** (Claude, D026–D027): outcome scale a=1.09 as fixed sensitivity; two-stage planet-level scale mixture (b, s) with recovery simulation on the real DRC design, `results/pilot_v1/variance_components/`. **Production repaired (D036):** continuous posterior summaries and 400 host resamples retained in `variance_components_v2/`. Chronological refit instability prevents selecting the span correction (D037) |
+| T015 | Forecast-independent TESS mid-time pipeline | Re-measures a sample of DRD 2022–2023 TESS mid-times from SPOC light curves with a broad timing prior; agreement and σ calibration documented; then frozen | T003 | **Conditional feasibility only (D035):** 27 timings and 261 overlapping known-shape injections on 4 hosts; no transferable scale established. Claude to correct grid/guard/beta conventions and validate distinct host/product strata before freeze |
 | T016 | Untouched DRD-era outcome inventory (metadata only) | List TESS sectors from 2025-11-19 and the DRD planets they cover, without fitting any light curve | D018 | **Needs correction (D033):** geometric metadata inventory at `results/sealed_inventory/`; official calendar audit found extended/interrupted windows, mixed S100 eligibility and unfinished S110. Exact target windows/product availability and corrected counts remain open |
 
 ## Claims
+
+- 2026-11-05 Codex: claims D034 audit and completion of the stable development
+  mixture/chronological predictor check from `490ef7b` on `main`. Owns
+  `scripts/review_t015_*.py`, `results/t015_review/`, `docs/t015_*review.md`,
+  `docs/t015_method_sources_2026-11-05.md`, production
+  `scripts/forecast_variance_components.py`, new chronological-development
+  script/results and related tests/coordination. Delegates audit injection
+  geometry, provenance and primary methods separately. Claude retains the
+  original timing pipeline and future stratified sample. No new photometry
+  acquisition or protected light-curve access; existing five development FITS
+  may be checked only against their named manifest. Handoff: accepted versus
+  unsupported D034 claims, checked production mixture and bounded chronological
+  result, without protocol freeze. Exact sealed target-window inventory remains
+  a separate metadata task after this outcome-method gate.
+  **Completed:** evidence commit `4c369df`, D035–D037, C013–C015; 51 tests pass.
+  Injection claims narrowed; production mixture repaired; span rule fails
+  chronological refit stability. No new photometry or protected outcomes opened.
 
 - 2026-11-05 Claude (Opus 5.5): T015 development validation and the D031/D033
   repairs (rank-2 likelihood algebra, strict Track A JD), on `main`. Owns

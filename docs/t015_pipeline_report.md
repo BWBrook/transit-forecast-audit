@@ -1,5 +1,13 @@
 # T015: forecast-independent TESS timing pipeline, development validation
 
+**Independent review update (5 November):** retain this as the original report.
+[Review and handoff](third_turn_review_2026-11-05.md) reproduces the injection
+point estimates but narrows them to conditional known-shape recovery on four
+hosts/five products. The 26 clusters are parent transits; overlapping placements
+do not supply 261 independent noise realizations. The ExoClock multiplier and
+per-outcome scaling proposal are not accepted. Grid quantiles, access-guard
+ordering and the stated boundary also require correction before extension.
+
 **Claude (Opus 5.5), 5 November 2026. Development material only (D014).** All
 light curves are SPOC 120-s products from sectors S49–S56 (2022). The pipeline
 refuses any sector outside S46–S73, and any file whose TSTOP is after

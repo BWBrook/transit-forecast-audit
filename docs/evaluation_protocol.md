@@ -16,6 +16,13 @@ validation and exact target coverage first. S100 straddles the availability
 boundary; S110 was still in progress at the metadata audit. See
 [the review](tranche2_independent_review.md).
 
+The subsequent D034 review retains timing-pipeline feasibility but does not
+qualify per-outcome injection z-RMS scaling. The chronological span model is
+unstable under host resampling with early-block refitting and is not selected.
+See [the development findings](third_turn_review_2026-11-05.md). Any new tail
+constraint, regularization or adaptive outcome-scale algorithm must be specified
+and validated within development before freeze.
+
 ## 1. Scientific question and contribution boundary
 
 **Central question:** For a historically defined cohort of transiting planets, how well do previously available ephemerides predict later independent transit mid-times, and how do calibration and precision vary with forecast lead time?
