@@ -1,0 +1,436 @@
+{
+  "schema_version": "1.0",
+  "checked_on": "2026-11-04",
+  "purpose": "Initial source and feasibility register; not a downloaded astronomical dataset.",
+  "real_data_downloaded": false,
+  "all_pilot_targets_eligible": false,
+  "release_ledger": [
+    {
+      "release": "ExoClock I / DRA",
+      "doi": "10.1007/s10686-020-09696-3",
+      "data_doi": "10.17605/OSF.IO/3W7HM",
+      "arxiv_id": "2012.07478v1",
+      "arxiv_submission_date": "2020-12-14",
+      "journal_online_publication_date": "2021-08-11",
+      "journal_issue_year": 2022,
+      "network_submission_cutoff": "2020-04-15",
+      "exact_osf_initial_public_timestamp": null,
+      "osf_file_versions_verified": false,
+      "date_evidence_urls": [
+        "https://arxiv.org/abs/2012.07478",
+        "https://link.springer.com/article/10.1007/s10686-020-09696-3"
+      ]
+    },
+    {
+      "release": "ExoClock II / DRB",
+      "doi": "10.3847/1538-4365/ac3a10",
+      "data_doi": "10.17605/OSF.IO/WNA5E",
+      "arxiv_id": "2110.13863v1",
+      "arxiv_submission_timestamp_utc": "2021-10-26T17:13:03Z",
+      "journal_online_publication_date": "2022-02-09",
+      "journal_issue_month": "2022-02",
+      "network_submission_cutoff": "2020-12-31",
+      "exact_osf_initial_public_timestamp": null,
+      "dated_public_availability_witness": "2021-12-07",
+      "osf_file_versions_verified": false,
+      "date_evidence_urls": [
+        "https://arxiv.org/abs/2110.13863",
+        "https://orca.cardiff.ac.uk/id/eprint/159708/1/Kokori_2022_ApJS_258_40.pdf",
+        "https://www.exoclock.space/documents/Issue_22_Dec2021.pdf"
+      ]
+    },
+    {
+      "release": "ExoClock III / DRC",
+      "doi": "10.3847/1538-4365/ac9da4",
+      "data_doi": "10.17605/OSF.IO/P298N",
+      "arxiv_id": "2209.09673v1",
+      "arxiv_submission_timestamp_utc": "2022-09-20T12:25:10Z",
+      "journal_online_publication_date": "2023-02-14",
+      "journal_issue_month": "2023-03",
+      "paper_stated_observation_cutoff": "2021-12-31",
+      "paper_stated_literature_cutoff": "2021-12-31",
+      "cutoff_note": "Verify each input. Some references carry later publication years; do not infer per-record availability solely from this global description.",
+      "exact_osf_initial_public_timestamp": null,
+      "osf_file_versions_verified": false,
+      "date_evidence_urls": [
+        "https://arxiv.org/abs/2209.09673",
+        "https://oro.open.ac.uk/87494/1/pdf.pdf"
+      ]
+    },
+    {
+      "release": "ExoClock IV / DRD",
+      "doi": "10.3847/1538-4365/ae3238",
+      "data_doi": "10.17605/OSF.IO/WPJTN",
+      "arxiv_id": "2511.14407v1",
+      "arxiv_submission_timestamp_utc": "2025-11-18T12:14:12Z",
+      "journal_online_publication_date": "2026-02-11",
+      "journal_issue_month": "2026-03",
+      "paper_stated_observation_cutoff": "2023-12-31",
+      "paper_stated_literature_cutoff": "2023-12-31",
+      "exact_osf_initial_public_timestamp": null,
+      "osf_file_versions_verified": false,
+      "date_evidence_urls": [
+        "https://arxiv.org/abs/2511.14407",
+        "https://orca.cardiff.ac.uk/id/eprint/184907/1/pdf.pdf"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "exoclock_drb_paper",
+      "url": "https://arxiv.org/html/2110.13863v1",
+      "read_level": "full_text_relevant_sections_and_ephemeris_table",
+      "relevant_sections": [
+        "III",
+        "IV",
+        "V",
+        "Appendix B"
+      ],
+      "verified": "Historical ephemeris table; contributing-observation and flag descriptions; OSF identifier.",
+      "not_verified": "Exact serialized OSF records; complete joint covariance."
+    },
+    {
+      "id": "exoclock_drc_paper",
+      "url": "https://oro.open.ac.uk/87494/1/pdf.pdf",
+      "read_level": "full_text_relevant_sections",
+      "relevant_sections": [
+        "publication date",
+        "2",
+        "4",
+        "Table 7"
+      ],
+      "verified": "Publication date, input cutoff statement, machine-readable ephemerides and OSF pointer.",
+      "not_verified": "Downloaded full machine-readable table or OSF file history."
+    },
+    {
+      "id": "exoclock_drd_paper",
+      "url": "https://orca.cardiff.ac.uk/id/eprint/184907/1/pdf.pdf",
+      "read_level": "full_text_relevant_sections",
+      "relevant_sections": [
+        "publication date",
+        "2",
+        "4",
+        "5.1",
+        "Table 5"
+      ],
+      "verified": "Already performs later-TESS comparison for prior releases; explicitly labels DRD overlap as optimistic.",
+      "not_verified": "Which exact rows implement the comparison or their full lineage."
+    },
+    {
+      "id": "osf_dra",
+      "url": "https://osf.io/3w7hm/",
+      "read_level": "identified_from_primary_paper_only",
+      "retrieval_status": "not_accessible_in_research_tool",
+      "file_schema_verified": false,
+      "license_verified": false
+    },
+    {
+      "id": "osf_drb",
+      "url": "https://osf.io/wna5e/",
+      "read_level": "identified_from_primary_paper_and_newsletter",
+      "retrieval_status": "403_or_not_accessible_in_research_tool",
+      "file_schema_verified": false,
+      "license_verified": false
+    },
+    {
+      "id": "osf_drc",
+      "url": "https://osf.io/p298n/",
+      "read_level": "identified_from_primary_paper_only",
+      "retrieval_status": "DOI_and_API_not_accessible_in_research_tool",
+      "file_schema_verified": false,
+      "license_verified": false
+    },
+    {
+      "id": "osf_drd",
+      "url": "https://osf.io/wpjtn/",
+      "read_level": "identified_from_primary_paper_only",
+      "retrieval_status": "not_accessible_in_research_tool",
+      "file_schema_verified": false,
+      "license_verified": false
+    },
+    {
+      "id": "vizier_drc",
+      "url": "https://cdsarc.cds.unistra.fr/viz-bin/cat/J/ApJS/265/4",
+      "read_level": "catalogue_landing_page",
+      "catalogue_id": "J/ApJS/265/4",
+      "retrieval_status": "landing_page_accessible_ReadMe_and_files_not_retrieved",
+      "file_schema_verified": false
+    },
+    {
+      "id": "exoclock_live_docs",
+      "url": "https://www.exoclock.space/database/planets",
+      "read_level": "official_documentation",
+      "documented_endpoint": "https://www.exoclock.space/database/planets_json",
+      "endpoint_payload_downloaded": false,
+      "documented_fields": [
+        "name",
+        "priority",
+        "total_observations",
+        "recent_observations",
+        "ra_j2000",
+        "dec_j2000",
+        "v_mag",
+        "r_mag",
+        "gaia_g_mag",
+        "depth_mmag",
+        "duration_hours",
+        "t0_bjd_tdb",
+        "t0_unc",
+        "period_days",
+        "period_unc",
+        "current_oc_min",
+        "min_telescope_inches"
+      ],
+      "not_documented_in_inspected_schema": [
+        "historical_issuance",
+        "full_covariance",
+        "per_value_version_history"
+      ]
+    },
+    {
+      "id": "nea_ps_columns",
+      "url": "https://exoplanetarchive.ipac.caltech.edu/docs/API_PS_columns.html",
+      "read_level": "official_schema",
+      "verified_fields": [
+        "pl_name",
+        "hostname",
+        "tic_id",
+        "pl_refname",
+        "default_flag",
+        "pl_orbper",
+        "pl_orbpererr1",
+        "pl_orbpererr2",
+        "pl_tranmid",
+        "pl_tranmiderr1",
+        "pl_tranmiderr2",
+        "pl_tsystemref",
+        "pl_trandur",
+        "ttv_flag",
+        "pl_pubdate",
+        "releasedate",
+        "rowupdate",
+        "tran_flag"
+      ],
+      "not_verified": "Any actual target row or historical archive snapshot."
+    },
+    {
+      "id": "nea_tap",
+      "url": "https://exoplanetarchive.ipac.caltech.edu/docs/TAP/usingTAP.html",
+      "read_level": "official_documentation",
+      "query_executed": false
+    },
+    {
+      "id": "mast_tess",
+      "url": "https://archive.stsci.edu/missions-and-data/tess",
+      "read_level": "official_mission_archive_page",
+      "target_queries_executed": false
+    },
+    {
+      "id": "mast_observation_fields",
+      "url": "https://mast.stsci.edu/api/v0/_c_a_o_mfields.html",
+      "read_level": "official_schema",
+      "verified_fields": [
+        "obs_id",
+        "obsid",
+        "obs_collection",
+        "provenance_name",
+        "sequence_number",
+        "t_min",
+        "t_max",
+        "t_obs_release",
+        "dataRights"
+      ],
+      "time_query_unit": "MJD"
+    },
+    {
+      "id": "mast_product_fields",
+      "url": "https://mast.stsci.edu/api/v0/_productsfields.html",
+      "read_level": "official_schema",
+      "verified_fields": [
+        "dataURI",
+        "productFilename",
+        "parent_obsid",
+        "prvversion",
+        "productSubGroupDescription",
+        "dataRights"
+      ]
+    },
+    {
+      "id": "tess_time_format",
+      "url": "https://heasarc.gsfc.nasa.gov/docs/tess/LightCurveFile-Object-Tutorial.html",
+      "read_level": "official_tutorial",
+      "verified": "Example FITS products document TDB times and BJDREFI=2457000; inspect every actual product."
+    },
+    {
+      "id": "varastro_etd",
+      "url": "https://var.astro.cz/en/Home/ETD",
+      "read_level": "official_portal",
+      "verified": "ETD is now integrated into VarAstro.",
+      "legacy_url_checked": "https://var2.astro.cz/ETD/",
+      "legacy_result": "404"
+    },
+    {
+      "id": "varastro_record_example",
+      "url": "https://var.astro.cz/en/Observations/91678?transid=10099",
+      "read_level": "individual_record",
+      "verified": "Example record displays a HAT-P-32 transit, HJD midpoint, quality and legacy TRESCA identifier.",
+      "not_verified": "Record creation equals historical first public availability; bulk API stability."
+    },
+    {
+      "id": "varastro_usage",
+      "url": "https://var.astro.cz/en/Home/DataUsage",
+      "read_level": "official_usage_policy",
+      "verified": "Scientific use permitted with original source/observer and portal attribution."
+    }
+  ],
+  "critical_prior_art": {
+    "source_id": "exoclock_drd_paper",
+    "locator": "Section 5.1 and Table 5",
+    "evaluation_event_boundary": "2022-01-01",
+    "issue_date_equivalence": false,
+    "note": "Do not claim this project is the first retrospective evaluation. Its proposed increment needs horizon, date, scoring or other substantive justification."
+  },
+  "pilot_screening_manifest": [
+    {
+      "planet": "HAT-P-12 b",
+      "source_label": "HAT-P-12b",
+      "role": "ordinary_candidate",
+      "forecast_table_presence_verified": true,
+      "presence_source": "https://arxiv.org/html/2110.13863v1",
+      "presence_locator": "Appendix B",
+      "version_values_reconciled": false,
+      "post_issuance_tess_verified": false,
+      "exposure_independence_verified": false,
+      "covariance_verified": false,
+      "eligible": false,
+      "eligibility_status": "not_yet_eligible"
+    },
+    {
+      "planet": "HAT-P-27 b",
+      "source_label": "HAT-P-27b",
+      "possible_alias_to_verify": "WASP-40 b",
+      "role": "ordinary_candidate_alias_check",
+      "forecast_table_presence_verified": true,
+      "presence_source": "https://arxiv.org/html/2110.13863v1",
+      "presence_locator": "Appendix B",
+      "version_values_reconciled": false,
+      "post_issuance_tess_verified": false,
+      "exposure_independence_verified": false,
+      "covariance_verified": false,
+      "eligible": false,
+      "eligibility_status": "not_yet_eligible"
+    },
+    {
+      "planet": "HD 209458 b",
+      "source_label": "HD209458b",
+      "role": "ordinary_candidate",
+      "forecast_table_presence_verified": true,
+      "presence_source": "https://arxiv.org/html/2110.13863v1",
+      "presence_locator": "Appendix B",
+      "version_values_reconciled": false,
+      "post_issuance_tess_verified": false,
+      "exposure_independence_verified": false,
+      "covariance_verified": false,
+      "eligible": false,
+      "eligibility_status": "not_yet_eligible"
+    },
+    {
+      "planet": "WASP-52 b",
+      "source_label": "WASP-52b",
+      "role": "ordinary_candidate",
+      "forecast_table_presence_verified": true,
+      "presence_source": "https://arxiv.org/html/2110.13863v1",
+      "presence_locator": "Appendix B",
+      "version_values_reconciled": false,
+      "post_issuance_tess_verified": false,
+      "exposure_independence_verified": false,
+      "covariance_verified": false,
+      "eligible": false,
+      "eligibility_status": "not_yet_eligible"
+    },
+    {
+      "planet": "WASP-69 b",
+      "source_label": "WASP-69b",
+      "role": "ordinary_candidate",
+      "forecast_table_presence_verified": true,
+      "presence_source": "https://arxiv.org/html/2110.13863v1",
+      "presence_locator": "Appendix B",
+      "version_values_reconciled": false,
+      "post_issuance_tess_verified": false,
+      "exposure_independence_verified": false,
+      "covariance_verified": false,
+      "eligible": false,
+      "eligibility_status": "not_yet_eligible"
+    },
+    {
+      "planet": "WASP-74 b",
+      "source_label": "WASP-74b",
+      "role": "ordinary_candidate",
+      "forecast_table_presence_verified": true,
+      "presence_source": "https://arxiv.org/html/2110.13863v1",
+      "presence_locator": "Appendix B",
+      "version_values_reconciled": false,
+      "post_issuance_tess_verified": false,
+      "exposure_independence_verified": false,
+      "covariance_verified": false,
+      "eligible": false,
+      "eligibility_status": "not_yet_eligible"
+    },
+    {
+      "planet": "WASP-80 b",
+      "source_label": "WASP-80b",
+      "role": "ordinary_candidate",
+      "forecast_table_presence_verified": true,
+      "presence_source": "https://arxiv.org/html/2110.13863v1",
+      "presence_locator": "Appendix B",
+      "version_values_reconciled": false,
+      "post_issuance_tess_verified": false,
+      "exposure_independence_verified": false,
+      "covariance_verified": false,
+      "eligible": false,
+      "eligibility_status": "not_yet_eligible"
+    },
+    {
+      "planet": "WASP-43 b",
+      "source_label": "WASP-43b",
+      "role": "historically_flagged_noise_challenge",
+      "forecast_table_presence_verified": true,
+      "presence_source": "https://arxiv.org/html/2110.13863v1",
+      "presence_locator": "Appendix B",
+      "version_values_reconciled": false,
+      "post_issuance_tess_verified": false,
+      "exposure_independence_verified": false,
+      "covariance_verified": false,
+      "eligible": false,
+      "eligibility_status": "not_yet_eligible"
+    },
+    {
+      "planet": "Qatar-1 b",
+      "source_label": "Qatar-1b",
+      "role": "flag_history_challenge",
+      "forecast_table_presence_verified": true,
+      "presence_source": "https://arxiv.org/html/2110.13863v1",
+      "presence_locator": "Appendix B",
+      "version_values_reconciled": false,
+      "post_issuance_tess_verified": false,
+      "exposure_independence_verified": false,
+      "covariance_verified": false,
+      "eligible": false,
+      "eligibility_status": "not_yet_eligible"
+    },
+    {
+      "planet": "WASP-12 b",
+      "source_label": "WASP-12b",
+      "role": "known_nonlinearity_positive_control",
+      "forecast_table_presence_verified": true,
+      "presence_source": "https://arxiv.org/html/2110.13863v1",
+      "presence_locator": "Appendix B",
+      "version_values_reconciled": false,
+      "post_issuance_tess_verified": false,
+      "exposure_independence_verified": false,
+      "covariance_verified": false,
+      "eligible": false,
+      "eligibility_status": "not_yet_eligible"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "captured_at_utc": "2026-11-04T09:32:35.052235+00:00",
+  "python": "3.12.14",
+  "platform": "Linux",
+  "machine_architecture": "x86_64",
+  "packages": {
+    "numpy": "2.3.5",
+    "astropy": null,
+    "scipy": "1.17.0",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.8",
+    "transit-forecast-audit": null
+  },
+  "git_commit": null,
+  "note": "Environment observation, not a portable dependency lock. No credentials captured."
+}

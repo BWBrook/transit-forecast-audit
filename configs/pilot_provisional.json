@@ -1,0 +1,47 @@
+{
+  "schema_version": "0.1",
+  "status": "PROVISIONAL_NOT_PREREGISTERED",
+  "created_on": "2026-11-04",
+  "protocol_commit": null,
+  "study_has_real_data_results": false,
+  "primary_track_proposal": "A_issued_forecasts",
+  "mandatory_reproduction": "Kokori2026ExoClockIV_Section5.1_Table5",
+  "first_release_proposal": "ExoClock_DRB",
+  "second_release_if_justified": "ExoClock_DRC",
+  "outcome_source_proposal": "Independent_TESS_transit_timings",
+  "pilot_target_count_range": [5, 10],
+  "pilot_is_development_only": true,
+  "cohort_rule_proposal": {
+    "description": "Historically defined short-period transiting giants; final rule unresolved",
+    "maximum_period_days": 10.0,
+    "minimum_radius_jupiter": 0.6,
+    "parameter_values_must_be_available_at_origin": true,
+    "known_at_origin_ttv_policy": "separate_stratum_or_prespecified_exclusion",
+    "later_discovered_ttv_policy": "retain_in_original_cohort"
+  },
+  "lead_time_years_proposal": {
+    "edges": [0.0, 1.0, 3.0, 5.0],
+    "boundary_convention": "(lower, upper]; beyond-five-years separately if sufficient",
+    "year_days": 365.25,
+    "status": "select_from_metadata_feasibility_before_final_outcomes"
+  },
+  "timing_normalisation": "BJD_TDB",
+  "probabilistic_scoring": {
+    "convolve_independent_measurement_error": true,
+    "coverage_levels": [0.682689492, 0.95, 0.997300204],
+    "primary_improvement_score": "paired_planet_balanced_95pct_interval_score_seconds",
+    "primary_weighting": "equal_planet_then_equal_origin_then_equal_event_within_horizon",
+    "uncertainty_cluster": "host_system",
+    "covariance_missing_policy": "sensitivity_only_not_automatic_zero"
+  },
+  "recalibration_proposal": {
+    "model": "one_forecast_standard_deviation_multiplier",
+    "scale_measurement_errors": false,
+    "calibration_era": null,
+    "untouched_evaluation_era": null,
+    "fit_implemented": false
+  },
+  "simulation_seed": 2000,
+  "final_evaluation_unmasked": false,
+  "remaining_gates": ["novelty", "artifact_versions", "outcome_independence", "covariance", "design_precision", "protocol_freeze"]
+}

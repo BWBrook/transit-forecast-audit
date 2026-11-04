@@ -1,0 +1,613 @@
+[
+  {
+    "id": "Brook2000PVA",
+    "type": "article-journal",
+    "title": "Predictive accuracy of population viability analysis in conservation biology",
+    "author": [
+      {
+        "family": "Brook",
+        "given": "Barry W."
+      },
+      {
+        "family": "O'Grady",
+        "given": "Julian J."
+      },
+      {
+        "family": "Chapman",
+        "given": "Andrew P."
+      },
+      {
+        "family": "Burgman",
+        "given": "Mark A."
+      },
+      {
+        "family": "Akçakaya",
+        "given": "H. Resit"
+      },
+      {
+        "family": "Frankham",
+        "given": "Richard"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2000
+        ]
+      ]
+    },
+    "container-title": "Nature",
+    "URL": "https://www.nature.com/articles/35006050",
+    "volume": "404",
+    "DOI": "10.1038/35006050",
+    "page": "385-387"
+  },
+  {
+    "id": "Kokori2022ExoClockI",
+    "type": "article-journal",
+    "title": "ExoClock project: an open platform for monitoring the ephemerides of Ariel targets with contributions from the public",
+    "author": [
+      {
+        "family": "Kokori",
+        "given": "A."
+      },
+      {
+        "family": "Tsiaras",
+        "given": "A."
+      },
+      {
+        "family": "Edwards",
+        "given": "B."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "container-title": "Experimental Astronomy",
+    "URL": "https://doi.org/10.1007/s10686-020-09696-3",
+    "volume": "53",
+    "DOI": "10.1007/s10686-020-09696-3",
+    "page": "547-588",
+    "note": "Author list deliberately abbreviated in this seed; listed authors are not a complete author list. Refresh verified DOI metadata before submission. Publisher online date: 2021-08-11. Bibliographic issued year follows the journal citation. Journal issue date: 2022-04."
+  },
+  {
+    "id": "Kokori2022ExoClockII",
+    "type": "article-journal",
+    "title": "ExoClock Project. II. A Large-scale Integrated Study with 180 Updated Exoplanet Ephemerides",
+    "author": [
+      {
+        "family": "Kokori",
+        "given": "A."
+      },
+      {
+        "family": "Tsiaras",
+        "given": "A."
+      },
+      {
+        "family": "Edwards",
+        "given": "B."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "container-title": "The Astrophysical Journal Supplement Series",
+    "URL": "https://doi.org/10.3847/1538-4365/ac3a10",
+    "volume": "258",
+    "DOI": "10.3847/1538-4365/ac3a10",
+    "page": "40",
+    "note": "Author list deliberately abbreviated in this seed; listed authors are not a complete author list. Refresh verified DOI metadata before submission. The page field contains the article or abstract identifier 40, not a page range. First arXiv submission date: 2021-10-26; this is not a verified operational forecast issue timestamp."
+  },
+  {
+    "id": "Kokori2023ExoClockIII",
+    "type": "article-journal",
+    "title": "ExoClock Project. III. 450 New Exoplanet Ephemerides from Ground and Space Observations",
+    "author": [
+      {
+        "family": "Kokori",
+        "given": "A."
+      },
+      {
+        "family": "Tsiaras",
+        "given": "A."
+      },
+      {
+        "family": "Edwards",
+        "given": "B."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "container-title": "The Astrophysical Journal Supplement Series",
+    "URL": "https://doi.org/10.3847/1538-4365/ac9da4",
+    "volume": "265",
+    "DOI": "10.3847/1538-4365/ac9da4",
+    "page": "4",
+    "note": "Author list deliberately abbreviated in this seed; listed authors are not a complete author list. Refresh verified DOI metadata before submission. The page field contains the article or abstract identifier 4, not a page range. First arXiv submission date: 2022-09-20; this is not a verified operational forecast issue timestamp."
+  },
+  {
+    "id": "Kokori2026ExoClockIV",
+    "type": "article-journal",
+    "title": "ExoClock Project. IV. A Homogeneous Catalog of 620 Updated Exoplanet Ephemerides",
+    "author": [
+      {
+        "family": "Kokori",
+        "given": "A."
+      },
+      {
+        "family": "Tsiaras",
+        "given": "A."
+      },
+      {
+        "family": "Pantelidou",
+        "given": "G."
+      },
+      {
+        "family": "Jones",
+        "given": "A."
+      },
+      {
+        "family": "Siakas",
+        "given": "A."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "container-title": "The Astrophysical Journal Supplement Series",
+    "URL": "https://doi.org/10.3847/1538-4365/ae3238",
+    "volume": "283",
+    "DOI": "10.3847/1538-4365/ae3238",
+    "page": "5",
+    "note": "Author list deliberately abbreviated in this seed; listed authors are not a complete author list. Refresh verified DOI metadata before submission. The page field contains the article or abstract identifier 5, not a page range. First arXiv submission date: 2025-11-18; this is not a verified operational forecast issue timestamp."
+  },
+  {
+    "id": "Shan2023TESSTimings",
+    "type": "article-journal",
+    "title": "TESS Timings of 31 Hot Jupiters with Ephemeris Uncertainties",
+    "author": [
+      {
+        "family": "Shan",
+        "given": "Su-Su"
+      },
+      {
+        "family": "Yang",
+        "given": "Fan"
+      },
+      {
+        "family": "Lu",
+        "given": "You-Jun"
+      },
+      {
+        "family": "Wei",
+        "given": "Xing"
+      },
+      {
+        "family": "Tian",
+        "given": "Wen-Wu"
+      },
+      {
+        "family": "Zhang",
+        "given": "Hai-Yan"
+      },
+      {
+        "family": "Guo",
+        "given": "Rui"
+      },
+      {
+        "family": "Cui",
+        "given": "Xiao-Hong"
+      },
+      {
+        "family": "Yang",
+        "given": "Ai-Yuan"
+      },
+      {
+        "family": "Zhang",
+        "given": "Bo"
+      },
+      {
+        "family": "Liu",
+        "given": "Ji-Feng"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "container-title": "The Astrophysical Journal Supplement Series",
+    "URL": "https://doi.org/10.3847/1538-4365/aca65f",
+    "volume": "264",
+    "DOI": "10.3847/1538-4365/aca65f",
+    "page": "37",
+    "note": "The page field contains the article or abstract identifier 37, not a page range. First arXiv submission date: 2021-11-12; this is not a verified operational forecast issue timestamp."
+  },
+  {
+    "id": "IvshinaWinn2022",
+    "type": "article-journal",
+    "title": "TESS Transit Timing of Hundreds of Hot Jupiters",
+    "author": [
+      {
+        "family": "Ivshina",
+        "given": "Ekaterina S."
+      },
+      {
+        "family": "Winn",
+        "given": "Joshua N."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "container-title": "The Astrophysical Journal Supplement Series",
+    "URL": "https://doi.org/10.3847/1538-4365/ac545b",
+    "volume": "259",
+    "DOI": "10.3847/1538-4365/ac545b",
+    "page": "62",
+    "note": "The page field contains the article or abstract identifier 62, not a page range."
+  },
+  {
+    "id": "KayeAigrain2025",
+    "type": "article-journal",
+    "title": "Transit ephemerides and timing variations from Kepler and K2 to TESS",
+    "author": [
+      {
+        "family": "Kaye",
+        "given": "Laurel"
+      },
+      {
+        "family": "Aigrain",
+        "given": "Suzanne"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "container-title": "Monthly Notices of the Royal Astronomical Society",
+    "URL": "https://doi.org/10.1093/mnras/staf334",
+    "volume": "538",
+    "DOI": "10.1093/mnras/staf334",
+    "page": "2283-2310",
+    "note": "Publisher online date: 2025-03-25. Bibliographic issued year follows the journal citation."
+  },
+  {
+    "id": "Mallonn2019",
+    "type": "article-journal",
+    "title": "Ephemeris refinement of 21 hot Jupiter exoplanets with high timing uncertainties",
+    "author": [
+      {
+        "family": "Mallonn",
+        "given": "M."
+      },
+      {
+        "family": "von Essen",
+        "given": "C."
+      },
+      {
+        "family": "Herrero",
+        "given": "E."
+      },
+      {
+        "family": "Alexoudi",
+        "given": "X."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "container-title": "Astronomy & Astrophysics",
+    "URL": "https://doi.org/10.1051/0004-6361/201834194",
+    "volume": "622",
+    "DOI": "10.1051/0004-6361/201834194",
+    "page": "A81",
+    "note": "Author list deliberately abbreviated in this seed; listed authors are not a complete author list. Refresh verified DOI metadata before submission. The page field contains the article or abstract identifier A81, not a page range."
+  },
+  {
+    "id": "Edwards2021ORBYTS",
+    "type": "article-journal",
+    "title": "Original Research by Young Twinkle Students (ORBYTS): ephemeris refinement of transiting exoplanets",
+    "author": [
+      {
+        "family": "Edwards",
+        "given": "Billy"
+      },
+      {
+        "family": "Changeat",
+        "given": "Quentin"
+      },
+      {
+        "family": "Yip",
+        "given": "Kai Hou"
+      },
+      {
+        "family": "Tsiaras",
+        "given": "Angelos"
+      },
+      {
+        "family": "Taylor",
+        "given": "Jake"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "container-title": "Monthly Notices of the Royal Astronomical Society",
+    "URL": "https://doi.org/10.1093/mnras/staa1245",
+    "volume": "504",
+    "DOI": "10.1093/mnras/staa1245",
+    "page": "5671-5684",
+    "note": "Author list deliberately abbreviated in this seed; listed authors are not a complete author list. Refresh verified DOI metadata before submission. Publisher online date: 2020-05-07. Bibliographic issued year follows the journal citation. Journal issue date: 2021-07."
+  },
+  {
+    "id": "Dragomir2020",
+    "type": "article-journal",
+    "title": "Securing the Legacy of TESS through the Care and Maintenance of TESS Planet Ephemerides",
+    "author": [
+      {
+        "family": "Dragomir",
+        "given": "Diana"
+      },
+      {
+        "family": "Harris",
+        "given": "Mallory"
+      },
+      {
+        "family": "Pepper",
+        "given": "Joshua"
+      },
+      {
+        "family": "Barclay",
+        "given": "Thomas"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "container-title": "The Astronomical Journal",
+    "URL": "https://doi.org/10.3847/1538-3881/ab845d",
+    "volume": "159",
+    "DOI": "10.3847/1538-3881/ab845d",
+    "page": "219",
+    "note": "Author list deliberately abbreviated in this seed; listed authors are not a complete author list. Refresh verified DOI metadata before submission. The page field contains the article or abstract identifier 219, not a page range. First arXiv submission date: 2019-06-05; this is not a verified operational forecast issue timestamp."
+  },
+  {
+    "id": "Wang2024PeriodVariation",
+    "type": "article-journal",
+    "title": "Long-term Variations in the Orbital Period of Hot Jupiters from Transit-timing Analysis Using TESS Survey Data",
+    "author": [
+      {
+        "family": "Wang",
+        "given": "Wenqin"
+      },
+      {
+        "family": "Zhang",
+        "given": "Zixin"
+      },
+      {
+        "family": "Chen",
+        "given": "Zhangliang"
+      },
+      {
+        "family": "Wang",
+        "given": "Yonghao"
+      },
+      {
+        "family": "Yu",
+        "given": "Cong"
+      },
+      {
+        "family": "Ma",
+        "given": "Bo"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "container-title": "The Astrophysical Journal Supplement Series",
+    "URL": "https://doi.org/10.3847/1538-4365/ad0847",
+    "volume": "270",
+    "DOI": "10.3847/1538-4365/ad0847",
+    "page": "14",
+    "note": "The page field contains the article or abstract identifier 14, not a page range."
+  },
+  {
+    "id": "Deeg2015",
+    "type": "article-journal",
+    "title": "Period, epoch, and prediction errors of ephemerides from continuous sets of timing measurements",
+    "author": [
+      {
+        "family": "Deeg",
+        "given": "Hans J."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "container-title": "Astronomy & Astrophysics",
+    "URL": "https://doi.org/10.1051/0004-6361/201425368",
+    "volume": "578",
+    "DOI": "10.1051/0004-6361/201425368",
+    "page": "A17",
+    "note": "The page field contains the article or abstract identifier A17, not a page range."
+  },
+  {
+    "id": "Eastman2010",
+    "type": "article-journal",
+    "title": "Achieving Better Than 1 Minute Accuracy in the Heliocentric and Barycentric Julian Dates",
+    "author": [
+      {
+        "family": "Eastman",
+        "given": "Jason"
+      },
+      {
+        "family": "Siverd",
+        "given": "Robert"
+      },
+      {
+        "family": "Gaudi",
+        "given": "B. Scott"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2010
+        ]
+      ]
+    },
+    "container-title": "Publications of the Astronomical Society of the Pacific",
+    "URL": "https://doi.org/10.1086/655938",
+    "volume": "122",
+    "DOI": "10.1086/655938",
+    "page": "935-946"
+  },
+  {
+    "id": "Lissauer2020Ephemerides",
+    "type": "paper-conference",
+    "title": "Perturbations, TTVs and the (Un)reliability of Ephemerides of Kepler Planets",
+    "author": [
+      {
+        "family": "Lissauer",
+        "given": "J. J."
+      },
+      {
+        "family": "Jontof-Hutter",
+        "given": "D."
+      },
+      {
+        "family": "Fabrycky",
+        "given": "D."
+      },
+      {
+        "family": "Ragozzine",
+        "given": "D."
+      },
+      {
+        "family": "Rowe",
+        "given": "J."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "container-title": "Bulletin of the American Astronomical Society",
+    "URL": "https://baas.aas.org/pub/2020n6i306p02/release/1",
+    "volume": "52",
+    "issue": "6",
+    "page": "306.02",
+    "note": "The page field contains the article or abstract identifier 306.02, not a page range. Conference abstract, not a full research article."
+  },
+  {
+    "id": "GneitingRaftery2007",
+    "type": "article-journal",
+    "title": "Strictly Proper Scoring Rules, Prediction, and Estimation",
+    "author": [
+      {
+        "family": "Gneiting",
+        "given": "Tilmann"
+      },
+      {
+        "family": "Raftery",
+        "given": "Adrian E."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2007
+        ]
+      ]
+    },
+    "container-title": "Journal of the American Statistical Association",
+    "URL": "https://doi.org/10.1198/016214506000001437",
+    "volume": "102",
+    "issue": "477",
+    "DOI": "10.1198/016214506000001437",
+    "page": "359-378"
+  },
+  {
+    "id": "GneitingBalabdaouiRaftery2007",
+    "type": "article-journal",
+    "title": "Probabilistic forecasts, calibration and sharpness",
+    "author": [
+      {
+        "family": "Gneiting",
+        "given": "Tilmann"
+      },
+      {
+        "family": "Balabdaoui",
+        "given": "Fadoua"
+      },
+      {
+        "family": "Raftery",
+        "given": "Adrian E."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2007
+        ]
+      ]
+    },
+    "container-title": "Journal of the Royal Statistical Society: Series B (Statistical Methodology)",
+    "URL": "https://doi.org/10.1111/j.1467-9868.2007.00587.x",
+    "volume": "69",
+    "issue": "2",
+    "DOI": "10.1111/j.1467-9868.2007.00587.x",
+    "page": "243-268",
+    "note": "Publisher online date: 2007-03-05. Bibliographic issued year follows the journal citation."
+  }
+]

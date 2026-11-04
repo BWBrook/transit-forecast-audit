@@ -1,0 +1,47 @@
+{
+  "warning": "SYNTHETIC ONLY. Demonstrates software behaviour; no scientific inference.",
+  "seed": 2000,
+  "package_version": "0.1.0",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "planets": 24,
+  "timings": 168,
+  "model": "Formal weighted linear ephemeris; no recalibration fitted",
+  "planet_balanced_metrics": {
+    "error_seconds": 82.19909457755939,
+    "absolute_error_seconds": 98.75416183578118,
+    "squared_error_seconds2": 16883.482829638335,
+    "forecast_sigma_seconds": 59.73125241253052,
+    "measurement_sigma_seconds": 43.819800965858896,
+    "predictive_sigma_seconds": 74.17712615474771,
+    "standardized_error": 1.1198699322462666,
+    "pit": 0.7388493048864261,
+    "negative_log_score_seconds": 6.66526332402773,
+    "covered_0.682689": 0.5178571428571429,
+    "width_seconds_0.682689": 148.35425226747114,
+    "interval_score_seconds_0.682689": 428.2611258976943,
+    "covered_0.950000": 0.7261904761904763,
+    "width_seconds_0.950000": 290.76899147997904,
+    "interval_score_seconds_0.950000": 994.6714180985726,
+    "covered_0.997300": 0.9107142857142857,
+    "width_seconds_0.997300": 445.0627579872915,
+    "interval_score_seconds_0.997300": 3071.256346886592,
+    "horizon_days": 683.6428571428572
+  },
+  "truth_group_metrics": {
+    "linear": {
+      "coverage_95": 0.9285714285714285,
+      "host_bootstrap_interval_95": [
+        0.7857142857142856,
+        1.0
+      ]
+    },
+    "late_drift": {
+      "coverage_95": 0.5238095238095237,
+      "host_bootstrap_interval_95": [
+        0.3214285714285714,
+        0.7023809523809524
+      ]
+    }
+  }
+}
