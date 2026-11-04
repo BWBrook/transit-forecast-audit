@@ -4,14 +4,15 @@ Purpose: covariance completeness. DRB publishes T0, P and their marginal
 uncertainties but not Cov(T0, P). If a weighted least-squares refit of the
 released `data_sources` timings, with each planet's published uncertainty
 scaling factor, reproduces the published T0/P/sigmas, then the implied
-correlation at the published reference epoch is a reconstructed (tier-2)
-covariance for the issued forecast, not a published one.
+correlation at the published reference epoch supports a conditional C2/WLS
+approximation. It does not recover the issued MCMC posterior covariance.
 
 DRC and DRD publish neither scaling factors nor per-planet input lists, but
 the correlation at the published epoch is invariant to a per-planet error
 scale, so it is computed from each release's `all_mid_time_data.txt`. That
 file is treated as the release's fitted input set (an assumption checked by
-how closely the refit reproduces the published period).
+how closely the refit reproduces the published period). Material source-fit
+mismatches remain C3/sensitivity; see D021.
 """
 
 from __future__ import annotations

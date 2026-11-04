@@ -51,7 +51,7 @@ def pair_codes(rel, ev, flags):
     if ev.planet in flags[rel]:
         codes.append("flagged_at_origin")
     codes += ["lineage_date_only", "outcome_prior_unverified", "time_standard_release_stated",
-              "covariance_reconstructed_negligible"]
+              "covariance_missing_wls_sensitivity", "source_date_basis_unverified"]
     return ";".join(codes)
 
 
@@ -109,12 +109,12 @@ def main(argv=None):
                       "frac_abs_z_lt_3": round(float(np.mean(np.abs(z) < 3)), 3)})
             for m, ni, o, ps, zi in zip(evs, n, oc, psd, z):
                 pairs.append({"planet": p, "forecast": "DRB", "outcome_id": m.record_id,
-                              "event_date_utc": m.tess_date, "t_bjd_tdb": m.t_bjd_tdb,
+                              "source_record_date": m.tess_date, "t_bjd_tdb": m.t_bjd_tdb,
                               "epoch_from_t0": int(ni), "oc_min": round(o * MIN, 3),
                               "pred_sd_min": round(ps * MIN, 3), "meas_sd_min": round(m.sigma_days * MIN, 3),
                               "z": round(zi, 3),
-                              "lead_days_after_journal": (np.datetime64(m.tess_date) - np.datetime64(ISSUE["DRB"]["journal"])).astype(int),
-                              "days_after_last_input": (np.datetime64(m.tess_date) - np.datetime64(d["drb_last_input"])).astype(int),
+                              "source_date_days_after_journal": (np.datetime64(m.tess_date) - np.datetime64(ISSUE["DRB"]["journal"])).astype(int),
+                              "source_date_days_after_last_input": (np.datetime64(m.tess_date) - np.datetime64(d["drb_last_input"])).astype(int),
                               "codes": pair_codes("DRB", m, flags)})
         dossiers.append(d)
         if not args.no_plots:

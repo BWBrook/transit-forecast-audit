@@ -1,11 +1,11 @@
-"""Forecast-free calibration of TESS mid-time uncertainties (development).
+"""Historical gap-grouped local scatter diagnostic (development).
 
-Transits of one planet within a single TESS visit (events separated by < 20
-days) share essentially the same forecast error, so their scatter about a
-local weighted mean (period fixed at the DRD value; its error over a few
-weeks is negligible) tests the quoted sigma_Tmid without any forecast.
-Reports chi2/dof overall and in bins of quoted sigma. DRD-flagged TTV planets
-are excluded because short-term TTVs would inflate within-visit scatter.
+Consecutive gaps <=20 days can chain across much longer intervals; these are
+not established TESS visits. The fixed DRD period uses the scored outcomes.
+Reported leverage-adjusted residual RMS is not a pure measurement-error scale
+or sqrt(chi2/dof). Preserve this first-turn calculation for reproduction; use
+review_measurement_diagnostic.py for capped-span and local-slope sensitivities.
+See D022 and docs/independent_review.md for the corrected interpretation.
 """
 import csv
 import sys

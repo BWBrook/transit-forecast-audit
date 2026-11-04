@@ -1,0 +1,4 @@
+release,planet_releases,pivot_abs_le_half_epoch,max_abs_pivot_epochs,max_abs_reconstructed_correlation,max_abs_fractional_forecast_variance_cross_term_R,max_abs_fractional_observed_variance_cross_term_R,status
+DRB,180,178,11.014,0.0281,0.007668173358149428,0.002701851837305552,WLS sensitivity using reconstructed correlation; not issued posterior covariance
+DRC,450,425,5.751,0.0741,0.013630009319664496,0.00979610876790608,WLS sensitivity using reconstructed correlation; not issued posterior covariance
+DRD,620,591,5.694,0.0866,0.08138233284098674,0.029387740705223594,WLS sensitivity using reconstructed correlation; not issued posterior covariance

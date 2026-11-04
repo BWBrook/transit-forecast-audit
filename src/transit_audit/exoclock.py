@@ -65,7 +65,7 @@ class MidTime:
 
     @property
     def tess_date(self) -> str | None:
-        """UTC calendar date embedded in DRD space-record IDs ending `_TESS`."""
+        """Calendar date in a DRD `_TESS` record ID; its UTC basis is unverified."""
         m = re.search(r"_(\d{4}-\d{2}-\d{2})_TESS$", self.record_id)
         return m.group(1) if m else None
 

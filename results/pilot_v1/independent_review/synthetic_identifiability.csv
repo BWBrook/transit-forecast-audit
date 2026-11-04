@@ -1,0 +1,5 @@
+synthetic_only,scenario,groups,events_per_group,expected_within_group_rms,observed_rms,fraction_abs_lt_1
+True,correct_independent_noise,10000,8,1.0,1.0020363132290997,0.6815
+True,measurement_scale_1.115,10000,8,1.115,1.1172704892504461,0.6295
+True,correct_noise_plus_white_latent_jitter,10000,8,1.115,1.1187276728408737,0.62785
+True,correct_noise_plus_common_offset_2sigma,10000,8,1.0,1.0020363132290997,0.6815

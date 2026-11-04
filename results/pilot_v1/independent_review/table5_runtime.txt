@@ -1,0 +1,38 @@
+command: Rscript scripts/independent_table5.R
+script_sha256: 02e943f15838f36162a622b7046c708d8778183f2f1c6e2d17b5ad62c373545d
+source_commit: 640be5ef66b00a88621ea20f700be9e9e4bd9f14
+independent_source: 42 DRD TTV names independently transcribed from arXiv:2511.14407v1 main.tex (text plus TTV table), not a repository fixture; source URL https://arxiv.org/src/2511.14407v1 .
+R version 4.6.1 (2026-06-24)
+Platform: aarch64-apple-darwin27.0.0
+Running under: macOS Golden Gate 27.2
+
+Matrix products: default
+BLAS:   /opt/homebrew/Cellar/openblas/0.3.34/lib/libopenblasp-r0.3.34.dylib
+LAPACK: /opt/homebrew/Cellar/r/4.6.1_1/lib/R/lib/libRlapack.dylib;  LAPACK version 3.12.1
+
+locale:
+[1] C.UTF-8/C.UTF-8/C.UTF-8/C/C.UTF-8/C.UTF-8
+
+time zone: Australia/Hobart
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base
+
+loaded via a namespace (and not attached):
+[1] compiler_4.6.1
+
+'data.frame':	3 obs. of  13 variables:
+ $ release         : chr  "DRB" "DRC" "DRD"
+ $ forecast_planets: int  180 450 620
+ $ excluded_planets: int  6 28 42
+ $ planets_scored  : int  130 308 424
+ $ measurements    : int  1585 3604 4716
+ $ n_lt_1          : int  761 2246 3132
+ $ n_lt_2          : int  1213 3291 4419
+ $ n_lt_3          : int  1482 3544 4682
+ $ n_lt_4          : int  1558 3590 4714
+ $ p_lt_1          : num  48 62.3 66.4
+ $ p_lt_2          : num  76.5 91.3 93.7
+ $ p_lt_3          : num  93.5 98.3 99.3
+ $ p_lt_4          : num  98.3 99.6 100
