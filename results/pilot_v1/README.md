@@ -5,6 +5,21 @@ outcomes used here (record dates 2022-01-01 to 2024-01-03) have now been
 inspected. They can be used for development and recalibration fitting. They
 can never be relabelled as an untouched evaluation era (decision D014).
 
+**Independent review, 2026-11-04:** DRB/DRC numerical reproduction is confirmed
+from raw bytes by a separate R implementation. The original interpretation of
+measurement scatter and covariance below is qualified by D020–D024 and
+[`docs/independent_review.md`](../../docs/independent_review.md). The 20-day gap
+rule can span 379 days; corrected windows still show excess dispersion but do
+not identify measurement-error calibration. Covariance is a conditional WLS
+sensitivity, not recovered posterior covariance. Track R is exact for two
+columns, not the entire table. The original narrative is retained as the
+first-turn record; use the independent review for the current recommendation.
+
+Run `Rscript scripts/independent_table5.R` and
+`python scripts/review_measurement_diagnostic.py` for the new audit. Compact
+results, source-row traces and receipts are under `independent_review/`;
+regenerable full R event tables go under ignored `data/derived/independent_table5/`.
+
 ## How to regenerate
 
 ```bash

@@ -37,6 +37,39 @@ Next owners should claim T001–T004 and read START_HERE.md.
   manifest hashes), attacks D015–D017 and takes T001. Claude then takes T014
   and T016.
 
+## 2026-11-04 — Codex: independent first-turn review
+
+- **Result:** base-R reproduction from hash-verified OSF bytes confirms DRB and
+  DRC exactly. DRD's one-count discrepancy persists; Initial remains open.
+  `docs/independent_review.md` and `results/pilot_v1/independent_review/` contain
+  source-row traces, runtime receipts, sensitivities and synthetic counterexamples.
+- **What changed:** D017's 20-day gap groups actually span up to 379 days.
+  Capped windows with local slopes still give RMS 1.0968, but this is conditional
+  local dispersion, not identified measurement-error inflation. The same
+  distribution can arise from latent timing jitter, and common offsets vanish.
+  The likelihood must include shared ephemeris covariance. D016 is a conditional
+  WLS approximation, not recovery of the issued posterior (D021–D022).
+- **Literature:** Ivshina & Winn already test TESS-only timing uncertainties and
+  fit extra scatter. The dated source review advances T001 but leaves the complete
+  citation graph open. Narrow the candidate novelty to an availability-aware
+  forecast audit with independently validated outcomes and a later untouched test.
+- **Preserved boundaries:** no light curves opened. All post-2025-11-18 TESS
+  remains sealed until freeze. Public issue date and protected interval are
+  distinct; retain journal-date availability absent stronger evidence (D023).
+- **Metadata:** replaced unsupported UTC and recovered-covariance labels in
+  generated pilot pairs with source-date and WLS-sensitivity labels; scores and
+  inclusion flow unchanged. Tracked Barry's ideation file unchanged (D025).
+- **Handoff:** Claude can take T003/T015 on 3–5 development events and T016
+  metadata; revise T014's identifiability design before fitting or freeze. This
+  is recorded in shared files; Correspondence thread 137 was read in full.
+- **Verification:** 41 Python tests passed; the independent R rerun matched all
+  eight hashes and preserved the reported counts. Fresh synthetic demo: 168
+  scores. `git diff --check` passed. No astrophysical result rests on the
+  synthetic counterexamples.
+- **Commits/evidence:** ideation `640be5e`; numerical review and primary-source
+  report `16b5799`. `coordination/claims.md` indexes C001–C004 with reproduction
+  commands and evidence commits for later research products.
+
 ## Update template
 
 - Date / agent / task ID:

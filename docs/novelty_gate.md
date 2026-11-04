@@ -1,12 +1,26 @@
 # Novelty and feasibility decision
 
-**Current decision (2026-11-04, after pilot v1): continue, with the extension
-re-aimed. Track R is reproduced exactly. The candidate contribution is now a
-variance-components evaluation that separates TESS timing-error calibration
-from ephemeris calibration, plus a genuinely untouched DRD-era test. No journal
-claim yet: the citing-literature sweep (T001) is incomplete.**
+**Current decision (2026-11-04, after independent review): continue the development
+pilot, with narrower claims. DRB/DRC Table 5 columns reproduce independently in
+R; DRD differs by one count and Initial remains unreproduced. The candidate
+contribution is an availability-aware forecast audit with validated outcome
+uncertainty and a later untouched test. Variance separation is not yet identified,
+the citation sweep remains incomplete, and the protocol is not frozen.**
+
+See [independent review](independent_review.md),
+[dated literature update](literature_update_2026-11-04.md) and D020–D024.
+TESS-only uncertainty diagnostics and extra-scatter terms have prior art.
+The original grouping chained across up to 379 days; a corrected local-linear
+diagnostic still shows excess scatter but cannot attribute it uniquely to
+measurement error. Covariance reconstruction is a conditional WLS sensitivity,
+not recovery of the issued posterior. **Keep all post-2025-11-18 light curves
+unopened until the protocol is frozen.**
 
 ### Decision record, pilot v1 (Claude)
+
+Historical first-turn interpretation below; D020–D024 and the independent review
+qualify items 1 and 3–5. In particular, 5.06% is a planet-balanced event failure
+fraction, not the fraction of planets with any failure.
 
 1. **Nearest result:** Kokori et al. 2026 (ExoClock IV) §5.1, Table 5. The
    definition was recovered from the arXiv v1 TeX source. It is reproduced

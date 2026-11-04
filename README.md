@@ -1,6 +1,6 @@
 # Transit Forecast Audit
 
-**Research seed · 4 November 2026 · no empirical study results yet**
+**Research seed and inspected development pilot · 4 November 2026 · no held-out results**
 
 A project for Barry W. Brook to evaluate the predictive reliability of exoplanet
 transit ephemerides using historical forecasts and later independent timing
@@ -51,7 +51,7 @@ recalibration if justified. Its novelty is **provisional**. See
   demonstration.
 - Shared agent instructions, a decision log, task board, manuscript outline and
   prompts for independent scientific criticism.
-- An initial local Git commit. No remote or external project has been created.
+- A public repository with MIT code and CC BY-SA 4.0 project content.
 
 ## What the seed does not establish
 
@@ -63,6 +63,16 @@ material and makes no population claim. See
 D012–D019. Still open: exposure-level lineage and the prior used for the
 outcome mid-times, an untouched evaluation era, and the citing-literature
 sweep. The `seed_demo` outputs remain synthetic.
+
+**Independent review, 2026-11-04:** a separate R implementation confirms DRB/DRC
+from hash-verified source files. The covariance and measurement-error claims
+are now narrower: local excess dispersion is reproducible, but its cause is not
+identified, and issued covariance remains missing. See
+[the review](docs/independent_review.md),
+[updated prior-art assessment](docs/literature_update_2026-11-04.md) and D020–D024.
+The [claims ledger](coordination/claims.md) indexes the verified findings C001–C004.
+The protocol remains unfrozen. Keep all TESS light curves after 2025-11-18
+unopened until freeze.
 
 The numerical package is a foundation, not a complete ingestion or light-curve
 reduction pipeline. It does not convert HJD/UTC to BJD/TDB, recover omitted
@@ -131,18 +141,17 @@ git status
 git log --oneline -1
 ```
 
-The supplied repository has a `main` branch and no remote. Once you have created
-your own remote, add it with `git remote add origin YOUR_REMOTE_URL`, then use
-your normal push workflow. If you want a fresh history instead, import the files
-into a new repository. [Archive notes](docs/archive_notes.md) describe both forms.
+The active repository uses `main` and
+[BWBrook/transit-forecast-audit](https://github.com/BWBrook/transit-forecast-audit)
+as `origin`. [Archive notes](docs/archive_notes.md) describe the original seed.
 
 ## Scientific ownership and citation
 
 The project belongs to Barry's research workflow. Claude and Codex are tools for
 analysis, implementation and criticism; their agreement does not validate a
 scientific claim. Record evidence, derivations and reproducible checks. The
-software/documentation licence is intentionally left for the project owner;
-third-party data retain their own terms. See [licensing notes](docs/licensing.md).
+code is MIT-licensed and project text, figures and data are CC BY-SA 4.0;
+third-party data retain their own terms. See `LICENSE` and `LICENSE-CONTENT`.
 
 Seed prepared with OpenAI research/coding assistance on 2026-11-04. Every
 astronomical conclusion, literature interpretation and source schema should be

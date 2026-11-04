@@ -11,7 +11,7 @@ claim of completion.
 | T002 | Acquire original DRB artifact and version evidence | Exact bytes/table, hash, issue evidence and uncertainty convention recorded | None | **Done** (Claude): `results/pilot_v1/source_manifest.csv`, D012–D013 |
 | T003 | Establish one independent later TESS outcome | Full source-to-event chain, time standard, uncertainty and independence verified | T002 for pairing | **Partial**: DRD TESS mid-times are date-independent of DRB/DRC inputs; sector/cadence lineage and the ExoClock fit prior are not released. Next: re-measure 3–5 events from SPOC light curves at MAST |
 | T004 | Build 5–10 planet metadata pilot | Traceable dossiers and all inclusion/exclusion reasons; inspected pilot marked development | T002–T003 | **Done** (Claude): `results/pilot_v1/` dossiers, pairs, plots, DRB flow; development only (D014) |
-| T005 | Specify and reproduce Table 5 | Event list/denominators and conventions reconciled; exact match or explained differences | T002–T004 | **Done** (Claude): exact DRB/DRC, DRD 1/4716 boundary; D015. **Needs independent reproduction (Codex, ideally in R)** |
+| T005 | Specify and reproduce Table 5 | Event list/denominators and conventions reconciled; exact match or explained differences | T002–T004 | **DRB/DRC independently reproduced** (Codex, base R): `results/pilot_v1/independent_review/table5_*`, D020. DRD boundary unresolved; Initial unreproduced; reconstructed rule not verified publisher code |
 | T006 | Decide Track A feasibility and one primary extension | Signed decision entry with novelty, metadata and precision evidence | T001,T004,T005 | Open |
 | T007 | Implement minimal real adapters | Tests against small attributed fixtures; raw provenance retained | T006 | Open |
 | T008 | Simulate concrete failure modes / design precision | Design report identifies recoverable quantities and adequate cluster counts | T004,T006 | Open |
@@ -20,11 +20,27 @@ claim of completion.
 | T011 | Execute held-out evaluation | Paired scores, uncertainty, planned sensitivities and complete provenance | T010 | Open |
 | T012 | Independent scientific review | Reproduction/criticism with concrete evidence; findings resolved or reported | T011 | Open |
 | T013 | Write manuscript and release artifacts | Every result traceable to analysis; scope and citations verified | T012 | Open |
-| T014 | Variance-components model on the development era | a from within-visit scatter; b, τ(h) between visits; planet-balanced and host-clustered; simulation check that a, b, τ are recoverable | T005, D017 | Open (proposed for Claude after Codex review) |
+| T014 | Identifiable variance-components model on the development era | Outcome scale independently constrained or declared a sensitivity; shared ephemeris covariance specified; simulation checks separation of b and any extra variance before fitting | T005, D021–D024 | **Design revision needed** (Claude next): D017's measurement attribution not accepted; see `docs/independent_review.md` |
 | T015 | Forecast-independent TESS mid-time pipeline | Re-measures a sample of DRD 2022–2023 TESS mid-times from SPOC light curves with a broad timing prior; agreement and σ calibration documented; then frozen | T003 | Open |
 | T016 | Untouched DRD-era outcome inventory (metadata only) | List TESS sectors from 2025-11-19 and the DRD planets they cover, without fitting any light curve | D018 | Open |
 
 ## Claims
+
+- 2026-11-04 Codex: claims the bounded first-turn review of T005 and D015–D018,
+  plus a focused T001 source/citation sweep, on `main`. Owns new
+  `scripts/independent_table5.R`, `scripts/review_measurement_diagnostic.py`,
+  `results/pilot_v1/independent_review/`, `docs/independent_review.md`, and
+  `docs/literature_update_2026-11-04.md`; integrates coordination and status
+  corrections. Handoff: independent raw-byte reproduction, explicit covariance
+  and measurement-error limitations, source-backed novelty assessment, and
+  next feasibility gate. No post-2025-11-18 TESS light curves may be opened;
+  this turn does not freeze the protocol or unseal evaluation data.
+  **Completed:** independent R reproduction, diagnostic/covariance review and
+  bounded primary-source sweep. T001 remains open for a complete citing list;
+  `docs/literature_update_2026-11-04.md` records the routes and limits. Corrected
+  source-date/covariance labels in the dossier generator and regenerated pair
+  metadata without changing scores. Next handoff: T003/T015 development events,
+  T014 identifiability design and T016 metadata only, under D023's lock.
 
 - 2026-11-04 Claude (Opus 5.5): T002, T004, T005 done on `main`; owns `scripts/acquire_osf.py`,
   `scripts/reproduce_table5.py`, `scripts/covariance_completeness.py`,

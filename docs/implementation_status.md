@@ -13,7 +13,9 @@
 | OSF acquisition | `scripts/acquire_osf.py` | Pinned GUIDs, OSF version metadata, SHA-256, refuses hash drift |
 | Track R reproduction | `scripts/reproduce_table5.py` | Exact DRB/DRC Table 5; origin-flag, availability and planet-balanced sensitivities |
 | Covariance audit | `scripts/covariance_completeness.py` | Refit from released inputs; implied corr(T0,P) at published epoch |
-| Measurement calibration | `scripts/tess_measurement_calibration.py` | Forecast-free within-visit test of TESS σ_Tmid |
+| Historical scatter diagnostic | `scripts/tess_measurement_calibration.py` | Original gap-grouped calculation; interpretation corrected by D022 |
+| Independent reproduction | `scripts/independent_table5.R` | Base-R raw-byte Track R, hashes and source row identities |
+| Scatter/covariance review | `scripts/review_measurement_diagnostic.py` | Span-limited local fits, covariance sensitivities and synthetic non-identifiability examples |
 | Pilot dossiers | `scripts/pilot_dossiers.py` | DRB flow, 10-planet dossiers, pair codes, plots (`uv run --extra analysis`) |
 | CLI | `src/transit_audit/__main__.py` | `demo --output NEW_DIRECTORY`; refuses to overwrite demonstration outputs |
 
@@ -28,7 +30,8 @@ measurement convolution, historical leakage and deterministic workflow behaviour
 - File-level historical version and first-availability resolution.
 - Exposure/event alias reconciliation and overlapping cadence-range detection.
 - Astronomy time conversion and independent transit midpoint fitting.
-- Exact ExoClock Table 5 reproduction, including original uncertainty conventions.
+- ExoClock Table 5 Initial column and the DRD boundary discrepancy; DRB/DRC
+  numerical reproduction is complete, publisher code/event-list verification is open.
 - Full hierarchy of equal planet / equal origin / equal event weights. The
   current mean helper is sufficient for the one-origin demonstration only;
   production must first calculate origin/horizon means explicitly.

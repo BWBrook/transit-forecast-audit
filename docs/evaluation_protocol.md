@@ -1,6 +1,13 @@
 # Evaluation protocol: retrospective reliability of transit forecasts
 
-**Status:** proposed protocol v0.1, 4 November 2026. This is a design document, not a registration or a report of results. Decisions marked provisional must be resolved using the feasibility audit and then recorded before inspecting the corresponding evaluation outcomes. No real-data forecast benchmark has been executed in this seed repository.
+**Status:** proposed protocol v0.1, 4 November 2026; not frozen. The development
+pilot independently reproduces the DRB/DRC benchmark columns (D020), but this is
+not a registration or held-out result. D021–D024 qualify the covariance and
+variance-components proposals. **Do not open TESS light curves dated after
+2025-11-18 until the protocol is frozen.** Resolve cohort, exact public
+availability, outcome lineage and model identifiability first. The sealed
+interval is not automatically eligible for strict Track A: absent earlier
+verified availability, DRD's conservative issue anchor is 2026-02-11.
 
 ## 1. Scientific question and contribution boundary
 
@@ -102,7 +109,12 @@ Proposed primary audit outputs are:
 
 Use the negative logarithmic score as a secondary full-density diagnostic when the adopted density is defensible. Report predicted latent timing uncertainty separately from the uncertainty of the noisy evaluation measurement. Coverage of measured outcomes is not direct proof that nominal intervals contain the unobserved true mid-time at the stated rate.
 
-For reproduction R, implement the source paper's convention exactly first. ExoClock IV Table 5 names a residual uncertainty and prints threshold notation whose absolute-value convention is not explicit in the HTML. Inspect released code or other documentation to establish the denominator, event list and two-sided convention. Do not assume an error in the paper. Record unresolved choices and test alternatives without declaring a reproduction successful merely because rounded percentages are close.
+For reproduction R, the absolute-residual rule with the reported forecast and
+measurement variances and 42 DRD flags removed reproduces both DRB/DRC columns
+independently. The source does not fully specify that algorithm: retain the
+distinction between numerical reproduction and verified author code/event list.
+DRD differs by one count and Initial is still open. See D020. These outcomes are
+development material; their agreement does not validate the proposed new model.
 
 ## 8. Lead-time and covariate analyses
 
