@@ -1,0 +1,113 @@
+{
+  "development_only": true,
+  "network_access": false,
+  "source": "results/t015/t015_products.csv",
+  "manifest_sha256": "9584f2fe40e8ffb760879e8849a4b5056f0ecd5a11fdc68bd58d358d49b7eef2",
+  "pipeline_sha256": "4de11086b7523ff7cf8a0021640e6cc8929db0652d77d8d05813d47e3ae4a639",
+  "command": "python scripts/review_t015_provenance.py",
+  "files_checked": 5,
+  "hashes_all_match": true,
+  "boundary": {
+    "pipeline_constant": "MAX_BTJD = 3313.5",
+    "pipeline_source": "scripts/t015_timing_pipeline.py:43",
+    "constant_scale": "BTJD = JD - 2457000; SPOC TIMESYS=TDB",
+    "constant_tdb_calendar": "2024-01-04 00:00:00 TDB",
+    "commented_intent": "2024-01-03 00:00 UTC",
+    "interpretation": "Calendar labels disagree by about one day. No replacement BTJD cutoff is asserted because barycentric TDB to UTC-scale conversion does not establish spacecraft UTC or undo target/observer light-time correction."
+  },
+  "products": [
+    {
+      "planet": "HD209458b",
+      "sector": 56,
+      "local_path": "data/raw/mast/TIC_420814525/mastDownload/TESS/tess2022244194134-s0056-0000000420814525-0243-s/tess2022244194134-s0056-0000000420814525-0243-s_lc.fits",
+      "expected_sha256": "1b76b4a4b73e24954fa6e29a7e28a174685113ecdbad1bf10ef0e7b766ce99e9",
+      "observed_sha256": "1b76b4a4b73e24954fa6e29a7e28a174685113ecdbad1bf10ef0e7b766ce99e9",
+      "hash_match": true,
+      "time_headers": {
+        "TIMESYS": "TDB",
+        "TIMEREF": "SOLARSYSTEM",
+        "TIMEUNIT": "d",
+        "BJDREFI": 2457000,
+        "BJDREFF": 0.0,
+        "TSTART": 2825.261935147748,
+        "TSTOP": 2853.143281567599
+      }
+    },
+    {
+      "planet": "WASP-69b",
+      "sector": 55,
+      "local_path": "data/raw/mast/TIC_248853232/mastDownload/TESS/tess2022217014003-s0055-0000000248853232-0242-s/tess2022217014003-s0055-0000000248853232-0242-s_lc.fits",
+      "expected_sha256": "ee0291c2f014296fa47b06fa7eb47a16a79fe4679841ce203518aaa5620cbd26",
+      "observed_sha256": "ee0291c2f014296fa47b06fa7eb47a16a79fe4679841ce203518aaa5620cbd26",
+      "hash_match": true,
+      "time_headers": {
+        "TIMESYS": "TDB",
+        "TIMEREF": "SOLARSYSTEM",
+        "TIMEUNIT": "d",
+        "BJDREFI": 2457000,
+        "BJDREFF": 0.0,
+        "TSTART": 2797.105630804309,
+        "TSTOP": 2824.269028679259
+      }
+    },
+    {
+      "planet": "WASP-80b",
+      "sector": 54,
+      "local_path": "data/raw/mast/TIC_243921117/mastDownload/TESS/tess2022190063128-s0054-0000000243921117-0227-s/tess2022190063128-s0054-0000000243921117-0227-s_lc.fits",
+      "expected_sha256": "cc6a01fbc5090a11aa09d7c9c785152405dea520d6008460242ad2c2448964c8",
+      "observed_sha256": "cc6a01fbc5090a11aa09d7c9c785152405dea520d6008460242ad2c2448964c8",
+      "hash_match": true,
+      "time_headers": {
+        "TIMESYS": "TDB",
+        "TIMEREF": "SOLARSYSTEM",
+        "TIMEUNIT": "d",
+        "BJDREFI": 2457000,
+        "BJDREFF": 0.0,
+        "TSTART": 2769.903854131425,
+        "TSTOP": 2796.134619336322
+      }
+    },
+    {
+      "planet": "HAT-P-12b",
+      "sector": 49,
+      "local_path": "data/raw/mast/TIC_198108326/mastDownload/TESS/tess2022057073128-s0049-0000000198108326-0221-s/tess2022057073128-s0049-0000000198108326-0221-s_lc.fits",
+      "expected_sha256": "d410135a05739cf40d4c6303e4959aa6ec761e8665162310670054329a33a37a",
+      "observed_sha256": "d410135a05739cf40d4c6303e4959aa6ec761e8665162310670054329a33a37a",
+      "hash_match": true,
+      "time_headers": {
+        "TIMESYS": "TDB",
+        "TIMEREF": "SOLARSYSTEM",
+        "TIMEUNIT": "d",
+        "BJDREFI": 2457000,
+        "BJDREFF": 0.0,
+        "TSTART": 2637.475515464096,
+        "TSTOP": 2664.318981312261
+      }
+    },
+    {
+      "planet": "HAT-P-12b",
+      "sector": 50,
+      "local_path": "data/raw/mast/TIC_198108326/mastDownload/TESS/tess2022085151738-s0050-0000000198108326-0222-s/tess2022085151738-s0050-0000000198108326-0222-s_lc.fits",
+      "expected_sha256": "84cbba911bd956089e8544359dac70cd0bddafed8ef5ebe046444d4561a5e9ab",
+      "observed_sha256": "84cbba911bd956089e8544359dac70cd0bddafed8ef5ebe046444d4561a5e9ab",
+      "hash_match": true,
+      "time_headers": {
+        "TIMESYS": "TDB",
+        "TIMEREF": "SOLARSYSTEM",
+        "TIMEUNIT": "d",
+        "BJDREFI": 2457000,
+        "BJDREFF": 0.0,
+        "TSTART": 2665.274533111267,
+        "TSTOP": 2691.513046947025
+      }
+    }
+  ],
+  "guard_order": {
+    "pipeline_fetch": "scripts/t015_timing_pipeline.py:53-69; sector search is restricted to S46-S73, then res[i].download() is called",
+    "pipeline_check": "scripts/t015_timing_pipeline.py:72-90; TSTOP is checked before the pipeline explicitly accesses LightCurve columns",
+    "lightkurve_download": "lightkurve/search.py:_download_one:336-360; returns read(path, ...) after download/cache resolution",
+    "lightkurve_tess_reader": "lightkurve/io/tess.py:33-51; calls read_generic_lightcurve",
+    "lightkurve_table_read": "lightkurve/io/generic.py:42-55; Table.read loads the light-curve table before clean()"
+  },
+  "script_sha256": "f0d0e54fbf9da17fd787b63d6035838507b65570bfde6ab10ad0fd20b039b9b5"
+}

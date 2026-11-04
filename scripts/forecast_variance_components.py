@@ -19,7 +19,8 @@ Stage 2. Visit means m_v at weighted epochs n_v against the issued ephemeris:
   (offset kappa with probability pi) was tried first and rejected: the
   discrepancies are continuous from ~2 to ~600 min, so it returned b ~ 20 (DRC)
   or pi = 1 (DRB). The rank-2 structure of X C X' gives a closed-form likelihood;
-  lambda_p is integrated by 48-node Gauss-Hermite quadrature.
+  lambda_p is integrated by 384-node Gauss-Hermite quadrature, with 192-node
+convergence and continuous posterior summaries (D031).
 
 Recovery is checked by simulating from fitted-scale truths on the real DRC
 visit design and refitting with the same multi-start optimiser.
@@ -29,12 +30,17 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
+import platform
+import subprocess
 import sys
+from functools import lru_cache
 from pathlib import Path
 
 import numpy as np
 from scipy.optimize import minimize
+from scipy.special import logsumexp, roots_hermitenorm, ndtr
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
@@ -47,11 +53,11 @@ MIN = 1440.0
 CLIP = 5.0
 
 
-def visits(release, a, flag_rule="origin"):
+def visits(release, a, flag_rule="origin", start="2022-01-01", end="2024-01-03"):
     eph, tess, flags = load()
     E = eph[release]
     excl = flags[release] if flag_rule == "origin" else flags["DRD"]
-    ev = [m for m in tess if m.planet in E and m.planet not in excl]
+    ev = [m for m in tess if m.planet in E and m.planet not in excl and start <= m.tess_date <= end]
     if any(m.tess_date > "2024-01-03" for m in ev):
         raise ValueError("outcome beyond inspected development era")
     by = {}
@@ -84,9 +90,14 @@ def visits(release, a, flag_rule="origin"):
     return planets, clipped
 
 
-GH_X, GH_W = np.polynomial.hermite_e.hermegauss(48)
-GH_LW = np.log(GH_W / np.sqrt(2 * np.pi))
-S_MAX = 5.0  # lambda spans exp(+-5 s) at the outer nodes; s > 5 is not a scale-mixture any more
+QUADRATURE_ORDER = 384
+S_MAX = 5.0
+
+
+@lru_cache(maxsize=4)
+def quadrature(order):
+    nodes, weights = roots_hermitenorm(order)
+    return nodes, np.log(weights) - .5*np.log(2*np.pi)
 
 
 def precompute(planets, ys):
@@ -118,41 +129,97 @@ def planet_ll(pre, c):
     return np.array(out)
 
 
-def nll(theta, pre, mixture):
-    b2 = np.exp(2 * theta[0])
-    if not mixture:
-        return -float(np.sum(planet_ll(pre, b2)))
-    s = np.exp(theta[1])
-    if s > S_MAX or not -10 < theta[0] < 10:
-        return 1e300
-    ll = planet_ll(pre, b2 * np.exp(s * GH_X))
-    return -float(np.sum(np.logaddexp.reduce(ll + GH_LW, axis=1)))
+def packed(pre):
+    lam, w2 = np.zeros((len(pre), 2)), np.zeros((len(pre), 2))
+    const = []
+    for i, (q, ev, proj2, logd, k) in enumerate(pre):
+        lam[i, :len(ev)], w2[i, :len(proj2)] = ev, proj2
+        const.append(q + logd + k*np.log(2*np.pi))
+    return lam, w2, np.asarray(const)
 
 
-def fit(planets, ys, mixture=True, pre=None):
+def objective(theta, data, mixture, order, x, weights, gradient=True):
+    lam, w2, const = data
+    if mixture:
+        nodes, logweights = quadrature(order)
+        s = np.exp(theta[1])
+    else:
+        nodes, logweights, s = np.zeros(1), np.zeros(1), 0.0
+    beta = theta[2] if len(theta) == 3 else 0.0
+    c = np.exp(2*(theta[0]+beta*x[:, None]) + s*nodes[None, :])
+    u = c[:, :, None]*lam[:, None, :]
+    inverse = 1/(1+u)
+    ll = -.5*(const[:, None] + np.sum(w2[:, None, :]*inverse + np.log1p(u), axis=2))
+    joint = ll + logweights
+    lp = logsumexp(joint, axis=1)
+    if not gradient:
+        return lp
+    posterior = np.exp(joint-lp[:, None])*weights[:, None]
+    deriv = .5*np.sum(w2[:, None, :]*u*inverse**2-u*inverse, axis=2)
+    grad = [-np.sum(posterior*deriv*2)]
+    if mixture:
+        grad.append(-np.sum(posterior*deriv*s*nodes[None, :]))
+    if len(theta) == 3:
+        grad.append(-np.sum(posterior*deriv*2*x[:, None]))
+    return -float(weights @ lp), np.asarray(grad)
+
+
+def nll(theta, pre, mixture, order=QUADRATURE_ORDER):
+    return objective(theta, packed(pre), mixture, order, np.zeros(len(pre)), np.ones(len(pre)))[0]
+
+
+def fit(planets, ys, mixture=True, pre=None, order=QUADRATURE_ORDER, x=None, weights=None):
     pre = precompute(planets, ys) if pre is None else pre
+    has_x = x is not None
+    if has_x and not mixture:
+        raise ValueError("Predictor is defined for the population mixture")
+    x = np.zeros(len(pre)) if x is None else np.asarray(x)
+    weights = np.ones(len(pre)) if weights is None else np.asarray(weights)
+    if len(pre) == 0 or weights.sum() <= 0 or np.any(weights < 0):
+        raise ValueError("Empty or invalid fitting weights")
     starts = ([[np.log(b)] for b in (0.7, 1.0, 1.5, 3.0)] if not mixture else
-              [[np.log(b), np.log(s)] for b in (0.8, 1.2, 2.0) for s in (0.3, 1.0, 3.0)])
-    best = None
+              [[np.log(b), np.log(s)] + ([0.0] if has_x else []) for b,s in ((.8,.3), (1,1), (1,3), (2,4))])
+    fits = []
+    data = packed(pre)
+    bounds = [(-8, 8)] + ([(-12, np.log(S_MAX))] if mixture else []) + ([(-4,4)] if has_x else [])
     for x0 in starts:
-        r = minimize(nll, x0, args=(pre, mixture), method="Nelder-Mead",
-                     options={"xatol": 1e-5, "fatol": 1e-5, "maxiter": 4000})
-        if best is None or r.fun < best.fun:
-            best = r
-    out = {"b": float(np.exp(best.x[0])), "nll": float(best.fun)}
+        r = minimize(objective, x0, args=(data, mixture, order, x, weights), jac=True,
+                     method="L-BFGS-B", bounds=bounds,
+                     options={"ftol": 1e-11, "gtol": 1e-6, "maxiter": 1000, "maxls": 50})
+        fits.append(r)
+    good = [r for r in fits if r.success and np.isfinite(r.fun)]
+    if not good:
+        raise RuntimeError("No converged scale-mixture fit")
+    best = min(good, key=lambda r: r.fun)
+    if min(r.fun for r in fits) < best.fun-1e-5:
+        raise RuntimeError("Nonconverged solution has materially better likelihood")
+    out = {"b": float(np.exp(best.x[0])), "nll": float(best.fun), "converged": True,
+           "order": order, "gradient_max": float(np.max(np.abs(best.jac))),
+           "at_bound": bool(any(min(abs(v-lo),abs(v-hi)) < 1e-5 for v,(lo,hi) in zip(best.x,bounds)))}
     if mixture:
         out["s_log_lambda"] = float(np.exp(best.x[1]))
+    if has_x:
+        out["beta_log_sd"] = float(best.x[2])
     return out
 
 
 def posterior_lambda(planets, ys, est):
-    """Posterior median of each planet's forecast-variance inflation lambda_p."""
+    """Continuous-grid posterior summaries; no quadrature-node classifications."""
     pre = precompute(planets, ys)
-    ll = planet_ll(pre, est["b"] ** 2 * np.exp(est["s_log_lambda"] * GH_X)) + GH_LW
-    post = np.exp(ll - np.logaddexp.reduce(ll, axis=1)[:, None])
-    cdf = np.cumsum(post, axis=1)
-    idx = np.argmax(cdf >= 0.5, axis=1)
-    return np.exp(est["s_log_lambda"] * GH_X[idx]), post
+    z = np.linspace(-12,12,9601)
+    s = est["s_log_lambda"]
+    ll = planet_ll(pre, est["b"]**2*np.exp(s*z)) - .5*z*z
+    density = np.exp(ll-np.max(ll,axis=1)[:,None])
+    mass = .5*(density[:,1:]+density[:,:-1])*np.diff(z)
+    cdf = np.column_stack([np.zeros(len(pre)), np.cumsum(mass,axis=1)])
+    cdf /= cdf[:,-1,None]
+    rows = []
+    for p, c in zip(planets,cdf):
+        qq = np.exp(s*np.interp([.025,.5,.975],c,z))
+        rows.append({"planet":p["planet"], "lambda_q025":float(qq[0]), "lambda_median":float(qq[1]),
+                     "lambda_q975":float(qq[2]), "probability_lambda_gt_10":float(1-np.interp(np.log(10)/s,z,c)),
+                     "probability_lambda_gt_100":float(1-np.interp(np.log(100)/s,z,c))})
+    return rows
 
 
 def simulate(planets, b, s, rng):
@@ -164,93 +231,112 @@ def simulate(planets, b, s, rng):
     return ys
 
 
-def profile(pre, est, key, grid):
+def source_manifest():
+    checked = []
+    for row in csv.DictReader((ROOT / "results/pilot_v1/source_manifest.csv").open()):
+        actual = hashlib.sha256((ROOT/row["local_path"]).read_bytes()).hexdigest()
+        if actual != row["sha256"]:
+            raise ValueError("Source hash changed: " + row["local_path"])
+        checked.append({"path":row["local_path"], "sha256":actual})
+    return checked
+
+
+def write_csv(path, rows):
+    if not rows:
+        return
+    with path.open("w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=list(rows[0]), lineterminator="\n")
+        writer.writeheader()
+        writer.writerows(rows)
+
+
+def host_bootstrap(planets, pre, replicates, rng):
+    hosts, inverse = np.unique([p["host"] for p in planets], return_inverse=True)
     rows = []
-    for v in grid:
-        if key == "b":
-            f = lambda th: nll([np.log(v), th[0]], pre, True)
-            x0 = [np.log(est["s_log_lambda"])]
-        else:
-            f = lambda th: nll([th[0], np.log(v)], pre, True)
-            x0 = [np.log(est["b"])]
-        r = minimize(f, x0, method="Nelder-Mead", options={"xatol": 1e-5, "fatol": 1e-5})
-        rows.append((float(v), float(r.fun)))
-    inside = [v for v, f in rows if f - est["nll"] <= 1.92]
-    return [min(inside), max(inside)] if inside else None
+    for rep in range(replicates):
+        counts = np.bincount(rng.integers(0,len(hosts),len(hosts)), minlength=len(hosts))
+        est = fit(planets, [], pre=pre, weights=counts[inverse])
+        rows.append({"replicate":rep, **est})
+    intervals = {key:list(np.quantile([r[key] for r in rows],[.025,.975]))
+                 for key in ("b","s_log_lambda")} if rows else None
+    return rows, {"hosts":len(hosts), "replicates":replicates,
+                  "percentile95":intervals, "fits_at_parameter_bound":sum(r["at_bound"] for r in rows),
+                  "interpretation":"Host-cluster bootstrap, fixed outcome scale and selected cohort/model; no model-selection uncertainty"}
 
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--output", default=str(ROOT / "results" / "pilot_v1" / "variance_components"))
+    ap.add_argument("--output", default=str(ROOT / "results/pilot_v1/variance_components_v2"))
     ap.add_argument("--reps", type=int, default=20)
-    ap.add_argument("--a", type=float, default=1.087, help="local REML scale, local_linear scale_plus_jitter")
+    ap.add_argument("--bootstrap", type=int, default=200)
+    ap.add_argument("--a", type=float, default=1.087)
     args = ap.parse_args(argv)
+    if args.reps < 0 or args.bootstrap < 0 or args.a <= 0:
+        raise ValueError("Invalid replication count or outcome scale")
+    sources = source_manifest()
     out = Path(args.output)
     out.mkdir(parents=True, exist_ok=True)
     rng = np.random.default_rng(20261105)
-    summary = {"development_only": True, "light_curves_opened": 0, "clip_local_z": CLIP, "a_fixed": args.a,
-               "issued_covariance": "diagonal (Cov(T0,P) missing; D021)",
-               "cohort": "TESS 2022-01-01..2024-01-03 in DRD mid-times; origin-only flags excluded (D015)",
-               "command": "uv run --extra analysis python scripts/forecast_variance_components.py"}
-
-    real, fails, sens = {}, [], []
-    for rel in ("DRB", "DRC"):
-        planets, clipped = visits(rel, args.a)
+    boot_rng = np.random.default_rng(20261106)
+    summary = {"development_only":True, "light_curves_opened":0, "clip_local_z":CLIP, "a_fixed":args.a,
+               "issued_covariance":"diagonal published-marginal sensitivity; Cov(T0,P) remains missing",
+               "cohort":"TESS 2022-01-01..2024-01-03 in DRD mid-times; origin flags",
+               "quadrature_order":QUADRATURE_ORDER, "source_manifest":sources,
+               "source_commit":subprocess.check_output(["git","rev-parse","HEAD"],cwd=ROOT,text=True).strip(),
+               "script_sha256":hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+               "python":platform.python_version(), "numpy":np.__version__,
+               "command":f"python scripts/forecast_variance_components.py --reps {args.reps} --bootstrap {args.bootstrap} --a {args.a}",
+               "outcome_scale_sensitivity":"Fixed a is not an independently established measurement scale"}
+    real, posteriors, boots, sensitivity = {}, [], [], []
+    for release in ("DRB","DRC"):
+        planets, clipped = visits(release,args.a)
         ys = [p["m"] for p in planets]
-        pre = precompute(planets, ys)
-        g = fit(planets, ys, mixture=False, pre=pre)
-        x = fit(planets, ys, mixture=True, pre=pre)
-        lam, _ = posterior_lambda(planets, ys, x)
-        real[rel] = {"planets": len(planets), "visits": int(sum(len(p["m"]) for p in planets)),
-                     "events": int(sum(p["events"] for p in planets)), "events_clipped": clipped,
-                     "gaussian_b": round(g["b"], 4), "gaussian_nll": round(g["nll"], 3),
-                     **{k: round(v, 4) for k, v in x.items()},
-                     "b_profile_ci95": profile(pre, x, "b", np.exp(np.linspace(np.log(0.3), np.log(5), 121))),
-                     "s_profile_ci95": profile(pre, x, "s", np.exp(np.linspace(np.log(0.05), np.log(8), 121))),
-                     "lr_mixture_vs_gaussian": round(2 * (g["nll"] - x["nll"]), 2),
-                     "planets_lambda_gt_10": int(np.sum(lam > 10)), "planets_lambda_gt_100": int(np.sum(lam > 100))}
-        for p, y, l in zip(planets, ys, lam):
-            if l > 10:
-                fails.append({"release": rel, "planet": p["planet"], "visits": len(y),
-                              "median_visit_oc_min": round(float(np.median(y)), 2),
-                              "issued_sigma_t0_min": round(p["st0"], 3), "issued_sigma_p_s": round(p["sp"] * 60, 4),
-                              "max_issued_pred_sd_min": round(float(np.sqrt(p["st0"]**2 + np.max(p["n"]**2) * p["sp"]**2)), 3),
-                              "posterior_median_lambda": round(float(l), 1)})
-        for a in (1.0, 1.2):
-            pl, _ = visits(rel, a)
-            sens.append({"release": rel, "a": a, **{k: round(v, 4) for k, v in fit(pl, [p["m"] for p in pl]).items()}})
-        if rel == "DRC":
-            design, xfit = planets, x
-        print(rel, real[rel], flush=True)
-    summary["real_fit"] = real
-    summary["a_sensitivity"] = sens
-    with (out / "planet_miscalibration.csv").open("w", newline="") as fh:
-        w = csv.DictWriter(fh, fieldnames=list(fails[0]), lineterminator="\n")
-        w.writeheader()
-        w.writerows(fails)
-
-    truths = [(1.0, 0.0), (1.0, 1.0), (1.5, 1.0), (1.0, 2.5), (xfit["b"], xfit["s_log_lambda"])]
-    rec, sim_rows = [], []
-    for b, sd in truths:
-        est = []
+        pre = precompute(planets,ys)
+        g = fit(planets,ys,mixture=False,pre=pre)
+        est = fit(planets,ys,pre=pre)
+        lower = fit(planets,ys,pre=pre,order=192)
+        if abs(est["nll"]-lower["nll"]) > .01 or abs(est["s_log_lambda"]-lower["s_log_lambda"]) > .01:
+            raise RuntimeError("Quadrature order convergence failed")
+        rows = posterior_lambda(planets,ys,est)
+        posteriors.extend({"release":release, **r} for r in rows)
+        bootstrap_rows, bootstrap_summary = host_bootstrap(planets,pre,args.bootstrap,boot_rng)
+        boots.extend({"release":release, **r} for r in bootstrap_rows)
+        real[release] = {"planets":len(planets),"visits":sum(len(p["m"]) for p in planets),
+                         "events":sum(p["events"] for p in planets),"events_clipped":clipped,
+                         "gaussian":g,"mixture":est,"order192":lower,"host_bootstrap":bootstrap_summary,
+                         "lr_mixture_vs_gaussian":2*(g["nll"]-est["nll"]),
+                         "model_population_probability_lambda_gt_10":float(ndtr(-np.log(10)/est["s_log_lambda"])),
+                         "posterior_expected_planets_lambda_gt_10":sum(r["probability_lambda_gt_10"] for r in rows),
+                         "posterior_median_lambda_gt_10":sum(r["lambda_median"] > 10 for r in rows),
+                         "posterior_median_lambda_gt_100":sum(r["lambda_median"] > 100 for r in rows)}
+        for a in (1.0,1.2):
+            pl,_ = visits(release,a)
+            sensitivity.append({"release":release,"a":a,**fit(pl,[p["m"] for p in pl])})
+        if release == "DRC":
+            design,xfit = planets,est
+        print(release,json.dumps(real[release]),flush=True)
+    summary["real_fit"],summary["a_sensitivity"] = real,sensitivity
+    rec,sim_rows = [],[]
+    truths = [(1,0),(1,1),(1.5,1),(1,2.5),(xfit["b"],xfit["s_log_lambda"])]
+    for b,s in truths:
+        estimates = []
         for rep in range(args.reps):
-            e = fit(design, simulate(design, b, sd, rng))
-            est.append(e)
-            sim_rows.append({"synthetic_only": True, "true_b": round(b, 4), "true_s": round(sd, 4), "rep": rep,
-                             **{k: round(v, 5) for k, v in e.items()}})
-        rec.append({"truth": {"b": round(b, 4), "s_log_lambda": round(sd, 4)},
-                    **{k: {"median": round(float(np.median([e[k] for e in est])), 4),
-                           "q10": round(float(np.quantile([e[k] for e in est], .1)), 4),
-                           "q90": round(float(np.quantile([e[k] for e in est], .9)), 4)}
-                       for k in ("b", "s_log_lambda")}})
-        print("truth", (b, sd), rec[-1]["b"], rec[-1]["s_log_lambda"], flush=True)
-    with (out / "identifiability_simulation.csv").open("w", newline="") as fh:
-        w = csv.DictWriter(fh, fieldnames=list(sim_rows[0]), lineterminator="\n")
-        w.writeheader()
-        w.writerows(sim_rows)
-    summary["simulation"] = {"design": "real DRC origin-flag visit design", "reps_per_truth": args.reps,
-                             "seed": 20261105, "recovery": rec}
-    (out / "variance_components_summary.json").write_text(json.dumps(summary, indent=2) + "\n")
+            est = fit(design,simulate(design,b,s,rng))
+            estimates.append(est)
+            sim_rows.append({"synthetic_only":True,"true_b":b,"true_s":s,"replicate":rep,**est})
+        if estimates:
+            rec.append({"true_b":b,"true_s":s,
+                        **{key:{"median":float(np.median([r[key] for r in estimates])),
+                                "q10":float(np.quantile([r[key] for r in estimates],.1)),
+                                "q90":float(np.quantile([r[key] for r in estimates],.9))}
+                           for key in ("b","s_log_lambda")}})
+    summary["simulation"] = {"design":"real DRC origin-flag visit design","replicates_per_truth":args.reps,
+                             "seed":20261105,"recovery":rec}
+    summary["bootstrap_seed"] = 20261106
+    write_csv(out/"planet_posteriors.csv",posteriors)
+    write_csv(out/"host_bootstrap.csv",boots)
+    write_csv(out/"identifiability_simulation.csv",sim_rows)
+    (out/"variance_components_summary.json").write_text(json.dumps(summary,indent=2)+"\n")
     return 0
 
 

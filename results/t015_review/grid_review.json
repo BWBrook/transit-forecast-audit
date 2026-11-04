@@ -1,0 +1,48 @@
+{
+  "synthetic_only": true,
+  "light_curves_opened": 0,
+  "grid_seconds": 2.0,
+  "rows": [
+    {
+      "synthetic_only": true,
+      "true_median_s": 0.0,
+      "true_sigma_s": 5.0,
+      "original_grid_median_s": -0.9999999999999992,
+      "trapezoid_grid_median_s": -2.7688334530736398e-15,
+      "original_sigma_s": 4.971985146084924,
+      "trapezoid_sigma_s": 5.163831025547283
+    },
+    {
+      "synthetic_only": true,
+      "true_median_s": 0.0,
+      "true_sigma_s": 10.0,
+      "original_grid_median_s": -0.9999999999999979,
+      "trapezoid_grid_median_s": 4.216116991975169e-15,
+      "original_sigma_s": 10.033595036058413,
+      "trapezoid_sigma_s": 10.037275656815773
+    },
+    {
+      "synthetic_only": true,
+      "true_median_s": 0.0,
+      "true_sigma_s": 30.0,
+      "original_grid_median_s": -1.0,
+      "trapezoid_grid_median_s": -1.6890703825703045e-14,
+      "original_sigma_s": 30.01176415034236,
+      "trapezoid_sigma_s": 30.0121691997917
+    },
+    {
+      "synthetic_only": true,
+      "true_median_s": 0.0,
+      "true_sigma_s": 60.0,
+      "original_grid_median_s": -1.000000000000025,
+      "trapezoid_grid_median_s": -1.1707793574674978e-13,
+      "original_sigma_s": 60.00685854656908,
+      "trapezoid_sigma_s": 60.00697474970933
+    }
+  ],
+  "finding": "Cumulative point masses interpolated at node centers shift symmetric posteriors earlier by half a grid step",
+  "scope": "Numerical quantile bias only; does not establish corrected real-data timing or physical bias",
+  "pipeline_sha256": "4de11086b7523ff7cf8a0021640e6cc8929db0652d77d8d05813d47e3ae4a639",
+  "script_sha256": "10e786e7c9875cf5f7cea0901136db719eddcdd985d9f16a6e227130a183fca5",
+  "command": "python scripts/review_t015_grid.py"
+}

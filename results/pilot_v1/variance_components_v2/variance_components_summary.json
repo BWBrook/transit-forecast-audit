@@ -1,0 +1,281 @@
+{
+  "development_only": true,
+  "light_curves_opened": 0,
+  "clip_local_z": 5.0,
+  "a_fixed": 1.087,
+  "issued_covariance": "diagonal published-marginal sensitivity; Cov(T0,P) remains missing",
+  "cohort": "TESS 2022-01-01..2024-01-03 in DRD mid-times; origin flags",
+  "quadrature_order": 384,
+  "source_manifest": [
+    {
+      "path": "data/raw/osf/wna5e/updated_ephemerides.txt",
+      "sha256": "086e964793d40cf99d534a806be885aaa61d172072c8810f994e197dc3a18357"
+    },
+    {
+      "path": "data/raw/osf/wna5e/4_updated_ecc.txt",
+      "sha256": "1439184879589f5ae4d426010a8ec498d08c6ff4dae45161ca40261f1fab0cb5"
+    },
+    {
+      "path": "data/raw/osf/wna5e/5_complete_ExoClock_DRB.zip",
+      "sha256": "f8a43bf718015f97db36ee3c220e654b98f008646396be8a380c137ce8f50df4"
+    },
+    {
+      "path": "data/raw/osf/p298n/catalogue_of_ephemerides.txt",
+      "sha256": "2f1e4a3ad9dd3cc9f78e38f25c3a1d1e0ead1604ea0a86f66cc752ff1a666033"
+    },
+    {
+      "path": "data/raw/osf/p298n/all_mid_time_data.txt",
+      "sha256": "68231e16f2de416b2070570ec71085db6ee91622cc231ef942bb91cc747c8f09"
+    },
+    {
+      "path": "data/raw/osf/wpjtn/catalogue_of_ephemerides.txt",
+      "sha256": "582a6ca8e65d85a5c840452f93e8dd5f0f0ef404b4c28fb4836e7b15efc094af"
+    },
+    {
+      "path": "data/raw/osf/wpjtn/all_mid_time_data.txt",
+      "sha256": "533449b7a9bede2541d78c6a2697913762ad30262bce319c79d87f02f538348c"
+    },
+    {
+      "path": "data/raw/osf/wpjtn/by_source.zip",
+      "sha256": "804f64929984599c56f5873b823414f6833a5e73f4d6d4c8b7bcfbbfbebd217f"
+    }
+  ],
+  "source_commit": "490ef7bdfa89b51c5a57a3bfe6adbec58859631f",
+  "script_sha256": "7f822a79d3fcc05c6ded10891aa285d36fe32f9cef0d4d9eb0c0e7d6a46174b9",
+  "python": "3.13.16",
+  "numpy": "2.5.4",
+  "command": "python scripts/forecast_variance_components.py --reps 20 --bootstrap 400 --a 1.087",
+  "outcome_scale_sensitivity": "Fixed a is not an independently established measurement scale",
+  "real_fit": {
+    "DRB": {
+      "planets": 134,
+      "visits": 343,
+      "events": 1731,
+      "events_clipped": 0,
+      "gaussian": {
+        "b": 3.0447650075973534,
+        "nll": 509.1077112030809,
+        "converged": true,
+        "order": 384,
+        "gradient_max": 1.347046918453998e-09,
+        "at_bound": false
+      },
+      "mixture": {
+        "b": 2.2494889923097956,
+        "nll": 493.2158221162611,
+        "converged": true,
+        "order": 384,
+        "gradient_max": 1.718325588484504e-07,
+        "at_bound": false,
+        "s_log_lambda": 1.093143294888817
+      },
+      "order192": {
+        "b": 2.2494889931743614,
+        "nll": 493.21582211626117,
+        "converged": true,
+        "order": 192,
+        "gradient_max": 5.456942275827714e-08,
+        "at_bound": false,
+        "s_log_lambda": 1.0931432979189424
+      },
+      "host_bootstrap": {
+        "hosts": 134,
+        "replicates": 400,
+        "percentile95": {
+          "b": [
+            1.849125400020239,
+            2.702895385365589
+          ],
+          "s_log_lambda": [
+            0.11858408478650323,
+            1.5630857077601286
+          ]
+        },
+        "fits_at_parameter_bound": 0,
+        "interpretation": "Host-cluster bootstrap, fixed outcome scale and selected cohort/model; no model-selection uncertainty"
+      },
+      "lr_mixture_vs_gaussian": 31.783778173639575,
+      "model_population_probability_lambda_gt_10": 0.017585284783330206,
+      "posterior_expected_planets_lambda_gt_10": 2.680228476531776,
+      "posterior_median_lambda_gt_10": 2,
+      "posterior_median_lambda_gt_100": 0
+    },
+    "DRC": {
+      "planets": 316,
+      "visits": 837,
+      "events": 3621,
+      "events_clipped": 0,
+      "gaussian": {
+        "b": 42.70149583407095,
+        "nll": 2467.1192047993454,
+        "converged": true,
+        "order": 384,
+        "gradient_max": 5.717174644814804e-08,
+        "at_bound": false
+      },
+      "mixture": {
+        "b": 0.9762581565418121,
+        "nll": 1378.649780141409,
+        "converged": true,
+        "order": 384,
+        "gradient_max": 9.835748215891726e-08,
+        "at_bound": false,
+        "s_log_lambda": 3.1486883432837303
+      },
+      "order192": {
+        "b": 0.9762906091638353,
+        "nll": 1378.6494955264964,
+        "converged": true,
+        "order": 192,
+        "gradient_max": 7.100050680719505e-08,
+        "at_bound": false,
+        "s_log_lambda": 3.148408480746069
+      },
+      "host_bootstrap": {
+        "hosts": 309,
+        "replicates": 400,
+        "percentile95": {
+          "b": [
+            0.7115578690949618,
+            1.357219111035787
+          ],
+          "s_log_lambda": [
+            1.576364632510842,
+            4.210895244137486
+          ]
+        },
+        "fits_at_parameter_bound": 0,
+        "interpretation": "Host-cluster bootstrap, fixed outcome scale and selected cohort/model; no model-selection uncertainty"
+      },
+      "lr_mixture_vs_gaussian": 2176.9388493158726,
+      "model_population_probability_lambda_gt_10": 0.23230288106602387,
+      "posterior_expected_planets_lambda_gt_10": 61.21015771860332,
+      "posterior_median_lambda_gt_10": 29,
+      "posterior_median_lambda_gt_100": 9
+    }
+  },
+  "a_sensitivity": [
+    {
+      "release": "DRB",
+      "a": 1.0,
+      "b": 2.2611465849383148,
+      "nll": 492.9229295266116,
+      "converged": true,
+      "order": 384,
+      "gradient_max": 2.329032966486011e-08,
+      "at_bound": false,
+      "s_log_lambda": 1.0907185484870758
+    },
+    {
+      "release": "DRB",
+      "a": 1.2,
+      "b": 2.233839076501823,
+      "nll": 496.91581223620625,
+      "converged": true,
+      "order": 384,
+      "gradient_max": 2.1349340428855612e-07,
+      "at_bound": false,
+      "s_log_lambda": 1.0965270426806528
+    },
+    {
+      "release": "DRC",
+      "a": 1.0,
+      "b": 1.0665623062681486,
+      "nll": 1399.7255677851908,
+      "converged": true,
+      "order": 384,
+      "gradient_max": 2.4627745034422333e-06,
+      "at_bound": false,
+      "s_log_lambda": 3.0615482027182934
+    },
+    {
+      "release": "DRC",
+      "a": 1.2,
+      "b": 0.8720391698009243,
+      "nll": 1365.6945949433918,
+      "converged": true,
+      "order": 384,
+      "gradient_max": 2.1379055183956552e-06,
+      "at_bound": false,
+      "s_log_lambda": 3.245509958234528
+    }
+  ],
+  "simulation": {
+    "design": "real DRC origin-flag visit design",
+    "replicates_per_truth": 20,
+    "seed": 20261105,
+    "recovery": [
+      {
+        "true_b": 1,
+        "true_s": 0,
+        "b": {
+          "median": 0.9765597060482045,
+          "q10": 0.8801942532693416,
+          "q90": 1.0638669633088609
+        },
+        "s_log_lambda": {
+          "median": 6.776710366565662e-05,
+          "q10": 3.228876675084582e-05,
+          "q90": 0.6350488847712591
+        }
+      },
+      {
+        "true_b": 1,
+        "true_s": 1,
+        "b": {
+          "median": 0.9988150093235879,
+          "q10": 0.8217115578035687,
+          "q90": 1.1109033201799332
+        },
+        "s_log_lambda": {
+          "median": 1.0111460068849303,
+          "q10": 0.7321541948203432,
+          "q90": 1.356398523445801
+        }
+      },
+      {
+        "true_b": 1.5,
+        "true_s": 1,
+        "b": {
+          "median": 1.4694617239811145,
+          "q10": 1.3690623884651134,
+          "q90": 1.5660501990645528
+        },
+        "s_log_lambda": {
+          "median": 1.0738654850665164,
+          "q10": 0.8706022816499418,
+          "q90": 1.2335717255444065
+        }
+      },
+      {
+        "true_b": 1,
+        "true_s": 2.5,
+        "b": {
+          "median": 1.016027286627232,
+          "q10": 0.7226151984586678,
+          "q90": 1.150431081366877
+        },
+        "s_log_lambda": {
+          "median": 2.4277519770111162,
+          "q10": 2.2184290713075576,
+          "q90": 2.8206502145762116
+        }
+      },
+      {
+        "true_b": 0.9762581565418121,
+        "true_s": 3.1486883432837303,
+        "b": {
+          "median": 0.9560203943983654,
+          "q10": 0.767702509246786,
+          "q90": 1.186087720431187
+        },
+        "s_log_lambda": {
+          "median": 3.264511271147705,
+          "q10": 2.9853891303778646,
+          "q90": 3.550578593791798
+        }
+      }
+    ]
+  },
+  "bootstrap_seed": 20261106
+}

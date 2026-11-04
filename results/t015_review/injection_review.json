@@ -1,0 +1,254 @@
+{
+  "review_scope": "Committed development CSVs only; no FITS flux, network acquisition, or protected post-2025-11-18 outcome was opened",
+  "command": "python scripts/review_t015_injections.py --bootstrap 100000",
+  "source_sha256": {
+    "results/t015/t015_events.csv": "d2273f72e73cdd210c1f25417dfac3b2eaa682065c9601e434ff04b37daec833",
+    "results/t015/t015_injections.csv": "0fc551f4f87bed76b9ddebc8e242276da326677e527152f11462ad5040ead30c",
+    "results/t015/t015_products.csv": "9584f2fe40e8ffb760879e8849a4b5056f0ecd5a11fdc68bd58d358d49b7eef2",
+    "results/t015/t015_shapes.csv": "03c68975e5b3cdab665ed37098f3e7431135f3ecdeb1b66cf36c23202f54370d",
+    "results/t015/t015_summary.json": "e1a5ec7d8ffbf4bc6953bb31b6dce756e84ff056c4f19ae008b4ed21ed4f3697",
+    "scripts/t015_timing_pipeline.py": "4de11086b7523ff7cf8a0021640e6cc8929db0652d77d8d05813d47e3ae4a639"
+  },
+  "rng_replay": {
+    "seed": 20261105,
+    "timed_parent_transits": 27,
+    "attempted": 324,
+    "accepted": 261,
+    "rejected_by_pipeline_coverage": 63,
+    "parents_with_accepted_injections": 26,
+    "parents_with_zero_accepted_injections": 1,
+    "zero_acceptance_parent_keys": [
+      "HAT-P-12b|49|2"
+    ]
+  },
+  "phase_placement": {
+    "low_band_count": 137,
+    "high_band_count": 124,
+    "minimum_exact_phase": 0.25023760090909963,
+    "maximum_exact_phase": 0.748274045543144,
+    "low_band_rms_z_scaled": 1.0849631094673724,
+    "high_band_rms_z_scaled": 0.9727780347225722,
+    "offset_replay_max_rounding_error_s": 0.004996906966198367
+  },
+  "overlap_geometry_exact_rng": {
+    "n_injections": 261,
+    "n_overlapping_at_least_one_other_window": 260,
+    "fraction_overlapping_at_least_one_other_window": 0.9961685823754789,
+    "overlapping_pairs": 662,
+    "median_pair_overlap_fraction": 0.6416382190006455,
+    "pair_overlap_fraction_q10_q90": [
+      0.22340094650372813,
+      0.9416820483300274
+    ],
+    "connected_union_components": 46,
+    "unique_over_nominal_support": 0.3217521413516204,
+    "minimum_clearance_from_nominal_transit_min": 860.392578624285
+  },
+  "overlap_geometry_rounded_csv_sensitivity": {
+    "n_injections": 261,
+    "n_overlapping_at_least_one_other_window": 260,
+    "fraction_overlapping_at_least_one_other_window": 0.9961685823754789,
+    "overlapping_pairs": 662,
+    "median_pair_overlap_fraction": 0.6411764302696255,
+    "pair_overlap_fraction_q10_q90": [
+      0.22222472469003374,
+      0.9405292380616161
+    ],
+    "connected_union_components": 46,
+    "unique_over_nominal_support": 0.32173973329687855,
+    "minimum_clearance_from_nominal_transit_min": 858.5103430042701
+  },
+  "point_estimates": {
+    "n_injections": 261,
+    "mean_z_scaled": -0.1343256704980843,
+    "rms_z_scaled": 1.0331844516402244,
+    "rms_z_white": 1.254346246355896,
+    "median_bias_s": -1.68,
+    "coverage_abs_z_lt_1_2_3": [
+      0.6628352490421456,
+      0.9425287356321839,
+      0.9885057471264368
+    ],
+    "n_abs_z_gt_3": 3
+  },
+  "cluster_comparisons": {
+    "transit_parent": {
+      "n_clusters": 26,
+      "cluster_size_min_median_max": [
+        4,
+        12.0,
+        12
+      ],
+      "row_weighted_rms_z_scaled": 1.0331844516402244,
+      "cluster_balanced_rms_z_scaled": 0.9920166333978231,
+      "row_weighted_rms_z_white": 1.254346246355896,
+      "cluster_balanced_rms_z_white": 1.2080351644921947,
+      "row_weighted_bootstrap_rms_z_scaled_q025_q50_q975": [
+        0.8988780340274176,
+        1.027195564450977,
+        1.1734823171930604
+      ],
+      "row_weighted_bootstrap_rms_z_white_q025_q50_q975": [
+        1.0327583390613788,
+        1.2413667820692524,
+        1.4961914766627966
+      ]
+    },
+    "sector_product": {
+      "n_clusters": 5,
+      "cluster_size_min_median_max": [
+        39,
+        48.0,
+        80
+      ],
+      "row_weighted_rms_z_scaled": 1.0331844516402244,
+      "cluster_balanced_rms_z_scaled": 1.0142480466072488,
+      "row_weighted_rms_z_white": 1.254346246355896,
+      "cluster_balanced_rms_z_white": 1.1784424643573819,
+      "row_weighted_bootstrap_rms_z_scaled_q025_q50_q975": [
+        0.8864034915205015,
+        1.0331844516402244,
+        1.1332613308799504
+      ],
+      "row_weighted_bootstrap_rms_z_white_q025_q50_q975": [
+        0.9135123507528367,
+        1.2524524445766099,
+        1.5495501264365805
+      ]
+    },
+    "host_planet": {
+      "n_clusters": 4,
+      "cluster_size_min_median_max": [
+        39,
+        59.5,
+        103
+      ],
+      "row_weighted_rms_z_scaled": 1.0331844516402244,
+      "cluster_balanced_rms_z_scaled": 1.0200437005811784,
+      "row_weighted_rms_z_white": 1.254346246355896,
+      "cluster_balanced_rms_z_white": 1.2154782340766135,
+      "row_weighted_bootstrap_rms_z_scaled_q025_q50_q975": [
+        0.909700250332243,
+        1.0331844516402244,
+        1.1336087649329345
+      ],
+      "row_weighted_bootstrap_rms_z_white_q025_q50_q975": [
+        0.9533192788546224,
+        1.254346246355896,
+        1.5988733779924684
+      ]
+    }
+  },
+  "parent_transit_bootstrap_median_bias_q025_q50_q975_s": [
+    -3.91,
+    -1.68,
+    0.14
+  ],
+  "leave_one_host_out": [
+    {
+      "level": "host_planet",
+      "left_out": "HAT-P-12b",
+      "n_remaining": 158,
+      "rms_z_scaled": 1.0706408142624475
+    },
+    {
+      "level": "host_planet",
+      "left_out": "HD209458b",
+      "n_remaining": 181,
+      "rms_z_scaled": 0.9688635109046222
+    },
+    {
+      "level": "host_planet",
+      "left_out": "WASP-69b",
+      "n_remaining": 222,
+      "rms_z_scaled": 1.027531240620182
+    },
+    {
+      "level": "host_planet",
+      "left_out": "WASP-80b",
+      "n_remaining": 222,
+      "rms_z_scaled": 1.0620860677531343
+    }
+  ],
+  "leave_one_product_out": [
+    {
+      "level": "sector_product",
+      "left_out": "HAT-P-12b|49",
+      "n_remaining": 206,
+      "rms_z_scaled": 1.0787623459451698
+    },
+    {
+      "level": "sector_product",
+      "left_out": "HAT-P-12b|50",
+      "n_remaining": 213,
+      "rms_z_scaled": 1.0162820645577606
+    },
+    {
+      "level": "sector_product",
+      "left_out": "HD209458b|56",
+      "n_remaining": 181,
+      "rms_z_scaled": 0.9688635109046222
+    },
+    {
+      "level": "sector_product",
+      "left_out": "WASP-69b|55",
+      "n_remaining": 222,
+      "rms_z_scaled": 1.027531240620182
+    },
+    {
+      "level": "sector_product",
+      "left_out": "WASP-80b|54",
+      "n_remaining": 222,
+      "rms_z_scaled": 1.0620860677531343
+    }
+  ],
+  "exoclock_scale_arithmetic": {
+    "median_ours_over_exoclock_sigma_among_injection_parents": 1.0843122610000018,
+    "median_ours_over_exoclock_sigma_all_27_events": 1.0829199149539332,
+    "all_event_median_ratio_times_rms_z_scaled": 1.118856018501958,
+    "fixed_all_event_ratio_times_parent_bootstrap_q025_q50_q975": [
+      0.9734129241629298,
+      1.1123705332963094,
+      1.2707873711346536
+    ],
+    "joint_parent_bootstrap_ratio_and_rms_q025_q50_q975": [
+      0.9551067933317569,
+      1.113646997269506,
+      1.3254310987762161
+    ],
+    "reported_0.96_1.29_interval_has_no_committed_generator": true
+  },
+  "three_abs_z_gt_3_rows": [
+    {
+      "planet": "HD209458b",
+      "sector": "56",
+      "host_epoch": "6",
+      "phase_exact": 0.3954234771244936,
+      "z": -3.294,
+      "overlaps_another_window": true
+    },
+    {
+      "planet": "HD209458b",
+      "sector": "56",
+      "host_epoch": "6",
+      "phase_exact": 0.3920833141425408,
+      "z": -3.356,
+      "overlaps_another_window": true
+    },
+    {
+      "planet": "HD209458b",
+      "sector": "56",
+      "host_epoch": "6",
+      "phase_exact": 0.3955124887252212,
+      "z": -3.315,
+      "overlaps_another_window": true
+    }
+  ],
+  "interpretation_limits": [
+    "The 26 clusters are parent transits, not 26 independent host stars; there are four hosts and five sector products.",
+    "The row-weighted point estimate targets accepted injection placements and gives more weight to parent transits with more accepted attempts.",
+    "The known injected shape is the same fitted shape used for recovery, so the experiment does not propagate shape uncertainty, spot crossings, or model misspecification.",
+    "Beta and reduced-chi-square scaling are estimated from the same injected window used for timing; this validates that self-scaled procedure conditionally, not a transferable catalogue-wide multiplier.",
+    "Nonparametric bootstrap intervals with four hosts or five products are too discrete for reliable population inference."
+  ]
+}

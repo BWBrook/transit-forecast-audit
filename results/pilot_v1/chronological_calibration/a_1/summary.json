@@ -1,0 +1,279 @@
+{
+  "development_only": true,
+  "light_curves_opened": 0,
+  "track": "observation-cutoff development hindcast",
+  "training_dates": [
+    "2022-01-01",
+    "2022-12-31"
+  ],
+  "evaluation_dates": [
+    "2023-01-01",
+    "2024-01-03"
+  ],
+  "date_basis": "Explicit TESS record-ID calendar labels; UTC basis and first-public availability unverified",
+  "a_fixed": 1.0,
+  "primary_a": 1.0,
+  "training_planets": 133,
+  "training_hosts": 131,
+  "evaluation_planets": 206,
+  "evaluation_hosts": 200,
+  "evaluation_windows": 457,
+  "evaluation_planets_on_previously_seen_hosts": 23,
+  "training_centre_log10_span": 3.477771237102154,
+  "training_sd_log10_span": 0.29805738731914594,
+  "models": {
+    "issued_gaussian": {
+      "b": 1.0
+    },
+    "scaled_gaussian": {
+      "b": 7.363014248483812,
+      "nll": 668.0239561264214,
+      "converged": true,
+      "order": 384,
+      "gradient_max": 1.8839342814658266e-06,
+      "at_bound": false
+    },
+    "constant_mixture": {
+      "b": 1.414986049201603,
+      "nll": 527.1167997253165,
+      "converged": true,
+      "order": 384,
+      "gradient_max": 2.5428342187439057e-07,
+      "at_bound": false,
+      "s_log_lambda": 1.9397857068432136
+    },
+    "span_mixture": {
+      "b": 1.436156687065207,
+      "nll": 526.3886525641641,
+      "converged": true,
+      "order": 384,
+      "gradient_max": 3.1140247616079364e-06,
+      "at_bound": false,
+      "s_log_lambda": 1.8504938179525217,
+      "beta_log_sd": -0.1572429060663138
+    }
+  },
+  "comparisons": [
+    {
+      "model": "issued_gaussian",
+      "mean_delta_vs_constant": -21.355671208356803,
+      "median_delta_vs_constant": 0.0941091888917931,
+      "fraction_planets_improved": 0.7524271844660194,
+      "new_host_mean_delta_vs_constant": -24.025518822543557,
+      "mean_delta_vs_issued": 0.0,
+      "host_refit_percentile95_vs_constant": [
+        -50.951721480073594,
+        -0.3260141866076918
+      ],
+      "host_refit_percentile95_vs_issued": [
+        0.0,
+        0.0
+      ],
+      "conditional_fixed_fit_percentile95_vs_constant": [
+        -50.21051097008202,
+        -0.4192393781308733
+      ],
+      "bootstrap_fits_at_bound": 0,
+      "bootstrap_fits_s_below_0_001": 400
+    },
+    {
+      "model": "scaled_gaussian",
+      "mean_delta_vs_constant": -2.9184625101225214,
+      "median_delta_vs_constant": -0.5166835113843409,
+      "fraction_planets_improved": 0.10679611650485436,
+      "new_host_mean_delta_vs_constant": -3.203755848633753,
+      "mean_delta_vs_issued": 18.437208698234283,
+      "host_refit_percentile95_vs_constant": [
+        -20.801048616373052,
+        -0.09898156373681637
+      ],
+      "host_refit_percentile95_vs_issued": [
+        0.019439168570380406,
+        43.85299440480942
+      ],
+      "conditional_fixed_fit_percentile95_vs_constant": [
+        -5.816631435208097,
+        -0.5193820953701986
+      ],
+      "bootstrap_fits_at_bound": 0,
+      "bootstrap_fits_s_below_0_001": 400
+    },
+    {
+      "model": "constant_mixture",
+      "mean_delta_vs_constant": 0.0,
+      "median_delta_vs_constant": 0.0,
+      "fraction_planets_improved": 0.0,
+      "new_host_mean_delta_vs_constant": 0.0,
+      "mean_delta_vs_issued": 21.355671208356803,
+      "host_refit_percentile95_vs_constant": [
+        0.0,
+        0.0
+      ],
+      "host_refit_percentile95_vs_issued": [
+        0.3260141866076916,
+        50.951721480073566
+      ],
+      "conditional_fixed_fit_percentile95_vs_constant": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_fits_at_bound": 0,
+      "bootstrap_fits_s_below_0_001": 5
+    },
+    {
+      "model": "span_mixture",
+      "mean_delta_vs_constant": 0.012762687784356797,
+      "median_delta_vs_constant": 0.0035484344669949107,
+      "fraction_planets_improved": 0.5631067961165048,
+      "new_host_mean_delta_vs_constant": 0.0161975505730628,
+      "mean_delta_vs_issued": 21.368433896141156,
+      "host_refit_percentile95_vs_constant": [
+        -9.071967261802193,
+        0.04294970585390235
+      ],
+      "host_refit_percentile95_vs_issued": [
+        -0.024846983452937708,
+        50.97603923329029
+      ],
+      "conditional_fixed_fit_percentile95_vs_constant": [
+        -0.004148976458931608,
+        0.034951154361661706
+      ],
+      "bootstrap_fits_at_bound": 0,
+      "bootstrap_fits_s_below_0_001": 18
+    }
+  ],
+  "q192_q384_max_score_change": {
+    "issued_gaussian": 0.0,
+    "scaled_gaussian": 0.0,
+    "constant_mixture": 3.7067782727717713e-06,
+    "span_mixture": 1.0203264224628583e-06
+  },
+  "score_concentration": [
+    {
+      "contrast": "span_mixture_vs_constant_mixture",
+      "mean_gain": 0.012762687784356797,
+      "median_planet_gain": 0.0035484344669949107,
+      "fraction_planets_improved": 0.5631067961165048,
+      "largest_positive_host_contributions": [
+        {
+          "host": "TOI-1130",
+          "contribution_to_mean": 0.008537002075926257
+        },
+        {
+          "host": "TOI-1478",
+          "contribution_to_mean": 0.002687654717437676
+        },
+        {
+          "host": "TOI-125",
+          "contribution_to_mean": 0.0026472035308710536
+        },
+        {
+          "host": "HAT-P-69",
+          "contribution_to_mean": 0.0021353347727892593
+        },
+        {
+          "host": "LP791-18",
+          "contribution_to_mean": 0.0012035295188209617
+        }
+      ],
+      "leave_one_host_out_mean_range": [
+        0.004267113999689666,
+        0.014368313606664705
+      ]
+    },
+    {
+      "contrast": "constant_mixture_vs_issued_gaussian",
+      "mean_gain": 21.355671208356803,
+      "median_planet_gain": -0.0941091888917931,
+      "fraction_planets_improved": 0.24757281553398058,
+      "largest_positive_host_contributions": [
+        {
+          "host": "WASP-161",
+          "contribution_to_mean": 10.879973662207764
+        },
+        {
+          "host": "TOI-1130",
+          "contribution_to_mean": 8.25673394243894
+        },
+        {
+          "host": "TOI-201",
+          "contribution_to_mean": 1.764755873482458
+        },
+        {
+          "host": "TOI-125",
+          "contribution_to_mean": 0.19418644841175808
+        },
+        {
+          "host": "TOI-1478",
+          "contribution_to_mean": 0.14759348356491325
+        }
+      ],
+      "leave_one_host_out_mean_range": [
+        10.52679850978879,
+        21.670080867612562
+      ]
+    }
+  ],
+  "bootstrap_seed": 20261107,
+  "bootstrap_replicates": 400,
+  "conditional_fixed_fit_bootstrap": {
+    "seed": 20261108,
+    "replicates": 2000,
+    "scope": "Resamples evaluation hosts only, with trained rule fixed; excludes training uncertainty"
+  },
+  "source_manifest": [
+    {
+      "path": "data/raw/osf/wna5e/updated_ephemerides.txt",
+      "sha256": "086e964793d40cf99d534a806be885aaa61d172072c8810f994e197dc3a18357"
+    },
+    {
+      "path": "data/raw/osf/wna5e/4_updated_ecc.txt",
+      "sha256": "1439184879589f5ae4d426010a8ec498d08c6ff4dae45161ca40261f1fab0cb5"
+    },
+    {
+      "path": "data/raw/osf/wna5e/5_complete_ExoClock_DRB.zip",
+      "sha256": "f8a43bf718015f97db36ee3c220e654b98f008646396be8a380c137ce8f50df4"
+    },
+    {
+      "path": "data/raw/osf/p298n/catalogue_of_ephemerides.txt",
+      "sha256": "2f1e4a3ad9dd3cc9f78e38f25c3a1d1e0ead1604ea0a86f66cc752ff1a666033"
+    },
+    {
+      "path": "data/raw/osf/p298n/all_mid_time_data.txt",
+      "sha256": "68231e16f2de416b2070570ec71085db6ee91622cc231ef942bb91cc747c8f09"
+    },
+    {
+      "path": "data/raw/osf/wpjtn/catalogue_of_ephemerides.txt",
+      "sha256": "582a6ca8e65d85a5c840452f93e8dd5f0f0ef404b4c28fb4836e7b15efc094af"
+    },
+    {
+      "path": "data/raw/osf/wpjtn/all_mid_time_data.txt",
+      "sha256": "533449b7a9bede2541d78c6a2697913762ad30262bce319c79d87f02f538348c"
+    },
+    {
+      "path": "data/raw/osf/wpjtn/by_source.zip",
+      "sha256": "804f64929984599c56f5873b823414f6833a5e73f4d6d4c8b7bcfbbfbebd217f"
+    }
+  ],
+  "script_sha256": "a7c3badf6c876a58e9f686078efb3ed15f749c4d0d9e6a1d4cded9ec121cfd33",
+  "dependencies": [
+    {
+      "path": "scripts/forecast_variance_components.py",
+      "sha256": "7f822a79d3fcc05c6ded10891aa285d36fe32f9cef0d4d9eb0c0e7d6a46174b9"
+    },
+    {
+      "path": "results/pilot_v1/tranche2_review/metadata_per_planet.csv",
+      "sha256": "60ef691a1a6ec966dc7d3f439c08f03eebd9c65485c814a60c345d3bc7be7359"
+    }
+  ],
+  "command": "python scripts/chronological_calibration.py --bootstrap 400 --a 1.0",
+  "limitations": [
+    "All outcomes previously inspected; predictor nominated after inspecting the full development era",
+    "2022 outcomes precede conservative DRC issue date; first-public availability of timings is unresolved",
+    "Joint per-planet density divided by retained windows, then equal-planet mean; not a pooled event log score",
+    "Population mixture prediction without per-planet posterior updating",
+    "Joint host resampling refits on early outcomes and evaluates on late outcomes; fixed a, family and selected cohort",
+    "Missing issued covariance remains a diagonal-marginal sensitivity; no sealed evaluation or model selection"
+  ]
+}
