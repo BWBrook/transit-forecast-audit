@@ -90,25 +90,29 @@ S_MAX = 5.0  # lambda spans exp(+-5 s) at the outer nodes; s > 5 is not a scale-
 
 
 def precompute(planets, ys):
-    """Rank-2 forecast covariance X C X' = U U', U = [sigma_T0 1, sigma_P n]."""
+    """Rank-2 forecast covariance X C X' = U U', U = [sigma_T0 1, sigma_P n].
+
+    Whitened by D = diag(se^2) and split by SVD, so the quadratic form is a sum
+    of non-negative terms (no subtractive cancellation at large c; D031).
+    """
     pre = []
     for p, y in zip(planets, ys):
         d = p["se"] ** 2
-        U = np.column_stack([np.full(len(y), p["st0"]), p["sp"] * p["n"]])
-        G = U.T @ (U / d[:, None])
-        lam, Q = np.linalg.eigh(G)
-        r = Q.T @ (U.T @ (y / d))
-        pre.append((float(np.sum(y * y / d)), np.maximum(lam, 0.0), r * r,
-                    float(np.sum(np.log(d))), len(y)))
+        yw = y / np.sqrt(d)
+        Uw = np.column_stack([np.full(len(y), p["st0"]), p["sp"] * p["n"]]) / np.sqrt(d)[:, None]
+        W, sv, _ = np.linalg.svd(Uw, full_matrices=False)
+        proj = W.T @ yw
+        q_perp = float(np.sum((yw - W @ proj) ** 2))
+        pre.append((q_perp, sv**2, proj**2, float(np.sum(np.log(d))), len(y)))
     return pre
 
 
 def planet_ll(pre, c):
     """log N(y; 0, D + c U U') for each planet, vectorised over an array of c."""
     out = []
-    for q, lam, r2, logd, k in pre:
+    for q_perp, lam, w2, logd, k in pre:
         cc = np.asarray(c)[..., None]
-        quad = q - np.sum(r2 / (1 / cc + lam), axis=-1)
+        quad = q_perp + np.sum(w2 / (1 + cc * lam), axis=-1)
         logdet = logd + np.sum(np.log1p(cc * lam), axis=-1)
         out.append(-0.5 * (quad + logdet + k * np.log(2 * np.pi)))
     return np.array(out)

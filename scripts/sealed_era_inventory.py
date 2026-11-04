@@ -38,7 +38,7 @@ QUERIES = {
     "toi.csv": "select toi,tid,ra,dec,st_tmag from toi",
 }
 JD_SEAL = 2460998.5          # 2025-11-19 00:00 UTC: first day of the sealed era
-JD_STRICT_A = 2461082.5      # 2026-02-12: day after DRD journal publication (D023)
+JD_STRICT_A = 2461083.5      # 2026-02-12 00:00 UTC: day after DRD journal publication (D023, D033)
 HALF = 13.7
 
 

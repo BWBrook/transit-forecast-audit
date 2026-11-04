@@ -22,12 +22,16 @@ class ForecastVarianceTests(unittest.TestCase):
     def test_rank_two_likelihood_matches_dense_cholesky(self):
         p = self.planets[7]
         y = np.linspace(-1, 2, len(p["n"]))
-        for c in (0.01, 1.0, 50.0):
+        for c in (0.01, 1.0, 50.0, 1e8):
             V = np.diag(p["se"] ** 2) + c * (p["st0"] ** 2 + np.outer(p["n"], p["n"]) * p["sp"] ** 2)
             sign, logdet = np.linalg.slogdet(V)
             dense = -0.5 * (logdet + y @ np.linalg.solve(V, y) + len(y) * np.log(2 * np.pi))
             fast = self.f.planet_ll(self.f.precompute([p], [y]), c)[0]
-            self.assertAlmostEqual(dense, float(fast), places=8)
+            self.assertAlmostEqual(dense, float(fast), delta=1e-7 * max(1.0, abs(dense)))
+        pre = self.f.precompute([p], [y])
+        rank = int(np.sum(pre[0][1] > 0))
+        limit = [float(self.f.planet_ll(pre, c)[0]) + 0.5 * rank * np.log(c) for c in (1e16, 1e32)]
+        self.assertAlmostEqual(limit[0], limit[1], places=6)
 
     def test_scale_mixture_recovers_inflation_and_spread(self):
         rng = np.random.default_rng(11)
