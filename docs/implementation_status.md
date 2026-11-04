@@ -9,6 +9,12 @@
 | Dependence helpers | `scoring.py` | Equal-planet means and host-cluster bootstrap of precomputed planet means |
 | Chronology and lineage guards | `src/transit_audit/provenance.py` | Explicit normalised records, historical availability, duplicate atomic exposures, strict issued-date checks |
 | Executable example | `src/transit_audit/demo.py` | 24 artificial planets, 168 later timing scores, one origin per planet |
+| ExoClock release readers | `src/transit_audit/exoclock.py` | DRB 17-col TSV with flags; DRC/DRD catalogues and mid-time files; nearest-epoch O−C with the Table 5 sigma |
+| OSF acquisition | `scripts/acquire_osf.py` | Pinned GUIDs, OSF version metadata, SHA-256, refuses hash drift |
+| Track R reproduction | `scripts/reproduce_table5.py` | Exact DRB/DRC Table 5; origin-flag, availability and planet-balanced sensitivities |
+| Covariance audit | `scripts/covariance_completeness.py` | Refit from released inputs; implied corr(T0,P) at published epoch |
+| Measurement calibration | `scripts/tess_measurement_calibration.py` | Forecast-free within-visit test of TESS σ_Tmid |
+| Pilot dossiers | `scripts/pilot_dossiers.py` | DRB flow, 10-planet dossiers, pair codes, plots (`uv run --extra analysis`) |
 | CLI | `src/transit_audit/__main__.py` | `demo --output NEW_DIRECTORY`; refuses to overwrite demonstration outputs |
 
 `docs/scaffold_review.md` records an independent review of these components.

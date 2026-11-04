@@ -1,5 +1,7 @@
 # Data sources, historical availability and provenance
 
+**Update 2026-11-04 (Claude, pilot v1):** the OSF release files for DRB, DRC and DRD were retrieved through the OSF v2 API, which was reachable from `mini`. Every retrieved file is still at OSF version 1, uploaded 2021-10-27/28 (DRB), 2022-09-27 (DRC) and 2025-11-17 (DRD). Hashes and file GUIDs are in `results/pilot_v1/source_manifest.csv` and the acquisition script is `scripts/acquire_osf.py`. Licence on all three OSF nodes is CC BY 4.0. Schemas: the DRB ephemerides are a 17-column TSV that includes the uncertainty scaling factor and non-linear/high-frequency-noise flags; the DRC/DRD catalogues have five columns (T0, σ, P, σ); and the `all_mid_time_data.txt` files carry planet, Tmid, σ, source class and a record ID (TESS IDs embed epoch and UTC date). The DRC mid-time header omits the `Planet` label. No release contains a covariance field. The DRB zip also holds per-planet input timings (`data_sources/`). The text below is the original seed reconnaissance.
+
 **Status: preliminary reconnaissance, checked 4 November 2026.** Public sources support a credible pilot, but no real timing data have yet passed this project's eligibility checks. The live ExoClock JSON payload and OSF release files were not downloaded in this reconnaissance. Their field-level contents, hashes, file histories and complete covariance information remain to be checked. A source being publicly described is different from a particular historical file having been acquired and verified.
 
 ## 1. Recommended acquisition order

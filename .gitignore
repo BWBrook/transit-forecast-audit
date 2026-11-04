@@ -17,6 +17,7 @@ data/derived/*
 results/*
 !results/README.md
 !results/seed_demo/
+!results/pilot_v1/
 results/seed_demo/*
 !results/seed_demo/synthetic_summary.json
 !results/seed_demo/synthetic_scores.csv

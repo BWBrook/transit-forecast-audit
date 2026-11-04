@@ -55,12 +55,14 @@ recalibration if justified. Its novelty is **provisional**. See
 
 ## What the seed does not establish
 
-The ExoClock release files have not been acquired and audited end to end. OSF
-release locations are documented by the primary papers, but access was blocked
-in the research environment. Historical covariance availability, exact release
-file schemas and independence of a final outcome cohort remain feasibility
-questions. The example results are synthetic; there are no measured findings
-about real exoplanet forecast reliability in this repository.
+**Update 2026-11-04 (pilot v1).** The DRB, DRC and DRD OSF release files have
+been acquired with hashes. ExoClock IV Table 5 now reproduces exactly for DRB
+and DRC, and DRD differs by one boundary measurement. The pilot is development
+material and makes no population claim. See
+[results/pilot_v1/README.md](results/pilot_v1/README.md) and decisions
+D012–D019. Still open: exposure-level lineage and the prior used for the
+outcome mid-times, an untouched evaluation era, and the citing-literature
+sweep. The `seed_demo` outputs remain synthetic.
 
 The numerical package is a foundation, not a complete ingestion or light-curve
 reduction pipeline. It does not convert HJD/UTC to BJD/TDB, recover omitted

@@ -1,19 +1,18 @@
 # Licensing and attribution
 
-The project owner has not yet selected a software/documentation licence. This
-seed leaves that choice explicit and makes no claim to relicense any external
-data or paper. Add the chosen licence before a public software release.
+Code is MIT (`LICENSE`). Text, figures and derived data written for this
+project are CC BY-SA 4.0 (`LICENSE-CONTENT`). Barry chose this for all new
+repositories on 2026-11-02 ("Open by default"); D011 records it here.
 
-The archive contains original project documentation/code, bibliography metadata,
-small attributed numerical benchmark targets and labelled artificial examples.
-It contains no redistributed article PDFs or downloaded bulk astronomy archives.
+Third-party data keep their own terms. The ExoClock DRB, DRC and DRD OSF
+releases (10.17605/OSF.IO/WNA5E, P298N, WPJTN) are CC BY 4.0. Cite Kokori et
+al. 2022, 2023 and 2026 and the OSF DOIs whenever derived values are used. Raw
+release bytes are not committed. `data/raw/` is gitignored and
+`scripts/acquire_osf.py` re-fetches the bytes and verifies their hashes.
 
-For each future source, record the actual data/software licence and required
-citations in the source manifest. Public availability and a paper's open-access
-licence do not automatically establish the terms of every associated file.
-Preserve observer credit and the database's requested acknowledgment where
-applicable. Follow `docs/data_sources.md` for the currently verified information.
-
-`data/fixtures/published_benchmark_targets.csv` attributes factual aggregate values
-to ExoClock IV; those are reproduction targets from the existing literature, not
-new project findings.
+`data/fixtures/published_benchmark_targets.csv` and
+`data/fixtures/exoclock_ttv_flags.csv` hold factual values transcribed from the
+ExoClock papers, with attribution. They are reproduction targets, not project
+findings. TESS products, where used later, follow MAST's terms and the TESS
+mission acknowledgement. Preserve observer credit and the acknowledgement each
+database requests.

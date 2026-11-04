@@ -1,0 +1,82 @@
+{
+  "track": "R",
+  "definition": "TESS mid-times in DRD all_mid_time_data.txt with record-ID date >= 2022-01-01; planet in the release; DRD 42 TTV-flagged planets excluded; nearest epoch; |O-C| / sqrt(sigma_Tmid^2 + sigma_T0^2 + (n sigma_P)^2) < k; pooled over measurements",
+  "checks": {
+    "DRB": {
+      "planets": [
+        130,
+        130
+      ],
+      "measurements": [
+        1585,
+        1585
+      ],
+      "pct": [
+        [
+          48.01,
+          76.53,
+          93.5,
+          98.3
+        ],
+        [
+          48.01,
+          76.53,
+          93.5,
+          98.3
+        ]
+      ],
+      "exact": true
+    },
+    "DRC": {
+      "planets": [
+        308,
+        308
+      ],
+      "measurements": [
+        3604,
+        3604
+      ],
+      "pct": [
+        [
+          62.32,
+          91.32,
+          98.34,
+          99.61
+        ],
+        [
+          62.32,
+          91.32,
+          98.34,
+          99.61
+        ]
+      ],
+      "exact": true
+    },
+    "DRD": {
+      "planets": [
+        424,
+        424
+      ],
+      "measurements": [
+        4716,
+        4716
+      ],
+      "pct": [
+        [
+          66.41,
+          93.7,
+          99.28,
+          99.96
+        ],
+        [
+          66.39,
+          93.7,
+          99.28,
+          99.96
+        ]
+      ],
+      "exact": false
+    }
+  },
+  "development_only": true
+}

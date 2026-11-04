@@ -13,5 +13,10 @@ dependencies = ["numpy>=1.26,<3"]
 [project.scripts]
 transit-audit = "transit_audit.__main__:main"
 
+[project.optional-dependencies]
+analysis = [
+    "matplotlib>=3.11.2",
+]
+
 [tool.setuptools.packages.find]
 where = ["src"]

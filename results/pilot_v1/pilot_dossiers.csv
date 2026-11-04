@@ -1,0 +1,11 @@
+planet,host,drb_t0_bjd_tdb,drb_sigma_t0_min,drb_period_days,drb_sigma_period_s,drb_flags,drc_ttv_flag,drd_ttv_flag,drb_inputs,drb_first_input,drb_last_input,drb_input_sources,tess_2022plus_events,first_event,last_event,epochs_from_t0,median_oc_min,median_pred_sd_min,median_meas_sd_min,max_abs_z,frac_abs_z_lt_3
+HAT-P-12b,HAT-P-12,2456716.5327,0.086,3.21305751,0.0147,none,False,False,81,2007-03-28,2020-12-07,ExoClock;Literature,10,2022-03-05,2022-04-19,911..925,0.23,0.24,0.67,1.91,1.0
+HAT-P-27b,HAT-P-27,2456638.93852,0.173,3.0395778,0.0216,none,False,False,14,2009-12-20,2020-05-22,ExoClock;Literature,3,2022-04-30,2022-05-15,1007..1012,0.47,0.4,1.08,2.44,1.0
+HD209458b,HD209458,2455015.49844,0.173,3.5247499,0.0259,none,False,False,22,2004-08-17,2020-10-09,ExoClock;Literature,8,2022-09-04,2022-09-28,1365..1372,-1.53,0.62,0.13,2.86,1.0
+WASP-52b,WASP-52,2456770.05972,0.058,1.74978119,0.0086,none,False,False,57,2011-08-20,2020-11-20,ExoClock;Literature,0,,,,,,,,
+WASP-69b,WASP-69,2457176.17789,0.245,3.868139,0.0518,none,False,False,9,2011-07-06,2020-09-13,ExoClock;Literature,4,2022-08-07,2022-08-26,678..683,-0.88,0.64,0.21,1.76,1.0
+WASP-74b,WASP-74,2457205.93774,0.144,2.1377516,0.0518,none,False,False,14,2013-08-02,2020-07-30,ExoClock;Literature,0,,,,,,,,
+WASP-80b,WASP-80,2456671.49615,0.058,3.06785271,0.0164,none,False,False,30,2012-07-16,2020-09-14,ExoClock;Literature,5,2022-07-09,2022-08-03,1010..1018,-1.12,0.28,0.22,3.97,0.2
+WASP-43b,WASP-43,2456047.051715,0.032,0.81347414,0.0026,high_frequency_noise,False,False,126,2010-11-28,2020-12-27,ExoClock;Literature,27,2023-02-14,2023-03-10,4847..4876,-0.66,0.21,0.3,3.03,0.963
+Qatar-1b,Qatar-1,2457026.47712,0.072,1.42002461,0.006,none,True,False,129,2010-11-17,2020-10-26,ExoClock;Literature,91,2022-02-01,2022-12-22,1821..2049,-1.22,0.21,0.63,4.29,0.912
+WASP-12b,WASP-12,2456594.6816,0.058,1.09141964,0.0035,nonlinear;high_frequency_noise,True,True,213,2008-02-12,2020-12-20,ExoClock;Literature,36,2023-10-18,2023-12-06,3336..3381,-7.08,0.2,0.66,13.19,0.0

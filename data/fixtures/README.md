@@ -34,6 +34,15 @@ Use this fixture as a named target for **Track R: reproduction**. A completed re
 
 The synthetic example outputs under results/seed_demo are a different type of artifact: software demonstrations generated from simulated observations. They must never be pooled with this published reference table or presented as new empirical findings.
 
+## exoclock_ttv_flags.csv
+
+Hand-transcribed lists of planets flagged for TTVs. The DRC rows come from
+ExoClock III (arXiv:2209.09673v1, TTV table; 19 planets). The DRD rows come
+from ExoClock IV (arXiv:2511.14407v1, §4.4 text list of 30 multi-planet systems
+plus Table tab:ttvs with 12 others). DRB's own non-linear flag is read directly
+from the DRB release file. Excluding the DRD set reproduces Table 5 exactly;
+the DRC and DRB sets define flags known at origin (decision D015).
+
 ## Other fixture policy
 
 Any future fixture must state whether it is synthetic, hand-transcribed published data, or a small excerpt from an acquired archive. Retain source identifiers, licences, units and uncertainty conventions. A few factual table values do not grant permission to redistribute entire source articles or datasets.

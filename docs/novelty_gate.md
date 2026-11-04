@@ -1,7 +1,41 @@
 # Novelty and feasibility decision
 
-**Current decision: proceed to a small reproduction/feasibility pilot; do not yet
-commit to a journal claim or a large data-ingestion programme.**
+**Current decision (2026-11-04, after pilot v1): continue, with the extension
+re-aimed. Track R is reproduced exactly. The candidate contribution is now a
+variance-components evaluation that separates TESS timing-error calibration
+from ephemeris calibration, plus a genuinely untouched DRD-era test. No journal
+claim yet: the citing-literature sweep (T001) is incomplete.**
+
+### Decision record, pilot v1 (Claude)
+
+1. **Nearest result:** Kokori et al. 2026 (ExoClock IV) §5.1, Table 5. The
+   definition was recovered from the arXiv v1 TeX source. It is reproduced
+   exactly by `scripts/reproduce_table5.py` (DRB, DRC) and differs by one
+   boundary measurement for DRD.
+2. **Quantity we would estimate differently:** forecast calibration as a
+   function of horizon, separated from measurement-error calibration. It would
+   be planet-balanced and use only flags known at origin.
+3. **Astronomical consequence:** for DRC, Table 5's 62% at 1σ and 1.7% 3σ
+   misses are mostly the behaviour of TESS σ_Tmid, which are about 7–11% too
+   small. Once flags are restricted to those known at origin and planets are
+   balanced, about 5% of planets miss at 3σ. Ariel scheduling margins depend
+   on the forecast term, which the published statistic barely isolates.
+4. **Inputs:** OSF v1 artifacts with hashes; release-stated BJD_TDB;
+   covariance is reconstructed and negligible (D016); outcome lineage is by
+   date only.
+5. **New outcome era:** TESS from 2025-11-19, after DRD's issue (D018). It is
+   independent because it postdates every ExoClock release, but it requires
+   our own frozen timing pipeline (T015).
+6. **Precision:** the development era has 316 DRC planets under S2, giving a
+   host-cluster CI for the planet-balanced 3σ miss of about ±2.5 pp. The size
+   of the untouched era is not yet known (T016).
+7. **Searches completed:** two quick web searches found no extension of
+   Table 5. A systematic sweep of works citing ExoClock III/IV is outstanding.
+8. **Decision:** continue. Revisit after T001 and Codex's independent
+   reproduction.
+
+Earlier seed decision: proceed to a small reproduction/feasibility pilot; do not yet
+commit to a journal claim or a large data-ingestion programme.
 
 ## What is already established
 
