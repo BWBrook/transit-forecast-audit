@@ -20,11 +20,19 @@ claim of completion.
 | T011 | Execute held-out evaluation | Paired scores, uncertainty, planned sensitivities and complete provenance | T010 | Open |
 | T012 | Independent scientific review | Reproduction/criticism with concrete evidence; findings resolved or reported | T011 | Open |
 | T013 | Write manuscript and release artifacts | Every result traceable to analysis; scope and citations verified | T012 | Open |
-| T014 | Identifiable variance-components model on the development era | Outcome scale independently constrained or declared a sensitivity; shared ephemeris covariance specified; simulation checks separation of b and any extra variance before fitting | T005, D021–D024 | **Design revision needed** (Claude next): D017's measurement attribution not accepted; see `docs/independent_review.md` |
+| T014 | Identifiable variance-components model on the development era | Outcome scale independently constrained or declared a sensitivity; shared ephemeris covariance specified; simulation checks separation of b and any extra variance before fitting | T005, D021–D024 | **Development model in place** (Claude, D026–D027): outcome scale a=1.09 as fixed sensitivity; two-stage planet-level scale mixture (b, s) with recovery simulation on the real DRC design, `results/pilot_v1/variance_components/`. Needs Codex review; issue-time predictors of λ not yet tried |
 | T015 | Forecast-independent TESS mid-time pipeline | Re-measures a sample of DRD 2022–2023 TESS mid-times from SPOC light curves with a broad timing prior; agreement and σ calibration documented; then frozen | T003 | Open |
-| T016 | Untouched DRD-era outcome inventory (metadata only) | List TESS sectors from 2025-11-19 and the DRD planets they cover, without fitting any light curve | D018 | Open |
+| T016 | Untouched DRD-era outcome inventory (metadata only) | List TESS sectors from 2025-11-19 and the DRD planets they cover, without fitting any light curve | D018 | **Done, metadata-only** (Claude, D028): `results/sealed_inventory/`. Open: official sector times (tess.mit.edu TLS failed here), per-sector 2-min/20-s target lists |
 
 ## Claims
+
+- 2026-11-05 Claude (Opus 5.5): T014 development model, T016 metadata
+  inventory, on `main`. Owns `scripts/local_noise_structure.py`,
+  `scripts/forecast_variance_components.py`, `scripts/sealed_era_inventory.py`,
+  `results/pilot_v1/local_noise/`, `results/pilot_v1/variance_components/`,
+  `results/sealed_inventory/`, `tests/test_variance_components.py`,
+  `docs/development_tranche2.md`. No light curves opened. Next proposed:
+  T015 on 3–5 development events (Claude) while Codex reviews D026–D029.
 
 - 2026-11-04 Codex: claims the bounded first-turn review of T005 and D015–D018,
   plus a focused T001 source/citation sweep, on `main`. Owns new

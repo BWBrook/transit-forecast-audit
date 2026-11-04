@@ -1,0 +1,376 @@
+{
+  "development_only_metadata": true,
+  "light_curves_opened": 0,
+  "today": "2026-11-04",
+  "seal_start": "2025-11-19",
+  "strict_track_a_start": "2026-02-11",
+  "drd_planets": 620,
+  "unmatched_coordinates": [
+    "Kepler-854b"
+  ],
+  "sectors_considered": [
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134
+  ],
+  "planet_sectors_total": 1390,
+  "planets_any_sealed_sector": 450,
+  "planets_observed_by_today": 224,
+  "hosts_observed_by_today": 206,
+  "predicted_transits_observed_by_today": 5071,
+  "planets_observed_strict_A_window": 171,
+  "predicted_transits_strict_A_observed": 4006,
+  "by_sector": {
+    "98": {
+      "planets": 46,
+      "window": [
+        "2025-11-23",
+        "2025-12-21"
+      ],
+      "status": "observed"
+    },
+    "99": {
+      "planets": 37,
+      "window": [
+        "2026-01-05",
+        "2026-02-01"
+      ],
+      "status": "observed"
+    },
+    "100": {
+      "planets": 41,
+      "window": [
+        "2026-02-01",
+        "2026-03-01"
+      ],
+      "status": "observed"
+    },
+    "101": {
+      "planets": 39,
+      "window": [
+        "2026-02-28",
+        "2026-03-27"
+      ],
+      "status": "observed"
+    },
+    "102": {
+      "planets": 31,
+      "window": [
+        "2026-03-25",
+        "2026-04-22"
+      ],
+      "status": "observed"
+    },
+    "103": {
+      "planets": 30,
+      "window": [
+        "2026-04-20",
+        "2026-05-17"
+      ],
+      "status": "observed"
+    },
+    "104": {
+      "planets": 38,
+      "window": [
+        "2026-05-16",
+        "2026-06-13"
+      ],
+      "status": "observed"
+    },
+    "105": {
+      "planets": 39,
+      "window": [
+        "2026-06-13",
+        "2026-07-10"
+      ],
+      "status": "observed"
+    },
+    "106": {
+      "planets": 43,
+      "window": [
+        "2026-07-11",
+        "2026-08-08"
+      ],
+      "status": "observed"
+    },
+    "107": {
+      "planets": 48,
+      "window": [
+        "2026-08-09",
+        "2026-09-06"
+      ],
+      "status": "observed"
+    },
+    "108": {
+      "planets": 41,
+      "window": [
+        "2026-09-07",
+        "2026-10-04"
+      ],
+      "status": "observed"
+    },
+    "109": {
+      "planets": 41,
+      "window": [
+        "2026-10-04",
+        "2026-10-31"
+      ],
+      "status": "observed"
+    },
+    "110": {
+      "planets": 28,
+      "window": [
+        "2026-10-30",
+        "2026-11-26"
+      ],
+      "status": "in_progress"
+    },
+    "111": {
+      "planets": 29,
+      "window": [
+        "2026-11-25",
+        "2026-12-22"
+      ],
+      "status": "future"
+    },
+    "112": {
+      "planets": 40,
+      "window": [
+        "2026-12-21",
+        "2027-01-17"
+      ],
+      "status": "future"
+    },
+    "113": {
+      "planets": 34,
+      "window": [
+        "2027-01-16",
+        "2027-02-13"
+      ],
+      "status": "future"
+    },
+    "114": {
+      "planets": 33,
+      "window": [
+        "2027-02-13",
+        "2027-03-13"
+      ],
+      "status": "future"
+    },
+    "115": {
+      "planets": 27,
+      "window": [
+        "2027-03-14",
+        "2027-04-11"
+      ],
+      "status": "future"
+    },
+    "116": {
+      "planets": 23,
+      "window": [
+        "2027-04-12",
+        "2027-05-09"
+      ],
+      "status": "future"
+    },
+    "117": {
+      "planets": 28,
+      "window": [
+        "2027-05-10",
+        "2027-06-06"
+      ],
+      "status": "future"
+    },
+    "118": {
+      "planets": 39,
+      "window": [
+        "2027-06-06",
+        "2027-07-03"
+      ],
+      "status": "future"
+    },
+    "119": {
+      "planets": 49,
+      "window": [
+        "2027-07-02",
+        "2027-07-29"
+      ],
+      "status": "future"
+    },
+    "120": {
+      "planets": 61,
+      "window": [
+        "2027-07-27",
+        "2027-08-24"
+      ],
+      "status": "future"
+    },
+    "121": {
+      "planets": 44,
+      "window": [
+        "2027-08-22",
+        "2027-09-19"
+      ],
+      "status": "future"
+    },
+    "122": {
+      "planets": 33,
+      "window": [
+        "2027-09-19",
+        "2027-10-16"
+      ],
+      "status": "future"
+    },
+    "123": {
+      "planets": 31,
+      "window": [
+        "2027-10-17",
+        "2027-11-14"
+      ],
+      "status": "future"
+    },
+    "124": {
+      "planets": 41,
+      "window": [
+        "2027-11-15",
+        "2027-12-13"
+      ],
+      "status": "future"
+    },
+    "125": {
+      "planets": 46,
+      "window": [
+        "2027-12-14",
+        "2028-01-10"
+      ],
+      "status": "future"
+    },
+    "126": {
+      "planets": 61,
+      "window": [
+        "2028-01-10",
+        "2028-02-07"
+      ],
+      "status": "future"
+    },
+    "127": {
+      "planets": 54,
+      "window": [
+        "2028-02-06",
+        "2028-03-04"
+      ],
+      "status": "future"
+    },
+    "128": {
+      "planets": 31,
+      "window": [
+        "2028-03-03",
+        "2028-03-30"
+      ],
+      "status": "future"
+    },
+    "129": {
+      "planets": 28,
+      "window": [
+        "2028-03-29",
+        "2028-04-25"
+      ],
+      "status": "future"
+    },
+    "130": {
+      "planets": 30,
+      "window": [
+        "2028-04-24",
+        "2028-05-22"
+      ],
+      "status": "future"
+    },
+    "131": {
+      "planets": 31,
+      "window": [
+        "2028-05-22",
+        "2028-06-18"
+      ],
+      "status": "future"
+    },
+    "132": {
+      "planets": 39,
+      "window": [
+        "2028-06-19",
+        "2028-07-17"
+      ],
+      "status": "future"
+    },
+    "133": {
+      "planets": 21,
+      "window": [
+        "2028-07-18",
+        "2028-08-15"
+      ],
+      "status": "future"
+    },
+    "134": {
+      "planets": 35,
+      "window": [
+        "2028-08-16",
+        "2028-09-12"
+      ],
+      "status": "future"
+    }
+  },
+  "sources": [
+    {
+      "file": "data/raw/exoplanet_archive/pscomppars.csv",
+      "query": "select pl_name,hostname,ra,dec,sy_tmag,tic_id from pscomppars",
+      "sha256": "b99a83e46a3c332050ba4ed1d7f8c2f8019f6a8ecb4ada23d2b30f0995b73fb7",
+      "retrieved_utc": "2026-11-04T21:40:21.513070+00:00"
+    },
+    {
+      "file": "data/raw/exoplanet_archive/toi.csv",
+      "query": "select toi,tid,ra,dec,st_tmag from toi",
+      "sha256": "caca7276b188f9af45c6446055cefbade59532a833328b689d561e0be2647c5e",
+      "retrieved_utc": "2026-11-04T21:40:23.695421+00:00"
+    }
+  ],
+  "tess_point_version": "0.9.5.post1",
+  "caveats": [
+    "FFI pointing coverage only; cadence and data-gap losses not applied",
+    "sector windows approximate (midtime +/- 13.7 d)",
+    "predicted transit counts use DRD ephemeris; real usable counts will be lower"
+  ],
+  "command": "uv run --extra analysis python scripts/sealed_era_inventory.py"
+}

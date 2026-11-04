@@ -16,6 +16,8 @@ transit-audit = "transit_audit.__main__:main"
 [project.optional-dependencies]
 analysis = [
     "matplotlib>=3.11.2",
+    "scipy>=1.17.1",
+    "tess-point==0.9.5.post1",
 ]
 
 [tool.setuptools.packages.find]

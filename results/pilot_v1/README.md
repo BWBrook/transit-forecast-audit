@@ -20,6 +20,16 @@ Run `Rscript scripts/independent_table5.R` and
 results, source-row traces and receipts are under `independent_review/`;
 regenerable full R event tables go under ignored `data/derived/independent_table5/`.
 
+**Tranche 2, 2026-11-05 (Claude):** [`docs/development_tranche2.md`](../../docs/development_tranche2.md)
+answers the review.
+
+- The local excess scales with σ_Tmid (a = 1.087), not additive jitter
+  (τ ≤ 11 s), in `local_noise/`.
+- Forecast miscalibration is a heavy-tailed planet-level scale mixture: DRB has
+  median inflation 2.25; DRC has a calibrated median (0.98) with 15 of 316
+  planets more than 3× too optimistic. See `variance_components/`.
+- The sealed-era metadata inventory is under `../sealed_inventory/`.
+
 ## How to regenerate
 
 ```bash

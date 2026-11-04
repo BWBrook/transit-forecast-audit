@@ -1,0 +1,89 @@
+{
+  "development_only": true,
+  "light_curves_opened": 0,
+  "selection": "DRD all_mid_time_data TESS 2022-01-01..2024-01-03, DRD TTV-flagged planets excluded, span-capped 20-day groups with >=3 events (D022)",
+  "model": "Var = a^2 sigma^2 + tau^2 (minutes), exact REML, per-group intercept (+ slope)",
+  "command": "uv run --extra analysis python scripts/local_noise_structure.py",
+  "results": {
+    "local_mean": {
+      "null_a1_tau0": {
+        "a": 1.0,
+        "tau_min": 0.0,
+        "nll": 3177.2569142438747
+      },
+      "scale_only": {
+        "a": 1.1019808961903332,
+        "tau_min": 0.0,
+        "nll": 3142.5295423516263
+      },
+      "jitter_only": {
+        "a": 1.0,
+        "tau_min": 0.19922672120156007,
+        "nll": 3164.443805781309
+      },
+      "scale_plus_jitter": {
+        "a": 1.096886896939627,
+        "tau_min": 0.06991650487340606,
+        "nll": 3141.9173874925295
+      },
+      "lr_jitter_given_scale": 1.224309718193581,
+      "lr_scale_given_jitter": 45.05283657755899,
+      "groups": 726,
+      "events": 4173,
+      "planets": 336,
+      "sigma_quantiles_min": [
+        0.0547,
+        0.4464,
+        1.1376,
+        3.024,
+        40.32
+      ]
+    },
+    "local_linear": {
+      "null_a1_tau0": {
+        "a": 1.0,
+        "tau_min": 0.0,
+        "nll": 3650.5693806566155
+      },
+      "scale_only": {
+        "a": 1.0938324076624664,
+        "tau_min": 0.0,
+        "nll": 3627.305837662914
+      },
+      "jitter_only": {
+        "a": 1.0,
+        "tau_min": 0.19860694659105343,
+        "nll": 3640.2625302935458
+      },
+      "scale_plus_jitter": {
+        "a": 1.086576469807145,
+        "tau_min": 0.08341004803614924,
+        "nll": 3626.567763221765
+      },
+      "lr_jitter_given_scale": 1.4761488822987303,
+      "lr_scale_given_jitter": 27.389534143561832,
+      "groups": 726,
+      "events": 4173,
+      "planets": 336,
+      "sigma_quantiles_min": [
+        0.0547,
+        0.4464,
+        1.1376,
+        3.024,
+        40.32
+      ],
+      "planet_bootstrap": {
+        "n": 200,
+        "seed": 20261105,
+        "a_ci95": [
+          1.0434,
+          1.1168
+        ],
+        "tau_min_ci95": [
+          0.0263,
+          0.1836
+        ]
+      }
+    }
+  }
+}

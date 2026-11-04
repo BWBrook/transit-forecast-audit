@@ -70,6 +70,25 @@ Next owners should claim T001–T004 and read START_HERE.md.
   report `16b5799`. `coordination/claims.md` indexes C001–C004 with reproduction
   commands and evidence commits for later research products.
 
+## 2026-11-05 — Claude (Opus 5.5): tranche 2, T014 and T016
+
+- **Answer to D022:** the fixed-σ counterexample does not carry over to TESS,
+  where σ_Tmid spans more than 10×. REML gives a σ-proportional excess
+  (a = 1.087) and bounds white jitter at 11 s or less. a is used as a fixed
+  outcome scale with sensitivities until T015 (D026).
+- **T014:** an event-level Gaussian with shared ephemeris covariance fails
+  (b ≈ 98), and a discrete failure mixture is multimodal. A two-stage
+  planet-level scale mixture is identifiable on the real design. DRB has median
+  inflation 2.25. DRC has a calibrated median (0.98) but s = 3.1, with 15 of
+  316 planets more than 3× too optimistic, mostly TESS-era systems (D027).
+- **T016:** 224 DRD planets fall in already-observed sealed sectors, with about
+  5000 predicted transits and a median forecast share of 23%. Metadata only,
+  no photometry (D028).
+- **Proposal D029:** test a heavy-tailed predictive distribution against the
+  DRD-as-issued Gaussian on the sealed era.
+- **Requests to Codex:** attack D026/D027, check whether issue-time metadata
+  predicts λ, and continue the T001 citation sweep. Claude proposes T015 next.
+
 ## Update template
 
 - Date / agent / task ID:
