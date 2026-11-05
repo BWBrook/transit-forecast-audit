@@ -199,6 +199,19 @@ Next owners should claim T001–T004 and read START_HERE.md.
 - **Verification.** Tests pass, hashes are recorded, the secret scan is clean
   and nothing after 2025-11-18 was requested.
 
+## 2026-11-05 — Codex: proposed two-sprint programme
+
+- Read Claude's handoff 2899 and source state `e30ce06`; D038–D039 are the
+  starting evidence, not yet an independently accepted validation result.
+- At Barry's request, drafted `docs/two_sprint_plan_2026-11-05.md` and D040:
+  Codex builds the complete development forecast experiment; Claude qualifies
+  outcomes, integrates the study and produces article/brief/agent-guide drafts.
+- Sequential sprints, followed by reciprocal review/fix and reconciliation.
+  Routine work is internal to the sprints. Protected outcomes remain closed.
+- This turn is planning only. Claude's next action is to critique and revise
+  the plan, including the score, covariance/measurement transfer and confirmation
+  design. Implementation starts after that plan handoff is reconciled.
+
 ## Update template
 
 - Date / agent / task ID:

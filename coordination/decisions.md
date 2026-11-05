@@ -46,6 +46,26 @@ scientific record; a `proposed` item is not a frozen preregistration.
 | D038 | 2026-11-05 | Claude. Corrected T015 per D035, then prespecified a stratified validation before requesting any new photometry. Corrections: trapezoid CDF on a 10-s grid refined to min(1 s, σ/25); gap-aware β with N−3 degrees of freedom; a guard that checks MAST t_max before the request and header TSTOP ≤ BTJD 3313.49 before flux is read; exposure taken from TIMEDEL. Re-timing the 27 D034 transits moves them +1.0 s (range 0.7–1.9) and leaves σ unchanged (median ratio 0.99). Design: 48 single-DRD-planet hosts, 12 per Tmag stratum by hash rank, odd ranks calibration and even ranks validation; TESS-SPOC 200 s plus paired SPOC 120 s; two injection runs per product rerunning BLS, shape and timing with real windows removed; disjoint windows within each product; SAP sensitivity; acceptance criteria fixed in advance. | Design `26590c3:docs/t015_validation_design.md`; corrected re-timing `results/t015_corrected/` |
 | D039 | 2026-11-05 | Claude. The prespecified primary test passes. TESS-SPOC 200-s PDCSAP on 18 validation hosts (263 injections): 95% coverage 0.958 [0.934, 0.981], z-RMS 0.981 [0.920, 1.045], bias +0.08σ [−0.07, 0.19], failures 7.4%. SPOC 120 s also passes (0.951, 0.970, +0.09σ). The secondary multiplier is not adopted: calibration k = 0.92 worsens validation coverage. No Tmag stratum is freeze-ready under the per-stratum rule (3–6 hosts), mostly on the point-estimate bias criterion. Faint stars have conservative σ (z-RMS 0.88–0.92). ICC of z is about 0 by run and by host, so no shared bias component is detected. For the same real transits, our σ exceed ExoClock's by 1.09–1.11 across 40 hosts; this does not identify a multiplier (D035). FFI and 2-min timings agree (322 pairs, median +0.5 s, σ ratio 1.01). Gaps: periods over 12 d, multi-planet hosts and periods under 1.4 d. | Proposed for T009, pending Codex review; per-stratum confirmation sample needed. `results/t015_validation/`, `docs/t015_validation_report.md` |
 
+### D040 — Proposed two-sprint programme and review cadence
+
+- Date / responsible agent: 2026-11-05, Codex; draft for Claude's revision.
+- Authority: Barry's chat requests more ambitious autonomous tranches and the
+  sequence draft → Claude revision → Codex sprint 1 → Claude sprint 2 →
+  Codex review/fix of sprint 2 → Claude review/fix of sprint 1 → reconciliation
+  (paraphrase). Routine stages do not require another approval round.
+- Proposal: `docs/two_sprint_plan_2026-11-05.md`. Build the complete development
+  forecast experiment, then qualify the outcome method and integrate a candidate
+  freeze package plus article, broad-audience brief and agent guide. Each sprint
+  has deliverables, scientific acceptance criteria, ownership and failure paths.
+- Interpretation: D038–D039 remain pending independent review; this planning
+  entry accepts none of their scientific claims. Retain the protocol's primary
+  interval-score contrast as the draft recommendation. Missing issued covariance
+  and outcome-error transfer must be resolved or reflected in narrower claims.
+- Boundary: protected photometry remains closed through both sprints and
+  counter-reviews. Reconciliation determines freeze readiness. No publication,
+  protected-data access or substantive sprint implementation occurs in this turn.
+- Status: proposed; Claude to critique and revise before sprint 1 begins.
+
 ## New entry template
 
 ### D0XX — short title

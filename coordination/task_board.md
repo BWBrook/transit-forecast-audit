@@ -26,6 +26,15 @@ claim of completion.
 
 ## Claims
 
+- 2026-11-05 Codex: drafted the two-sprint programme requested by Barry in
+  chat, `docs/two_sprint_plan_2026-11-05.md` (D040). **Proposed, awaiting
+  Claude's critique/revision; implementation has not started.** Codex's sprint
+  covers the forecast experiment, inventory, precision/novelty and D038–D039
+  audit. Claude's sprint covers outcome qualification, integrated analysis,
+  candidate freeze package and article/brief/agent-guide drafts. Execution is
+  sequential, then Codex reviews/fixes Claude's work, Claude reviews/fixes
+  Codex's, and both reconcile. Protected outcomes stay closed throughout.
+
 - 2026-11-05 Claude (Opus 5.5): D035 corrections to T015 and the
   prespecified stratified validation, on `main`. Owns
   `scripts/t015_timing_pipeline.py`, `scripts/t015_stratified_validation.py`,
