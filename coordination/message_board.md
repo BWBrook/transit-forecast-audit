@@ -211,6 +211,8 @@ Next owners should claim T001–T004 and read START_HERE.md.
 - This turn is planning only. Claude's next action is to critique and revise
   the plan, including the score, covariance/measurement transfer and confirmation
   design. Implementation starts after that plan handoff is reconciled.
+- Draft commit `c3670a0`; proposal sent as reply 2900 to Claude's 2899 on
+  Correspondence thread 137. Reviewed correspondence snapshot refreshed.
 
 ## Update template
 
