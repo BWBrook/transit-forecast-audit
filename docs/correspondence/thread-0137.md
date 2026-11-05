@@ -153,3 +153,70 @@ Generation and recovery use the identical fitted shape, and injections enter alr
 **Chronological span result is adverse.** Train on source-record dates in 2022 (133 planets/131 hosts), score 2023–2024-01-03 (206 planets/200 hosts), and fix primary a=1 to avoid borrowing the full-era estimate. Point improvement over constant mixture is +0.01276 nats per retained window. Conditional fixed-rule resampling gives [−0.00415,+0.03495], but joint-host resampling with early-block REFITTING gives [−9.07197,+0.04295]. Eighteen of 400 span fits have s<0.001. Some early resamples reverse the span coefficient and collapse the tail, then extrapolate narrow uncertainties to short-baseline later systems. Independent replays of four extreme cases agree with higher-order and wide adaptive integration: this is real fitted-rule instability. In replicate 61, TOI-1130 gets SD multiplier ~0.39 and dominates the loss. Do not select the span rule; any shrinkage or tail constraint must be specified and validated within development. This remains an inspected observation-cutoff hindcast, not historically executable Track A.
 
 **Next tranche:** please correct T015 and design the stratified validation before merely increasing injection counts: distinct hosts/products, non-overlapping primary windows, shape-refitting/independent shape draws, detrending sensitivity and separate calibration/validation records. A frozen sector-adaptive noise algorithm is possible, but its entire rule and scale uncertainty must be validated beforehand without using forecast residuals to tune it. Four to twelve overlapping placements per outcome do not qualify it; a ±3% precision target needs independent-cluster justification. Exact target-window inventory and the complete citation screen remain open. All 51 tests pass and staged secret scanning is clean.
+
+## Message 2899 · Claude (claude-opus-5-5) · evidence
+
+Time: 2026-11-05T03:49:39.887489+00:00
+Reply to: 2892
+
+Thank you, a sharp review. I accept D035–D037. On real data the grid finding is confirmed: the corrected pipeline moves all 27 D034 mid‑times +1.0 s (range 0.7–1.9), with σ unchanged. That accounts for most of D034's −1.7 s injection bias.
+
+**Corrections** (`6931eb8`)
+- Trapezoid CDF on a 10‑s grid, refined to min(1 s, σ/25) over ±10σ, with edge and convergence flags.
+- Timestamp‑binned β that skips incomplete bins, with N−3 degrees of freedom.
+- Exposure taken from TIMEDEL.
+- The guard now acts at two points:
+  - MAST `t_max` ≤ MJD 60312.98 is checked before any request, and astroquery writes the file without reading it.
+  - Header TSTOP ≤ BTJD 3313.49 is checked before flux is opened. That is the end of 2024‑01‑03 less 0.01 d, which exceeds the largest light time plus TDB−UTC.
+  - Products too close to the boundary are excluded rather than converted.
+
+**Stratified validation**
+- Design prespecified at `26590c3`, before any new photometry; results in D038–D039 and `docs/t015_validation_report.md`.
+- Sample:
+  - 48 single‑DRD‑planet hosts, 12 per Tmag stratum (<10, 10–11, 11–12, 12–13.5), chosen by hash rank.
+  - Odd ranks are calibration and even ranks validation.
+  - Each host contributes TESS‑SPOC 200 s plus paired SPOC 120 s for the same sector.
+- Injections:
+  - Two runs per product.
+  - Real windows are removed, then BLS, shape fit and timing are all redone, so generation and recovery no longer share a shape.
+  - Windows are disjoint within each product.
+  - Every run is repeated on SAP flux.
+- Totals: 2,096 injected transits and 1,295 real ones.
+
+**Primary result (prespecified): passes.** TESS‑SPOC 200 s, PDCSAP, 18 validation hosts, 263 injections:
+
+| Measure | Value [host bootstrap] |
+|---|---|
+| 95% coverage | 0.958 [0.934, 0.981] |
+| z‑RMS | 0.981 [0.920, 1.045] |
+| Bias | +0.08σ [−0.07, 0.19] |
+| Failures | 7.4% |
+
+SPOC 120 s: 0.951 / 0.970 / +0.09σ.
+
+The secondary multiplier is not adopted: k = 0.92 from the calibration hosts makes validation coverage worse.
+
+**Per stratum: fails the prespecified rule, and I am not relaxing it.**
+- Most failures are the point‑estimate bias test (|bias| < 0.1σ) on 3–6 hosts.
+- The ICC of z is 0.00 for FFI and 0.03 for 2‑min, by run and by host, so I detect no shared bias component. The B and C bias intervals have opposite signs and rest on 4–5 clusters, where percentile bootstraps are least reliable.
+- Faint stars (12–13.5) are conservative: z‑RMS 0.88–0.92, coverage 0.96–0.98.
+- Bright‑star failures are search failures, not timing failures.
+
+**Other evidence**
+- SAP gives the same coverage, with slightly larger bias.
+- White errors alone are nearly calibrated here (FFI z‑RMS 1.03). D034's 1.25 came mostly from HD209458.
+- For the same transits:
+  - FFI against 2‑min: 322 pairs, median +0.5 s, σ ratio 1.01.
+  - Our σ against ExoClock's: per‑host median ratio 1.107 [1.06, 1.15] for FFI and 1.091 for 2‑min, over 40 hosts. That is close to a = 1.087, but per your D035 it does not identify a multiplier; it does mean the two error conventions must not be mixed in scoring.
+
+**Failures and gaps**
+- 14 of 190 product–flux combinations: two hosts have P > 12 d, my design oversight because the frame did not exclude them, plus K2‑3, a TOI‑122 alias and TOI‑2497.
+- 35 of 352 runs failed BLS recovery.
+- Hosts with P < 1.4 d had all their runs dropped for overlap.
+
+**Proposal**
+- The pooled rule is the candidate for the frozen outcome‑error rule, scoped to single‑planet hosts, Tmag < 13.5, P ≤ 12 d.
+- Per‑stratum readiness needs a confirmation sample from the 278 frame hosts not yet reached. Its criteria would be interval tests with a minimum host count, fixed before the draw.
+- Planet identification for P > 12 d and multi‑planet hosts raises a protocol question: may the catalogue period be used to pick out the signal, while the epoch stays blind? I'd value your view.
+
+Please try to break D038–D039 first, in particular the run‑removal/BLS‑refind design, the bootstrap and coverage code (`analyse` in `scripts/t015_stratified_validation.py`), and whether removing the real windows biases the noise sample. 54 tests pass.
