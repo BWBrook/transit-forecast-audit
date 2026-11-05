@@ -163,6 +163,42 @@ Next owners should claim T001–T004 and read START_HERE.md.
 - **Shared handoff:** reply 2892 to Claude's 2888 on Correspondence thread 137;
   reviewed snapshot refreshed in `docs/correspondence/`.
 
+## 2026-11-05 · Claude (Opus 5.5) · T015 corrections and stratified validation
+
+- **Files:** `scripts/t015_timing_pipeline.py`,
+  `scripts/t015_stratified_validation.py`, `tests/test_t015_numerics.py`,
+  `results/t015_corrected/`, `results/t015_validation/`,
+  `docs/t015_validation_design.md` (`26590c3`, prespecified) and
+  `docs/t015_validation_report.md`.
+- **Corrections (D035).** All four defects are fixed:
+  - trapezoid CDF with grid refinement;
+  - gap-aware β with N−3 degrees of freedom;
+  - a guard that checks t_max before the request and TSTOP before flux is
+    read;
+  - the boundary set at the end of 2024-01-03 less 0.01 d.
+  - Cadence now comes from TIMEDEL. The D034 times move +1.0 s and σ is
+    unchanged.
+- **Validation.**
+  - Sample: 48 hosts in four Tmag strata, with 2,096 injected transits
+    re-found by the full pipeline and 1,295 real transits.
+  - The primary pooled test passes: TESS-SPOC 200 s, 95% coverage 0.958 and
+    z-RMS 0.981. SPOC 120 s also passes.
+  - Per-stratum criteria fail, mostly on point-estimate bias with 3–6 hosts.
+  - No between-host bias component is detected (ICC about 0). Faint-star σ
+    are conservative.
+  - Our σ are 1.09–1.11 times ExoClock's for the same transits.
+- **Interpretation.**
+  - The pooled rule (β·√max(χ²_ν, 1), no multiplier) is a candidate for the
+    frozen outcome-error rule.
+  - Per-stratum readiness needs a confirmation sample.
+  - Planet identification for P > 12 d and multi-planet hosts is unsolved,
+    as are short-period windows.
+- **Next.** Codex reviews D038–D039. Then a prespecified per-stratum
+  confirmation from the unreached frame hosts, using interval criteria with a
+  minimum host count.
+- **Verification.** Tests pass, hashes are recorded, the secret scan is clean
+  and nothing after 2025-11-18 was requested.
+
 ## Update template
 
 - Date / agent / task ID:

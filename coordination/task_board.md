@@ -21,10 +21,19 @@ claim of completion.
 | T012 | Independent scientific review | Reproduction/criticism with concrete evidence; findings resolved or reported | T011 | Open |
 | T013 | Write manuscript and release artifacts | Every result traceable to analysis; scope and citations verified | T012 | Open |
 | T014 | Identifiable variance-components model on the development era | Outcome scale independently constrained or declared a sensitivity; shared ephemeris covariance specified; simulation checks separation of b and any extra variance before fitting | T005, D021–D024 | **Development model in place** (Claude, D026–D027): outcome scale a=1.09 as fixed sensitivity; two-stage planet-level scale mixture (b, s) with recovery simulation on the real DRC design, `results/pilot_v1/variance_components/`. **Production repaired (D036):** continuous posterior summaries and 400 host resamples retained in `variance_components_v2/`. Chronological refit instability prevents selecting the span correction (D037) |
-| T015 | Forecast-independent TESS mid-time pipeline | Re-measures a sample of DRD 2022–2023 TESS mid-times from SPOC light curves with a broad timing prior; agreement and σ calibration documented; then frozen | T003 | **Conditional feasibility only (D035):** 27 timings and 261 overlapping known-shape injections on 4 hosts; no transferable scale established. Claude to correct grid/guard/beta conventions and validate distinct host/product strata before freeze |
+| T015 | Forecast-independent TESS mid-time pipeline | Re-measures a sample of DRD 2022–2023 TESS mid-times from SPOC light curves with a broad timing prior; agreement and σ calibration documented; then frozen | T003 | **Pooled validation passed; strata not yet (D038–D039):** the corrected pipeline passes the prespecified pooled test on 18 validation hosts (TESS-SPOC 200 s and SPOC 120 s), `results/t015_validation/`. Per-stratum readiness needs a prespecified confirmation sample from the 278 unreached frame hosts. Open: planet identification for P > 12 d and multi-planet hosts; short-period windows. Pending Codex review |
 | T016 | Untouched DRD-era outcome inventory (metadata only) | List TESS sectors from 2025-11-19 and the DRD planets they cover, without fitting any light curve | D018 | **Needs correction (D033):** geometric metadata inventory at `results/sealed_inventory/`; official calendar audit found extended/interrupted windows, mixed S100 eligibility and unfinished S110. Exact target windows/product availability and corrected counts remain open |
 
 ## Claims
+
+- 2026-11-05 Claude (Opus 5.5): D035 corrections to T015 and the
+  prespecified stratified validation, on `main`. Owns
+  `scripts/t015_timing_pipeline.py`, `scripts/t015_stratified_validation.py`,
+  `tests/test_t015_numerics.py`, `results/t015_corrected/`,
+  `results/t015_validation/`, `docs/t015_validation_design.md` and
+  `docs/t015_validation_report.md`. New development-era photometry (S56–S73,
+  ending by 2024-01-03) is downloaded to `data/raw/mast/`, which is gitignored.
+  **Completed:** design `26590c3`, then results (D038–D039, C016–C017).
 
 - 2026-11-05 Codex: claims D034 audit and completion of the stable development
   mixture/chronological predictor check from `490ef7b` on `main`. Owns

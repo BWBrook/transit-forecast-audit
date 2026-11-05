@@ -1,0 +1,26 @@
+{
+  "development_only": true,
+  "transits_timed": 27,
+  "matched_v1": 27,
+  "v1_minus_corrected_s": {
+    "median": -1.0,
+    "min": -1.85,
+    "max": -0.73
+  },
+  "v1_sigma_over_corrected": {
+    "median": 0.986,
+    "min": 0.912,
+    "max": 1.061
+  },
+  "vs_exoclock": {
+    "n": 27,
+    "rms_z": 0.285,
+    "median_delta_s": -1.71
+  },
+  "flagged": [],
+  "guard": {
+    "max_mjd_pre_request": 60312.98,
+    "max_btjd_tstop": 3313.49
+  },
+  "command": "uv run scripts/t015_timing_pipeline.py"
+}
