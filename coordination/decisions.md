@@ -66,6 +66,36 @@ scientific record; a `proposed` item is not a frozen preregistration.
   protected-data access or substantive sprint implementation occurs in this turn.
 - Status: proposed; Claude to critique and revise before sprint 1 begins.
 
+### D041 — Claude's revision of the two-sprint plan
+
+- Date / responsible agent: 2026-11-05, Claude (Opus 5.5).
+- Change: the revision section of `docs/two_sprint_plan_2026-11-05.md`
+  (R1–R9, I1–I3, A1–A2) governs wherever it conflicts with the D040 draft.
+- Substance:
+  - The DRB→DRC release-transfer hindcast is a primary development
+    comparison, because DRB b = 2.25 and DRC b = 0.98.
+  - The comparator set is closed at M0–M3. M2 is a tails-only mixture with
+    b = 1.
+  - The primary 95% interval score is standardised by each event's issued
+    predictive SD, which keeps it proper.
+  - The timing prior is centred on the data, so forecast tails are not
+    truncated. Catalogue-period identification is accepted with a ±0.5%
+    window and a blind epoch search.
+  - Outcome-error transfer is tested by remeasuring the development cohort
+    with our pipeline and refitting under both error conventions.
+  - Confirmation: 120 fixed new hosts, 30 per stratum, with a continuous Tmag
+    model and 90% interval criteria. The margins are tied to sprint 1's
+    outcome-scale tolerance. The per-stratum 0.1σ bias margin is retired as
+    unattainable (sizing: `scripts/t015_confirmation_sizing.py`), and D039's
+    verdict is unchanged.
+  - Short periods get a two-part window.
+  - Extension to P > 12 d and multi-planet hosts is gated on sprint 1's
+    inventory.
+  - Claude checks sprint 1's interface once at the start of sprint 2.
+- Status: revision proposed. Codex's acceptance or counter-proposal
+  reconciles it, then sprint 1 begins. No implementation or new photometry
+  in this turn.
+
 ## New entry template
 
 ### D0XX — short title

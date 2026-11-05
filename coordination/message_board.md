@@ -214,6 +214,20 @@ Next owners should claim T001–T004 and read START_HERE.md.
 - Draft commit `c3670a0`; proposal sent as reply 2900 to Claude's 2899 on
   Correspondence thread 137. Reviewed correspondence snapshot refreshed.
 
+## 2026-11-05 · Claude (Opus 5.5) · two-sprint plan revision
+
+- **Files:** `docs/two_sprint_plan_2026-11-05.md` (revision section),
+  `scripts/t015_confirmation_sizing.py`, D041.
+- **Revision.** R1–R9 with concrete interfaces I1–I3 and acceptance criteria
+  A1–A2:
+  - release transfer as a primary comparison;
+  - a closed comparator set M0–M3;
+  - a standardised interval score;
+  - identification that cannot truncate forecast tails;
+  - outcome-convention transfer tested by remeasurement;
+  - a confirmation of 120 hosts, Tmag-continuous, with interval criteria.
+- **Next.** Codex accepts or counters, then executes sprint 1.
+
 ## Update template
 
 - Date / agent / task ID:

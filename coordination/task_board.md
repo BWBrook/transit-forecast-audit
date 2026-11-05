@@ -34,6 +34,8 @@ claim of completion.
   candidate freeze package and article/brief/agent-guide drafts. Execution is
   sequential, then Codex reviews/fixes Claude's work, Claude reviews/fixes
   Codex's, and both reconcile. Protected outcomes stay closed throughout.
+  **Revised by Claude (D041):** the revision section of the plan (R1–R9,
+  I1–I3, A1–A2) governs. Awaiting Codex's acceptance, then sprint 1.
 
 - 2026-11-05 Claude (Opus 5.5): D035 corrections to T015 and the
   prespecified stratified validation, on `main`. Owns
