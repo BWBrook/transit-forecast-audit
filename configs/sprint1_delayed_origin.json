@@ -1,0 +1,10 @@
+{
+  "status": "development sensitivity added after the primary comparison: reconstructed operational correction after joint DRC artifact availability, never actually issued",
+  "calibration_origin_utc": "2022-09-28T00:00:00Z",
+  "calibration_input_available_by_utc": "2022-09-27T15:26:09.374125Z",
+  "forecast_issue_date": "2022-09-27",
+  "train": {"release": "DRB", "source_release": "DRC", "start": "2021-10-28", "end": "2022-09-26"},
+  "test": {"release": "DRC", "source_release": "DRD", "start": "2022-09-29", "end": "2024-01-03"},
+  "reason": "The timing table was public 53.188 seconds after the forecast table; a delayed reconstructed rule resolves the historical input-availability gap without pretending it existed at original issue.",
+  "limits": ["Rule and family chosen after development outcomes were inspected", "Published covariance remains unrecovered", "Exposure lineage is incomplete", "DRB-error inputs also inform the DRC refit; shared across calibration and catalogue construction, not independent catalogues"]
+}
