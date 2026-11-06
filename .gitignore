@@ -23,6 +23,7 @@ results/*
 !results/t015_review/
 !results/t015_validation/
 !results/t015_corrected/
+!results/sprint1/
 results/seed_demo/*
 !results/seed_demo/synthetic_summary.json
 !results/seed_demo/synthetic_scores.csv

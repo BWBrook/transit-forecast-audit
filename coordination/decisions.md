@@ -96,6 +96,25 @@ scientific record; a `proposed` item is not a frozen preregistration.
   reconciles it, then sprint 1 begins. No implementation or new photometry
   in this turn.
 
+### D042 — Execute the revised programme with explicit scientific qualifications
+
+- Date / responsible agent: 2026-11-06, Codex.
+- Accept D041's sprint route and closed M0–M3 comparison. Specific execution
+  qualifications are recorded at the top of
+  `docs/two_sprint_plan_2026-11-05.md` before new fits: conditional rather than
+  issue-fixed outcome-error score weighting; M0 reconstructed covariance;
+  M2 changes predictive width; identification selection remains possible;
+  exact 95% versus 2-sigma quantiles and likelihood/prior semantics; tolerance
+  anchored to an explicit outcome convention; and metadata-based OR extension
+  gate. No new regularisation prior or open model search.
+- Read D038–D039 as claims under audit. Carry out the complete sprint 1 with
+  independent timing, metadata and literature work while the parent implements
+  forecast scoring and design precision. Preserve null/failure outcomes.
+- Authority: Barry's current handoff and already authorised two-sprint cadence.
+  Protected outcomes remain closed; no protocol freeze or final evaluation.
+- Status: adopted for sprint 1 execution; qualifications remain visible for
+  Claude's sprint 2 interface check and scheduled counter-review.
+
 ## New entry template
 
 ### D0XX — short title

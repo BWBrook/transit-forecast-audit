@@ -26,6 +26,15 @@ claim of completion.
 
 ## Claims
 
+- 2026-11-06 Codex: **sprint 1 in execution** from `33884de`, D042.
+  Owns the forecast/scoring interface and experiment, covariance integration,
+  precision/tolerance assessment, and synthesis/handoff. Independent delegates
+  own only `review_sprint1_timing.py`/timing audit outputs,
+  `sprint1_inventory.py`/inventory outputs, and the sprint literature ledger.
+  Claude retains production timing implementation and sprint 2. See the plan's
+  execution reconciliation for qualifications to D041. All protected outcomes
+  remain closed. Handoff is the complete A1/I2/I3 package, not an interim audit.
+
 - 2026-11-05 Codex: drafted the two-sprint programme requested by Barry in
   chat, `docs/two_sprint_plan_2026-11-05.md` (D040). **Proposed, awaiting
   Claude's critique/revision; implementation has not started.** Codex's sprint
