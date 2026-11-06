@@ -101,7 +101,7 @@ def quadrature(order):
 
 
 def precompute(planets, ys):
-    """Rank-2 forecast covariance X C X' = U U', U = [sigma_T0 1, sigma_P n].
+    """Rank-2 forecast covariance X C X' = U U', allowing a supplied correlation.
 
     Whitened by D = diag(se^2) and split by SVD, so the quadratic form is a sum
     of non-negative terms (no subtractive cancellation at large c; D031).
@@ -110,8 +110,15 @@ def precompute(planets, ys):
     for p, y in zip(planets, ys):
         d = p["se"] ** 2
         yw = y / np.sqrt(d)
-        Uw = np.column_stack([np.full(len(y), p["st0"]), p["sp"] * p["n"]]) / np.sqrt(d)[:, None]
+        rho = float(p.get("rho", 0.0))
+        if not -1 <= rho <= 1:
+            raise ValueError("Ephemeris correlation outside its PSD envelope")
+        U = np.column_stack([p["st0"] + rho*p["sp"]*p["n"],
+                             np.sqrt(max(0., 1-rho*rho))*p["sp"]*p["n"]])
+        Uw = U / np.sqrt(d)[:, None]
         W, sv, _ = np.linalg.svd(Uw, full_matrices=False)
+        active = sv > 0
+        W, sv = W[:, active], sv[active]
         proj = W.T @ yw
         q_perp = float(np.sum((yw - W @ proj) ** 2))
         pre.append((q_perp, sv**2, proj**2, float(np.sum(np.log(d))), len(y)))
@@ -226,7 +233,10 @@ def simulate(planets, b, s, rng):
     ys = []
     for p in planets:
         lam = np.exp(s * rng.standard_normal())
-        V = np.diag(p["se"] ** 2) + b * b * lam * (p["st0"] ** 2 + np.outer(p["n"], p["n"]) * p["sp"] ** 2)
+        rho = float(p.get("rho", 0.0))
+        forecast = (p["st0"] ** 2 + np.outer(p["n"], p["n"]) * p["sp"] ** 2
+                    + rho*p["st0"]*p["sp"]*(p["n"][:, None]+p["n"][None, :]))
+        V = np.diag(p["se"] ** 2) + b * b * lam * forecast
         ys.append(rng.multivariate_normal(np.zeros(len(p["m"])), V))
     return ys
 
