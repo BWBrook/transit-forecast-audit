@@ -1,0 +1,83 @@
+seed,openalex_id,publication_date,doi,title,screen_depth,decision,reason_code
+III,W4388526319,2023-11-01,10.3847/1538-4365/ac9f1a,"Exploring the Ability of Hubble Space Telescope WFC3 G141 to Uncover Trends in Populations of Exoplanet Atmospheres through a Homogeneous Transmission Survey of 70 Gaseous Planets",title,exclude,atmosphere_not_forecast_evaluation
+III,W4399618008,2024-06-13,10.1051/0004-6361/202449608,"Probing atmospheric escape through metastable He I triplet lines in 15 exoplanets observed with SPIRou",title,exclude,atmosphere_not_forecast_evaluation
+III,W4413939784,2025-09-01,10.1088/1538-3873/adfb30,"10,000 Resolved Triples from Gaia: Empirical Constraints on Triple Star Populations",title,exclude,not_transit_ephemeris_evaluation
+III,W4386779997,2023-09-15,10.3847/1538-3881/acea77,"Characterizing a World Within the Hot-Neptune Desert: Transit Observations of LTT 9779 b with the Hubble Space Telescope/WFC3",abstract,exclude,single_system_refit
+III,W4392870885,2024-03-15,10.1051/0004-6361/202348997,"The GAPS Programme at TNG",title,exclude,not_forecast_evaluation
+III,W4399346061,2024-06-04,10.3847/1538-3881/ad434d,"Two-dimensional Eclipse Mapping of the Hot-Jupiter WASP-43b with JWST MIRI/LRS",title,exclude,atmosphere_not_forecast_evaluation
+III,W4410123667,2025-05-06,10.3847/1538-4357/adc737,"K Dwarf Radius Inflation and a 10 Gyr Spin-down Clock Unveiled through Asteroseismology of HD 219134 from the Keck Planet Finder",title,exclude,not_transit_ephemeris_evaluation
+III,W4410484389,2025-05-19,10.1093/mnras/staf819,"Tracing the formation and migration history: molecular signatures in the atmosphere of misaligned hot Jupiter WASP-94 A b using JWST NIRSpec/G395H",title,exclude,atmosphere_not_forecast_evaluation
+III,W4409054511,2025-04-01,10.1093/mnras/staf530,"BOWIE-ALIGN: substellar metallicity and carbon depletion in the aligned TrES-4b with JWST NIRSpec transmission spectroscopy",title,exclude,atmosphere_not_forecast_evaluation
+III,W4410618844,2025-05-23,10.3847/1538-3881/adce02,"Water Dissociation and Rotational Broadening in the Atmosphere of KELT-20 b from High-resolution Spectroscopy",title,exclude,atmosphere_not_forecast_evaluation
+III,W4399984898,2024-06-24,10.3847/1538-3881/ad5096,"Confirmation and Characterization of the Eccentric, Warm Jupiter TIC 393818343 b with a Network of Citizen Scientists",title,exclude,single_system_characterisation
+III,W7125918173,2026-01-28,10.3847/2041-8213/ae36a1,"Extreme Winds on the Emerging Dayside of an Ultrahot Jupiter",title,exclude,atmosphere_not_forecast_evaluation
+III,W4416139311,2026-05-21,10.1126/science.adx5903,"Cloudy mornings and clear evenings on a gas giant exoplanet",title,exclude,atmosphere_not_forecast_evaluation
+III,W4413383333,2025-08-14,10.1051/0004-6361/202554916,"The SPACE Program",title,exclude,not_forecast_evaluation
+III,W4410037711,2025-05-02,10.3847/1538-3881/adc684,"HST Transmission Spectra of the Hot Neptune HD 219666 b: Detection of Water and the Challenge of Constraining Both Water and Methane",title,exclude,atmosphere_not_forecast_evaluation
+III,W7117978808,2026-01-02,10.3847/2041-8213/ae2ac8,"Evidence for a Nonzero Eccentricity Superpuff Exoplanet WASP-107 b Using JWST Occultation Observation",title,exclude,single_system_characterisation
+III,W4387492139,2023-10-10,10.1016/j.newast.2023.102130,"Searching for candidates of orbital decays among transit exoplanets",abstract,exclude,refit_and_model_selection_not_issued_forecast_calibration
+III,W4390271547,2023-12-27,10.3390/universe10010012,"Update on WASP-19",abstract,exclude,single_system_ttv_refit
+III,W4402978332,2024-09-30,10.3847/2041-8213/ad6b29,"Redshifted Sodium Transient near Exoplanet Transit",title,exclude,atmosphere_not_forecast_evaluation
+III,W4407191230,2025-02-01,10.3847/1538-4365/ad8c3c,"A Population Analysis of 20 Exoplanets Observed from Optical to Near-infrared Wavelengths with the Hubble Space Telescope: Evidence for Widespread Stellar Contamination",title,exclude,atmosphere_not_forecast_evaluation
+III,W4402761146,2024-09-24,10.3847/1538-3881/ad6f01,"Closeby Habitable Exoplanet Survey (CHES). II. An Observation Strategy for the Target Stars",title,exclude,not_transit_ephemeris_evaluation
+III,W4407909910,2025-02-25,10.3847/1538-3881/ada95d,"Exoplanet Ephemerides Change Observations (ExoEcho). I. Transit Timing Analysis of 37 Exoplanets Using HST/WFC3 Data",methods,retain_closest,refit_ttv_outlier_and_uncertainty_precedent_not_issued_forecast_score
+III,W4402664940,2024-09-13,10.1093/mnras/stae2121,"The only inflated brown dwarf in an eclipsing white dwarf-brown dwarf binary: WD1032+011B",title,exclude,not_transit_ephemeris_evaluation
+III,W4404074673,2024-11-05,10.1051/0004-6361/202452101,"Planet-star interactions with precise transit timing",abstract,exclude,timing_refit_not_issued_forecast_calibration
+III,W4413133808,2025-08-06,10.3847/2041-8213/adee0d,"Uniform Reanalysis of JWST MIRI 15 micron Exoplanet Eclipse Observations Using Frame-normalized Principal Component Analysis",title,exclude,atmosphere_not_forecast_evaluation
+III,W4391824347,2024-02-14,10.1051/0004-6361/202347872,"Star-spot activity, orbital obliquity, transmission spectrum, physical properties, and transit time variations of the HATS-2 planetary system",title,exclude,single_system_ttv_refit
+III,W4414053465,2025-09-08,10.1051/0004-6361/202555034,"An updated catalog of HIRES/Keck radial velocity measurements",title,exclude,not_transit_ephemeris_evaluation
+III,W4414186724,2025-09-15,10.3847/1538-3881/adfb71,"The Watery Atmosphere of HD 209458 b Revealed by Joint K- and L-band High-resolution Spectroscopy",title,exclude,atmosphere_not_forecast_evaluation
+III,W4415658563,2025-10-29,10.3847/1538-3881/adf0fc,"The Effect of Offsets from True Orbital Parameters on Exoplanet High-resolution Transmission Spectra",abstract,exclude,parameter_sensitivity_not_forecast_calibration
+III,W4416179160,2025-11-13,10.1051/0004-6361/202557240,"No TiO detected in the hot-Neptune-desert planet LTT-9779 b in reflected light at high spectral resolution",title,exclude,atmosphere_not_forecast_evaluation
+III,W7154732946,2026-04-17,10.1051/0004-6361/202558011,"Super-Earth masses and stellar abundances from NIRPS reveal tentative evidence for water-rich formation around M dwarfs",title,exclude,not_transit_ephemeris_evaluation
+III,W4408876005,2025-03-26,10.3847/1538-4357/adb835,"Thermal Phase Curves in Hot Gas Giant Exoplanets Exhibit a Complex Dependence on Planetary Properties",title,exclude,atmosphere_not_forecast_evaluation
+III,W4414127044,2025-09-11,10.3847/1538-3881/adf5ba,"A New Approach to Compiling Exoatmospheric Target Lists and Quantifying the Ground-based Resources Needed to Vet Them",title,exclude,target_selection_not_forecast_evaluation
+III,W4417283072,2025-12-01,10.3847/psj/ae1b9c,"Doomed Worlds. II. Reassessing Suggestions of Orbital Decay for TrES-5 b",abstract,exclude,single_system_ttv_refit
+III,W7118165164,2026-01-05,10.3847/1538-3881/ae231a,"Searching for Transit Timing Variations in Young Transiting Systems",abstract,exclude,ttv_search_not_issued_forecast_calibration
+III,W4401633294,2024-08-16,10.3847/1538-3881/ad60c6,"Assessing Exoplanetary System Architectures with DYNAMITE Including Observational Upper Limits",title,exclude,not_transit_ephemeris_evaluation
+III,W4409293162,2025-04-09,10.3847/1538-3881/adbe65,"Probing Two-dimensional Asymmetries of an Exoplanet Atmosphere from Chromatic Transit Variation",title,exclude,atmosphere_not_forecast_evaluation
+III,W4400316001,2024-06-01,10.1088/1538-3873/ad57f5,"Enhancing Exoplanet Ephemerides by Leveraging Professional and Citizen Science Data: A Test Case with WASP-77 A b",abstract,exclude,single_system_refit_not_forecast_calibration
+III,W4402714519,2024-09-11,10.1093/mnrasl/slae083,"Transit timing variation of K2-237b: hints toward planet disc migration",title,exclude,single_system_ttv_refit
+III,W4414594199,2025-09-29,10.3847/2041-8213/adfb77,"Modeling Tails of Escaping Gas in Exoplanet Atmospheres with Harmonica",title,exclude,atmosphere_not_forecast_evaluation
+III,W7123335676,2026-01-12,10.1051/0004-6361/202557155,"Characterization of two new transiting sub-Neptunes and a terrestrial planet around M-dwarf hosts",title,exclude,discovery_characterisation
+III,W7128524981,2026-02-11,10.3847/1538-4365/ae3238,"ExoClock Project. IV. A Homogeneous Catalog of 620 Updated Exoplanet Ephemerides",methods,retain_closest,direct_pooled_threshold_benchmark
+III,W7131796384,2026-02-01,10.1088/1538-3873/ae406a,"Chasing the Tides: Searching for Orbital Decay Signatures in Transit Timing Data and Tidal Models for 20 Hot Jupiters",abstract,exclude,ttv_model_selection_not_issued_forecast_calibration
+III,W7131871827,2026-02-27,10.3847/1538-3881/ae42d1,"HET/HPF Observations of Helium in Warm, Hot, and Ultrahot Jupiters",title,exclude,atmosphere_not_forecast_evaluation
+III,W7143481503,2026-03-30,10.3847/1538-3881/ae4e17,"The First Dedicated Survey of Atmospheric Escape from Planets Orbiting F Stars",title,exclude,atmosphere_not_forecast_evaluation
+III,W7160856729,2026-05-11,10.1051/0004-6361/202556677,"VLT/CRIRES+ observations of warm Neptune WASP-107 b",title,exclude,atmosphere_not_forecast_evaluation
+III,W7161276932,2026-05-15,10.3847/1538-4357/ae606b,"Observational and Dynamical Constraints on an Unseen Outer Perturber in the GJ 436 Hot Neptune System",title,exclude,single_system_dynamics
+III,W4416092994,2025-11-08,10.1093/mnras/staf1972,"PLATOSpec: a precise spectrograph in support of space missions",title,exclude,instrument_not_forecast_evaluation
+III,W4416542602,2025-11-21,10.1093/mnras/staf2057,"A search for transit-timing variations in the transiting hot-Jupiter systems HIP 65, NGTS-6, NGTS-10, and WASP-173",abstract,exclude,ttv_search_not_issued_forecast_calibration
+III,W4410605750,2025-05-22,10.3847/1538-3881/adce76,"Stringent Limits on H3+ Emission from the Hot Jupiters WASP-80b and WASP-69b",title,exclude,atmosphere_not_forecast_evaluation
+III,W4413908455,2025-09-02,10.3847/1538-3881/aded15,"TrES-1 b: A Case Study in Detecting Secular Evolution of Exoplanet Orbits",abstract,exclude,single_system_ttv_refit
+III,W4402649173,2024-09-17,10.3847/1538-3881/ad60bf,"The K2 and TESS Synergy. III. Search and Rescue of the Lost Ephemeris for K2's First Planet",abstract,exclude,single_system_ephemeris_rescue
+III,W7131348944,2026-02-25,10.3847/1538-3881/ae3b28,"Demonstrating Exoplanet Transit Photometry from Space with a 15 mm Aperture Optical Navigation Camera on Hayabusa2",title,exclude,instrument_demonstration
+III,W7136276294,2026-03-16,10.3847/1538-3881/ae47fa,"Possible Stratospheric Emission in the Warm Neptune GJ 436 b from High-resolution Spectroscopy",title,exclude,atmosphere_not_forecast_evaluation
+III,W7148440741,2026-04-02,10.3847/1538-3881/ae4de5,"High-resolution Spectroscopic Atmospheric Studies of Five Hot Jupiters Across the Edge of the Neptune Desert",title,exclude,atmosphere_not_forecast_evaluation
+III,W7156290954,2026-04-27,10.3847/1538-3881/ae5b9f,"Supersolar Metallicity and Tentative Evidence for Photochemistry on WASP-96 b from JWST and Ground-based VLT Transmission Spectroscopy",title,exclude,atmosphere_not_forecast_evaluation
+III,W7165909313,2026-06-25,10.3847/1538-3881/ae71b9,"The Keck Planet Finder SURFS-UP Survey. I. Transmission Spectroscopy of WASP-76 b",title,exclude,atmosphere_not_forecast_evaluation
+III,W4410128782,2025-05-06,10.54254/2753-8818/2025.22666,"The Search for Possible Orbital Decays of Hot Jupiters with Data from TESS and Foregone",abstract,exclude,ttv_model_selection_not_issued_forecast_calibration
+III,W4412582558,2025-01-01,10.1007/978-3-319-30648-3_166-2,"Impact of Exoplanet Science on Society: Professional Contributions, Citizen Science, and Public Perception",title,exclude,not_forecast_evaluation
+III,W4412780620,2025-07-31,10.3847/1538-3881/ade998,"Investigating Transit Timing Variations in the Ultrashort Period Exoplanet WASP-19b",abstract,exclude,single_system_ttv_refit
+III,W4413533381,2024-05-08,10.64628/aai.yh46ky7wr,"Exoplanet WASP-69b has a cometlike tail",title,exclude,popular_article
+III,W4413535104,2024-05-21,10.64628/ade.w67rje4x3,"Exoplaneta com cauda como de um cometa ajuda na compreensao sobre formacao de planetas no nosso Universo",title,exclude,popular_article
+III,W4416926565,2025-12-02,10.1051/0004-6361/202557706,"A predictive framework for realistic star-planet radio emission in compact systems",title,exclude,not_transit_ephemeris_evaluation
+III,W4417245427,2025-12-11,10.3847/2515-5172/ae2a24,"Evidence for No Orbital Decay in the Hot Jupiter XO-3b from Transit-timing Analysis",abstract,exclude,single_system_ttv_refit
+III,W7106810405,2025-11-27,10.3847/1538-3881/ae169d,"HST-COS Transit Spectroscopy of KELT-20b: First Detection of Excess Far-ultraviolet Absorption from an Ultrahot Jupiter",title,exclude,atmosphere_not_forecast_evaluation
+III,W7122720802,2026-01-12,10.1016/j.asr.2026.01.022,"The power of collaborative optical techniques in asteroid studies: a closer look at the Koronis asteroids",title,exclude,not_exoplanet
+III,W7125991594,2026-01-13,10.48204/j.tecno.v28n1.a8961,"Parameters Characterization of Exoplanet WASP-10b Using Two Transit Surveys",title,exclude,single_system_characterisation
+III,W7131349666,2026-02-24,10.1093/mnras/stag384,"LRG-BEASTS: detection of sodium and evidence for water absorption in the hot Saturn HAT-P-44b",title,exclude,atmosphere_not_forecast_evaluation
+III,W7135084396,2026-03-12,10.1051/0004-6361/202555811,"Precise measurement of WASP-31 b's Rossiter-McLaughlin effect and characterization of the planet transmission spectra",title,exclude,atmosphere_not_forecast_evaluation
+III,W7140162401,2026-03-24,10.3847/1538-3881/ae4c86,"Revisiting the Orbital Dynamics of the Hot Jupiter WASP-12 b with New Transit Times",abstract,exclude,single_system_ttv_refit
+III,W7160328916,2026-05-01,10.3847/1538-3881/ae5b78,"The Transit Timing and Transmission Spectrum of Hot Jupiter WASP-43 b from a Decade of Multiband Transit follow-up Observations",abstract,exclude,single_system_ttv_refit
+III,W7160614334,2026-05-08,10.3847/1538-3881/ae5b6d,"Investigation of Transit Timing and an Optical Transmission Spectrum of the Hot Jupiter WASP-11 b",abstract,exclude,single_system_ttv_refit
+III,W7160903502,2026-05-12,10.1051/0004-6361/202558030,"Weighing the mass of LHS 3844 b",title,exclude,not_forecast_evaluation
+III,W7163055872,2026-06-01,10.3847/1538-3881/ae69d4,"The Near-ultraviolet Transit of XO-3 b",title,exclude,atmosphere_not_forecast_evaluation
+III,W7163342015,2026-06-03,10.1093/mnras/stag1041,"A comprehensive Rossiter-McLaughlin modelling framework in tlcm: application to HD 2685 equals TOI-135 system",title,exclude,not_forecast_evaluation
+III,W7164539421,2026-06-12,10.1051/0004-6361/202558747,"ATREIDES",title,exclude,not_forecast_evaluation
+III,W7167592175,2026-07-07,10.3847/1538-3881/ae75e8,"Orbit Refinement of WASP-18 b and Evidence Against the Existence of WASP-18 c",abstract,exclude,single_system_refit
+III,W7168255480,2026-07-14,10.3847/1538-3881/ae82f1,"Probing the Atmospheres of Young Long-period Sub-Neptune Progenitors with ELT/ANDES",title,exclude,atmosphere_not_forecast_evaluation
+III,W7204835334,2026-08-31,10.3847/2041-8213/ae907d,"Distinct e-lambda Trends in Three Gas-giant Mass Regimes",title,exclude,not_forecast_evaluation
+III,W7221596834,2026-10-13,10.3847/1538-4365/aea075,"ExoEcho: Exoplanet Ephemerides Change Observations. III. A JWST Survey for Transit Timing Variations of 37 Exoplanets",abstract,exclude,ttv_refit_not_issued_forecast_calibration
+IV,W7159593264,2026-04-29,10.3847/1538-3881/ae5a29,"Confirmation of Fe I on MASCARA-5 b's Dayside Observed With EXPRES",title,exclude,atmosphere_not_forecast_evaluation
+IV,W7202137738,2026-08-10,10.3847/2515-5172/ae9603,"A Refined Orbital Period for TOI-4479 b from an Extended TESS Baseline",abstract,exclude,single_system_refit

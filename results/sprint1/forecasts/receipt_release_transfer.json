@@ -1,0 +1,71 @@
+{
+  "config_sha256": "6282caea6e5091dfa4badb6e9b52370003acf7082a4b514cc0978f816eefe111",
+  "source_manifest": [
+    {
+      "path": "data/raw/osf/wna5e/updated_ephemerides.txt",
+      "sha256": "086e964793d40cf99d534a806be885aaa61d172072c8810f994e197dc3a18357"
+    },
+    {
+      "path": "data/raw/osf/wna5e/4_updated_ecc.txt",
+      "sha256": "1439184879589f5ae4d426010a8ec498d08c6ff4dae45161ca40261f1fab0cb5"
+    },
+    {
+      "path": "data/raw/osf/wna5e/5_complete_ExoClock_DRB.zip",
+      "sha256": "f8a43bf718015f97db36ee3c220e654b98f008646396be8a380c137ce8f50df4"
+    },
+    {
+      "path": "data/raw/osf/p298n/catalogue_of_ephemerides.txt",
+      "sha256": "2f1e4a3ad9dd3cc9f78e38f25c3a1d1e0ead1604ea0a86f66cc752ff1a666033"
+    },
+    {
+      "path": "data/raw/osf/p298n/all_mid_time_data.txt",
+      "sha256": "68231e16f2de416b2070570ec71085db6ee91622cc231ef942bb91cc747c8f09"
+    },
+    {
+      "path": "data/raw/osf/wpjtn/catalogue_of_ephemerides.txt",
+      "sha256": "582a6ca8e65d85a5c840452f93e8dd5f0f0ef404b4c28fb4836e7b15efc094af"
+    },
+    {
+      "path": "data/raw/osf/wpjtn/all_mid_time_data.txt",
+      "sha256": "533449b7a9bede2541d78c6a2697913762ad30262bce319c79d87f02f538348c"
+    },
+    {
+      "path": "data/raw/osf/wpjtn/by_source.zip",
+      "sha256": "804f64929984599c56f5873b823414f6833a5e73f4d6d4c8b7bcfbbfbebd217f"
+    }
+  ],
+  "source_config_sha256": {
+    "configs/sprint1.json": "6282caea6e5091dfa4badb6e9b52370003acf7082a4b514cc0978f816eefe111",
+    "configs/sprint1_delayed_origin.json": "909b11908fb4e1a423906018a1ed68236e6a85eb78e42ac4fba3ec1b068d16cf",
+    "scripts/sprint1_forecasts.py": "bc8af5eb66076f841b1bd5c0b087974560aa300bdbf5f773b29bff4a76320dd5",
+    "scripts/sprint1_forecast_core.py": "dfe010dbe60e5bb6f07412ec4b5114c57783b90d83278abde8d857db9e597e77",
+    "scripts/forecast_variance_components.py": "81b6660828a1b30093f7051a4bc60355e3a0ccc3134faf68b9bc32f7d1cdaf85",
+    "scripts/reproduce_table5.py": "06aaae2ae28436288b33858db7e302c67d7969de85cd57ac34fe8dd61838cd90",
+    "src/transit_audit/exoclock.py": "58fe60ad9d15448dabb7b9c6c29c89fc20e81b8380a1021f601384bf1972c864",
+    "results/pilot_v1/covariance_completeness.csv": "a195f1e01e2aecffcd7c5362129f46eb8f986898b562985af297279c650033f4",
+    "data/fixtures/exoclock_ttv_flags.csv": "7eff71a7a435941d619a3caca995e6eb3eed8db1d229e3b372dc63cf643b23a0"
+  },
+  "source_unchanged_during_run": true,
+  "environment": {
+    "python": "3.13.16",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "summary_hashes": {
+    "results/sprint1/forecasts/release_transfer__a_0.85__c2.json": "81da52b776d2617eaeb12b71f8c325e478cbbaa2810c4b20646a12de8ec0f679",
+    "results/sprint1/forecasts/release_transfer__a_0.95__c2.json": "e6b6f638fa41ed1c339ef6003a1e088157c6ce4c27d59c1ba91402a8bfbdef09",
+    "results/sprint1/forecasts/release_transfer__a_0.9__c2.json": "c10bef3aef7668250c34772a517e0b542cebf3d91b6dc296c2c7d525b0f3631b",
+    "results/sprint1/forecasts/release_transfer__a_1.05__c2.json": "d264c2530e4a8be9d09d07d52191306094f264e17aa7f8cd7f7cdec8ff6fbe07",
+    "results/sprint1/forecasts/release_transfer__a_1.087__c2.json": "fd7b7db57da011bfff2aa29b8d89f3c52e9e7f50970949539fb0ff052afd15bd",
+    "results/sprint1/forecasts/release_transfer__a_1.087__rho_minus1.json": "2b5720438313d35a6ad90d586e6bf7f7f2723d0ec72bce6dda8581734cfdd5f8",
+    "results/sprint1/forecasts/release_transfer__a_1.087__rho_plus1.json": "6e2ebafc934f3a784957ed561e11951155fc92d749843ae1de5bb8b16ebff1c7",
+    "results/sprint1/forecasts/release_transfer__a_1.087__zero.json": "b6d77c9295bccae1eb7cc540e61e3256104a10c141f2ea2277a5ec7d86d19371",
+    "results/sprint1/forecasts/release_transfer__a_1.15__c2.json": "f5c6359fd076f227ebeba91c1dcfbda0218a26be8032799a3ab689c4c8f10bbf",
+    "results/sprint1/forecasts/release_transfer__a_1.1__c2.json": "c7c5f086a720a42715d7993c7af84dcf4c09d9a6f40f1be1022e67cb86fccccb",
+    "results/sprint1/forecasts/release_transfer__a_1.25__c2.json": "a5111b4642b041744d3a0379788950c631651c9cb3bf6eafb8d0863b0cddaf5d",
+    "results/sprint1/forecasts/release_transfer__a_1.2__c2.json": "3f400c5f5e64e3f8344ad13be903be12dc6fe601330c2af79c34743e5d6a92a7",
+    "results/sprint1/forecasts/release_transfer__a_1__c2.json": "4a43d7142410c6caf305b78ce78ff3f9f6f63f1ceb47e6de4cbacb0e0560d6f0"
+  },
+  "seed": 20261106,
+  "protected_access": false
+}

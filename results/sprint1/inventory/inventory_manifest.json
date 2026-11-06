@@ -1,0 +1,10 @@
+{
+  "light_curves_opened": 0,
+  "metadata_only": true,
+  "outputs": {
+    "inventory_summary.json": "b4a6c5b4372053144b6efa3523bf800ec722c93fcb9305505eae0f7384346f20",
+    "planet_sector_product_inventory.csv": "26d6d431e8995d2ad4c6c4a972430ee0d346aeab8d8f210660ede3f2ace5c80f"
+  },
+  "script": "scripts/sprint1_inventory.py",
+  "script_sha256": "e4004e9605c23903930da071238c75a82ce2a147a42d60a94decba59cca3f5ef"
+}

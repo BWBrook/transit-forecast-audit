@@ -1,0 +1,14 @@
+{
+  "archive_filename": "transit-sprint1-bulk-20261106.tar.gz",
+  "archive_sha256": "44cce09547385b75c22d9dfac492711460cf337f62d8edde5c3f68f5c4b6c486",
+  "archive_bytes": 34484097,
+  "file_count": 165,
+  "manifest_path": "results/sprint1/bulk_manifest.csv",
+  "manifest_sha256": "cbbe3fc88f94e97a99f94c219472c6a4a4e8273366a855f94aea8bf697e5fa57",
+  "contents": "Raw released catalogue data and public metadata caches; detailed development outputs; no photometry.",
+  "remote_sha256_verified": true,
+  "restore": "Extract archive at repository root; verify each path against bulk_manifest.csv before use.",
+  "archive_member_sha256_verified": true,
+  "storage_class": "project shared storage",
+  "project_relative_archive_key": "sprint1-20261106T1255Z/transit-sprint1-bulk-20261106.tar.gz"
+}

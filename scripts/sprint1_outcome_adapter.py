@@ -38,6 +38,13 @@ def validate_i1(rows):
             continue
         if not row["shape_group_id"]:
             raise ValueError("Timed outcomes need a dependence group")
+        if row["id_method"] not in ("blind","catalogue_period"):
+            raise ValueError("Unrecognised identification method")
+        for key in ("sector","camera","ccd"):
+            if int(row[key])<1:
+                raise ValueError("Invalid detector/sector identity")
+        if row["loo_shift_s"]!="not_estimable" and not np.isfinite(float(row["loo_shift_s"])):
+            raise ValueError("LOO shift needs a finite value or explicit not_estimable status")
         for key in ("coverage_window","coverage_in_transit"):
             value=float(row[key])
             if not np.isfinite(value) or not 0<=value<=1:
@@ -217,11 +224,14 @@ def score_outcomes(args):
     c.write_json(dest.with_suffix(".receipt.json"),
                  {"forecasts_sha256":c.digest(forecast_path),"outcomes_sha256":c.digest(outcome_path),
                   "scores_sha256":c.digest(dest),"attempted_rows":len(raw),"selected_production_attempts":len(selected),
+                  "adapter_source_sha256":c.digest(Path(__file__)),
+                  "predictive_core_sha256":c.digest(c.ROOT/"scripts/sprint1_forecast_core.py"),
                   "timed_production_events":len(events),"omitted_rows":len(omitted),
                   "error_convention":args.error_convention,"outcome_scale":args.outcome_scale,
                   "likelihood_grid_hashes":grid_hashes,
                   "nonGaussian_events":sum(g is not None for g in grids),
                   "I1_schema_checked":args.error_convention!="exoclock_reported",
+                  "timed_rows_without_estimable_loo_shift":sum(e.get("loo_shift_s")=="not_estimable" for e in events),
                   "photometry_or_file_hashes_reopened_for_verification":False,
                   "development_only":True,"units":"seconds in log density; minutes in interval score",
                   "proper_score_scope":"conditional on supplied measurement likelihood; normaliser may be outcome-dependent"})

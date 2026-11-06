@@ -1,0 +1,71 @@
+{
+  "config_sha256": "6282caea6e5091dfa4badb6e9b52370003acf7082a4b514cc0978f816eefe111",
+  "source_manifest": [
+    {
+      "path": "data/raw/osf/wna5e/updated_ephemerides.txt",
+      "sha256": "086e964793d40cf99d534a806be885aaa61d172072c8810f994e197dc3a18357"
+    },
+    {
+      "path": "data/raw/osf/wna5e/4_updated_ecc.txt",
+      "sha256": "1439184879589f5ae4d426010a8ec498d08c6ff4dae45161ca40261f1fab0cb5"
+    },
+    {
+      "path": "data/raw/osf/wna5e/5_complete_ExoClock_DRB.zip",
+      "sha256": "f8a43bf718015f97db36ee3c220e654b98f008646396be8a380c137ce8f50df4"
+    },
+    {
+      "path": "data/raw/osf/p298n/catalogue_of_ephemerides.txt",
+      "sha256": "2f1e4a3ad9dd3cc9f78e38f25c3a1d1e0ead1604ea0a86f66cc752ff1a666033"
+    },
+    {
+      "path": "data/raw/osf/p298n/all_mid_time_data.txt",
+      "sha256": "68231e16f2de416b2070570ec71085db6ee91622cc231ef942bb91cc747c8f09"
+    },
+    {
+      "path": "data/raw/osf/wpjtn/catalogue_of_ephemerides.txt",
+      "sha256": "582a6ca8e65d85a5c840452f93e8dd5f0f0ef404b4c28fb4836e7b15efc094af"
+    },
+    {
+      "path": "data/raw/osf/wpjtn/all_mid_time_data.txt",
+      "sha256": "533449b7a9bede2541d78c6a2697913762ad30262bce319c79d87f02f538348c"
+    },
+    {
+      "path": "data/raw/osf/wpjtn/by_source.zip",
+      "sha256": "804f64929984599c56f5873b823414f6833a5e73f4d6d4c8b7bcfbbfbebd217f"
+    }
+  ],
+  "source_config_sha256": {
+    "configs/sprint1.json": "6282caea6e5091dfa4badb6e9b52370003acf7082a4b514cc0978f816eefe111",
+    "configs/sprint1_delayed_origin.json": "909b11908fb4e1a423906018a1ed68236e6a85eb78e42ac4fba3ec1b068d16cf",
+    "scripts/sprint1_forecasts.py": "bc8af5eb66076f841b1bd5c0b087974560aa300bdbf5f773b29bff4a76320dd5",
+    "scripts/sprint1_forecast_core.py": "dfe010dbe60e5bb6f07412ec4b5114c57783b90d83278abde8d857db9e597e77",
+    "scripts/forecast_variance_components.py": "81b6660828a1b30093f7051a4bc60355e3a0ccc3134faf68b9bc32f7d1cdaf85",
+    "scripts/reproduce_table5.py": "06aaae2ae28436288b33858db7e302c67d7969de85cd57ac34fe8dd61838cd90",
+    "src/transit_audit/exoclock.py": "58fe60ad9d15448dabb7b9c6c29c89fc20e81b8380a1021f601384bf1972c864",
+    "results/pilot_v1/covariance_completeness.csv": "a195f1e01e2aecffcd7c5362129f46eb8f986898b562985af297279c650033f4",
+    "data/fixtures/exoclock_ttv_flags.csv": "7eff71a7a435941d619a3caca995e6eb3eed8db1d229e3b372dc63cf643b23a0"
+  },
+  "source_unchanged_during_run": true,
+  "environment": {
+    "python": "3.13.16",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "summary_hashes": {
+    "results/sprint1/forecasts/chronological__a_0.85__c2.json": "e240402827264ad2cd2fde0db64433d091d9bdd7b9bbd39a69c4c888719cdac5",
+    "results/sprint1/forecasts/chronological__a_0.95__c2.json": "4a147eb52e7740de39be9338feecd2585c36f09f1f47e7f00f4e8f223ab4e5e2",
+    "results/sprint1/forecasts/chronological__a_0.9__c2.json": "a1af1be01ba19dd556fdcfa0b031e5b262a8b3f801209df23c7a53f2cb561bca",
+    "results/sprint1/forecasts/chronological__a_1.05__c2.json": "61547a346ca7b8ed835d9fa025593e47c8d4627c60fd7823c216bec15080231e",
+    "results/sprint1/forecasts/chronological__a_1.087__c2.json": "08e677a3e1fe3b9aac1951e42a0902e24fe6e6cc62abe0c5f69a840e3c7fd60c",
+    "results/sprint1/forecasts/chronological__a_1.087__rho_minus1.json": "ac3e1b83b6937b5f1e560440ad0a0f9f146ffa5a315950631f7c0a37d46cba8e",
+    "results/sprint1/forecasts/chronological__a_1.087__rho_plus1.json": "0fde285fef92c759c7f64acd242d0318cb8528a5f61040e143b02d28e63bbc4c",
+    "results/sprint1/forecasts/chronological__a_1.087__zero.json": "6f2e76ff09bd1c3498e35d98dfbdda55d624012c8e62487c59a54a20d44e7433",
+    "results/sprint1/forecasts/chronological__a_1.15__c2.json": "847982ead0f6cb2acec3baba288119c84880b93921548f2d81b167131284b703",
+    "results/sprint1/forecasts/chronological__a_1.1__c2.json": "42e87d9d303fc958e66ab5939113008aa2c87035e87f1f7686c031e0c8c65bfd",
+    "results/sprint1/forecasts/chronological__a_1.25__c2.json": "903d4703a05bd745a37e121423676c49dcd0ec7b01fc152f0dd92bada0fab921",
+    "results/sprint1/forecasts/chronological__a_1.2__c2.json": "ea117f401ecdc673327ea2c70c5c65e6014dfecb8a487fd4908bc9c616a0c25e",
+    "results/sprint1/forecasts/chronological__a_1__c2.json": "06c989344bb8273fe902ea15c8ab540fc97755694ac0988f0a96153346d0c3ce"
+  },
+  "seed": 20261106,
+  "protected_access": false
+}

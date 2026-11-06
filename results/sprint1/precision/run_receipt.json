@@ -1,0 +1,30 @@
+{
+  "chunk_size": 100,
+  "command": ".venv/bin/python scripts/sprint1_precision.py --replicates 4000 --chunk-size 100",
+  "numpy": "2.5.4",
+  "outputs": [
+    {
+      "path": "results/sprint1/precision/development_precision.csv",
+      "sha256": "3177d9715da9052cc19f80e2668676254b3ec1776bb7040f96a45ba20a1987f3"
+    },
+    {
+      "path": "results/sprint1/precision/future_design_precision.csv",
+      "sha256": "774feff2d000396cda8e95d3da1cd12f66d202282590bf2b7d51e08c2c7488f0"
+    },
+    {
+      "path": "results/sprint1/precision/precision_summary.json",
+      "sha256": "7b4c39422c4893b4935473f1f9980ae02d6aac60a7beee88ce9dc27e96cbdefb"
+    },
+    {
+      "path": "results/sprint1/precision/r8_projection.json",
+      "sha256": "6fa392f7a9e17c3223c684e90ab80058cb14605ec325f6342c6e1d67e9cecab4"
+    },
+    {
+      "path": "results/sprint1/precision/source_hashes.csv",
+      "sha256": "7997ba36e6c3aad8b18b35a15b89e8dad53512181b6b05d0b5c64fcd8322b7e2"
+    }
+  ],
+  "python": "3.13.16",
+  "replicates": 4000,
+  "seed": 20261106
+}

@@ -1,0 +1,52 @@
+{
+  "question": "Does the existing DRC timing release by itself support a historically available DRB-error training set before DRC issuance?",
+  "answer": "No. It supports an event-date proxy but lacks row-level first-public timestamps and was uploaded after the DRC forecast catalogue.",
+  "source_schema": ["planet", "Tmid (BJD_TDB)", "Tmid unc. (days)", "source", "ID"],
+  "event_window_definition": {
+    "exact_artifact_lower": "2021-10-27T12:03:15.545999Z",
+    "exact_artifact_upper": "2022-09-27T15:25:16.186146Z",
+    "conservative_lower": "2021-10-28T00:00:00Z",
+    "time_conversion": "The nominal comparison maps BJD_TDB to a civil instant by subtracting JD 2440587.5. This ignores the TDB-UTC offset and barycentric position term, so six release-day rows are excluded in the conservative count and formal analysis requires a validated astronomical conversion."
+  },
+  "restricted_to_planets_in_drb": true,
+  "nominal_rows": 311,
+  "nominal_planets": 63,
+  "nominal_hosts": 63,
+  "nominal_source_counts": {
+    "space": 203,
+    "exoclock": 108
+  },
+  "conservative_rows": 305,
+  "conservative_planets": 63,
+  "conservative_source_counts": {
+    "space": 200,
+    "exoclock": 105
+  },
+  "nominal_source_detail": {
+    "space": {
+      "planets": 16,
+      "hosts": 16,
+      "date_min": "2021-10-27",
+      "date_max": "2021-12-29",
+      "record_ids_ending_TESS": 203,
+      "planet_epoch_date_units": 203
+    },
+    "exoclock": {
+      "planets": 54,
+      "hosts": 54,
+      "date_min": "2021-10-27",
+      "date_max": "2021-12-31",
+      "rows": 108,
+      "planet_epoch_date_units": 89
+    }
+  },
+  "rows_with_calendar_date_embedded_in_record_id": 311,
+  "availability_fields_in_source_file": [],
+  "limitations": [
+    "Observation or event date is not first-public availability.",
+    "TESS product release dates were not reconstructed in this literature task.",
+    "ExoClock IDs do not preserve a versioned first-public timestamp.",
+    "The DRC timing artifact itself was created 53.188 seconds after the DRC forecast artifact on an already-public OSF node.",
+    "Multiple ExoClock rows can share a planet, epoch and date; reductions or filters must not be treated as independent observations."
+  ]
+}

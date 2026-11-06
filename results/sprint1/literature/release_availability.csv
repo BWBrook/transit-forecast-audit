@@ -1,0 +1,5 @@
+release,node,node_public_utc,artifact,artifact_created_utc,availability_status,implication
+DRB,wna5e,2021-10-13T14:33:41.786917Z,updated_ephemerides.txt,2021-10-27T12:03:15.545999Z,verified_public_node_at_upload,Exact DRB point ephemerides were publicly available no later than artifact creation
+DRC,p298n,2022-05-30T12:42:23.267781Z,catalogue_of_ephemerides.txt,2022-09-27T15:25:16.186146Z,verified_public_node_at_upload,Exact DRC point ephemerides were publicly available no later than artifact creation
+DRC,p298n,2022-05-30T12:42:23.267781Z,all_mid_time_data.txt,2022-09-27T15:26:09.374125Z,verified_public_node_at_upload,The released timing table became available 53.188 seconds after the forecast catalogue and cannot prove pre-issue training availability
+DRD,wpjtn,2025-11-18T09:43:24.090310Z,catalogue_of_ephemerides.txt,2025-11-17T23:25:12.850553Z,verified_file_preceded_made_public,Strict exact-artifact availability is the later node public transition not the private upload or journal date

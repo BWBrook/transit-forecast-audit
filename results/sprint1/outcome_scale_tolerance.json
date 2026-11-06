@@ -1,0 +1,50 @@
+{
+  "release_transfer": {
+    "tested_grid_only": true,
+    "reference_a": 1.087,
+    "reference_decision": "inconclusive",
+    "contiguous_same_decision_grid_range": [
+      1.05,
+      1.25
+    ],
+    "negative_point_delta_entire_grid": true,
+    "certified_measurement_tolerance": null,
+    "reason": "Inspected development comparisons are inconclusive at reference; sign or null stability does not qualify an outcome-error convention."
+  },
+  "chronological": {
+    "tested_grid_only": true,
+    "reference_a": 1.087,
+    "reference_decision": "inconclusive",
+    "contiguous_same_decision_grid_range": [
+      1.05,
+      1.25
+    ],
+    "negative_point_delta_entire_grid": true,
+    "certified_measurement_tolerance": null,
+    "reason": "Inspected development comparisons are inconclusive at reference; sign or null stability does not qualify an outcome-error convention."
+  },
+  "delayed_origin": {
+    "tested_grid_only": true,
+    "reference_a": 1.087,
+    "reference_decision": "inconclusive",
+    "contiguous_same_decision_grid_range": [
+      1.087,
+      1.087
+    ],
+    "negative_point_delta_entire_grid": true,
+    "certified_measurement_tolerance": null,
+    "reason": "Inspected development comparisons are inconclusive at reference; sign or null stability does not qualify an outcome-error convention."
+  },
+  "late_published_proxy": {
+    "tested_grid_only": true,
+    "reference_a": 1.087,
+    "reference_decision": "inconclusive",
+    "contiguous_same_decision_grid_range": [
+      1.087,
+      1.087
+    ],
+    "negative_point_delta_entire_grid": true,
+    "certified_measurement_tolerance": null,
+    "reason": "Inspected development comparisons are inconclusive at reference; sign or null stability does not qualify an outcome-error convention."
+  }
+}

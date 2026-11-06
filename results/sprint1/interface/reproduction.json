@@ -1,0 +1,14 @@
+{
+  "scored_rows": 9296,
+  "max_absolute_difference_from_direct_run": {
+    "is95_standardised": 1.6249888878938634e-05,
+    "is95_minutes": 0.00035609032966021914,
+    "negative_log_score_seconds": 5.623330210369204e-07,
+    "covered68": 0.0,
+    "covered95": 0.0,
+    "width95_minutes": 1.8741596278459838e-05,
+    "weight": 0.0
+  },
+  "qualification": "exact GH384 adapter versus interpolated development quantiles; declared tolerance 0.001 score units",
+  "passed": true
+}

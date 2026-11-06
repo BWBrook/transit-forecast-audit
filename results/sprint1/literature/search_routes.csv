@@ -1,0 +1,11 @@
+route_id,queried_utc,seed_or_query,result,limitation
+R01,2026-11-06,OpenAlex cites W4320728084,80 citing works returned and screened,Index-specific enumeration only
+R02,2026-11-06,OpenAlex cites W7128524981,2 citing works returned and screened,Index-specific enumeration only
+R03,2026-11-06,Crossref DOI ac9da4,is-referenced-by-count 90,Crossref endpoint did not enumerate citing works
+R04,2026-11-06,Crossref DOI ae3238,is-referenced-by-count 3,Crossref endpoint did not enumerate citing works
+R05,2026-11-06,Semantic Scholar DOI ac9da4,59 citing works returned,Index-specific and smaller than OpenAlex and Crossref counts
+R06,2026-11-06,Semantic Scholar DOI ae3238,1 citing work returned,Index-specific and smaller than OpenAlex and Crossref counts
+R07,2026-11-06,ADS API bibcodes 2023ApJS..265....4K and 2026ApJS..283....5K,not run,ADS_TOKEN absent
+R08,2026-11-06,exoplanet transit ephemeris interval score forecast calibration,no exoplanet-specific issued-forecast scoring study recovered,Keyword search cannot prove absence
+R09,2026-11-06,exoplanet ephemeris log score transit prediction uncertainty,no exoplanet-specific issued-forecast scoring study recovered,Keyword search cannot prove absence
+R10,2026-11-06,OSF node and log APIs wna5e and p298n,node public transitions and artifact timestamps recovered,Per-row availability absent

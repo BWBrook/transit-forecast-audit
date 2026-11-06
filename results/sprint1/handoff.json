@@ -1,0 +1,373 @@
+{
+  "date": "2026-11-06",
+  "status": "sprint1 complete; sprint2 interface acceptance and execution next",
+  "development_only": true,
+  "protocol_frozen": false,
+  "protected_outcomes_accessed": false,
+  "commands": [
+    ".venv/bin/python scripts/sprint1_forecasts.py run --experiment release_transfer --bootstrap 400 --sensitivity-bootstrap 200 --sensitivities",
+    ".venv/bin/python scripts/sprint1_forecasts.py run --experiment chronological --bootstrap 400 --sensitivity-bootstrap 200 --sensitivities",
+    ".venv/bin/python scripts/sprint1_forecasts.py run --experiment delayed_origin --bootstrap 400",
+    ".venv/bin/python scripts/sprint1_forecasts.py run --experiment late_published_proxy --bootstrap 200",
+    ".venv/bin/python scripts/sprint1_forecasts.py make_forecasts --events data/derived/sprint1/release_transfer/a_1.087/c2/events.csv --parameters data/derived/sprint1/release_transfer/a_1.087/c2/parameters.json --release DRC --output data/derived/sprint1/interface/forecasts.csv",
+    ".venv/bin/python scripts/sprint1_forecasts.py score --forecasts data/derived/sprint1/interface/forecasts.csv --outcomes data/derived/sprint1/release_transfer/a_1.087/c2/events.csv --error-convention exoclock_reported --outcome-scale 1.087 --output data/derived/sprint1/interface/scores.csv",
+    ".venv/bin/python scripts/review_sprint1_scores.py",
+    ".venv/bin/python scripts/sprint1_precision.py --replicates 4000 --chunk-size 100",
+    ".venv/bin/python -m unittest discover -s tests -v",
+    ".venv/bin/python scripts/sprint1_handoff.py"
+  ],
+  "parameters": {
+    "release_transfer": {
+      "models": {
+        "M0": {
+          "b": 1.0,
+          "s_log_lambda": 0.0,
+          "converged": true,
+          "at_bound": false
+        },
+        "M1": {
+          "b": 2.685067188502791,
+          "nll": 174.0361140646178,
+          "converged": true,
+          "order": 384,
+          "gradient_max": 9.36015709385174e-09,
+          "at_bound": false,
+          "s_log_lambda": 0.0
+        },
+        "M2": {
+          "b": 1.0,
+          "s_log_lambda": 2.1618792749978195,
+          "nll": 179.434080722699,
+          "converged": true,
+          "at_bound": false,
+          "gradient_max": 2.928844944349862e-10,
+          "order": 384
+        },
+        "M3": {
+          "b": 2.6850697957240017,
+          "nll": 174.03611406610423,
+          "converged": true,
+          "order": 384,
+          "gradient_max": 2.4034379165094322e-05,
+          "at_bound": false,
+          "s_log_lambda": 3.828343494958599e-05
+        }
+      },
+      "parameters_path": "data/derived/sprint1/release_transfer/a_1.087/c2/parameters.json",
+      "sha256": "235ec37c5e8afcd5e9f35afac7a1753a44127ac7e93b1bfe03c5391f29285458",
+      "status": "nearest-release-availability proxy: training timing file uploaded after DRC forecast; individual prior availability unknown"
+    },
+    "chronological": {
+      "models": {
+        "M0": {
+          "b": 1.0,
+          "s_log_lambda": 0.0,
+          "converged": true,
+          "at_bound": false
+        },
+        "M1": {
+          "b": 7.342952734843598,
+          "nll": 2253.7061468323973,
+          "converged": true,
+          "order": 384,
+          "gradient_max": 1.8399148871139914e-09,
+          "at_bound": false,
+          "s_log_lambda": 0.0
+        },
+        "M2": {
+          "b": 1.0,
+          "s_log_lambda": 2.3100406095502994,
+          "nll": 2113.0300728252987,
+          "converged": true,
+          "at_bound": false,
+          "gradient_max": 5.274780257025213e-07,
+          "order": 384
+        },
+        "M3": {
+          "b": 1.3490552936643512,
+          "nll": 2111.7498211628213,
+          "converged": true,
+          "order": 384,
+          "gradient_max": 9.674996110931033e-07,
+          "at_bound": false,
+          "s_log_lambda": 1.985212249123779
+        }
+      },
+      "parameters_path": "data/derived/sprint1/chronological/a_1.087/c2/parameters.json",
+      "sha256": "1a588de08bccb1f44f2d012546e5d3c6b1d55f2195b907fd22b405cb89c2385f",
+      "status": "observation-date proxy: early DRC events can predate release, and timing availability predates neither training cutoff nor release by verified evidence"
+    },
+    "delayed_origin": {
+      "models": {
+        "M0": {
+          "b": 1.0,
+          "s_log_lambda": 0.0,
+          "converged": true,
+          "at_bound": false
+        },
+        "M1": {
+          "b": 2.685067188502791,
+          "nll": 174.0361140646178,
+          "converged": true,
+          "order": 384,
+          "gradient_max": 9.36015709385174e-09,
+          "at_bound": false,
+          "s_log_lambda": 0.0
+        },
+        "M2": {
+          "b": 1.0,
+          "s_log_lambda": 2.1618792749978195,
+          "nll": 179.434080722699,
+          "converged": true,
+          "at_bound": false,
+          "gradient_max": 2.928844944349862e-10,
+          "order": 384
+        },
+        "M3": {
+          "b": 2.6850697957240017,
+          "nll": 174.03611406610423,
+          "converged": true,
+          "order": 384,
+          "gradient_max": 2.4034379165094322e-05,
+          "at_bound": false,
+          "s_log_lambda": 3.828343494958599e-05
+        }
+      },
+      "parameters_path": "data/derived/sprint1/delayed_origin/a_1.087/c2/parameters.json",
+      "sha256": "22978a63af642b16ae101c70f2f5d373bc8f07036a6aba877e53350397206a99",
+      "status": "development sensitivity added after the primary comparison: reconstructed operational correction after joint DRC artifact availability, never actually issued"
+    },
+    "late_published_proxy": {
+      "models": {
+        "M0": {
+          "b": 1.0,
+          "s_log_lambda": 0.0,
+          "converged": true,
+          "at_bound": false
+        },
+        "M1": {
+          "b": 2.9481737501413505,
+          "nll": 827.535697762379,
+          "converged": true,
+          "order": 384,
+          "gradient_max": 1.515764402881814e-09,
+          "at_bound": false,
+          "s_log_lambda": 0.0
+        },
+        "M2": {
+          "b": 1.0,
+          "s_log_lambda": 2.2193395406425056,
+          "nll": 829.3334214412573,
+          "converged": true,
+          "at_bound": false,
+          "gradient_max": 1.6421416138001632e-07,
+          "order": 384
+        },
+        "M3": {
+          "b": 2.205618182734805,
+          "nll": 820.303244099745,
+          "converged": true,
+          "order": 384,
+          "gradient_max": 1.5710250877987164e-09,
+          "at_bound": false,
+          "s_log_lambda": 1.104716001539425
+        }
+      },
+      "parameters_path": "data/derived/sprint1/late_published_proxy/a_1.087/c2/parameters.json",
+      "sha256": "a63f7db603de8345af77c28850be0cd20c68073924c84b2eac53e71adda6f5b4",
+      "status": "later-published outcome proxy, used only as calibration-sample sensitivity"
+    }
+  },
+  "outcome_scale_tolerance": {
+    "release_transfer": {
+      "tested_grid_only": true,
+      "reference_a": 1.087,
+      "reference_decision": "inconclusive",
+      "contiguous_same_decision_grid_range": [
+        1.05,
+        1.25
+      ],
+      "negative_point_delta_entire_grid": true,
+      "certified_measurement_tolerance": null,
+      "reason": "Inspected development comparisons are inconclusive at reference; sign or null stability does not qualify an outcome-error convention."
+    },
+    "chronological": {
+      "tested_grid_only": true,
+      "reference_a": 1.087,
+      "reference_decision": "inconclusive",
+      "contiguous_same_decision_grid_range": [
+        1.05,
+        1.25
+      ],
+      "negative_point_delta_entire_grid": true,
+      "certified_measurement_tolerance": null,
+      "reason": "Inspected development comparisons are inconclusive at reference; sign or null stability does not qualify an outcome-error convention."
+    },
+    "delayed_origin": {
+      "tested_grid_only": true,
+      "reference_a": 1.087,
+      "reference_decision": "inconclusive",
+      "contiguous_same_decision_grid_range": [
+        1.087,
+        1.087
+      ],
+      "negative_point_delta_entire_grid": true,
+      "certified_measurement_tolerance": null,
+      "reason": "Inspected development comparisons are inconclusive at reference; sign or null stability does not qualify an outcome-error convention."
+    },
+    "late_published_proxy": {
+      "tested_grid_only": true,
+      "reference_a": 1.087,
+      "reference_decision": "inconclusive",
+      "contiguous_same_decision_grid_range": [
+        1.087,
+        1.087
+      ],
+      "negative_point_delta_entire_grid": true,
+      "certified_measurement_tolerance": null,
+      "reason": "Inspected development comparisons are inconclusive at reference; sign or null stability does not qualify an outcome-error convention."
+    }
+  },
+  "R8": {
+    "core_planets": 156,
+    "extension_planets": 28,
+    "union_planets": 184,
+    "union_hosts": 175,
+    "metadata_increment_percent": 17.94871794871795,
+    "gate_logic": "OR",
+    "extension_gate_passed": true,
+    "identification_qualified": false
+  },
+  "open_defects": [
+    {
+      "id": "S1-01",
+      "owner": "Claude sprint 2",
+      "issue": "Complete intended-event truth/attempt ledger and one-to-one match, with distinct product/run/event failure denominators."
+    },
+    {
+      "id": "S1-02",
+      "owner": "Claude sprint 2",
+      "issue": "Freeze host-balanced outcome-calibration estimand; replace or bias-correct and validate log host-MSE endpoints. No certified A2 tolerance supplied."
+    },
+    {
+      "id": "S1-03",
+      "owner": "Claude sprint 2",
+      "issue": "Remeasure development outcomes and refit M1-M3 under each error convention; do not transplant catalogue parameters to the pipeline."
+    },
+    {
+      "id": "S1-04",
+      "owner": "Claude sprint 2",
+      "issue": "Independent forecast-cycle mapping, no-removal and shape controls, short-period geometry, identification boundary controls and R8 extension qualification."
+    },
+    {
+      "id": "S1-05",
+      "owner": "Claude and Codex reciprocal review",
+      "issue": "Missing issued covariance, incomplete exposure lineage, selection denominator and limited historical calibration availability qualify all claims."
+    },
+    {
+      "id": "S1-06",
+      "owner": "Claude sprint 2",
+      "issue": "Confirm eligible 120-host development frame and actual product availability; metadata opportunities do not establish timing recovery."
+    }
+  ],
+  "output_sha256": {
+    "results/sprint1/bulk_archive_receipt.json": "8f2878b9ace9e9f8b73d9022e8f364a858d8f132ef89a0263d594d8d15853ce0",
+    "results/sprint1/bulk_manifest.csv": "cbbe3fc88f94e97a99f94c219472c6a4a4e8273366a855f94aea8bf697e5fa57",
+    "results/sprint1/comparison.csv": "e5227954c3ed794ece22363bbe1b3712c8efc27425d95ac7c352dc7f97a4972a",
+    "results/sprint1/forecasts/chronological__a_0.85__c2.json": "e240402827264ad2cd2fde0db64433d091d9bdd7b9bbd39a69c4c888719cdac5",
+    "results/sprint1/forecasts/chronological__a_0.95__c2.json": "4a147eb52e7740de39be9338feecd2585c36f09f1f47e7f00f4e8f223ab4e5e2",
+    "results/sprint1/forecasts/chronological__a_0.9__c2.json": "a1af1be01ba19dd556fdcfa0b031e5b262a8b3f801209df23c7a53f2cb561bca",
+    "results/sprint1/forecasts/chronological__a_1.05__c2.json": "61547a346ca7b8ed835d9fa025593e47c8d4627c60fd7823c216bec15080231e",
+    "results/sprint1/forecasts/chronological__a_1.087__c2.json": "08e677a3e1fe3b9aac1951e42a0902e24fe6e6cc62abe0c5f69a840e3c7fd60c",
+    "results/sprint1/forecasts/chronological__a_1.087__rho_minus1.json": "ac3e1b83b6937b5f1e560440ad0a0f9f146ffa5a315950631f7c0a37d46cba8e",
+    "results/sprint1/forecasts/chronological__a_1.087__rho_plus1.json": "0fde285fef92c759c7f64acd242d0318cb8528a5f61040e143b02d28e63bbc4c",
+    "results/sprint1/forecasts/chronological__a_1.087__zero.json": "6f2e76ff09bd1c3498e35d98dfbdda55d624012c8e62487c59a54a20d44e7433",
+    "results/sprint1/forecasts/chronological__a_1.15__c2.json": "847982ead0f6cb2acec3baba288119c84880b93921548f2d81b167131284b703",
+    "results/sprint1/forecasts/chronological__a_1.1__c2.json": "42e87d9d303fc958e66ab5939113008aa2c87035e87f1f7686c031e0c8c65bfd",
+    "results/sprint1/forecasts/chronological__a_1.25__c2.json": "903d4703a05bd745a37e121423676c49dcd0ec7b01fc152f0dd92bada0fab921",
+    "results/sprint1/forecasts/chronological__a_1.2__c2.json": "ea117f401ecdc673327ea2c70c5c65e6014dfecb8a487fd4908bc9c616a0c25e",
+    "results/sprint1/forecasts/chronological__a_1__c2.json": "06c989344bb8273fe902ea15c8ab540fc97755694ac0988f0a96153346d0c3ce",
+    "results/sprint1/forecasts/delayed_origin__a_1.087__c2.json": "c22f82af8394fcc3b14ff420299e1bbb781a36c55038856d6e6bf2df8745fc9a",
+    "results/sprint1/forecasts/late_published_proxy__a_1.087__c2.json": "45d0559eb32c316556afd0b9b8a600992d02bcaae59e5a9b41ebceaf95107902",
+    "results/sprint1/forecasts/receipt_chronological.json": "8a688a8c09ee3004ca31f1cc849174e70b71d606cfcc1d2c3fdad6d10be3a5a3",
+    "results/sprint1/forecasts/receipt_delayed_origin.json": "fc1a93521fd42a2c170c43e0fa73a1d3d6c635f2de0fc46cf065eb60e79e3529",
+    "results/sprint1/forecasts/receipt_late_published_proxy.json": "f04a2fb769a57adc6394969286ccafd6619b821682e52f327ab28e0f315b307f",
+    "results/sprint1/forecasts/receipt_release_transfer.json": "1b744100d8e51d3373f2a909c23876993dd7e2fa666933abf6323c0146865d77",
+    "results/sprint1/forecasts/release_transfer__a_0.85__c2.json": "81da52b776d2617eaeb12b71f8c325e478cbbaa2810c4b20646a12de8ec0f679",
+    "results/sprint1/forecasts/release_transfer__a_0.95__c2.json": "e6b6f638fa41ed1c339ef6003a1e088157c6ce4c27d59c1ba91402a8bfbdef09",
+    "results/sprint1/forecasts/release_transfer__a_0.9__c2.json": "c10bef3aef7668250c34772a517e0b542cebf3d91b6dc296c2c7d525b0f3631b",
+    "results/sprint1/forecasts/release_transfer__a_1.05__c2.json": "d264c2530e4a8be9d09d07d52191306094f264e17aa7f8cd7f7cdec8ff6fbe07",
+    "results/sprint1/forecasts/release_transfer__a_1.087__c2.json": "fd7b7db57da011bfff2aa29b8d89f3c52e9e7f50970949539fb0ff052afd15bd",
+    "results/sprint1/forecasts/release_transfer__a_1.087__rho_minus1.json": "2b5720438313d35a6ad90d586e6bf7f7f2723d0ec72bce6dda8581734cfdd5f8",
+    "results/sprint1/forecasts/release_transfer__a_1.087__rho_plus1.json": "6e2ebafc934f3a784957ed561e11951155fc92d749843ae1de5bb8b16ebff1c7",
+    "results/sprint1/forecasts/release_transfer__a_1.087__zero.json": "b6d77c9295bccae1eb7cc540e61e3256104a10c141f2ea2277a5ec7d86d19371",
+    "results/sprint1/forecasts/release_transfer__a_1.15__c2.json": "f5c6359fd076f227ebeba91c1dcfbda0218a26be8032799a3ab689c4c8f10bbf",
+    "results/sprint1/forecasts/release_transfer__a_1.1__c2.json": "c7c5f086a720a42715d7993c7af84dcf4c09d9a6f40f1be1022e67cb86fccccb",
+    "results/sprint1/forecasts/release_transfer__a_1.25__c2.json": "a5111b4642b041744d3a0379788950c631651c9cb3bf6eafb8d0863b0cddaf5d",
+    "results/sprint1/forecasts/release_transfer__a_1.2__c2.json": "3f400c5f5e64e3f8344ad13be903be12dc6fe601330c2af79c34743e5d6a92a7",
+    "results/sprint1/forecasts/release_transfer__a_1__c2.json": "4a43d7142410c6caf305b78ce78ff3f9f6f63f1ceb47e6de4cbacb0e0560d6f0",
+    "results/sprint1/interface/reproduction.json": "75bb2b6b4f298d00b47fa1fcd21b68c909f1354619611a511da9d5194ea68e18",
+    "results/sprint1/interface/score_receipt.json": "751d8e9dce19a68b21330642eee87b60a34de2e1dc43af934a7aa591fb21a9f1",
+    "results/sprint1/inventory/inventory_manifest.json": "a5e16b0431ef01319f2379055d0c75dda538457aaa8102f01fcb236c00eaf893",
+    "results/sprint1/inventory/inventory_summary.json": "b4a6c5b4372053144b6efa3523bf800ec722c93fcb9305505eae0f7384346f20",
+    "results/sprint1/inventory/planet_sector_product_inventory.csv": "26d6d431e8995d2ad4c6c4a972430ee0d346aeab8d8f210660ede3f2ace5c80f",
+    "results/sprint1/literature/citation_screen.csv": "dc625b75ab58a366bedcf1abe61ed48c38f4caf8d642b9ade5fd8a294a105c3a",
+    "results/sprint1/literature/manifest.sha256": "28438b29d4fedff0d8bcc255726a856d98624c941577839a1ccd1f6d4b353bca",
+    "results/sprint1/literature/osf_history_verification.json": "ae2de3e08b2b4d309a4d730412b951fc268e2c183d60ed09c6acf853bee5117f",
+    "results/sprint1/literature/release_availability.csv": "ae484527945f6f2c5bdb33f50e15a037e845e4d73d718d0f05a5c44fde5bef0a",
+    "results/sprint1/literature/release_transfer_proxy_summary.json": "f32c42d5341832b536189aaa35bbd19e11abb705064233cab10b38c3111a8b79",
+    "results/sprint1/literature/search_routes.csv": "534879151bc13136ec5cb25d1e9c97317068444d32ad1a2dcf9aada452b7229b",
+    "results/sprint1/literature/source_ledger.csv": "d671a768cdbde1ec99a883fb20aa9e70192731eccd60923bf4945a8101a0b217",
+    "results/sprint1/outcome_scale_sensitivity.png": "3d9aa2fcc7f46a85a72449008c60bab01a4dfd5a64734cd4139f92ed828e166e",
+    "results/sprint1/outcome_scale_tolerance.json": "acc172e71eef6eff5efe8cdcf67a45ce619679011dec4e9681976084a58c3599",
+    "results/sprint1/precision/development_precision.csv": "3177d9715da9052cc19f80e2668676254b3ec1776bb7040f96a45ba20a1987f3",
+    "results/sprint1/precision/future_design_precision.csv": "774feff2d000396cda8e95d3da1cd12f66d202282590bf2b7d51e08c2c7488f0",
+    "results/sprint1/precision/precision_summary.json": "7b4c39422c4893b4935473f1f9980ae02d6aac60a7beee88ce9dc27e96cbdefb",
+    "results/sprint1/precision/r8_projection.json": "6fa392f7a9e17c3223c684e90ab80058cb14605ec325f6342c6e1d67e9cecab4",
+    "results/sprint1/precision/run_receipt.json": "1469fb70713c47d004763934d7457c6a1919ba5e4b55a4771288d6fe39afad2f",
+    "results/sprint1/precision/source_hashes.csv": "7997ba36e6c3aad8b18b35a15b89e8dad53512181b6b05d0b5c64fcd8322b7e2",
+    "results/sprint1/scoring_review/numerical_checks.json": "6705c1e9585ef597e0d463053c5f0c843c40c50fb073361a377ecbaeb5583c14",
+    "results/sprint1/timing_audit/attempt_denominators.csv": "2803337c1e5fc9f45cc445eea8c34234879efba24399e65c51527b6e3a3f040d",
+    "results/sprint1/timing_audit/audit_summary.json": "613362d2c4222019419faf5fa39164c8bced2b5a863376514d165e0a4541d872",
+    "results/sprint1/timing_audit/dependence_icc.csv": "36655cec223ad572e30677f7f25935343c9a88f0909517ae9fb874196844ccbb",
+    "results/sprint1/timing_audit/pooled_and_stratum_metrics.csv": "d3197e5f40fa5c8f97e4b8fc83b21c78d5e1c8361411e1ea7a716eaf2da1d54c",
+    "results/sprint1/timing_audit/reported_point_comparison.csv": "685ab7a6fa2c29d118b3fa02c82ee8a13315b5fd83add8c004660bb6b9b2b700",
+    "results/sprint1/timing_audit/source_hashes.csv": "dc9442e63bb2cac0ea78e4cb2e35291005c17794a095ce8f645bc54ca9eec33c",
+    "results/sprint1/timing_audit/tmag_model_audit.csv": "9169e94b0c30c1b4024fb5a5ab9cb442ab9bc94bdb82642a5a0feed806762844"
+  },
+  "detailed_output_sha256": {
+    "data/derived/sprint1/release_transfer/a_1.087/c2/events.csv": "1eade7b6e7e8efa6fd31b17888d3047c783255f45141258f9553173e5a859bfc",
+    "data/derived/sprint1/release_transfer/a_1.087/c2/excluded.csv": "fca9756f72090082a58ecc270829cfe40b062bbd437484a105b7633e3668ae45",
+    "data/derived/sprint1/release_transfer/a_1.087/c2/forecasts.csv": "7fbd8bc25f4c9ceed68e6722c7df5a4457d8d00a23488ba9316fd058696acbc6",
+    "data/derived/sprint1/release_transfer/a_1.087/c2/host_refit_bootstrap.csv": "d283f394b0d222a3c7ea7959b96a24a8df7e6f65c75dab91626cf629b4168c18",
+    "data/derived/sprint1/release_transfer/a_1.087/c2/interface_forecasts.csv": "791d524592739b6cf630eb75064ff6744954ac1e5a1b256d7de0ac09d898c85b",
+    "data/derived/sprint1/release_transfer/a_1.087/c2/interface_scores.csv": "3889dc456cc09ed984cc65f6cf481de623d7df42c34db242e451cd6591c081b9",
+    "data/derived/sprint1/release_transfer/a_1.087/c2/interface_scores.receipt.json": "22a0f8e2684219f9757f3b1316bbcac91a203e0ec10c32ad785edcaca0205a19",
+    "data/derived/sprint1/release_transfer/a_1.087/c2/parameters.json": "235ec37c5e8afcd5e9f35afac7a1753a44127ac7e93b1bfe03c5391f29285458",
+    "data/derived/sprint1/release_transfer/a_1.087/c2/scores.csv": "1e27551d8d6be3ac4fa8a2609a11056a9c5e4d6e200e4047c084a9b26d5a87a7",
+    "data/derived/sprint1/release_transfer/a_1.087/c2/training_events.csv": "e39e93acf220c5d8e556a067dbb97c3feae72e48069d3486907e9ea4a94ffdd3",
+    "data/derived/sprint1/chronological/a_1.087/c2/events.csv": "4e67f2df9dcf5226bb58a3eb488185276ad908ec412db7681edaed35375a8394",
+    "data/derived/sprint1/chronological/a_1.087/c2/excluded.csv": "37aaef8bda2f577382b092e179321df88672dc79bb3e67e03d55402cbda73f8d",
+    "data/derived/sprint1/chronological/a_1.087/c2/forecasts.csv": "efd1b0023796f17b8fc9f28758f9ad8b9cdf99d5a4876d1db6e1089e309f7520",
+    "data/derived/sprint1/chronological/a_1.087/c2/host_refit_bootstrap.csv": "3b4add8cdb307a1bf03e36544bc26cf691d53e750dbc9fc79358bf0fc8cb21b0",
+    "data/derived/sprint1/chronological/a_1.087/c2/parameters.json": "1a588de08bccb1f44f2d012546e5d3c6b1d55f2195b907fd22b405cb89c2385f",
+    "data/derived/sprint1/chronological/a_1.087/c2/scores.csv": "6d02b6d60c759b6c965d662ae53e04acbeb95a19d32e67960c027958530e352a",
+    "data/derived/sprint1/chronological/a_1.087/c2/training_events.csv": "f8aff5ece8cf76f7fa1f6db7aec095ce37296deb3c566619f9006aa3437a5a53",
+    "data/derived/sprint1/delayed_origin/a_1.087/c2/events.csv": "0d8163e9a3469834552fe9cc914a04a43320638656c4d78b36373f2f2b46fc59",
+    "data/derived/sprint1/delayed_origin/a_1.087/c2/excluded.csv": "fca9756f72090082a58ecc270829cfe40b062bbd437484a105b7633e3668ae45",
+    "data/derived/sprint1/delayed_origin/a_1.087/c2/forecasts.csv": "4a7c3838ea3eeb6a54a26c7b2532b9a86250905ee67da811f1b842c0e2a6d9b4",
+    "data/derived/sprint1/delayed_origin/a_1.087/c2/host_refit_bootstrap.csv": "9661eecba35bf130e35356d3282d84482ac7a5c622cda14bb0d494fec494ecac",
+    "data/derived/sprint1/delayed_origin/a_1.087/c2/parameters.json": "22978a63af642b16ae101c70f2f5d373bc8f07036a6aba877e53350397206a99",
+    "data/derived/sprint1/delayed_origin/a_1.087/c2/scores.csv": "297e298accdc62518ce905c70f30308f87470d20b578c914cc2f558aeddfca98",
+    "data/derived/sprint1/delayed_origin/a_1.087/c2/training_events.csv": "e39e93acf220c5d8e556a067dbb97c3feae72e48069d3486907e9ea4a94ffdd3",
+    "data/derived/sprint1/late_published_proxy/a_1.087/c2/events.csv": "1eade7b6e7e8efa6fd31b17888d3047c783255f45141258f9553173e5a859bfc",
+    "data/derived/sprint1/late_published_proxy/a_1.087/c2/excluded.csv": "ec7403ca77b143543868d2577789d57556c5201caee02e2bb110017a62058fa6",
+    "data/derived/sprint1/late_published_proxy/a_1.087/c2/forecasts.csv": "f12ba62d01b6907952c7d6f6f43d285b0358256ca05027750fdda3208b4e23cc",
+    "data/derived/sprint1/late_published_proxy/a_1.087/c2/host_refit_bootstrap.csv": "4d1f5049452109c1ac8ac341facbbab927185e1dd4858d4a68549cc1236716fb",
+    "data/derived/sprint1/late_published_proxy/a_1.087/c2/parameters.json": "a63f7db603de8345af77c28850be0cd20c68073924c84b2eac53e71adda6f5b4",
+    "data/derived/sprint1/late_published_proxy/a_1.087/c2/scores.csv": "d2ff4884d9f93104d252229170d0ebba8362aaef164b19998476a9ac5a4dc258",
+    "data/derived/sprint1/late_published_proxy/a_1.087/c2/training_events.csv": "690546713c6fbb276ebca516888e55343cef79c4f5f9ffbdc725f8d948a99aef"
+  },
+  "handoff_script_sha256": "3287c6d76d9b67d6bed38450d47534a16c1fac4a646387e804eb7c9d4423c074",
+  "qualification": "All parameter sets are labelled development fits, not adopted protected-era rules. Raw IS95 and forecast-only normalisation accompany outcome-dependent standardisation."
+}

@@ -1,0 +1,325 @@
+{
+  "experiment": "chronological",
+  "status": "observation-date proxy: early DRC events can predate release, and timing availability predates neither training cutoff nor release by verified evidence",
+  "a": 1.0,
+  "covariance": "c2",
+  "scored_unit": "catalogue event; equal planet then event weights, one origin",
+  "fit_unit": "unclipped span-capped visit means with shared ephemeris covariance",
+  "train_events": 1696,
+  "train_planets": 133,
+  "train_hosts": 131,
+  "test_events": 1925,
+  "test_planets": 206,
+  "test_hosts": 200,
+  "unusable_train_rows": 159,
+  "unusable_test_rows": 126,
+  "C3_test_planets": [],
+  "test_pre_issue_events": 0,
+  "models": {
+    "M0": {
+      "b": 1.0,
+      "s_log_lambda": 0.0,
+      "converged": true,
+      "at_bound": false
+    },
+    "M1": {
+      "b": 7.409040768811313,
+      "nll": 2257.474292874406,
+      "converged": true,
+      "order": 384,
+      "gradient_max": 9.634447906137211e-09,
+      "at_bound": false,
+      "s_log_lambda": 0.0
+    },
+    "M2": {
+      "b": 1.0,
+      "s_log_lambda": 2.3132051292760183,
+      "nll": 2117.6645364006026,
+      "converged": true,
+      "at_bound": false,
+      "gradient_max": 2.6420736709553694e-08,
+      "order": 384
+    },
+    "M3": {
+      "b": 1.4144537611074575,
+      "nll": 2115.787946360285,
+      "converged": true,
+      "order": 384,
+      "gradient_max": 8.828922081427493e-06,
+      "at_bound": false,
+      "s_log_lambda": 1.9429724555250556
+    }
+  },
+  "metrics": {
+    "M0": {
+      "is95_standardised": 38.00885590232761,
+      "is95_minutes": 181.72200624494977,
+      "is95_forecast_normalised": 69.66131343605595,
+      "negative_log_score_seconds": 22.369485237770444,
+      "covered68": 0.60744080059234,
+      "covered95": 0.8827104017817226,
+      "width95_minutes": 10.234987315527395,
+      "delta_standardised_vs_M0": 0.0,
+      "fraction_planets_improved": 0.0,
+      "median_planet_delta_standardised": 0.0
+    },
+    "M1": {
+      "is95_standardised": 36.3348561298417,
+      "is95_minutes": 145.59725273821056,
+      "is95_forecast_normalised": 72.84758280962592,
+      "negative_log_score_seconds": 7.781466854225274,
+      "covered68": 0.9448424452825321,
+      "covered95": 0.982200647249191,
+      "width95_minutes": 41.34588180754839,
+      "delta_standardised_vs_M0": -1.6739997724859044,
+      "fraction_planets_improved": 0.0825242718446602,
+      "median_planet_delta_standardised": 7.69422190698863
+    },
+    "M2": {
+      "is95_standardised": 35.08953963804351,
+      "is95_minutes": 158.13464639651679,
+      "is95_forecast_normalised": 66.44377420504831,
+      "negative_log_score_seconds": 6.483469746981892,
+      "covered68": 0.6781892137605054,
+      "covered95": 0.953794824523318,
+      "width95_minutes": 18.76522720093387,
+      "delta_standardised_vs_M0": -2.9193162642840838,
+      "fraction_planets_improved": 0.24757281553398058,
+      "median_planet_delta_standardised": 1.1779734893604692
+    },
+    "M3": {
+      "is95_standardised": 34.92210484380733,
+      "is95_minutes": 155.58633367317398,
+      "is95_forecast_normalised": 66.45047893023799,
+      "negative_log_score_seconds": 6.494798328227645,
+      "covered68": 0.7172569289733256,
+      "covered95": 0.9543915531326109,
+      "width95_minutes": 20.274420378342853,
+      "delta_standardised_vs_M0": -3.0867510585202758,
+      "fraction_planets_improved": 0.23300970873786409,
+      "median_planet_delta_standardised": 1.499073059082218
+    }
+  },
+  "host_refit": {
+    "M1": {
+      "replicates": 200,
+      "fits_at_bound": 0,
+      "near_zero_heterogeneity": 200,
+      "parameter_percentile95": {
+        "b": [
+          1.7014262680389247,
+          12.326921393477143
+        ],
+        "s_log_lambda": [
+          0.0,
+          0.0
+        ]
+      },
+      "delta_is95_standardised_percentile95": [
+        -7.974676757943251,
+        10.414091143570706
+      ],
+      "delta_is95_minutes_percentile95": [
+        -93.18511791963564,
+        26.271851797466496
+      ],
+      "delta_is95_forecast_normalised_percentile95": [
+        -5.8422559270609025,
+        25.046617114910465
+      ],
+      "delta_negative_log_score_seconds_percentile95": [
+        -30.81926979303657,
+        -0.2880440912749278
+      ],
+      "delta_covered95_percentile95": [
+        0.031834515692176636,
+        0.12420905397022475
+      ],
+      "delta_width95_minutes_percentile95": [
+        2.5640625497923777,
+        62.79881995217018
+      ],
+      "conditional_decision": "inconclusive"
+    },
+    "M2": {
+      "replicates": 200,
+      "fits_at_bound": 0,
+      "near_zero_heterogeneity": 0,
+      "parameter_percentile95": {
+        "b": [
+          1.0,
+          1.0
+        ],
+        "s_log_lambda": [
+          1.3971157816014317,
+          2.9943797112852044
+        ]
+      },
+      "delta_is95_standardised_percentile95": [
+        -6.801213012337071,
+        -0.1026780487225619
+      ],
+      "delta_is95_minutes_percentile95": [
+        -66.29761939016129,
+        2.236303114161446
+      ],
+      "delta_is95_forecast_normalised_percentile95": [
+        -7.96675684930304,
+        0.22146310182161008
+      ],
+      "delta_negative_log_score_seconds_percentile95": [
+        -37.41029211242421,
+        -0.5494883028445853
+      ],
+      "delta_covered95_percentile95": [
+        0.031777686085945674,
+        0.1003177335368936
+      ],
+      "delta_width95_minutes_percentile95": [
+        2.3099792363496805,
+        19.909446024299143
+      ],
+      "conditional_decision": "improves"
+    },
+    "M3": {
+      "replicates": 200,
+      "fits_at_bound": 1,
+      "near_zero_heterogeneity": 1,
+      "parameter_percentile95": {
+        "b": [
+          1.049671337487782,
+          1.9603993430179651
+        ],
+        "s_log_lambda": [
+          0.5268984947566536,
+          2.8259761126973046
+        ]
+      },
+      "delta_is95_standardised_percentile95": [
+        -7.039792750671067,
+        0.16452770435179545
+      ],
+      "delta_is95_minutes_percentile95": [
+        -69.42218875755835,
+        2.6019241973849816
+      ],
+      "delta_is95_forecast_normalised_percentile95": [
+        -7.8295425383111885,
+        1.3840986822002663
+      ],
+      "delta_negative_log_score_seconds_percentile95": [
+        -37.39932443699723,
+        -0.5482168230281096
+      ],
+      "delta_covered95_percentile95": [
+        0.04007495836741333,
+        0.10533935770674867
+      ],
+      "delta_width95_minutes_percentile95": [
+        2.844382348651156,
+        21.7998720050822
+      ],
+      "conditional_decision": "inconclusive"
+    }
+  },
+  "numeric": {
+    "M0": {
+      "max_width95_relative_192_vs384": 0.0,
+      "max_log_density_abs_192_vs384": 0.0,
+      "max_width95_relative_interpolation": 0.0
+    },
+    "M1": {
+      "max_width95_relative_192_vs384": 0.0,
+      "max_log_density_abs_192_vs384": 0.0,
+      "max_width95_relative_interpolation": 0.0
+    },
+    "M2": {
+      "max_width95_relative_192_vs384": 3.330008435010433e-09,
+      "max_log_density_abs_192_vs384": 9.927321116265375e-07,
+      "max_width95_relative_interpolation": 2.0867695375988135e-07
+    },
+    "M3": {
+      "max_width95_relative_192_vs384": 9.213456125578606e-11,
+      "max_log_density_abs_192_vs384": 1.1107001185450827e-07,
+      "max_width95_relative_interpolation": 1.5874899320176533e-07
+    }
+  },
+  "fit_parameter_difference_192_384": {
+    "M0": {
+      "b": 0.0,
+      "s_log_lambda": 0.0
+    },
+    "M1": {
+      "b": 0.0,
+      "s_log_lambda": 0.0
+    },
+    "M2": {
+      "b": 0.0,
+      "s_log_lambda": 1.8705068027813354e-06
+    },
+    "M3": {
+      "b": 1.1405360433869305e-08,
+      "s_log_lambda": 1.5673435882490594e-07
+    }
+  },
+  "influence": {
+    "M1": {
+      "top_two_absolute_contribution_hosts": [
+        {
+          "host": "TOI-1130",
+          "contribution": -4.459970244609369
+        },
+        {
+          "host": "TOI-125",
+          "contribution": -1.5205062035087145
+        }
+      ],
+      "leave_top_two_out_delta": 4.391753441486282,
+      "common_planets": 23,
+      "common_planet_delta": 8.345659162643514,
+      "new_planets": 183,
+      "new_planet_delta": -2.933301168704356
+    },
+    "M2": {
+      "top_two_absolute_contribution_hosts": [
+        {
+          "host": "TOI-1130",
+          "contribution": -1.4160797983674578
+        },
+        {
+          "host": "TOI-125",
+          "contribution": -0.914941201614804
+        }
+      ],
+      "leave_top_two_out_delta": -0.5999446754761162,
+      "common_planets": 23,
+      "common_planet_delta": -0.8879407775923888,
+      "new_planets": 183,
+      "new_planet_delta": -3.1746257516824934
+    },
+    "M3": {
+      "top_two_absolute_contribution_hosts": [
+        {
+          "host": "TOI-1130",
+          "contribution": -1.6309162295932687
+        },
+        {
+          "host": "TOI-125",
+          "contribution": -1.059563723967664
+        }
+      ],
+      "leave_top_two_out_delta": -0.4041180575327959,
+      "common_planets": 23,
+      "common_planet_delta": -0.2609544671691127,
+      "new_planets": 183,
+      "new_planet_delta": -3.441905821367691
+    }
+  },
+  "parameter_sha256": "3acfd478acf6f4c38d5af7308c917dbc8e380f9ca8cffa330bc18f90a471ba48",
+  "details_directory": "data/derived/sprint1/chronological/a_1/c2",
+  "protected_outcomes_accessed": false,
+  "actually_issued_correction": false,
+  "historical_input_availability_verified": false,
+  "calibration_origin_utc": null,
+  "historically_deployable": false
+}

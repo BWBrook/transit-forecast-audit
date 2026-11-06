@@ -1,0 +1,11 @@
+product,stratum,z_rms_difference,median_bias_sigma_difference,cover95_difference
+TESS-SPOC_200,all,0.0,0.0,0.0
+TESS-SPOC_200,A_lt10,0.0,0.0,0.0
+TESS-SPOC_200,B_10_11,0.0,0.0,0.0
+TESS-SPOC_200,C_11_12,0.0,0.0,0.0
+TESS-SPOC_200,D_12_13.5,0.0,0.0,0.0
+SPOC_120,all,0.0,0.0,0.0
+SPOC_120,A_lt10,0.0,0.0,0.0
+SPOC_120,B_10_11,0.0,0.0,0.0
+SPOC_120,C_11_12,0.0,0.0,0.0
+SPOC_120,D_12_13.5,0.0,0.0,0.0

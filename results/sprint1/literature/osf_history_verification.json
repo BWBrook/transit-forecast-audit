@@ -1,0 +1,86 @@
+{
+  "histories": [
+    {
+      "node": "wna5e",
+      "public_log_id": "6166ee451ae813030b7ae820",
+      "public_at_utc": "2021-10-13T14:33:41.786917",
+      "made_private_records": 0
+    },
+    {
+      "node": "p298n",
+      "public_log_id": "6294bbaff46ecb03d183bc3b",
+      "public_at_utc": "2022-05-30T12:42:23.267781",
+      "made_private_records": 0
+    },
+    {
+      "node": "wpjtn",
+      "public_log_id": "691c3fbccd6ca7884a39bdd7",
+      "public_at_utc": "2025-11-18T09:43:24.090310",
+      "made_private_records": 0
+    }
+  ],
+  "DRD_forecast_file_id": "691baed85f334aadee770a79",
+  "DRD_file_added_log_id": "691baed91cc98a97cc11799c",
+  "DRD_file_added_utc": "2025-11-17T23:25:13.098068",
+  "DRD_verified_public_anchor_utc": "2025-11-18T09:43:24.090310Z",
+  "DRD_analysed_file_sha256": "582a6ca8e65d85a5c840452f93e8dd5f0f0ef404b4c28fb4836e7b15efc094af",
+  "raw_receipts": [
+    {
+      "url": "https://api.osf.io/v2/nodes/wna5e/logs/?page%5Bsize%5D=100",
+      "file": "data/raw/sprint1_osf_logs/wna5e.json",
+      "sha256": "1839d37924d09a69ad35ec0a2fa86020346679d94278bfba176306cb5b06d7d6",
+      "retrieved_at_utc": "2026-11-06T12:21:54.686052+00:00"
+    },
+    {
+      "url": "https://api.osf.io/v2/nodes/p298n/logs/?page%5Bsize%5D=100",
+      "file": "data/raw/sprint1_osf_logs/p298n.json",
+      "sha256": "39acf349a059e846b56ddaded4e9fb9abb04fb8167d1704aa45ae59471761638",
+      "retrieved_at_utc": "2026-11-06T12:21:57.783422+00:00"
+    },
+    {
+      "url": "https://api.osf.io/v2/nodes/wpjtn/logs/?page%5Bsize%5D=100",
+      "file": "data/raw/sprint1_osf_logs/wpjtn.json",
+      "sha256": "3a6f04bc3303874f99d9011f803adab9d7f42d2e34f7aabb440353662526bbfd",
+      "retrieved_at_utc": "2026-11-06T12:22:00.584343+00:00"
+    },
+    {
+      "url": "https://api.osf.io/v2/nodes/wna5e/logs/?filter%5Baction%5D=made_public&page%5Bsize%5D=100",
+      "file": "data/raw/sprint1_osf_logs/wna5e_made_public.json",
+      "sha256": "d5bdde6eb83c1d9bda44886572adeb3c59f10562ec5e46d4316624efc018bb92",
+      "retrieved_at_utc": "2026-11-06T12:24:40.658184+00:00"
+    },
+    {
+      "url": "https://api.osf.io/v2/nodes/wna5e/logs/?filter%5Baction%5D=made_private&page%5Bsize%5D=100",
+      "file": "data/raw/sprint1_osf_logs/wna5e_made_private.json",
+      "sha256": "4e3e57f6838ffbb9823a633ec2eb57e4f23fb9573188d3bdad22dba0b0872db6",
+      "retrieved_at_utc": "2026-11-06T12:24:41.425834+00:00"
+    },
+    {
+      "url": "https://api.osf.io/v2/nodes/p298n/logs/?filter%5Baction%5D=made_public&page%5Bsize%5D=100",
+      "file": "data/raw/sprint1_osf_logs/p298n_made_public.json",
+      "sha256": "c23765fb39d90542346d8e923c261a2cd26f9683f71055d4aebe611a76a71fa1",
+      "retrieved_at_utc": "2026-11-06T12:24:42.356173+00:00"
+    },
+    {
+      "url": "https://api.osf.io/v2/nodes/p298n/logs/?filter%5Baction%5D=made_private&page%5Bsize%5D=100",
+      "file": "data/raw/sprint1_osf_logs/p298n_made_private.json",
+      "sha256": "4e3e57f6838ffbb9823a633ec2eb57e4f23fb9573188d3bdad22dba0b0872db6",
+      "retrieved_at_utc": "2026-11-06T12:24:43.112074+00:00"
+    },
+    {
+      "url": "https://api.osf.io/v2/nodes/wpjtn/logs/?filter%5Baction%5D=made_public&page%5Bsize%5D=100",
+      "file": "data/raw/sprint1_osf_logs/wpjtn_made_public.json",
+      "sha256": "631e7cf1a31760af32dad811fb2abf6a0f63b5957b6deba6bc616053c15edd2c",
+      "retrieved_at_utc": "2026-11-06T12:24:43.884333+00:00"
+    },
+    {
+      "url": "https://api.osf.io/v2/nodes/wpjtn/logs/?filter%5Baction%5D=made_private&page%5Bsize%5D=100",
+      "file": "data/raw/sprint1_osf_logs/wpjtn_made_private.json",
+      "sha256": "4e3e57f6838ffbb9823a633ec2eb57e4f23fb9573188d3bdad22dba0b0872db6",
+      "retrieved_at_utc": "2026-11-06T12:24:44.674142+00:00"
+    }
+  ],
+  "interpretation": "max(file add, public transition); no intervening private action in complete filtered histories",
+  "strict_whole_day_start_utc": "2025-11-19T00:00:00Z",
+  "protected_data_opened": false
+}

@@ -1,0 +1,814 @@
+{
+  "covariance_dense_check": {
+    "replicates": 200,
+    "well_conditioned_dense_comparisons": 851,
+    "max_abs_loglik_error_condition_lt_1e10": 3.901603236045048e-06,
+    "ill_conditioned_dense_oracle_comparisons_excluded": 149,
+    "max_dense_disagreement_in_excluded_stress_cases": 26.15393734207504,
+    "stress_note": "Dense solve is not an oracle near machine precision; the reviewed SVD form is designed to avoid this cancellation"
+  },
+  "likelihood_gradient_check": {
+    "replicates": 20,
+    "comparisons": 60,
+    "max_abs_gradient_error": 3.069155241064436e-08,
+    "max_scaled_gradient_error": 5.5145106259146814e-09
+  },
+  "mixture_adaptive_check": {
+    "cases": 36,
+    "max_quantile_abs_error": 9.457524123490657e-05,
+    "max_nll_abs_error": 8.850965953044465e-06,
+    "worst_quantile": {
+      "s": 5.0,
+      "ratio": 0.01,
+      "multiple": 0.0,
+      "quantile_max_abs_error": 9.457524123490657e-05,
+      "nll_abs_error": 1.0309308962064279e-11
+    },
+    "worst_nll": {
+      "s": 5.0,
+      "ratio": 0.01,
+      "multiple": 5.0,
+      "quantile_max_abs_error": 9.457524123490657e-05,
+      "nll_abs_error": 8.850965953044465e-06
+    }
+  },
+  "gaussian_analytic_score_check": {
+    "replicates": 200,
+    "max_abs_error": {
+      "is95_standardised": 5.684341886080802e-14,
+      "is95_minutes": 4.547473508864641e-13,
+      "negative_log_score_seconds": 1.4210854715202004e-14,
+      "covered68": 0.0,
+      "covered95": 0.0,
+      "width95_minutes": 2.842170943040401e-14
+    }
+  },
+  "grid_convolution_check": {
+    "measurement_offset_mean_s": 4.0,
+    "expected_reported_residual_mean_s": -4.0,
+    "max_abs_error": 8.881784197001252e-16,
+    "errors": {
+      "is95_standardised": 0.0,
+      "is95_minutes": 0.0,
+      "negative_log_score_seconds": 8.881784197001252e-16,
+      "covered68": 0.0,
+      "covered95": 0.0,
+      "width95_minutes": 0.0
+    }
+  },
+  "observed_weighting": {
+    "release_transfer": {
+      "M1": {
+        "is95_standardised": {
+          "mean_planet_delta": -2.357796447874072,
+          "median_planet_delta": 1.0167478156986052,
+          "fraction_planets_improved": 0.23109243697478993
+        },
+        "is95_forecast_normalised": {
+          "mean_planet_delta": -2.7635038266709038,
+          "median_planet_delta": 3.1201302524702204,
+          "fraction_planets_improved": 0.23109243697478993
+        },
+        "is95_minutes": {
+          "mean_planet_delta": -16.556171807662405,
+          "median_planet_delta": 1.3543568193976319,
+          "fraction_planets_improved": 0.22268907563025211
+        }
+      },
+      "M2": {
+        "is95_standardised": {
+          "mean_planet_delta": -2.444936365328318,
+          "median_planet_delta": 0.9311628018740521,
+          "fraction_planets_improved": 0.23529411764705882
+        },
+        "is95_forecast_normalised": {
+          "mean_planet_delta": -2.9173089205352567,
+          "median_planet_delta": 2.893945163258012,
+          "fraction_planets_improved": 0.23529411764705882
+        },
+        "is95_minutes": {
+          "mean_planet_delta": -16.83528306475065,
+          "median_planet_delta": 1.2623165991582046,
+          "fraction_planets_improved": 0.226890756302521
+        }
+      },
+      "M3": {
+        "is95_standardised": {
+          "mean_planet_delta": -2.357797573534416,
+          "median_planet_delta": 1.0167498652915476,
+          "fraction_planets_improved": 0.23109243697478993
+        },
+        "is95_forecast_normalised": {
+          "mean_planet_delta": -2.7635035719078265,
+          "median_planet_delta": 3.1201366270608695,
+          "fraction_planets_improved": 0.23109243697478993
+        },
+        "is95_minutes": {
+          "mean_planet_delta": -16.55618990567251,
+          "median_planet_delta": 1.3543633893756233,
+          "fraction_planets_improved": 0.22268907563025211
+        }
+      }
+    },
+    "chronological": {
+      "M1": {
+        "is95_standardised": {
+          "mean_planet_delta": -1.6600494989108927,
+          "median_planet_delta": 7.45324376457525,
+          "fraction_planets_improved": 0.07281553398058252
+        },
+        "is95_forecast_normalised": {
+          "mean_planet_delta": 3.6512518122772506,
+          "median_planet_delta": 18.60289816120185,
+          "fraction_planets_improved": 0.06796116504854369
+        },
+        "is95_minutes": {
+          "mean_planet_delta": -35.091940601503474,
+          "median_planet_delta": 9.896234254490412,
+          "fraction_planets_improved": 0.06796116504854369
+        }
+      },
+      "M2": {
+        "is95_standardised": {
+          "mean_planet_delta": -2.628470476861958,
+          "median_planet_delta": 1.174306731250388,
+          "fraction_planets_improved": 0.1941747572815534
+        },
+        "is95_forecast_normalised": {
+          "mean_planet_delta": -2.6029760268346536,
+          "median_planet_delta": 3.707060389841894,
+          "fraction_planets_improved": 0.19902912621359223
+        },
+        "is95_minutes": {
+          "mean_planet_delta": -22.707791365470104,
+          "median_planet_delta": 1.6978175500871355,
+          "fraction_planets_improved": 0.1941747572815534
+        }
+      },
+      "M3": {
+        "is95_standardised": {
+          "mean_planet_delta": -2.7724271292248606,
+          "median_planet_delta": 1.4540719893390106,
+          "fraction_planets_improved": 0.18446601941747573
+        },
+        "is95_forecast_normalised": {
+          "mean_planet_delta": -2.606954300108555,
+          "median_planet_delta": 4.375954310281346,
+          "fraction_planets_improved": 0.18932038834951456
+        },
+        "is95_minutes": {
+          "mean_planet_delta": -24.769925045357397,
+          "median_planet_delta": 2.0247183247358005,
+          "fraction_planets_improved": 0.18932038834951456
+        }
+      }
+    },
+    "delayed_origin": {
+      "M1": {
+        "is95_standardised": {
+          "mean_planet_delta": -2.34645559821529,
+          "median_planet_delta": 1.0089666867949383,
+          "fraction_planets_improved": 0.2297872340425532
+        },
+        "is95_forecast_normalised": {
+          "mean_planet_delta": -2.701661411112592,
+          "median_planet_delta": 3.1183631156512863,
+          "fraction_planets_improved": 0.2297872340425532
+        },
+        "is95_minutes": {
+          "mean_planet_delta": -16.744815299854064,
+          "median_planet_delta": 1.35935597336564,
+          "fraction_planets_improved": 0.22127659574468084
+        }
+      },
+      "M2": {
+        "is95_standardised": {
+          "mean_planet_delta": -2.434564896079612,
+          "median_planet_delta": 0.9232291186137527,
+          "fraction_planets_improved": 0.23404255319148937
+        },
+        "is95_forecast_normalised": {
+          "mean_planet_delta": -2.8557366062759924,
+          "median_planet_delta": 2.893623045543462,
+          "fraction_planets_improved": 0.23404255319148937
+        },
+        "is95_minutes": {
+          "mean_planet_delta": -17.0274458197142,
+          "median_planet_delta": 1.2776206377493367,
+          "fraction_planets_improved": 0.225531914893617
+        }
+      },
+      "M3": {
+        "is95_standardised": {
+          "mean_planet_delta": -2.3464568100253413,
+          "median_planet_delta": 1.0089687298335157,
+          "fraction_planets_improved": 0.2297872340425532
+        },
+        "is95_forecast_normalised": {
+          "mean_planet_delta": -2.7016612637220554,
+          "median_planet_delta": 3.11836948576582,
+          "fraction_planets_improved": 0.2297872340425532
+        },
+        "is95_minutes": {
+          "mean_planet_delta": -16.74483367351888,
+          "median_planet_delta": 1.359358515314511,
+          "fraction_planets_improved": 0.22127659574468084
+        }
+      }
+    },
+    "late_published_proxy": {
+      "M1": {
+        "is95_standardised": {
+          "mean_planet_delta": -2.466098097668793,
+          "median_planet_delta": 1.266083441271403,
+          "fraction_planets_improved": 0.20588235294117646
+        },
+        "is95_forecast_normalised": {
+          "mean_planet_delta": -2.7240173460317134,
+          "median_planet_delta": 3.8117224868303747,
+          "fraction_planets_improved": 0.21008403361344538
+        },
+        "is95_minutes": {
+          "mean_planet_delta": -18.377123594182965,
+          "median_planet_delta": 1.7270460910857166,
+          "fraction_planets_improved": 0.20588235294117646
+        }
+      },
+      "M2": {
+        "is95_standardised": {
+          "mean_planet_delta": -2.4966628720005475,
+          "median_planet_delta": 1.0057477641492527,
+          "fraction_planets_improved": 0.22268907563025211
+        },
+        "is95_forecast_normalised": {
+          "mean_planet_delta": -2.916182523357539,
+          "median_planet_delta": 3.135843299315156,
+          "fraction_planets_improved": 0.226890756302521
+        },
+        "is95_minutes": {
+          "mean_planet_delta": -17.59568482830638,
+          "median_planet_delta": 1.3639801109866598,
+          "fraction_planets_improved": 0.2184873949579832
+        }
+      },
+      "M3": {
+        "is95_standardised": {
+          "mean_planet_delta": -2.5817704998470257,
+          "median_planet_delta": 1.3397675155688267,
+          "fraction_planets_improved": 0.20588235294117646
+        },
+        "is95_forecast_normalised": {
+          "mean_planet_delta": -2.799535959159918,
+          "median_planet_delta": 3.999159122999272,
+          "fraction_planets_improved": 0.21008403361344538
+        },
+        "is95_minutes": {
+          "mean_planet_delta": -19.64588065407452,
+          "median_planet_delta": 1.8413980226122126,
+          "fraction_planets_improved": 0.20588235294117646
+        }
+      }
+    }
+  },
+  "artifact_checks": {
+    "release_transfer": {
+      "status": "checked",
+      "events": 2324,
+      "planets": 238,
+      "training_C3_planets": [],
+      "scoring_C3_planets": [],
+      "score_rows": 9296,
+      "parameter_sha256": "235ec37c5e8afcd5e9f35afac7a1753a44127ac7e93b1bfe03c5391f29285458",
+      "max_abs_forecast_variance_reconstruction_error_s2": 0.0,
+      "max_abs_summary_reaggregation_error": 0.0,
+      "max_abs_weight_invariant_error": 0.0
+    },
+    "chronological": {
+      "status": "checked",
+      "events": 1925,
+      "planets": 206,
+      "training_C3_planets": [],
+      "scoring_C3_planets": [],
+      "score_rows": 7700,
+      "parameter_sha256": "1a588de08bccb1f44f2d012546e5d3c6b1d55f2195b907fd22b405cb89c2385f",
+      "max_abs_forecast_variance_reconstruction_error_s2": 0.0,
+      "max_abs_summary_reaggregation_error": 0.0,
+      "max_abs_weight_invariant_error": 1.1102230246251565e-16
+    },
+    "delayed_origin": {
+      "status": "checked",
+      "events": 2320,
+      "planets": 235,
+      "training_C3_planets": [],
+      "scoring_C3_planets": [],
+      "score_rows": 9280,
+      "parameter_sha256": "22978a63af642b16ae101c70f2f5d373bc8f07036a6aba877e53350397206a99",
+      "max_abs_forecast_variance_reconstruction_error_s2": 0.0,
+      "max_abs_summary_reaggregation_error": 0.0,
+      "max_abs_weight_invariant_error": 0.0
+    },
+    "late_published_proxy": {
+      "status": "checked",
+      "events": 2324,
+      "planets": 238,
+      "training_C3_planets": [],
+      "scoring_C3_planets": [],
+      "score_rows": 9296,
+      "parameter_sha256": "a63f7db603de8345af77c28850be0cd20c68073924c84b2eac53e71adda6f5b4",
+      "max_abs_forecast_variance_reconstruction_error_s2": 0.0,
+      "max_abs_summary_reaggregation_error": 0.0,
+      "max_abs_weight_invariant_error": 0.0
+    }
+  },
+  "m2_width_semantics": [
+    {
+      "s": 1.0,
+      "outcome_to_forecast_sd_ratio": 0.01,
+      "central68_halfwidth_ratio_to_M0": 1.0196305866210529,
+      "central95_halfwidth_ratio_to_M0": 1.3490124251989573
+    },
+    {
+      "s": 1.0,
+      "outcome_to_forecast_sd_ratio": 1.0,
+      "central68_halfwidth_ratio_to_M0": 1.0541494981844568,
+      "central95_halfwidth_ratio_to_M0": 1.1633114192652858
+    },
+    {
+      "s": 1.0,
+      "outcome_to_forecast_sd_ratio": 100.0,
+      "central68_halfwidth_ratio_to_M0": 1.000032420628648,
+      "central95_halfwidth_ratio_to_M0": 1.000032437194466
+    },
+    {
+      "s": 2.1618792749978195,
+      "outcome_to_forecast_sd_ratio": 0.01,
+      "central68_halfwidth_ratio_to_M0": 1.1593741254693561,
+      "central95_halfwidth_ratio_to_M0": 2.7520612035528336
+    },
+    {
+      "s": 2.1618792749978195,
+      "outcome_to_forecast_sd_ratio": 1.0,
+      "central68_halfwidth_ratio_to_M0": 1.1938249751969277,
+      "central95_halfwidth_ratio_to_M0": 2.0235943282699775
+    },
+    {
+      "s": 2.1618792749978195,
+      "outcome_to_forecast_sd_ratio": 100.0,
+      "central68_halfwidth_ratio_to_M0": 1.0004510397272404,
+      "central95_halfwidth_ratio_to_M0": 1.0004693298457867
+    },
+    {
+      "s": 2.5,
+      "outcome_to_forecast_sd_ratio": 0.01,
+      "central68_halfwidth_ratio_to_M0": 1.2225236202221677,
+      "central95_halfwidth_ratio_to_M0": 3.4778239889235154
+    },
+    {
+      "s": 2.5,
+      "outcome_to_forecast_sd_ratio": 1.0,
+      "central68_halfwidth_ratio_to_M0": 1.2417898394992852,
+      "central95_halfwidth_ratio_to_M0": 2.5164691419816343
+    },
+    {
+      "s": 2.5,
+      "outcome_to_forecast_sd_ratio": 100.0,
+      "central68_halfwidth_ratio_to_M0": 1.0009576647567895,
+      "central95_halfwidth_ratio_to_M0": 1.0010666683423768
+    },
+    {
+      "s": 5.0,
+      "outcome_to_forecast_sd_ratio": 0.01,
+      "central68_halfwidth_ratio_to_M0": 1.9846979103326856,
+      "central95_halfwidth_ratio_to_M0": 22.55878307040183
+    },
+    {
+      "s": 5.0,
+      "outcome_to_forecast_sd_ratio": 1.0,
+      "central68_halfwidth_ratio_to_M0": 1.693192291443526,
+      "central95_halfwidth_ratio_to_M0": 15.958877303342316
+    },
+    {
+      "s": 5.0,
+      "outcome_to_forecast_sd_ratio": 100.0,
+      "central68_halfwidth_ratio_to_M0": 1.0351160316583254,
+      "central95_halfwidth_ratio_to_M0": 1.0754322791376727
+    }
+  ],
+  "sensitivity_decisions": {
+    "release_transfer": [
+      {
+        "a": 0.85,
+        "covariance": "c2",
+        "point_delta": -3.9041299225513613,
+        "percentile95": [
+          -7.441452078188281,
+          -0.6601313589444545
+        ],
+        "conditional_decision": "improves"
+      },
+      {
+        "a": 0.95,
+        "covariance": "c2",
+        "point_delta": -3.172907334437645,
+        "percentile95": [
+          -6.548564050620649,
+          -0.23860357704110005
+        ],
+        "conditional_decision": "improves"
+      },
+      {
+        "a": 0.9,
+        "covariance": "c2",
+        "point_delta": -3.513033663502351,
+        "percentile95": [
+          -6.855457870559509,
+          -0.43513714963299355
+        ],
+        "conditional_decision": "improves"
+      },
+      {
+        "a": 1.05,
+        "covariance": "c2",
+        "point_delta": -2.6129155292292676,
+        "percentile95": [
+          -5.811396693007809,
+          0.09271803325766277
+        ],
+        "conditional_decision": "inconclusive"
+      },
+      {
+        "a": 1.087,
+        "covariance": "c2",
+        "point_delta": -2.444936365328317,
+        "percentile95": [
+          -5.756230785337786,
+          0.18732631206473524
+        ],
+        "conditional_decision": "inconclusive"
+      },
+      {
+        "a": 1.087,
+        "covariance": "rho_minus1",
+        "point_delta": -5.886551470112951,
+        "percentile95": [
+          -17.866247077395222,
+          7.175471331152615
+        ],
+        "conditional_decision": "inconclusive"
+      },
+      {
+        "a": 1.087,
+        "covariance": "rho_plus1",
+        "point_delta": -1.4721167240603987,
+        "percentile95": [
+          -3.3929971712647595,
+          0.5395125331682069
+        ],
+        "conditional_decision": "inconclusive"
+      },
+      {
+        "a": 1.087,
+        "covariance": "zero",
+        "point_delta": -2.440563332650761,
+        "percentile95": [
+          -5.576070482209159,
+          0.19311575561054314
+        ],
+        "conditional_decision": "inconclusive"
+      },
+      {
+        "a": 1.15,
+        "covariance": "c2",
+        "point_delta": -2.2004228268115287,
+        "percentile95": [
+          -5.206669950170485,
+          0.31828952569381574
+        ],
+        "conditional_decision": "inconclusive"
+      },
+      {
+        "a": 1.1,
+        "covariance": "c2",
+        "point_delta": -2.3899980120396243,
+        "percentile95": [
+          -5.502243839500236,
+          0.22165413534369635
+        ],
+        "conditional_decision": "inconclusive"
+      },
+      {
+        "a": 1.25,
+        "covariance": "c2",
+        "point_delta": -1.914940464629867,
+        "percentile95": [
+          -4.819601668895626,
+          0.4068722428802422
+        ],
+        "conditional_decision": "inconclusive"
+      },
+      {
+        "a": 1.2,
+        "covariance": "c2",
+        "point_delta": -2.043775637692863,
+        "percentile95": [
+          -4.929438830181631,
+          0.3704702615199072
+        ],
+        "conditional_decision": "inconclusive"
+      },
+      {
+        "a": 1.0,
+        "covariance": "c2",
+        "point_delta": -2.8777655385204644,
+        "percentile95": [
+          -6.18623038278591,
+          -0.07993581603695918
+        ],
+        "conditional_decision": "improves"
+      }
+    ],
+    "chronological": [
+      {
+        "a": 0.85,
+        "covariance": "c2",
+        "point_delta": -3.6414408870736708,
+        "percentile95": [
+          -7.993902074125264,
+          -0.659986877652047
+        ],
+        "conditional_decision": "improves"
+      },
+      {
+        "a": 0.95,
+        "covariance": "c2",
+        "point_delta": -3.1213835994582877,
+        "percentile95": [
+          -7.159570410154803,
+          -0.27558979064024525
+        ],
+        "conditional_decision": "improves"
+      },
+      {
+        "a": 0.9,
+        "covariance": "c2",
+        "point_delta": -3.3572287749389216,
+        "percentile95": [
+          -7.557272207399815,
+          -0.4411904998323692
+        ],
+        "conditional_decision": "improves"
+      },
+      {
+        "a": 1.05,
+        "covariance": "c2",
+        "point_delta": -2.7385530812084586,
+        "percentile95": [
+          -6.474738257716323,
+          0.022720318855565667
+        ],
+        "conditional_decision": "inconclusive"
+      },
+      {
+        "a": 1.087,
+        "covariance": "c2",
+        "point_delta": -2.628470476861958,
+        "percentile95": [
+          -6.350647971925365,
+          0.06749004120616929
+        ],
+        "conditional_decision": "inconclusive"
+      },
+      {
+        "a": 1.087,
+        "covariance": "rho_minus1",
+        "point_delta": -6.42995204233603,
+        "percentile95": [
+          -15.00527838183316,
+          2.8914701174372706
+        ],
+        "conditional_decision": "inconclusive"
+      },
+      {
+        "a": 1.087,
+        "covariance": "rho_plus1",
+        "point_delta": -1.5437162094646761,
+        "percentile95": [
+          -3.89026844058331,
+          0.18374787287574493
+        ],
+        "conditional_decision": "inconclusive"
+      },
+      {
+        "a": 1.087,
+        "covariance": "zero",
+        "point_delta": -2.618762866425006,
+        "percentile95": [
+          -6.2641649660423635,
+          0.09530650767448243
+        ],
+        "conditional_decision": "inconclusive"
+      },
+      {
+        "a": 1.15,
+        "covariance": "c2",
+        "point_delta": -2.469830460735232,
+        "percentile95": [
+          -5.944666664984613,
+          0.17221477021875992
+        ],
+        "conditional_decision": "inconclusive"
+      },
+      {
+        "a": 1.1,
+        "covariance": "c2",
+        "point_delta": -2.5919252934267987,
+        "percentile95": [
+          -6.194797586798582,
+          0.11563478950935471
+        ],
+        "conditional_decision": "inconclusive"
+      },
+      {
+        "a": 1.25,
+        "covariance": "c2",
+        "point_delta": -2.274731473987768,
+        "percentile95": [
+          -5.6147963055158945,
+          0.23401957175415602
+        ],
+        "conditional_decision": "inconclusive"
+      },
+      {
+        "a": 1.2,
+        "covariance": "c2",
+        "point_delta": -2.364034436846268,
+        "percentile95": [
+          -5.716214633599784,
+          0.20217396299013873
+        ],
+        "conditional_decision": "inconclusive"
+      },
+      {
+        "a": 1.0,
+        "covariance": "c2",
+        "point_delta": -2.9193162642840838,
+        "percentile95": [
+          -6.801213012337071,
+          -0.1026780487225619
+        ],
+        "conditional_decision": "improves"
+      }
+    ],
+    "delayed_origin": [
+      {
+        "a": 1.087,
+        "covariance": "c2",
+        "point_delta": -2.434564896079611,
+        "percentile95": [
+          -5.729040229482145,
+          0.37275402330531304
+        ],
+        "conditional_decision": "inconclusive"
+      }
+    ],
+    "late_published_proxy": [
+      {
+        "a": 1.087,
+        "covariance": "c2",
+        "point_delta": -2.496662872000546,
+        "percentile95": [
+          -5.862096056777012,
+          0.24242920871763549
+        ],
+        "conditional_decision": "inconclusive"
+      }
+    ]
+  },
+  "bootstrap_tail_resolution": {
+    "release_transfer": {
+      "1": {
+        "replicates": 200,
+        "positive_replicates": 3,
+        "upper_tail_quantiles": {
+          "0.95": -0.16796314906578264,
+          "0.97": -0.10663698101098203,
+          "0.975": -0.07993581603695918,
+          "0.98": -0.05815137323308998,
+          "0.99": 0.04952654376589974
+        }
+      },
+      "1.087": {
+        "replicates": 400,
+        "positive_replicates": 14,
+        "upper_tail_quantiles": {
+          "0.95": -0.14083630269108935,
+          "0.97": 0.07039836999656841,
+          "0.975": 0.18732631206473524,
+          "0.98": 0.19580045014345257,
+          "0.99": 0.32262111927260256
+        }
+      }
+    },
+    "chronological": {
+      "1": {
+        "replicates": 200,
+        "positive_replicates": 3,
+        "upper_tail_quantiles": {
+          "0.95": -0.43202840930493064,
+          "0.97": -0.14130761528916386,
+          "0.975": -0.1026780487225619,
+          "0.98": -0.09595721710342997,
+          "0.99": 0.04902274338147865
+        }
+      },
+      "1.087": {
+        "replicates": 400,
+        "positive_replicates": 13,
+        "upper_tail_quantiles": {
+          "0.95": -0.2209608394827749,
+          "0.97": 0.02711635764474235,
+          "0.975": 0.06749004120616929,
+          "0.98": 0.15830629888659214,
+          "0.99": 0.8204449395555395
+        }
+      }
+    }
+  },
+  "epoch_identity_check": {
+    "release_transfer": {
+      "events": 2324,
+      "max_abs_residual_over_period": 0.10933155169242008,
+      "events_over_quarter_period": 0,
+      "events_over_half_period": 0,
+      "assignment_note": "development_events derives cycle by rounding the scored mid-time against the issued ephemeris; no realised adjacent-cycle wrap is present, but independent cycle identity is not established"
+    },
+    "chronological": {
+      "events": 1925,
+      "max_abs_residual_over_period": 0.10933155169242008,
+      "events_over_quarter_period": 0,
+      "events_over_half_period": 0,
+      "assignment_note": "development_events derives cycle by rounding the scored mid-time against the issued ephemeris; no realised adjacent-cycle wrap is present, but independent cycle identity is not established"
+    }
+  },
+  "receipt_checks": {
+    "receipt_chronological.json": {
+      "recorded_summaries": 13,
+      "missing_summaries": [],
+      "summary_hash_mismatches": [],
+      "current_code_hash_mismatches": [],
+      "protected_access": false
+    },
+    "receipt_delayed_origin.json": {
+      "recorded_summaries": 1,
+      "missing_summaries": [],
+      "summary_hash_mismatches": [],
+      "current_code_hash_mismatches": [],
+      "protected_access": false
+    },
+    "receipt_late_published_proxy.json": {
+      "recorded_summaries": 1,
+      "missing_summaries": [],
+      "summary_hash_mismatches": [],
+      "current_code_hash_mismatches": [],
+      "protected_access": false
+    },
+    "receipt_release_transfer.json": {
+      "recorded_summaries": 13,
+      "missing_summaries": [],
+      "summary_hash_mismatches": [],
+      "current_code_hash_mismatches": [],
+      "protected_access": false
+    }
+  },
+  "interface_counterexamples": {
+    "blank_flux_result": "I1 requires explicit product and flux metadata",
+    "complete_i1_row_result": "accepted",
+    "blank_id_method_result": "Unrecognised identification method",
+    "zero_forecast_variance_nonGaussian_result": "NonGaussian likelihood convolution requires positive forecast variance",
+    "extra_forecast_rows": 1,
+    "forecast_attempt_set_mismatch_result": "Forecast and attempted-outcome sets must match; retain explicit failure rows",
+    "all_failed_receipt": {
+      "forecasts_sha256": "c30561196969dded966a4c2f16b2f2d1fb7932116dedcb61e38a26691b10b3ef",
+      "outcomes_sha256": "65409d0622048c21acf05b635948174a041c411e09f6218d30efb1fb9d471de9",
+      "scores_sha256": "8405031707f856da5a3f4072332861e0a9ce675639f377902787647dcdae40bc",
+      "attempted_rows": 1,
+      "selected_production_attempts": 1,
+      "adapter_source_sha256": "81fd76c8e0c6ba12a7029f53652583977c84f1824b98e793bfc34c0906cafd7b",
+      "predictive_core_sha256": "dfe010dbe60e5bb6f07412ec4b5114c57783b90d83278abde8d857db9e597e77",
+      "timed_production_events": 0,
+      "omitted_rows": 1,
+      "error_convention": "exoclock_reported",
+      "outcome_scale": 1.0,
+      "likelihood_grid_hashes": {},
+      "nonGaussian_events": 0,
+      "I1_schema_checked": false,
+      "timed_rows_without_estimable_loo_shift": 0,
+      "photometry_or_file_hashes_reopened_for_verification": false,
+      "development_only": true,
+      "units": "seconds in log density; minutes in interval score",
+      "proper_score_scope": "conditional on supplied measurement likelihood; normaliser may be outcome-dependent"
+    },
+    "all_failed_score_has_header_only": true
+  },
+  "protected_data_accessed": false
+}

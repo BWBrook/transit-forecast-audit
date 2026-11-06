@@ -1,0 +1,21 @@
+{
+  "forecasts_sha256": "1521894a6b91921fada4521b05e7fbc95721fab7028901f2d87c8b4fe6b97e6d",
+  "outcomes_sha256": "1eade7b6e7e8efa6fd31b17888d3047c783255f45141258f9553173e5a859bfc",
+  "scores_sha256": "3889dc456cc09ed984cc65f6cf481de623d7df42c34db242e451cd6591c081b9",
+  "attempted_rows": 2324,
+  "selected_production_attempts": 2324,
+  "adapter_source_sha256": "81fd76c8e0c6ba12a7029f53652583977c84f1824b98e793bfc34c0906cafd7b",
+  "predictive_core_sha256": "dfe010dbe60e5bb6f07412ec4b5114c57783b90d83278abde8d857db9e597e77",
+  "timed_production_events": 2324,
+  "omitted_rows": 0,
+  "error_convention": "exoclock_reported",
+  "outcome_scale": 1.087,
+  "likelihood_grid_hashes": {},
+  "nonGaussian_events": 0,
+  "I1_schema_checked": false,
+  "timed_rows_without_estimable_loo_shift": 0,
+  "photometry_or_file_hashes_reopened_for_verification": false,
+  "development_only": true,
+  "units": "seconds in log density; minutes in interval score",
+  "proper_score_scope": "conditional on supplied measurement likelihood; normaliser may be outcome-dependent"
+}

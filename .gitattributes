@@ -6,3 +6,4 @@
 *.toml text eol=lf
 *.csv text eol=lf
 *.bib text eol=lf
+results/sprint1/** -text whitespace=cr-at-eol

@@ -1,0 +1,132 @@
+{
+  "a2_sizing_negative_control": {
+    "bootstrap_draws_per_simulation": 499,
+    "chi_square_bias_corrected_tmag13_5_interval_coverage": 0.88,
+    "chi_square_bias_corrected_tmag13_5_mean": 1.0013539203248818,
+    "chi_square_bias_corrected_tmag9_interval_coverage": 0.881,
+    "chi_square_bias_corrected_tmag9_mean": 1.0008891906033572,
+    "correction_scope": "diagnostic only; assumes independent zero-mean Gaussian z within host",
+    "nominal_interval": 0.9,
+    "outer_simulations": 1000,
+    "pooled_equal_host_z_rms_interval_coverage": 0.896,
+    "pooled_equal_host_z_rms_mean": 0.9994436729721708,
+    "scenario": "iid standard-normal z; 120 hosts, 30 per Tmag stratum; injections-per-host sampled from D039 FFI",
+    "uncorrected_log_mse_tmag13_5_interval_coverage": 0.676,
+    "uncorrected_log_mse_tmag13_5_mean": 0.9433955102962528,
+    "uncorrected_log_mse_tmag9_interval_coverage": 0.557,
+    "uncorrected_log_mse_tmag9_mean": 0.9434712047418853
+  },
+  "decisive_results": {
+    "csv_timed_injections": 2103,
+    "primary_equal_host_bias_criterion_passes": false,
+    "primary_equal_host_median_bias_sigma": 0.1026,
+    "primary_event_weighted_median_bias_sigma": 0.0819,
+    "primary_planned_run_non_success_rate": 0.2708333333333333,
+    "primary_reported_mixed_failure_rate": 0.07352941176470588,
+    "primary_selected_host_timed_fraction": 0.75,
+    "report_timed_injections": 2096,
+    "reported_event_weighted_primary_reproduced": true,
+    "timed_injection_count_discrepancy": 7
+  },
+  "dependence_icc": [
+    {
+      "groups": 39,
+      "icc_raw": -0.014363579447438159,
+      "icc_truncated_at_zero": 0.0,
+      "level": "host",
+      "metric": "z",
+      "n": 523,
+      "product": "TESS-SPOC_200"
+    },
+    {
+      "groups": 39,
+      "icc_raw": -0.023246320931082694,
+      "icc_truncated_at_zero": 0.0,
+      "level": "host",
+      "metric": "z_squared",
+      "n": 523,
+      "product": "TESS-SPOC_200"
+    },
+    {
+      "groups": 72,
+      "icc_raw": -0.02344532909005144,
+      "icc_truncated_at_zero": 0.0,
+      "level": "run",
+      "metric": "z",
+      "n": 523,
+      "product": "TESS-SPOC_200"
+    },
+    {
+      "groups": 72,
+      "icc_raw": -0.03921153493296878,
+      "icc_truncated_at_zero": 0.0,
+      "level": "run",
+      "metric": "z_squared",
+      "n": 523,
+      "product": "TESS-SPOC_200"
+    },
+    {
+      "groups": 39,
+      "icc_raw": 0.026218750796060085,
+      "icc_truncated_at_zero": 0.026218750796060085,
+      "level": "host",
+      "metric": "z",
+      "n": 528,
+      "product": "SPOC_120"
+    },
+    {
+      "groups": 39,
+      "icc_raw": -0.0008788954430734353,
+      "icc_truncated_at_zero": 0.0,
+      "level": "host",
+      "metric": "z_squared",
+      "n": 528,
+      "product": "SPOC_120"
+    },
+    {
+      "groups": 74,
+      "icc_raw": 0.03143097247543407,
+      "icc_truncated_at_zero": 0.03143097247543407,
+      "level": "run",
+      "metric": "z",
+      "n": 528,
+      "product": "SPOC_120"
+    },
+    {
+      "groups": 74,
+      "icc_raw": -0.0054545623777542,
+      "icc_truncated_at_zero": 0.0,
+      "level": "run",
+      "metric": "z_squared",
+      "n": 528,
+      "product": "SPOC_120"
+    }
+  ],
+  "inputs_commit": "6931eb8",
+  "limitations": [
+    "Event-level end-to-end recovery cannot be reconstructed because truth attempts for failed, dropped, and product-failed runs are absent.",
+    "Nearest matching lacks recorded truth identifiers/times, so one-to-one matching is not independently auditable from the table.",
+    "The committed experiment has no same-phase no-removal control; the real-window removal effect is not identified.",
+    "Signed-z ICC tests an additive group effect and cannot by itself establish absence of shared shape, scale, or photon dependence.",
+    "The log host-mean-z-squared regression targets a geometric typical-host scale and has finite-event Jensen bias; it is not pooled RMS."
+  ],
+  "matching_and_window_removal": {
+    "duplicate_recovered_local_epochs_within_run": 0,
+    "match_distance_recorded_directly": false,
+    "matches_beyond_one_window_half_width": 0,
+    "max_abs_error_over_window_half_width": 0.12219057160856464,
+    "no_removal_control_in_committed_tables": true,
+    "nominal_real_window_cadence_fraction_quantiles": {
+      "max": 0.395898543821448,
+      "median": 0.16804128425037332,
+      "min": 0.006878761822871883,
+      "q25": 0.1225493473957725,
+      "q75": 0.20947515199324745
+    },
+    "one_to_one_truth_matching_verifiable": false,
+    "timed_matches": 2103,
+    "truth_identifier_recorded": false,
+    "truth_time_recorded": false
+  },
+  "scope": "committed D038-D039 development tables only; no FITS opened; no protected product accessed"
+}
