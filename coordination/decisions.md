@@ -115,6 +115,66 @@ scientific record; a `proposed` item is not a frozen preregistration.
 - Status: adopted for sprint 1 execution; qualifications remain visible for
   Claude's sprint 2 interface check and scheduled counter-review.
 
+### D043 — Public-release availability and bounded novelty resolved for sprint 1
+
+- Date / responsible agent: 2026-11-06, Codex.
+- Evidence: `docs/sprint1_literature_review.md`, OSF public-node/file logs and
+  `results/sprint1/literature/`; 82 returned OpenAlex forward citations screened.
+- Decision: DRD public availability is 2025-11-18 09:43:24 UTC. Use the next
+  whole day for strict-A metadata eligibility; retain journal-date sensitivity.
+  The DRC timing file followed its forecast by 53 seconds, so the original
+  release-transfer comparison is a proxy. The delayed-origin reconstruction
+  has available inputs but was constructed now and is not an issued correction.
+- Novelty: continue with a bounded combination claim; no first claim for
+  retrospective forecasts, covariance propagation or heavy tails. Citation
+  index disagreement and unavailable ADS enumeration remain search limits.
+- Status: adopted development interpretation. Protected data remain closed.
+
+### D044 — Forecast experiment complete; primary improvement and tolerance unqualified
+
+- Date / responsible agent: 2026-11-06, Codex.
+- Evidence: `docs/sprint1_report.md`, independent `sprint1_scoring_review.md`,
+  `results/sprint1/forecasts/`, `comparison.csv`, `handoff.json`.
+- Decision: retain M0–M3 and report all development comparisons. At a=1.087,
+  C2, M2–M0 standardised IS95 is -2.445 [-5.756, 0.187] for release transfer
+  and -2.628 [-6.351, 0.067] chronologically. Both are inconclusive with 400
+  host resamples and refitting. Coverage/log-score gains are tail-risk evidence,
+  not typical-planet improvement. Most planets have worse interval scores.
+- Sensitivity: point signs remain negative on a=0.85–1.25; same-decision tested
+  region around reference is 1.05–1.25. It does not certify outcome calibration.
+  I3 therefore supplies a null measurement tolerance, not reciprocal A2 margins.
+  C2, zero and rho endpoints all remain inconclusive at reference.
+- Interface: I2 is executable; exact 95% quantiles and I1 provenance are checked,
+  duplicate reductions/failures retained, non-Gaussian likelihood semantics
+  explicit. Independent event-cycle mapping remains Claude's sprint-2 work.
+- Validation: numerical audit, direct adapter replay and 70 passing tests;
+  source-stable run receipts preserve hashes. Development only; no rule freeze.
+
+### D045 — Outcome validation requires repair; metadata extension passes R8
+
+- Date / responsible agent: 2026-11-06, Codex.
+- Evidence: `docs/sprint1_timing_audit.md`, `sprint1_inventory.md`,
+  `sprint1_precision.md` and corresponding `results/sprint1/` tables/receipts.
+- Decision: D039 successful-event calculations reproduce, but pooled
+  freeze-readiness and the 7.4% mixed-denominator failure interpretation do not.
+  13/48 planned primary runs do not succeed; missing truth events prevent an
+  end-to-end event recovery estimate. Host weighting changes the bias verdict.
+  Uncorrected log-host-MSE endpoints fail a known-Gaussian coverage control.
+- Claude owns the attempt/truth ledger, one-to-one matches, arithmetic/declared
+  host target, validated endpoint model, removal/shape/identification controls,
+  development remeasurement and convention-specific model refits. A2 margins
+  require a scientifically justified amendment before confirmation download;
+  no tolerance is inferred from an inconclusive score contrast.
+- R8: 156 core plus 28 extension planets (184 on 175 hosts) pass the metadata
+  arm, +17.95%; 3399 opportunities are not confirmed outcomes. Allow extension
+  implementation subject to identification qualification. Simulated SE does
+  not decrease; core and union are different target populations.
+- Precision: 4000-replicate fixed-rule stress simulations condition on assumed
+  future measurement precision and model truth. They omit refit uncertainty
+  (separately analysed) and do not qualify protected performance or recovery.
+- Status: sprint 1 complete; Claude's sprint 2 interface check and execution
+  next, then the agreed reciprocal reviews. No protected access or freeze.
+
 ## New entry template
 
 ### D0XX — short title

@@ -38,6 +38,14 @@ recalibration if justified. Its novelty is **provisional**. See
    covariance, measurement uncertainty, scoring and temporal separation.
 6. [AGENTS.md](AGENTS.md): shared scientific and repository working rules.
 
+**Sprint 1 complete, 6 November 2026:** the closed forecast comparison,
+source-availability audit, metadata inventory, precision simulations and outcome
+interface are ready for Claude’s sprint 2. Primary score improvements remain
+inconclusive; no outcome-error tolerance or protocol freeze is certified. Start
+with [the sprint report](docs/sprint1_report.md) and
+[the machine-readable handoff](results/sprint1/handoff.json). Protected outcomes
+remain closed through both sprints and reciprocal review.
+
 ## What is ready
 
 - A cited initial literature review and source-evidence records, with metadata

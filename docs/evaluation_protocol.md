@@ -5,9 +5,10 @@ pilot independently reproduces the DRB/DRC benchmark columns (D020), but this is
 not a registration or held-out result. D021–D024 qualify the covariance and
 variance-components proposals. **Do not open TESS light curves dated after
 2025-11-18 until the protocol is frozen.** Resolve cohort, exact public
-availability, outcome lineage and model identifiability first. The sealed
-interval is not automatically eligible for strict Track A: absent earlier
-verified availability, DRD's conservative issue anchor is 2026-02-11.
+availability, outcome lineage and model identifiability first. The 6 November OSF log audit now verifies DRD public-file availability at
+2025-11-18 09:43:24 UTC (D043); 2025-11-19 is the first whole-day metadata
+eligibility anchor. Journal-date eligibility remains a sensitivity. This
+changes source availability, not the protected-data boundary.
 
 The 5 November development review (D030–D033) nominates a stable population
 scale mixture and training-span predictor for further testing; neither is frozen.
@@ -22,6 +23,16 @@ unstable under host resampling with early-block refitting and is not selected.
 See [the development findings](third_turn_review_2026-11-05.md). Any new tail
 constraint, regularization or adaptive outcome-scale algorithm must be specified
 and validated within development before freeze.
+
+The sprint-1 package (D043–D045) closes the development comparison at M0–M3,
+with host-refit uncertainty, C2/zero/endpoint covariance sensitivities and a
+labelled outcome-scale grid. Primary contrasts are inconclusive at a=1.087;
+no measurement tolerance or protected-era rule is certified. The current
+normalised interval score is conditional on supplied outcome error, with raw
+IS95 and forecast-only scaling reported alongside. Sprint 2 must repair the
+attempt ledger and measurement estimand, establish independent epoch mapping,
+and rerun under qualified outcome conventions before a freeze recommendation.
+See [the integrated report](sprint1_report.md).
 
 ## 1. Scientific question and contribution boundary
 

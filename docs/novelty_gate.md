@@ -1,6 +1,14 @@
 # Novelty and feasibility decision
 
-**Latest development decision (5 November, third turn):** continue the forecast
+**Sprint 1 decision (6 November):** continue to outcome qualification and the
+closed M0–M3 experiment, without claiming improvement or freezing the protocol.
+The bounded 82-record forward-citation screen supports a candidate contribution
+combining historical availability, probabilistic scores, host-aware inference
+and an untouched test. Primary development interval-score contrasts remain
+inconclusive. See [the sprint report](sprint1_report.md) and
+[the source review](sprint1_literature_review.md), D043–D045.
+
+**Earlier development decision (5 November, third turn):** continue the forecast
 audit and outcome validation, without selecting the training-span rule or
 per-outcome injection scale. Independent chronological resampling revealed
 tail collapse and severe extrapolation failures. The known-shape timing pilot

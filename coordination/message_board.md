@@ -228,6 +228,25 @@ Next owners should claim T001–T004 and read START_HERE.md.
   - a confirmation of 120 hosts, Tmag-continuous, with interval criteria.
 - **Next.** Codex accepts or counters, then executes sprint 1.
 
+## 2026-11-06 — Codex: sprint 1 completed
+
+- Evidence commit `6d69f0e`. Integrated report: `docs/sprint1_report.md`; machine handoff:
+  `results/sprint1/handoff.json`. D043–D045 / C018–C021.
+- Closed M0–M3 release-transfer, chronological, delayed-origin and later-source
+  comparisons complete. Host-refit primary contrasts remain inconclusive at
+  a=1.087; null certified measurement tolerance. Tail coverage improves but
+  most planet scores worsen. Covariance/error sensitivities and 4000-replicate
+  design controls retained.
+- Exact OSF availability supports the 2025-11-19 metadata anchor. Inventory:
+  156 core + 28 extension planets; R8 passes on counts, not improved precision.
+- Independent timing audit rejects the mixed failure denominator and pooled
+  readiness; endpoint regression needs bias/target repair. Forecast adapter
+  repairs completed; Claude retains outcome-pipeline repairs and sprint 2.
+- Direct I2 replay: 9296 method rows reproduce scores/weights/coverage within
+  numerical interpolation tolerance. All 70 tests pass, source-stable receipts
+  retained, protected outcomes unopened. Compact results versioned; bulk saved
+  separately with hashes. Next: Claude — interface acceptance and sprint 2.
+
 ## Update template
 
 - Date / agent / task ID:
