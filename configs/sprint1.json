@@ -1,0 +1,41 @@
+{
+  "development_only": true,
+  "seed": 20261106,
+  "methods": ["M0", "M1", "M2", "M3"],
+  "primary_development_contrast": "M2 minus M0, smaller loss is better",
+  "primary_metric": "planet-balanced IS95 divided by common M0 predictive SD; conditional weighted loss",
+  "scored_unit": "each published TESS timing; one origin per comparison, equal event weights within planet",
+  "fit_unit": "unclipped 20-day span-capped visit means, shared T0-P covariance within planet",
+  "regularisation_prior": null,
+  "reference_outcome_scale": 1.087,
+  "outcome_scale_grid": [0.85, 0.90, 0.95, 1.0, 1.05, 1.087, 1.10, 1.15, 1.20, 1.25],
+  "covariance_settings": ["c2", "zero", "rho_minus1", "rho_plus1"],
+  "bootstrap": "joint host resampling across fitting and scoring, refitting M1-M3",
+  "bootstrap_replicates_primary": 400,
+  "bootstrap_replicates_sensitivity": 200,
+  "decision_rule": "conditional improvement if 95% percentile interval of paired loss difference lies below zero, worsening if above zero, otherwise inconclusive",
+  "experiments": {
+    "release_transfer": {
+      "train": {"release": "DRB", "source_release": "DRC", "start": "2021-10-28", "end": "2022-09-26"},
+      "test": {"release": "DRC", "source_release": "DRD", "start": "2022-09-28", "end": "2024-01-03"},
+      "status": "nearest-release-availability proxy: training timing file uploaded after DRC forecast; individual prior availability unknown"
+    },
+    "chronological": {
+      "train": {"release": "DRC", "source_release": "DRD", "start": "2022-01-01", "end": "2022-12-31"},
+      "test": {"release": "DRC", "source_release": "DRD", "start": "2023-01-01", "end": "2024-01-03"},
+      "status": "observation-date proxy: early DRC events can predate release, and timing availability predates neither training cutoff nor release by verified evidence"
+    }
+  },
+  "secondary_release_proxy": {
+    "train": {"release": "DRB", "source_release": "DRD", "start": "2022-01-01", "end": "2022-09-26"},
+    "test": {"release": "DRC", "source_release": "DRD", "start": "2022-09-28", "end": "2024-01-03"},
+    "status": "later-published outcome proxy, used only as calibration-sample sensitivity"
+  },
+  "limitations": [
+    "All outcomes inspected development material; none of these comparisons is an untouched test",
+    "Covariance reconstructions retain C3 source-fit mismatch flags; rho zero is a sensitivity, not a missing-data default",
+    "Outcome-error and exposure independence remain assumptions requiring sprint2 validation",
+    "Metadata opportunity counts are not measured/transit-detection counts",
+    "No calibration or outcome-scale tolerance is certified for protected evaluation by a proxy alone"
+  ]
+}
