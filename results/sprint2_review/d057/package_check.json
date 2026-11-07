@@ -1,0 +1,85 @@
+{
+  "protected_data_accessed": false,
+  "photometry_or_headers_opened": false,
+  "support_check": {
+    "retained_timed": 3905,
+    "grid_rows": 373,
+    "missing_grids": [],
+    "adapter_rejected_but_candidate_retained": [
+      "GJ1252b|S67|SPOC_120|D1247",
+      "GJ1252b|S67|SPOC_120|D1271",
+      "GJ1252b|S67|SPOC_120|D1277",
+      "Kepler-435b|S55|SPOC_120|D476",
+      "Kepler-76b|S54|SPOC_120|D2679",
+      "Kepler-76b|S55|SPOC_120|D2696",
+      "L98-59b|S62|SPOC_120|D371",
+      "L98-59b|S69|SPOC_120|D457"
+    ],
+    "core_training_events": 2189,
+    "core_training_support_rejections": [
+      "GJ1252b|S67|SPOC_120|D1247",
+      "GJ1252b|S67|SPOC_120|D1271",
+      "GJ1252b|S67|SPOC_120|D1277"
+    ],
+    "grid_hash_map_sha256": "267c9d8818daafd0801219a492f9e305accca02c3baf125fd9defd580c309002"
+  },
+  "synthetic_gap_counterexample": {
+    "synthetic": true,
+    "cadence_offsets_days": [
+      -0.1,
+      0.0,
+      0.1
+    ],
+    "period_days": 2.0,
+    "recovered_epoch_offset_days": 1.0,
+    "half_window_days": 0.2,
+    "recovered_windows": [],
+    "cadence_present_at_intended_event": true,
+    "ledger_status": "no_cadence_in_window",
+    "conclusion": "No recovered window does not establish a cadence gap at the intended event."
+  },
+  "manifests": {
+    "core_primary": {
+      "events": 3103,
+      "planets": 156,
+      "unique_event_ids": 3103
+    },
+    "extension_exploratory": {
+      "events": 291,
+      "planets": 28,
+      "unique_event_ids": 291
+    },
+    "boundary_excluded": {
+      "events": 5,
+      "planets": 5,
+      "unique_event_ids": 5
+    }
+  },
+  "shape_threshold_controls": {
+    "ungated_timed": 3514,
+    "thresholds": {
+      "10": {
+        "accepted_control_timings": 3435,
+        "lost_control_timings": 79,
+        "spurious_control_timings": 1,
+        "matched_abs_z_gt5": 3
+      },
+      "100": {
+        "accepted_control_timings": 3514,
+        "lost_control_timings": 0,
+        "spurious_control_timings": 1,
+        "matched_abs_z_gt5": 3
+      }
+    }
+  },
+  "input_sha256": {
+    "scripts/prefreeze_attempts.py": "186c04e08627ab43ed0efd90d22c1417c45179f48edbb4a923da649bd79e974c",
+    "scripts/prefreeze_package.py": "e32cf0608d67340ccf42ffb087430cdf12d2fcae07f93305c8784258d36a3977",
+    "scripts/sprint2_forecasts.py": "c489095b8ed6e2123f8c8b840cc947a6fb8bfa8372722ce9b249d3fa1c5c6f9a",
+    "configs/candidate_freeze.json": "6df8c084f89c9cce1141db43894f7dd6e6f15b7581a297458e1c9034b566095e",
+    "results/prefreeze/candidate_parameters.json": "01368a75eaf65e634fec0f288b5031327b2951992f491726ecde83ae23b8426b",
+    "results/outcomes/t015v3/outcomes.csv.gz": "79c9d323b852f47a6519df7671764baad358486c558e3dad0dd36fc4b9437ef8",
+    "results/outcomes/t015v3/product_identification.csv": "d3ee99eedf2d7a56da7bc91ed548eb10820f111445c250acc419b536250175be",
+    "results/prefreeze/identification_windows.csv.gz": "e12481ca3753bbe75b71172f327d3214b9f8aed48bd3016ac320c1fbd0a0e5ea"
+  }
+}
