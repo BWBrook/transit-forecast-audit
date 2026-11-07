@@ -1,0 +1,10 @@
+{
+ "rule_version": "t015v3@2c39f0a+4b5c9602a29b",
+ "hosts": 313,
+ "products": 618,
+ "attempted_events": 4615,
+ "timed": 3946,
+ "max_mjd_guard": 60312.98,
+ "max_btjd_guard": 3313.49,
+ "protected_outcomes_accessed": false
+}

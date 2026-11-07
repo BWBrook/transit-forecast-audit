@@ -82,8 +82,9 @@ def contrast_figure():
         return
     d = json.loads(p.read_text())
     variants = [("exoclock_all", "ExoClock timings, all (sprint 1)"), ("exoclock_matched", "ExoClock timings, matched"),
-                ("ours_matched", "t015v3c, matched"), ("ours_all", "t015v3c, all timed")]
-    fig, axes = plt.subplots(1, 2, figsize=(10.4, 3.8), sharey=True)
+                ("ours_matched_raw", "t015v3, matched"), ("ours_matched", "t015v3c, matched"),
+                ("ours_all_raw", "t015v3, all timed"), ("ours_all", "t015v3c, all timed")]
+    fig, axes = plt.subplots(1, 2, figsize=(10.4, 4.4), sharey=True)
     for ax, exp in zip(axes, ("release_transfer", "chronological")):
         res = d["experiments"][exp]
         for i, (v, lab) in enumerate(variants):
@@ -94,9 +95,12 @@ def contrast_figure():
                 pt = r["metrics"][m]["delta_standardised_vs_M0"]
                 ci = r["host_refit"][m]["delta_is95_standardised_percentile95"]
                 y = i + (j - 1) * 0.22
-                ax.plot(ci, [y, y], color=col, lw=1.6)
+                ax.plot(np.clip(ci, -8, 8), [y, y], color=col, lw=1.6)
+                if ci[1] > 8:
+                    ax.annotate("", (8.4, y), (7.6, y), arrowprops=dict(arrowstyle="->", color=col, lw=1))
                 ax.plot(pt, y, "o", color=col, ms=4, label=m if i == 0 else None)
         ax.axvline(0, color=INK, lw=0.8)
+        ax.set_xlim(-8, 8.6)
         ax.set_yticks(range(len(variants)))
         ax.set_yticklabels([lab for _, lab in variants], fontsize=8)
         ax.set_title(exp.replace("_", " "), fontsize=10)

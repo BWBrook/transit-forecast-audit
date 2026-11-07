@@ -178,25 +178,45 @@ def run(args):
                                                "ours_rejected": len(sets[part]["rejected"])}
                                         for part in ("train", "test")}
         summary["experiments"][exp] = res
-        if exp == "release_transfer":
-            cand = c.visit_planets(sets["test"]["ours_all"])
-            models = c.fit_methods(cand)
-            rng = np.random.default_rng(cfg["seed"])
-            hosts = sorted({p["host"] for p in cand})
-            hix = np.array([hosts.index(p["host"]) for p in cand])
-            boot = []
-            for rep in range(args.bootstrap):
-                mult = np.bincount(rng.integers(0, len(hosts), len(hosts)), minlength=len(hosts))[hix]
-                fm = c.fit_methods(cand, weights=mult)
-                boot.append({m: {"b": fm[m]["b"], "s_log_lambda": fm[m]["s_log_lambda"]} for m in c.METHODS[1:]})
-            c.write_json(OUT / "candidate_parameters.json", {
-                "models": models, "rule": "release transfer: DRC forecasts vs t015v3c outcomes 2022-09-28..2024-01-03",
-                "training_planets": len(cand), "training_hosts": len(hosts),
-                "training_events": len(sets["test"]["ours_all"]), "outcomes_sha256": c.digest(OUTCOMES),
-                "host_refit_parameter_sets": boot, "development_only": True, "frozen": False})
         for part in ("train", "test"):
             fvc.write_csv(DERIVED / f"{exp}_{part}_ours_all.csv", sets[part]["ours_all"])
     (OUT / "convention_comparison.json").write_text(json.dumps(summary, indent=1, default=float) + "\n")
+
+
+def candidate(args):
+    """Candidate DRD-era parameters: release transfer on DRC forecasts vs all development outcomes after DRC issue."""
+    cfg = json.loads((ROOT / "configs/sprint1.json").read_text())
+    eph, _, flags = load()
+    cov = c.covariance_rows()
+    rows = list(csv.DictReader(OUTCOMES.open()))
+    sp = cfg["experiments"]["release_transfer"]["test"]
+    events, _ = our_events(sp["release"], sp["start"], sp["end"], rows, eph, flags, cov, convention=args.convention)
+    cand = c.visit_planets(events)
+    models = c.fit_methods(cand)
+    rng = np.random.default_rng(cfg["seed"])
+    hosts = sorted({p["host"] for p in cand})
+    hix = np.array([hosts.index(p["host"]) for p in cand])
+    boot = []
+    for _ in range(args.bootstrap):
+        mult = np.bincount(rng.integers(0, len(hosts), len(hosts)), minlength=len(hosts))[hix]
+        fm = c.fit_methods(cand, weights=mult)
+        boot.append({m: {"b": fm[m]["b"], "s_log_lambda": fm[m]["s_log_lambda"]} for m in c.METHODS[1:]})
+    c.write_json(OUT / args.output, {
+        "models": models, "convention": args.convention,
+        "rule": f"release transfer: DRC forecasts vs {args.convention} outcomes 2022-09-28..2024-01-03",
+        "training_planets": len(cand), "training_hosts": len(hosts), "training_events": len(events),
+        "outcomes_sha256": c.digest(OUTCOMES), "host_refit_parameter_sets": boot,
+        "development_only": True, "frozen": False})
+    print({m: (round(v["b"], 4), round(v["s_log_lambda"], 4)) for m, v in models.items()})
+
+
+def grid_resolved(path):
+    g = json.loads(Path(path).read_text())
+    o, lg = np.asarray(g["offset_s"]), np.asarray(g["log_density"])
+    d = np.exp(lg - lg.max())
+    w = np.r_[np.diff(o)[0] / 2, (o[2:] - o[:-2]) / 2, np.diff(o)[-1] / 2]
+    m = d * w / np.sum(d * w)
+    return m[0] + m[-1] <= 0.001 and max(d[0], d[-1]) <= 0.001
 
 
 def interface(args):
@@ -207,6 +227,7 @@ def interface(args):
     cov = c.covariance_rows()
     rows = list(csv.DictReader(OUTCOMES.open()))
     keep = []
+    conv_name = "t015v3c_beta_chi_tmag" if args.convention == "t015v3c" else "t015v3_beta_chi"
     for r in rows:
         p = r["planet"]
         ref = float(r["tc_bjd_tdb"]) if r.get("tc_bjd_tdb") else float(r.get("window_centre_bjd_tdb") or r.get("predicted_bjd_tdb_drd"))
@@ -215,14 +236,17 @@ def interface(args):
         if not sp["start"] <= bjd_date(ref) <= sp["end"]:
             continue
         e = eph["DRC"][p]
-        g = so.tmag_multiplier(r["tmag"])
+        g = so.tmag_multiplier(r["tmag"]) if args.convention == "t015v3c" else 1.0
         row = {**r, "forecast_epoch": int(np.rint((ref - e.t0_bjd_tdb) / e.period_days)),
                "epoch_basis": "t015v3 mid-time or window centre, nearest DRC epoch",
-               "error_convention": "t015v3c_beta_chi_tmag", "tmag_multiplier": round(g, 6)}
-        if r["status"] == "timed":
+               "error_convention": conv_name, "tmag_multiplier": round(g, 6)}
+        if r["status"] == "timed" and r["posterior_grid_path"] and not grid_resolved(ROOT / r["posterior_grid_path"]):
+            row.update({"status": "likelihood_support_truncated",
+                        "failure_reason": "posterior grid has >0.1% mass or density at the +/-60-min prior support (S2-05)"})
+        if row["status"] == "timed":
             for k in ("sigma_s", "q025_s", "q1587_s", "q8413_s", "q975_s", "q0228_s", "q9772_s"):
                 row[k] = round(float(r[k]) * g, 4)
-            if r["posterior_grid_path"]:
+            if r["posterior_grid_path"] and args.convention == "t015v3c":
                 src = json.loads((ROOT / r["posterior_grid_path"]).read_text())
                 src["offset_s"] = [round(v * g, 4) for v in src["offset_s"]]
                 src["support_s"] = [v * g for v in src["support_s"]]
@@ -235,12 +259,13 @@ def interface(args):
     d = DERIVED / "interface"
     d.mkdir(parents=True, exist_ok=True)
     fvc.write_csv(d / "outcomes_drc_window.csv", keep)
-    params = OUT / "parameters_release_transfer_ours_all.json"
+    params = OUT / ("parameters_release_transfer_ours_all.json" if args.convention == "t015v3c"
+                    else "parameters_release_transfer_ours_all_raw.json")
     py = str(ROOT / ".venv/bin/python")
     subprocess.run([py, str(HERE / "sprint1_forecasts.py"), "make_forecasts", "--events", str(d / "outcomes_drc_window.csv"),
                     "--parameters", str(params), "--release", "DRC", "--output", str(d / "forecasts.csv")], check=True)
     subprocess.run([py, str(HERE / "sprint1_forecasts.py"), "score", "--forecasts", str(d / "forecasts.csv"),
-                    "--outcomes", str(d / "outcomes_drc_window.csv"), "--error-convention", "t015v3c_beta_chi_tmag",
+                    "--outcomes", str(d / "outcomes_drc_window.csv"), "--error-convention", conv_name,
                     "--outcome-scale", "1.0", "--output", str(d / "scores.csv")], check=True)
     print((d / "scores.receipt.json").read_text())
 
@@ -251,7 +276,13 @@ def main(argv=None):
     p = sub.add_parser("run")
     p.add_argument("--bootstrap", type=int, default=400)
     p.set_defaults(func=run)
+    p = sub.add_parser("candidate")
+    p.add_argument("--convention", choices=("t015v3", "t015v3c"), required=True)
+    p.add_argument("--bootstrap", type=int, default=400)
+    p.add_argument("--output", default="candidate_parameters.json")
+    p.set_defaults(func=candidate)
     p = sub.add_parser("interface")
+    p.add_argument("--convention", choices=("t015v3", "t015v3c"), default="t015v3")
     p.set_defaults(func=interface)
     args = ap.parse_args(argv)
     args.func(args)

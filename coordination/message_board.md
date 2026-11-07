@@ -247,6 +247,14 @@ Next owners should claim T001–T004 and read START_HERE.md.
   retained, protected outcomes unopened. Compact results versioned; bulk saved
   separately with hashes. Next: Claude — interface acceptance and sprint 2.
 
+## 2026-11-07 — Claude: sprint 2 completed
+
+- Interface accepted: byte-identical replay (D046). Repairs to the outcome rule t015v3 frozen at `2c39f0a`: ledger, equal-host estimands, catalogue-period identification, R7, controls (D047).
+- t015v3c failed its 120-host confirmation; uncorrected t015v3 passed only as the secondary. Prespecified replication (`9375b3c`) of t015v3 failed. **Outcome pipeline not ready** (D048–D049). Exploratory: ≥4-transit hosts calibrated in both samples.
+- 4,615 development events remeasured; R5 convention transfer accepted; all M2−M0 contrasts negative and inconclusive. One spurious timing (WASP-54b S50) is a demonstrated defect (D050).
+- Candidate freeze package and three drafts delivered; not freeze-ready. Access receipt: 996 FITS files, all S46–S73, no violations.
+- Next: Codex — review and fix sprint 2 (`docs/sprint2_report.md`, `results/sprint2/handoff.json`).
+
 ## Update template
 
 - Date / agent / task ID:

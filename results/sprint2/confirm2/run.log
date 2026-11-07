@@ -1,0 +1,310 @@
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0069/target/0000/0001/8353/2609/hlsp_tess-spoc_tess_phot_0000000183532609-s0069_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_183532609/hlsp_tess-spoc_tess_phot_0000000183532609-s0069_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0064/target/0000/0002/7116/8962/hlsp_tess-spoc_tess_phot_0000000271168962-s0064_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_271168962/hlsp_tess-spoc_tess_phot_0000000271168962-s0064_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0064/target/0000/0000/7322/8647/hlsp_tess-spoc_tess_phot_0000000073228647-s0064_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_73228647/hlsp_tess-spoc_tess_phot_0000000073228647-s0064_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0057/target/0000/0004/5847/8250/hlsp_tess-spoc_tess_phot_0000000458478250-s0057_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_458478250/hlsp_tess-spoc_tess_phot_0000000458478250-s0057_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0067/target/0000/0002/9034/8383/hlsp_tess-spoc_tess_phot_0000000290348383-s0067_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_290348383/hlsp_tess-spoc_tess_phot_0000000290348383-s0067_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0069/target/0000/0001/8398/5250/hlsp_tess-spoc_tess_phot_0000000183985250-s0069_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_183985250/hlsp_tess-spoc_tess_phot_0000000183985250-s0069_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0069/target/0000/0001/0010/0827/hlsp_tess-spoc_tess_phot_0000000100100827-s0069_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_100100827/hlsp_tess-spoc_tess_phot_0000000100100827-s0069_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0070/target/0000/0004/2261/8449/hlsp_tess-spoc_tess_phot_0000000422618449-s0070_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_422618449/hlsp_tess-spoc_tess_phot_0000000422618449-s0070_tess_v1_lc.fits ... [Done]
+ [Done]
+ [Done]
+ [Done]
+ [Done]
+ [Done]
+ [Done]
+ [Done]
+/Users/bwbrook/.cache/uv/environments-v2/sprint2-confirm2-5ac635e37664be78/lib/python3.13/site-packages/batman/tests.py:107: SyntaxWarning: invalid escape sequence '\ '
+  )   \     /   (
+/Users/bwbrook/.cache/uv/environments-v2/sprint2-confirm2-5ac635e37664be78/lib/python3.13/site-packages/batman/tests.py:107: SyntaxWarning: invalid escape sequence '\ '
+  )   \     /   (
+/Users/bwbrook/.cache/uv/environments-v2/sprint2-confirm2-5ac635e37664be78/lib/python3.13/site-packages/batman/tests.py:119: SyntaxWarning: invalid escape sequence '\/'
+  /_ \/ |__
+/Users/bwbrook/.cache/uv/environments-v2/sprint2-confirm2-5ac635e37664be78/lib/python3.13/site-packages/batman/tests.py:119: SyntaxWarning: invalid escape sequence '\/'
+  /_ \/ |__
+/Users/bwbrook/.cache/uv/environments-v2/sprint2-confirm2-5ac635e37664be78/lib/python3.13/site-packages/batman/tests.py:107: SyntaxWarning: invalid escape sequence '\ '
+  )   \     /   (
+/Users/bwbrook/.cache/uv/environments-v2/sprint2-confirm2-5ac635e37664be78/lib/python3.13/site-packages/batman/tests.py:119: SyntaxWarning: invalid escape sequence '\/'
+  /_ \/ |__
+/Users/bwbrook/.cache/uv/environments-v2/sprint2-confirm2-5ac635e37664be78/lib/python3.13/site-packages/batman/tests.py:107: SyntaxWarning: invalid escape sequence '\ '
+  )   \     /   (
+/Users/bwbrook/.cache/uv/environments-v2/sprint2-confirm2-5ac635e37664be78/lib/python3.13/site-packages/batman/tests.py:119: SyntaxWarning: invalid escape sequence '\/'
+  /_ \/ |__
+/Users/bwbrook/.cache/uv/environments-v2/sprint2-confirm2-5ac635e37664be78/lib/python3.13/site-packages/batman/tests.py:107: SyntaxWarning: invalid escape sequence '\ '
+  )   \     /   (
+/Users/bwbrook/.cache/uv/environments-v2/sprint2-confirm2-5ac635e37664be78/lib/python3.13/site-packages/batman/tests.py:119: SyntaxWarning: invalid escape sequence '\/'
+  /_ \/ |__
+/Users/bwbrook/.cache/uv/environments-v2/sprint2-confirm2-5ac635e37664be78/lib/python3.13/site-packages/batman/tests.py:107: SyntaxWarning: invalid escape sequence '\ '
+  )   \     /   (
+/Users/bwbrook/.cache/uv/environments-v2/sprint2-confirm2-5ac635e37664be78/lib/python3.13/site-packages/batman/tests.py:119: SyntaxWarning: invalid escape sequence '\/'
+  /_ \/ |__
+/Users/bwbrook/.cache/uv/environments-v2/sprint2-confirm2-5ac635e37664be78/lib/python3.13/site-packages/batman/tests.py:107: SyntaxWarning: invalid escape sequence '\ '
+  )   \     /   (
+/Users/bwbrook/.cache/uv/environments-v2/sprint2-confirm2-5ac635e37664be78/lib/python3.13/site-packages/batman/tests.py:119: SyntaxWarning: invalid escape sequence '\/'
+  /_ \/ |__
+/Users/bwbrook/.cache/uv/environments-v2/sprint2-confirm2-5ac635e37664be78/lib/python3.13/site-packages/batman/tests.py:107: SyntaxWarning: invalid escape sequence '\ '
+  )   \     /   (
+/Users/bwbrook/.cache/uv/environments-v2/sprint2-confirm2-5ac635e37664be78/lib/python3.13/site-packages/batman/tests.py:119: SyntaxWarning: invalid escape sequence '\/'
+  /_ \/ |__
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2023263165758-s0070-0000000422618449-0265-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_422618449/tess2023263165758-s0070-0000000422618449-0265-s_lc.fits ... [Done]
+A_lt10 HIP116454 timed 0
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0061/target/0000/0003/3967/2028/hlsp_tess-spoc_tess_phot_0000000339672028-s0061_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_339672028/hlsp_tess-spoc_tess_phot_0000000339672028-s0061_tess_v1_lc.fits ...A_lt10 WASP-8 timed 24
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2023181235917-s0067-0000000290348383-0261-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_290348383/tess2023181235917-s0067-0000000290348383-0261-s_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0064/target/0000/0004/2599/7655/hlsp_tess-spoc_tess_phot_0000000425997655-s0064_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_425997655/hlsp_tess-spoc_tess_phot_0000000425997655-s0064_tess_v1_lc.fits ... [Done]
+A_lt10 WASP-131 timed 36
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0056/target/0000/0002/9395/4617/hlsp_tess-spoc_tess_phot_0000000293954617-s0056_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_293954617/hlsp_tess-spoc_tess_phot_0000000293954617-s0056_tess_v1_lc.fits ...A_lt10 KELT-23A timed 80
+A_lt10 TOI-481 timed 16
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0060/target/0000/0001/3816/8780/hlsp_tess-spoc_tess_phot_0000000138168780-s0060_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_138168780/hlsp_tess-spoc_tess_phot_0000000138168780-s0060_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0056/target/0000/0003/9517/1208/hlsp_tess-spoc_tess_phot_0000000395171208-s0056_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_395171208/hlsp_tess-spoc_tess_phot_0000000395171208-s0056_tess_v1_lc.fits ...A_lt10 HD207496 timed 28
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0071/target/0000/0003/6736/6318/hlsp_tess-spoc_tess_phot_0000000367366318-s0071_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_367366318/hlsp_tess-spoc_tess_phot_0000000367366318-s0071_tess_v1_lc.fits ... [Done]
+ [Done]
+ [Done]
+A_lt10 WASP-18 timed 164
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0061/target/0000/0004/5513/5327/hlsp_tess-spoc_tess_phot_0000000455135327-s0061_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_455135327/hlsp_tess-spoc_tess_phot_0000000455135327-s0061_tess_v1_lc.fits ... [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2023096110322-s0064-0000000425997655-0257-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_425997655/tess2023096110322-s0064-0000000425997655-0257-s_lc.fits ...A_lt10 XO-6 timed 36
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0058/target/0000/0003/5446/9661/hlsp_tess-spoc_tess_phot_0000000354469661-s0058_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_354469661/hlsp_tess-spoc_tess_phot_0000000354469661-s0058_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2022244194134-s0056-0000000395171208-0243-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_395171208/tess2022244194134-s0056-0000000395171208-0243-s_lc.fits ... [Done]
+A_lt10 KELT-7 timed 54
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0069/target/0000/0002/6253/0407/hlsp_tess-spoc_tess_phot_0000000262530407-s0069_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_262530407/hlsp_tess-spoc_tess_phot_0000000262530407-s0069_tess_v1_lc.fits ... [Done]
+ [Done]
+A_lt10 HD23472 timed 4
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2022244194134-s0056-0000000293954617-0243-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_293954617/tess2022244194134-s0056-0000000293954617-0243-s_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0069/target/0000/0001/6673/9520/hlsp_tess-spoc_tess_phot_0000000166739520-s0069_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_166739520/hlsp_tess-spoc_tess_phot_0000000166739520-s0069_tess_v1_lc.fits ... [Done]
+ [Done]
+A_lt10 HAT-P-30 timed 48
+A_lt10 TOI-1333 timed 48
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0056/target/0000/0002/6659/3143/hlsp_tess-spoc_tess_phot_0000000266593143-s0056_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_266593143/hlsp_tess-spoc_tess_phot_0000000266593143-s0056_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0056/target/0000/0003/6573/3349/hlsp_tess-spoc_tess_phot_0000000365733349-s0056_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_365733349/hlsp_tess-spoc_tess_phot_0000000365733349-s0056_tess_v1_lc.fits ... [Done]
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2022302161335-s0058-0000000354469661-0247-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_354469661/tess2022302161335-s0058-0000000354469661-0247-s_lc.fits ... [Done]
+A_lt10 LTT9779 timed 195
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0069/target/0000/0001/6683/6920/hlsp_tess-spoc_tess_phot_0000000166836920-s0069_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_166836920/hlsp_tess-spoc_tess_phot_0000000166836920-s0069_tess_v1_lc.fits ...A_lt10 WASP-117 timed 16
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0064/target/0000/0004/6020/5581/hlsp_tess-spoc_tess_phot_0000000460205581-s0064_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_460205581/hlsp_tess-spoc_tess_phot_0000000460205581-s0064_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2023237165326-s0069-0000000262530407-0264-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_262530407/tess2023237165326-s0069-0000000262530407-0264-s_lc.fits ...A_lt10 HAT-P-17 timed 16
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0071/target/0000/0000/6857/7662/hlsp_tess-spoc_tess_phot_0000000068577662-s0071_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_68577662/hlsp_tess-spoc_tess_phot_0000000068577662-s0071_tess_v1_lc.fits ...A_lt10 HAT-P-60 timed 32
+ [Done]
+ [Done]
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0069/target/0000/0002/3098/2885/hlsp_tess-spoc_tess_phot_0000000230982885-s0069_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_230982885/hlsp_tess-spoc_tess_phot_0000000230982885-s0069_tess_v1_lc.fits ... [Done]
+A_lt10 K2-232 timed 12
+A_lt10 GJ3090 timed 60
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2022244194134-s0056-0000000365733349-0243-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_365733349/tess2022244194134-s0056-0000000365733349-0243-s_lc.fits ... [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0067/target/0000/0004/6464/6604/hlsp_tess-spoc_tess_phot_0000000464646604-s0067_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_464646604/hlsp_tess-spoc_tess_phot_0000000464646604-s0067_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0068/target/0000/0001/4960/3524/hlsp_tess-spoc_tess_phot_0000000149603524-s0068_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_149603524/hlsp_tess-spoc_tess_phot_0000000149603524-s0068_tess_v1_lc.fits ... [Done]
+ [Done]
+A_lt10 WASP-99 timed 28
+A_lt10 HD110113 timed 48
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0072/target/0000/0003/7706/4495/hlsp_tess-spoc_tess_phot_0000000377064495-s0072_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_377064495/hlsp_tess-spoc_tess_phot_0000000377064495-s0072_tess_v1_lc.fits ...A_lt10 HD235088 timed 24
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0072/target/0000/0000/0689/3917/hlsp_tess-spoc_tess_phot_0000000006893917-s0072_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_6893917/hlsp_tess-spoc_tess_phot_0000000006893917-s0072_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0063/target/0000/0004/3724/2640/hlsp_tess-spoc_tess_phot_0000000437242640-s0063_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_437242640/hlsp_tess-spoc_tess_phot_0000000437242640-s0063_tess_v1_lc.fits ... [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2023181235917-s0067-0000000464646604-0261-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_464646604/tess2023181235917-s0067-0000000464646604-0261-s_lc.fits ...A_lt10 WASP-97 timed 76
+ [Done]
+ [Done]
+ [Done]
+A_lt10 WASP-62 timed 40
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0062/target/0000/0001/6922/6822/hlsp_tess-spoc_tess_phot_0000000169226822-s0062_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_169226822/hlsp_tess-spoc_tess_phot_0000000169226822-s0062_tess_v1_lc.fits ...A_lt10 TOI-1288 timed 84
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0064/target/0000/0003/7118/8886/hlsp_tess-spoc_tess_phot_0000000371188886-s0064_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_371188886/hlsp_tess-spoc_tess_phot_0000000371188886-s0064_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0064/target/0000/0002/4320/0602/hlsp_tess-spoc_tess_phot_0000000243200602-s0064_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_243200602/hlsp_tess-spoc_tess_phot_0000000243200602-s0064_tess_v1_lc.fits ...A_lt10 TOI-837 timed 0
+ [Done]
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0061/target/0000/0003/5029/3646/hlsp_tess-spoc_tess_phot_0000000350293646-s0061_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_350293646/hlsp_tess-spoc_tess_phot_0000000350293646-s0061_tess_v1_lc.fits ...A_lt10 HIP94235 timed 0
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0060/target/0000/0004/2878/7891/hlsp_tess-spoc_tess_phot_0000000428787891-s0060_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_428787891/hlsp_tess-spoc_tess_phot_0000000428787891-s0060_tess_v1_lc.fits ... [Done]
+A_lt10 TOI-561 timed 16
+B_10_11 WASP-84 timed 0
+A_lt10 WASP-34 timed 48
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0057/target/0000/0002/4318/5500/hlsp_tess-spoc_tess_phot_0000000243185500-s0057_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_243185500/hlsp_tess-spoc_tess_phot_0000000243185500-s0057_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0070/target/0000/0003/8090/7135/hlsp_tess-spoc_tess_phot_0000000380907135-s0070_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_380907135/hlsp_tess-spoc_tess_phot_0000000380907135-s0070_tess_v1_lc.fits ... [Done]
+A_lt10 KELT-17 timed 46
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0056/target/0000/0004/3647/8932/hlsp_tess-spoc_tess_phot_0000000436478932-s0056_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_436478932/hlsp_tess-spoc_tess_phot_0000000436478932-s0056_tess_v1_lc.fits ...B_10_11 WASP-130 timed 12
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0064/target/0000/0004/6430/0749/hlsp_tess-spoc_tess_phot_0000000464300749-s0064_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_464300749/hlsp_tess-spoc_tess_phot_0000000464300749-s0064_tess_v1_lc.fits ... [Done]
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0067/target/0000/0002/6921/7040/hlsp_tess-spoc_tess_phot_0000000269217040-s0067_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_269217040/hlsp_tess-spoc_tess_phot_0000000269217040-s0067_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2023096110322-s0064-0000000371188886-0257-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_371188886/tess2023096110322-s0064-0000000371188886-0257-s_lc.fits ...A_lt10 WASP-127 timed 40
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2022357055054-s0060-0000000428787891-0249-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_428787891/tess2022357055054-s0060-0000000428787891-0249-s_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2022273165103-s0057-0000000243185500-0245-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_243185500/tess2022273165103-s0057-0000000243185500-0245-s_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0072/target/0000/0000/1902/8197/hlsp_tess-spoc_tess_phot_0000000019028197-s0072_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_19028197/hlsp_tess-spoc_tess_phot_0000000019028197-s0072_tess_v1_lc.fits ... [Done]
+ [Done]
+ [Done]
+ [Done]
+B_10_11 TOI-1468 timed 0
+B_10_11 TOI-2154 timed 32
+ [Done]
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2023096110322-s0064-0000000464300749-0257-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_464300749/tess2023096110322-s0064-0000000464300749-0257-s_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0067/target/0000/0000/7974/8331/hlsp_tess-spoc_tess_phot_0000000079748331-s0067_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_79748331/hlsp_tess-spoc_tess_phot_0000000079748331-s0067_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0060/target/0000/0000/5123/4631/hlsp_tess-spoc_tess_phot_0000000051234631-s0060_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_51234631/hlsp_tess-spoc_tess_phot_0000000051234631-s0060_tess_v1_lc.fits ... [Done]
+ [Done]
+B_10_11 TOI-3362 timed 0
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0065/target/0000/0003/9456/1119/hlsp_tess-spoc_tess_phot_0000000394561119-s0065_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_394561119/hlsp_tess-spoc_tess_phot_0000000394561119-s0065_tess_v1_lc.fits ... [Done]
+ [Done]
+ [Done]
+B_10_11 TOI-2000 timed 24
+B_10_11 KELT-10 timed 34
+B_10_11 WASP-118 timed 44
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0066/target/0000/0003/9472/2182/hlsp_tess-spoc_tess_phot_0000000394722182-s0066_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_394722182/hlsp_tess-spoc_tess_phot_0000000394722182-s0066_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0067/target/0000/0000/3185/8843/hlsp_tess-spoc_tess_phot_0000000031858843-s0067_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_31858843/hlsp_tess-spoc_tess_phot_0000000031858843-s0067_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0072/target/0000/0000/8433/9983/hlsp_tess-spoc_tess_phot_0000000084339983-s0072_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_84339983/hlsp_tess-spoc_tess_phot_0000000084339983-s0072_tess_v1_lc.fits ...B_10_11 WASP-21 timed 36
+B_10_11 GJ3470 timed 44
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0064/target/0000/0003/9894/3781/hlsp_tess-spoc_tess_phot_0000000398943781-s0064_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_398943781/hlsp_tess-spoc_tess_phot_0000000398943781-s0064_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2023181235917-s0067-0000000079748331-0261-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_79748331/tess2023181235917-s0067-0000000079748331-0261-s_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0057/target/0000/0003/7663/7093/hlsp_tess-spoc_tess_phot_0000000376637093-s0057_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_376637093/hlsp_tess-spoc_tess_phot_0000000376637093-s0057_tess_v1_lc.fits ... [Done]
+ [Done]
+B_10_11 XO-4 timed 32
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0063/target/0000/0001/0195/5023/hlsp_tess-spoc_tess_phot_0000000101955023-s0063_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_101955023/hlsp_tess-spoc_tess_phot_0000000101955023-s0063_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2023124020739-s0065-0000000394561119-0259-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_394561119/tess2023124020739-s0065-0000000394561119-0259-s_lc.fits ... [Done]
+ [Done]
+ [Done]
+B_10_11 TOI-1064 timed 0
+ [Done]
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2023153011303-s0066-0000000394722182-0260-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_394722182/tess2023153011303-s0066-0000000394722182-0260-s_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0070/target/0000/0000/3659/2530/hlsp_tess-spoc_tess_phot_0000000036592530-s0070_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_36592530/hlsp_tess-spoc_tess_phot_0000000036592530-s0070_tess_v1_lc.fits ...B_10_11 WASP-123 timed 51
+ [Done]
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0065/target/0000/0000/2515/5310/hlsp_tess-spoc_tess_phot_0000000025155310-s0065_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_25155310/hlsp_tess-spoc_tess_phot_0000000025155310-s0065_tess_v1_lc.fits ...B_10_11 TOI-1107 timed 50
+ [Done]
+B_10_11 WASP-41 timed 60
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0061/target/0000/0002/6864/4785/hlsp_tess-spoc_tess_phot_0000000268644785-s0061_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_268644785/hlsp_tess-spoc_tess_phot_0000000268644785-s0061_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2022273165103-s0057-0000000376637093-0245-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_376637093/tess2022273165103-s0057-0000000376637093-0245-s_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0071/target/0000/0004/1183/9167/hlsp_tess-spoc_tess_phot_0000000411839167-s0071_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_411839167/hlsp_tess-spoc_tess_phot_0000000411839167-s0071_tess_v1_lc.fits ... [Done]
+B_10_11 HAT-P-56 timed 60
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0060/target/0000/0002/3915/4970/hlsp_tess-spoc_tess_phot_0000000239154970-s0060_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_239154970/hlsp_tess-spoc_tess_phot_0000000239154970-s0060_tess_v1_lc.fits ...B_10_11 TOI-2236 timed 44
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0056/target/0000/0002/2951/0866/hlsp_tess-spoc_tess_phot_0000000229510866-s0056_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_229510866/hlsp_tess-spoc_tess_phot_0000000229510866-s0056_tess_v1_lc.fits ... [Done]
+ [Done]
+ [Done]
+B_10_11 TOI-1516 timed 96
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0062/target/0000/0003/7418/0079/hlsp_tess-spoc_tess_phot_0000000374180079-s0062_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_374180079/hlsp_tess-spoc_tess_phot_0000000374180079-s0062_tess_v1_lc.fits ...B_10_11 WASP-75 timed 56
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0059/target/0000/0002/6840/3451/hlsp_tess-spoc_tess_phot_0000000268403451-s0059_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_268403451/hlsp_tess-spoc_tess_phot_0000000268403451-s0059_tess_v1_lc.fits ...B_10_11 WASP-126 timed 52
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2022244194134-s0056-0000000229510866-0243-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_229510866/tess2022244194134-s0056-0000000229510866-0243-s_lc.fits ...B_10_11 K2-266 timed 0
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0071/target/0000/0000/2682/6078/hlsp_tess-spoc_tess_phot_0000000026826078-s0071_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_26826078/hlsp_tess-spoc_tess_phot_0000000026826078-s0071_tess_v1_lc.fits ... [Done]
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0062/target/0000/0000/3672/4087/hlsp_tess-spoc_tess_phot_0000000036724087-s0062_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_36724087/hlsp_tess-spoc_tess_phot_0000000036724087-s0062_tess_v1_lc.fits ...B_10_11 KELT-15 timed 52
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0068/target/0000/0000/2985/7954/hlsp_tess-spoc_tess_phot_0000000029857954-s0068_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_29857954/hlsp_tess-spoc_tess_phot_0000000029857954-s0068_tess_v1_lc.fits ... [Done]
+ [Done]
+B_10_11 LTT3780 timed 0
+B_10_11 TOI-1181 timed 0
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0064/target/0000/0004/2869/9140/hlsp_tess-spoc_tess_phot_0000000428699140-s0064_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_428699140/hlsp_tess-spoc_tess_phot_0000000428699140-s0064_tess_v1_lc.fits ...B_10_11 HAT-P-33 timed 44
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0065/target/0000/0001/2753/0399/hlsp_tess-spoc_tess_phot_0000000127530399-s0065_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_127530399/hlsp_tess-spoc_tess_phot_0000000127530399-s0065_tess_v1_lc.fits ...B_10_11 EPIC246851721 timed 28
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0065/target/0000/0004/5424/8975/hlsp_tess-spoc_tess_phot_0000000454248975-s0065_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_454248975/hlsp_tess-spoc_tess_phot_0000000454248975-s0065_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0059/target/0000/0003/9656/2848/hlsp_tess-spoc_tess_phot_0000000396562848-s0059_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_396562848/hlsp_tess-spoc_tess_phot_0000000396562848-s0059_tess_v1_lc.fits ... [Done]
+B_10_11 HAT-P-20 timed 56
+ [Done]
+B_10_11 GJ1132 timed 124
+ [Done]
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0072/target/0000/0002/0321/4081/hlsp_tess-spoc_tess_phot_0000000203214081-s0072_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_203214081/hlsp_tess-spoc_tess_phot_0000000203214081-s0072_tess_v1_lc.fits ... [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0072/target/0000/0002/7046/8559/hlsp_tess-spoc_tess_phot_0000000270468559-s0072_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_270468559/hlsp_tess-spoc_tess_phot_0000000270468559-s0072_tess_v1_lc.fits ...B_10_11 XO-7 timed 62
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0069/target/0000/0001/8424/0683/hlsp_tess-spoc_tess_phot_0000000184240683-s0069_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_184240683/hlsp_tess-spoc_tess_phot_0000000184240683-s0069_tess_v1_lc.fits ...C_11_12 G9-40 timed 0
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0059/target/0000/0002/7994/7414/hlsp_tess-spoc_tess_phot_0000000279947414-s0059_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_279947414/hlsp_tess-spoc_tess_phot_0000000279947414-s0059_tess_v1_lc.fits ...B_10_11 TOI-172 timed 16
+ [Done]
+C_11_12 WASP-132 timed 28
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0068/target/0000/0002/8145/9670/hlsp_tess-spoc_tess_phot_0000000281459670-s0068_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_281459670/hlsp_tess-spoc_tess_phot_0000000281459670-s0068_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0063/target/0000/0004/3724/8515/hlsp_tess-spoc_tess_phot_0000000437248515-s0063_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_437248515/hlsp_tess-spoc_tess_phot_0000000437248515-s0063_tess_v1_lc.fits ... [Done]
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2023124020739-s0065-0000000454248975-0259-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_454248975/tess2023124020739-s0065-0000000454248975-0259-s_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2022330142927-s0059-0000000279947414-0248-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_279947414/tess2022330142927-s0059-0000000279947414-0248-s_lc.fits ... [Done]
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2022330142927-s0059-0000000396562848-0248-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_396562848/tess2022330142927-s0059-0000000396562848-0248-s_lc.fits ... [Done]
+C_11_12 TOI-4145A timed 40
+C_11_12 HAT-P-42 timed 36
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0070/target/0000/0003/9857/2544/hlsp_tess-spoc_tess_phot_0000000398572544-s0070_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_398572544/hlsp_tess-spoc_tess_phot_0000000398572544-s0070_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0060/target/0000/0002/5706/0897/hlsp_tess-spoc_tess_phot_0000000257060897-s0060_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_257060897/hlsp_tess-spoc_tess_phot_0000000257060897-s0060_tess_v1_lc.fits ...C_11_12 WASP-31 timed 52
+ [Done]
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0067/target/0000/0002/0160/4954/hlsp_tess-spoc_tess_phot_0000000201604954-s0067_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_201604954/hlsp_tess-spoc_tess_phot_0000000201604954-s0067_tess_v1_lc.fits ...C_11_12 WASP-5 timed 92
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0057/target/0000/0002/3688/7394/hlsp_tess-spoc_tess_phot_0000000236887394-s0057_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_236887394/hlsp_tess-spoc_tess_phot_0000000236887394-s0057_tess_v1_lc.fits ...C_11_12 TOI-3023 timed 48
+C_11_12 HATS-30 timed 44
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0061/target/0000/0002/3203/8798/hlsp_tess-spoc_tess_phot_0000000232038798-s0061_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_232038798/hlsp_tess-spoc_tess_phot_0000000232038798-s0061_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0072/target/0000/0001/4949/6868/hlsp_tess-spoc_tess_phot_0000000149496868-s0072_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_149496868/hlsp_tess-spoc_tess_phot_0000000149496868-s0072_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2023096110322-s0064-0000000428699140-0257-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_428699140/tess2023096110322-s0064-0000000428699140-0257-s_lc.fits ... [Done]
+ [Done]
+ [Done]
+ [Done]
+ [Done]
+C_11_12 WASP-28 timed 48
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0062/target/0000/0001/1895/6453/hlsp_tess-spoc_tess_phot_0000000118956453-s0062_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_118956453/hlsp_tess-spoc_tess_phot_0000000118956453-s0062_tess_v1_lc.fits ...C_11_12 LHS1478 timed 59
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0067/target/0000/0001/8312/0439/hlsp_tess-spoc_tess_phot_0000000183120439-s0067_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_183120439/hlsp_tess-spoc_tess_phot_0000000183120439-s0067_tess_v1_lc.fits ... [Done]
+C_11_12 TIC257060897 timed 40
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0069/target/0000/0002/3791/3194/hlsp_tess-spoc_tess_phot_0000000237913194-s0069_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_237913194/hlsp_tess-spoc_tess_phot_0000000237913194-s0069_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2023181235917-s0067-0000000201604954-0261-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_201604954/tess2023181235917-s0067-0000000201604954-0261-s_lc.fits ...C_11_12 WASP-168 timed 36
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0063/target/0000/0001/5723/0659/hlsp_tess-spoc_tess_phot_0000000157230659-s0063_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_157230659/hlsp_tess-spoc_tess_phot_0000000157230659-s0063_tess_v1_lc.fits ... [Done]
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2023315124025-s0072-0000000149496868-0267-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_149496868/tess2023315124025-s0072-0000000149496868-0267-s_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2023237165326-s0069-0000000237913194-0264-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_237913194/tess2023237165326-s0069-0000000237913194-0264-s_lc.fits ... [Done]
+ [Done]
+C_11_12 TIC237913194 timed 0
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0071/target/0000/0000/5639/9553/hlsp_tess-spoc_tess_phot_0000000056399553-s0071_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_56399553/hlsp_tess-spoc_tess_phot_0000000056399553-s0071_tess_v1_lc.fits ...C_11_12 Qatar-1 timed 136
+C_11_12 HATS-29 timed 26
+C_11_12 WASP-170 timed 72
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0072/target/0000/0003/8880/4061/hlsp_tess-spoc_tess_phot_0000000388804061-s0072_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_388804061/hlsp_tess-spoc_tess_phot_0000000388804061-s0072_tess_v1_lc.fits ... [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0058/target/0000/0002/8527/2237/hlsp_tess-spoc_tess_phot_0000000285272237-s0058_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_285272237/hlsp_tess-spoc_tess_phot_0000000285272237-s0058_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0069/target/0000/0001/1615/6517/hlsp_tess-spoc_tess_phot_0000000116156517-s0069_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_116156517/hlsp_tess-spoc_tess_phot_0000000116156517-s0069_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2023069172124-s0063-0000000157230659-0255-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_157230659/tess2023069172124-s0063-0000000157230659-0255-s_lc.fits ... [Done]
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2023315124025-s0072-0000000388804061-0267-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_388804061/tess2023315124025-s0072-0000000388804061-0267-s_lc.fits ... [Done]
+C_11_12 K2-18 timed 0
+ [Done]
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0058/target/0000/0003/5268/2207/hlsp_tess-spoc_tess_phot_0000000352682207-s0058_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_352682207/hlsp_tess-spoc_tess_phot_0000000352682207-s0058_tess_v1_lc.fits ... [Done]
+C_11_12 TOI-3082 timed 84
+C_11_12 TOI-169 timed 64
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0068/target/0000/0002/3817/6110/hlsp_tess-spoc_tess_phot_0000000238176110-s0068_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_238176110/hlsp_tess-spoc_tess_phot_0000000238176110-s0068_tess_v1_lc.fits ...C_11_12 K2-29 timed 56
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0072/target/0000/0003/6500/7485/hlsp_tess-spoc_tess_phot_0000000365007485-s0072_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_365007485/hlsp_tess-spoc_tess_phot_0000000365007485-s0072_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0060/target/0000/0002/2940/0092/hlsp_tess-spoc_tess_phot_0000000229400092-s0060_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_229400092/hlsp_tess-spoc_tess_phot_0000000229400092-s0060_tess_v1_lc.fits ... [Done]
+C_11_12 NGTS-12 timed 24
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0062/target/0000/0001/6828/1028/hlsp_tess-spoc_tess_phot_0000000168281028-s0062_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_168281028/hlsp_tess-spoc_tess_phot_0000000168281028-s0062_tess_v1_lc.fits ... [Done]
+C_11_12 K2-405 timed 35
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0073/target/0000/0002/3012/7302/hlsp_tess-spoc_tess_phot_0000000230127302-s0073_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_230127302/hlsp_tess-spoc_tess_phot_0000000230127302-s0073_tess_v1_lc.fits ... [Done]
+C_11_12 WASP-190 timed 28
+C_11_12 HAT-P-38 timed 28
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0070/target/0000/0004/0424/3877/hlsp_tess-spoc_tess_phot_0000000404243877-s0070_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_404243877/hlsp_tess-spoc_tess_phot_0000000404243877-s0070_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0065/target/0000/0001/6057/8764/hlsp_tess-spoc_tess_phot_0000000160578764-s0065_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_160578764/hlsp_tess-spoc_tess_phot_0000000160578764-s0065_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2022302161335-s0058-0000000352682207-0247-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_352682207/tess2022302161335-s0058-0000000352682207-0247-s_lc.fits ... [Done]
+ [Done]
+C_11_12 HAT-P-59 timed 36
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2023315124025-s0072-0000000365007485-0267-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_365007485/tess2023315124025-s0072-0000000365007485-0267-s_lc.fits ... [Done]
+C_11_12 WASP-91 timed 56
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0070/target/0000/0000/1740/9453/hlsp_tess-spoc_tess_phot_0000000017409453-s0070_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_17409453/hlsp_tess-spoc_tess_phot_0000000017409453-s0070_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0067/target/0000/0000/0708/8246/hlsp_tess-spoc_tess_phot_0000000007088246-s0067_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_7088246/hlsp_tess-spoc_tess_phot_0000000007088246-s0067_tess_v1_lc.fits ... [Done]
+C_11_12 K2-403 timed 2
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0067/target/0000/0003/3952/2221/hlsp_tess-spoc_tess_phot_0000000339522221-s0067_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_339522221/hlsp_tess-spoc_tess_phot_0000000339522221-s0067_tess_v1_lc.fits ... [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2023341045131-s0073-0000000230127302-0268-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_230127302/tess2023341045131-s0073-0000000230127302-0268-s_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2023263165758-s0070-0000000017409453-0265-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_17409453/tess2023263165758-s0070-0000000017409453-0265-s_lc.fits ... [Done]
+ [Done]
+D_12_13.5 K2-87 timed 0
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0061/target/0000/0000/1334/9647/hlsp_tess-spoc_tess_phot_0000000013349647-s0061_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_13349647/hlsp_tess-spoc_tess_phot_0000000013349647-s0061_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2023043185947-s0062-0000000168281028-0254-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_168281028/tess2023043185947-s0062-0000000168281028-0254-s_lc.fits ... [Done]
+ [Done]
+C_11_12 TOI-4010 timed 36
+C_11_12 TOI-1246 timed 0
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0059/target/0000/0002/6757/2272/hlsp_tess-spoc_tess_phot_0000000267572272-s0059_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_267572272/hlsp_tess-spoc_tess_phot_0000000267572272-s0059_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0070/target/0000/0002/9345/7754/hlsp_tess-spoc_tess_phot_0000000293457754-s0070_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_293457754/hlsp_tess-spoc_tess_phot_0000000293457754-s0070_tess_v1_lc.fits ...D_12_13.5 WASP-192 timed 44
+ [Done]
+D_12_13.5 HATS-35 timed 0
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0066/target/0000/0003/8058/9029/hlsp_tess-spoc_tess_phot_0000000380589029-s0066_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_380589029/hlsp_tess-spoc_tess_phot_0000000380589029-s0066_tess_v1_lc.fits ... [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0066/target/0000/0001/4069/1463/hlsp_tess-spoc_tess_phot_0000000140691463-s0066_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_140691463/hlsp_tess-spoc_tess_phot_0000000140691463-s0066_tess_v1_lc.fits ... [Done]
+ [Done]
+C_11_12 HATS-38 timed 36
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0062/target/0000/0001/7668/5457/hlsp_tess-spoc_tess_phot_0000000176685457-s0062_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_176685457/hlsp_tess-spoc_tess_phot_0000000176685457-s0062_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2022330142927-s0059-0000000267572272-0248-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_267572272/tess2022330142927-s0059-0000000267572272-0248-s_lc.fits ...D_12_13.5 WASP-181 timed 36
+D_12_13.5 WASP-36 timed 112
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0072/target/0000/0004/6898/7719/hlsp_tess-spoc_tess_phot_0000000468987719-s0072_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_468987719/hlsp_tess-spoc_tess_phot_0000000468987719-s0072_tess_v1_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0068/target/0000/0002/8979/3076/hlsp_tess-spoc_tess_phot_0000000289793076-s0068_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_289793076/hlsp_tess-spoc_tess_phot_0000000289793076-s0068_tess_v1_lc.fits ... [Done]
+D_12_13.5 K2-238 timed 40
+ [Done]
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0063/target/0000/0000/1461/4418/hlsp_tess-spoc_tess_phot_0000000014614418-s0063_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_14614418/hlsp_tess-spoc_tess_phot_0000000014614418-s0063_tess_v1_lc.fits ...D_12_13.5 HATS-23 timed 66
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0070/target/0000/0002/6266/2119/hlsp_tess-spoc_tess_phot_0000000262662119-s0070_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_262662119/hlsp_tess-spoc_tess_phot_0000000262662119-s0070_tess_v1_lc.fits ... [Done]
+D_12_13.5 TOI-157 timed 72
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0064/target/0000/0002/4811/1245/hlsp_tess-spoc_tess_phot_0000000248111245-s0064_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_248111245/hlsp_tess-spoc_tess_phot_0000000248111245-s0064_tess_v1_lc.fits ... [Done]
+D_12_13.5 HAT-P-37 timed 60
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2023043185947-s0062-0000000176685457-0254-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_176685457/tess2023043185947-s0062-0000000176685457-0254-s_lc.fits ...Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0057/target/0000/0002/9175/1373/hlsp_tess-spoc_tess_phot_0000000291751373-s0057_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_291751373/hlsp_tess-spoc_tess_phot_0000000291751373-s0057_tess_v1_lc.fits ...D_12_13.5 HATS-24 timed 124
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0064/target/0000/0002/2002/9715/hlsp_tess-spoc_tess_phot_0000000220029715-s0064_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_220029715/hlsp_tess-spoc_tess_phot_0000000220029715-s0064_tess_v1_lc.fits ... [Done]
+ [Done]
+ [Done]
+D_12_13.5 WASP-151 timed 32
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0057/target/0000/0004/4011/3053/hlsp_tess-spoc_tess_phot_0000000440113053-s0057_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_440113053/hlsp_tess-spoc_tess_phot_0000000440113053-s0057_tess_v1_lc.fits ...D_12_13.5 HATS-13 timed 52
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0062/target/0000/0001/8962/5051/hlsp_tess-spoc_tess_phot_0000000189625051-s0062_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_189625051/hlsp_tess-spoc_tess_phot_0000000189625051-s0062_tess_v1_lc.fits ... [Done]
+D_12_13.5 HAT-P-43 timed 46
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0072/target/0000/0000/0702/0254/hlsp_tess-spoc_tess_phot_0000000007020254-s0072_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_7020254/hlsp_tess-spoc_tess_phot_0000000007020254-s0072_tess_v1_lc.fits ...D_12_13.5 NGTS-9 timed 40
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0068/target/0000/0000/9740/9519/hlsp_tess-spoc_tess_phot_0000000097409519-s0068_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_97409519/hlsp_tess-spoc_tess_phot_0000000097409519-s0068_tess_v1_lc.fits ... [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2023315124025-s0072-0000000007020254-0267-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_7020254/tess2023315124025-s0072-0000000007020254-0267-s_lc.fits ... [Done]
+D_12_13.5 K2-115 timed 0
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0059/target/0000/0002/5950/6033/hlsp_tess-spoc_tess_phot_0000000259506033-s0059_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_259506033/hlsp_tess-spoc_tess_phot_0000000259506033-s0059_tess_v1_lc.fits ... [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2023069172124-s0063-0000000014614418-0255-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_14614418/tess2023069172124-s0063-0000000014614418-0255-s_lc.fits ... [Done]
+D_12_13.5 HATS-27 timed 46
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0067/target/0000/0002/3166/3901/hlsp_tess-spoc_tess_phot_0000000231663901-s0067_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_231663901/hlsp_tess-spoc_tess_phot_0000000231663901-s0067_tess_v1_lc.fits ...D_12_13.5 WASP-124 timed 48
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0063/target/0000/0001/5192/0165/hlsp_tess-spoc_tess_phot_0000000151920165-s0063_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_151920165/hlsp_tess-spoc_tess_phot_0000000151920165-s0063_tess_v1_lc.fits ...D_12_13.5 Qatar-4 timed 104
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0062/target/0000/0003/1500/2523/hlsp_tess-spoc_tess_phot_0000000315002523-s0062_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_315002523/hlsp_tess-spoc_tess_phot_0000000315002523-s0062_tess_v1_lc.fits ...D_12_13.5 HATS-7 timed 56
+ [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0071/target/0000/0000/2601/7005/hlsp_tess-spoc_tess_phot_0000000026017005-s0071_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_26017005/hlsp_tess-spoc_tess_phot_0000000026017005-s0071_tess_v1_lc.fits ... [Done]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2022330142927-s0059-0000000259506033-0248-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_259506033/tess2022330142927-s0059-0000000259506033-0248-s_lc.fits ... [Done]
+ [Done]
+D_12_13.5 HATS-64 timed 32
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0057/target/0000/0000/5372/8859/hlsp_tess-spoc_tess_phot_0000000053728859-s0057_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_53728859/hlsp_tess-spoc_tess_phot_0000000053728859-s0057_tess_v1_lc.fits ...D_12_13.5 Qatar-3 timed 72
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0061/target/0000/0000/9854/5929/hlsp_tess-spoc_tess_phot_0000000098545929-s0061_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_98545929/hlsp_tess-spoc_tess_phot_0000000098545929-s0061_tess_v1_lc.fits ... [Done]
+ [Done]
+D_12_13.5 HATS-18 timed 220
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2023069172124-s0063-0000000151920165-0255-s_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_151920165/tess2023069172124-s0063-0000000151920165-0255-s_lc.fits ...D_12_13.5 K2-30 timed 36
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/tess-spoc/s0059/target/0000/0002/2979/1084/hlsp_tess-spoc_tess_phot_0000000229791084-s0059_tess_v1_lc.fits to /Users/bwbrook/papers/transit-forecast-audit/data/raw/mast/TIC_229791084/hlsp_tess-spoc_tess_phot_0000000229791084-s0059_tess_v1_lc.fits ...D_12_13.5 HAT-P-61 timed 96
+D_12_13.5 WASP-46 timed 100
+ [Done]
+ [Done]
+D_12_13.5 HAT-P-28 timed 60
+D_12_13.5 HATS-70 timed 0
+D_12_13.5 NGTS-24 timed 56
+D_12_13.5 HATS-26 timed 56
+D_12_13.5 Qatar-10 timed 92

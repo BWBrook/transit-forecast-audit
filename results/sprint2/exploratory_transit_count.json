@@ -1,0 +1,74 @@
+{
+ "dev|n<=3": {
+  "hosts": 3,
+  "events": 7,
+  "eq_host_z_rms": 1.02,
+  "ci90": [
+   0.567,
+   1.327
+  ],
+  "cover95": 0.889,
+  "cover95_ci90_lower": 0.778,
+  "event_z_rms": 1.156
+ },
+ "dev|n>=4": {
+  "hosts": 42,
+  "events": 675,
+  "eq_host_z_rms": 0.939,
+  "ci90": [
+   0.882,
+   0.995
+  ],
+  "cover95": 0.963,
+  "cover95_ci90_lower": 0.945,
+  "event_z_rms": 0.927
+ },
+ "confirm|n<=3": {
+  "hosts": 7,
+  "events": 17,
+  "eq_host_z_rms": 0.876,
+  "ci90": [
+   0.633,
+   1.061
+  ],
+  "cover95": 1.0,
+  "cover95_ci90_lower": 1.0,
+  "event_z_rms": 0.892
+ },
+ "confirm|n>=4": {
+  "hosts": 99,
+  "events": 1479,
+  "eq_host_z_rms": 0.992,
+  "ci90": [
+   0.959,
+   1.025
+  ],
+  "cover95": 0.944,
+  "cover95_ci90_lower": 0.931,
+  "event_z_rms": 0.972
+ },
+ "confirm2|n<=3": {
+  "hosts": 4,
+  "events": 9,
+  "eq_host_z_rms": 2.335,
+  "ci90": [
+   1.221,
+   3.385
+  ],
+  "cover95": 0.542,
+  "cover95_ci90_lower": 0.25,
+  "event_z_rms": 1.859
+ },
+ "confirm2|n>=4": {
+  "hosts": 98,
+  "events": 1368,
+  "eq_host_z_rms": 1.012,
+  "ci90": [
+   0.976,
+   1.049
+  ],
+  "cover95": 0.953,
+  "cover95_ci90_lower": 0.941,
+  "event_z_rms": 1.009
+ }
+}

@@ -1,0 +1,617 @@
+{
+ "date": "2026-11-07",
+ "status": "sprint 2 complete; Codex review and fix next",
+ "development_only": true,
+ "protocol_frozen": false,
+ "protected_outcomes_accessed": false,
+ "rule": {
+  "name": "t015v3",
+  "frozen_at": "2c39f0a",
+  "source_hash": "4b5c9602a29b",
+  "replication_design": "9375b3c"
+ },
+ "verdict": "outcome pipeline not ready under prespecified criteria (D049)",
+ "confirmation": {
+  "t015v3c_primary": {
+   "hosts": 106,
+   "events": 1496,
+   "z_rms": 1.0526,
+   "z_rms_ci90": [
+    1.0147,
+    1.0911
+   ],
+   "cover95": 0.9359,
+   "cover95_ci90": [
+    0.9215,
+    0.9495
+   ],
+   "mean_z": 0.0004,
+   "mean_z_ci90": [
+    -0.0551,
+    0.0559
+   ],
+   "z_rms_tmag9_ci90": [
+    0.9335,
+    1.04
+   ],
+   "z_rms_tmag13.5_ci90": [
+    1.0619,
+    1.1952
+   ],
+   "pass": false,
+   "failed": [
+    "cover95",
+    "tmag13.5"
+   ]
+  },
+  "t015v3_secondary": {
+   "hosts": 106,
+   "events": 1496,
+   "z_rms": 0.9845,
+   "z_rms_ci90": [
+    0.9505,
+    1.0174
+   ],
+   "cover95": 0.9443,
+   "cover95_ci90": [
+    0.9302,
+    0.9574
+   ],
+   "mean_z": 0.0005,
+   "mean_z_ci90": [
+    -0.0513,
+    0.0526
+   ],
+   "z_rms_tmag9_ci90": [
+    0.9659,
+    1.0625
+   ],
+   "z_rms_tmag13.5_ci90": [
+    0.8781,
+    0.9996
+   ],
+   "pass": true,
+   "failed": []
+  }
+ },
+ "replication": {
+  "t015v3_primary": {
+   "hosts": 102,
+   "events": 1377,
+   "z_rms": 1.0946,
+   "z_rms_ci90": [
+    1.0019,
+    1.2139
+   ],
+   "cover95": 0.9292,
+   "cover95_ci90": [
+    0.9081,
+    0.9467
+   ],
+   "mean_z": 0.0478,
+   "mean_z_ci90": [
+    -0.045,
+    0.1313
+   ],
+   "z_rms_tmag9_ci90": [
+    1.0024,
+    1.2212
+   ],
+   "z_rms_tmag13.5_ci90": [
+    0.8462,
+    1.3188
+   ],
+   "pass": false,
+   "failed": [
+    "z_rms",
+    "cover95",
+    "tmag9",
+    "tmag13.5"
+   ]
+  }
+ },
+ "exploratory_transit_count_split": {
+  "dev|n<=3": {
+   "hosts": 3,
+   "events": 7,
+   "eq_host_z_rms": 1.02,
+   "ci90": [
+    0.567,
+    1.327
+   ],
+   "cover95": 0.889,
+   "cover95_ci90_lower": 0.778,
+   "event_z_rms": 1.156
+  },
+  "dev|n>=4": {
+   "hosts": 42,
+   "events": 675,
+   "eq_host_z_rms": 0.939,
+   "ci90": [
+    0.882,
+    0.995
+   ],
+   "cover95": 0.963,
+   "cover95_ci90_lower": 0.945,
+   "event_z_rms": 0.927
+  },
+  "confirm|n<=3": {
+   "hosts": 7,
+   "events": 17,
+   "eq_host_z_rms": 0.876,
+   "ci90": [
+    0.633,
+    1.061
+   ],
+   "cover95": 1.0,
+   "cover95_ci90_lower": 1.0,
+   "event_z_rms": 0.892
+  },
+  "confirm|n>=4": {
+   "hosts": 99,
+   "events": 1479,
+   "eq_host_z_rms": 0.992,
+   "ci90": [
+    0.959,
+    1.025
+   ],
+   "cover95": 0.944,
+   "cover95_ci90_lower": 0.931,
+   "event_z_rms": 0.972
+  },
+  "confirm2|n<=3": {
+   "hosts": 4,
+   "events": 9,
+   "eq_host_z_rms": 2.335,
+   "ci90": [
+    1.221,
+    3.385
+   ],
+   "cover95": 0.542,
+   "cover95_ci90_lower": 0.25,
+   "event_z_rms": 1.859
+  },
+  "confirm2|n>=4": {
+   "hosts": 98,
+   "events": 1368,
+   "eq_host_z_rms": 1.012,
+   "ci90": [
+    0.976,
+    1.049
+   ],
+   "cover95": 0.953,
+   "cover95_ci90_lower": 0.941,
+   "event_z_rms": 1.009
+  }
+ },
+ "R5": {
+  "release_transfer": {
+   "matched_pairs": 2230,
+   "median_delta_s": -0.33,
+   "z_rms_same_photons": 0.366,
+   "median_sigma_ratio_ours_over_exoclock": 0.9845,
+   "sigma_ratio_iqr": [
+    0.9126,
+    1.0714
+   ],
+   "decisions": {
+    "exoclock_matched": "inconclusive",
+    "ours_matched": "inconclusive",
+    "ours_matched_raw": "inconclusive",
+    "ours_all": "inconclusive",
+    "ours_all_raw": "inconclusive",
+    "exoclock_all": "inconclusive"
+   },
+   "signs": {
+    "exoclock_matched": -1.0,
+    "ours_matched": -1.0,
+    "ours_matched_raw": -1.0,
+    "ours_all": -1.0,
+    "ours_all_raw": -1.0,
+    "exoclock_all": -1.0
+   },
+   "R5_transfer_accepted": true,
+   "R5_transfer_accepted_raw_t015v3": true,
+   "cycle_margin_sigma_min_ours_all": 14.7
+  },
+  "chronological": {
+   "matched_pairs": 3416,
+   "median_delta_s": -0.18,
+   "z_rms_same_photons": 0.365,
+   "median_sigma_ratio_ours_over_exoclock": 0.9862,
+   "sigma_ratio_iqr": [
+    0.9161,
+    1.0737
+   ],
+   "decisions": {
+    "exoclock_matched": "inconclusive",
+    "ours_matched": "inconclusive",
+    "ours_matched_raw": "inconclusive",
+    "ours_all": "inconclusive",
+    "ours_all_raw": "inconclusive",
+    "exoclock_all": "inconclusive"
+   },
+   "signs": {
+    "exoclock_matched": -1.0,
+    "ours_matched": -1.0,
+    "ours_matched_raw": -1.0,
+    "ours_all": -1.0,
+    "ours_all_raw": -1.0,
+    "exoclock_all": -1.0
+   },
+   "R5_transfer_accepted": true,
+   "R5_transfer_accepted_raw_t015v3": true,
+   "cycle_margin_sigma_min_ours_all": 14.7
+  }
+ },
+ "remeasurement": {
+  "attempted": 4615,
+  "status_counts": {
+   "excluded_coverage": 470,
+   "timed": 3946,
+   "id_failed": 116,
+   "edge": 83
+  },
+  "timed_planets": 294,
+  "same_photon_matched": 3748,
+  "median_delta_s": -0.125,
+  "z_rms": 0.3552,
+  "median_sigma_ratio_t015v3_over_exoclock": 1.0549
+ },
+ "candidate_parameters_t015v3": {
+  "M0": {
+   "b": 1.0,
+   "s_log_lambda": 0.0,
+   "converged": true,
+   "at_bound": false
+  },
+  "M1": {
+   "b": 10.016438717498744,
+   "nll": 3182.3901057371772,
+   "converged": true,
+   "order": 384,
+   "gradient_max": 3.762309574995015e-09,
+   "at_bound": false,
+   "s_log_lambda": 0.0
+  },
+  "M2": {
+   "b": 1.0,
+   "s_log_lambda": 2.5853764402186874,
+   "nll": 2853.9449863589284,
+   "converged": true,
+   "at_bound": false,
+   "gradient_max": 7.388134548591552e-10,
+   "order": 384
+  },
+  "M3": {
+   "b": 0.995765941031733,
+   "nll": 2853.944690714777,
+   "converged": true,
+   "order": 384,
+   "gradient_max": 4.319212365544445e-08,
+   "at_bound": false,
+   "s_log_lambda": 2.5905006256637284
+  }
+ },
+ "candidate_training": {
+  "training_planets": 217,
+  "training_hosts": 216,
+  "training_events": 2328
+ },
+ "freeze_candidate": {
+  "planets": 184,
+  "hosts": 175,
+  "core": 156,
+  "extension": 28,
+  "opportunities_inventory": 3399,
+  "events_manifest": 3399,
+  "inventory_sha256": "26d6d431e8995d2ad4c6c4a972430ee0d346aeab8d8f210660ede3f2ace5c80f",
+  "strict_a_start_jd": 2460998.5,
+  "note": "Same window as the sprint-1 inventory: product MJD bounds and official sector dates less one day, no UTC-BJD conversion (<= ~9 min)."
+ },
+ "access_receipt": {
+  "utc": "2026-11-07T06:26:59+00:00",
+  "fits_files": 996,
+  "sector_range": [
+   46,
+   73
+  ],
+  "max_tstop_btjd": 3312.655117498639,
+  "tstop_limit_btjd": 3313.49,
+  "files_violating_guard": [],
+  "protected_outcomes_accessed": false,
+  "method": "Header-only scan of every FITS file under data/raw/mast (primary SECTOR, extension TSTOP); no data units read.",
+  "listing_sha256": "de08107daff66aaf874aa16d570a122ab7d2b42dd18b9855b222b29018f9c5bf"
+ },
+ "open_defects": [
+  {
+   "id": "S2-01",
+   "owner": "Codex review",
+   "issue": "Product-level consistency rule against spurious windows (WASP-54b S50 timed at z=55, 12 h from the true transit)"
+  },
+  {
+   "id": "S2-02",
+   "owner": "next design",
+   "issue": "Prespecified, metadata-defined test of the >=4-transits-per-sector scope; decide sealed-evaluation restriction"
+  },
+  {
+   "id": "S2-03",
+   "owner": "next design",
+   "issue": "Bright-star (Tmag<10) undercoverage 0.915-0.918 and stratum-A recovery"
+  },
+  {
+   "id": "S2-04",
+   "owner": "Codex review",
+   "issue": "Equal-host weighting gives few-transit hosts full weight; decide the estimand weighting for the sealed population"
+  },
+  {
+   "id": "S2-05",
+   "owner": "Claude",
+   "issue": "Write full-support likelihood grids; 21/404 non-Gaussian grids truncated by the +/-60-min prior are refused by the adapter"
+  },
+  {
+   "id": "S1-05",
+   "owner": "both",
+   "issue": "Missing issued covariance, exposure lineage, selection denominator, limited calibration availability"
+  }
+ ],
+ "commands": [
+  "uv run scripts/sprint2_outcomes.py run --sample dev",
+  "uv run scripts/sprint2_outcomes.py idtests",
+  "uv run scripts/sprint2_outcomes.py run --sample confirm",
+  "uv run scripts/sprint2_confirm2.py run",
+  ".venv/bin/python scripts/sprint2_analysis.py check",
+  ".venv/bin/python scripts/sprint2_analysis.py analyse --sample confirm2",
+  "uv run scripts/sprint2_remeasure.py run",
+  ".venv/bin/python scripts/sprint2_forecasts.py run --bootstrap 400",
+  ".venv/bin/python scripts/sprint2_forecasts.py candidate --convention t015v3 --output candidate_parameters_t015v3.json",
+  ".venv/bin/python scripts/sprint2_forecasts.py interface",
+  ".venv/bin/python scripts/sprint2_freeze_package.py roster",
+  ".venv/bin/python scripts/sprint2_freeze_package.py forecasts --parameters results/sprint2/forecasts/candidate_parameters_t015v3.json",
+  ".venv/bin/python scripts/sprint2_freeze_package.py receipt",
+  ".venv/bin/python -m unittest discover -s tests"
+ ],
+ "outputs": [
+  {
+   "path": "results/sprint2/confirm/ledger.csv.gz",
+   "sha256": "bf39fe7ecf2d9c8ce65a9c5938cc238c26cebd0a688bc94588727eeafd6e90ff"
+  },
+  {
+   "path": "results/sprint2/confirm/products.csv",
+   "sha256": "69c8eb1f8d2553a775c9b95a56a3c82c53cedb010a1a1db8c8f28b70f935dfd2"
+  },
+  {
+   "path": "results/sprint2/confirm/real_transits.csv",
+   "sha256": "e0630aeb1aadfb80a616c3b42b8eeaae2ac84e49a7035bb00d6129a11db6263a"
+  },
+  {
+   "path": "results/sprint2/confirm/run.log",
+   "sha256": "a18655c685df5d5ff61570cb2ad6481fe14731ad965b84d907401d69dc5da145"
+  },
+  {
+   "path": "results/sprint2/confirm/run_receipt.json",
+   "sha256": "22d5be638a5f073eea42083f489464922647f4659b367f6485942abe7a227d8b"
+  },
+  {
+   "path": "results/sprint2/confirm/runs.csv",
+   "sha256": "0ae18af916693cd47b0c1bbad27322b8288dbe62a68cd38066ea44ac6d415d8d"
+  },
+  {
+   "path": "results/sprint2/confirm/selection.csv",
+   "sha256": "51744359ee9eece6c2c2196043cc91045fd2368f4f663330cf3ece74087053e9"
+  },
+  {
+   "path": "results/sprint2/confirm/summary.json",
+   "sha256": "bcd715f9dad5db6e0b4fa4329f27e9a562b8380f700740eea38d326bc0cb6649"
+  },
+  {
+   "path": "results/sprint2/confirm2/ledger.csv.gz",
+   "sha256": "6c7662a6b545b01392099ea87850d8e06860d4dc3b1ff1f0a0b4e2c542863955"
+  },
+  {
+   "path": "results/sprint2/confirm2/products.csv",
+   "sha256": "d29a92cd762cf53eb1d0d333fda8c08f3034eaff7f133f9646fb5065fcadb5de"
+  },
+  {
+   "path": "results/sprint2/confirm2/real_transits.csv",
+   "sha256": "0bfe6fe390db282859602ff8ea273f033c7633f7ff58901fe7700ca6dc3d252f"
+  },
+  {
+   "path": "results/sprint2/confirm2/run.log",
+   "sha256": "2b7a58ede41197aa1201051642456baed815e18d60f90da5ff9d2ff305ded799"
+  },
+  {
+   "path": "results/sprint2/confirm2/run_receipt.json",
+   "sha256": "f697423d3dceac5a49ec77abd1c998a21755301358c8f09c921360ae9a35ad13"
+  },
+  {
+   "path": "results/sprint2/confirm2/runs.csv",
+   "sha256": "012dc6c3ddab173f8dd7ce50a35d23128c626cef549af091e2a3842529a53c1f"
+  },
+  {
+   "path": "results/sprint2/confirm2/selection.csv",
+   "sha256": "4db5b399c18ca91d2e60cdf180a1578bb07aecd46a71d3756ef6d73fc79893b3"
+  },
+  {
+   "path": "results/sprint2/confirm2/summary.json",
+   "sha256": "871c78c9676694f919a47fe8bfb15d12a3d80f762b3f41011f2258d7b5408656"
+  },
+  {
+   "path": "results/sprint2/confirm_select.log",
+   "sha256": "108bd78b60dcc4e5612443ab96aab975653324afd52d970b71c4a02cef269c6d"
+  },
+  {
+   "path": "results/sprint2/dev/identification_summary.json",
+   "sha256": "7cd7804e2a83690759000cf7f89b87586257f8101904d403a2f3f66803eaabf1"
+  },
+  {
+   "path": "results/sprint2/dev/identification_tests.csv",
+   "sha256": "79e38f63832f86e45e60e05a7d658c7f6580eaf39d27da0824e7163eb7a3a2ef"
+  },
+  {
+   "path": "results/sprint2/dev/idtests.log",
+   "sha256": "288968f4c9b6927d35c27cceab86e2cbdff0f0e3c1060a0f8251f098899347d7"
+  },
+  {
+   "path": "results/sprint2/dev/ledger.csv.gz",
+   "sha256": "85f83d466a8f9d40290aaf2f951deb76fbb1734be87576abac5f94024ac4b4e5"
+  },
+  {
+   "path": "results/sprint2/dev/products.csv",
+   "sha256": "5cb99932b3a3044f73d281de7cc4ca5f29ca2b439fb7f355ab689cdd16a03824"
+  },
+  {
+   "path": "results/sprint2/dev/real_transits.csv",
+   "sha256": "b87979fe08a0b41b0f15e55225644fe94edf76cfe1733245a434b121ff950691"
+  },
+  {
+   "path": "results/sprint2/dev/run.log",
+   "sha256": "17ccd5ac646817d0208686178ee2232ab269e290dfea1255d260e3d1227bbaa2"
+  },
+  {
+   "path": "results/sprint2/dev/run_receipt.json",
+   "sha256": "303c6b28729fab71c7701f06468cff62f29987dd301697a0eb4ebb721a7e5d47"
+  },
+  {
+   "path": "results/sprint2/dev/runs.csv",
+   "sha256": "b1fd715f71dd0e0b13f93bd573bb89802b5bfc2c461fb94eb4c547b32f4d1c33"
+  },
+  {
+   "path": "results/sprint2/dev/summary.json",
+   "sha256": "fde4ecaa85e3b5086d41058bebabf092e3544df8cab4a3ff22ebf3bc4b1b943d"
+  },
+  {
+   "path": "results/sprint2/estimand_negative_controls.json",
+   "sha256": "36b1f2a43cf7ce1011ca4d41d32ec76a0d13cdcb48d7f8144d2bfc4f4ba0274a"
+  },
+  {
+   "path": "results/sprint2/exploratory_transit_count.json",
+   "sha256": "f4e27a37b6dcbd0cdea6ae5d5894e9250a206a9f1de2dd3e7cf8724064590d3e"
+  },
+  {
+   "path": "results/sprint2/figures/fig_convention_contrasts.png",
+   "sha256": "2879fcd4492d26df4cda378b96d7a9692458261eb6e26bdc941429ccbef9e881"
+  },
+  {
+   "path": "results/sprint2/figures/fig_timing_calibration.png",
+   "sha256": "4cf74de323a51e9ffc4e72c9cfaab85a3ec337b2b0f7d835cf21f5d35b42af48"
+  },
+  {
+   "path": "results/sprint2/forecasts/candidate_parameters_t015v3.json",
+   "sha256": "091369b9ff97c3df19463472aa4b41e34b2eeac8081b86646f065c8668505da2"
+  },
+  {
+   "path": "results/sprint2/forecasts/candidate_parameters_t015v3c.json",
+   "sha256": "c27ffbd446317a8036e040df1ff1ea8265889bd7a861b3435c09e2337b381ae1"
+  },
+  {
+   "path": "results/sprint2/forecasts/candidate_t015v3.log",
+   "sha256": "44236f48a3108edf947e7dc84bba1ff7c56971de8b68baa675417b6b7d405784"
+  },
+  {
+   "path": "results/sprint2/forecasts/convention_comparison.json",
+   "sha256": "1722b179d39d2446a36a0b3b5669ae8c2de485324ed7af1252ce02957fae1ac8"
+  },
+  {
+   "path": "results/sprint2/forecasts/diagnostic_wasp54_s50.json",
+   "sha256": "cc202347be7f88d97237dd89c4e722f9c82d8dbb8b486ffca39880d7733e0bbe"
+  },
+  {
+   "path": "results/sprint2/forecasts/parameters_chronological_exoclock_all.json",
+   "sha256": "f84b9b1ab5f2927780e74bfb9cd70a1e21f8fca93356c30573536ae5f312e1bf"
+  },
+  {
+   "path": "results/sprint2/forecasts/parameters_chronological_exoclock_matched.json",
+   "sha256": "4b0b3252aa7f64237704c794dc05ac42ad2a94813ed3a965e80a8cc9a6c18862"
+  },
+  {
+   "path": "results/sprint2/forecasts/parameters_chronological_ours_all.json",
+   "sha256": "8fd6d994d353684b54733b4673b1679e444ac84953fd1ef4793d64b1a6abe485"
+  },
+  {
+   "path": "results/sprint2/forecasts/parameters_chronological_ours_all_raw.json",
+   "sha256": "7f7e24a4fed40b400c5325db1e93ec92bf1b130d7684dd6b560692bbb5031ecc"
+  },
+  {
+   "path": "results/sprint2/forecasts/parameters_chronological_ours_matched.json",
+   "sha256": "078243c906ccb62d454930e0ffff56a545ae7ce69035f70bbcdcdf2709ed9d32"
+  },
+  {
+   "path": "results/sprint2/forecasts/parameters_chronological_ours_matched_raw.json",
+   "sha256": "35bd959eff214140ac604eae4b22acc6013434bf39421092e8180cee31c00e1e"
+  },
+  {
+   "path": "results/sprint2/forecasts/parameters_release_transfer_exoclock_all.json",
+   "sha256": "08f2e47e4ad74a980702cd18b3331f12f9ade533e08096f9adbaef0bbc861926"
+  },
+  {
+   "path": "results/sprint2/forecasts/parameters_release_transfer_exoclock_matched.json",
+   "sha256": "a7c9a3081b0a06b5adf2acabdf9c6eb1e7ae2dd4fab24c54d451927541e8f405"
+  },
+  {
+   "path": "results/sprint2/forecasts/parameters_release_transfer_ours_all.json",
+   "sha256": "5ad51aba8866a1d5e1102bbc3d91f034e53a54cfc3ca60424a8de5ee163e6589"
+  },
+  {
+   "path": "results/sprint2/forecasts/parameters_release_transfer_ours_all_raw.json",
+   "sha256": "0c058a86be507b58e7c4aabae446685476e9962ac7064f719cc1516ef52dd9b6"
+  },
+  {
+   "path": "results/sprint2/forecasts/parameters_release_transfer_ours_matched.json",
+   "sha256": "b5d0d73cbae1c96020fb1c8f4aa3573ade883fb8f352a4ead0520a7bdc9412df"
+  },
+  {
+   "path": "results/sprint2/forecasts/parameters_release_transfer_ours_matched_raw.json",
+   "sha256": "ced4228cb434edd68489afa8ae510056672759a1b703de802e2dbdf5f780fa7d"
+  },
+  {
+   "path": "results/sprint2/forecasts_run.log",
+   "sha256": "bf602f0a0df35c2e7183f2f0e19373e3c5ec9abc05909de529ba4464b051dbce"
+  },
+  {
+   "path": "results/sprint2/freeze_candidate/access_receipt.json",
+   "sha256": "67608f262e495722d4af4ab798536b508e38a66c2ab7fbbec1227ce8691928d9"
+  },
+  {
+   "path": "results/sprint2/freeze_candidate/events_drd.csv",
+   "sha256": "ae3c2e0d09571731ff50a0e2081a492c27e36900f4de43f397d26d8cab94b31c"
+  },
+  {
+   "path": "results/sprint2/freeze_candidate/forecasts_drd_draft.csv.gz",
+   "sha256": "fa1e3aed24a67d6ad6abc045e876c805efb04e3f9016477ca01520c825fa35b4"
+  },
+  {
+   "path": "results/sprint2/freeze_candidate/roster.csv",
+   "sha256": "54492734189a942505747d9d32a343033642d84abe482dbe8ab8aeb7912382da"
+  },
+  {
+   "path": "results/sprint2/freeze_candidate/roster_summary.json",
+   "sha256": "43f0411a72c7f5dbbfe0165d2f6a3c10de3ae70db779b20ba3c3fae77169bdaa"
+  },
+  {
+   "path": "results/outcomes/t015v3/outcomes.csv.gz",
+   "sha256": "79c9d323b852f47a6519df7671764baad358486c558e3dad0dd36fc4b9437ef8"
+  },
+  {
+   "path": "results/outcomes/t015v3/product_identification.csv",
+   "sha256": "d3ee99eedf2d7a56da7bc91ed548eb10820f111445c250acc419b536250175be"
+  },
+  {
+   "path": "results/outcomes/t015v3/products.csv",
+   "sha256": "d6c25a292cd68790af189ed219a0021dbae9dc108a9c3157cf3464270cc77380"
+  },
+  {
+   "path": "results/outcomes/t015v3/run.log",
+   "sha256": "65c54deac7a9ed41ee2b52ea04ff298e6a7a64ab4c69f9eca98868339f9f2c74"
+  },
+  {
+   "path": "results/outcomes/t015v3/run_receipt.json",
+   "sha256": "91fac0489f01030cbf506b87ca7ca2da0146a5c02256d1a1eb2bdbfac37dc03f"
+  },
+  {
+   "path": "results/outcomes/t015v3/select.log",
+   "sha256": "8d71decf9336ae8d3a108ff55d7c0ce75a9fbc9b629b24c03e9c802723ffaabf"
+  }
+ ],
+ "handoff_script_sha256": "044c54bbd778201c5ccad37186b0e25cb2daa50d6b125d30080a80443a9beec2"
+}

@@ -1,0 +1,14 @@
+{
+ "utc": "2026-11-07T06:26:59+00:00",
+ "fits_files": 996,
+ "sector_range": [
+  46,
+  73
+ ],
+ "max_tstop_btjd": 3312.655117498639,
+ "tstop_limit_btjd": 3313.49,
+ "files_violating_guard": [],
+ "protected_outcomes_accessed": false,
+ "method": "Header-only scan of every FITS file under data/raw/mast (primary SECTOR, extension TSTOP); no data units read.",
+ "listing_sha256": "de08107daff66aaf874aa16d570a122ab7d2b42dd18b9855b222b29018f9c5bf"
+}

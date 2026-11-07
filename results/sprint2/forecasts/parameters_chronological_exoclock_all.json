@@ -1,0 +1,41 @@
+{
+  "models": {
+    "M0": {
+      "b": 1.0,
+      "s_log_lambda": 0.0,
+      "converged": true,
+      "at_bound": false
+    },
+    "M1": {
+      "b": 7.342952734843598,
+      "nll": 2253.7061468323973,
+      "converged": true,
+      "order": 384,
+      "gradient_max": 1.8399148871139914e-09,
+      "at_bound": false,
+      "s_log_lambda": 0.0
+    },
+    "M2": {
+      "b": 1.0,
+      "s_log_lambda": 2.3100406095502994,
+      "nll": 2113.0300728252987,
+      "converged": true,
+      "at_bound": false,
+      "gradient_max": 5.274780257025213e-07,
+      "order": 384
+    },
+    "M3": {
+      "b": 1.3490552936643512,
+      "nll": 2111.7498211628213,
+      "converged": true,
+      "order": 384,
+      "gradient_max": 9.674996110931033e-07,
+      "at_bound": false,
+      "s_log_lambda": 1.985212249123779
+    }
+  },
+  "experiment": "chronological",
+  "variant": "exoclock_all",
+  "outcomes_sha256": "99bb6d5d43ac0d69b6533d08aea4505c2b4d45e918c88d474fa23bff32cbe133",
+  "development_only": true
+}

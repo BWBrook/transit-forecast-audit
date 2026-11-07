@@ -1,0 +1,41 @@
+{
+  "models": {
+    "M0": {
+      "b": 1.0,
+      "s_log_lambda": 0.0,
+      "converged": true,
+      "at_bound": false
+    },
+    "M1": {
+      "b": 3.2175957153410177,
+      "nll": 81.25647388063446,
+      "converged": true,
+      "order": 384,
+      "gradient_max": 1.8590085026914949e-10,
+      "at_bound": false,
+      "s_log_lambda": 0.0
+    },
+    "M2": {
+      "b": 1.0,
+      "s_log_lambda": 2.550441512935935,
+      "nll": 85.89818954445468,
+      "converged": true,
+      "at_bound": false,
+      "gradient_max": 1.6220861875915205e-08,
+      "order": 384
+    },
+    "M3": {
+      "b": 3.2175958841962924,
+      "nll": 81.25647388524484,
+      "converged": true,
+      "order": 384,
+      "gradient_max": 7.157397131640764e-07,
+      "at_bound": false,
+      "s_log_lambda": 6.632228424182193e-05
+    }
+  },
+  "experiment": "release_transfer",
+  "variant": "exoclock_matched",
+  "outcomes_sha256": "99bb6d5d43ac0d69b6533d08aea4505c2b4d45e918c88d474fa23bff32cbe133",
+  "development_only": true
+}

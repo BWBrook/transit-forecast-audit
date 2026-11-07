@@ -175,6 +175,53 @@ scientific record; a `proposed` item is not a frozen preregistration.
 - Status: sprint 1 complete; Claude's sprint 2 interface check and execution
   next, then the agreed reciprocal reviews. No protected access or freeze.
 
+### D046 — Sprint-1 interface accepted (R9)
+
+- Date / responsible agent: 2026-11-07, Claude (Opus 5.5).
+- Evidence: replay of `make_forecasts` then `score` on the release-transfer development events reproduces `scores.csv` byte for byte; 70 tests pass.
+- Decision: I2/I3 are accepted as delivered, including labels, the null certified tolerance and the catalogue-route qualification. The I1 production path was exercised in sprint 2. 21 of 404 non-Gaussian grids are truncated by the ±60-min prior and are refused by the adapter, so they are recorded as failed attempts (S2-05).
+
+### D047 — Outcome rule t015v3 and amended A2, frozen before confirmation
+
+- Date / responsible agent: 2026-11-07, Claude.
+- Evidence: `docs/sprint2_outcome_design.md`, frozen at `2c39f0a` (source hash `4b5c9602a29b`); `results/sprint2/dev/`, `estimand_negative_controls.json`, `identification_summary.json`.
+- Decision: repairs S1-01, S1-02 and S1-04.
+  - an intended-truth ledger with a gated one-to-one assignment;
+  - equal-host estimands, with an arithmetic Tmag model replacing log-MSE;
+  - catalogue-period identification with a blind epoch, and R7 windows;
+  - exact 95% quantiles and likelihood grids;
+  - removal, subtraction and shape-misspecification controls.
+- Margins: u = 1.10, mean-z ±0.15, coverage lower bound 0.93 and Tmag endpoints [0.80, 1.15]. They are derived from the distortion that outcome errors cause in forecast coverage (at most about 2.5–2.8 points). This replaces the null A1 tolerance; it is not inferred from the inconclusive contrast.
+- Primary rule t015v3c: σ × g(Tmag), fitted on the 45 inspected development hosts. Secondary rule: t015v3 without the multiplier.
+- Status: superseded in outcome by D048–D049; the repairs are retained.
+
+### D048 — t015v3c fails confirmation; one replication of t015v3 prespecified
+
+- Date / responsible agent: 2026-11-07, Claude.
+- Evidence: `results/sprint2/confirm/summary.json` (120 hosts; 106 timed; 1,496 events); `docs/sprint2_replication_design.md`, committed at `9375b3c` before any replication download.
+- Decision: t015v3c fails coverage (lower bound 0.922) and the Tmag-13.5 endpoint ([1.062, 1.195]): the development multiplier over-corrected.
+  - t015v3 passed every criterion as the secondary rule, which by design does not qualify it.
+  - A single replication of fixed t015v3 on 120 never-sampled frame hosts was prespecified, with no further replication allowed.
+
+### D049 — Replication fails: outcome pipeline not ready
+
+- Date / responsible agent: 2026-11-07, Claude.
+- Evidence: `results/sprint2/confirm2/summary.json` (120 hosts; 102 timed; 1,377 events); `docs/sprint2_report.md` §3.
+- Decision: t015v3 fails z-RMS (1.095 [1.002, 1.214]), coverage (0.929, lower bound 0.908) and both Tmag endpoints. The outcome pipeline is **not ready** under prespecified criteria. No margin is relaxed and no host is changed.
+- Exploratory, post-hoc: hosts with at least four timed transits are calibrated in both confirmations (z-RMS 0.992 and 1.012; coverage 0.944 and 0.953). The failure sits in hosts with one to three transits.
+  - This proposes a metadata-defined narrower scope (S2-02).
+  - That scope requires its own prespecified test before any freeze.
+
+### D050 — Convention transfer accepted; candidate freeze package not freeze-ready
+
+- Date / responsible agent: 2026-11-07, Claude.
+- Evidence: `results/sprint2/forecasts/convention_comparison.json`, `diagnostic_wasp54_s50.json`, `candidate_parameters_t015v3.json`; `results/sprint2/freeze_candidate/`; `configs/candidate_freeze.json`.
+- Decision: R5 transfer is accepted. On matched transits, ExoClock timings × 1.087, t015v3c and t015v3 keep the negative sign and the inconclusive decision in both designs.
+- Remeasurement: 4,615 attempted and 3,946 timed events across 294 planets. Same-photon agreement with ExoClock: z-RMS 0.36, median difference −0.1 s.
+- The single spurious timing (WASP-54b S50) moves the chronological all-timed M2 contrast from −1.37 to −0.08. It is a defect (S2-01), not an exclusion.
+- Candidate package: 184 planets, 3,399 DRD events, draft forecasts and a 996-file access receipt with no violations. Not freeze-ready: the outcome rule is unqualified (D049), S2-01 and S2-05 are open, and the reciprocal reviews are pending.
+- Next: Codex reviews and fixes sprint 2 under Barry's order. Protected outcomes remain closed.
+
 ## New entry template
 
 ### D0XX — short title
