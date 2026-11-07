@@ -310,11 +310,9 @@ Limitations to state in any derivative work:
 
 ## 12. Placeholders still open at this draft
 
-| Slot | Where it goes | Source that fills it |
-|---|---|---|
-| `{{S2-INTERFACE: ...}}` | paper §3.7 | `data/derived/sprint2/interface/scores.receipt.json` (counts of Gaussian and non-Gaussian rows scored and refused); did not exist at this draft |
+The production-I1 interface receipt is `results/sprint2/interface/scores.receipt.json`: all 2,777 attempted DRC-window rows pass the full I1 schema check; 2,310 timed events are scored (309 through flat-prior likelihood grids), and 467 attempts remain explicit failures (313 coverage, 93 identification, 43 prior edge, 18 likelihood support truncated by the ±60-min prior, S2-05).
 
-All other earlier slots are filled: confirmation and replication (C025), convention transfer (C026), candidate parameters (C027), tests (75), claim IDs C022-C027.
+All draft slots are filled: confirmation and replication (C025), convention transfer (C026), candidate parameters (C027), tests (75), claim IDs C022-C027.
 
 ## 13. Suggested first moves for a new agent
 

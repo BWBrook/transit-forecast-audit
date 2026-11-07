@@ -11,7 +11,7 @@ link-citations: true
 <!--
 DRAFT STATUS. Repository draft, not a submission. Written to be rebuilt from the living repository: every number carries a claim ID from coordination/claims.md.
 Sprint-2 claims: C022 development calibration and white-noise tests; C023 negative controls; C024 identification tests; C025 confirmation, replication and exploratory split; C026 remeasurement, convention transfer and the WASP-54b diagnostic; C027 candidate freeze package and access receipt.
-Open slot: {{S2-INTERFACE}} (production-I1 scoring receipt). Missing citations are written [CITATION NEEDED: ...]. Do not hand-write bibliography entries.
+Missing citations are written [CITATION NEEDED: ...]. Do not hand-write bibliography entries.
 -->
 
 # Abstract
@@ -283,7 +283,7 @@ We remeasured the development cohort with the frozen rule and refitted M1-M3 und
 
 **Candidate parameters.** The candidate calibration is a release-transfer fit of DRC forecasts against all `t015v3` development outcomes after DRC issue (2022-09-28 to 2024-01-03): 217 planets, 216 hosts, 2,328 events, with 400 host-refit parameter sets. M1: b = 10.02. M2: s = 2.585. M3: b = 0.996, s = 2.591 (`results/sprint2/forecasts/candidate_parameters_t015v3.json`; C027). They are development fits for the draft forecasts and not adopted parameters, and the t015v3c version is kept for comparison only. They differ from the sprint-1 fits (b = 2.69, s = 2.16 trained on 15 DRB planets) because the training set is larger and uses a different outcome convention.
 
-**Interface.** Replaying `make_forecasts` then `score` reproduces sprint 1's `scores.csv` byte for byte; all 70 sprint-1 tests pass, and 75 with the sprint-2 tests. Production I1 scoring by the adapter: {{S2-INTERFACE: counts from data/derived/sprint2/interface/scores.receipt.json}}.
+**Interface.** Replaying `make_forecasts` then `score` reproduces sprint 1's `scores.csv` byte for byte; all 70 sprint-1 tests pass, and 75 with the sprint-2 tests. Production I1 scoring by the adapter: all 2,777 attempted DRC-window rows pass the full I1 schema check; 2,310 timed events are scored (309 through flat-prior likelihood grids), and 467 attempts remain explicit failures (313 coverage, 93 identification, 43 prior edge, 18 likelihood support truncated by the ±60-min prior, S2-05) (`results/sprint2/interface/scores.receipt.json`).
 
 ![Standardised IS95 contrasts, method minus M0, for the release-transfer and chronological designs under four outcome conventions, with 95% host-refit intervals. Negative favours the method. Intervals that run off the scale (chronological M1 and the all-timed rows) are drawn as arrows. Development data (C026).](../results/sprint2/figures/fig_convention_contrasts.png)
 

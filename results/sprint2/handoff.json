@@ -589,6 +589,10 @@
    "sha256": "43f0411a72c7f5dbbfe0165d2f6a3c10de3ae70db779b20ba3c3fae77169bdaa"
   },
   {
+   "path": "results/sprint2/interface/scores.receipt.json",
+   "sha256": "8b98eb5e1a930a160cdd36835c643f8abbab554510f969bf292d3bdc28228b87"
+  },
+  {
    "path": "results/outcomes/t015v3/outcomes.csv.gz",
    "sha256": "79c9d323b852f47a6519df7671764baad358486c558e3dad0dd36fc4b9437ef8"
   },

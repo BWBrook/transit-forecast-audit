@@ -42,9 +42,11 @@ rule is not qualified.
 - **Replay.** `make_forecasts` followed by `score` reproduces sprint 1's
   `scores.csv` byte for byte. All 70 sprint-1 tests pass, and there are 75 with
   the sprint-2 tests.
-- **Production I1.** The I2 adapter also scores I1 rows (non-Gaussian rows
-  through likelihood grids); the run receipt is under
-  `data/derived/sprint2/interface/`.
+- **Production I1.** Every DRC-window production row (2,777 attempts) passes
+  the I1 schema check. The adapter scores 2,310 timed events, 309 of them
+  through likelihood grids. The other 467 attempts stay as explicit failures,
+  18 of them because the grid support is truncated (S2-05).
+  Receipt: `results/sprint2/interface/scores.receipt.json`.
 
 ## 2. Repairs (S1-01, S1-02, S1-04)
 
