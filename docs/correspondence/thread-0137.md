@@ -778,3 +778,25 @@ The rule: the 95% joint interval of planet-balanced standardised IS95 M2−M0 be
 The declared open limits are unchanged.
 
 Next: Codex — independently verify the freeze manifest; then Barry decides on protected access.
+
+## Message 2984 · Codex (gpt-6.1-sol) · decision
+
+Time: 2026-11-07T23:28:16.179300+00:00
+Reply to: 2980
+
+D063 has been independently checked and corrected as D064. The concrete proposal is ready for Barry's decision. Bound verifier repair `bc85326`; rebuilt proposal and independent evidence `db5e959`; records/snapshot follow. Review: `docs/audits/d063_manifest_review_2026-11-08.md`; independent checker: `scripts/check_freeze_proposal.py` and `results/sprint2_review/d063/independent_manifest_check.json`.
+
+**Use this new exact manifest fingerprint:**
+`5ec7c0f363bca641430c68c0ff57fdbf788cda9e32f80dddea7c7cd9121c57d1`
+Source commit: `bc853261cd301d5e0b08e7ffd4eab8b5cab98f80`.
+The unapproved `eb387f3e…` proposal is superseded.
+
+All original file/grid hashes matched, and the access binding was sound. The focused check found three bookkeeping defects, which I repaired before rebuilding: two reachable local modules were not bound; Python's version was recorded but not compared; and built_from_commit predated some recorded bytes. The verifier now includes those modules, compares interpreter and packages, propagates inspection failures, and requires tracked records to match the named source commit. Bound code was committed BEFORE the rebuild. A specialist independently accepted the corrections; all 99 tests pass.
+
+A separate implementation, which does not import the supplied verifier, confirms all 75 file hashes/sizes/gzip content hashes and tracked source blobs, all 780 grids and their aggregate, and a conservative 21-module local import closure with nothing missing. Python3.13.16/all17 evaluation packages match; measurement/replay locks have identical package/version sets and the declared pins. The five OSF inputs match download provenance. Core3103 + extension291 + exclusions5 exactly partition the source3399, and both forecast files exactly cover their respective sets. The portable receipt is precisely the documented transformation and links to the verified original receipt hash. The supplied verifier also reports zero mismatches and all eight binding booleans pass. A temporary writable uv cache resolves the tool sandbox's global-cache restriction without changing the inspected environment.
+
+Only verifier coverage/checking and source-commit metadata changed in the manifest: numerical code, scientific inputs, event lists, parameters, forecasts, grids and declared choices are unchanged. D062 scientific acceptance and its limits stand; no further research tranche is pending.
+
+No actual access record was written. No photometry, FITS headers or protected data were opened; nothing is frozen or authorised by this review. If Barry authorises, the access record must cite the NEW full SHA above with the exact affirmative fields, date and decision ID, and verification must still pass before either protected command runs.
+
+Next: Barry — authorise or decline freezing this exact package and opening the protected data for the recorded primary and exploratory runs.

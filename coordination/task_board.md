@@ -15,7 +15,7 @@ claim of completion.
 | T006 | Decide Track A feasibility and one primary extension | Signed decision entry with novelty, metadata and precision evidence | T001,T004,T005 | Open |
 | T007 | Implement minimal real adapters | Tests against small attributed fixtures; raw provenance retained | T006 | Open |
 | T008 | Simulate concrete failure modes / design precision | Design report identifies recoverable quantities and adequate cluster counts | T004,T006 | Open |
-| T009 | Freeze analysis protocol | Cohort, origins, bins, models, metrics, folds and final-outcome lock recorded in commit | T006–T008 | **Scientific preparation accepted (D062):** amended SPOC rule and final path verify; 3103 core / 291 extension events plus five exclusions. Claude prepares the hash-bound freeze proposal and portable receipt; Barry's access decision remains pending. Nothing frozen |
+| T009 | Freeze analysis protocol | Cohort, origins, bins, models, metrics, folds and final-outcome lock recorded in commit | T006–T008 | **Concrete package independently verified (D064):** 75 bound files / 780 grids; exact proposal SHA `5ec7c0f363bca641430c68c0ff57fdbf788cda9e32f80dddea7c7cd9121c57d1`. Barry's freeze/access decision pending; no record exists and nothing is frozen |
 | T010 | Fit earlier-only calibration rule | Reproducible development outputs; bound/uncertainty diagnostics | T009 | Open |
 | T011 | Execute held-out evaluation | Paired scores, uncertainty, planned sensitivities and complete provenance | T010 | Open |
 | T012 | Independent scientific review | Reproduction/criticism with concrete evidence; findings resolved or reported | T011 | Open |
@@ -25,6 +25,14 @@ claim of completion.
 | T016 | Untouched DRD-era outcome inventory (metadata only) | List TESS sectors from 2025-11-19 and the DRD planets they cover, without fitting any light curve | D018 | **Metadata correction complete (D043/D045):** public product/date inventory in `results/sprint1/inventory/`; 184 core+extension planets, 3399 opportunities after origin flags, no protected FITS opened. Actual cadence capture and outcome recovery remain unverified |
 
 ## Claims
+
+- 2026-11-08 Codex: **D063 independent verification complete (D064)**
+  from `ae82aea`; repairs `bc85326`, proposal/evidence `db5e959`. One read-only
+  delegate reviewed the verifier/access binding and bounded repairs; parent
+  independently checked hashes, imports, environments, provenance and receipt.
+  All 99 tests pass. Ready for Barry's decision on SHA `5ec7c0f3…`; no protected
+  access, photometry/header access, real access record or freeze. No agent
+  research remains pending before that decision.
 
 - 2026-11-08 Claude: **Hash-bound freeze proposal (D063, C041)** after D062.
   `results/freeze/freeze_manifest.json` (`eb387f3ec42a4048…`) binds 73 files and

@@ -80,6 +80,11 @@ path verifies. A small access-record validation bug is fixed; 96 tests pass.
 The package is ready for its hash-bound freeze proposal. Nothing is frozen
 and protected data remain closed. See [the acceptance review](docs/audits/d061_review_2026-11-08.md).
 
+**Freeze proposal independently verified, 8 November (D064):** 75 files and
+780 grids are bound to a corrected source/environment manifest; all 99 tests
+pass. The exact package and decision are in [the freeze proposal](docs/freeze_proposal_2026-11-08.md).
+Barry's access decision is pending; nothing is frozen or opened.
+
 ## What is ready
 
 - A cited initial literature review and source-evidence records, with metadata

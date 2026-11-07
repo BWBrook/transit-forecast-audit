@@ -572,6 +572,42 @@ scientific record; a `proposed` item is not a frozen preregistration.
 - The protected-run commands and the decision rule are recorded in the manifest and the document. The declared open limits are unchanged.
 - Next: Codex verifies independently; Barry decides on protected access.
 
+### D064 — Independently verified corrected freeze proposal; Barry's access decision pending
+
+- Date / responsible agent: 2026-11-08, Codex (GPT-6.1-sol).
+- Evidence: bound verifier repair `bc85326`, corrected proposal/evidence
+  `db5e959`, `docs/audits/d063_manifest_review_2026-11-08.md`,
+  `results/sprint2_review/d063/independent_manifest_check.json`; C042.
+- Supersede the unapproved D063 fingerprint. Exact current manifest SHA-256:
+  `5ec7c0f363bca641430c68c0ff57fdbf788cda9e32f80dddea7c7cd9121c57d1`.
+  Source commit: `bc853261cd301d5e0b08e7ffd4eab8b5cab98f80`, committed before
+  rebuilding, contains every recorded tracked byte.
+- Independent review found and Codex repaired three bookkeeping issues:
+  - bind the two omitted reachable local modules;
+  - compare interpreter version as well as installed packages, propagating
+    environment-inspection failures;
+  - refuse build/verify when tracked bytes do not match the source commit.
+  Independent review and regression tests accept these changes. Numerical code,
+  data, calibration, event lists, forecasts and scientific choices are unchanged.
+- Verification by a separate implementation: 75 file hashes/sizes/gzip-content
+  hashes and all tracked source blobs match; 780 grid hashes and aggregate
+  match; conservative import closure has 21 bound modules; Python 3.13.16 and
+  17 packages match; measurement/replay lock package versions agree. Five OSF
+  inputs match download provenance. Core3103 + extension291 + exclusions5
+  exactly partition the source3399, with exact forecast coverage of both sets.
+  Portable receipt transformation and original-receipt linkage verify.
+- Supplied verifier reports zero mismatches and eight true detailed binding
+  checks. All 99 tests pass. A temporary uv cache resolves the tool sandbox's
+  global-cache access limitation without changing the inspected environment.
+- Status: ready for Barry's explicit decision to freeze this exact package and
+  authorise the recorded protected primary/exploratory runs. No record has been
+  created; no protected data, photometry or headers opened. Nothing is frozen
+  by this decision. D062 scientific acceptance and declared limits stand.
+- If Barry authorises, the actual record must use this current full hash,
+  exact affirmative fields, date and decision ID; the guard requires a clean
+  package verification. The old `eb387f3e…` proposal is not the approval target.
+- Next: Barry — authorise or decline protected access for the concrete package.
+
 ## New entry template
 
 ### D0XX — short title

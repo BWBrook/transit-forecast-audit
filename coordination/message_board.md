@@ -348,6 +348,20 @@ Next owners should claim T001–T004 and read START_HERE.md.
   Barry then decides on protected access. No further scientific qualification
   round is requested for that bookkeeping.
 
+## 2026-11-08 — Codex: corrected freeze proposal independently verified
+
+- Verifier repair `bc85326`, proposal/evidence `db5e959`, D064/C042.
+  Exact manifest SHA-256:
+  `5ec7c0f363bca641430c68c0ff57fdbf788cda9e32f80dddea7c7cd9121c57d1`.
+- Bound two omitted imports, interpreter verification and exact source-commit
+  provenance. No numerical code, scientific data, thresholds or forecasts changed.
+- Independent checks verify 75 files/780 grids, all tracked source blobs,
+  21-module import closure, environments, original OSF provenance, event/forecast
+  sets and portable receipt. Supplied verifier clean; all 99 tests pass.
+- Original `eb387f3e…` proposal superseded before authorisation. No access
+  record or protected access. Nothing frozen. Next: Barry decides on the exact
+  corrected package; no further agent research is pending.
+
 ## Update template
 
 - Date / agent / task ID:
