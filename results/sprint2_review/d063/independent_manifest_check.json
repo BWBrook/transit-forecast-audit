@@ -1,0 +1,26 @@
+{
+  "manifest_sha256": "5ec7c0f363bca641430c68c0ff57fdbf788cda9e32f80dddea7c7cd9121c57d1",
+  "source_commit": "bc853261cd301d5e0b08e7ffd4eab8b5cab98f80",
+  "files": 75,
+  "grids": 780,
+  "local_import_modules": 21,
+  "file_size_hash_gzip_and_source_checks": true,
+  "all_grid_hashes_and_aggregate_match": true,
+  "import_closure_bound": true,
+  "interpreter_and_installed_packages_match": true,
+  "measurement_replay_locks_match": true,
+  "five_OSF_inputs_match_download_provenance": true,
+  "portable_receipt_transformation_and_linkage_match": true,
+  "local_only_inputs": [
+    "results/sprint2_review/freeze_candidate/events_drd.csv",
+    "data/raw/osf/wna5e/updated_ephemerides.txt",
+    "data/raw/osf/p298n/catalogue_of_ephemerides.txt",
+    "data/raw/osf/p298n/all_mid_time_data.txt",
+    "data/raw/osf/wpjtn/catalogue_of_ephemerides.txt",
+    "data/raw/osf/wpjtn/all_mid_time_data.txt"
+  ],
+  "event_partition_and_both_forecast_manifests_match": true,
+  "protected_access_record_exists": false,
+  "photometry_or_headers_opened": false,
+  "status": "Independently verified proposal; no freeze or protected access authorised."
+}

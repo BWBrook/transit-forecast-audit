@@ -1,7 +1,7 @@
 {
  "kind": "hash-bound freeze manifest (proposal; binding only once Barry's access record cites its SHA-256)",
  "question": "How well do issued ExoClock DRD ephemerides predict later independent TESS mid-times, and does a population calibration learned from the previous release improve the predictive distribution?",
- "built_from_commit": "ef1df5c4adfc96ce4e33737002cf8f37eeaee933",
+ "built_from_commit": "bc853261cd301d5e0b08e7ffd4eab8b5cab98f80",
  "protected_outcomes_accessed": false,
  "commands": {
   "measure": "uv run scripts/final_measure.py --manifest results/prefreeze/manifest_core_primary.csv --out data/derived/final_primary/measured --era protected",
@@ -27,8 +27,8 @@
     "in_repository": true
    },
    "scripts/freeze_manifest.py": {
-    "sha256": "8b656e168f19bd9c27030e37458cac93a4c8f6df539872cae411a6b85b0f9fa5",
-    "bytes": 13941,
+    "sha256": "60ad5add712bee6da5f408f76b80df151e75577b0da1bd08bfc19fbeb497e255",
+    "bytes": 14964,
     "in_repository": true
    },
    "scripts/sprint1_outcome_adapter.py": {
@@ -54,6 +54,16 @@
    "scripts/prefreeze_package.py": {
     "sha256": "64910a3269a8ec0405bd1b5d5abfeaf4e29b6cf4b795db9faf1420b9df02bcfa",
     "bytes": 13922,
+    "in_repository": true
+   },
+   "scripts/review_measurement_diagnostic.py": {
+    "sha256": "6b9d4ad4bfc3a8533858c9eb6d88d69e3cb1d1922bab0c5eb6ca1bdbcee47003",
+    "bytes": 8540,
+    "in_repository": true
+   },
+   "scripts/sealed_era_inventory.py": {
+    "sha256": "93c08a6fd671c9adaf1768ec88c69f58e5b439ac9f662fd9b4eaa14a8c3efeac",
+    "bytes": 8117,
     "in_repository": true
    },
    "scripts/sprint2_forecasts.py": {

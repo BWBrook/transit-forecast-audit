@@ -1,7 +1,16 @@
-# Hash-bound freeze proposal (D063)
+# Hash-bound freeze proposal (D063, verified and corrected by D064)
 
 **Claude (Opus 5.5), 8 November 2026.** This follows Codex's acceptance of
 D061 ([review](audits/d061_review_2026-11-08.md), D062).
+
+**Independent check, Codex, 8 November (D064):** the manifest now also binds
+two imported local modules, checks the interpreter version, and verifies that
+its source commit contains the recorded tracked bytes. All scientific inputs,
+forecasts and numerical code are unchanged. The source commit is
+`bc853261cd301d5e0b08e7ffd4eab8b5cab98f80`; the verified manifest SHA-256 is
+`5ec7c0f363bca641430c68c0ff57fdbf788cda9e32f80dddea7c7cd9121c57d1`.
+This supersedes the unapproved D063 fingerprint `eb387f3e…`.
+See [the independent review](audits/d063_manifest_review_2026-11-08.md).
 
 This is a proposal. Nothing is frozen until Barry decides, and no protected
 outcome has been opened. The package becomes binding only through Barry's
@@ -24,7 +33,7 @@ hash):
 
 | Group | Files | Contents |
 |---|---:|---|
-| Code | 19 | acceptance, measurement, evaluation, the manifest tool, adapter, forecast core and variance components, forecast maker, candidate package, outcome and timing core, remeasure helpers, Table 5 loader, `transit_audit` modules |
+| Code | 21 | acceptance, measurement, evaluation, the manifest tool, adapter, forecast core and variance components, forecast maker, candidate package, outcome and timing core, remeasure and inventory helpers, local diagnostic dependency, Table 5 loader, `transit_audit` modules |
 | Environment | 4 | `pyproject.toml`; `uv.lock`; uv locks for `final_measure.py` and `prefreeze_replay.py` |
 | Config | 2 | `candidate_freeze.json`, `sprint1.json` |
 | Event lists | 8 | core primary (3,103), extension exploratory (291), boundary exclusions (5), summary, source DRD event list, roster and roster summary, header-only access receipt |
@@ -38,6 +47,9 @@ hash):
   used: numpy 2.3.5, scipy 1.18.1, astropy 8.0.2, lightkurve 2.5.1.
 - The evaluation `.venv` (Python 3.13.16, 17 packages) is recorded and checked
   on verify.
+- There are 75 bound files in total. Every tracked record must match its
+  recorded source commit as well as the current file; build refuses uncommitted
+  bound changes. Interpreter inspection failures also refuse.
 
 **Likelihood grids.** The manifest records 780 grid hashes with an aggregate
 hash: 404 development grids, which the acceptance support check reads for
@@ -76,8 +88,14 @@ The tests cover:
 - a changed package refuses;
 - a cited hash on a verified package passes;
 - Codex's negative-record cases still refuse.
+- interpreter drift blocks access even when the package list is unchanged;
+- recorded tracked bytes must exist at the named source commit.
 
 No real record exists.
+
+The full suite passes 99 tests. In a restricted tool sandbox, uv's global cache
+may be inaccessible; `UV_CACHE_DIR=/private/tmp/transit-freeze-uv-cache` supplies
+a writable cache for `verify` without changing the inspected environment.
 
 **Attribution of the development run.** The guard change touches only
 `era_limit`. The config and module docstring are unchanged, so Codex's
