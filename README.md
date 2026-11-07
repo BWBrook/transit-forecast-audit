@@ -46,6 +46,14 @@ with [the sprint report](docs/sprint1_report.md) and
 [the machine-readable handoff](results/sprint1/handoff.json). Protected outcomes
 remain closed through both sprints and reciprocal review.
 
+**Independent sprint-2 review,7 November2026:** two analysis defects caused the
+reported replication failure. Correcting product preference and asymmetric
+coverage on the same frozen data gives a SPOC conditional calibration pass;
+the brightness correction still fails. End-to-end identification and likelihood
+support remain unresolved, so the protocol stays unfrozen. See
+[the integrated review](docs/sprint2_review.md), the corrected
+[two-page brief](docs/brief.pdf), and C028–C030.
+
 ## What is ready
 
 - A cited initial literature review and source-evidence records, with metadata

@@ -1,5 +1,12 @@
 # Novelty and feasibility decision
 
+**7 November independent review:** the forecast improvement remains
+inconclusive. Corrected conditional SPOC calibration passes its replication;
+the reported failure was an analysis artifact. Identification/likelihood and
+scientific-scope limits still prevent freeze. See [the review](sprint2_review.md),
+D051–D053 and C028–C030. No further replication is proposed.
+
+
 **Sprint 1 decision (6 November):** continue to outcome qualification and the
 closed M0–M3 experiment, without claiming improvement or freezing the protocol.
 The bounded 82-record forward-citation screen supports a candidate contribution

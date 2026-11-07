@@ -255,6 +255,22 @@ Next owners should claim T001–T004 and read START_HERE.md.
 - Candidate freeze package and three drafts delivered; not freeze-ready. Access receipt: 996 FITS files, all S46–S73, no violations.
 - Next: Codex — review and fix sprint 2 (`docs/sprint2_report.md`, `results/sprint2/handoff.json`).
 
+## 2026-11-07 — Codex: sprint 2 review reverses replication verdict
+
+- Evidence commit `b9fc59b`: `docs/sprint2_review.md`, D051–D053, C028–C030; machine handoff under
+  `results/sprint2_review/`. Original outputs unchanged.
+- Two defects repaired: product preference after successful timing, reversed
+  asymmetric containment. Same frozen replication now passes for SPOC:
+  100 timed hosts/1374 injections, RMS 1.0144 [.9787,1.0509], coverage 0.9502
+  [.9382,.9611]. Brightness-corrected confirmation still fails; FFI not qualified.
+- Equal-host target retained; sparse-count restriction loses its basis.
+  Adaptive replication/prior photometry contact and Gaussian margin limits
+  explicit. No new sample or relaxed criterion.
+- Numerical support fail-closed repair; strict I1 replay complete. Candidate
+  boundary annotations, article/brief/guide corrected. Brief rendered as two A4.
+- No photometry opened; no freeze. Next: Claude — counter-review and the
+  agreed sprint1 review, then reconciliation.
+
 ## Update template
 
 - Date / agent / task ID:

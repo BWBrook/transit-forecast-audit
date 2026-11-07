@@ -222,6 +222,75 @@ scientific record; a `proposed` item is not a frozen preregistration.
 - Candidate package: 184 planets, 3,399 DRD events, draft forecasts and a 996-file access receipt with no violations. Not freeze-ready: the outcome rule is unqualified (D049), S2-01 and S2-05 are open, and the reciprocal reviews are pending.
 - Next: Codex reviews and fixes sprint 2 under Barry's order. Protected outcomes remain closed.
 
+### D051 — Independent correction reverses the frozen SPOC replication verdict
+
+- Date / responsible agent: 2026-11-07, Codex (GPT-6.1-sol).
+- Evidence: `docs/sprint2_review.md`, `sprint2_statistics_review.md`,
+  `results/sprint2_review/statistics/`, independent reconstruction and regression
+  tests. The original result tables remain unchanged.
+- Defects: product preference was chosen after timing, substituting FFI after
+  SPOC failures; asymmetric containment used -lo<=fitted-truth<=hi instead of
+  -hi<=fitted-truth<=lo. Both are implementation errors against the frozen rule.
+- Corrected frozen analysis: confirmation t015v3c still fails (105 timed hosts,
+  1495 injections). Secondary t015v3 passes that sample. Replication t015v3
+  passes all frozen criteria (100 timed SPOC hosts,1374 injections): RMS 1.0144
+  [.9787,1.0509], coverage 0.9502 [.9382,.9611], mean 0.0690 [.0116,.1239], both
+  endpoints and noise controls pass. FFI separately fails.
+- Consequence: D049's replication-failure interpretation and C025's sparse-host
+  explanation are superseded. Equal-host weights remain the declared target;
+  no transit-count restriction, altered criteria or further replication.
+- Scope: conditional calibration of the frozen sampled SPOC rule. The amended
+  numerical implementation, end-to-end recovery, FFI and multi-planet extension
+  are not qualified by this correction. Protected outcomes stay closed.
+
+### D052 — Replication and pass margins have bounded development interpretations
+
+- Date / responsible agent: 2026-11-07, Codex.
+- Evidence: the two design commits `2c39f0a`/`9375b3c`, exact unchanged timing
+  source, analytic margins and independent controls under `sprint2_review/`.
+- Interpretation: the second test was an adaptive extension after primary
+  failure, prespecified before its injection analysis, not part of the original
+  one-confirmation plan. Of 120 hosts,82 had prior R5 contact and81 shared the
+  same host-sector. Code freeze supports a bounded conditional test but does
+  not alone guarantee a study-wide error rate or unseen-photometry independence.
+- The margins reproduce under independent Gaussian forecast/outcome errors.
+  They are an operational coverage-distortion budget, not a bound on general
+  interval loss or all subgroups. Keep the frozen criteria for the corrected
+  test; sprint1's certified measurement tolerance remains null.
+- Controls: coverage and endpoints retain finite-design bootstrap error; report
+  simulation uncertainty. No criterion is moved after seeing these controls.
+- Status: adopted interpretation for counter-review, not protocol freeze.
+
+### D053 — Numerical support repairs, descriptive convention agreement and candidate limits
+
+- Date / responsible agent: 2026-11-07, Codex.
+- Evidence: `docs/sprint2_timing_review.md`, `sprint2_claims_review.md`, source-
+  guarded I1 replay and `results/sprint2_review/` receipts/hashes.
+- Repair: existing mass-outside-fine/coarse-fine-shift flags now yield
+  integration_unresolved and prevent Gaussian certification. The adapter also
+  refuses unresolved timed rows. A separated 3% mode is the regression fixture.
+  Root solving is accelerated with bounded CDF truncation error; the model and
+  full log-density quadrature are unchanged. Changed timing source requires
+  separate qualification; full-support likelihoods remain unresolved.
+- Replay:2777 attempts,2291 timed (291 grids),37 integration failures plus313
+  coverage,93 ID and43 edge failures. Exact-grid M2−M0 point loss -1.89681 versus
+  -1.92237 under Gaussian approximation on identical surviving events; fixed
+  old development parameters, no bootstrap/refit verdict from this replay.
+- D050/C026 transfer acceptance is narrowed to descriptive sign/decision
+  agreement in matched Gaussian approximations. Same-photon agreement does not
+  establish measurement calibration or convention equivalence.
+- The late original receipt hashes adapter bytes at run end, after edits, so
+  it does not identify the old process's loaded source. Current guarded replay
+  resolves this. Original60 output hashes and8 OSF hashes verify. Development
+  source bytes behind an uncommitted hash and white-noise controls are missing.
+- Candidate:184 planets,3399 opportunities retained; five near numeric time
+  boundaries marked unresolved. This is not a UTC–BJD conversion. Identification,
+  fixed intended-event denominators, multi-planet scope and exact eligibility
+  remain open. No post-hoc majority-window rule was installed.
+- Products: article/brief/guide corrected together; brief rendered and verified
+  as two A4 pages. Next is Claude counter-review and reconciliation. No protected
+  photometry or new samples were accessed.
+
 ## New entry template
 
 ### D0XX — short title

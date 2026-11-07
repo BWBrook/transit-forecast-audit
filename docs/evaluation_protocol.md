@@ -34,6 +34,15 @@ attempt ledger and measurement estimand, establish independent epoch mapping,
 and rerun under qualified outcome conventions before a freeze recommendation.
 See [the integrated report](sprint1_report.md).
 
+The 7 November reciprocal review (D051–D053) corrects the outcome replication
+verdict: frozen t015v3 SPOC conditional calibration passes after product and
+asymmetric-coverage repairs. This does not qualify the amended measurement
+implementation or end-to-end population. No further replication, changed
+weights or transit-count restriction is adopted. Full-support likelihoods,
+identification, intended real-event attempts and boundary eligibility remain
+open; protected outcomes stay closed through counter-review and reconciliation.
+See [the integrated review](sprint2_review.md).
+
 ## 1. Scientific question and contribution boundary
 
 **Central question:** For a historically defined cohort of transiting planets, how well do previously available ephemerides predict later independent transit mid-times, and how do calibration and precision vary with forecast lead time?

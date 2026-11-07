@@ -21,20 +21,21 @@ claim of completion.
 | T012 | Independent scientific review | Reproduction/criticism with concrete evidence; findings resolved or reported | T011 | Open |
 | T013 | Write manuscript and release artifacts | Every result traceable to analysis; scope and citations verified | T012 | Open |
 | T014 | Identifiable variance-components model on the development era | Outcome scale independently constrained or declared a sensitivity; shared ephemeris covariance specified; simulation checks separation of b and any extra variance before fitting | T005, D021–D024 | **Development model in place** (Claude, D026–D027): outcome scale a=1.09 as fixed sensitivity; two-stage planet-level scale mixture (b, s) with recovery simulation on the real DRC design, `results/pilot_v1/variance_components/`. **Production repaired (D036):** continuous posterior summaries and 400 host resamples retained in `variance_components_v2/`. Chronological refit instability prevents selecting the span correction (D037) |
-| T015 | Forecast-independent TESS mid-time pipeline | Re-measures a sample of DRD 2022–2023 TESS mid-times from SPOC light curves with a broad timing prior; agreement and σ calibration documented; then frozen | T003 | **Not ready (D049):** t015v3c failed its 120-host confirmation; fixed t015v3 failed its prespecified 120-host replication. Exploratory: ≥4-transit hosts calibrated in both (C025). Remeasurement and R5 transfer done (C026). Open: S2-01 spurious-window rule, S2-02 prespecified narrower-scope test, S2-03 bright stars, S2-05 grid support |
+| T015 | Forecast-independent TESS mid-time pipeline | Re-measures a sample of DRD 2022–2023 TESS mid-times from SPOC light curves with a broad timing prior; agreement and σ calibration documented; then frozen | T003 | **Reviewed (D051–D053):** t015v3c fails; corrected frozen t015v3 SPOC replication passes conditional criteria (C028). End-to-end and amended-source readiness remain open: identification, likelihood support, intended-event ledger and multi-planet scope. No transit-count restriction or further replication. |
 | T016 | Untouched DRD-era outcome inventory (metadata only) | List TESS sectors from 2025-11-19 and the DRD planets they cover, without fitting any light curve | D018 | **Metadata correction complete (D043/D045):** public product/date inventory in `results/sprint1/inventory/`; 184 core+extension planets, 3399 opportunities after origin flags, no protected FITS opened. Actual cadence capture and outcome recovery remain unverified |
 
 ## Claims
 
-- 2026-11-07 Codex: **sprint-2 reciprocal review and fixes in execution**
+- 2026-11-07 Codex: **sprint-2 reciprocal review and fixes complete**
   from `29116fc`. Owns the scoring/forecast interface, chosen production repairs,
   integrated review, three-product corrections and coordination. Independent
   delegates own only new `review_sprint2_{statistics,timing,provenance}` scripts,
   their review reports/results and explicitly named new tests. Old sprint-2
   results and frozen source identities are preserved. No new sampling or
   protected photometry; existing development bytes only if specifically needed
-  and verified against the access receipt. Handoff: reviewed evidence, concrete
-  repairs and limitations for Claude's counter-review, without protocol freeze.
+  and verified against the access receipt. Handoff: `docs/sprint2_review.md` / `results/sprint2_review/handoff.json`,
+  corrected SPOC replication pass, integration repairs, explicit residual limits
+  for Claude counter-review. No protocol freeze.
 
 - 2026-11-07 Claude: **sprint 2 complete** (D046–D050, C022–C027). Report `docs/sprint2_report.md`, handoff `results/sprint2/handoff.json`. Outcome pipeline not ready under prespecified criteria; R5 transfer accepted; candidate freeze package not freeze-ready. Drafts: `manuscript/paper.md`, `docs/brief.md`, `docs/agent_guide.md`. Next in Barry's order: Codex reviews and fixes sprint 2. Protected outcomes remain closed.
 
