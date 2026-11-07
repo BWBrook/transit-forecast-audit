@@ -1,0 +1,320 @@
+{
+ "alias=0.5": {
+  "trials": 44,
+  "identified": 37,
+  "id_failures": {
+   "id_snr_6.9_lt_7": 1,
+   "shape_t14_0.0min_inconsistent_with_bls_145min": 6,
+   "shape_t14_0.0min_inconsistent_with_bls_50min": 6,
+   "shape_t14_0.0min_inconsistent_with_bls_54min": 6,
+   "shape_t14_0.0min_inconsistent_with_bls_56min": 6,
+   "shape_t14_0.0min_inconsistent_with_bls_91min": 6,
+   "shape_t14_0.0min_inconsistent_with_bls_99min": 6
+  },
+  "observable_events": 629,
+  "event_status": {
+   "not_recovered": 302,
+   "timed": 327
+  },
+  "timed_z_rms": 0.93,
+  "max_abs_z": 2.64,
+  "spurious_timed_windows": 0,
+  "identified_by_phase_half": [
+   16,
+   21,
+   21,
+   23
+  ]
+ },
+ "alias=2.0": {
+  "trials": 44,
+  "identified": 42,
+  "id_failures": {
+   "id_snr_4.7_lt_7": 2,
+   "id_snr_5.4_lt_7": 2
+  },
+  "observable_events": 164,
+  "event_status": {
+   "edge": 4,
+   "not_recovered": 1,
+   "timed": 159
+  },
+  "timed_z_rms": 0.317,
+  "max_abs_z": 1.24,
+  "spurious_timed_windows": 1,
+  "identified_by_phase_half": [
+   24,
+   25,
+   18,
+   19
+  ]
+ },
+ "alias=3.0": {
+  "trials": 44,
+  "identified": 42,
+  "id_failures": {
+   "id_snr_4.7_lt_7": 2,
+   "id_snr_5.9_lt_7": 2
+  },
+  "observable_events": 121,
+  "event_status": {
+   "edge": 18,
+   "not_recovered": 7,
+   "timed": 96
+  },
+  "timed_z_rms": 0.284,
+  "max_abs_z": 0.94,
+  "spurious_timed_windows": 0,
+  "identified_by_phase_half": [
+   19,
+   20,
+   23,
+   24
+  ]
+ },
+ "period_offset=-0.006": {
+  "trials": 44,
+  "identified": 18,
+  "id_failures": {
+   "id_period_at_search_boundary": 26
+  },
+  "observable_events": 83,
+  "event_status": {
+   "edge": 21,
+   "not_recovered": 40,
+   "timed": 22
+  },
+  "timed_z_rms": 0.388,
+  "max_abs_z": 1.02,
+  "spurious_timed_windows": 0,
+  "identified_by_phase_half": [
+   9,
+   26,
+   9,
+   18
+  ]
+ },
+ "period_offset=-0.004": {
+  "trials": 44,
+  "identified": 44,
+  "id_failures": {},
+  "observable_events": 330,
+  "event_status": {
+   "edge": 23,
+   "excluded_coverage": 1,
+   "not_recovered": 12,
+   "timed": 294
+  },
+  "timed_z_rms": 0.951,
+  "max_abs_z": 3.36,
+  "spurious_timed_windows": 0,
+  "identified_by_phase_half": [
+   24,
+   24,
+   20,
+   20
+  ]
+ },
+ "period_offset=-0.002": {
+  "trials": 44,
+  "identified": 44,
+  "id_failures": {},
+  "observable_events": 332,
+  "event_status": {
+   "edge": 2,
+   "timed": 330
+  },
+  "timed_z_rms": 0.992,
+  "max_abs_z": 5.33,
+  "spurious_timed_windows": 0,
+  "identified_by_phase_half": [
+   29,
+   29,
+   15,
+   15
+  ]
+ },
+ "period_offset=0.0": {
+  "trials": 44,
+  "identified": 44,
+  "id_failures": {},
+  "observable_events": 343,
+  "event_status": {
+   "excluded_coverage": 1,
+   "timed": 342
+  },
+  "timed_z_rms": 1.033,
+  "max_abs_z": 4.28,
+  "spurious_timed_windows": 0,
+  "identified_by_phase_half": [
+   27,
+   27,
+   17,
+   17
+  ]
+ },
+ "period_offset=0.002": {
+  "trials": 44,
+  "identified": 44,
+  "id_failures": {},
+  "observable_events": 343,
+  "event_status": {
+   "edge": 2,
+   "timed": 341
+  },
+  "timed_z_rms": 0.928,
+  "max_abs_z": 3.4,
+  "spurious_timed_windows": 0,
+  "identified_by_phase_half": [
+   20,
+   20,
+   24,
+   24
+  ]
+ },
+ "period_offset=0.004": {
+  "trials": 44,
+  "identified": 44,
+  "id_failures": {},
+  "observable_events": 338,
+  "event_status": {
+   "edge": 25,
+   "not_recovered": 16,
+   "timed": 297
+  },
+  "timed_z_rms": 1.079,
+  "max_abs_z": 7.45,
+  "spurious_timed_windows": 0,
+  "identified_by_phase_half": [
+   22,
+   22,
+   22,
+   22
+  ]
+ },
+ "period_offset=0.006": {
+  "trials": 44,
+  "identified": 18,
+  "id_failures": {
+   "id_period_at_search_boundary": 26
+  },
+  "observable_events": 81,
+  "event_status": {
+   "edge": 20,
+   "not_recovered": 39,
+   "timed": 22
+  },
+  "timed_z_rms": 0.725,
+  "max_abs_z": 1.6,
+  "spurious_timed_windows": 0,
+  "identified_by_phase_half": [
+   4,
+   18,
+   14,
+   26
+  ]
+ },
+ "ttv_offset_min=30": {
+  "trials": 44,
+  "identified": 43,
+  "id_failures": {
+   "id_snr_6.7_lt_7": 1
+  },
+  "observable_events": 93,
+  "event_status": {
+   "timed": 93
+  },
+  "timed_z_rms": 0.892,
+  "max_abs_z": 3.2,
+  "spurious_timed_windows": 0,
+  "identified_by_phase_half": [
+   21,
+   21,
+   22,
+   23
+  ]
+ },
+ "ttv_offset_min=50": {
+  "trials": 44,
+  "identified": 42,
+  "id_failures": {
+   "id_period_at_search_boundary": 1,
+   "id_snr_3.6_lt_7": 1
+  },
+  "observable_events": 93,
+  "event_status": {
+   "edge": 8,
+   "timed": 85
+  },
+  "timed_z_rms": 0.587,
+  "max_abs_z": 1.57,
+  "spurious_timed_windows": 0,
+  "identified_by_phase_half": [
+   19,
+   21,
+   23,
+   23
+  ]
+ },
+ "ttv_offset_min=70": {
+  "trials": 44,
+  "identified": 44,
+  "id_failures": {},
+  "observable_events": 96,
+  "event_status": {
+   "edge": 71,
+   "not_recovered": 12,
+   "timed": 13
+  },
+  "timed_z_rms": 1.534,
+  "max_abs_z": 5.29,
+  "spurious_timed_windows": 0,
+  "identified_by_phase_half": [
+   25,
+   25,
+   19,
+   19
+  ]
+ },
+ "ttv_offset_min=90": {
+  "trials": 44,
+  "identified": 43,
+  "id_failures": {
+   "id_snr_3.6_lt_7": 1
+  },
+  "observable_events": 95,
+  "event_status": {
+   "edge": 19,
+   "not_recovered": 75,
+   "timed": 1
+  },
+  "timed_z_rms": 3.422,
+  "max_abs_z": 3.42,
+  "spurious_timed_windows": 0,
+  "identified_by_phase_half": [
+   22,
+   23,
+   21,
+   21
+  ]
+ },
+ "ttv_offset_min=120": {
+  "trials": 44,
+  "identified": 44,
+  "id_failures": {},
+  "observable_events": 91,
+  "event_status": {
+   "edge": 1,
+   "not_recovered": 90
+  },
+  "timed_z_rms": null,
+  "max_abs_z": null,
+  "spurious_timed_windows": 0,
+  "identified_by_phase_half": [
+   19,
+   19,
+   25,
+   25
+  ]
+ }
+}

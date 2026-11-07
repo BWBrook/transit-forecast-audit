@@ -33,6 +33,7 @@ sys.path[:0] = [str(HERE), str(ROOT / "src")]
 import forecast_variance_components as fvc  # noqa: E402
 import sprint1_forecast_core as c  # noqa: E402
 import sprint1_forecasts as s1  # noqa: E402
+import sprint2_outcomes as so  # noqa: E402
 from reproduce_table5 import load  # noqa: E402
 from transit_audit.exoclock import host_of  # noqa: E402
 
@@ -46,7 +47,7 @@ def bjd_date(jd):
     return str(np.datetime64("1970-01-01") + np.timedelta64(int(np.floor(jd - 2440587.5)), "D"))
 
 
-def our_events(release, start, end, rows, eph, flags, cov, setting="c2", a=1.0):
+def our_events(release, start, end, rows, eph, flags, cov, setting="c2", a=1.0, convention="t015v3c"):
     out, rejected = [], []
     for r in rows:
         if r["status"] != "timed" or r["planet"] not in eph[release]:
@@ -69,7 +70,8 @@ def our_events(release, start, end, rows, eph, flags, cov, setting="c2", a=1.0):
         disc = abs(float(cov[release, p]["p_refit_minus_published_s"])) / (e.sigma_period_days * 86400)
         vf = float(c.forecast_variance(e.sigma_t0_days * 86400, e.sigma_period_days * 86400, n, rho))
         out.append({"event_id": r["event_id"], "observation_id": r["observation_id"], "planet": p, "host": host_of(p),
-                    "release": release, "source_record_date": date, "tc_bjd_tdb": tc, "sigma_s": float(r["sigma_s"]),
+                    "release": release, "source_record_date": date, "tc_bjd_tdb": tc,
+                    "sigma_s": float(r["sigma_s"]) * (so.tmag_multiplier(r["tmag"]) if convention == "t015v3c" else 1.0),
                     "outcome_scale": a, "forecast_epoch": n, "predicted_bjd_tdb": pred,
                     "residual_s": (tc - pred) * 86400, "sigma_t0_s": e.sigma_t0_days * 86400,
                     "sigma_p_s": e.sigma_period_days * 86400, "rho": rho, "covariance_setting": setting,
@@ -77,7 +79,7 @@ def our_events(release, start, end, rows, eph, flags, cov, setting="c2", a=1.0):
                     "period_fit_discrepancy_sigma": disc, "forecast_variance_s2": vf,
                     "issue_date": c.ISSUE_DATES[release],
                     "horizon_days": (np.datetime64(date) - np.datetime64(c.ISSUE_DATES[release])).astype(int).item(),
-                    "status": "timed", "error_convention": "t015v3_beta_chi", "shape_group_id": r["shape_group_id"],
+                    "status": "timed", "error_convention": convention, "shape_group_id": r["shape_group_id"],
                     "gauss_ok": r["gauss_ok"], "product": r["product"],
                     "cycle_margin_sigma": (e.period_days * 86400 / 2) / np.sqrt(vf + float(r["sigma_s"]) ** 2)})
     return sorted(out, key=lambda r: (r["planet"], r["tc_bjd_tdb"])), rejected
@@ -132,14 +134,21 @@ def run(args):
             sp = spec[part]
             cat, _ = c.development_events(**sp, a=c.REFERENCE_A)
             ours, rej = our_events(sp["release"], sp["start"], sp["end"], rows, eph, flags, cov)
+            raw, _ = our_events(sp["release"], sp["start"], sp["end"], rows, eph, flags, cov, convention="t015v3")
             pairs = match(ours, cat)
-            sets[part] = {"exoclock_all": cat, "ours_all": ours,
+            ids = {r["event_id"] for r, _ in pairs}
+            sets[part] = {"exoclock_all": cat, "ours_all": ours, "ours_all_raw": raw,
                           "exoclock_matched": [x for _, x in pairs], "ours_matched": [r for r, _ in pairs],
+                          "ours_matched_raw": [r for r in raw if r["event_id"] in ids],
                           "pairs": pairs, "rejected": rej}
         res = {}
-        for variant in ("exoclock_matched", "ours_matched", "ours_all", "exoclock_all"):
+        for variant in ("exoclock_matched", "ours_matched", "ours_matched_raw", "ours_all", "ours_all_raw", "exoclock_all"):
             res[variant] = compare(f"{exp}|{variant}", sets["train"][variant], sets["test"][variant],
                                    args.bootstrap, cfg["seed"])
+            if "models" in res[variant]:
+                c.write_json(OUT / f"parameters_{exp}_{variant}.json",
+                             {"models": res[variant]["models"], "experiment": exp, "variant": variant,
+                              "outcomes_sha256": c.digest(OUTCOMES), "development_only": True})
             m = res[variant].get("metrics", {}).get("M2", {})
             print(exp, variant, res[variant].get("train_planets"), res[variant].get("test_events"),
                   "M2 delta", m.get("delta_standardised_vs_M0"),
@@ -158,6 +167,8 @@ def run(args):
             "decisions": dec, "signs": {k: float(v) if v is not None else None for k, v in sign.items()},
             "R5_transfer_accepted": bool(dec["exoclock_matched"] == dec["ours_matched"]
                                          and sign["exoclock_matched"] == sign["ours_matched"]),
+            "R5_transfer_accepted_raw_t015v3": bool(dec["exoclock_matched"] == dec["ours_matched_raw"]
+                                                    and sign["exoclock_matched"] == sign["ours_matched_raw"]),
             "cycle_margin_sigma_min_ours_all": round(float(min(r["cycle_margin_sigma"] for r in sets["test"]["ours_all"])), 1)}
         res["coverage_of_catalogue"] = {part: {"catalogue_events": len(sets[part]["exoclock_all"]),
                                                "catalogue_planets": len({r["planet"] for r in sets[part]["exoclock_all"]}),
@@ -167,6 +178,22 @@ def run(args):
                                                "ours_rejected": len(sets[part]["rejected"])}
                                         for part in ("train", "test")}
         summary["experiments"][exp] = res
+        if exp == "release_transfer":
+            cand = c.visit_planets(sets["test"]["ours_all"])
+            models = c.fit_methods(cand)
+            rng = np.random.default_rng(cfg["seed"])
+            hosts = sorted({p["host"] for p in cand})
+            hix = np.array([hosts.index(p["host"]) for p in cand])
+            boot = []
+            for rep in range(args.bootstrap):
+                mult = np.bincount(rng.integers(0, len(hosts), len(hosts)), minlength=len(hosts))[hix]
+                fm = c.fit_methods(cand, weights=mult)
+                boot.append({m: {"b": fm[m]["b"], "s_log_lambda": fm[m]["s_log_lambda"]} for m in c.METHODS[1:]})
+            c.write_json(OUT / "candidate_parameters.json", {
+                "models": models, "rule": "release transfer: DRC forecasts vs t015v3c outcomes 2022-09-28..2024-01-03",
+                "training_planets": len(cand), "training_hosts": len(hosts),
+                "training_events": len(sets["test"]["ours_all"]), "outcomes_sha256": c.digest(OUTCOMES),
+                "host_refit_parameter_sets": boot, "development_only": True, "frozen": False})
         for part in ("train", "test"):
             fvc.write_csv(DERIVED / f"{exp}_{part}_ours_all.csv", sets[part]["ours_all"])
     (OUT / "convention_comparison.json").write_text(json.dumps(summary, indent=1, default=float) + "\n")
@@ -188,17 +215,32 @@ def interface(args):
         if not sp["start"] <= bjd_date(ref) <= sp["end"]:
             continue
         e = eph["DRC"][p]
-        keep.append({**r, "forecast_epoch": int(np.rint((ref - e.t0_bjd_tdb) / e.period_days)),
-                     "epoch_basis": "t015v3 mid-time or window centre, nearest DRC epoch"})
+        g = so.tmag_multiplier(r["tmag"])
+        row = {**r, "forecast_epoch": int(np.rint((ref - e.t0_bjd_tdb) / e.period_days)),
+               "epoch_basis": "t015v3 mid-time or window centre, nearest DRC epoch",
+               "error_convention": "t015v3c_beta_chi_tmag", "tmag_multiplier": round(g, 6)}
+        if r["status"] == "timed":
+            for k in ("sigma_s", "q025_s", "q1587_s", "q8413_s", "q975_s", "q0228_s", "q9772_s"):
+                row[k] = round(float(r[k]) * g, 4)
+            if r["posterior_grid_path"]:
+                src = json.loads((ROOT / r["posterior_grid_path"]).read_text())
+                src["offset_s"] = [round(v * g, 4) for v in src["offset_s"]]
+                src["support_s"] = [v * g for v in src["support_s"]]
+                src["tmag_multiplier"] = g
+                gp = DERIVED / "interface" / "grids_t015v3c" / Path(r["posterior_grid_path"]).name
+                gp.parent.mkdir(parents=True, exist_ok=True)
+                gp.write_text(json.dumps(src) + "\n")
+                row["posterior_grid_path"] = str(gp.relative_to(ROOT))
+        keep.append(row)
     d = DERIVED / "interface"
     d.mkdir(parents=True, exist_ok=True)
     fvc.write_csv(d / "outcomes_drc_window.csv", keep)
-    params = ROOT / "results/sprint2/forecasts/parameters_release_transfer_ours_all.json"
+    params = OUT / "parameters_release_transfer_ours_all.json"
     py = str(ROOT / ".venv/bin/python")
     subprocess.run([py, str(HERE / "sprint1_forecasts.py"), "make_forecasts", "--events", str(d / "outcomes_drc_window.csv"),
                     "--parameters", str(params), "--release", "DRC", "--output", str(d / "forecasts.csv")], check=True)
     subprocess.run([py, str(HERE / "sprint1_forecasts.py"), "score", "--forecasts", str(d / "forecasts.csv"),
-                    "--outcomes", str(d / "outcomes_drc_window.csv"), "--error-convention", "t015v3_beta_chi",
+                    "--outcomes", str(d / "outcomes_drc_window.csv"), "--error-convention", "t015v3c_beta_chi_tmag",
                     "--outcome-scale", "1.0", "--output", str(d / "scores.csv")], check=True)
     print((d / "scores.receipt.json").read_text())
 

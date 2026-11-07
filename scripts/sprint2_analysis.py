@@ -338,6 +338,37 @@ def analyse(args):
                   g["verdict"], g["recovery"], g["noise_control"])
 
 
+def idsummary(args):
+    rows = [r for r in csv.DictReader((OUT / "dev" / "identification_tests.csv").open()) if r["kind"]]
+    trials = defaultdict(dict)
+    for r in rows:
+        trials[(r["host"], r["kind"], r["value"])] = r
+    out = {}
+    for kind, value in sorted({(r["kind"], r["value"]) for r in rows}, key=lambda x: (x[0], float(x[1]))):
+        tr = [r for k, r in trials.items() if k[1] == kind and k[2] == value]
+        ev = [r for r in rows if r["kind"] == kind and r["value"] == value and r["status"] == "ok"
+              and r.get("observable") == "True"]
+        sub = [r for r in ev if kind != "ttv_offset_min" or r["shifted"] == "True"]
+        z = np.array([float(r["z"]) for r in sub if r["event_status"] == "timed" and r["z"]])
+        ph = [(float(r["phase"]), r["status"] == "ok") for r in tr]
+        out[f"{kind}={value}"] = {
+            "trials": len(tr), "identified": sum(r["status"] == "ok" for r in tr),
+            "id_failures": {k: sum(1 for r in tr if (r.get("id_fail") or r["status"]).split("_")[0:2] == k.split("_")[0:2])
+                            for k in sorted({r.get("id_fail") or r["status"] for r in tr if r["status"] != "ok"})},
+            "observable_events": len(sub),
+            "event_status": {k: sum(1 for r in sub if r["event_status"] == k) for k in sorted({r["event_status"] for r in sub})},
+            "timed_z_rms": round(float(np.sqrt(np.mean(z ** 2))), 3) if len(z) else None,
+            "max_abs_z": round(float(np.max(np.abs(z))), 2) if len(z) else None,
+            "spurious_timed_windows": int(sum(int(r.get("spurious_timed_windows") or 0) for r in
+                                              {(r["host"]): r for r in rows if r["kind"] == kind and r["value"] == value
+                                               and r["status"] == "ok"}.values())),
+            "identified_by_phase_half": [sum(o for p_, o in ph if p_ < 0.5), sum(1 for p_, _ in ph if p_ < 0.5),
+                                         sum(o for p_, o in ph if p_ >= 0.5), sum(1 for p_, _ in ph if p_ >= 0.5)]}
+    (OUT / "dev" / "identification_summary.json").write_text(json.dumps(out, indent=1) + "\n")
+    for k, v in out.items():
+        print(k, v["identified"], "/", v["trials"], v["event_status"], "zrms", v["timed_z_rms"], "spurious", v["spurious_timed_windows"])
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__)
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -345,8 +376,9 @@ def main(argv=None):
     p.add_argument("--reps", type=int, default=400)
     p.add_argument("--boot", type=int, default=1000)
     p.set_defaults(func=check)
+    sub.add_parser("idsummary").set_defaults(func=idsummary)
     p = sub.add_parser("analyse")
-    p.add_argument("--sample", choices=("dev", "confirm"), required=True)
+    p.add_argument("--sample", choices=("dev", "confirm", "confirm2"), required=True)
     p.add_argument("--bootstrap", type=int, default=10000)
     p.set_defaults(func=analyse)
     args = ap.parse_args(argv)

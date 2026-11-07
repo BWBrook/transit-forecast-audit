@@ -63,7 +63,13 @@ has it, otherwise TESS-SPOC 200 s; PDCSAP; removal mode.
   construction.
 - **D039's positive bias recurs at a smaller size.** Equal-host mean z is
   +0.05. Under the old point criterion, D039's median z of +0.08 to +0.10 was
-  borderline.
+  borderline. Stratum B has mean z +0.215 [+0.049, +0.391] on 10–11 hosts.
+- **The development hosts do not pass the amended criteria**, and are not
+  meant to qualify anything. With 45 hosts, below the 60-host minimum,
+  t015v3c misses the coverage bound (lower limit 0.924 against 0.93) and the
+  mean-z bound (upper limit 0.152 against 0.15). t015v3 without the
+  multiplier misses z-RMS and both Tmag endpoints. The multiplier was fitted
+  on these same hosts.
 
 ## 3. Confirmation sample (fixed; `results/sprint2/confirm/selection.csv`)
 
@@ -126,8 +132,8 @@ coverage on its own.
 `results/sprint2/estimand_negative_controls.json`. It simulates 120 hosts with
 the development per-host event counts, 300 replicates per scenario.
 
-- The estimators are unbiased: mean estimates are within 0.005 of the truth.
-- The 90% intervals cover 0.85–0.92, across Gaussian, heteroscedastic,
+- The estimators are unbiased: mean estimates are within 0.007 of the truth.
+- The 90% intervals cover 0.853–0.927, across Gaussian, heteroscedastic,
   shared-shape, t₅-tailed and Tmag-trend truths.
 - The percentile bootstrap is therefore slightly anti-conservative, and the
   criteria inherit that. It is a stated limitation, not adjusted after the
@@ -187,3 +193,5 @@ analysis. The remeasurement times real transits; the confirmation calibrates
 injections. Both can therefore run after this commit. The convention
 comparison and refit are in `scripts/sprint2_forecasts.py` (R5 acceptance as
 in the plan). Outcome σ for t015v3c is σ × g(Tmag).
+
+*Reporting corrections after the freeze commit (rule code unchanged): negative-control ranges taken from the JSON; development verdict and stratum-B bias stated explicitly.*
