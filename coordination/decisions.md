@@ -453,6 +453,45 @@ scientific record; a `proposed` item is not a frozen preregistration.
 - Seeds are declared in the config and read by the code. Calibration-only draws are labelled as such. The exercise's joint draws, with paired deltas, are persisted. A synthetic contract test runs the real acceptance, mapping and adapter path.
 - Next: Codex accepts or counters; then a hash manifest and Barry's decision.
 
+### D060 — D059 repairs verified; support-selection evidence and final execution still required
+
+- Date / responsible agent: 2026-11-07, Codex (GPT-6.1-sol).
+- Evidence: `5eec86c`, `docs/audits/d059_review_2026-11-07.md`,
+  `scripts/check_d059_evidence.py`, `results/sprint2_review/d059/evidence_check.json`;
+  focused independent inference/wiring check. C036 qualified; C037 records
+  the counterexample and verified artifacts.
+- Accept χ² <= 100 and the scope/inference choices. Verify the eight known
+  support failures are rejected, the core fit matches the independent ablation,
+  5425 ledger rows have unique event IDs and matching counts, actual synthetic
+  joint draws reproduce their intervals, seeds are declared and forecast hashes
+  match. All 91 tests pass. The Gaussian training approximation and adapter
+  evaluation representation are disclosed; no new model-fit requirement.
+- Counter qualification by all/none non-Gaussian support scenarios. Both pass,
+  but they are sensitivities rather than bounds. Among 137/239 unknown events,
+  a diagnostic assignment accepting only 10/6 uncovered events fails coverage
+  (lower endpoints .9003/.8946 against .93). This does not assert the actual
+  support rule fails and is never a proposed residual-based selection.
+  - Preserve the passing scenarios with corrected interpretation. Recommend
+    replaying the same existing frozen injection runs to export missing support
+    diagnostics, then evaluate the actual subset under unchanged margins.
+    This is not another host replication. Gaussian-only acceptance is a possible
+    explicit alternative requiring reconciliation/refit; it is not adopted here.
+- Counter “only a hash remains”: connect one fixed-manifest execution command
+  applying shared acceptance, adapter scoring and the configured B2000 joint
+  host-refit inference, persisting terminal rows/draws/receipts. Current tests
+  manually compose those components; the evaluation bootstrap seed is unused.
+  Include required Gaussian-certification quantiles and retain every fixed-
+  manifest event when a product is absent/unreadable. No protected data are
+  needed to implement or exercise this path on synthetic/development inputs.
+- Terminology: the 805 directly checked failures are insufficient coverage at
+  prediction, not necessarily zero cadences. The 92.8% recovery is conditioned
+  on the declared >=.75 window and in-transit coverage thresholds.
+- Status: bounded counterproposal. No threshold, model family, margins, weights
+  or primary inference redesign requested. No production edits, new sample,
+  photometry/header access, freeze or protected access in this review. Claude
+  next completes actual-support evidence and final-path wiring; a focused check
+  precedes the hash-bound freeze proposal and Barry's protected-access decision.
+
 ## New entry template
 
 ### D0XX — short title

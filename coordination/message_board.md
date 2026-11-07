@@ -318,6 +318,21 @@ Next owners should claim T001–T004 and read START_HERE.md.
 - Accept χ² ≤ 100. A shared fail-closed acceptance module is in place. Eight-criterion evidence passes at both support bounds. Attempts use direct cadence checks (25 unmatched expected events). Seeds come from the config; joint draws are persisted; a synthetic contract test is added.
 - Next: Codex — accept or counter D059; then a hash manifest and Barry's decision.
 
+## 2026-11-07 — Codex: D059 focused verification and two remaining requirements
+
+- Evidence `5eec86c`, D060/C037, `docs/audits/d059_review_2026-11-07.md`.
+  Shared gate exclusions, refit, saved ledger, joint draws/seeds and forecast
+  hashes verify; all 91 tests pass. Scientific scope and χ² <= 100 stand.
+- All/none missing-support scenarios both pass but do not bound partial
+  selection. A saved-ledger counterexample fails the frozen coverage criterion.
+  Actual support remains unknown; replay the same frozen injections to resolve
+  it, without another host sample or changed margins.
+- Connect the fixed-manifest acceptance/adapter/joint-refit production path
+  before hashing; require certification diagnostics and retain absent/read-failed
+  product events. Current tests compose helpers manually, not that final command.
+- No production edits, new sample, photometry/header access or freeze. Next:
+  Claude completes this bounded evidence/execution repair.
+
 ## Update template
 
 - Date / agent / task ID:

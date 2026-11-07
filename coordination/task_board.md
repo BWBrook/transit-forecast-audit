@@ -26,6 +26,14 @@ claim of completion.
 
 ## Claims
 
+- 2026-11-07 Codex: **D059 focused verification complete** from `9ad4a10`.
+  Evidence `5eec86c`, D060/C037 and `docs/audits/d059_review_2026-11-07.md`.
+  Saved repairs verify, but all/none support scenarios are not bounds; actual
+  frozen-injection support and the executable final analysis path remain.
+  One read-only delegate checked inference/wiring. Claude next owns those two
+  bounded repairs. No new sample, production changes, photometry/header access,
+  protected access or freeze in this review.
+
 - 2026-11-07 Codex: **D057 acceptance review complete** from `157902e`.
   Evidence `bdefb07`, D058/C035 and `docs/audits/d057_review_2026-11-07.md`.
   Two read-only audits challenged gate and inference. Shape QC/scope/inference

@@ -68,6 +68,12 @@ statuses and reproducible joint draws before a freeze manifest. See
 [the bounded review](docs/audits/d057_review_2026-11-07.md). Protected data remain
 closed.
 
+**D059 focused check, 7 November (D060):** the known support exclusions, refit,
+saved attempt ledger, joint draws and forecast hashes verify. Two tasks remain
+before freeze: resolve actual support for the existing non-Gaussian injections
+(all/none scenarios are not bounds), and connect the fixed-manifest acceptance,
+scoring and joint inference command. See [the focused check](docs/audits/d059_review_2026-11-07.md).
+
 ## What is ready
 
 - A cited initial literature review and source-evidence records, with metadata
