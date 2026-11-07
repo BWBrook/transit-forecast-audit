@@ -250,7 +250,7 @@ scientific record; a `proposed` item is not a frozen preregistration.
   source, analytic margins and independent controls under `sprint2_review/`.
 - Interpretation: the second test was an adaptive extension after primary
   failure, prespecified before its injection analysis, not part of the original
-  one-confirmation plan. Of 120 hosts,82 had prior R5 contact and81 shared the
+  one-confirmation plan. Of 120 hosts,82 had prior R5 contact and 81 shared the
   same host-sector. Code freeze supports a bounded conditional test but does
   not alone guarantee a study-wide error rate or unseen-photometry independence.
 - The margins reproduce under independent Gaussian forecast/outcome errors.
@@ -273,7 +273,7 @@ scientific record; a `proposed` item is not a frozen preregistration.
   full log-density quadrature are unchanged. Changed timing source requires
   separate qualification; full-support likelihoods remain unresolved.
 - Replay:2777 attempts,2291 timed (291 grids),37 integration failures plus313
-  coverage,93 ID and43 edge failures. Exact-grid M2−M0 point loss -1.89681 versus
+  coverage,93 ID and 43 edge failures. Exact-grid M2−M0 point loss -1.89681 versus
   -1.92237 under Gaussian approximation on identical surviving events; fixed
   old development parameters, no bootstrap/refit verdict from this replay.
 - D050/C026 transfer acceptance is narrowed to descriptive sign/decision
@@ -281,7 +281,7 @@ scientific record; a `proposed` item is not a frozen preregistration.
   establish measurement calibration or convention equivalence.
 - The late original receipt hashes adapter bytes at run end, after edits, so
   it does not identify the old process's loaded source. Current guarded replay
-  resolves this. Original60 output hashes and8 OSF hashes verify. Development
+  resolves this. Original60 output hashes and 8 OSF hashes verify. Development
   source bytes behind an uncommitted hash and white-noise controls are missing.
 - Candidate:184 planets,3399 opportunities retained; five near numeric time
   boundaries marked unresolved. This is not a UTC–BJD conversion. Identification,
@@ -328,6 +328,61 @@ scientific record; a `proposed` item is not a frozen preregistration.
   - a SPOC-only t015v3a candidate refit, hashed together with forecasts,
     code and roster at freeze.
 - Opening protected outcomes remains Barry's decision after reconciliation.
+
+### D056 — Accept D055's narrower route, with explicit gate, boundary and uncertainty contracts
+
+- Date / responsible agent: 2026-11-07, Codex (GPT-6.1-sol).
+- Evidence: `docs/reconciliation_2026-11-07.md`,
+  `scripts/check_d055_evidence.py`, and
+  `results/sprint2_review/reconciliation_20261107/evidence_check.json`;
+  Claude's D054/message2943 and independent read-only method/boundary checks.
+- Accept primary scope: core 156 (one DRD-catalogued planet per host, declared
+  period/magnitude/origin-flag criteria), SPOC 120 PDCSAP only; extension 28
+  exploratory. Fixed-manifest attempts and convention/scope-matched refit are
+  accepted preparation. No FFI fallback or residual-based host removal.
+- Accept Claude's counter on the existing integration gate: no fresh sample is
+  inherently needed for an acceptance-only deterministic restriction with
+  stored flags. This is reanalysis of conditional evidence, not independent
+  validation or the same retained-event conditioning.
+  - Pure SPOC, after five/six removals: confirmation 104 hosts/1478 injections,
+    RMS.9867 [.9530,1.0202], coverage.9473 [.9349,.9591]; replication 100/1368,
+    RMS1.0156 [.9793,1.0508], coverage.9502 [.9386,.9615], B10000/seed7151.
+  - Statistical checks pass; this check does not recompute noise criteria.
+    Frozen timing-core bytes and four synthetic wrapper comparisons match.
+    Existing support/endpoint checks remain in the final acceptance contract.
+- Counter automatic adoption of the majority gate. Define it per recovered
+  train/run, including covered unmatched/spurious windows, edge/integration
+  failures and zero-window failure, without truth labels in acceptance.
+  Report intended recovery and false acceptance separately. Existing SPOC
+  ledgers show nine additional matched replication timings lost; one spurious-
+  only TOI-1246 train has missing integration flags and unresolved acceptance.
+  Retained-event calibration alone does not qualify identification. Complete
+  bounded saved-ledger/identification-control checks before adoption; no new
+  sample is mandated by this response.
+- Boundary counter: DRD predictions already are BJD_TDB. Qualify source scale,
+  reference/correction status and observer inputs, then convert boundaries;
+  do not automatically treat MAST MJD as UTC or convert predictions twice.
+  Conservative exclusions are permitted with explicit restricted-completeness
+  wording; excluding five leaves 3103 core +291 extension opportunities, with
+  the same 184 planets. The ten-minute screen itself is not exact conversion.
+- Preserve joint host/refit inference for the learned-correction question.
+  The candidate configuration currently makes fixed-parameter intervals
+  decisive; resolve that mismatch before freeze. Conditional frozen-product
+  intervals remain separately labelled. Store multiplicities/draw pairing;
+  only earlier calibration data enter refits. No new prior or model search.
+- Accept secondary influence curves, fractions/medians and dated TTV labels;
+  later-known TTV restrictions cannot redefine the origin-known primary cohort.
+  Do not attribute the actual refit tail to top-host absence without stored
+  resample multiplicities. Record actual nine-week training support.
+- White-noise script/output source identity verifies as a new diagnostic;
+  first-bin mean is -2.06 event-naive SE, so no universal absence-of-bias claim.
+  Retain and report real-data +.07-sigma late bias without correction.
+- Status: Codex accepts the route and these contracts for completing one
+  concrete prefreeze package. Majority/combined-gate identification evidence,
+  boundary eligibility and uncertainty implementation are not yet accepted as
+  complete. No production implementation, new sample, freeze or protected
+  access in this turn. Claude next completes the bounded prerequisites;
+  joint reconciliation and Barry's decision precede opening protected data.
 
 ## New entry template
 

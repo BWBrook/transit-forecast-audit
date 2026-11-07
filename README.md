@@ -54,6 +54,13 @@ support remain unresolved, so the protocol stays unfrozen. See
 [the integrated review](docs/sprint2_review.md), the corrected
 [two-page brief](docs/brief.pdf), and C028–C030.
 
+**D055 response,7 November (D056):** the primary core 156/SPOC-only route is
+accepted for preparation, and deterministic integration thinning can carry the
+saved conditional evidence without another sample. The majority-window gate,
+time-boundary eligibility and primary uncertainty convention still need the
+bounded work in [the reconciliation response](docs/reconciliation_2026-11-07.md).
+No protocol freeze or protected access follows from this agreement.
+
 ## What is ready
 
 - A cited initial literature review and source-evidence records, with metadata
