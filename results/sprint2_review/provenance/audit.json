@@ -1,0 +1,169 @@
+{
+  "audited_at_utc": "2026-11-07T06:55:49+00:00",
+  "head": "d9c157003f28ed28ab86b9a0727a58312840ac92",
+  "baseline": "d54142e",
+  "photometry_opened_by_this_audit": false,
+  "handoff": {
+    "outputs": 60,
+    "hash_failures": [],
+    "script_hash_matches": true
+  },
+  "osf_source_files": {
+    "count": 8,
+    "hash_failures": []
+  },
+  "source_chronology": [
+    {
+      "commit": "2c39f0a",
+      "git_dates": "2026-11-07T16:25:09+11:00|2026-11-07T16:25:24+11:00",
+      "combined_source_sha256": "4b5c9602a29b3f00079d465ab5657d64bbba460292950abbfa709b3ba3522809",
+      "confirmation_selection_present": true,
+      "replication_selection_present": false
+    },
+    {
+      "commit": "9375b3c",
+      "git_dates": "2026-11-07T17:03:32+11:00|2026-11-07T17:03:32+11:00",
+      "combined_source_sha256": "4b5c9602a29b3f00079d465ab5657d64bbba460292950abbfa709b3ba3522809",
+      "confirmation_selection_present": true,
+      "replication_selection_present": true
+    },
+    {
+      "commit": "d54142e",
+      "git_dates": "2026-11-07T17:32:00+11:00|2026-11-07T17:32:00+11:00",
+      "combined_source_sha256": "4b5c9602a29b3f00079d465ab5657d64bbba460292950abbfa709b3ba3522809",
+      "confirmation_selection_present": true,
+      "replication_selection_present": true
+    }
+  ],
+  "recorded_rule_receipts": {
+    "dev": {
+      "rule_version": "t015v3@dc5d2b8+66a91f709666",
+      "sample": "dev",
+      "hosts": 48,
+      "modes": [
+        "remove",
+        "subtract",
+        "shape"
+      ],
+      "max_mjd_guard": 60312.98,
+      "max_btjd_guard": 3313.49
+    },
+    "confirm": {
+      "rule_version": "t015v3@2c39f0a+4b5c9602a29b",
+      "sample": "confirm",
+      "hosts": 120,
+      "modes": [
+        "remove",
+        "subtract"
+      ],
+      "max_mjd_guard": 60312.98,
+      "max_btjd_guard": 3313.49
+    },
+    "confirm2": {
+      "rule_version": "t015v3@9375b3c+4b5c9602a29b",
+      "sample": "confirm2",
+      "hosts": 120,
+      "modes": [
+        "remove",
+        "subtract"
+      ],
+      "max_mjd_guard": 60312.98,
+      "max_btjd_guard": 3313.49
+    }
+  },
+  "frozen_confirmation_source_matches_recorded_prefix": true,
+  "chronology_limits": [
+    "Run receipts lack start/end or download timestamps; logs are undated.",
+    "Dev run records 66a91f709666 at dc5d2b8, but sprint2_outcomes.py was not committed at that revision.",
+    "Replication document discloses prior R5 contact with 82 hosts; never-sampled means injection frame, not untouched photometry."
+  ],
+  "candidate": {
+    "roster_planets": 184,
+    "hosts": 175,
+    "cohort_counts": {
+      "core": 156,
+      "extension": 28
+    },
+    "events": 3399,
+    "forecasts": 3399,
+    "unique_planet_epochs": 3399,
+    "independent_inventory_events": 3399,
+    "invariant_failures": [],
+    "inventory_hash_matches": true,
+    "covariance_tiers": {
+      "C2_candidate": 3399
+    },
+    "events_within_10min_of_unconverted_anchor": [
+      "EPIC246851721b|S98|DRD432"
+    ],
+    "covariance_qualification": "WLS reconstruction from assumed release input sets; C2_candidate is not an issued covariance.",
+    "candidate_host_refit_parameter_sets": 400
+  },
+  "outcome_table": {
+    "attempts": 4615,
+    "statuses": {
+      "excluded_coverage": 470,
+      "timed": 3946,
+      "id_failed": 116,
+      "edge": 83
+    },
+    "uncompressed_sha256": "99bb6d5d43ac0d69b6533d08aea4505c2b4d45e918c88d474fa23bff32cbe133",
+    "candidate_source_hash_matches": true,
+    "timed_planets": 294,
+    "same_photon_pairs": 3748,
+    "median_delta_s": -0.125,
+    "same_photon_z_rms": 0.35522926977728453,
+    "median_raw_sigma_ratio": 1.0549275783503211
+  },
+  "recorded_photometry_identities": {
+    "distinct_files": 990,
+    "conflicting_hashes": {},
+    "raw_FITS_hashes_independently_recomputed": false
+  },
+  "recorded_access_receipt": {
+    "utc": "2026-11-07T06:26:59+00:00",
+    "fits_files": 996,
+    "sector_range": [
+      46,
+      73
+    ],
+    "max_tstop_btjd": 3312.655117498639,
+    "tstop_limit_btjd": 3313.49,
+    "files_violating_guard": [],
+    "protected_outcomes_accessed": false,
+    "method": "Header-only scan of every FITS file under data/raw/mast (primary SECTOR, extension TSTOP); no data units read.",
+    "listing_sha256": "de08107daff66aaf874aa16d570a122ab7d2b42dd18b9855b222b29018f9c5bf"
+  },
+  "access_conclusion": "Receipt reports no protected files in its scanned directory at its timestamp; historical/global non-access is not proved.",
+  "production_interface_receipts_present": [
+    "data/derived/sprint2/interface/scores.receipt.json"
+  ],
+  "late_production_interface_receipt": {
+    "forecasts_sha256": "3a544a8b9e25c883d564a74f7a30f0a7d54077f2664fc97ab781592859a5aa7b",
+    "outcomes_sha256": "58a8e2e998b31913b6ad034abc6501f65eb9f389ea04272c2d94ccfbce75f660",
+    "scores_sha256": "eca5fd9a29679eac1286486915a4967cdcf5e63dee82dfc2c84e0fe057276cc9",
+    "attempted_rows": 2777,
+    "selected_production_attempts": 2777,
+    "adapter_source_sha256": "d0b32e7daab8e1ebb3984a50814fbeaf36b027f072dd523a461bb18151c0d459",
+    "predictive_core_sha256": "dfe010dbe60e5bb6f07412ec4b5114c57783b90d83278abde8d857db9e597e77",
+    "timed_production_events": 2310,
+    "omitted_rows": 467,
+    "error_convention": "t015v3_beta_chi",
+    "outcome_scale": 1.0,
+    "nonGaussian_events": 309,
+    "I1_schema_checked": true,
+    "timed_rows_without_estimable_loo_shift": 26,
+    "photometry_or_file_hashes_reopened_for_verification": false,
+    "development_only": true,
+    "units": "seconds in log density; minutes in interval score",
+    "proper_score_scope": "conditional on supplied measurement likelihood; normaliser may be outcome-dependent",
+    "adapter_sha_at_receipt_commit": "81fd76c8e0c6ba12a7029f53652583977c84f1824b98e793bfc34c0906cafd7b",
+    "adapter_sha_at_later_repair_commit": "d0b32e7daab8e1ebb3984a50814fbeaf36b027f072dd523a461bb18151c0d459",
+    "recorded_adapter_sha_matches_receipt_commit": false,
+    "recorded_adapter_sha_matches_later_repair": true,
+    "qualification": "Receipt hashes adapter file at run end; this does not identify imported code if the source changes during the run."
+  },
+  "brief_render_proof": [
+    "docs/brief.pdf"
+  ]
+}

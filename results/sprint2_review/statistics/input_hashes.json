@@ -1,0 +1,16 @@
+{
+  "results/outcomes/t015v3/outcomes.csv.gz": "79c9d323b852f47a6519df7671764baad358486c558e3dad0dd36fc4b9437ef8",
+  "results/sprint2/dev/ledger.csv.gz": "85f83d466a8f9d40290aaf2f951deb76fbb1734be87576abac5f94024ac4b4e5",
+  "results/sprint2/dev/summary.json": "fde4ecaa85e3b5086d41058bebabf092e3544df8cab4a3ff22ebf3bc4b1b943d",
+  "results/sprint2/dev/run_receipt.json": "303c6b28729fab71c7701f06468cff62f29987dd301697a0eb4ebb721a7e5d47",
+  "results/sprint2/confirm/ledger.csv.gz": "bf39fe7ecf2d9c8ce65a9c5938cc238c26cebd0a688bc94588727eeafd6e90ff",
+  "results/sprint2/confirm/summary.json": "bcd715f9dad5db6e0b4fa4329f27e9a562b8380f700740eea38d326bc0cb6649",
+  "results/sprint2/confirm/run_receipt.json": "22d5be638a5f073eea42083f489464922647f4659b367f6485942abe7a227d8b",
+  "results/sprint2/confirm2/ledger.csv.gz": "6c7662a6b545b01392099ea87850d8e06860d4dc3b1ff1f0a0b4e2c542863955",
+  "results/sprint2/confirm2/summary.json": "871c78c9676694f919a47fe8bfb15d12a3d80f762b3f41011f2258d7b5408656",
+  "results/sprint2/confirm2/run_receipt.json": "f697423d3dceac5a49ec77abd1c998a21755301358c8f09c921360ae9a35ad13",
+  "docs/sprint2_outcome_design.md": "ccb8d4968e5adf22a1940c3f8fab5451cc1a26bf3995d964141b2937cddbbffc",
+  "docs/sprint2_replication_design.md": "63ba986a4976eecde482fd8c3cbd331dbed4fbd2c2ad624c9a39924a38d4ef40",
+  "scripts/sprint2_analysis.py": "3f7b5dd5675f14a1ae4e9cc51c2df15dbc793667e196fbe907d0506ea0d43814",
+  "scripts/review_sprint2_statistics.py": "cad23feda3b1f12707ee492d4f44410aec9bcfdc2d88bc2822e59476fb637699"
+}

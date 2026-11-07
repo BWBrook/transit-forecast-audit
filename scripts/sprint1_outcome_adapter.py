@@ -89,8 +89,14 @@ def grid_score(residual, vf, model, grid, denominator, order=384):
         raise ValueError("NonGaussian likelihood convolution requires positive forecast variance")
     z,lw = f.quadrature(order) if s>=1e-5 else (np.zeros(1),np.zeros(1))
     sd = b*np.sqrt(vf)*np.exp(.5*s*z)
+    mixture_weights = np.exp(lw)
+    keep_mixture = mixture_weights > 1e-15/len(mixture_weights)
+    keep_error = w > 1e-15/len(w)
+    cdf_x, cdf_sd = x[keep_error], sd[keep_mixture]
+    cdf_w, cdf_mix = w[keep_error], mixture_weights[keep_mixture]
     def cdf(value):
-        return float(w @ (ndtr((value+x[:,None])/sd[None,:]) @ np.exp(lw)))
+        # Removed terms bound the absolute CDF error by 2e-15; density uses all nodes.
+        return float(cdf_w @ (ndtr((value+cdf_x[:,None])/cdf_sd[None,:]) @ cdf_mix))
     bound = max(abs(x))+20*b*np.sqrt(vf)*np.exp(.25*s*s)
     lo,hi = -bound,bound
     quantiles = [brentq(lambda value: cdf(value)-p, lo, hi, xtol=1e-7, rtol=1e-12)
@@ -132,6 +138,9 @@ def production_rows(rows, catalogue=False):
 
 def score_outcomes(args):
     forecast_path,outcome_path=Path(args.forecasts),Path(args.outcomes)
+    source_paths = (Path(__file__), Path(c.__file__), Path(f.__file__))
+    source_hashes = {str(p): c.digest(p) for p in source_paths}
+    input_hashes = {str(p): c.digest(p) for p in (forecast_path, outcome_path)}
     with forecast_path.open() as handle:
         forecast_list=list(csv.DictReader(handle))
     forecasts={r["event_id"]:r for r in forecast_list}
@@ -209,6 +218,9 @@ def score_outcomes(args):
                            "shape_group_id":e.get("shape_group_id","unknown"),
                            "parameter_version":forecasts[e["event_id"]]["parameter_version"],
                            **{k:v if np.isfinite(v) else "" for k,v in vals.items()}})
+    if any(c.digest(Path(path)) != expected for path, expected in
+           {**source_hashes, **input_hashes, **grid_hashes}.items()):
+        raise RuntimeError("Source/input drift during scoring; no receipt issued")
     dest=Path(args.output)
     dest.parent.mkdir(parents=True,exist_ok=True)
     if output:
@@ -220,8 +232,10 @@ def score_outcomes(args):
     c.write_json(dest.with_suffix(".receipt.json"),
                  {"forecasts_sha256":c.digest(forecast_path),"outcomes_sha256":c.digest(outcome_path),
                   "scores_sha256":c.digest(dest),"attempted_rows":len(raw),"selected_production_attempts":len(selected),
-                  "adapter_source_sha256":c.digest(Path(__file__)),
-                  "predictive_core_sha256":c.digest(c.ROOT/"scripts/sprint1_forecast_core.py"),
+                  "adapter_source_sha256":source_hashes[str(Path(__file__))],
+                  "predictive_core_sha256":source_hashes[str(Path(c.__file__))],
+                  "source_config_sha256":{str(Path(k).relative_to(c.ROOT)):v for k,v in source_hashes.items()},
+                  "source_inputs_unchanged_during_run":True,
                   "timed_production_events":len(events),"omitted_rows":len(omitted),
                   "error_convention":args.error_convention,"outcome_scale":args.outcome_scale,
                   "likelihood_grid_hashes":grid_hashes,

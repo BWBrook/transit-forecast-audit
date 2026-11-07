@@ -1,8 +1,8 @@
 # Agent guide: using the transit-forecast-audit work
 
-**Audience:** a new AI agent (Claude, Codex or another) that must use, extend, review or reproduce this work. **Status at this draft (7 November 2026):** development evidence only, protocol not frozen, protected outcomes unopened, and the outcome-measurement pipeline **not ready** under its prespecified criteria (C025). Companion products from the same ledger: `manuscript/paper.md` (article) and `docs/brief.md` (public brief). All three cite claim IDs in `coordination/claims.md`; if a number differs between them, the ledger wins and the product is out of date.
+**Audience:** a new AI agent (Claude, Codex or another) that must use, extend, review or reproduce this work. **Status at this draft (7 November 2026):** development evidence only, protocol not frozen, protected outcomes unopened, and the frozen t015v3 SPOC conditional replication **passes after correction**, while end-to-end freeze readiness remains blocked (C028–C030). Companion products from the same ledger: `manuscript/paper.md` (article) and `docs/brief.md` (public brief). All three cite claim IDs in `coordination/claims.md`; if a number differs between them, the ledger wins and the product is out of date.
 
-Authoritative integrated sprint-2 account: `docs/sprint2_report.md`.
+Current integrated account: `docs/sprint2_review.md`. The original `docs/sprint2_report.md` and original results are historical evidence qualified by that review.
 
 ## 1. The question and the boundary
 
@@ -10,7 +10,7 @@ Authoritative integrated sprint-2 account: `docs/sprint2_report.md`.
 
 **Primary contrast.** Planet-balanced standardised 95% interval score (IS95), M2 minus M0. Negative favours M2. Decision is "improves", "worsens" or "inconclusive" from a 95% host-cluster percentile interval.
 
-**What exists.** A complete development forecast experiment (sprint 1); an outcome-measurement rule with calibration, identification tests, a 120-host confirmation and a 120-host replication, both of which failed (sprint 2, C025); a remeasured-outcome convention comparison (C026); a candidate freeze package that is not freeze-ready (C027); and these drafts.
+**What exists.** A complete development forecast experiment (sprint 1); an outcome-measurement rule with calibration, identification tests, a 120-host confirmation and a 120-host replication, the brightness-corrected primary failed, while the uncorrected SPOC replication passes after the analysis repair (C028); a remeasured-outcome convention comparison (C026); a candidate freeze package that is not freeze-ready (C027); and these drafts.
 
 **What does not exist.** A final evaluation. Every empirical result so far is inspected development material (D014). Never describe a development result as validation, an untouched test or a held-out result.
 
@@ -23,14 +23,14 @@ Authoritative integrated sprint-2 account: `docs/sprint2_report.md`.
 | `AGENTS.md`, `CLAUDE.md`, `START_HERE.md` | Shared rules (scientific invariants, collaboration, reporting). Read first. `CLAUDE.md` points to `AGENTS.md`. |
 | `README.md`, `VALIDATION.md` | Overview. `README.md` carries the sprint-1 status; `VALIDATION.md` records the seed suite only. |
 | `coordination/claims.md` | **Claims ledger.** IDs, status, evidence at commit, reproduce command. Single source of evidence. |
-| `coordination/decisions.md` | Dated decisions D001-D045 with responsible agent and status. |
+| `coordination/decisions.md` | Dated scientific decisions and review corrections with responsible agent and status. |
 | `coordination/message_board.md`, `task_board.md`, `decision_queue.md` | Progress notes, task claims, queue. |
 | `docs/evaluation_protocol.md` | Estimands, tracks R/A/B, covariance tiers, scoring, dependence. Status header lists amendments. |
 | `docs/statistical_models.md` | Notation, covariance propagation, model ladder, scores. |
 | `docs/two_sprint_plan_2026-11-05.md` | The plan. The revision section (R1-R9, I1-I3, A1-A2) governs where it conflicts with the draft. |
 | `docs/sprint1_report.md` and `sprint1_*.md` | Sprint-1 synthesis, timing audit, inventory, precision, scoring review, literature review. |
 | `docs/sprint2_outcome_design.md` | Outcome rule `t015v3`/`t015v3c`, criteria, confirmation design, identification tests. Frozen at commit `2c39f0a`. |
-| `docs/sprint2_replication_design.md` | The single prespecified replication of fixed `t015v3` (committed at `9375b3c` before any replication photometry). |
+| `docs/sprint2_replication_design.md` | The single prespecified replication of fixed `t015v3` (committed at `9375b3c` before replication injection analysis; many products were already present from remeasurement). |
 | `docs/sprint2_report.md` | Integrated sprint-2 report (decisions D046-D050, claims C022-C027, open items S2-01 to S2-05). Authoritative for sprint-2 numbers. |
 | `docs/t015_*.md`, `docs/third_turn_review_2026-11-05.md` | Earlier timing-pipeline reports and reviews. |
 | `docs/novelty_gate.md`, `docs/literature_review.md`, `docs/literature_update_*.md` | Prior art and the bounded novelty statement. |
@@ -194,7 +194,7 @@ One row per attempted event, whether it succeeded or failed. Owner: Claude.
 | Quality | `coverage_window`, `coverage_in_transit`, `status`, `failure_reason` |
 | Version | `error_convention`, `rule_version` (git commit plus script SHA-256) |
 
-Paired products of one observation share an `observation_id` and are never both scored. Status values in the ledgers: timed, excluded_coverage, product_id_failed, run_id_failed, id_failed, edge, not_recovered.
+Paired products of one observation share an `observation_id` and are never both scored. Status values in the ledgers: timed, excluded_coverage, product_id_failed, run_id_failed, id_failed, edge, integration_unresolved, not_recovered.
 
 ### I2: forecasts and scores (owner: Codex)
 
@@ -214,7 +214,7 @@ Keys: `date`, `status`, `development_only`, `protocol_frozen`, `protected_outcom
 - **Four dates.** training end, first public availability, forecast origin, retrieval. A reference epoch is not an issue date.
 - **Covariance tiers C1-C4.** ExoClock gives no issued covariance (D021). M0 is a reconstruction. Never set missing covariance to zero without a label.
 - **Models.** M0 issued Gaussian; M1 one fitted scale b; M2 b = 1 with a lognormal multiplier of log-scale SD s (median 1); M3 both. The comparator set is closed; nothing outside it competes (D041).
-- **Outcome error.** `exoclock_reported` timings are multiplied by a = 1.087; `t015v3c` multiplies its own σ by g(Tmag) = √max(0.8857 − 0.0919(T − 11), 0.25) with T clamped to [8, 13.5]; that multiplier failed confirmation (C025). `t015v3` is the same pipeline without it. Neither is qualified.
+- **Outcome error.** `exoclock_reported` timings are multiplied by a = 1.087; `t015v3c` multiplies its own σ by g(Tmag) = √max(0.8857 − 0.0919(T − 11), 0.25) with T clamped to [8, 13.5]; that multiplier failed confirmation (C025). `t015v3` is the same pipeline without it. The frozen uncorrected SPOC rule passes conditional criteria after review; the amended implementation and end-to-end rule remain unqualified (C028–C029).
 - **Standardised IS95.** Each event's interval score divided by the M0 predictive SD including outcome error. It is a conditional weighted loss (D042), not an issue-time proper score. Always report raw minute IS95 and the forecast-only normalisation beside it.
 - **Equal-host estimand.** For outcome calibration, each host has weight one and its timed events share it equally. Pooled event-weighted numbers are reproduction-only (C020).
 - **Failure denominators.** Product failures, run failures, event failures and end-to-end recovery are separate. Never add them into one rate. Recovery is reported, never imputed.
@@ -230,7 +230,7 @@ Evidence commits are as recorded in the ledger. Use `git show <commit>:<path>` f
 | C001 | Independent base-R reproduction of Table 5 (DRB/DRC exact, DRD one count) | `16b5799:results/pilot_v1/independent_review/table5_*` | numerical reproduction, not publisher code |
 | C002 | Original consecutive-gap grouping chains 333/425 groups over 20 days | `.../measurement_groups.csv`, `measurement_sensitivity.csv` | diagnostic defect |
 | C003 | Capped-span residual RMS 1.0968 (4,173 timings, 336 planets) | `.../measurement_sensitivity.csv`; `synthetic_identifiability.csv` is synthetic | attribution unresolved |
-| C004 | Covariance cross terms at most about 0.27%, 0.98%, 2.94% (DRB/C/D) | `.../covariance_review.csv` | sensitivity only |
+| C004 | Covariance cross terms at most about 0.27%,0.98%,2.94% of observed forecast-plus-outcome variance (DRB/C/D) | `.../covariance_review.csv` | sensitivity only |
 | C005 | Conditional REML a = 1.087 | `7a9f1a6:results/pilot_v1/local_noise/` | not physical attribution |
 | C006 | Original mixture estimates | `7a9f1a6:results/pilot_v1/variance_components/` | tail labels superseded by C009 |
 | C007 | Original geometric inventory (224 planets, 5,071 transits) | `7a9f1a6:results/sealed_inventory/` | interpretations rejected by C011 |
@@ -248,14 +248,14 @@ Evidence commits are as recorded in the ledger. Use `git show <commit>:<path>` f
 | C019 | DRD public by 2025-11-18 09:43:24 UTC; DRC timing file 53 s after its forecast | `6d69f0e:results/sprint1/literature/release_availability.csv` | |
 | C020 | 13/48 planned primary runs not successful; log-MSE endpoints fail a control | `6d69f0e:results/sprint1/timing_audit/` | |
 | C021 | 156 core + 28 extension planets, 184 planets on 175 hosts, 3,399 opportunities | `6d69f0e:results/sprint1/inventory/`, `results/sprint1/precision/` | metadata only |
-| C022 | `t015v3`/`t015v3c` development calibration (45 hosts, 682 injections), ledger counts, shape stress test, window-removal control, white-noise tests | `results/sprint2/dev/summary.json`, `runs.csv`, `ledger.csv.gz`, `run_receipt.json` | in-sample multiplier |
+| C022 | `t015v3`/`t015v3c` development calibration (45 hosts, 682 injections), ledger counts, shape stress test, window-removal control; white-noise claims lack a retained reproducer | `results/sprint2/dev/summary.json`, `runs.csv`, `ledger.csv.gz`, `run_receipt.json` | in-sample multiplier |
 | C023 | Estimand negative controls: estimators unbiased (within 0.007), 90% intervals cover 0.853-0.927 | `results/sprint2/estimand_negative_controls.json` | |
 | C024 | Identification boundary tests | `results/sprint2/dev/identification_summary.json`, `identification_tests.csv` | |
-| C025 | Confirmation (`t015v3c` fails; `t015v3` secondary passes), replication (`t015v3` fails), exploratory transit-count split | `results/sprint2/confirm/summary.json`, `confirm2/summary.json`, `results/sprint2/exploratory_transit_count.json`; designs `docs/sprint2_outcome_design.md`, `docs/sprint2_replication_design.md` | exploratory split defined after the replication |
-| C026 | Remeasurement (4,615 attempted, 3,946 timed), convention transfer accepted, WASP-54b S50 diagnostic | `results/sprint2/forecasts/convention_comparison.json`, `diagnostic_wasp54_s50.json`; I1 table `results/outcomes/t015v3/` | all M2-M0 contrasts inconclusive |
+| C025 | Confirmation (`t015v3c` fails; `t015v3` secondary passes), replication (`t015v3` passes after analysis correction, C028), exploratory transit-count split | `results/sprint2/confirm/summary.json`, `confirm2/summary.json`, `results/sprint2/exploratory_transit_count.json`; designs `docs/sprint2_outcome_design.md`, `docs/sprint2_replication_design.md` | exploratory split defined after the replication |
+| C026 | Remeasurement (4,615 attempted, 3,946 timed), matched Gaussian sign/decision agreement; not equivalence, WASP-54b S50 diagnostic | `results/sprint2/forecasts/convention_comparison.json`, `diagnostic_wasp54_s50.json`; I1 table `results/outcomes/t015v3/` | all M2-M0 contrasts inconclusive |
 | C027 | Candidate freeze package, candidate parameters, access receipt | `results/sprint2/freeze_candidate/`, `results/sprint2/forecasts/candidate_parameters_t015v3.json`, `configs/candidate_freeze.json` | candidate, not freeze-ready |
 
-Claims C022-C027 are cited in the sprint-2 report; check that `coordination/claims.md` carries matching rows before relying on them (at this draft its last row was C021).
+Claims C022-C027 are cited in the sprint-2 report; check that `coordination/claims.md` carries matching rows before relying on them (C028–C030 qualify and supersede the original interpretations).
 
 ## 10. Known limitations and open defects
 
@@ -265,35 +265,30 @@ Open defects (from `results/sprint1/handoff.json`, with sprint-2 status as of th
 |---|---|---|
 | S1-01 | Complete intended-event ledger and one-to-one match, distinct denominators | Addressed by `sprint2_outcomes.py` (ledger, Hungarian match with 60-min gate); needs reciprocal review |
 | S1-02 | Host-balanced outcome estimand; replace biased log-MSE endpoints | Addressed in `sprint2_analysis.py`; negative controls at `estimand_negative_controls.json` (intervals slightly anti-conservative) |
-| S1-03 | Remeasure development outcomes; refit M1-M3 under each convention | Done (C026): R5 transfer accepted, all contrasts inconclusive |
+| S1-03 | Remeasure development outcomes; refit M1-M3 under each convention | Done (C026): R5 descriptive agreement only, all contrasts inconclusive |
 | S1-04 | Independent epoch mapping, no-removal and shape controls, short periods, identification boundary, extension qualification | Controls and identification tests run; the remeasured development designs and `interface` still use nearest-epoch mapping; extension qualification rests on identification tests and same-photon agreement, not on confirmation |
 | S1-05 | Missing issued covariance, incomplete exposure lineage, selection denominator, limited calibration availability | Open; reciprocal review pending |
-| S1-06 | Confirm eligible 120-host frame and actual product availability | Done: first confirmation 106 of 120 hosts timed; replication 102 of 120 |
+| S1-06 | Confirm eligible 120-host frame and actual product availability | Done: corrected production confirmation 105 of 120 hosts timed; replication 100 of 120 |
 | S2-01 | Product-level consistency rule against spurious windows (WASP-54b S50) | Open |
-| S2-02 | Prespecified test of the at-least-four-transit, metadata-defined scope; decide whether the final evaluation is restricted to it | Open, next design |
+| S2-02 | Prespecified test of an unsupported post-hoc successful-injection count scope; decide whether the final evaluation is restricted to it | No transit-count restriction is currently supported; see C028 |
 | S2-03 | Bright-star (Tmag below 10) undercoverage 0.915-0.918 and low stratum-A recovery | Open |
-| S2-04 | Equal-host weighting gives single-transit hosts full weight; consider weighting by expected final-evaluation transits | Open, Codex review |
-| S2-05 | 21 of 404 non-Gaussian grids truncated by the ±60-min prior; the adapter refuses them and they count as failed attempts | Stated in the sprint-2 hand-off; no committed receipt seen at this draft |
+| S2-04 | Equal-host weighting gives single-transit hosts full weight; consider weighting by expected final-evaluation transits | Retain equal-host target; product fallback caused part of the apparent sparse-host failure |
+| S2-05 | 21 of 404 non-Gaussian grids truncated by the ±60-min prior; the adapter refuses them and they count as failed attempts | Endpoint gate and unresolved integration flags are separate; reviewed replay retains failures (C029–C030) |
 
 Limitations to state in any derivative work:
 
 1. All results are development material (D014); several designs were chosen after inspection.
 2. Covariance is reconstructed; C2 is an approximation (C004, D021).
 3. Release-transfer and chronological comparisons are proxies; the DRC timing file followed its forecast by 53 s (C019).
-4. The `t015v3c` multiplier was fitted in-sample on 45 hosts and failed confirmation. `t015v3` failed its single replication (z-RMS 1.095 [1.002, 1.214], coverage 0.929 [0.908, 0.947], both Tmag endpoints). The at-least-four-transit scope that calibrates in both samples was defined after the replication and is exploratory.
+4. The t015v3c multiplier fails confirmation. Corrected t015v3 passes the frozen replication criteria on 100 timed SPOC hosts: RMS 1.0144 [0.9787,1.0509], coverage0.9502 [0.9382,0.9611]. The original failure was caused by two analysis defects; the sparse-host restriction loses its basis. Prior-contact and adaptive-design qualifications remain (C028).
 5. The estimator bootstrap is slightly anti-conservative (0.853-0.927 coverage of nominal 90% intervals).
 6. Identification excludes period errors beyond 0.5% and per-transit displacements beyond about an hour (the injection tests time 93/93 at 30 min, 85/93 at 50, 13/96 at 70, 1/95 at 90, 0/91 at 120).
 7. Faint-star conservatism is real in the light curves and unexplained; stratum B (Tmag 10-11) shows positive bias (mean z +0.215 [+0.049, +0.391]).
 8. D039's per-stratum failure stands (C017); the pooled "pass" is conditional (C020). The 0.1σ per-stratum bias margin was retired as poorly powered at 30 hosts per stratum, not as proven unattainable.
 9. Covariance sensitivity and outcome-scale grids do not certify a measurement tolerance (`certified_measurement_tolerance: null`).
 10. Missed-transit frequency is not estimable from successful timings (D010).
-11. Inconsistencies between the sprint-2 report and the JSON files, to reconcile rather than silently fix (found when drafting; check each before citing):
-    - The report says M1's b "rises to about 10" in the chronological all-timed fit; `convention_comparison.json` gives b = 191.3 (`ours_all`) and 190.4 (`ours_all_raw`). b = 10.02 belongs to the release-transfer candidate fit.
-    - The report quotes 3,748 matched transits, a median difference of −0.1 s and a raw `t015v3` σ ratio of 1.055. The JSON gives 3,416 (chronological) and 2,230 (release transfer) matched pairs, median differences −0.18 s and −0.33 s, and a median σ ratio 0.986 and 0.985 (the convention of that ratio is not stated there).
-    - The report says `t015v3` passes every criterion in the first confirmation. That holds for the production set; by product type, SPOC 120 s misses the coverage bound (0.9291 against 0.93).
-    - `summary.json` records 28 spurious windows (confirmation) and 16 (replication); the report says only that no duplicate truth assignments occurred.
-    - The report cites `results/sprint2/handoff.json`, which did not exist, and a scoring receipt `data/derived/sprint2/interface/scores.receipt.json`, which did not exist, at this draft.
-    - Older notes: the DRD one-count benchmark mismatch (C001); the design document's 45 hosts and 682 timed injections against the recovery table's 678 timed truths come from different denominators; the dev-era `paired_remove_vs_subtract` fields carry no rule label.
+11. Resolved denominator/source distinctions: 3,748 is the whole remeasurement match set; 3,416 and 2,230 pool different forecast-comparison windows. The raw timing sigma ratio1.055 differs from the Tmag-adjusted ratios0.985–0.986. M1 b≈191 belongs to the contaminated chronological fit; b≈10 belongs to the candidate DRD calibration fit. The late interface receipt exists, but its end-of-run source hash cannot identify the code loaded by the original process; use the guarded review replay (C030).
+12. Original white-noise assertions at σ43/118/241s lack a retained reproducer and must not be used as verified evidence. The new statistical controls are synthetic and explicitly labelled.
 
 ## 11. How to add a claim, and conventions
 
@@ -308,11 +303,13 @@ Limitations to state in any derivative work:
 9. Before pushing, scan staged files with `GIT_CONFIG_GLOBAL=/dev/null gitleaks protect --staged`. This repository is public: no credentials, no third-party copyrighted text or transcripts quoting papers, no regenerable data over about 1 MB.
 10. Style for any text: lead with the result, active voice, precise statements, no hedging pile-ups, negative evidence kept prominent. End a turn on the board with `Next: Claude`, `Next: Codex` or `Next: Barry`, with a short reason.
 
-## 12. Placeholders still open at this draft
+## 12. Current review outputs and unresolved work
 
-The production-I1 interface receipt is `results/sprint2/interface/scores.receipt.json`: all 2,777 attempted DRC-window rows pass the full I1 schema check; 2,310 timed events are scored (309 through flat-prior likelihood grids), and 467 attempts remain explicit failures (313 coverage, 93 identification, 43 prior edge, 18 likelihood support truncated by the ±60-min prior, S2-05).
+`results/sprint2_review/handoff.json` indexes corrected statistics, numerical-support checks, the source-qualified I1 replay, boundary annotations and all current limitations. Original outputs remain under `results/sprint2/`; do not overwrite them with the repaired analysis.
 
-All draft slots are filled: confirmation and replication (C025), convention transfer (C026), candidate parameters (C027), tests (75), claim IDs C022-C027.
+The review found product fallback and asymmetric-coverage defects, repaired them, and obtained the corrected replication pass without changing criteria. It also changed numerical-support handling; those timing-code changes are a new implementation and cannot inherit qualification automatically. No new sample or transit-count restriction is authorised by this review.
+
+Use the reviewed source-to-score replay command in the handoff. Raw and detailed derived files are in the shared bulk archive named by its receipt. A final evaluation does not exist. Full-support likelihoods, product identification, outcome attempt denominators, multi-planet validation and exact time-boundary handling remain open. Claude counter-review and reconciliation are next.
 
 ## 13. Suggested first moves for a new agent
 

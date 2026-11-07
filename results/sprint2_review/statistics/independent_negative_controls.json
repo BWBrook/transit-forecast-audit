@@ -1,0 +1,105 @@
+{
+  "label": "synthetic; conditional on corrected replication successful-host count and Tmag design",
+  "replicates": 600,
+  "bootstrap_per_replicate": 600,
+  "hosts": 100,
+  "mc_se_at_90_percent": 0.012247448713915891,
+  "scenarios": {
+    "gaussian": {
+      "true_values": {
+        "z_rms": 1.0,
+        "cover95": 0.95,
+        "mean_z": 0.0,
+        "z_rms_tmag9": 1.0,
+        "z_rms_tmag13.5": 1.0
+      },
+      "mean_estimates": {
+        "z_rms": 1.0014859878582216,
+        "cover95": 0.949657734694291,
+        "mean_z": -0.00037364245807574583,
+        "z_rms_tmag9": 0.9986937315852757,
+        "z_rms_tmag13.5": 1.0033695329399308
+      },
+      "ci90_coverage": {
+        "z_rms": 0.9,
+        "cover95": 0.88,
+        "mean_z": 0.8766666666666667,
+        "z_rms_tmag9": 0.8866666666666667,
+        "z_rms_tmag13.5": 0.885
+      },
+      "coverage_criterion_pass_fraction": 0.8383333333333334
+    },
+    "student_t5": {
+      "true_values": {
+        "z_rms": 1.0,
+        "cover95": 0.9474894054325436,
+        "mean_z": 0.0,
+        "z_rms_tmag9": 1.0,
+        "z_rms_tmag13.5": 1.0
+      },
+      "mean_estimates": {
+        "z_rms": 1.0012710415652855,
+        "cover95": 0.9468926348953249,
+        "mean_z": 8.2013656125955e-05,
+        "z_rms_tmag9": 1.0022710674533875,
+        "z_rms_tmag13.5": 0.9932744953370954
+      },
+      "ci90_coverage": {
+        "z_rms": 0.8683333333333333,
+        "cover95": 0.875,
+        "mean_z": 0.8983333333333333,
+        "z_rms_tmag9": 0.84,
+        "z_rms_tmag13.5": 0.87
+      },
+      "coverage_criterion_pass_fraction": 0.7683333333333333
+    },
+    "coverage_boundary_0.93": {
+      "true_values": {
+        "z_rms": 1.081711153754724,
+        "cover95": 0.93,
+        "mean_z": 0.0,
+        "z_rms_tmag9": 1.081711153754724,
+        "z_rms_tmag13.5": 1.081711153754724
+      },
+      "mean_estimates": {
+        "z_rms": 1.0817217951842049,
+        "cover95": 0.9300891009909487,
+        "mean_z": -0.0017813225426710558,
+        "z_rms_tmag9": 1.0833393544161747,
+        "z_rms_tmag13.5": 1.0778169922587928
+      },
+      "ci90_coverage": {
+        "z_rms": 0.89,
+        "cover95": 0.9016666666666666,
+        "mean_z": 0.89,
+        "z_rms_tmag9": 0.8816666666666667,
+        "z_rms_tmag13.5": 0.8683333333333333
+      },
+      "coverage_criterion_pass_fraction": 0.065
+    },
+    "coverage_below_margin_0.925": {
+      "true_values": {
+        "z_rms": 1.1008161964521257,
+        "cover95": 0.925,
+        "mean_z": 0.0,
+        "z_rms_tmag9": 1.1008161964521257,
+        "z_rms_tmag13.5": 1.1008161964521257
+      },
+      "mean_estimates": {
+        "z_rms": 1.1009879111921819,
+        "cover95": 0.9249645870308876,
+        "mean_z": 0.0008369560423323948,
+        "z_rms_tmag9": 1.099198545596992,
+        "z_rms_tmag13.5": 1.1013716798252238
+      },
+      "ci90_coverage": {
+        "z_rms": 0.8716666666666667,
+        "cover95": 0.88,
+        "mean_z": 0.875,
+        "z_rms_tmag9": 0.87,
+        "z_rms_tmag13.5": 0.895
+      },
+      "coverage_criterion_pass_fraction": 0.016666666666666666
+    }
+  }
+}

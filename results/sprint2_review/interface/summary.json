@@ -1,0 +1,123 @@
+{
+  "source_sha256": {
+    "data/derived/outcomes/t015v3/outcomes.csv": "99bb6d5d43ac0d69b6533d08aea4505c2b4d45e918c88d474fa23bff32cbe133",
+    "scripts/sprint1_forecast_core.py": "dfe010dbe60e5bb6f07412ec4b5114c57783b90d83278abde8d857db9e597e77",
+    "scripts/sprint1_forecasts.py": "bc8af5eb66076f841b1bd5c0b087974560aa300bdbf5f773b29bff4a76320dd5",
+    "scripts/sprint1_outcome_adapter.py": "a5b62b99583a9bce4c11ea48163f111d708f4c5ebe9ed6290b327811e2e78401",
+    "scripts/sprint2_forecasts.py": "c489095b8ed6e2123f8c8b840cc947a6fb8bfa8372722ce9b249d3fa1c5c6f9a",
+    "scripts/review_sprint2_interface.py": "6b03ac682f6726bd466d1e493d7d823037fc59c6ac9b7c76490c563622bc2847",
+    "results/sprint2/forecasts/parameters_release_transfer_ours_all_raw.json": "0c058a86be507b58e7c4aabae446685476e9962ac7064f719cc1516ef52dd9b6"
+  },
+  "source_unchanged_during_run": true,
+  "status_counts_all_attempts": {
+    "timed": 2291,
+    "excluded_coverage": 313,
+    "id_failed": 93,
+    "integration_unresolved": 37,
+    "edge": 43
+  },
+  "support_failures": 37,
+  "timed_events": 2291,
+  "exact_likelihood_scores": {
+    "M0": {
+      "is95_standardised": 25.52785343435923,
+      "is95_minutes": 139.4229652079544,
+      "is95_forecast_normalised": 54.39107302029256,
+      "negative_log_score_seconds": 16.300743863343186,
+      "covered68": 0.6325211181322741,
+      "covered95": 0.8967886374489958,
+      "width95_minutes": 8.52796757665256,
+      "delta_standardised_vs_M0": 0.0,
+      "fraction_planets_improved": 0.0,
+      "median_planet_delta_standardised": 0.0
+    },
+    "M1": {
+      "is95_standardised": 23.69436905644897,
+      "is95_minutes": 127.1243479196233,
+      "is95_forecast_normalised": 52.2126323318126,
+      "negative_log_score_seconds": 9.04715955790113,
+      "covered68": 0.8209233134401864,
+      "covered95": 0.9619479284905493,
+      "width95_minutes": 14.834787652071322,
+      "delta_standardised_vs_M0": -1.8334843779102603,
+      "fraction_planets_improved": 0.17972350230414746,
+      "median_planet_delta_standardised": 1.5467886054390438
+    },
+    "M2": {
+      "is95_standardised": 23.631041659787556,
+      "is95_minutes": 126.83943503126842,
+      "is95_forecast_normalised": 52.0746994906302,
+      "negative_log_score_seconds": 6.302480100141964,
+      "covered68": 0.6943708063478452,
+      "covered95": 0.961705386652082,
+      "width95_minutes": 14.614932385421701,
+      "delta_standardised_vs_M0": -1.8968117745716735,
+      "fraction_planets_improved": 0.18433179723502305,
+      "median_planet_delta_standardised": 1.3745904593860356
+    },
+    "M3": {
+      "is95_standardised": 23.66332332369093,
+      "is95_minutes": 126.34013824679857,
+      "is95_forecast_normalised": 52.25722186922836,
+      "negative_log_score_seconds": 6.421211099987664,
+      "covered68": 0.8052949004692838,
+      "covered95": 0.9644476049533593,
+      "width95_minutes": 15.413205229493382,
+      "delta_standardised_vs_M0": -1.8645301106683068,
+      "fraction_planets_improved": 0.17511520737327188,
+      "median_planet_delta_standardised": 1.6715711304053087
+    }
+  },
+  "gaussian_approximation_same_events": {
+    "M0": {
+      "is95_standardised": 25.586856385227502,
+      "is95_minutes": 139.42959053664362,
+      "is95_forecast_normalised": 54.9126365412272,
+      "negative_log_score_seconds": 16.355425286919786,
+      "covered68": 0.6318469449841997,
+      "covered95": 0.8939353173398593,
+      "width95_minutes": 8.449889867569812,
+      "delta_standardised_vs_M0": 0.0,
+      "fraction_planets_improved": 0.0,
+      "median_planet_delta_standardised": 0.0
+    },
+    "M1": {
+      "is95_standardised": 23.73356742594777,
+      "is95_minutes": 127.15265494315926,
+      "is95_forecast_normalised": 52.697727797896285,
+      "negative_log_score_seconds": 9.049929706640214,
+      "covered68": 0.821991495440529,
+      "covered95": 0.9610262695043742,
+      "width95_minutes": 14.799803039331577,
+      "delta_standardised_vs_M0": -1.8532889592797428,
+      "fraction_planets_improved": 0.18433179723502305,
+      "median_planet_delta_standardised": 1.5399203945569233
+    },
+    "M2": {
+      "is95_standardised": 23.664490721362604,
+      "is95_minutes": 126.83916577103051,
+      "is95_forecast_normalised": 52.544319590929746,
+      "negative_log_score_seconds": 6.3053664986852755,
+      "covered68": 0.6943911349564285,
+      "covered95": 0.960783727665907,
+      "width95_minutes": 14.554617201969453,
+      "delta_standardised_vs_M0": -1.9223656638648978,
+      "fraction_planets_improved": 0.1889400921658986,
+      "median_planet_delta_standardised": 1.3566485145911973
+    },
+    "M3": {
+      "is95_standardised": 23.701080626191672,
+      "is95_minutes": 126.3582521795582,
+      "is95_forecast_normalised": 52.737158494410885,
+      "negative_log_score_seconds": 6.423949860015878,
+      "covered68": 0.8067058946535087,
+      "covered95": 0.9635259459671843,
+      "width95_minutes": 15.372916369963411,
+      "delta_standardised_vs_M0": -1.885775759035836,
+      "fraction_planets_improved": 0.18433179723502305,
+      "median_planet_delta_standardised": 1.648713230643063
+    }
+  },
+  "qualification": "Fixed development parameters; Gaussian visit likelihood used for original fitting; no bootstrap or rule qualification from this replay. Epoch identity remains unresolved.",
+  "protected_photometry_accessed": false
+}

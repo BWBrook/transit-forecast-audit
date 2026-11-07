@@ -5,6 +5,13 @@ frozen, and no protected outcome has been opened.** Decisions D046–D050 and cl
 C022–C027 index this evidence. The machine-readable entry point is
 `results/sprint2/handoff.json`.
 
+**Review correction, 7 November 2026:** this is the preserved sprint-2 handoff
+account, whose replication-failure interpretation is superseded by C028 and
+[the independent review](sprint2_review.md). Product selection after success and
+reversed asymmetric coverage caused that verdict. Corrected t015v3 SPOC
+replication passes; end-to-end readiness remains unresolved. Use the review
+for current claims and the original result tables for historical evidence.
+
 ## Decision
 
 **The outcome-measurement pipeline is not ready**, under the criteria fixed

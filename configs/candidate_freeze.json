@@ -1,5 +1,5 @@
 {
-  "status": "candidate, not frozen; freeze follows the reciprocal reviews and reconciliation",
+  "status": "candidate after Codex review; conditional SPOC calibration passes, end-to-end and amended implementation unqualified; not frozen",
   "protected_outcomes_accessed": false,
   "question": "How well do issued ExoClock DRD ephemerides predict later independent TESS mid-times, and does a population calibration learned from the previous release improve the predictive distribution?",
   "forecast_release": "DRD",
@@ -7,42 +7,76 @@
   "availability_basis": "OSF public-node and exact-file logs: DRD public 2025-11-18 09:43:24 UTC (D043); first whole UTC day",
   "journal_anchor_sensitivity_utc": "2026-02-12T00:00:00Z",
   "roster": "results/sprint2/freeze_candidate/roster.csv",
-  "event_manifest": "results/sprint2/freeze_candidate/events_drd.csv",
+  "event_manifest": "results/sprint2_review/freeze_candidate/events_drd.csv",
   "cohort": {
-    "core": "single DRD planet per host, Tmag < 13.5, P <= 12 d",
-    "extension": "P > 12 d or a host with several DRD planets",
-    "exclusions": ["DRD origin-TTV flag", "no covariance reconstruction", "no public eligible product"],
-    "planets": 184, "hosts": 175, "core": 156, "extension": 28, "opportunities": 3399
+    "core": 156,
+    "extension": 28,
+    "exclusions": [
+      "DRD origin-TTV flag",
+      "no covariance reconstruction",
+      "no public eligible product"
+    ],
+    "planets": 184,
+    "hosts": 175,
+    "opportunities": 3399
   },
   "forecasts": {
     "M0": "issued DRD linear ephemeris; Gaussian with C2 reconstructed T0-P correlation (not an issued covariance)",
     "M1": "M0 forecast SD x b",
     "M2": "M0 forecast variance x latent lognormal multiplier exp(s z), median 1",
     "M3": "M0 forecast variance x b^2 x latent lognormal multiplier exp(s z)",
-    "covariance_tiers": {"C2_candidate": "|P refit - published| <= 3 sigma_P", "C3_source_fit_mismatch": "otherwise; flagged, retained, sensitivity without C3"},
-    "covariance_sensitivities": ["zero", "rho_minus1", "rho_plus1"],
+    "covariance_tiers": {
+      "C2_candidate": "|P refit - published| <= 3 sigma_P",
+      "C3_source_fit_mismatch": "otherwise; flagged, retained, sensitivity without C3"
+    },
+    "covariance_sensitivities": [
+      "zero",
+      "rho_minus1",
+      "rho_plus1"
+    ],
     "parameters": "results/sprint2/forecasts/candidate_parameters_t015v3.json",
     "parameter_rule": "release transfer: fit M1-M3 on DRC forecasts against t015v3 outcomes after DRC issue (2022-09-28 to 2024-01-03), the full development record; no regularisation prior",
     "command": ".venv/bin/python scripts/sprint2_freeze_package.py forecasts --parameters results/sprint2/forecasts/candidate_parameters_t015v3.json"
   },
   "outcomes": {
-    "rule": "t015v3 (candidate; NOT qualified: failed prespecified replication, D049; t015v3c failed confirmation, D048)",
+    "rule": "frozen t015v3 SPOC conditional replication passes after correcting analysis (C028); amended integration handling and end-to-end identification not qualified",
     "design": "docs/sprint2_outcome_design.md (rule frozen at 2c39f0a)",
     "products": "SPOC 120-s PDCSAP where it exists for the sector, otherwise TESS-SPOC 200-s PDCSAP; paired products never both scored",
     "identification": "BLS within the issued DRD period +/-0.5%, epoch blind, depth SNR >= 7, other DRD planets masked",
     "error_convention": "t015v3_beta_chi: sigma = beta * sqrt(max(chi2_nu, 1))",
     "failures": "every attempted event retained with status; scoring conditional on timed; recovery reported separately and never imputed",
-    "qualified_population": "none; exploratory >=4-transit scope awaits a prespecified test (S2-02)"
+    "qualified_population": "none for end-to-end evaluation; frozen single-DRD-planet SPOC conditional calibration passes; FFI and multi-planet extension not qualified",
+    "transit_count_scope": "No restriction adopted; original successful-injection count explanation was partly a product-selection artifact"
   },
   "scores": {
     "primary": "planet-balanced IS95 divided by the common M0 predictive SD (forecast plus outcome error); M2 minus M0",
-    "secondary": ["raw IS95 minutes", "IS95 / forecast-only SD", "negative log score", "68% and 95% coverage", "95% width"],
+    "secondary": [
+      "raw IS95 minutes",
+      "IS95 / forecast-only SD",
+      "negative log score",
+      "68% and 95% coverage",
+      "95% width"
+    ],
     "decision_interval": "95% host-cluster percentile bootstrap of the planet-balanced paired difference, B = 10000, parameters fixed",
     "parameter_uncertainty": "re-score with the 400 development host-refit parameter sets; reported, not part of the decision",
     "decision": "improves if the interval is below zero, worsens if above, otherwise inconclusive"
   },
-  "strata": ["operational lead time", "Tmag", "covariance tier", "core vs extension", "product type"],
-  "sensitivities": ["covariance settings", "t015v3c Tmag multiplier (failed confirmation)", "journal availability anchor", "core only", "C2 only", "outcome sigma x 1/1.1 and x 1.1"],
+  "strata": [
+    "operational lead time",
+    "Tmag",
+    "covariance tier",
+    "core vs extension",
+    "product type"
+  ],
+  "sensitivities": [
+    "covariance settings",
+    "t015v3c Tmag multiplier (failed confirmation)",
+    "journal availability anchor",
+    "core only",
+    "C2 only",
+    "outcome sigma x 1/1.1 and x 1.1"
+  ],
   "amendments": "any change after freeze is dated and justified in coordination/decisions.md; the frozen analysis is reported first and in full",
-  "seed": 20261107
+  "seed": 20261107,
+  "time_boundary_qualification": "Five of 3399 opportunities lie within ten minutes of unconverted numeric metadata boundaries and are unresolved; a safety margin is not a validated astronomical conversion"
 }

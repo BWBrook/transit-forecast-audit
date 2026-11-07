@@ -1,0 +1,14 @@
+{
+  "archive_filename": "transit-sprint2-review-bulk-20261107.tar.gz",
+  "archive_sha256": "3f6f4eea12a217b131c4567c52d6b1b8a94ec0a4017c24a3b179d92ce408785e",
+  "archive_bytes": 15455389,
+  "file_count": 424,
+  "manifest_path": "results/sprint2_review/bulk_manifest.csv",
+  "manifest_sha256": "d975ab8aec5bedc3fc89e1b737a35a849bb0dc823a7558d8da7e5970bd2cf46d",
+  "contents": "Derived outcome tables and likelihood grids, old and guarded scoring interfaces, candidate event boundary annotations and brief renders; no photometry.",
+  "remote_sha256_verified": true,
+  "archive_member_sha256_verified": true,
+  "project_relative_archive_key": "sprint2-review-20261107T0657Z/transit-sprint2-review-bulk-20261107.tar.gz",
+  "storage_class": "project shared storage",
+  "restore": "Extract at repository root and verify each manifest member SHA256 before running replay."
+}

@@ -35,9 +35,16 @@ OUT = ROOT / "results" / "sprint2" / "freeze_candidate"
 INVENTORY = ROOT / "results" / "sprint1" / "inventory" / "planet_sector_product_inventory.csv"
 STRICT_A_START_JD = 2460998.5  # 2025-11-19 00:00 UTC, D043
 MAX_BTJD = 3313.5 - 0.01
+BOUNDARY_MARGIN_DAYS = 10 / 1440
+
+
+def boundary_status(predicted_bjd, lower_metadata_jd, upper_metadata_jd):
+    margin = min(predicted_bjd-lower_metadata_jd, upper_metadata_jd-predicted_bjd)
+    return "unresolved_time_conversion" if margin < BOUNDARY_MARGIN_DAYS else "metadata_interior_only"
 
 
 def roster(args):
+    output = Path(getattr(args, "output", OUT))
     eph, _, _ = load()
     drd = eph["DRD"]
     rows = [r for r in csv.DictReader(INVENTORY.open())
@@ -52,10 +59,13 @@ def roster(args):
         hi = min(float(r["product_t_max_mjd"]) + 2400000.5, jd(r["conservative_end_utc"]))
         n0, n1 = int(np.ceil((lo - e.t0_bjd_tdb) / e.period_days)), int(np.floor((hi - e.t0_bjd_tdb) / e.period_days))
         for n in range(n0, n1 + 1):
+            predicted = e.t0_bjd_tdb + n * e.period_days
             events.append({"event_id": f"{p}|S{r['sector']}|DRD{n}", "observation_id": f"{p}|S{r['sector']}|DRD{n}",
                            "planet": p, "host": r["host"], "cohort": r["cohort"], "sector": r["sector"],
                            "product_obs_id": r["product_obs_id"], "forecast_epoch": n,
-                           "drd_predicted_bjd_tdb": round(e.t0_bjd_tdb + n * e.period_days, 6),
+                           "drd_predicted_bjd_tdb": round(predicted, 6),
+                           "time_boundary_status": boundary_status(predicted, lo, hi),
+                           "eligibility_status": "metadata_opportunity_pending_outcome_and_time_qualification",
                            "epoch_basis": "DRD ephemeris inside product interval, sector interior (1-day margins) and strict-A start"})
         d = per_planet[p]
         d.update({"planet": p, "host": r["host"], "tic": r["tic"], "tmag": r["tmag"], "cohort": r["cohort"],
@@ -63,19 +73,22 @@ def roster(args):
         d["opps_inventory"] += int(r["strict_a_opportunity_count"])
         d["opps_manifest"] += max(n1 - n0 + 1, 0)
         d["sectors"].add(r["sector"])
-    OUT.mkdir(parents=True, exist_ok=True)
+    output.mkdir(parents=True, exist_ok=True)
     ro = [{**{k: v for k, v in d.items() if k != "sectors"}, "sectors": " ".join(sorted(d["sectors"], key=int))}
           for d in per_planet.values()]
     ro.sort(key=lambda r: r["planet"])
-    write(OUT / "roster.csv", ro)
-    write(OUT / "events_drd.csv", events)
+    write(output / "roster.csv", ro)
+    write(output / "events_drd.csv", events)
     summary = {"planets": len(ro), "hosts": len({r["host"] for r in ro}),
                "core": sum(r["cohort"] == "core" for r in ro), "extension": sum(r["cohort"] == "extension" for r in ro),
                "opportunities_inventory": sum(r["opps_inventory"] for r in ro), "events_manifest": len(events),
                "inventory_sha256": sha(INVENTORY), "strict_a_start_jd": STRICT_A_START_JD,
+               "unresolved_time_boundary_events": sum(e["time_boundary_status"] == "unresolved_time_conversion" for e in events),
+               "boundary_margin_minutes": 10,
                "note": "Same window as the sprint-1 inventory: product MJD bounds and official sector dates less one day, "
-                       "no UTC-BJD conversion (<= ~9 min)."}
-    (OUT / "roster_summary.json").write_text(json.dumps(summary, indent=1) + "\n")
+                       "no UTC-BJD conversion. Events within ten minutes of a numeric boundary are unresolved; "
+                       "this screening margin is not an astronomical time conversion or eligibility certification."}
+    (output / "roster_summary.json").write_text(json.dumps(summary, indent=1) + "\n")
     print(summary)
 
 
@@ -156,7 +169,9 @@ def sha(p):
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__)
     sub = ap.add_subparsers(dest="cmd", required=True)
-    sub.add_parser("roster").set_defaults(func=roster)
+    p = sub.add_parser("roster")
+    p.add_argument("--output", default=str(OUT))
+    p.set_defaults(func=roster)
     p = sub.add_parser("forecasts")
     p.add_argument("--parameters", required=True)
     p.set_defaults(func=forecasts)

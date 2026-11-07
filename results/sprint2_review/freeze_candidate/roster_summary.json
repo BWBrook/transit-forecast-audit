@@ -1,0 +1,13 @@
+{
+ "planets": 184,
+ "hosts": 175,
+ "core": 156,
+ "extension": 28,
+ "opportunities_inventory": 3399,
+ "events_manifest": 3399,
+ "inventory_sha256": "26d6d431e8995d2ad4c6c4a972430ee0d346aeab8d8f210660ede3f2ace5c80f",
+ "strict_a_start_jd": 2460998.5,
+ "unresolved_time_boundary_events": 5,
+ "boundary_margin_minutes": 10,
+ "note": "Same window as the sprint-1 inventory: product MJD bounds and official sector dates less one day, no UTC-BJD conversion. Events within ten minutes of a numeric boundary are unresolved; this screening margin is not an astronomical time conversion or eligibility certification."
+}

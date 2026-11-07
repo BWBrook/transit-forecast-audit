@@ -1,0 +1,96 @@
+{
+  "assumptions": "Independent Gaussian forecast and outcome errors, additive outcome mean delta*sigma_y; issued SD held fixed.",
+  "formula": "Phi((q*sqrt(1+r^2)-delta*r)/sqrt(1+k^2*r^2))-Phi((-q*sqrt(1+r^2)-delta*r)/sqrt(1+k^2*r^2))",
+  "scenarios": [
+    {
+      "measurement_scale_k": 1.1,
+      "measurement_mean_shift_sigma_y": 0,
+      "by_sigma_y_over_sigma_f": {
+        "1": {
+          "coverage": 0.937751227622238,
+          "standardised_expected_IS95": 4.938780332116282
+        },
+        "2.6": {
+          "coverage": 0.9284626148882049,
+          "standardised_expected_IS95": 5.155654206724534
+        },
+        "inf": {
+          "coverage": 0.9252157725749481,
+          "standardised_expected_IS95": 5.234936558816939
+        }
+      }
+    },
+    {
+      "measurement_scale_k": 0.9090909090909091,
+      "measurement_mean_shift_sigma_y": 0,
+      "by_sigma_y_over_sigma_f": {
+        "1": {
+          "coverage": 0.9597302830831023,
+          "standardised_expected_IS95": 4.48557449186128
+        },
+        "2.6": {
+          "coverage": 0.9666104217590732,
+          "standardised_expected_IS95": 4.36183017463852
+        },
+        "inf": {
+          "coverage": 0.9689132412245145,
+          "standardised_expected_IS95": 4.322462125661576
+        }
+      }
+    },
+    {
+      "measurement_scale_k": 1,
+      "measurement_mean_shift_sigma_y": 0.15,
+      "by_sigma_y_over_sigma_f": {
+        "1": {
+          "coverage": 0.9487102972036316,
+          "standardised_expected_IS95": 4.701975877340849
+        },
+        "2.6": {
+          "coverage": 0.94775169120986,
+          "standardised_expected_IS95": 4.721640133699331
+        },
+        "inf": {
+          "coverage": 0.9474185846726377,
+          "standardised_expected_IS95": 4.728485997458813
+        }
+      }
+    },
+    {
+      "measurement_scale_k": 1.1,
+      "measurement_mean_shift_sigma_y": 0.15,
+      "by_sigma_y_over_sigma_f": {
+        "1": {
+          "coverage": 0.9364191058953174,
+          "standardised_expected_IS95": 4.968872559284581
+        },
+        "2.6": {
+          "coverage": 0.9261131587373279,
+          "standardised_expected_IS95": 5.212531494337853
+        },
+        "inf": {
+          "coverage": 0.9225125164008512,
+          "standardised_expected_IS95": 5.301898537330917
+        }
+      }
+    },
+    {
+      "measurement_scale_k": 1.15,
+      "measurement_mean_shift_sigma_y": 0.15,
+      "by_sigma_y_over_sigma_f": {
+        "1": {
+          "coverage": 0.9297133070228798,
+          "standardised_expected_IS95": 5.12549031093534
+        },
+        "2.6": {
+          "coverage": 0.9143207251229346,
+          "standardised_expected_IS95": 5.51373764996935
+        },
+        "inf": {
+          "coverage": 0.9089713278957693,
+          "standardised_expected_IS95": 5.6580491094518255
+        }
+      }
+    }
+  ]
+}

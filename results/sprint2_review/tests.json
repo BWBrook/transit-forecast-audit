@@ -1,0 +1,7 @@
+{
+  "command": ".venv/bin/python -m unittest discover -s tests -v",
+  "tests": 85,
+  "passed": true,
+  "log_sha256": "a250a09bbe9c1cc466010d20fc7dbf97fead700a5f8323925020a59b7543fa57",
+  "known_scientific_limitation": "DRD Table5 retains one boundary mismatch; not treated as a scientific pass."
+}

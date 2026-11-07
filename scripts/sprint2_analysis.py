@@ -151,21 +151,12 @@ def simulate(scenario, rng, counts, H=120):
 
 def check(args):
     rng = np.random.default_rng(20261107)
-    led = OUT / "dev" / "ledger.csv"
-    if led.exists():
-        rows = [r for r in csv.DictReader(led.open()) if r["status"] == "timed" and r["mode"] == "remove"]
-        per = defaultdict(int)
-        for r in rows:
-            per[(r["host"], r["product"])] += 1
-        counts = np.array(list(per.values()))
-        source = "sprint2 dev ledger, timed per host-product"
-    else:
-        rows = [r for r in csv.DictReader((ROOT / "results/t015_validation/injections.csv").open()) if r["status"] == "timed"]
-        per = defaultdict(int)
-        for r in rows:
-            per[(r["host"], r["product"], r["flux"])] += 1
-        counts = np.array(list(per.values()))
-        source = "D039 injections, timed per host-product-flux"
+    rows = [r for r in load("dev")[0] if r["status"] == "timed" and r["mode"] == "remove"]
+    per = defaultdict(int)
+    for r in rows:
+        per[(r["host"], r["product"])] += 1
+    counts = np.array(list(per.values()))
+    source = "sprint2 dev ledger, timed per host-product"
     out = {"host_event_counts_source": source, "counts_min_median_max": [int(counts.min()), float(np.median(counts)),
                                                                        int(counts.max())],
            "hosts": 120, "replicates": args.reps, "bootstrap": args.boot, "scenarios": {}}
@@ -198,8 +189,9 @@ def load(sample):
     def rd(n):
         path = d / n
         if not path.exists() and (d / (n + ".gz")).exists():
-            return list(csv.DictReader(gzip.open(d / (n + ".gz"), "rt")))
-        return list(csv.DictReader(path.open()))
+            path = d / (n + ".gz")
+        with (gzip.open(path, "rt") if path.suffix == ".gz" else path.open()) as f:
+            return list(csv.DictReader(f))
     return rd("ledger.csv"), rd("runs.csv"), rd("products.csv"), rd("real_transits.csv")
 
 

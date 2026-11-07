@@ -7,3 +7,4 @@
 *.csv text eol=lf
 *.bib text eol=lf
 results/sprint1/** -text whitespace=cr-at-eol
+results/sprint2_review/** -text whitespace=cr-at-eol

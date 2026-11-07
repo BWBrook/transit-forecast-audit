@@ -1,0 +1,38 @@
+event_id,reason,original_status
+GJ1132b|S63|SPOC_120|D1213,unresolved timing integration: mass_outside_fine,timed
+GJ1252b|S67|SPOC_120|D1237,unresolved timing integration: mass_outside_fine,timed
+GJ1252b|S67|SPOC_120|D1243,unresolved timing integration: mass_outside_fine,timed
+GJ1252b|S67|SPOC_120|D1246,unresolved timing integration: mass_outside_fine,timed
+GJ1252b|S67|SPOC_120|D1247,Likelihood grid has unresolved boundary mass,timed
+GJ1252b|S67|SPOC_120|D1251,unresolved timing integration: mass_outside_fine,timed
+GJ1252b|S67|SPOC_120|D1260,unresolved timing integration: mass_outside_fine,timed
+GJ1252b|S67|SPOC_120|D1261,unresolved timing integration: mass_outside_fine,timed
+GJ1252b|S67|SPOC_120|D1262,unresolved timing integration: mass_outside_fine,timed
+GJ1252b|S67|SPOC_120|D1267,unresolved timing integration: mass_outside_fine,timed
+GJ1252b|S67|SPOC_120|D1269,unresolved timing integration: mass_outside_fine,timed
+GJ1252b|S67|SPOC_120|D1271,Likelihood grid has unresolved boundary mass,timed
+GJ1252b|S67|SPOC_120|D1277,Likelihood grid has unresolved boundary mass,timed
+GJ9827b|S70|SPOC_120|D1946,unresolved timing integration: mass_outside_fine,timed
+GJ9827b|S70|SPOC_120|D1948,unresolved timing integration: mass_outside_fine,timed
+GJ9827b|S70|SPOC_120|D1963,unresolved timing integration: mass_outside_fine,timed
+HD110113b|S64|SPOC_120|D357,unresolved timing integration: mass_outside_fine,timed
+L98-59b|S62|SPOC_120|D371,Likelihood grid has unresolved boundary mass,timed
+L98-59b|S63|SPOC_120|D380,unresolved timing integration: mass_outside_fine,timed
+L98-59b|S65|SPOC_120|D405,unresolved timing integration: mass_outside_fine,timed
+L98-59b|S69|SPOC_120|D453,unresolved timing integration: mass_outside_fine,timed
+L98-59b|S69|SPOC_120|D457,Likelihood grid has unresolved boundary mass,timed
+L98-59c|S69|SPOC_120|D256,unresolved timing integration: mass_outside_fine,timed
+LHS3844b|S67|SPOC_120|D2880,unresolved timing integration: mass_outside_fine,timed
+LHS3844b|S67|SPOC_120|D2881,unresolved timing integration: mass_outside_fine,timed
+LHS3844b|S67|SPOC_120|D2886,unresolved timing integration: mass_outside_fine,timed
+LHS3844b|S67|SPOC_120|D2911,unresolved timing integration: mass_outside_fine,timed
+LHS3844b|S67|SPOC_120|D2918,unresolved timing integration: mass_outside_fine,timed
+LHS3844b|S67|SPOC_120|D2923,unresolved timing integration: mass_outside_fine,timed
+LHS3844b|S67|SPOC_120|D2927,unresolved timing integration: mass_outside_fine,timed
+LHS3844b|S68|SPOC_120|D2944,unresolved timing integration: mass_outside_fine,timed
+LHS3844b|S68|SPOC_120|D2961,unresolved timing integration: mass_outside_fine,timed
+LHS3844b|S68|SPOC_120|D2971,unresolved timing integration: mass_outside_fine,timed
+LHS3844b|S68|SPOC_120|D2978,unresolved timing integration: mass_outside_fine,timed
+LHS3844b|S68|SPOC_120|D2990,unresolved timing integration: mass_outside_fine,timed
+TOI-125b|S69|SPOC_120|D262,unresolved timing integration: mass_outside_fine,timed
+piMenc|S66|SPOC_120|D114,unresolved timing integration: mass_outside_fine,timed

@@ -1,0 +1,367 @@
+{
+  "date": "2026-11-07",
+  "status": "Codex sprint2 review/fixes complete; Claude counter-review and reconciliation next",
+  "reviewed_original_handoff_commit": "d54142e",
+  "frozen_rule_commit": "2c39f0a",
+  "replication_design_commit": "9375b3c",
+  "late_receipt_commit": "07b5cf4",
+  "history_note": "Concurrent d9c1570 includes initial tracked review fixes; history retained. Corrected numerical analysis source matches that commit; final loader/support changes have new hashes.",
+  "protocol_frozen": false,
+  "photometry_opened_by_review": false,
+  "new_samples": 0,
+  "primary_replication_verdict": "conditional frozen SPOC criteria pass after two analysis repairs",
+  "replication": {
+    "hosts": 100,
+    "events": 1374,
+    "host_events_min_median_max": [
+      3,
+      12.0,
+      55
+    ],
+    "z_rms": 1.0144,
+    "z_rms_ci90": [
+      0.9787,
+      1.0509
+    ],
+    "z_rms_ci95": [
+      0.9726,
+      1.0584
+    ],
+    "cover95": 0.9502,
+    "cover95_ci90": [
+      0.9382,
+      0.9611
+    ],
+    "cover95_ci95": [
+      0.9358,
+      0.9632
+    ],
+    "median_z": 0.0505,
+    "median_z_ci90": [
+      -0.0107,
+      0.098
+    ],
+    "median_z_ci95": [
+      -0.0223,
+      0.1242
+    ],
+    "z_rms_tmag9": 1.0491,
+    "z_rms_tmag9_ci90": [
+      0.9666,
+      1.1252
+    ],
+    "z_rms_tmag9_ci95": [
+      0.9519,
+      1.1378
+    ],
+    "z_rms_tmag13.5": 0.9686,
+    "z_rms_tmag13.5_ci90": [
+      0.8611,
+      1.0697
+    ],
+    "z_rms_tmag13.5_ci95": [
+      0.8394,
+      1.0863
+    ],
+    "mse_slope_per_mag": -0.0361,
+    "mse_slope_per_mag_ci90": [
+      -0.1088,
+      0.0395
+    ],
+    "mse_slope_per_mag_ci95": [
+      -0.1228,
+      0.0523
+    ],
+    "mean_z": 0.069,
+    "mean_z_ci90": [
+      0.0116,
+      0.1239
+    ],
+    "mean_z_ci95": [
+      -0.0004,
+      0.1351
+    ],
+    "event_weighted": {
+      "z_rms": 1.0098,
+      "cover95": 0.952,
+      "median_z": 0.0699
+    },
+    "stratum": {
+      "A_lt10": {
+        "hosts": 26,
+        "events": 334,
+        "z_rms": 1.0615,
+        "z_rms_ci90": [
+          0.9896,
+          1.1344
+        ],
+        "cover95": 0.9262,
+        "cover95_ci90": [
+          0.8968,
+          0.9523
+        ],
+        "mean_z": 0.1088,
+        "mean_z_ci90": [
+          -0.0218,
+          0.2262
+        ],
+        "median_z": 0.0615
+      },
+      "B_10_11": {
+        "hosts": 23,
+        "events": 279,
+        "z_rms": 0.961,
+        "z_rms_ci90": [
+          0.8938,
+          1.0229
+        ],
+        "cover95": 0.9487,
+        "cover95_ci90": [
+          0.9238,
+          0.9706
+        ],
+        "mean_z": 0.021,
+        "mean_z_ci90": [
+          -0.0944,
+          0.1323
+        ],
+        "median_z": 0.0576
+      },
+      "C_11_12": {
+        "hosts": 25,
+        "events": 310,
+        "z_rms": 1.0102,
+        "z_rms_ci90": [
+          0.949,
+          1.071
+        ],
+        "cover95": 0.9714,
+        "cover95_ci90": [
+          0.9547,
+          0.9857
+        ],
+        "mean_z": 0.0403,
+        "mean_z_ci90": [
+          -0.0623,
+          0.1461
+        ],
+        "median_z": -0.0305
+      },
+      "D_12_13.5": {
+        "hosts": 26,
+        "events": 451,
+        "z_rms": 1.0162,
+        "z_rms_ci90": [
+          0.9396,
+          1.1006
+        ],
+        "cover95": 0.9552,
+        "cover95_ci90": [
+          0.9323,
+          0.975
+        ],
+        "mean_z": 0.0994,
+        "mean_z_ci90": [
+          -0.007,
+          0.2143
+        ],
+        "median_z": 0.0523
+      }
+    },
+    "recovery": {
+      "hosts": 115,
+      "observable_truths": 1443,
+      "status_counts": {
+        "timed": 1373,
+        "edge": 24,
+        "product_id_failed": 44,
+        "run_id_failed": 1,
+        "not_recovered": 1
+      },
+      "equal_host_recovery": 0.8587,
+      "ci90": [
+        0.8043,
+        0.9092
+      ],
+      "event_pooled_recovery": 0.9515
+    },
+    "recovery_by_stratum": {
+      "A_lt10": {
+        "hosts": 28,
+        "observable_truths": 348,
+        "status_counts": {
+          "timed": 334,
+          "edge": 8,
+          "product_id_failed": 6
+        },
+        "equal_host_recovery": 0.915,
+        "ci90": [
+          0.8214,
+          0.9864
+        ],
+        "event_pooled_recovery": 0.9598
+      },
+      "B_10_11": {
+        "hosts": 29,
+        "observable_truths": 298,
+        "status_counts": {
+          "timed": 279,
+          "product_id_failed": 19
+        },
+        "equal_host_recovery": 0.7931,
+        "ci90": [
+          0.6552,
+          0.8966
+        ],
+        "event_pooled_recovery": 0.9362
+      },
+      "C_11_12": {
+        "hosts": 30,
+        "observable_truths": 340,
+        "status_counts": {
+          "timed": 310,
+          "edge": 15,
+          "product_id_failed": 13,
+          "run_id_failed": 1,
+          "not_recovered": 1
+        },
+        "equal_host_recovery": 0.8075,
+        "ci90": [
+          0.6893,
+          0.912
+        ],
+        "event_pooled_recovery": 0.9118
+      },
+      "D_12_13.5": {
+        "hosts": 28,
+        "observable_truths": 457,
+        "status_counts": {
+          "edge": 1,
+          "timed": 450,
+          "product_id_failed": 6
+        },
+        "equal_host_recovery": 0.9253,
+        "ci90": [
+          0.8474,
+          0.9968
+        ],
+        "event_pooled_recovery": 0.9847
+      }
+    },
+    "noise_control": {
+      "host_products": 99,
+      "beta_ratio": 1.0,
+      "resid_rms_ratio": 0.9998,
+      "resid_rms_ratio_iqr": [
+        0.9802,
+        1.0177
+      ]
+    },
+    "verdict": {
+      "checks": {
+        "min_hosts": true,
+        "z_rms": true,
+        "cover95": true,
+        "mean_z": true,
+        "tmag9": true,
+        "tmag13.5": true,
+        "noise_beta_ratio": true,
+        "noise_resid_rms_ratio": true
+      },
+      "pass": true
+    }
+  },
+  "brightness_corrected_confirmation_pass": false,
+  "end_to_end_freeze_ready": false,
+  "certified_measurement_score_tolerance": null,
+  "transit_count_restriction_adopted": false,
+  "host_weighting": "equal-host, unchanged",
+  "amended_timing_implementation_qualified": false,
+  "replay": {
+    "attempted_events": 2777,
+    "timed_events": 2291
+  },
+  "open_items": [
+    {
+      "owner": "Claude counter-review",
+      "issue": "Validate corrected product selection, asymmetric containment and bounded conditional qualification."
+    },
+    {
+      "owner": "reconciliation",
+      "issue": "Full-support likelihood computation and separate qualification of the amended implementation."
+    },
+    {
+      "owner": "reconciliation",
+      "issue": "Product-level identification without forecast-residual exclusion; intended real-event denominator independent of recovery."
+    },
+    {
+      "owner": "reconciliation",
+      "issue": "FFI/multi-planet supported population, shared shape/lineage and exact time-boundary eligibility."
+    },
+    {
+      "owner": "Claude",
+      "issue": "Complete the agreed reciprocal review of sprint1, then reconcile. No further replication or protected access authorised by this handoff."
+    }
+  ],
+  "commands": [
+    ".venv/bin/python scripts/sprint2_analysis.py analyse --sample confirm --bootstrap 10000 --output results/sprint2_review/statistics/confirm_corrected_summary.json",
+    ".venv/bin/python scripts/sprint2_analysis.py analyse --sample confirm2 --bootstrap 10000 --output results/sprint2_review/statistics/confirm2_corrected_summary.json",
+    ".venv/bin/python scripts/review_sprint2_statistics.py --bootstrap 10000 --control-reps 600 --control-bootstrap 600",
+    ".venv/bin/python scripts/review_sprint2_timing.py",
+    ".venv/bin/python scripts/review_sprint2_provenance.py",
+    ".venv/bin/python scripts/review_sprint2_interface.py",
+    ".venv/bin/python scripts/sprint2_freeze_package.py roster --output results/sprint2_review/freeze_candidate",
+    "pandoc docs/brief.md --pdf-engine=pdflatex -V papersize:a4 -V geometry:margin=20mm -V fontsize=11pt -o docs/brief.pdf",
+    ".venv/bin/python -m unittest discover -s tests -v",
+    ".venv/bin/python scripts/sprint2_review_handoff.py"
+  ],
+  "source_and_product_sha256": {
+    "scripts/sprint1_outcome_adapter.py": "a5b62b99583a9bce4c11ea48163f111d708f4c5ebe9ed6290b327811e2e78401",
+    "scripts/sprint2_analysis.py": "3f7b5dd5675f14a1ae4e9cc51c2df15dbc793667e196fbe907d0506ea0d43814",
+    "scripts/sprint2_outcomes.py": "e5155a8fafe7f1fb23ecc5610e88269996f39c7d3dc8652a74bf34429b442878",
+    "scripts/sprint2_forecasts.py": "c489095b8ed6e2123f8c8b840cc947a6fb8bfa8372722ce9b249d3fa1c5c6f9a",
+    "scripts/sprint2_freeze_package.py": "a785395b5cc100076595f10632f94a8342a1e859975ce48c47a37e958af143cc",
+    "scripts/sprint2_figures.py": "41e3dfeb35caeb813af2f77f179ead8eb80caef4b75ce774447d72d5c2cfe63c",
+    "scripts/t015_timing_pipeline.py": "2e1a1f1d9b4992bf05502f23fe194abf08d79743ba747c7239b2b7e730c1617e",
+    "scripts/review_sprint2_statistics.py": "cad23feda3b1f12707ee492d4f44410aec9bcfdc2d88bc2822e59476fb637699",
+    "scripts/review_sprint2_timing.py": "1d990d769bb8a2c4f99bd64c7454e3d7d995610b0d80ea6192ce1cbd9ce907f6",
+    "scripts/review_sprint2_provenance.py": "8aed14b4df0289d3b1250526055e7af4eeee0f82531c5c3dcc3bcec6580673c8",
+    "scripts/review_sprint2_interface.py": "6b03ac682f6726bd466d1e493d7d823037fc59c6ac9b7c76490c563622bc2847",
+    "scripts/sprint2_review_handoff.py": "34409015c8f516464f03307310a34447fb2b32d8ab0960e02f3ade460cc528d7",
+    "configs/candidate_freeze.json": "553c640fb4bccb37582b5c53ff694c0d9a30eaa78d8091fdea77d76af83663db",
+    "docs/sprint2_review.md": "9ebb52aaba66afdf36294651efbc002c647c101e51c52e8db93b2a95c8bd5be1",
+    "manuscript/paper.md": "9448ee6a7967068989375e5db36fa2acf15165befd4c00364137439619f9abb9",
+    "docs/brief.md": "52e1c2d0b5fbe9dd3ed2e1a35d4af2239910a65555d272c826f3714b0530daa3",
+    "docs/brief.pdf": "09452bc660edd42586cbd40f24dde15be9dd9097d8ba8aedf2c37abd266fdbc6",
+    "docs/agent_guide.md": "3a46e7f5a7bfab89ab593be65f83f9124c0a1917a1da2398a21f73f60ffe8e8a"
+  },
+  "output_sha256": {
+    "results/sprint2_review/brief_render.json": "c5507912f6ee300531557b5ce5d47688c166dc79549800a156848b69c498af6c",
+    "results/sprint2_review/bulk_archive_receipt.json": "8c6a8991f969942b9445c457968d68bce4d409f2a91bd3198224e3e839513b8c",
+    "results/sprint2_review/bulk_manifest.csv": "d975ab8aec5bedc3fc89e1b737a35a849bb0dc823a7558d8da7e5970bd2cf46d",
+    "results/sprint2_review/figures/fig_timing_calibration.png": "b750c24f8d0a13c3b0f98ede929378a8ccb68915046b6099a46c835ec1f2730c",
+    "results/sprint2_review/freeze_candidate/events_drd.csv": "57b0ef728cb3421a18f3ff33ee90baa572227686f8ed5ca2d712a3eaf6d981f0",
+    "results/sprint2_review/freeze_candidate/roster.csv": "54492734189a942505747d9d32a343033642d84abe482dbe8ab8aeb7912382da",
+    "results/sprint2_review/freeze_candidate/roster_summary.json": "0c9df06bb589093a1234fceef0e508ad31b182528bfa92ba622ae459171440d0",
+    "results/sprint2_review/interface/score_receipt.json": "922aebb37f1da415dd7ec21bd5d606fb6b3237333ab88d94797d692c3d1f4324",
+    "results/sprint2_review/interface/summary.json": "1f43e86c17ea56211e7c3a93555a705c3360e2de81d1162060402940b1139bf5",
+    "results/sprint2_review/interface/support_failures.csv": "29e0bc763b20b84b68703337352680debd790221b119201bb749b8d83b933ad0",
+    "results/sprint2_review/provenance/audit.json": "b6c6bcb68d03ee5039d545ea0ae99936314d84f6943064662f0424d3635b07da",
+    "results/sprint2_review/provenance/handoff_hashes.csv": "2975edc48f4600c054e0818e90195e933ba8b6f1fba569eb36159488131be35a",
+    "results/sprint2_review/provenance/source_hashes.csv": "abbfd5847a97347de08efd41e22949940b6ed0c0f21d8bf9afcddf8d872141b7",
+    "results/sprint2_review/statistics/analytic_margins.json": "cc3be964b198abc4c4e743300f8efe6fb386595ba065257dda917d70a4bb07a1",
+    "results/sprint2_review/statistics/confirm2_corrected_summary.json": "1d60a9eae9f48a1b6659e66b1c41207f9f597e5888ba872d67ff1856c1152f01",
+    "results/sprint2_review/statistics/confirm_corrected_summary.json": "ab6f6331951863b307261c00dfde06e978a279b521e206a1424f2b48c487f444",
+    "results/sprint2_review/statistics/corrected_host_statistics.csv": "1aef7d9ea51eafabbbb23ffd0238cad1c29ddcf1610bc63b8e94402b0557286e",
+    "results/sprint2_review/statistics/independent_negative_controls.json": "739d2ac761d4fda3c5d84123eae7d89452af3407974af7bcdf34fd1af8496277",
+    "results/sprint2_review/statistics/independent_statistics.json": "a5ff4219ffa049f07f0843c547de1028f29a20fd4a68495a5bd128e478e92655",
+    "results/sprint2_review/statistics/input_hashes.json": "4f0454eec13e611b7cc0a30b59b2dba00377ab5db5eaee01c9b2ba90b97cf7c8",
+    "results/sprint2_review/tests.json": "e5a1381feed7db8c860c98b1ad62fb32525f8393d8463f6290f0ae024af7ee8a",
+    "results/sprint2_review/timing/audit.json": "ab1e63039b58ce9c16123835aabe3b0bdfdfc6781960aafe703aa68162964234"
+  },
+  "claims": [
+    "C028",
+    "C029",
+    "C030"
+  ]
+}

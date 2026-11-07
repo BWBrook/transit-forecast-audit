@@ -1,0 +1,10 @@
+{
+  "source": "docs/brief.md",
+  "source_sha256": "52e1c2d0b5fbe9dd3ed2e1a35d4af2239910a65555d272c826f3714b0530daa3",
+  "pdf": "docs/brief.pdf",
+  "pdf_sha256": "09452bc660edd42586cbd40f24dde15be9dd9097d8ba8aedf2c37abd266fdbc6",
+  "pages": 2,
+  "paper": "A4",
+  "visual_inspection": "Both pages rendered with pdftoppm and inspected; balanced page break, readable typography, no clipping.",
+  "command": "pandoc docs/brief.md --pdf-engine=pdflatex -V papersize:a4 -V geometry:margin=20mm -V fontsize=11pt -o docs/brief.pdf"
+}

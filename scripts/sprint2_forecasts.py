@@ -240,7 +240,10 @@ def interface(args):
         row = {**r, "forecast_epoch": int(np.rint((ref - e.t0_bjd_tdb) / e.period_days)),
                "epoch_basis": "t015v3 mid-time or window centre, nearest DRC epoch",
                "error_convention": conv_name, "tmag_multiplier": round(g, 6)}
-        if r["status"] == "timed" and r["posterior_grid_path"] and not grid_resolved(ROOT / r["posterior_grid_path"]):
+        integration_flags = set(r.get("flags", "").split(";")) & {"mass_outside_fine", "coarse_fine_shift"}
+        if r["status"] == "timed" and integration_flags:
+            row.update(status="integration_unresolved", failure_reason=";".join(sorted(integration_flags)))
+        elif r["status"] == "timed" and r["posterior_grid_path"] and not grid_resolved(ROOT / r["posterior_grid_path"]):
             row.update({"status": "likelihood_support_truncated",
                         "failure_reason": "posterior grid has >0.1% mass or density at the +/-60-min prior support (S2-05)"})
         if row["status"] == "timed":

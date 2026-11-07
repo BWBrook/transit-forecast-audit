@@ -24,6 +24,8 @@ results/*
 !results/t015_validation/
 !results/t015_corrected/
 !results/sprint1/
+!results/sprint2_review/
+results/sprint2_review/freeze_candidate/events_drd.csv
 !results/sprint2/
 !results/outcomes/
 results/sprint1/inventory/planet_sector_product_inventory.csv
