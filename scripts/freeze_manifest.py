@@ -45,7 +45,8 @@ ENVIRONMENT = ["pyproject.toml", "uv.lock", "scripts/final_measure.py.lock", "sc
 CONFIG = ["configs/candidate_freeze.json", "configs/sprint1.json"]
 LISTS = ["results/prefreeze/manifest_core_primary.csv", "results/prefreeze/manifest_extension_exploratory.csv",
          "results/prefreeze/manifest_boundary_excluded.csv", "results/prefreeze/manifest_summary.json",
-         "results/sprint2_review/freeze_candidate/events_drd.csv"]
+         "results/sprint2_review/freeze_candidate/events_drd.csv", "results/sprint2/freeze_candidate/roster.csv",
+         "results/sprint2/freeze_candidate/roster_summary.json", "results/sprint2/freeze_candidate/access_receipt.json"]
 PARAMETERS = ["results/prefreeze/candidate_models_core_matched.json", "results/prefreeze/candidate_parameters.json",
               "results/prefreeze/candidate_calibration_draws_core_matched.json.gz"]
 FORECASTS = ["results/prefreeze/forecasts_core_draft.csv.gz", "results/prefreeze/forecasts_extension_draft.csv.gz",

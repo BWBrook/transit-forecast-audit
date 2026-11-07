@@ -27,7 +27,7 @@ hash):
 | Code | 19 | acceptance, measurement, evaluation, the manifest tool, adapter, forecast core and variance components, forecast maker, candidate package, outcome and timing core, remeasure helpers, Table 5 loader, `transit_audit` modules |
 | Environment | 4 | `pyproject.toml`; `uv.lock`; uv locks for `final_measure.py` and `prefreeze_replay.py` |
 | Config | 2 | `candidate_freeze.json`, `sprint1.json` |
-| Event lists | 5 | core primary (3,103), extension exploratory (291), boundary exclusions (5), summary, source DRD event list |
+| Event lists | 8 | core primary (3,103), extension exploratory (291), boundary exclusions (5), summary, source DRD event list, roster and roster summary, header-only access receipt |
 | Parameters | 3 | frozen M0–M3 parameters, candidate fit record, calibration-only draws |
 | Forecasts | 3 | core and extension DRD forecasts, forecast receipt |
 | Calibration inputs | 10 | development outcomes, product identification, product table, covariance reconstruction, TTV flags, DRB/DRC/DRD OSF ephemeris and mid-time files |
