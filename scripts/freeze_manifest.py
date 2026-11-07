@@ -37,6 +37,7 @@ MANIFEST = ROOT / "results" / "freeze" / "freeze_manifest.json"
 CODE = ["scripts/acceptance.py", "scripts/final_measure.py", "scripts/final_evaluation.py",
         "scripts/freeze_manifest.py", "scripts/sprint1_outcome_adapter.py", "scripts/sprint1_forecast_core.py",
         "scripts/forecast_variance_components.py", "scripts/sprint1_forecasts.py", "scripts/prefreeze_package.py",
+        "scripts/review_measurement_diagnostic.py", "scripts/sealed_era_inventory.py",
         "scripts/sprint2_forecasts.py", "scripts/sprint2_outcomes.py", "scripts/sprint2_remeasure.py",
         "scripts/t015_timing_pipeline.py", "scripts/reproduce_table5.py", "src/transit_audit/__init__.py",
         "src/transit_audit/ephemeris.py", "src/transit_audit/exoclock.py", "src/transit_audit/provenance.py",
@@ -148,8 +149,9 @@ def checks(grids, recorded):
 
 def environment_observed():
     venv = subprocess.run(["uv", "pip", "freeze", "--python", str(ROOT / ".venv/bin/python")],
-                          capture_output=True, text=True).stdout.splitlines()
-    py = subprocess.run([str(ROOT / ".venv/bin/python"), "--version"], capture_output=True, text=True).stdout.strip()
+                          capture_output=True, text=True, check=True).stdout.splitlines()
+    py = subprocess.run([str(ROOT / ".venv/bin/python"), "--version"],
+                        capture_output=True, text=True, check=True).stdout.strip()
     return {"evaluation_python": py, "evaluation_venv_packages": [x for x in venv if not x.startswith("-e ")],
             "measurement_environment": "uv run with scripts/final_measure.py.lock"}
 
@@ -166,6 +168,9 @@ def build(_args):
     if not all(body["binding_checks"].values()):
         raise SystemExit(f"binding checks fail: {body['binding_checks']}")
     head = subprocess.run(["git", "-C", str(ROOT), "rev-parse", "HEAD"], capture_output=True, text=True).stdout.strip()
+    bad = source_commit_mismatches(body["files"], head)
+    if bad:
+        raise SystemExit(f"commit bound files before building the manifest: {bad}")
     doc = {"kind": "hash-bound freeze manifest (proposal; binding only once Barry's access record cites its SHA-256)",
            "question": json.loads((ROOT / "configs/candidate_freeze.json").read_text())["question"],
            "built_from_commit": head, "protected_outcomes_accessed": False,
@@ -189,6 +194,18 @@ def build(_args):
     print("freeze manifest", sha(MANIFEST), "grids", body["likelihood_grids"]["count"])
 
 
+def source_commit_mismatches(groups, revision):
+    bad = []
+    for records in groups.values():
+        for rel, record in records.items():
+            if not record["in_repository"]:
+                continue
+            blob = subprocess.run(["git", "-C", str(ROOT), "show", f"{revision}:{rel}"], capture_output=True)
+            if blob.returncode or hashlib.sha256(blob.stdout).hexdigest() != record["sha256"]:
+                bad.append(rel)
+    return bad
+
+
 def verify(_args=None, quiet=False):
     doc = json.loads(MANIFEST.read_text())
     bad = []
@@ -204,8 +221,11 @@ def verify(_args=None, quiet=False):
         bad.append("likelihood grids changed")
     chk = checks(grids, recorded)
     bad += [f"binding check failed: {k}" for k, v in chk.items() if not v]
-    pkgs = environment_observed()["evaluation_venv_packages"]
-    if pkgs != doc["environment_observed"]["evaluation_venv_packages"]:
+    bad += [f"source commit differs: {p}" for p in source_commit_mismatches(doc["files"], doc["built_from_commit"])]
+    env = environment_observed()
+    if env["evaluation_python"] != doc["environment_observed"]["evaluation_python"]:
+        bad.append("evaluation Python differs from the frozen version")
+    if env["evaluation_venv_packages"] != doc["environment_observed"]["evaluation_venv_packages"]:
         bad.append("evaluation .venv packages differ from the frozen list")
     if not quiet:
         print(json.dumps({"manifest_sha256": sha(MANIFEST), "mismatches": bad}, indent=1))
