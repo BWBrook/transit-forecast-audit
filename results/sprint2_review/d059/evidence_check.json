@@ -1,0 +1,257 @@
+{
+  "protected_data_accessed": false,
+  "photometry_or_headers_opened": false,
+  "bootstrap": 10000,
+  "seed": 20261107,
+  "support_selection_cases": {
+    "confirm": {
+      "certain_events": 1341,
+      "unknown_support_events": 137,
+      "cases": {
+        "all_missing_support_fail": {
+          "hosts": 102,
+          "events": 1341,
+          "z_rms": 0.9848,
+          "z_rms_ci90": [
+            0.9463,
+            1.0233
+          ],
+          "cover95": 0.9535,
+          "cover95_ci90": [
+            0.9416,
+            0.965
+          ],
+          "mean_z": 0.0114,
+          "mean_z_ci90": [
+            -0.0513,
+            0.0745
+          ],
+          "verdict": {
+            "checks": {
+              "min_hosts": true,
+              "z_rms": true,
+              "cover95": true,
+              "mean_z": true,
+              "tmag9": true,
+              "tmag13.5": true,
+              "noise_beta_ratio": true,
+              "noise_resid_rms_ratio": true
+            },
+            "pass": true
+          },
+          "optional_accepted": 0
+        },
+        "all_missing_support_pass": {
+          "hosts": 104,
+          "events": 1478,
+          "z_rms": 0.9867,
+          "z_rms_ci90": [
+            0.9527,
+            1.02
+          ],
+          "cover95": 0.9473,
+          "cover95_ci90": [
+            0.9349,
+            0.959
+          ],
+          "mean_z": -0.0032,
+          "mean_z_ci90": [
+            -0.0562,
+            0.0492
+          ],
+          "verdict": {
+            "checks": {
+              "min_hosts": true,
+              "z_rms": true,
+              "cover95": true,
+              "mean_z": true,
+              "tmag9": true,
+              "tmag13.5": true,
+              "noise_beta_ratio": true,
+              "noise_resid_rms_ratio": true
+            },
+            "pass": true
+          },
+          "optional_accepted": 137
+        },
+        "diagnostic_partial_subset": {
+          "hosts": 103,
+          "events": 1351,
+          "z_rms": 1.0254,
+          "z_rms_ci90": [
+            0.9783,
+            1.0739
+          ],
+          "cover95": 0.9241,
+          "cover95_ci90": [
+            0.9003,
+            0.9456
+          ],
+          "mean_z": 0.007,
+          "mean_z_ci90": [
+            -0.0564,
+            0.072
+          ],
+          "verdict": {
+            "checks": {
+              "min_hosts": true,
+              "z_rms": true,
+              "cover95": false,
+              "mean_z": true,
+              "tmag9": false,
+              "tmag13.5": true,
+              "noise_beta_ratio": true,
+              "noise_resid_rms_ratio": true
+            },
+            "pass": false
+          },
+          "optional_accepted": 10
+        }
+      }
+    },
+    "confirm2": {
+      "certain_events": 1129,
+      "unknown_support_events": 239,
+      "cases": {
+        "all_missing_support_fail": {
+          "hosts": 97,
+          "events": 1129,
+          "z_rms": 1.0274,
+          "z_rms_ci90": [
+            0.9839,
+            1.0706
+          ],
+          "cover95": 0.9496,
+          "cover95_ci90": [
+            0.9368,
+            0.9615
+          ],
+          "mean_z": 0.0458,
+          "mean_z_ci90": [
+            -0.0302,
+            0.119
+          ],
+          "verdict": {
+            "checks": {
+              "min_hosts": true,
+              "z_rms": true,
+              "cover95": true,
+              "mean_z": true,
+              "tmag9": true,
+              "tmag13.5": true,
+              "noise_beta_ratio": true,
+              "noise_resid_rms_ratio": true
+            },
+            "pass": true
+          },
+          "optional_accepted": 0
+        },
+        "all_missing_support_pass": {
+          "hosts": 100,
+          "events": 1368,
+          "z_rms": 1.0156,
+          "z_rms_ci90": [
+            0.9798,
+            1.0518
+          ],
+          "cover95": 0.9502,
+          "cover95_ci90": [
+            0.9382,
+            0.9615
+          ],
+          "mean_z": 0.0697,
+          "mean_z_ci90": [
+            0.0134,
+            0.1261
+          ],
+          "verdict": {
+            "checks": {
+              "min_hosts": true,
+              "z_rms": true,
+              "cover95": true,
+              "mean_z": true,
+              "tmag9": true,
+              "tmag13.5": true,
+              "noise_beta_ratio": true,
+              "noise_resid_rms_ratio": true
+            },
+            "pass": true
+          },
+          "optional_accepted": 239
+        },
+        "diagnostic_partial_subset": {
+          "hosts": 99,
+          "events": 1135,
+          "z_rms": 1.0875,
+          "z_rms_ci90": [
+            1.0257,
+            1.1559
+          ],
+          "cover95": 0.9222,
+          "cover95_ci90": [
+            0.8946,
+            0.9463
+          ],
+          "mean_z": 0.0649,
+          "mean_z_ci90": [
+            -0.0273,
+            0.1601
+          ],
+          "verdict": {
+            "checks": {
+              "min_hosts": true,
+              "z_rms": false,
+              "cover95": false,
+              "mean_z": false,
+              "tmag9": false,
+              "tmag13.5": false,
+              "noise_beta_ratio": true,
+              "noise_resid_rms_ratio": true
+            },
+            "pass": false
+          },
+          "optional_accepted": 6
+        }
+      }
+    }
+  },
+  "interpretation": "All/none are sensitivity scenarios, not mathematical bounds over arbitrary unknown support subsets. Diagnostic subset uses coverage truth only to disprove the bound; actual support remains unknown.",
+  "verified_repairs": {
+    "acceptance_counts": {
+      "excluded_coverage": 464,
+      "accepted": 3897,
+      "product_id_failed": 116,
+      "integration_unresolved": 32,
+      "edge": 74,
+      "likelihood_support_unresolved": 8,
+      "product_not_in_scope": 8,
+      "product_shape_gate_failed": 16
+    },
+    "unique_attempt_events": 5425,
+    "joint_hosts": 270,
+    "joint_draws": 200,
+    "draw_intervals_match": true,
+    "draft_forecast_hashes_match": true
+  },
+  "missing_gaussian_quantiles_counterexample_state": "accepted",
+  "input_sha256": {
+    "scripts/acceptance.py": "16b8007a5e492d43a740fce1559a8333ec0c77415dd76fb4f11687a258447e99",
+    "scripts/prefreeze_evidence.py": "3146ce3b7644bcc515d73f6624b7a9211fd98f84bfa531f6dea5f8ef2aaaffae",
+    "scripts/prefreeze_attempts.py": "a5688918212f1cf709960a1cbcd7a8a857a9a278581cb7b37928a83080633f3e",
+    "scripts/prefreeze_package.py": "64910a3269a8ec0405bd1b5d5abfeaf4e29b6cf4b795db9faf1420b9df02bcfa",
+    "configs/candidate_freeze.json": "45b9bf47252962713e748e285241f97d37a7714e86a22f271dba92c64c9f2fc1",
+    "results/sprint2/confirm/ledger.csv.gz": "bf39fe7ecf2d9c8ce65a9c5938cc238c26cebd0a688bc94588727eeafd6e90ff",
+    "results/sprint2/confirm/runs.csv": "0ae18af916693cd47b0c1bbad27322b8288dbe62a68cd38066ea44ac6d415d8d",
+    "results/sprint2/confirm/products.csv": "69c8eb1f8d2553a775c9b95a56a3c82c53cedb010a1a1db8c8f28b70f935dfd2",
+    "results/sprint2/confirm/real_transits.csv": "e0630aeb1aadfb80a616c3b42b8eeaae2ac84e49a7035bb00d6129a11db6263a",
+    "results/sprint2/confirm2/ledger.csv.gz": "6c7662a6b545b01392099ea87850d8e06860d4dc3b1ff1f0a0b4e2c542863955",
+    "results/sprint2/confirm2/runs.csv": "012dc6c3ddab173f8dd7ce50a35d23128c626cef549af091e2a3842529a53c1f",
+    "results/sprint2/confirm2/products.csv": "d29a92cd762cf53eb1d0d333fda8c08f3034eaff7f133f9646fb5065fcadb5de",
+    "results/sprint2/confirm2/real_transits.csv": "0bfe6fe390db282859602ff8ea273f033c7633f7ff58901fe7700ca6dc3d252f",
+    "results/prefreeze/attempt_ledger_development.csv.gz": "77ac9435c973fcb545221001c1d1c60bc83509d7fcbb4a6e7921f9e8c173db90",
+    "results/prefreeze/attempt_ledger_development.json": "4576191af4fb5a633188849b65138edb0421b44e9bca8a8fac724b75201860c3",
+    "results/prefreeze/exercise_joint_draws.json.gz": "af348454e76308e6dc0f0f31e2899c95aee7d125d0877b0eb32692f157b50ce1",
+    "results/prefreeze/evaluation_path_exercise.json": "a70214cd54e1a765a8cbb7b5ab21c9bcdd82c609c9ba948609c0421f85725a4a",
+    "results/prefreeze/forecasts_draft_receipt.json": "6aa5d684e2ca8a8ef8c6804066c2f0174acaf0f0f5fbc5137d75db6fa857a9b0"
+  }
+}
