@@ -36,6 +36,7 @@ import json
 import sys
 import time
 from collections import Counter, defaultdict
+from datetime import date
 from pathlib import Path
 
 import numpy as np
@@ -75,9 +76,20 @@ def write_csv(p, rows):
 def era_limit(era):
     if era == "development":
         return ad.DEVELOPMENT_MAX_TC
-    rec = json.loads(ACCESS.read_text()) if ACCESS.exists() else {}
-    if not (rec.get("authorised_by") and rec.get("decision") and rec.get("date")):
-        raise SystemExit("protected era requires configs/protected_access.json recording Barry's decision")
+    if era != "protected":
+        raise ValueError(f"unknown era: {era}")
+    message = "protected era requires Barry's explicit authorise_protected_access decision, decision_id and ISO date"
+    try:
+        rec = json.loads(ACCESS.read_text())
+        stamp = rec.get("date")
+        dated = date.fromisoformat(stamp).isoformat() == stamp
+    except (OSError, ValueError, TypeError, AttributeError):
+        raise SystemExit(message) from None
+    if not (rec.get("authorised_by") == "Barry W. Brook"
+            and rec.get("decision") == "authorise_protected_access"
+            and isinstance(rec.get("decision_id"), str) and rec["decision_id"].strip()
+            and dated):
+        raise SystemExit(message)
     return None
 
 

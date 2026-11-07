@@ -2,11 +2,13 @@
 
 import argparse
 import csv
+import json
 import sys
 import tempfile
 import unittest
 from collections import namedtuple
 from pathlib import Path
+from unittest.mock import patch
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -93,6 +95,35 @@ class FinalPath(unittest.TestCase):
             self.skipTest("access record present")
         with self.assertRaises(SystemExit):
             fe.era_limit("protected")
+
+    def test_access_record_requires_affirmative_barry_decision(self):
+        record = self.tmp / "access.json"
+        valid = {"authorised_by": "Barry W. Brook", "decision": "authorise_protected_access",
+                 "date": "2026-11-08", "decision_id": "synthetic-test-only"}
+        invalid = [{**valid, "decision": "DO NOT OPEN"}, {**valid, "authorised_by": "Claude"},
+                   {**valid, "date": "not-a-date"}, {**valid, "date": "20261108"},
+                   {**valid, "decision_id": ""}, {k: v for k, v in valid.items() if k != "decision_id"}, []]
+        with patch.object(fe, "ACCESS", record):
+            for value in invalid:
+                with self.subTest(record=value):
+                    record.write_text(json.dumps(value))
+                    with self.assertRaises(SystemExit):
+                        fe.era_limit("protected")
+            record.write_text("invalid json")
+            with self.assertRaises(SystemExit):
+                fe.era_limit("protected")
+            record.write_text(json.dumps(valid))
+            self.assertIsNone(fe.era_limit("protected"))
+
+    def test_denied_record_keeps_measurement_guards(self):
+        import final_measure as fm
+        record = self.tmp / "access.json"
+        record.write_text(json.dumps({"authorised_by": "Claude", "decision": "DO NOT OPEN", "date": "2026-11-08"}))
+        limits = fm.tp.MAX_MJD, fm.tp.MAX_BTJD
+        with patch.object(fe, "ACCESS", record):
+            with self.assertRaises(SystemExit):
+                fm.set_era("protected", self.tmp / "grids")
+        self.assertEqual((fm.tp.MAX_MJD, fm.tp.MAX_BTJD), limits)
 
 
 if __name__ == "__main__":

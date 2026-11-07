@@ -1,0 +1,67 @@
+{
+  "photometry_or_headers_opened": false,
+  "protected_data_accessed": false,
+  "actual_support": {
+    "confirm": {
+      "checked_grids": 137,
+      "support": {
+        "True": 136,
+        "False": 1
+      },
+      "hosts": 104,
+      "accepted_injections": 1477,
+      "coverage_ci90": [
+        0.9338,
+        0.9587
+      ],
+      "all_eight_pass": true
+    },
+    "confirm2": {
+      "checked_grids": 239,
+      "support": {
+        "True": 232,
+        "False": 7
+      },
+      "hosts": 100,
+      "accepted_injections": 1361,
+      "coverage_ci90": [
+        0.9381,
+        0.9614
+      ],
+      "all_eight_pass": true
+    }
+  },
+  "saved_run_inputs_config_and_numerical_source_match": true,
+  "post_run_access_guard_repair": {
+    "file": "final_evaluation.py",
+    "saved_run_sha256": "b82c123b985cb6e05a2e84344d26962f9822f85218b61e9fba770fc85c1009f8",
+    "current_sha256": "ce45d1412e7569141a2a3629827922d86065310649a84d8277e6f455d589418b",
+    "numerical_body_ast_unchanged": true
+  },
+  "private_adapter_receipt_hash_matches": true,
+  "manifest_events": 5109,
+  "accepted_events": 3778,
+  "joint_hosts": 281,
+  "joint_draws": 200,
+  "joint_interval_reproduced": true,
+  "chain_measure_source_matches": true,
+  "protected_era_refused": true,
+  "limits": "Saved development/synthetic execution only; hindcast scores are not forecast-validation results. Not a freeze or protected-access authorisation.",
+  "input_sha256": {
+    "results/prefreeze/replay/replay_receipt.json": "9f113e9ff4284e812efa0b5e68108a266e18751eb066db2d810140948f7b997e",
+    "results/prefreeze/injection_evidence_t015v3a.json": "4b4f87ce857ca19e2151344d5743e661f0156eefb2f5f2458a86351c028e608b",
+    "results/prefreeze/replay/confirm/ledger.csv.gz": "1fd505c0e26288431f8242d82f43880ad7da9fb653e136927c1a22312cb98209",
+    "results/prefreeze/replay/confirm2/ledger.csv.gz": "cc5259379d405866e6e0700a70e7546629223ff21c97b98d87be0672eceaa0d2",
+    "results/prefreeze/final_path_dev/run/evaluation_summary.json": "0e7e474be2df6a5805340772dc5a6daa672d679de24fa9589fcfad9a49bc257b",
+    "results/prefreeze/final_path_dev/run/joint_draws.json.gz": "17fd456d79a21a01d6c58a3d62f8414c7cefab87e0fea8f1b954b62f24aa0c33",
+    "results/prefreeze/final_path_dev/run/terminal_ledger.csv.gz": "68ac6c3ac809bdb86f2618320505657057a0b91b0c8a62301fdcc2210ca4a8c5",
+    "results/prefreeze/final_chain_check.json": "9820d2d8bc47bb271e74da3c8cd21904e1bd5afc84c29e76000c6499d0adae71",
+    "configs/candidate_freeze.json": "9c17de62230add56f6f92246fe07d784f7ddd21071f01024c0a0853ef5a58cef",
+    "results/prefreeze/final_path_dev/manifest.csv": "c5be59ddff957f0421ec5c15b9a23877266c45744ea5f5dc62751043eb4bacc3",
+    "results/prefreeze/final_path_dev/forecasts.csv": "9fd91bbf02dfbf3e77622ef044a948a9318d873abf62b587e051a567648afbaa",
+    "results/outcomes/t015v3/outcomes.csv.gz": "79c9d323b852f47a6519df7671764baad358486c558e3dad0dd36fc4b9437ef8",
+    "results/outcomes/t015v3/product_identification.csv": "d3ee99eedf2d7a56da7bc91ed548eb10820f111445c250acc419b536250175be",
+    "results/prefreeze/final_path_dev/coverage.csv": "76c99c6b7f839e828d2f8bdf552a47c9c0f98ac71fd001fdc84bdb3663346918",
+    "results/prefreeze/candidate_models_core_matched.json": "907b53272e46176dd1b5a81857fa8c5dd025c443eecd468326d5eb91c6ba1f2c"
+  }
+}
