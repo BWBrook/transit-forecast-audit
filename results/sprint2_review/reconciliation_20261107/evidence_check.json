@@ -1,0 +1,444 @@
+{
+  "photometry_opened": false,
+  "new_samples": 0,
+  "wrapper_identity": {
+    "synthetic_unflagged_wrapper_cases": 4,
+    "legacy_fields_identical": true,
+    "timing_core_matches_frozen_bytes": true,
+    "scope": "Synthetic Gaussian/asymmetric status-wrapper comparison plus unchanged core source; no replay of real photometry or fresh independent qualification."
+  },
+  "samples": {
+    "confirm": {
+      "product": "SPOC_120 only; no FFI fallback",
+      "original_timed": 1483,
+      "integration_flags_removed": 5,
+      "after_integration_filter": {
+        "hosts": 104,
+        "events": 1478,
+        "host_events_min_median_max": [
+          2,
+          11.0,
+          56
+        ],
+        "z_rms": 0.9867,
+        "z_rms_ci90": [
+          0.953,
+          1.0202
+        ],
+        "z_rms_ci95": [
+          0.9466,
+          1.0267
+        ],
+        "cover95": 0.9473,
+        "cover95_ci90": [
+          0.9349,
+          0.9591
+        ],
+        "cover95_ci95": [
+          0.9322,
+          0.9614
+        ],
+        "median_z": -0.0093,
+        "median_z_ci90": [
+          -0.0374,
+          0.0521
+        ],
+        "median_z_ci95": [
+          -0.0455,
+          0.0617
+        ],
+        "z_rms_tmag9": 1.0204,
+        "z_rms_tmag9_ci90": [
+          0.9714,
+          1.065
+        ],
+        "z_rms_tmag9_ci95": [
+          0.9612,
+          1.0741
+        ],
+        "z_rms_tmag13.5": 0.9412,
+        "z_rms_tmag13.5_ci90": [
+          0.8789,
+          1.0014
+        ],
+        "z_rms_tmag13.5_ci95": [
+          0.8666,
+          1.013
+        ],
+        "mse_slope_per_mag": -0.0345,
+        "mse_slope_per_mag_ci90": [
+          -0.0689,
+          0.0028
+        ],
+        "mse_slope_per_mag_ci95": [
+          -0.0755,
+          0.0108
+        ],
+        "mean_z": -0.0032,
+        "mean_z_ci90": [
+          -0.0554,
+          0.0494
+        ],
+        "mean_z_ci95": [
+          -0.0657,
+          0.0599
+        ],
+        "event_weighted": {
+          "z_rms": 0.9696,
+          "cover95": 0.954,
+          "median_z": -0.0128
+        },
+        "calibration_checks_only": {
+          "checks": {
+            "min_hosts": true,
+            "z_rms": true,
+            "cover95": true,
+            "mean_z": true,
+            "tmag9": true,
+            "tmag13.5": true
+          },
+          "pass": true
+        },
+        "noise_controls_recomputed": false
+      },
+      "majority_diagnostic": {
+        "definition": "Diagnostic only: strict majority of coverage-qualified recovered windows, per train/run, after integration flags; zero windows fail; spurious flags missing gives bounds.",
+        "run_states": {
+          "pass": 207,
+          "fail": 30
+        },
+        "positive_yield_rejections": [],
+        "unresolved_runs": [],
+        "additional_matched_timings_removed": 0,
+        "retained_calibration": {
+          "hosts": 104,
+          "events": 1478,
+          "host_events_min_median_max": [
+            2,
+            11.0,
+            56
+          ],
+          "z_rms": 0.9867,
+          "z_rms_ci90": [
+            0.953,
+            1.0202
+          ],
+          "z_rms_ci95": [
+            0.9466,
+            1.0267
+          ],
+          "cover95": 0.9473,
+          "cover95_ci90": [
+            0.9349,
+            0.9591
+          ],
+          "cover95_ci95": [
+            0.9322,
+            0.9614
+          ],
+          "median_z": -0.0093,
+          "median_z_ci90": [
+            -0.0374,
+            0.0521
+          ],
+          "median_z_ci95": [
+            -0.0455,
+            0.0617
+          ],
+          "z_rms_tmag9": 1.0204,
+          "z_rms_tmag9_ci90": [
+            0.9714,
+            1.065
+          ],
+          "z_rms_tmag9_ci95": [
+            0.9612,
+            1.0741
+          ],
+          "z_rms_tmag13.5": 0.9412,
+          "z_rms_tmag13.5_ci90": [
+            0.8789,
+            1.0014
+          ],
+          "z_rms_tmag13.5_ci95": [
+            0.8666,
+            1.013
+          ],
+          "mse_slope_per_mag": -0.0345,
+          "mse_slope_per_mag_ci90": [
+            -0.0689,
+            0.0028
+          ],
+          "mse_slope_per_mag_ci95": [
+            -0.0755,
+            0.0108
+          ],
+          "mean_z": -0.0032,
+          "mean_z_ci90": [
+            -0.0554,
+            0.0494
+          ],
+          "mean_z_ci95": [
+            -0.0657,
+            0.0599
+          ],
+          "event_weighted": {
+            "z_rms": 0.9696,
+            "cover95": 0.954,
+            "median_z": -0.0128
+          },
+          "calibration_checks_only": {
+            "checks": {
+              "min_hosts": true,
+              "z_rms": true,
+              "cover95": true,
+              "mean_z": true,
+              "tmag9": true,
+              "tmag13.5": true
+            },
+            "pass": true
+          },
+          "noise_controls_recomputed": false
+        },
+        "adopted_as_production_rule": false
+      }
+    },
+    "confirm2": {
+      "product": "SPOC_120 only; no FFI fallback",
+      "original_timed": 1374,
+      "integration_flags_removed": 6,
+      "after_integration_filter": {
+        "hosts": 100,
+        "events": 1368,
+        "host_events_min_median_max": [
+          3,
+          12.0,
+          55
+        ],
+        "z_rms": 1.0156,
+        "z_rms_ci90": [
+          0.9793,
+          1.0508
+        ],
+        "z_rms_ci95": [
+          0.9733,
+          1.0576
+        ],
+        "cover95": 0.9502,
+        "cover95_ci90": [
+          0.9386,
+          0.9615
+        ],
+        "cover95_ci95": [
+          0.9359,
+          0.9634
+        ],
+        "median_z": 0.0505,
+        "median_z_ci90": [
+          -0.0107,
+          0.1003
+        ],
+        "median_z_ci95": [
+          -0.0223,
+          0.1242
+        ],
+        "z_rms_tmag9": 1.0502,
+        "z_rms_tmag9_ci90": [
+          0.9681,
+          1.1228
+        ],
+        "z_rms_tmag9_ci95": [
+          0.9509,
+          1.1364
+        ],
+        "z_rms_tmag13.5": 0.9701,
+        "z_rms_tmag13.5_ci90": [
+          0.8643,
+          1.07
+        ],
+        "z_rms_tmag13.5_ci95": [
+          0.8459,
+          1.0866
+        ],
+        "mse_slope_per_mag": -0.0359,
+        "mse_slope_per_mag_ci90": [
+          -0.1064,
+          0.0396
+        ],
+        "mse_slope_per_mag_ci95": [
+          -0.1208,
+          0.0529
+        ],
+        "mean_z": 0.0697,
+        "mean_z_ci90": [
+          0.0127,
+          0.1262
+        ],
+        "mean_z_ci95": [
+          0.0012,
+          0.1373
+        ],
+        "event_weighted": {
+          "z_rms": 1.0118,
+          "cover95": 0.9518,
+          "median_z": 0.0704
+        },
+        "calibration_checks_only": {
+          "checks": {
+            "min_hosts": true,
+            "z_rms": true,
+            "cover95": true,
+            "mean_z": true,
+            "tmag9": true,
+            "tmag13.5": true
+          },
+          "pass": true
+        },
+        "noise_controls_recomputed": false
+      },
+      "majority_diagnostic": {
+        "definition": "Diagnostic only: strict majority of coverage-qualified recovered windows, per train/run, after integration flags; zero windows fail; spurious flags missing gives bounds.",
+        "run_states": {
+          "pass": 198,
+          "fail": 41,
+          "unresolved_spurious_flags": 1
+        },
+        "positive_yield_rejections": [
+          {
+            "run_id": "HD110113|SPOC_120|remove|0.73",
+            "covered_windows": 10,
+            "known_timed": 5,
+            "matched_timings_removed": 5
+          },
+          {
+            "run_id": "LHS1478|SPOC_120|remove|0.27",
+            "covered_windows": 12,
+            "known_timed": 4,
+            "matched_timings_removed": 4
+          }
+        ],
+        "unresolved_runs": [
+          {
+            "run_id": "TOI-1246|SPOC_120|remove|0.73",
+            "covered_windows": 1,
+            "known_timed": 0,
+            "unrecorded_spurious_flags": 1
+          }
+        ],
+        "additional_matched_timings_removed": 9,
+        "retained_calibration": {
+          "hosts": 100,
+          "events": 1359,
+          "host_events_min_median_max": [
+            3,
+            12.0,
+            55
+          ],
+          "z_rms": 1.0174,
+          "z_rms_ci90": [
+            0.9814,
+            1.0524
+          ],
+          "z_rms_ci95": [
+            0.9751,
+            1.0591
+          ],
+          "cover95": 0.9502,
+          "cover95_ci90": [
+            0.9386,
+            0.9615
+          ],
+          "cover95_ci95": [
+            0.9359,
+            0.9634
+          ],
+          "median_z": 0.0602,
+          "median_z_ci90": [
+            -0.0037,
+            0.1082
+          ],
+          "median_z_ci95": [
+            -0.0184,
+            0.1271
+          ],
+          "z_rms_tmag9": 1.0525,
+          "z_rms_tmag9_ci90": [
+            0.9711,
+            1.1248
+          ],
+          "z_rms_tmag9_ci95": [
+            0.9543,
+            1.1381
+          ],
+          "z_rms_tmag13.5": 0.9711,
+          "z_rms_tmag13.5_ci90": [
+            0.8656,
+            1.0709
+          ],
+          "z_rms_tmag13.5_ci95": [
+            0.8473,
+            1.087
+          ],
+          "mse_slope_per_mag": -0.0366,
+          "mse_slope_per_mag_ci90": [
+            -0.107,
+            0.0385
+          ],
+          "mse_slope_per_mag_ci95": [
+            -0.1208,
+            0.052
+          ],
+          "mean_z": 0.0723,
+          "mean_z_ci90": [
+            0.0152,
+            0.1287
+          ],
+          "mean_z_ci95": [
+            0.0039,
+            0.1399
+          ],
+          "event_weighted": {
+            "z_rms": 1.0141,
+            "cover95": 0.9514,
+            "median_z": 0.0786
+          },
+          "calibration_checks_only": {
+            "checks": {
+              "min_hosts": true,
+              "z_rms": true,
+              "cover95": true,
+              "mean_z": true,
+              "tmag9": true,
+              "tmag13.5": true
+            },
+            "pass": true
+          },
+          "noise_controls_recomputed": false
+        },
+        "adopted_as_production_rule": false
+      }
+    }
+  },
+  "bootstrap": 10000,
+  "seed": 7151,
+  "numpy": "2.5.4",
+  "python": "3.13.16",
+  "white_noise": {
+    "source_hash_verified": true,
+    "event_naive_mean_z_over_se": {
+      "0.0015": -2.058419243986254,
+      "0.004": -0.039473684210526314,
+      "0.008": 0.6056782334384858
+    },
+    "scope": "A new reproducible synthetic core diagnostic, not recovery of the missing earlier run or proof of absent bias; shared shapes are not accounted for by event-naive SE."
+  },
+  "input_sha256": {
+    "scripts/sprint2_analysis.py": "3f7b5dd5675f14a1ae4e9cc51c2df15dbc793667e196fbe907d0506ea0d43814",
+    "scripts/sprint2_outcomes.py": "e5155a8fafe7f1fb23ecc5610e88269996f39c7d3dc8652a74bf34429b442878",
+    "scripts/t015_timing_pipeline.py": "2e1a1f1d9b4992bf05502f23fe194abf08d79743ba747c7239b2b7e730c1617e",
+    "scripts/sprint2_white_noise.py": "8cc3e2c6de797fc5977c978a5e984c78f03308e5b7ab148a5e2cec0d56711cd3",
+    "scripts/check_d055_evidence.py": "dd88b77bc47f1ff8831933707468f282ccf8b918fe76e5faab9ee9bba77021f1",
+    "results/sprint2/confirm/ledger.csv": "dd23809cc0ff27dd915b664db031598a0cdd0a339b7f4fd711aa22d5a3720e07",
+    "results/sprint2/confirm2/ledger.csv": "6d0e4235d10f6bcb55c07dfcbc1a6cd8b7ffc754ab0eca8fb2883d54cc0cb6d6",
+    "results/sprint2_review/white_noise.json": "a231114566ddcea44bac14a9f1761dd2371d27f7a702faa681008fb38f1648f4"
+  }
+}

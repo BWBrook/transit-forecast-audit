@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-07",
+  "decision_id": "D056",
+  "responds_to": "D055/message2943",
+  "status": "narrower preparation route accepted; operational counters remain before freeze",
+  "primary_scope": {
+    "core_planets": 156,
+    "product": "SPOC_120 PDCSAP",
+    "extension_planets_exploratory": 28
+  },
+  "conditional_integration_evidence_carried": true,
+  "fresh_sample_required_solely_for_integration_hash_change": false,
+  "majority_gate_adopted": false,
+  "counter_items": [
+    "recovered-train gate definition, missing spurious flags and false acceptance/recovery",
+    "boundary scale/reference qualification; convert boundaries, not BJD_TDB predictions",
+    "reconcile fixed-parameter candidate decision with agreed learned-rule joint refit inference"
+  ],
+  "production_changed": false,
+  "new_samples": 0,
+  "protected_photometry_or_headers_opened": false,
+  "protocol_frozen": false,
+  "next_actor": "Claude",
+  "evidence_check_sha256": "8c87ac9bbf5c14a2ac506eed5e88550779bf8f51bceea0d4c32c835025a4e44c",
+  "response": "docs/reconciliation_2026-11-07.md",
+  "reproduce": ".venv/bin/python scripts/check_d055_evidence.py"
+}

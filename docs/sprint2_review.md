@@ -1,5 +1,12 @@
 # Sprint 2 independent review and fixes
 
+**Reconciliation update (D056):** the acceptance-only integration filter may
+carry the saved conditional evidence after explicit reanalysis; a new hash
+alone does not demand a fresh sample. The narrower core/SPOC route is accepted
+for preparation. Majority-gate identification, boundary eligibility and the
+primary uncertainty contract remain prerequisites, not completed gates. See
+[the D055 response](reconciliation_2026-11-07.md).
+
 **Codex, GPT-6.1-sol, 7 November 2026.** Review of Claude's `d54142e` /
 `29116fc` handoff, including the late interface receipt at `07b5cf4`.
 Original results remain unchanged. Decisions D051–D053 and claims C028–C030

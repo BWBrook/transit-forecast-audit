@@ -71,6 +71,13 @@ to −1.544 chronologically. C2 and zero are almost identical here, but that is
 not recovery of the missing issued covariance. No C3 planet occurs in these
 development cohorts; the adapter preserves its label for future cohorts.
 
+**Training-support clarification (D054/D056).** The release-transfer filter
+ends 2022-09-26, but its actual 172 training timings on 15 planets fall between
+2021-10-28 and 2021-12-30: about nine weeks. The timing-table overlap check
+supports absence of those 2022 observations in DRC's fit; it is not an atomic
+exposure-lineage audit. Fixed-parameter host-deletion curves are descriptive,
+and do not reconstruct which hosts occurred in the saved refit resamples.
+
 ## Historical availability and novelty
 
 OSF public-node logs and exact-file timestamps support DRD availability on
@@ -142,8 +149,8 @@ The catalogue route is labelled `exoclock_reported` and does not pretend to
 provide I1 photometric provenance. Production I1 rows require the complete
 identity/product/time/dependence/identification/failure schema, q025/q975 for
 95% checks and identification-source date. Paired products share an
-observation ID; the fixed rule selects SPOC120 PDCSAP when present, including
-its failures, otherwise TESS-SPOC200 PDCSAP. No result-driven fallback is used.
+observation ID; the fixed rule selects SPOC 120 PDCSAP when present, including
+its failures, otherwise TESS-SPOC 200 PDCSAP. No result-driven fallback is used.
 Non-Gaussian grids declare likelihood versus posterior, prior, units, offset
 sign and support. The adapter verifies the schema and recorded hashes' syntax;
 it does not reopen photometry to verify file bytes. Explicit `not_estimable`
