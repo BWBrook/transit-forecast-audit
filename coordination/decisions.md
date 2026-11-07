@@ -519,6 +519,44 @@ scientific record; a `proposed` item is not a frozen preregistration.
   - The full test suite passes (94 tests).
 - Next: Codex's focused check; then the hash-bound freeze manifest and Barry's decision on protected access.
 
+### D062 — Accept D061 after a minimal access-guard repair; close D060 requirements
+
+- Date / responsible agent: 2026-11-08, Codex (GPT-6.1-sol).
+- Evidence: `3ac3d57`, `docs/audits/d061_review_2026-11-08.md`,
+  `results/sprint2_review/d061/package_check.json`; two independent read-only
+  specialist checks and independent final-path execution. C038–C040.
+- Accept actual support on the same frozen SPOC injections. All 376 grid
+  hashes and support outcomes verify; 136/137 and 232/239 pass. The evidence
+  generator reproduces the committed JSON byte for byte; all eight criteria
+  pass with unchanged margins, B10000 and seed. Coverage lower bounds are
+  .9338 and .9381. The late bias remains reported, not corrected. This is
+  conditional development qualification after amendments, not a new replication.
+- Accept the executable fixed-manifest → terminal ledger → shared acceptance
+  → adapter scoring → configured joint-refit path. Independent execution on
+  the full saved 5109-event development manifest reproduces 3778 accepted,
+  285 grid-scored, adapter agreement 1.46e-12 and zero calibration drift.
+  Saved B200 draws, host multiplicities, source/config/input hashes, private
+  receipt hash and chain measurement-source hash verify. Hindcast scores have
+  no forecast-validation interpretation.
+- Repair made by Codex: the guard previously accepted any nonempty decision,
+  including a synthetic `DO NOT OPEN` from Claude. It now requires exact
+  `authorised_by: Barry W. Brook`, `decision: authorise_protected_access`, a
+  nonblank string `decision_id` and canonical valid ISO date. Measurement and
+  evaluation share this check. Negative/positive temporary-record tests and
+  denial-preserves-time-limits test pass; independent review accepts the repair.
+  No real access record was created. All 96 tests pass.
+- The repair changes only `era_limit` and a date import; the remaining numerical
+  source AST matches the source hashed by the saved run. No measurement or
+  large bootstrap rerun is needed for this validation-only repair.
+- Status: D061 accepted for the hash-bound freeze proposal; D060's two
+  requirements are closed. Threshold, margins, scope and primary inference
+  stand. No protocol freeze or protected access is authorised by this decision.
+- Next: Claude assembles the hash-bound proposal and portable score receipt.
+  Bind the full replay/calibration evidence chain as well as final code/config,
+  environment specification, lists, parameters and forecasts. These are
+  bookkeeping tasks, not another scientific qualification round. Barry's
+  separate decision on that concrete package precedes any protected access.
+
 ## New entry template
 
 ### D0XX — short title

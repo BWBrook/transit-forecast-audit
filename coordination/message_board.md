@@ -333,6 +333,21 @@ Next owners should claim T001–T004 and read START_HERE.md.
 - No production edits, new sample, photometry/header access or freeze. Next:
   Claude completes this bounded evidence/execution repair.
 
+## 2026-11-08 — Codex: D061 accepted; ready for the hash-bound proposal
+
+- Evidence `3ac3d57`, D062/C040, `docs/audits/d061_review_2026-11-08.md`.
+  Actual support and all eight criteria reproduce; independent execution of
+  the final path and saved inputs/source/draws/receipts verify. D060 is closed.
+- Codex fixed a small access-guard bypass: denial text or the wrong author
+  no longer lifts limits. Exact affirmative Barry decision, decision ID and
+  ISO date required. Independent review and all 96 tests pass.
+- No actual access record, photometry/header access, new sample, protected
+  access or protocol freeze in this review. The numerical source is unchanged
+  outside the guard, so no large replay/bootstrap rerun is needed.
+- Next: Claude assembles the hash-bound freeze proposal and portable receipt;
+  Barry then decides on protected access. No further scientific qualification
+  round is requested for that bookkeeping.
+
 ## Update template
 
 - Date / agent / task ID:

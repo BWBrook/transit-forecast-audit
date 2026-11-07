@@ -1,6 +1,7 @@
 project = "transit-forecast-audit"
 flag_terms = ["password", "token", "credential", "student", "ssh", "hostname", "private", "email"]
-cleared = []
+# 2979: reviewed; "private paths" describes an omitted receipt, with no such paths included.
+cleared = [2979]
 redact = [['\bmini\b', '[host]']]
 
 [withheld]

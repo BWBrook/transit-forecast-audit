@@ -15,16 +15,24 @@ claim of completion.
 | T006 | Decide Track A feasibility and one primary extension | Signed decision entry with novelty, metadata and precision evidence | T001,T004,T005 | Open |
 | T007 | Implement minimal real adapters | Tests against small attributed fixtures; raw provenance retained | T006 | Open |
 | T008 | Simulate concrete failure modes / design precision | Design report identifies recoverable quantities and adequate cluster counts | T004,T006 | Open |
-| T009 | Freeze analysis protocol | Cohort, origins, bins, models, metrics, folds and final-outcome lock recorded in commit | T006–T008 | **Candidate package only (D050, C027):** `configs/candidate_freeze.json`, roster, 3,399-event manifest, draft DRD forecasts, access receipt; not freeze-ready until the outcome rule is qualified and reviews reconcile |
+| T009 | Freeze analysis protocol | Cohort, origins, bins, models, metrics, folds and final-outcome lock recorded in commit | T006–T008 | **Scientific preparation accepted (D062):** amended SPOC rule and final path verify; 3103 core / 291 extension events plus five exclusions. Claude prepares the hash-bound freeze proposal and portable receipt; Barry's access decision remains pending. Nothing frozen |
 | T010 | Fit earlier-only calibration rule | Reproducible development outputs; bound/uncertainty diagnostics | T009 | Open |
 | T011 | Execute held-out evaluation | Paired scores, uncertainty, planned sensitivities and complete provenance | T010 | Open |
 | T012 | Independent scientific review | Reproduction/criticism with concrete evidence; findings resolved or reported | T011 | Open |
 | T013 | Write manuscript and release artifacts | Every result traceable to analysis; scope and citations verified | T012 | Open |
 | T014 | Identifiable variance-components model on the development era | Outcome scale independently constrained or declared a sensitivity; shared ephemeris covariance specified; simulation checks separation of b and any extra variance before fitting | T005, D021–D024 | **Development model in place** (Claude, D026–D027): outcome scale a=1.09 as fixed sensitivity; two-stage planet-level scale mixture (b, s) with recovery simulation on the real DRC design, `results/pilot_v1/variance_components/`. **Production repaired (D036):** continuous posterior summaries and 400 host resamples retained in `variance_components_v2/`. Chronological refit instability prevents selecting the span correction (D037) |
-| T015 | Forecast-independent TESS mid-time pipeline | Re-measures a sample of DRD 2022–2023 TESS mid-times from SPOC light curves with a broad timing prior; agreement and σ calibration documented; then frozen | T003 | **Reviewed (D051–D053):** t015v3c fails; corrected frozen t015v3 SPOC replication passes conditional criteria (C028). End-to-end and amended-source readiness remain open: identification, likelihood support, intended-event ledger and multi-planet scope. No transit-count restriction or further replication. **D061 (proposed):** amended t015v3a passes all eight criteria under actual grid support on the replayed frozen injections (C038); manifest-driven measurement and evaluation path executable (C039) |
+| T015 | Forecast-independent TESS mid-time pipeline | Re-measures a sample of DRD 2022–2023 TESS mid-times from SPOC light curves with a broad timing prior; agreement and σ calibration documented; then frozen | T003 | **Amended SPOC rule accepted (D062, C038–C040):** actual support on frozen injections passes all eight criteria; manifest-to-decision path verifies and access guard is repaired. Conditional development evidence, not a new replication. Multi-planet identification/full-support fitting remain declared limits; no freeze or protected access |
 | T016 | Untouched DRD-era outcome inventory (metadata only) | List TESS sectors from 2025-11-19 and the DRD planets they cover, without fitting any light curve | D018 | **Metadata correction complete (D043/D045):** public product/date inventory in `results/sprint1/inventory/`; 184 core+extension planets, 3399 opportunities after origin flags, no protected FITS opened. Actual cadence capture and outcome recovery remain unverified |
 
 ## Claims
+
+- 2026-11-08 Codex: **D061 focused check complete; accepted** from `7f404a6`.
+  Evidence `3ac3d57`, D062/C040 and `docs/audits/d061_review_2026-11-08.md`.
+  Two read-only checks verify frozen replay and executable final path. Codex
+  also repaired the minimal access-record validation bug; 96 tests pass and
+  the numerical source is unchanged outside the guard. No actual access record,
+  photometry/header access, new sample, protected access or freeze. Claude next
+  prepares the hash-bound proposal/portable receipt; Barry then decides access.
 
 - 2026-11-07 Claude: **D060 requirements complete (D061)** from `27eb7ef`.
   Actual support: replayed frozen SPOC injections reproduce every saved timing

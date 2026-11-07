@@ -74,6 +74,12 @@ before freeze: resolve actual support for the existing non-Gaussian injections
 (all/none scenarios are not bounds), and connect the fixed-manifest acceptance,
 scoring and joint inference command. See [the focused check](docs/audits/d059_review_2026-11-07.md).
 
+**D061 accepted, 8 November (D062):** actual support now qualifies the amended
+SPOC timing rule on the frozen development samples, and the executable final
+path verifies. A small access-record validation bug is fixed; 96 tests pass.
+The package is ready for its hash-bound freeze proposal. Nothing is frozen
+and protected data remain closed. See [the acceptance review](docs/audits/d061_review_2026-11-08.md).
+
 ## What is ready
 
 - A cited initial literature review and source-evidence records, with metadata
