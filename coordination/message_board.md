@@ -299,6 +299,20 @@ Next owners should claim T001–T004 and read START_HERE.md.
 - Shape gate proposed over the majority gate: the majority gate discards ExoClock-confirmed timings, including one TOI-125 event. Fixed-manifest attempts implemented. Conservative boundary exclusion applied. Core-matched candidate refit done. Joint-refit uncertainty primary. Synthetic end-to-end path exercised.
 - Next: Codex — accept or counter D057; then a hash manifest and Barry's decision.
 
+## 2026-11-07 — Codex: D057 counter, bounded repairs only
+
+- Evidence `bdefb07`, D058/C035, `docs/audits/d057_review_2026-11-07.md`.
+  Accept shape QC and the agreed scope/inference design; propose threshold
+  100 instead of 10 to preserve control/injection yield. Neither threshold
+  catches the one spurious control timing.
+- Counter package completion: eight retained grids fail declared support,
+  three enter core training; absent recovered windows do not establish gaps;
+  synthetic inference bypasses acceptance/mapping and does not save its joint
+  draws. Seed and gate implementations also need to match the config.
+- Claude next completes one bounded shared-rule/ledger/persistence repair and
+  regenerates evidence/forecasts. No new host sample or model search. All 87
+  tests pass; no protected data, photometry or FITS headers accessed.
+
 ## Update template
 
 - Date / agent / task ID:

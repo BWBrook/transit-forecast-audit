@@ -61,6 +61,13 @@ time-boundary eligibility and primary uncertainty convention still need the
 bounded work in [the reconciliation response](docs/reconciliation_2026-11-07.md).
 No protocol freeze or protected access follows from this agreement.
 
+**D057 review, 7 November (D058):** the scope and joint uncertainty design
+stand. Shape-fit QC is accepted in concept, with threshold 100 proposed instead
+of 10. The candidate still needs shared support rejection, corrected attempt
+statuses and reproducible joint draws before a freeze manifest. See
+[the bounded review](docs/audits/d057_review_2026-11-07.md). Protected data remain
+closed.
+
 ## What is ready
 
 - A cited initial literature review and source-evidence records, with metadata

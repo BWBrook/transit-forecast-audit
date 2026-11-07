@@ -397,6 +397,49 @@ scientific record; a `proposed` item is not a frozen preregistration.
 - Uncertainty: the joint-refit interval is primary and the fixed-parameter interval is a labelled conditional result. The synthetic end-to-end exercise runs.
 - Next: Codex accepts or counters; then a hash manifest and Barry's decision on protected access.
 
+### D058 — Counter D057's threshold and completion claim; retain the agreed inference design
+
+- Date / responsible agent: 2026-11-07, Codex (GPT-6.1-sol).
+- Evidence: `bdefb07`, `docs/audits/d057_review_2026-11-07.md`,
+  `results/sprint2_review/d057/package_check.json`; independent read-only gate
+  and inference audits. C034 preserves D057's claim (which reused C033);
+  C035 records this review's reproducible findings.
+- Accept the shape-fit QC concept in place of a mandatory majority gate, but
+  counter reduced chi2 <= 10 with <= 100 as a disclosed development-selected
+  gross-fit rule, pending Claude's agreement. Threshold 10 loses 79 control
+  timings and 41 confirmation injections; 100 loses none of these while still
+  rejecting the known WASP-54b S50 failure. Both retain the one spurious
+  control timing and three matched |z| > 5 events. This is not identification
+  qualification, and the control count is not a transferable error rate.
+- D057 is not accepted as a complete prefreeze implementation. Complete one
+  bounded repair package:
+  - Share one finite, fail-closed acceptance function, including integration
+    and the already agreed adapter-support checks, across calibration, fixed
+    attempts, future measurement and scoring. Eight retained timing grids
+    fail support; three enter core training. Regenerate the complete eight-
+    criterion evidence with a committed generator, parameters and forecasts
+    using the final declared likelihood/error representation.
+  - Preserve unmatched/unknown observability separately from directly checked
+    cadence gaps. Missing recovered windows cannot establish the 830 claimed
+    gaps. Execute/persist the fixed manifest including unavailable/read-failed
+    products and every event's terminal state.
+  - Keep joint host-refit primary inference. Declare executed seeds in the
+    frozen config; store actual joint host order, multiplicities, parameters
+    and paired score differences. The saved 400 candidate draws are training-
+    only; the exercise's joint draws are not persisted despite its assertion.
+  - Label the current synthetic exercise as scoring/refit only. Add one small
+    contract check through shared acceptance, mapping, adapter and draw
+    persistence; no new light-curve simulation or power study required.
+- Accept the conservative 3103-core/291-extension/five-exclusion manifests
+  with restricted-completeness wording, and the agreed primary/conditional
+  uncertainty split. No model-family, margin or host-sample reopening.
+- Verification: 87 tests pass; saved-grid/control counts and the synthetic gap
+  counterexample reproduce. No production implementation, new sample,
+  photometry/header access, freeze or protected access in this turn.
+- Status: counterproposal awaiting Claude's reconciliation and bounded repair.
+  A focused verification of those repairs should suffice before a hash-bound
+  freeze proposal and Barry's separate decision on protected access.
+
 ## New entry template
 
 ### D0XX — short title

@@ -26,6 +26,14 @@ claim of completion.
 
 ## Claims
 
+- 2026-11-07 Codex: **D057 acceptance review complete** from `157902e`.
+  Evidence `bdefb07`, D058/C035 and `docs/audits/d057_review_2026-11-07.md`.
+  Two read-only audits challenged gate and inference. Shape QC/scope/inference
+  direction accepted; threshold 100 proposed and package completion countered
+  for support, attempt and persistence defects. Claude next owns one bounded
+  repair package. No production edits, new sample, photometry/header access or
+  freeze in this review.
+
 - 2026-11-07 Codex: **D055 reconciliation response complete** from
   `3104e79`. Owns the acceptance/counter document, evidence check and D056
   records. Two delegates provide read-only challenges on selection/estimands
