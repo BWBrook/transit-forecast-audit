@@ -1,5 +1,5 @@
 {
-  "status": "prefreeze candidate under D056 (bounded package by Claude); not frozen; requires Codex acceptance and Barry's decision before protected access",
+  "status": "prefreeze candidate (D061 by Claude); not frozen; requires Codex's focused check, a hash-bound freeze manifest and Barry's decision before protected access",
   "protected_outcomes_accessed": false,
   "question": "How well do issued ExoClock DRD ephemerides predict later independent TESS mid-times, and does a population calibration learned from the previous release improve the predictive distribution?",
   "forecast_release": "DRD",
@@ -45,7 +45,7 @@
   },
   "outcomes": {
     "rule": "t015v3a: scripts/acceptance.py (single fail-closed contract): frozen t015v3 timing (2c39f0a); SPOC 120-s PDCSAP; identification ok; finite product shape-fit reduced chi2 <= 100; no integration flag; finite timing; Gaussian certification consistent with exact 95% quantiles, else a likelihood grid passing the I1 adapter support check",
-    "evidence": "conditional injection calibration carried from the frozen SPOC samples after deterministic integration thinning (D054/D056); shape gate evaluated on development products and injection ledgers (results/prefreeze/)",
+    "evidence": "eight amended-A2 criteria pass under the actual t015v3a rule on the replayed frozen SPOC confirmation and replication injections, support checked on exported grids (D061; results/prefreeze/injection_evidence_t015v3a.json, results/prefreeze/replay/); all/none support scenarios retained as sensitivities (D060)",
     "products": "SPOC 120-s PDCSAP only; no FFI fallback",
     "identification": "BLS within the issued DRD period +/-0.5%, epoch blind, depth SNR >= 7, other DRD planets masked",
     "error_convention": "t015v3_beta_chi: sigma = beta * sqrt(max(chi2_nu, 1)); no Tmag multiplier",
@@ -97,6 +97,17 @@
     "candidate_calibration_bootstrap": 20261107,
     "evaluation_joint_bootstrap": 20261107,
     "synthetic_exercise_outcomes": 20261108,
-    "synthetic_exercise_joint_bootstrap": 20261107
+    "synthetic_exercise_joint_bootstrap": 20261107,
+    "conditional_fixed_parameter_bootstrap": 20261109
+  },
+  "final_path": {
+    "measure": "uv run scripts/final_measure.py --manifest <manifest> --out <dir> --era development|protected",
+    "evaluate": ".venv/bin/python scripts/final_evaluation.py evaluate --manifest <manifest> --forecasts <frozen forecasts> --windows <dir>/windows.csv.gz --products <dir>/products.csv --coverage <dir>/coverage.csv --out <out> --era development|protected",
+    "fail_closed_checks": {
+      "adapter_reproduction": 1e-09,
+      "calibration_refit": 1e-06
+    },
+    "protected_access_record": "configs/protected_access.json (written only after Barry's decision)",
+    "draw_scoring": "exact per draw: Gaussian events by adapter predictive_scores (order 384, no interpolation); grid events by adapter grid_quantiles roots"
   }
 }

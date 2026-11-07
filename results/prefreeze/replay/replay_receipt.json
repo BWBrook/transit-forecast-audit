@@ -1,0 +1,44 @@
+{
+ "purpose": "D060 requirement 1: actual support outcomes on the frozen confirmation injections",
+ "timing_source_sha256": "a69794dd2263c88213c4648a324bd89bf344442b04e8932a78007258ea25e70f",
+ "acceptance_sha256": "3d3ccfebccf6c249f7ed7d8dfaab288bd4a81afc9d2da36e435f596a0b988209",
+ "replay_sha256": "0bf38341c65fcadad842390366adbc6fc42eb6f4b952db98cece78f01c6f7f04",
+ "product": "SPOC_120",
+ "mode": "remove",
+ "max_mjd_guard": 60312.98,
+ "max_btjd_guard": 3313.49,
+ "samples": {
+  "confirm": {
+   "hosts": 119,
+   "ledger_rows": 2028,
+   "identity": {
+    "timed_identical": 1478,
+    "status_identical": 538,
+    "integration_relabelled": 5,
+    "extra_in_replay": 0
+   },
+   "max_abs_timing_difference_s": 0.0,
+   "nonGaussian_support": {
+    "True": 136,
+    "False": 1
+   },
+   "ledger_sha256": "1fd505c0e26288431f8242d82f43880ad7da9fb653e136927c1a22312cb98209"
+  },
+  "confirm2": {
+   "hosts": 120,
+   "ledger_rows": 1934,
+   "identity": {
+    "timed_identical": 1368,
+    "status_identical": 551,
+    "integration_relabelled": 12,
+    "extra_in_replay": 0
+   },
+   "max_abs_timing_difference_s": 0.0,
+   "nonGaussian_support": {
+    "True": 232,
+    "False": 7
+   },
+   "ledger_sha256": "cc5259379d405866e6e0700a70e7546629223ff21c97b98d87be0672eceaa0d2"
+  }
+ }
+}

@@ -7,8 +7,10 @@ non-accepted state; nothing passes because a diagnostic is missing or nonfinite.
 Product level: SPOC 120-s PDCSAP only; identification ok; finite shape-fit
 reduced chi-square <= SHAPE_RCHI_MAX (gross-fit QC, selected in development
 review, D058). Event level: timed; no integration flag; finite positive sigma
-and mid-time; Gaussian certification consistent with the exact 95% quantiles,
-otherwise a likelihood grid that passes the I1 adapter's support check.
+and mid-time; Gaussian certification present and consistent with the exact
+95% quantiles (missing quantiles fail closed), otherwise a likelihood grid
+that passes the I1 adapter's support check. Injection-ledger rows are adapted
+explicitly by injection_row().
 
 Likelihood representation (declared): calibration fits use the Gaussian
 approximation with sigma = the 68% posterior half-width for every accepted
@@ -86,15 +88,21 @@ def event_state(row, check_support=True):
         return "timing_value_unresolved"
     gauss = str(row.get("gauss_ok", "")).lower() in ("true", "1", "yes")
     if gauss:
-        if "q025_s" in row:
-            lo, hi = _finite(row.get("q025_s")), _finite(row.get("q975_s"))
-            if lo is None or hi is None or lo >= 0 or hi <= 0 or any(
-                    abs(abs(q) / (1.959964 * sig) - 1) > 0.10 for q in (lo, hi)):
-                return "gauss_certification_inconsistent"
+        lo, hi = _finite(row.get("q025_s")), _finite(row.get("q975_s"))
+        if lo is None or hi is None:
+            return "gauss_certification_unresolved"
+        if lo >= 0 or hi <= 0 or any(abs(abs(q) / (1.959964 * sig) - 1) > 0.10 for q in (lo, hi)):
+            return "gauss_certification_inconsistent"
         return ACCEPTED
     if not check_support:
         return "likelihood_support_not_exported"
     return ACCEPTED if support_ok(row.get("posterior_grid_path")) else "likelihood_support_unresolved"
+
+
+def injection_row(r):
+    """Explicit adaptation of an injection-ledger row to the I1 fields event_state reads."""
+    lo, hi = _finite(r.get("lo95_s")), _finite(r.get("hi95_s"))
+    return {**r, "q025_s": "" if lo is None else -lo, "q975_s": "" if hi is None else hi}
 
 
 def accept(row, diag, product=PRODUCT, check_support=True):

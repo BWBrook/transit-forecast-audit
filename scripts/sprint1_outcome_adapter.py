@@ -15,6 +15,9 @@ import sprint1_forecast_core as c
 import forecast_variance_components as f
 
 
+DEVELOPMENT_MAX_TC = 2460313.49
+
+
 def validate_i1(rows):
     required = {"event_id","observation_id","planet","host","tic","sector","camera","ccd",
                 "product","flux","file","file_sha256","data_rel","cadenceno_first","cadenceno_last",
@@ -82,7 +85,8 @@ def likelihood_grid(path):
     return x,mass
 
 
-def grid_score(residual, vf, model, grid, denominator, order=384):
+def grid_quantiles(vf, model, grid, probs, order=384):
+    """Predictive quantiles of forecast mixture convolved with the measurement grid."""
     x,w = grid
     b,s = model["b"],model["s_log_lambda"]
     if vf <= 0:
@@ -99,8 +103,15 @@ def grid_score(residual, vf, model, grid, denominator, order=384):
         return float(cdf_w @ (ndtr((value+cdf_x[:,None])/cdf_sd[None,:]) @ cdf_mix))
     bound = max(abs(x))+20*b*np.sqrt(vf)*np.exp(.25*s*s)
     lo,hi = -bound,bound
-    quantiles = [brentq(lambda value: cdf(value)-p, lo, hi, xtol=1e-7, rtol=1e-12)
-                 for p in (.158655254,.841344746,.025,.975)]
+    return [brentq(lambda value: cdf(value)-p, lo, hi, xtol=1e-7, rtol=1e-12) for p in probs]
+
+
+def grid_score(residual, vf, model, grid, denominator, order=384):
+    x,w = grid
+    b,s = model["b"],model["s_log_lambda"]
+    z,lw = f.quadrature(order) if s>=1e-5 else (np.zeros(1),np.zeros(1))
+    sd = b*np.sqrt(vf)*np.exp(.5*s*z)
+    quantiles = grid_quantiles(vf, model, grid, (.158655254,.841344746,.025,.975), order)
     a68,b68,lower,upper=quantiles
     logp = logsumexp(np.log(np.maximum(w,np.finfo(float).tiny))[:,None]+lw[None,:]
                     -.5*np.log(2*np.pi)-np.log(sd)[None,:]
@@ -158,6 +169,7 @@ def score_outcomes(args):
         raise ValueError("Mixed or incorrect outcome-error conventions")
     if args.error_convention!="exoclock_reported":
         validate_i1(raw)
+    max_tc=getattr(args,"max_tc_bjd",DEVELOPMENT_MAX_TC)
     selected,omitted=production_rows(raw,catalogue=args.error_convention=="exoclock_reported")
     events,model_rows,grids,grid_hashes=[],[],[],{}
     for r in selected:
@@ -172,8 +184,8 @@ def score_outcomes(args):
         if r["timesys"]!="TDB" or r["timeref"]!="SOLARSYSTEM":
             raise ValueError("Unverified time standard")
         tc=float(r["tc_bjd_tdb"])
-        if tc>2460313.49:
-            raise ValueError("This adapter run is development-only; no protected-era scoring")
+        if max_tc is not None and tc>max_tc:
+            raise ValueError("Outcome beyond the authorised era limit; no protected-era scoring")
         sigma=float(r["sigma_s"])
         if not np.isfinite(sigma) or sigma<=0 or not np.isfinite(tc):
             raise ValueError("Invalid timing or uncertainty")
@@ -243,5 +255,5 @@ def score_outcomes(args):
                   "I1_schema_checked":args.error_convention!="exoclock_reported",
                   "timed_rows_without_estimable_loo_shift":sum(e.get("loo_shift_s")=="not_estimable" for e in events),
                   "photometry_or_file_hashes_reopened_for_verification":False,
-                  "development_only":True,"units":"seconds in log density; minutes in interval score",
+                  "development_only":max_tc==DEVELOPMENT_MAX_TC,"max_tc_bjd":max_tc,"units":"seconds in log density; minutes in interval score",
                   "proper_score_scope":"conditional on supplied measurement likelihood; normaliser may be outcome-dependent"})

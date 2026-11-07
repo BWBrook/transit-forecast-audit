@@ -1,0 +1,69 @@
+{
+ "era": "development",
+ "max_tc_bjd": 2460313.49,
+ "label": "development path exercise: DRD hindcast of development outcomes; no inferential content",
+ "manifest_events": 5109,
+ "terminal_status_counts": {
+  "accepted": 3778,
+  "no_cadence_coverage_at_prediction": 789,
+  "excluded_coverage": 372,
+  "product_id_failed": 66,
+  "edge": 54,
+  "integration_unresolved": 24,
+  "product_shape_gate_failed": 19,
+  "likelihood_support_unresolved": 6,
+  "unmatched_expected_event": 1
+ },
+ "accepted_events": 3778,
+ "accepted_planets": 281,
+ "evaluation_hosts": 281,
+ "windows_outside_manifest": 59,
+ "nonGaussian_scored": 285,
+ "adapter_reproduction_max_abs_diff": 1.4637180356658064e-12,
+ "calibration_refit_max_abs_diff": 0.0,
+ "draw_scoring": "exact per draw: Gaussian events by the adapter's predictive_scores (order 384, no interpolation); grid events by the adapter's grid_quantiles roots",
+ "draw_M2_s_q025_q975": [
+  1.181509729522525,
+  2.702819206977496
+ ],
+ "calibration_planets": 206,
+ "joint_hosts_union": 281,
+ "primary_delta_M2_M0": 0.34219161021155864,
+ "joint_refit_ci95": [
+  0.029030559128793567,
+  1.0717713558361814
+ ],
+ "decision": "worsens",
+ "conditional_fixed_parameter_ci95": [
+  0.09700516102120661,
+  0.5395073602837912
+ ],
+ "joint_bootstrap": 200,
+ "conditional_bootstrap": 10000,
+ "seeds": {
+  "evaluation_joint_bootstrap": 20261107,
+  "conditional_fixed_parameter_bootstrap": 20261109
+ },
+ "seconds_joint": 1350.7,
+ "input_sha256": {
+  "manifest": "c5be59ddff957f0421ec5c15b9a23877266c45744ea5f5dc62751043eb4bacc3",
+  "forecasts": "9fd91bbf02dfbf3e77622ef044a948a9318d873abf62b587e051a567648afbaa",
+  "windows": "79c9d323b852f47a6519df7671764baad358486c558e3dad0dd36fc4b9437ef8",
+  "products": "d3ee99eedf2d7a56da7bc91ed548eb10820f111445c250acc419b536250175be",
+  "coverage": "76c99c6b7f839e828d2f8bdf552a47c9c0f98ac71fd001fdc84bdb3663346918",
+  "parameters": "907b53272e46176dd1b5a81857fa8c5dd025c443eecd468326d5eb91c6ba1f2c"
+ },
+ "code_sha256": {
+  "final_evaluation.py": "b82c123b985cb6e05a2e84344d26962f9822f85218b61e9fba770fc85c1009f8",
+  "acceptance.py": "3d3ccfebccf6c249f7ed7d8dfaab288bd4a81afc9d2da36e435f596a0b988209",
+  "sprint1_outcome_adapter.py": "cd853135d076005731ddc76610b381075b111c170f3187f36c1ad14bf503d0b5",
+  "sprint1_forecast_core.py": "dfe010dbe60e5bb6f07412ec4b5114c57783b90d83278abde8d857db9e597e77",
+  "forecast_variance_components.py": "81b6660828a1b30093f7051a4bc60355e3a0ccc3134faf68b9bc32f7d1cdaf85",
+  "prefreeze_package.py": "64910a3269a8ec0405bd1b5d5abfeaf4e29b6cf4b795db9faf1420b9df02bcfa",
+  "sprint2_forecasts.py": "c489095b8ed6e2123f8c8b840cc947a6fb8bfa8372722ce9b249d3fa1c5c6f9a"
+ },
+ "config_sha256": "9c17de62230add56f6f92246fe07d784f7ddd21071f01024c0a0853ef5a58cef",
+ "adapter_receipt_sha256": "2980964d7e5d51a9cddef74e49f5904c5c13e83ad4e23f5925f1744778c1ca43",
+ "joint_draws_sha256": "17fd456d79a21a01d6c58a3d62f8414c7cefab87e0fea8f1b954b62f24aa0c33",
+ "terminal_ledger_sha256": "68ac6c3ac809bdb86f2618320505657057a0b91b0c8a62301fdcc2210ca4a8c5"
+}

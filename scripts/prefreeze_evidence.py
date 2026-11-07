@@ -3,9 +3,11 @@
 For each frozen confirmation sample, SPOC 120-s PDCSAP, removal mode:
 the product gate uses the real product's shape fit and each injection run's
 refit shape (a run is its own recovered train); event acceptance uses
-scripts/acceptance.py. Injection ledgers did not export likelihood grids, so
-non-Gaussian timings are bracketed: upper bound treats them as passing the
-support check, lower bound excludes every one of them. All amended-A2
+scripts/acceptance.py. The primary result ("actual") applies the shared gate
+with the real support check to the replayed injections
+(scripts/prefreeze_replay.py: same runs, grids exported). The two scenarios
+from the original ledgers, every non-Gaussian timing passing or failing
+support, are kept as labelled sensitivities, not bounds (D060). All amended-A2
 criteria (minimum hosts, z-RMS, coverage, mean z, both Tmag endpoints and
 both noise ratios) are evaluated at B = 10,000 with the analysis seed.
 
@@ -45,7 +47,26 @@ def run():
         prods = {(r["host"], r.get("product")): r for r in csv.DictReader((d / "products.csv").open())}
         real = [r for r in csv.DictReader((d / "real_transits.csv").open())]
         states = Counter()
-        upper, lower = [], []
+        upper, lower, actual = [], [], []
+        act_states = Counter()
+        rep = ROOT / "results" / "prefreeze" / "replay" / sample / "ledger.csv.gz"
+        for r in csv.DictReader(gzip.open(rep, "rt")):
+            if not r.get("truth_id"):
+                continue
+            if r.get("grid_sha256") and hashlib.sha256((ROOT / r["posterior_grid_path"]).read_bytes()).hexdigest() != r["grid_sha256"]:
+                raise RuntimeError("replay grid missing or changed; rerun scripts/prefreeze_replay.py")
+            ps = A.product_state(prods.get((r["host"], r["product"])))
+            if ps == "ok":
+                rr = runs.get(r["run_id"], {})
+                if rr.get("status", "").split(":")[0] != "ok":
+                    ps = "run_" + (rr.get("status", "missing").split(":")[0] or "missing")
+                else:
+                    ps = A.product_state({"status": "ok", "shape_rchi2": rr.get("shape_rchi2")})
+                    ps = "run_" + ps if ps != "ok" else ps
+            st = ps if ps != "ok" else A.event_state(A.injection_row(r), check_support=True)
+            act_states[st] += 1
+            if st == A.ACCEPTED:
+                actual.append(r)
         for r in led:
             if r["product"] != A.PRODUCT or r["mode"] != "remove" or not r.get("truth_id"):
                 continue
@@ -57,15 +78,18 @@ def run():
                 else:
                     ps = A.product_state({"status": "ok", "shape_rchi2": rr.get("shape_rchi2")})
                     ps = "run_" + ps if ps != "ok" else ps
-            st = ps if ps != "ok" else A.event_state(r, check_support=False)
+            st = ps if ps != "ok" else A.event_state(A.injection_row(r), check_support=False)
             states[st] += 1
             if st == A.ACCEPTED:
                 upper.append(r)
                 lower.append(r)
             elif st == "likelihood_support_not_exported":
                 upper.append(r)
-        out = {"injection_states": dict(states.most_common())}
-        for label, rows in (("upper_nonGaussian_pass", upper), ("lower_nonGaussian_fail", lower)):
+        out = {"injection_states_original_ledger": dict(states.most_common()),
+               "injection_states_actual": dict(act_states.most_common()),
+               "replay_ledger_sha256": hashlib.sha256(rep.read_bytes()).hexdigest()}
+        for label, rows in (("actual_support", actual), ("sensitivity_all_nonGaussian_pass", upper),
+                            ("sensitivity_all_nonGaussian_fail", lower)):
             hs = sa.Hosts([float(r["z"]) for r in rows], [r["cover95"] == "True" for r in rows],
                           [r["host"] for r in rows], [float(r["tmag"]) for r in rows])
             s = sa.summarise(hs, 10000, np.random.default_rng(SEED))

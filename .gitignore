@@ -35,3 +35,6 @@ results/seed_demo/*
 !results/seed_demo/synthetic_scores.csv
 !results/seed_demo/environment.json
 results/sprint2/*/ledger.csv
+results/prefreeze/final_path_dev/*.csv
+results/prefreeze/final_path_dev/run/*.csv
+results/prefreeze/final_path_dev/run/*.receipt.json

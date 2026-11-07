@@ -3,10 +3,10 @@
  "shape_rchi_max": 100.0,
  "bootstrap": 10000,
  "seed": 20261107,
- "acceptance_source_sha256": "2a85239e358bcaff75e83631d3f3573a682fffa8bf1ab920f6924040c56e9432",
+ "acceptance_source_sha256": "3d3ccfebccf6c249f7ed7d8dfaab288bd4a81afc9d2da36e435f596a0b988209",
  "samples": {
   "confirm": {
-   "injection_states": {
+   "injection_states_original_ledger": {
     "accepted": 1341,
     "product_id_failed": 144,
     "excluded_coverage": 143,
@@ -17,7 +17,68 @@
     "edge": 5,
     "integration_unresolved": 5
    },
-   "upper_nonGaussian_pass": {
+   "injection_states_actual": {
+    "accepted": 1477,
+    "product_id_failed": 144,
+    "excluded_coverage": 143,
+    "not_recovered": 140,
+    "run_dropped_window_overlap": 94,
+    "run_id_failed": 12,
+    "edge": 5,
+    "integration_unresolved": 5,
+    "likelihood_support_unresolved": 1
+   },
+   "replay_ledger_sha256": "1fd505c0e26288431f8242d82f43880ad7da9fb653e136927c1a22312cb98209",
+   "actual_support": {
+    "hosts": 104,
+    "events": 1477,
+    "z_rms": 0.9875,
+    "z_rms_ci90": [
+     0.9534,
+     1.0212
+    ],
+    "cover95": 0.9466,
+    "cover95_ci90": [
+     0.9338,
+     0.9587
+    ],
+    "mean_z": -0.0016,
+    "mean_z_ci90": [
+     -0.0547,
+     0.0509
+    ],
+    "z_rms_tmag9_ci90": [
+     0.971,
+     1.064
+    ],
+    "z_rms_tmag13.5_ci90": [
+     0.8808,
+     1.0032
+    ],
+    "noise_control": {
+     "host_products": 104,
+     "beta_ratio": 1.0,
+     "resid_rms_ratio": 1.0045,
+     "resid_rms_ratio_iqr": [
+      0.9828,
+      1.0226
+     ]
+    },
+    "verdict": {
+     "checks": {
+      "min_hosts": true,
+      "z_rms": true,
+      "cover95": true,
+      "mean_z": true,
+      "tmag9": true,
+      "tmag13.5": true,
+      "noise_beta_ratio": true,
+      "noise_resid_rms_ratio": true
+     },
+     "pass": true
+    }
+   },
+   "sensitivity_all_nonGaussian_pass": {
     "hosts": 104,
     "events": 1478,
     "z_rms": 0.9867,
@@ -66,7 +127,7 @@
      "pass": true
     }
    },
-   "lower_nonGaussian_fail": {
+   "sensitivity_all_nonGaussian_fail": {
     "hosts": 102,
     "events": 1341,
     "z_rms": 0.9848,
@@ -117,7 +178,7 @@
    }
   },
   "confirm2": {
-   "injection_states": {
+   "injection_states_original_ledger": {
     "accepted": 1129,
     "likelihood_support_not_exported": 239,
     "product_id_failed": 160,
@@ -128,7 +189,68 @@
     "integration_unresolved": 6,
     "run_id_failed": 1
    },
-   "upper_nonGaussian_pass": {
+   "injection_states_actual": {
+    "accepted": 1361,
+    "product_id_failed": 160,
+    "not_recovered": 150,
+    "excluded_coverage": 128,
+    "run_dropped_window_overlap": 94,
+    "edge": 18,
+    "integration_unresolved": 12,
+    "likelihood_support_unresolved": 7,
+    "run_id_failed": 1
+   },
+   "replay_ledger_sha256": "cc5259379d405866e6e0700a70e7546629223ff21c97b98d87be0672eceaa0d2",
+   "actual_support": {
+    "hosts": 100,
+    "events": 1361,
+    "z_rms": 1.0161,
+    "z_rms_ci90": [
+     0.9801,
+     1.0522
+    ],
+    "cover95": 0.9501,
+    "cover95_ci90": [
+     0.9381,
+     0.9614
+    ],
+    "mean_z": 0.0697,
+    "mean_z_ci90": [
+     0.0132,
+     0.1261
+    ],
+    "z_rms_tmag9_ci90": [
+     0.963,
+     1.1233
+    ],
+    "z_rms_tmag13.5_ci90": [
+     0.8664,
+     1.0741
+    ],
+    "noise_control": {
+     "host_products": 99,
+     "beta_ratio": 1.0,
+     "resid_rms_ratio": 0.9998,
+     "resid_rms_ratio_iqr": [
+      0.9802,
+      1.0184
+     ]
+    },
+    "verdict": {
+     "checks": {
+      "min_hosts": true,
+      "z_rms": true,
+      "cover95": true,
+      "mean_z": true,
+      "tmag9": true,
+      "tmag13.5": true,
+      "noise_beta_ratio": true,
+      "noise_resid_rms_ratio": true
+     },
+     "pass": true
+    }
+   },
+   "sensitivity_all_nonGaussian_pass": {
     "hosts": 100,
     "events": 1368,
     "z_rms": 1.0156,
@@ -177,7 +299,7 @@
      "pass": true
     }
    },
-   "lower_nonGaussian_fail": {
+   "sensitivity_all_nonGaussian_fail": {
     "hosts": 97,
     "events": 1129,
     "z_rms": 1.0274,

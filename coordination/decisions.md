@@ -492,6 +492,33 @@ scientific record; a `proposed` item is not a frozen preregistration.
   next completes actual-support evidence and final-path wiring; a focused check
   precedes the hash-bound freeze proposal and Barry's protected-access decision.
 
+### D061 — Actual support qualifies t015v3a; one executable final path from manifest to decision
+
+- Date / responsible agent: 2026-11-07, Claude (Opus 5.5); for Codex's focused check, not a freeze.
+- Evidence: `docs/prefreeze_final_path_2026-11-07.md`; `scripts/prefreeze_replay.py`, `results/prefreeze/replay/`; `results/prefreeze/injection_evidence_t015v3a.json`; `scripts/final_measure.py`, `scripts/final_evaluation.py`, `scripts/check_final_chain.py`; `results/prefreeze/final_path_dev/`, `results/prefreeze/final_chain_check.json`; `tests/test_final_evaluation.py`.
+- Accept D060. The all/none support scenarios are sensitivities, not bounds; D059's sentence "the evidence does not depend on the unexported support outcomes" is retracted.
+- Requirement 1, actual support:
+  - Replayed every SPOC removal-mode injection run of both frozen samples with the same hosts, files, seeds and truths and the unchanged timing core. Every one of the 1,478 and 1,368 saved timed rows reproduces err, σ and `gauss_ok` exactly. The 17 rows with integration flags are now labelled `integration_unresolved`; they were already rejected.
+  - Exported grids under the adapter's own support check: 136/137 and 232/239 pass.
+  - Under the actual rule all eight criteria pass in both samples, with unchanged margins and seed:
+    - confirmation 104 hosts / 1,477 injections, z-RMS [0.953, 1.021], coverage [0.934, 0.959];
+    - replication 100 / 1,361, z-RMS [0.980, 1.052], coverage [0.938, 0.961], mean z +0.070 [0.013, 0.126], reported and not corrected.
+- Requirement 2, final path:
+  - `final_measure.py` takes the fixed manifest and writes I1 windows, product diagnostics (read failures included) and directly measured coverage at every prediction.
+  - `final_evaluation.py evaluate` writes one terminal row per manifest event, applies the shared acceptance, scores accepted rows through the adapter and runs B = 2,000 joint host refits with the declared evaluation seed. It persists draws, multiplicities, parameters, deltas and receipts.
+  - It fails closed unless all three hold:
+    - the draw scorer reproduces the adapter (≤ 1e-9);
+    - the calibration refit reproduces the frozen parameters (≤ 1e-6).
+  - Every draw is scored exactly, about 1.5 h on 8 cores at B = 2,000. Interpolating a grid-quantile table was tried and abandoned: a quadrature wiggle of about 1e-4 s brought it within 1.3e-6 of its tolerance.
+  - The conditional fixed-parameter bootstrap has its own declared seed, 20261109.
+  - The protected era refuses without `configs/protected_access.json` recording Barry's decision.
+- Fail-closed details: missing Gaussian quantiles now return `gauss_certification_unresolved`, and injection rows are adapted explicitly. Absent or unreadable manifest products keep their event rows.
+- Development verification:
+  - The B = 200 exact exercise over 5,109 development hindcast events (3,778 accepted, 285 on grids) passes every reproduction check. Its scores carry no inferential content.
+  - The chain check measures 25 hosts and 677 events from light curves. All 579 windows keep their saved status, with a median timing difference of 0.002 s (at most 2.1 s, from the DRD rather than DRC identification period), then evaluates end to end.
+  - The full test suite passes (94 tests).
+- Next: Codex's focused check; then the hash-bound freeze manifest and Barry's decision on protected access.
+
 ## New entry template
 
 ### D0XX — short title

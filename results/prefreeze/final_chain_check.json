@@ -1,0 +1,49 @@
+{
+ "hosts": 25,
+ "manifest_events": 677,
+ "measured_windows": 579,
+ "measure_receipt": {
+  "era": "development",
+  "manifest_sha256": "9dde4ed2ff5be1d81f7a4122c050f2c99d63bc89fce209f554886000f658a0b1",
+  "products": 66,
+  "manifest_events": 677,
+  "windows": 579,
+  "timed": 510,
+  "rule_version": "t015v3@27eb7ef+a69794dd2263",
+  "measure_sha256": "67bbab8fa6f06b8c70a5673eaa2242181abe86cc0c10902a96bec8bbf6add3e5",
+  "max_mjd_guard": 60312.98,
+  "max_btjd_guard": 3313.49
+ },
+ "vs_saved_development_outcomes": {
+  "windows_matched_by_cycle": 579,
+  "same_status": 579,
+  "status_changes": [],
+  "timed_both": 510,
+  "max_abs_tc_diff_s": 2.0589306950569153,
+  "median_abs_tc_diff_s": 0.0017300248146057129,
+  "max_abs_sigma_diff_s": 3.8559999999999945,
+  "note": "saved development outcomes identified with the earliest release period (DRC first); the final command uses the issued DRD period, so small differences are expected"
+ },
+ "coverage_vs_attempt_ledger_max_abs_diff": 0.011099999999999999,
+ "evaluate": {
+  "manifest_events": 677,
+  "terminal_status_counts": {
+   "accepted": 510,
+   "no_cadence_coverage_at_prediction": 96,
+   "excluded_coverage": 50,
+   "product_shape_gate_failed": 12,
+   "product_id_failed": 9
+  },
+  "accepted_events": 510,
+  "nonGaussian_scored": 31,
+  "adapter_reproduction_max_abs_diff": 1.120881165661558e-12,
+  "calibration_refit_max_abs_diff": 0.0,
+  "draw_scoring": "exact per draw: Gaussian events by the adapter's predictive_scores (order 384, no interpolation); grid events by the adapter's grid_quantiles roots",
+  "joint_refit_ci95": [
+   -0.12784321414602112,
+   1.8025207036433737
+  ],
+  "decision": "inconclusive",
+  "label": "development chain check (hindcast; no inferential content)"
+ }
+}
