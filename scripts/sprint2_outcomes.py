@@ -161,12 +161,18 @@ def time_windows(t, f, e, sol, exp_s, cadence, loo=False, cad=None):
         q, sig = rs["q"], rs["sig"]
         lo95, hi95 = q[2] - q[5], q[6] - q[2]
         fl = tp.flags(rs)
-        row = {**base, "status": "edge" if "edge" in fl else "timed",
-               "failure_reason": "posterior_mass_within_5min_of_prior_edge" if "edge" in fl else "",
+        unresolved = bool({"coarse_fine_shift", "mass_outside_fine"} & set(fl.split(";")))
+        status = "integration_unresolved" if unresolved else "edge" if "edge" in fl else "timed"
+        reason = ("timing_grid_integration_unresolved:" + fl if unresolved else
+                  "posterior_mass_within_5min_of_prior_edge" if "edge" in fl else "")
+        row = {**base, "status": status, "failure_reason": reason,
                "tc": rs["tc"], "q": q, "sig": sig, "sig_white": r["sig"], "tc_white": r["tc"], "q_white": r["q"],
                "beta": beta, "rchi": rchi, "scale": scale, "flags": fl, "n": rs["n"],
                "resid_rms": float(np.std(r["resid"])),
-               "gauss_ok": bool(abs(lo95 / (1.959964 * sig) - 1) <= 0.1 and abs(hi95 / (1.959964 * sig) - 1) <= 0.1),
+               "gauss_ok": bool(not unresolved and abs(lo95 / (1.959964 * sig) - 1) <= 0.1
+                                and abs(hi95 / (1.959964 * sig) - 1) <= 0.1),
+               "edge_mass": rs["edge_mass"], "mass_outside_fine": rs["mass_outside_fine"],
+               "coarse_shift_sig": rs["coarse_shift_sig"], "fine_step_s": rs["fine_step_s"],
                "grid": rs["grid"], "chi": rs["chi"]}
         if cad is not None:
             cc = cad[rs["mask"]]

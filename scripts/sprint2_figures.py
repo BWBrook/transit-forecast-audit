@@ -50,8 +50,9 @@ def host_points(rows, rule):
 def calibration_figure(samples):
     fig, axes = plt.subplots(1, len(samples), figsize=(5.2 * len(samples), 4.0), sharey=True, squeeze=False)
     for ax, (sample, title) in zip(axes[0], samples):
-        rows = sa.production([r for r in ledger(sample) if r["status"] == "timed" and r["mode"] == "remove"
-                              and r.get("truth_id")])
+        available = ledger(sample)
+        rows = sa.production([r for r in available if r["status"] == "timed" and r["mode"] == "remove"
+                              and r.get("truth_id")], available)
         for rule, col, lab in (("t015v3", C3, "t015v3 (no multiplier)"), ("t015v3c", C1, "t015v3c (Tmag multiplier)")):
             t, m, n = host_points(rows, rule)
             ax.scatter(t, np.sqrt(m), s=8 + 2 * np.sqrt(n), color=col, alpha=0.55, lw=0, label=lab)

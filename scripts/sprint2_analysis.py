@@ -203,10 +203,15 @@ def load(sample):
     return rd("ledger.csv"), rd("runs.csv"), rd("products.csv"), rd("real_transits.csv")
 
 
-def production(rows):
+def production(rows, available_rows):
     """Production rule: SPOC_120 where the host has that product, otherwise TESS-SPOC_200."""
-    has = {r["host"] for r in rows if r["product"] == "SPOC_120"}
+    has = {r["host"] for r in available_rows if r["product"] == "SPOC_120"}
     return [r for r in rows if r["product"] == ("SPOC_120" if r["host"] in has else "TESS-SPOC_200")]
+
+
+def interval_covers(err_s, lo95_s, hi95_s, multiplier=1.0):
+    """Contain truth when err is fitted minus truth and lo/hi are fitted-centred widths."""
+    return -multiplier * hi95_s <= err_s <= multiplier * lo95_s
 
 
 def recovery(ledger, sel, B, rng):
@@ -274,7 +279,7 @@ def analyse(args):
     timed = [r for r in ledger if r["status"] == "timed" and r.get("truth_id")]
     out = {"sample": args.sample, "estimand": "equal-host; see module docstring", "criteria": CRITERIA,
            "bootstrap": B, "groups": {}}
-    sets = [("production", production)] + [(p, lambda rs, p=p: [r for r in rs if r["product"] == p])
+    sets = [("production", lambda rs: production(rs, ledger))] + [(p, lambda rs, p=p: [r for r in rs if r["product"] == p])
                                           for p in ("SPOC_120", "TESS-SPOC_200")]
     subsets = ["all"]
     if args.sample == "dev":
@@ -289,7 +294,8 @@ def analyse(args):
                     continue
                 g = [so.tmag_multiplier(r["tmag"]) if rule == "t015v3c" else 1.0 for r in rows]
                 hs = Hosts([float(r["z"]) / k for r, k in zip(rows, g)],
-                           [-k * float(r["lo95_s"]) <= float(r["err_s"]) <= k * float(r["hi95_s"]) for r, k in zip(rows, g)],
+                           [interval_covers(float(r["err_s"]), float(r["lo95_s"]), float(r["hi95_s"]), k)
+                            for r, k in zip(rows, g)],
                            [r["host"] for r in rows], [float(r["tmag"]) for r in rows])
                 s = summarise(hs, B if mode == "remove" else min(B, 2000), rng)
                 s["stratum"] = {}
@@ -327,7 +333,8 @@ def analyse(args):
     out["one_to_one"] = {"duplicate_truth_ids": len(timed) - len({r["truth_id"] for r in timed}),
                          "max_match_dist_s": max((float(r["match_dist_s"]) for r in timed), default=None),
                          "gate_s": 3600}
-    dest = OUT / args.sample / "summary.json"
+    dest = Path(args.output) if getattr(args, "output", None) else OUT / args.sample / "summary.json"
+    dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text(json.dumps(out, indent=1, default=float) + "\n")
     for k in ("t015v3c|remove|production|all", "t015v3|remove|production|all", "t015v3c|remove|SPOC_120|all",
               "t015v3c|remove|TESS-SPOC_200|all"):
@@ -380,6 +387,7 @@ def main(argv=None):
     p = sub.add_parser("analyse")
     p.add_argument("--sample", choices=("dev", "confirm", "confirm2"), required=True)
     p.add_argument("--bootstrap", type=int, default=10000)
+    p.add_argument("--output", help="Write a separate analysis summary without replacing the original evidence")
     p.set_defaults(func=analyse)
     args = ap.parse_args(argv)
     args.func(args)

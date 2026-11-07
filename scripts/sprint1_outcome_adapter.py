@@ -9,6 +9,7 @@ from pathlib import Path
 
 import numpy as np
 from scipy.special import ndtr, logsumexp
+from scipy.optimize import brentq
 
 import sprint1_forecast_core as c
 import forecast_variance_components as f
@@ -38,6 +39,9 @@ def validate_i1(rows):
             continue
         if not row["shape_group_id"]:
             raise ValueError("Timed outcomes need a dependence group")
+        if any(flag in row.get("flags", "").split(";")
+               for flag in ("edge", "mass_outside_fine", "coarse_fine_shift")):
+            raise ValueError("Unresolved timing support must remain a failed attempt")
         if row["id_method"] not in ("blind","catalogue_period"):
             raise ValueError("Unrecognised identification method")
         for key in ("sector","camera","ccd"):
@@ -89,16 +93,8 @@ def grid_score(residual, vf, model, grid, denominator, order=384):
         return float(w @ (ndtr((value+x[:,None])/sd[None,:]) @ np.exp(lw)))
     bound = max(abs(x))+20*b*np.sqrt(vf)*np.exp(.25*s*s)
     lo,hi = -bound,bound
-    quantiles = []
-    for p in (.158655254,.841344746,.025,.975):
-        left,right = lo,hi
-        for _ in range(72):
-            mid=(left+right)/2
-            if cdf(mid)<p:
-                left=mid
-            else:
-                right=mid
-        quantiles.append((left+right)/2)
+    quantiles = [brentq(lambda value: cdf(value)-p, lo, hi, xtol=1e-7, rtol=1e-12)
+                 for p in (.158655254,.841344746,.025,.975)]
     a68,b68,lower,upper=quantiles
     logp = logsumexp(np.log(np.maximum(w,np.finfo(float).tiny))[:,None]+lw[None,:]
                     -.5*np.log(2*np.pi)-np.log(sd)[None,:]

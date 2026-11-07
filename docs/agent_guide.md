@@ -2,7 +2,7 @@
 
 **Audience:** a new AI agent (Claude, Codex or another) that must use, extend, review or reproduce this work. **Status at this draft (7 November 2026):** development evidence only, protocol not frozen, protected outcomes unopened, and the outcome-measurement pipeline **not ready** under its prespecified criteria (C025). Companion products from the same ledger: `manuscript/paper.md` (article) and `docs/brief.md` (public brief). All three cite claim IDs in `coordination/claims.md`; if a number differs between them, the ledger wins and the product is out of date.
 
-One placeholder in `{{...}}` remains (section 12). Authoritative integrated sprint-2 account: `docs/sprint2_report.md`.
+Authoritative integrated sprint-2 account: `docs/sprint2_report.md`.
 
 ## 1. The question and the boundary
 

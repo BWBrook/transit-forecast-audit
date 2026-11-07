@@ -26,6 +26,16 @@ claim of completion.
 
 ## Claims
 
+- 2026-11-07 Codex: **sprint-2 reciprocal review and fixes in execution**
+  from `29116fc`. Owns the scoring/forecast interface, chosen production repairs,
+  integrated review, three-product corrections and coordination. Independent
+  delegates own only new `review_sprint2_{statistics,timing,provenance}` scripts,
+  their review reports/results and explicitly named new tests. Old sprint-2
+  results and frozen source identities are preserved. No new sampling or
+  protected photometry; existing development bytes only if specifically needed
+  and verified against the access receipt. Handoff: reviewed evidence, concrete
+  repairs and limitations for Claude's counter-review, without protocol freeze.
+
 - 2026-11-07 Claude: **sprint 2 complete** (D046–D050, C022–C027). Report `docs/sprint2_report.md`, handoff `results/sprint2/handoff.json`. Outcome pipeline not ready under prespecified criteria; R5 transfer accepted; candidate freeze package not freeze-ready. Drafts: `manuscript/paper.md`, `docs/brief.md`, `docs/agent_guide.md`. Next in Barry's order: Codex reviews and fixes sprint 2. Protected outcomes remain closed.
 
 - 2026-11-06 Codex: **sprint 1 complete** from `33884de`, D042–D045.
