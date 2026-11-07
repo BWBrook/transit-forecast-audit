@@ -121,7 +121,7 @@ Requires Python 3.11+ and NumPy. From the repository root:
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-python -m pip install -e .
+python -m pip install -e '.[analysis]'
 python -m unittest discover -s tests -v
 python -m transit_audit demo --output results/my_first_demo
 ```
