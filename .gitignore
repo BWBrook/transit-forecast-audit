@@ -24,8 +24,11 @@ results/*
 !results/t015_validation/
 !results/t015_corrected/
 !results/sprint1/
+!results/sprint2/
+!results/outcomes/
 results/sprint1/inventory/planet_sector_product_inventory.csv
 results/seed_demo/*
 !results/seed_demo/synthetic_summary.json
 !results/seed_demo/synthetic_scores.csv
 !results/seed_demo/environment.json
+results/sprint2/*/ledger.csv

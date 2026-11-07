@@ -44,6 +44,7 @@ MAX_BTJD = 3313.5 - 0.01
 WINDOW_S = 3600.0
 COARSE_S = 10.0
 DOF_TIMING = 3
+A_MAX = 300.0  # t015v3: 40 truncated a/R* for P > ~20 d
 
 
 def sha256(path):
@@ -183,8 +184,8 @@ def fit_shape(t, f, e, per, centres, half, guess, exp_s):
         return r
 
     x0 = [guess["tc"], guess["rp"], guess["a"], guess["inc"], guess.get("q1", 0.36), guess.get("q2", 0.3)]
-    lo = [guess["tc"] - 0.05, 0.01, 1.5, 70.0, 0.0, 0.0]
-    hi = [guess["tc"] + 0.05, 0.5, 40.0, 90.0, 1.0, 1.0]
+    lo = [guess["tc"] - 0.05, 0.01, guess.get("a_lo", 1.5), 70.0, 0.0, 0.0]
+    hi = [guess["tc"] + 0.05, 0.5, guess.get("a_hi", A_MAX), 90.0, 1.0, 1.0]
     x0 = list(np.clip(x0, np.array(lo) + 1e-9, np.array(hi) - 1e-9))
     r = least_squares(resid, x0, bounds=(lo, hi), x_scale="jac")
     dof = max(len(ff) - 6 - 2 * len(segs), 1)
@@ -198,7 +199,7 @@ def _quantiles(grid, chi):
     mass = 0.5 * (w[1:] + w[:-1]) * np.diff(grid)
     cdf = np.r_[0.0, np.cumsum(mass)]
     cdf /= cdf[-1]
-    return np.interp([0.022750, 0.158655, 0.5, 0.841345, 0.977250], cdf, grid), cdf
+    return np.interp([0.022750, 0.158655, 0.5, 0.841345, 0.977250, 0.025, 0.975], cdf, grid), cdf
 
 
 def time_transit(t, f, e, centre, per, shape, half, exp_s, err_scale=1.0):
@@ -234,7 +235,7 @@ def time_transit(t, f, e, centre, per, shape, half, exp_s, err_scale=1.0):
     return {"tc": float(q[2]), "q": q, "sig": float(sig), "chi2_min": float(min(fchi.min(), cchi.min())),
             "n": int(m.sum()), "resid": resid, "tt": tt, "mask": m, "edge_mass": edge_mass,
             "mass_outside_fine": outside, "coarse_shift_sig": float((qc[2] - q[2]) / sig) if sig > 0 else np.inf,
-            "fine_step_s": float(step * 86400)}
+            "fine_step_s": float(step * 86400), "grid": fine, "chi": fchi}
 
 
 def beta_factor(tt, resid, cadence_days, bins_min=(10, 15, 20, 30), dof=DOF_TIMING):

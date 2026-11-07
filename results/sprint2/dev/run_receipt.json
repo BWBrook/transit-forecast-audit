@@ -1,0 +1,12 @@
+{
+ "rule_version": "t015v3@dc5d2b8+66a91f709666",
+ "sample": "dev",
+ "hosts": 48,
+ "modes": [
+  "remove",
+  "subtract",
+  "shape"
+ ],
+ "max_mjd_guard": 60312.98,
+ "max_btjd_guard": 3313.49
+}

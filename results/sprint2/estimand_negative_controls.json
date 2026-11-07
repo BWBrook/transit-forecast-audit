@@ -1,0 +1,173 @@
+{
+ "host_event_counts_source": "sprint2 dev ledger, timed per host-product",
+ "counts_min_median_max": [
+  1,
+  12.0,
+  56
+ ],
+ "hosts": 120,
+ "replicates": 300,
+ "bootstrap": 600,
+ "scenarios": {
+  "gaussian": {
+   "z_rms": {
+    "truth": 1.0,
+    "ci90_coverage": 0.87,
+    "mean_estimate": 1.0026,
+    "mean_ci90_width": 0.0678
+   },
+   "median_z": {
+    "truth": 0.0,
+    "ci90_coverage": 0.88,
+    "mean_estimate": -0.0028,
+    "mean_ci90_width": 0.1241
+   },
+   "mean_z": {
+    "truth": 0.0,
+    "ci90_coverage": 0.867,
+    "mean_estimate": -0.0024,
+    "mean_ci90_width": 0.0977
+   },
+   "z_rms_tmag9": {
+    "truth": 1.0,
+    "ci90_coverage": 0.86,
+    "mean_estimate": 1.0014,
+    "mean_ci90_width": 0.1116
+   },
+   "z_rms_tmag13.5": {
+    "truth": 1.0,
+    "ci90_coverage": 0.853,
+    "mean_estimate": 1.0028,
+    "mean_ci90_width": 0.1383
+   }
+  },
+  "heteroscedastic": {
+   "z_rms": {
+    "truth": 1.0,
+    "ci90_coverage": 0.877,
+    "mean_estimate": 0.9963,
+    "mean_ci90_width": 0.0947
+   },
+   "median_z": {
+    "truth": 0.0,
+    "ci90_coverage": 0.907,
+    "mean_estimate": 0.002,
+    "mean_ci90_width": 0.1183
+   },
+   "mean_z": {
+    "truth": 0.0,
+    "ci90_coverage": 0.907,
+    "mean_estimate": 0.001,
+    "mean_ci90_width": 0.097
+   },
+   "z_rms_tmag9": {
+    "truth": 1.0,
+    "ci90_coverage": 0.867,
+    "mean_estimate": 0.993,
+    "mean_ci90_width": 0.1585
+   },
+   "z_rms_tmag13.5": {
+    "truth": 1.0,
+    "ci90_coverage": 0.903,
+    "mean_estimate": 0.9984,
+    "mean_ci90_width": 0.1911
+   }
+  },
+  "shared_shape": {
+   "z_rms": {
+    "truth": 1.0,
+    "ci90_coverage": 0.92,
+    "mean_estimate": 1.0015,
+    "mean_ci90_width": 0.07
+   },
+   "median_z": {
+    "truth": 0.0,
+    "ci90_coverage": 0.91,
+    "mean_estimate": -0.0022,
+    "mean_ci90_width": 0.137
+   },
+   "mean_z": {
+    "truth": 0.0,
+    "ci90_coverage": 0.89,
+    "mean_estimate": -0.0015,
+    "mean_ci90_width": 0.1138
+   },
+   "z_rms_tmag9": {
+    "truth": 1.0,
+    "ci90_coverage": 0.893,
+    "mean_estimate": 1.0029,
+    "mean_ci90_width": 0.1168
+   },
+   "z_rms_tmag13.5": {
+    "truth": 1.0,
+    "ci90_coverage": 0.883,
+    "mean_estimate": 0.9982,
+    "mean_ci90_width": 0.1406
+   }
+  },
+  "heavy_tails": {
+   "z_rms": {
+    "truth": 1.0,
+    "ci90_coverage": 0.86,
+    "mean_estimate": 1.0032,
+    "mean_ci90_width": 0.1131
+   },
+   "median_z": {
+    "truth": 0.0,
+    "ci90_coverage": 0.927,
+    "mean_estimate": -0.0005,
+    "mean_ci90_width": 0.1015
+   },
+   "mean_z": {
+    "truth": 0.0,
+    "ci90_coverage": 0.893,
+    "mean_estimate": 0.0015,
+    "mean_ci90_width": 0.0972
+   },
+   "z_rms_tmag9": {
+    "truth": 1.0,
+    "ci90_coverage": 0.88,
+    "mean_estimate": 1.0015,
+    "mean_ci90_width": 0.1789
+   },
+   "z_rms_tmag13.5": {
+    "truth": 1.0,
+    "ci90_coverage": 0.87,
+    "mean_estimate": 1.0023,
+    "mean_ci90_width": 0.2207
+   }
+  },
+  "tmag_trend": {
+   "z_rms": {
+    "truth": 0.9975,
+    "ci90_coverage": 0.877,
+    "mean_estimate": 0.9983,
+    "mean_ci90_width": 0.07
+   },
+   "median_z": {
+    "truth": 0.0,
+    "ci90_coverage": 0.9,
+    "mean_estimate": 0.0004,
+    "mean_ci90_width": 0.124
+   },
+   "mean_z": {
+    "truth": 0.0,
+    "ci90_coverage": 0.903,
+    "mean_estimate": 0.0008,
+    "mean_ci90_width": 0.0985
+   },
+   "z_rms_tmag9": {
+    "truth": 0.9381,
+    "ci90_coverage": 0.88,
+    "mean_estimate": 0.9358,
+    "mean_ci90_width": 0.1105
+   },
+   "z_rms_tmag13.5": {
+    "truth": 1.0724,
+    "ci90_coverage": 0.87,
+    "mean_estimate": 1.0741,
+    "mean_ci90_width": 0.1364
+   }
+  }
+ }
+}
