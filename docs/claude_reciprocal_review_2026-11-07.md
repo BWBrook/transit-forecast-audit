@@ -108,7 +108,7 @@ it with fixed seeds. 120 synthetic sectors per noise level, about 1,000 transits
 | 113 s | 1.009 | 0.975 | −0.001 ± 0.030 |
 | 232 s | 1.045 | 1.009 | +0.019 ± 0.032 |
 
-The timing core is calibrated in white noise and shows no late bias. The scaled errors are slightly conservative at high SNR, as the β and χ² floors of 1 imply. The output is `results/sprint2_review/white_noise.json`. These numbers replace my unretained earlier ones, which agree within Monte Carlo error.
+Raw-error calibration holds, and there is no consistent late bias across the three noise levels. The 42-s mean is −2.1 event-naive SE from zero. Transits share fitted shapes within each synthetic sector, so that SE is optimistic; no host-cluster interval was computed. The scaled errors are slightly conservative at high SNR, as the β and χ² floors of 1 imply. The output is `results/sprint2_review/white_noise.json`. These numbers replace my unretained earlier ones, which agree within Monte Carlo error.
 
 ## 2. Review of sprint 1
 
@@ -145,7 +145,7 @@ This confirms Codex's internal numerical audit with a method it did not use.
 | M2−M0, all hosts | −2.445 | −2.628 |
 | Host-refit interval (sprint 1) | [−5.756, +0.187] | [−6.351, +0.067] |
 | Fixed-parameter host bootstrap | **[−5.443, −0.137]** | [−6.554, +0.454] |
-| Drop TOI-1130 | −1.23 | −1.24 |
+| Drop TOI-1130 | −1.42 | −1.24 |
 | Drop TOI-1130 and TOI-125 | −0.78 | −0.36 |
 | Drop top 3 gain hosts | −0.42 | **+0.14** |
 | Drop top 5 gain hosts | **+0.17** | +0.97 |
@@ -231,3 +231,5 @@ qualification sample:
 | Parameters | Refit the candidate M1–M3 under the t015v3a convention on SPOC-only development outcomes; hash them with the forecasts, code and roster at freeze. |
 
 Opening protected outcomes stays Barry's decision after reconciliation.
+
+*Corrections after Codex's D056 review: release-transfer single-host deletion −1.42 (JSON), not −1.23; the chronology script now uses the stated ±0.02-d match; white-noise wording narrowed.*

@@ -1,5 +1,5 @@
 {
-  "status": "candidate after Codex review; conditional SPOC calibration passes, end-to-end and amended implementation unqualified; not frozen",
+  "status": "prefreeze candidate under D056 (bounded package by Claude); not frozen; requires Codex acceptance and Barry's decision before protected access",
   "protected_outcomes_accessed": false,
   "question": "How well do issued ExoClock DRD ephemerides predict later independent TESS mid-times, and does a population calibration learned from the previous release improve the predictive distribution?",
   "forecast_release": "DRD",
@@ -7,7 +7,7 @@
   "availability_basis": "OSF public-node and exact-file logs: DRD public 2025-11-18 09:43:24 UTC (D043); first whole UTC day",
   "journal_anchor_sensitivity_utc": "2026-02-12T00:00:00Z",
   "roster": "results/sprint2/freeze_candidate/roster.csv",
-  "event_manifest": "results/sprint2_review/freeze_candidate/events_drd.csv",
+  "event_manifest": "results/prefreeze/manifest_core_primary.csv",
   "cohort": {
     "core": 156,
     "extension": 28,
@@ -18,7 +18,12 @@
     ],
     "planets": 184,
     "hosts": 175,
-    "opportunities": 3399
+    "opportunities": 3399,
+    "primary": "core: 156 planets, one DRD-catalogued planet per host (not physically single-planet), Tmag < 13.5, P <= 12 d, no origin TTV flag",
+    "exploratory": "extension: 28 planets",
+    "primary_events": 3103,
+    "exploratory_events": 291,
+    "boundary_excluded_events": 5
   },
   "forecasts": {
     "M0": "issued DRD linear ephemeris; Gaussian with C2 reconstructed T0-P correlation (not an issued covariance)",
@@ -34,19 +39,19 @@
       "rho_minus1",
       "rho_plus1"
     ],
-    "parameters": "results/sprint2/forecasts/candidate_parameters_t015v3.json",
-    "parameter_rule": "release transfer: fit M1-M3 on DRC forecasts against t015v3 outcomes after DRC issue (2022-09-28 to 2024-01-03), the full development record; no regularisation prior",
-    "command": ".venv/bin/python scripts/sprint2_freeze_package.py forecasts --parameters results/sprint2/forecasts/candidate_parameters_t015v3.json"
+    "parameters": "results/prefreeze/candidate_parameters.json (fits.core_matched; joint host-refit draws in candidate_draws_core_matched.json.gz)",
+    "parameter_rule": "release transfer: fit M1-M3 on DRC forecasts of core-eligible planets against t015v3a outcomes after DRC issue (2022-09-28 to 2024-01-03); no regularisation prior; all-SPOC training is a sensitivity",
+    "command": ".venv/bin/python scripts/prefreeze_package.py candidate --bootstrap 400"
   },
   "outcomes": {
-    "rule": "frozen t015v3 SPOC conditional replication passes after correcting analysis (C028); amended integration handling and end-to-end identification not qualified",
-    "design": "docs/sprint2_outcome_design.md (rule frozen at 2c39f0a)",
-    "products": "SPOC 120-s PDCSAP where it exists for the sector, otherwise TESS-SPOC 200-s PDCSAP; paired products never both scored",
+    "rule": "t015v3a: frozen t015v3 timing (2c39f0a) with integration fail-closed (mass_outside_fine or coarse_fine_shift -> integration_unresolved), adapter support checks, product shape-fit reduced chi2 <= 10",
+    "evidence": "conditional injection calibration carried from the frozen SPOC samples after deterministic integration thinning (D054/D056); shape gate evaluated on development products and injection ledgers (results/prefreeze/)",
+    "products": "SPOC 120-s PDCSAP only; no FFI fallback",
     "identification": "BLS within the issued DRD period +/-0.5%, epoch blind, depth SNR >= 7, other DRD planets masked",
-    "error_convention": "t015v3_beta_chi: sigma = beta * sqrt(max(chi2_nu, 1))",
-    "failures": "every attempted event retained with status; scoring conditional on timed; recovery reported separately and never imputed",
-    "qualified_population": "none for end-to-end evaluation; frozen single-DRD-planet SPOC conditional calibration passes; FFI and multi-planet extension not qualified",
-    "transit_count_scope": "No restriction adopted; original successful-injection count explanation was partly a product-selection artifact"
+    "error_convention": "t015v3_beta_chi: sigma = beta * sqrt(max(chi2_nu, 1)); no Tmag multiplier",
+    "attempts": "fixed DRD manifest instantiated before fitting; every event receives one terminal status (scripts/prefreeze_attempts.py); windows map to events by DRD cycle number; cycle-ambiguous and multiple-window cases retained",
+    "failures": "scoring conditional on accepted timings; recovery reported against all intended opportunities and separately against coverage-qualified ones; never imputed",
+    "late_bias": "replication mean z +0.069 [0.013, 0.125]; reported, not corrected"
   },
   "scores": {
     "primary": "planet-balanced IS95 divided by the common M0 predictive SD (forecast plus outcome error); M2 minus M0",
@@ -57,9 +62,9 @@
       "68% and 95% coverage",
       "95% width"
     ],
-    "decision_interval": "95% host-cluster percentile bootstrap of the planet-balanced paired difference, B = 10000, parameters fixed",
-    "parameter_uncertainty": "re-score with the 400 development host-refit parameter sets; reported, not part of the decision",
-    "decision": "improves if the interval is below zero, worsens if above, otherwise inconclusive"
+    "decision_interval": "95% percentile interval over B = 2000 joint host resamples spanning calibration and evaluation hosts, refitting M1-M3 on each draw's calibration weights and scoring the evaluation set with the same multiplicities; multiplicities and parameters stored per draw",
+    "decision": "improves if the interval is below zero, worsens if above, otherwise inconclusive",
+    "conditional_product_interval": "fixed-parameter host bootstrap of the frozen candidate forecasts, B = 10000; separately labelled conditional result, not the decision"
   },
   "strata": [
     "operational lead time",
@@ -70,13 +75,22 @@
   ],
   "sensitivities": [
     "covariance settings",
-    "t015v3c Tmag multiplier (failed confirmation)",
+    "all-SPOC training (not core-matched)",
     "journal availability anchor",
-    "core only",
     "C2 only",
-    "outcome sigma x 1/1.1 and x 1.1"
+    "outcome sigma x 1/1.1 and x 1.1",
+    "majority-of-covered-windows product gate (evaluated, not adopted)",
+    "t015v3c Tmag multiplier (failed confirmation)"
   ],
   "amendments": "any change after freeze is dated and justified in coordination/decisions.md; the frozen analysis is reported first and in full",
   "seed": 20261107,
-  "time_boundary_qualification": "Five of 3399 opportunities lie within ten minutes of unconverted numeric metadata boundaries and are unresolved; a safety margin is not a validated astronomical conversion"
+  "time_boundary_qualification": "Five events within ten minutes of unconverted numeric metadata boundaries are excluded conservatively (D056 \u00a73); predictions are BJD_TDB, boundaries' scale and reference not qualified",
+  "exploratory_manifest": "results/prefreeze/manifest_extension_exploratory.csv",
+  "boundary_exclusions": "results/prefreeze/manifest_boundary_excluded.csv (5 events; conservative subset, not exhaustive eligibility)",
+  "secondary_diagnostics": [
+    "leave-k-gain-hosts-out curve, k = 0..5, fixed parameters, hosts kept whole, ranked by host contribution to the planet-balanced mean (descriptive)",
+    "fraction of planets improved",
+    "median planet delta",
+    "later-known TTV label diagnostic with dated source; cannot redefine the origin-defined cohort"
+  ]
 }

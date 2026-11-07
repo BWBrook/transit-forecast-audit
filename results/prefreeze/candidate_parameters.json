@@ -1,0 +1,144 @@
+{
+  "rule": "t015v3a: frozen t015v3 timing, integration fail-closed, SPOC 120-s PDCSAP, product shape reduced chi2 <= 10",
+  "gate_counts_all_spoc_rows": {
+    "excluded_coverage": 470,
+    "timed": 3905,
+    "id_failed": 116,
+    "integration_unresolved": 32,
+    "edge": 83,
+    "not_spoc": 8,
+    "product_shape_gate_failed": 1
+  },
+  "fits": {
+    "core_matched": {
+      "training_planets": 206,
+      "training_hosts": 206,
+      "training_events": 2189,
+      "excluded_rows": 30,
+      "models": {
+        "M0": {
+          "b": 1.0,
+          "s_log_lambda": 0.0,
+          "at_bound": false
+        },
+        "M1": {
+          "b": 9.35293259813357,
+          "s_log_lambda": 0.0,
+          "at_bound": false
+        },
+        "M2": {
+          "b": 1.0,
+          "s_log_lambda": 2.0467781499427358,
+          "at_bound": false
+        },
+        "M3": {
+          "b": 1.0797920783987551,
+          "s_log_lambda": 1.9678929474825517,
+          "at_bound": false
+        }
+      },
+      "draw_parameter_q025_q975": {
+        "M1": {
+          "b": [
+            1.570238243181071,
+            16.101073600657642
+          ],
+          "s_log_lambda": [
+            0.0,
+            0.0
+          ]
+        },
+        "M2": {
+          "b": [
+            1.0,
+            1.0
+          ],
+          "s_log_lambda": [
+            1.2094070587447259,
+            2.7275933973392843
+          ]
+        },
+        "M3": {
+          "b": [
+            0.7983052227681832,
+            1.4525078360837242
+          ],
+          "s_log_lambda": [
+            0.9607888358927636,
+            2.8622277844959214
+          ]
+        }
+      },
+      "bootstrap_seconds": 176.7
+    },
+    "all_spoc": {
+      "training_planets": 216,
+      "training_hosts": 215,
+      "training_events": 2288,
+      "excluded_rows": 30,
+      "models": {
+        "M0": {
+          "b": 1.0,
+          "s_log_lambda": 0.0,
+          "at_bound": false
+        },
+        "M1": {
+          "b": 9.941945868403437,
+          "s_log_lambda": 0.0,
+          "at_bound": false
+        },
+        "M2": {
+          "b": 1.0,
+          "s_log_lambda": 2.4652967523459584,
+          "at_bound": false
+        },
+        "M3": {
+          "b": 1.009928334366176,
+          "s_log_lambda": 2.45547709784797,
+          "at_bound": false
+        }
+      },
+      "draw_parameter_q025_q975": {
+        "M1": {
+          "b": [
+            1.9017535364538218,
+            16.549680096850636
+          ],
+          "s_log_lambda": [
+            0.0,
+            0.0
+          ]
+        },
+        "M2": {
+          "b": [
+            1.0,
+            1.0
+          ],
+          "s_log_lambda": [
+            1.5589481504500506,
+            3.0735183497719776
+          ]
+        },
+        "M3": {
+          "b": [
+            0.7130839016607203,
+            1.3558373420241527
+          ],
+          "s_log_lambda": [
+            1.2721415636178908,
+            3.260421873104234
+          ]
+        }
+      },
+      "bootstrap_seconds": 184.5
+    }
+  },
+  "training_window": [
+    "2022-09-28",
+    "2024-01-03"
+  ],
+  "population_transfer": "Primary candidate parameters are fitted on DRC forecasts of core-eligible planets (single DRD planet per host, Tmag < 13.5, P <= 12 d, no DRC origin-TTV flag) and applied to DRD forecasts of the 156-planet core; release transfer DRC->DRD, not an issued correction.",
+  "development_only": true,
+  "frozen": false,
+  "outcomes_sha256": "79c9d323b852f47a6519df7671764baad358486c558e3dad0dd36fc4b9437ef8"
+}

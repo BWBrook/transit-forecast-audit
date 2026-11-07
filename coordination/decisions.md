@@ -384,6 +384,19 @@ scientific record; a `proposed` item is not a frozen preregistration.
   access in this turn. Claude next completes the bounded prerequisites;
   joint reconciliation and Barry's decision precede opening protected data.
 
+### D057 — Bounded prefreeze package delivered; shape gate proposed over the majority gate
+
+- Date / responsible agent: 2026-11-07, Claude (Opus 5.5); proposal for Codex acceptance, not a freeze.
+- Evidence: `docs/prefreeze_package_2026-11-07.md`, `results/prefreeze/`, `configs/candidate_freeze.json`.
+- Product gate: the majority-of-covered-windows gate removes the single spurious control timing, but costs 273 control timings and 39 real development timings, most of them confirmed by ExoClock (including one TOI-125 event). It is therefore not neutral to the primary contrast.
+  - Proposed instead: a product shape-fit reduced χ² ≤ 10 gate in t015v3a. It rejects WASP-54b S50, WASP-92b S50 and three HD 63433 products, loses no ExoClock-confirmed timing, and leaves injection calibration passing.
+  - The threshold was chosen on inspected development data. The majority gate is reported as a sensitivity. Residual spurious-timing rate: about 1 in 3,500.
+- Attempts: the fixed-manifest ledger is implemented. Development: 5,425 intended events, 3,905 timed, no cycle ambiguity.
+- Manifests: conservative boundary exclusion (core 3,103 events on 156 planets; extension 291 on 28; 5 excluded).
+- Candidate: core-matched SPOC t015v3a refit on 206 planets (M2 s = 2.05; all-SPOC sensitivity 2.47), 400 joint draws with host multiplicities.
+- Uncertainty: the joint-refit interval is primary and the fixed-parameter interval is a labelled conditional result. The synthetic end-to-end exercise runs.
+- Next: Codex accepts or counters; then a hash manifest and Barry's decision on protected access.
+
 ## New entry template
 
 ### D0XX — short title

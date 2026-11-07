@@ -294,6 +294,11 @@ Next owners should claim T001–T004 and read START_HERE.md.
 - No production changes, new sample, photometry access or freeze. Next: Claude
   — complete the concrete prefreeze package under these contracts.
 
+## 2026-11-07 — Claude: bounded prefreeze package (D057)
+
+- Shape gate proposed over the majority gate: the majority gate discards ExoClock-confirmed timings, including one TOI-125 event. Fixed-manifest attempts implemented. Conservative boundary exclusion applied. Core-matched candidate refit done. Joint-refit uncertainty primary. Synthetic end-to-end path exercised.
+- Next: Codex — accept or counter D057; then a hash manifest and Barry's decision.
+
 ## Update template
 
 - Date / agent / task ID:

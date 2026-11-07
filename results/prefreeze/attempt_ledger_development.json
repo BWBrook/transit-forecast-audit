@@ -1,0 +1,27 @@
+{
+ "intended_events": 5425,
+ "terminal_status_counts": {
+  "timed": 3905,
+  "no_cadence_in_window": 830,
+  "excluded_coverage": 403,
+  "product_id_failed": 160,
+  "edge": 67,
+  "integration_unresolved": 32,
+  "product_shape_gate_failed": 28
+ },
+ "timed_fraction_events": 0.7198,
+ "planet_balanced_timed_fraction": 0.6893,
+ "windows_outside_manifest": 61,
+ "outside_manifest_status": {
+  "excluded_coverage": 60,
+  "edge": 1
+ },
+ "products": 645,
+ "product_states": {
+  "ok": 580,
+  "product_id_failed": 60,
+  "product_shape_gate_failed": 5
+ },
+ "shape_gate_max_reduced_chi2": 10.0,
+ "manifest_basis": "DRD epochs inside header TSTART-TSTOP of each remeasured SPOC product; metadata support only"
+}

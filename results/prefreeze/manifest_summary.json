@@ -1,0 +1,17 @@
+{
+ "source_manifest": "results/sprint2_review/freeze_candidate/events_drd.csv",
+ "source_sha256": "57b0ef728cb3421a18f3ff33ee90baa572227686f8ed5ca2d712a3eaf6d981f0",
+ "core_events": 3103,
+ "core_planets": 156,
+ "extension_events": 291,
+ "extension_planets": 28,
+ "boundary_excluded": 5,
+ "boundary_excluded_ids": [
+  "EPIC246851721b|S98|DRD432",
+  "HATS-18b|S101|DRD2983",
+  "TOI-122b|S103|DRD538",
+  "TOI-431b|S98|DRD4598",
+  "WASP-97b|S104|DRD1031"
+ ],
+ "completeness": "conservative subset; not an exhaustive or exact strict-A eligibility claim"
+}

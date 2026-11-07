@@ -53,13 +53,20 @@ def tails():
 def chronology_leakage():
     """Chronological training events (DRC forecasts vs 2022 TESS timings) that DRC's own timing table contains."""
     drc = read_mid_times(ROOT / "data" / "raw" / "osf" / "p298n" / "all_mid_time_data.txt")
-    drc_keys = {(m.planet, round(m.t_bjd_tdb, 3)) for m in drc}
+    drc_times = {}
+    for m in drc:
+        drc_times.setdefault(m.planet, []).append(m.t_bjd_tdb)
+    drc_times = {k: np.sort(v) for k, v in drc_times.items()}
+
+    def in_drc(planet, t):
+        v = drc_times.get(planet)
+        return v is not None and np.min(np.abs(v - t)) < 0.02
     out = {}
     for exp in ("chronological", "release_transfer"):
         tr = list(csv.DictReader((D / exp / "a_1.087" / "c2" / "training_events.csv").open()))
         te = list(csv.DictReader((D / exp / "a_1.087" / "c2" / "events.csv").open()))
         for part, rows in (("train", tr), ("test", te)):
-            inside = [r for r in rows if (r["planet"], round(float(r["tc_bjd_tdb"]), 3)) in drc_keys]
+            inside = [r for r in rows if in_drc(r["planet"], float(r["tc_bjd_tdb"]))]
             out[f"{exp}|{part}"] = {"release": rows[0]["release"], "events": len(rows),
                                     "events_in_DRC_timing_table": len(inside),
                                     "planets_with_any": len({r["planet"] for r in inside}),

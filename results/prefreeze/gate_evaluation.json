@@ -1,0 +1,465 @@
+{
+ "definition": "Gate (candidate, not installed): per recovered train (one product, one run or one real light curve), count coverage-qualified recovered windows, including spurious/unmatched windows and edge or integration-unresolved failures. Accept if timed windows without integration flags are a strict majority; zero covered windows fails. Where a window's status or flags were not exported, the state is \"unresolved\" unless the bound settles it. No forecast residual or injection truth enters the decision.",
+ "injection_ledgers": {
+  "dev": {
+   "spoc_remove_runs": 94,
+   "gate_states": {
+    "pass": 85,
+    "fail": 9
+   },
+   "wrong_train_runs_by_gate_state": {},
+   "equal_host_recovery_before": 0.9012,
+   "equal_host_recovery_after_pass_only": 0.9012
+  },
+  "confirm": {
+   "spoc_remove_runs": 237,
+   "gate_states": {
+    "pass": 207,
+    "fail": 30
+   },
+   "wrong_train_runs_by_gate_state": {},
+   "equal_host_recovery_before": 0.8928,
+   "equal_host_recovery_after_pass_only": 0.8928
+  },
+  "confirm2": {
+   "spoc_remove_runs": 240,
+   "gate_states": {
+    "pass": 198,
+    "fail": 41,
+    "unresolved": 1
+   },
+   "wrong_train_runs_by_gate_state": {
+    "unresolved": 1
+   },
+   "equal_host_recovery_before": 0.8567,
+   "equal_host_recovery_after_pass_only": 0.8531
+  }
+ },
+ "identification_controls": {
+  "alias=0.5": {
+   "correct_train|pass": 35,
+   "id_failed_or_exception": 7,
+   "wrong_train|pass": 2
+  },
+  "alias=2.0": {
+   "correct_train|pass": 37,
+   "wrong_train|fail": 3,
+   "id_failed_or_exception": 2,
+   "correct_train|fail": 1,
+   "wrong_train|unresolved": 1
+  },
+  "alias=3.0": {
+   "correct_train|pass": 27,
+   "wrong_train|fail": 14,
+   "id_failed_or_exception": 2,
+   "correct_train|fail": 1
+  },
+  "period_offset=-0.002": {
+   "correct_train|pass": 44
+  },
+  "period_offset=-0.004": {
+   "correct_train|pass": 38,
+   "wrong_train|fail": 5,
+   "correct_train|fail": 1
+  },
+  "period_offset=-0.006": {
+   "id_failed_or_exception": 26,
+   "wrong_train|fail": 12,
+   "wrong_train|pass": 5,
+   "correct_train|pass": 1
+  },
+  "period_offset=0.0": {
+   "correct_train|pass": 44
+  },
+  "period_offset=0.002": {
+   "correct_train|pass": 44
+  },
+  "period_offset=0.004": {
+   "correct_train|pass": 38,
+   "wrong_train|fail": 6
+  },
+  "period_offset=0.006": {
+   "id_failed_or_exception": 26,
+   "wrong_train|pass": 5,
+   "wrong_train|fail": 11,
+   "correct_train|fail": 1,
+   "correct_train|pass": 1
+  },
+  "ttv_offset_min=120": {
+   "correct_train|pass": 31,
+   "shifted_events_timed_when_pass": 0,
+   "shifted_events_observable": 91,
+   "correct_train|fail": 3,
+   "wrong_train|fail": 10
+  },
+  "ttv_offset_min=30": {
+   "correct_train|pass": 43,
+   "shifted_events_timed_when_pass": 93,
+   "shifted_events_observable": 93,
+   "id_failed_or_exception": 1
+  },
+  "ttv_offset_min=50": {
+   "correct_train|pass": 42,
+   "shifted_events_timed_when_pass": 85,
+   "shifted_events_observable": 93,
+   "id_failed_or_exception": 2
+  },
+  "ttv_offset_min=70": {
+   "correct_train|pass": 43,
+   "shifted_events_timed_when_pass": 13,
+   "shifted_events_observable": 96,
+   "correct_train|fail": 1
+  },
+  "ttv_offset_min=90": {
+   "correct_train|pass": 37,
+   "shifted_events_timed_when_pass": 0,
+   "shifted_events_observable": 95,
+   "correct_train|fail": 3,
+   "id_failed_or_exception": 1,
+   "wrong_train|fail": 3
+  }
+ },
+ "identification_controls_full_export": {
+  "alias=0.5": {
+   "correct|majority_pass": 35,
+   "correct|shape_pass": 35,
+   "correct|both_pass": 35,
+   "spurious_timed_windows_accepted_by_both": 0,
+   "matched_timed_abs_z_gt5_accepted_by_both": 0,
+   "id_failed_or_exception": 7,
+   "wrong|majority_pass": 2,
+   "wrong|shape_pass": 2,
+   "wrong|both_pass": 2
+  },
+  "alias=2.0": {
+   "correct|majority_pass": 17,
+   "correct|shape_pass": 36,
+   "correct|both_pass": 17,
+   "spurious_timed_windows_accepted_by_both": 0,
+   "matched_timed_abs_z_gt5_accepted_by_both": 0,
+   "wrong|majority_fail": 4,
+   "wrong|shape_pass": 4,
+   "wrong|both_pass": 0,
+   "correct|majority_fail": 21,
+   "id_failed_or_exception": 2,
+   "correct|shape_fail": 2
+  },
+  "alias=3.0": {
+   "correct|majority_fail": 26,
+   "correct|shape_pass": 26,
+   "correct|both_pass": 2,
+   "spurious_timed_windows_accepted_by_both": 0,
+   "matched_timed_abs_z_gt5_accepted_by_both": 0,
+   "wrong|majority_fail": 14,
+   "wrong|shape_pass": 14,
+   "wrong|both_pass": 0,
+   "id_failed_or_exception": 2,
+   "correct|majority_pass": 2,
+   "correct|shape_fail": 2
+  },
+  "period_offset=-0.002": {
+   "correct|majority_pass": 44,
+   "correct|shape_pass": 44,
+   "correct|both_pass": 44,
+   "spurious_timed_windows_accepted_by_both": 0,
+   "matched_timed_abs_z_gt5_accepted_by_both": 1
+  },
+  "period_offset=-0.004": {
+   "correct|majority_pass": 37,
+   "correct|shape_pass": 39,
+   "correct|both_pass": 37,
+   "spurious_timed_windows_accepted_by_both": 0,
+   "matched_timed_abs_z_gt5_accepted_by_both": 0,
+   "wrong|majority_fail": 5,
+   "wrong|shape_pass": 5,
+   "wrong|both_pass": 0,
+   "correct|majority_fail": 2
+  },
+  "period_offset=-0.006": {
+   "id_failed_or_exception": 26,
+   "wrong|majority_fail": 17,
+   "wrong|shape_pass": 15,
+   "wrong|both_pass": 0,
+   "spurious_timed_windows_accepted_by_both": 0,
+   "matched_timed_abs_z_gt5_accepted_by_both": 0,
+   "wrong|shape_fail": 2,
+   "correct|majority_fail": 1,
+   "correct|shape_pass": 1,
+   "correct|both_pass": 0
+  },
+  "period_offset=0.0": {
+   "correct|majority_pass": 43,
+   "correct|shape_pass": 43,
+   "correct|both_pass": 43,
+   "spurious_timed_windows_accepted_by_both": 0,
+   "matched_timed_abs_z_gt5_accepted_by_both": 0,
+   "wrong|majority_fail": 1,
+   "wrong|shape_pass": 1,
+   "wrong|both_pass": 0
+  },
+  "period_offset=0.002": {
+   "correct|majority_pass": 44,
+   "correct|shape_pass": 44,
+   "correct|both_pass": 44,
+   "spurious_timed_windows_accepted_by_both": 0,
+   "matched_timed_abs_z_gt5_accepted_by_both": 0
+  },
+  "period_offset=0.004": {
+   "correct|majority_pass": 33,
+   "correct|shape_pass": 37,
+   "correct|both_pass": 33,
+   "spurious_timed_windows_accepted_by_both": 0,
+   "matched_timed_abs_z_gt5_accepted_by_both": 1,
+   "wrong|majority_fail": 7,
+   "wrong|shape_pass": 7,
+   "wrong|both_pass": 0,
+   "correct|majority_fail": 4
+  },
+  "period_offset=0.006": {
+   "id_failed_or_exception": 26,
+   "wrong|majority_fail": 16,
+   "wrong|shape_pass": 14,
+   "wrong|both_pass": 0,
+   "spurious_timed_windows_accepted_by_both": 0,
+   "matched_timed_abs_z_gt5_accepted_by_both": 0,
+   "wrong|shape_fail": 2,
+   "correct|majority_fail": 2,
+   "correct|shape_pass": 2,
+   "correct|both_pass": 0
+  },
+  "ttv_offset_min=120": {
+   "correct|majority_pass": 31,
+   "correct|shape_pass": 33,
+   "correct|both_pass": 30,
+   "spurious_timed_windows_accepted_by_both": 0,
+   "matched_timed_abs_z_gt5_accepted_by_both": 0,
+   "correct|majority_fail": 3,
+   "wrong|majority_fail": 10,
+   "wrong|shape_pass": 8,
+   "wrong|both_pass": 0,
+   "wrong|shape_fail": 2,
+   "correct|shape_fail": 1
+  },
+  "ttv_offset_min=30": {
+   "correct|majority_pass": 43,
+   "correct|shape_pass": 43,
+   "correct|both_pass": 43,
+   "spurious_timed_windows_accepted_by_both": 0,
+   "matched_timed_abs_z_gt5_accepted_by_both": 0,
+   "id_failed_or_exception": 1
+  },
+  "ttv_offset_min=50": {
+   "correct|majority_pass": 42,
+   "correct|shape_pass": 42,
+   "correct|both_pass": 42,
+   "spurious_timed_windows_accepted_by_both": 0,
+   "matched_timed_abs_z_gt5_accepted_by_both": 0,
+   "id_failed_or_exception": 2
+  },
+  "ttv_offset_min=70": {
+   "correct|majority_pass": 42,
+   "correct|shape_pass": 41,
+   "correct|both_pass": 40,
+   "spurious_timed_windows_accepted_by_both": 0,
+   "matched_timed_abs_z_gt5_accepted_by_both": 1,
+   "wrong|majority_pass": 1,
+   "wrong|shape_pass": 1,
+   "wrong|both_pass": 1,
+   "correct|majority_fail": 1,
+   "correct|shape_fail": 2
+  },
+  "ttv_offset_min=90": {
+   "correct|majority_pass": 35,
+   "correct|shape_pass": 38,
+   "correct|both_pass": 33,
+   "spurious_timed_windows_accepted_by_both": 0,
+   "matched_timed_abs_z_gt5_accepted_by_both": 0,
+   "correct|majority_fail": 5,
+   "id_failed_or_exception": 1,
+   "wrong|majority_fail": 3,
+   "wrong|shape_pass": 3,
+   "wrong|both_pass": 0,
+   "correct|shape_fail": 2
+  }
+ },
+ "real_development_products": {
+  "spoc_products": 637,
+  "gate_states": {
+   "pass": 564,
+   "product_id_failed": 52,
+   "fail": 21
+  },
+  "timed_events_in_rejected_products": 39,
+  "rejected_products": [
+   {
+    "product": "GJ1252b|S67|SPOC_120",
+    "covered_windows": 35,
+    "timed_unflagged": 16,
+    "timed_rows_lost": 25,
+    "exoclock_matched": 4,
+    "exoclock_max_abs_z": 0.54
+   },
+   {
+    "product": "HD110113b|S64|SPOC_120",
+    "covered_windows": 10,
+    "timed_unflagged": 5,
+    "timed_rows_lost": 6,
+    "exoclock_matched": 2,
+    "exoclock_max_abs_z": 0.34
+   },
+   {
+    "product": "HD63433b|S46|SPOC_120",
+    "covered_windows": 3,
+    "timed_unflagged": 0,
+    "timed_rows_lost": 0,
+    "exoclock_matched": 0,
+    "exoclock_max_abs_z": null
+   },
+   {
+    "product": "HD63433b|S72|SPOC_120",
+    "covered_windows": 2,
+    "timed_unflagged": 0,
+    "timed_rows_lost": 0,
+    "exoclock_matched": 0,
+    "exoclock_max_abs_z": null
+   },
+   {
+    "product": "HD63433c|S46|SPOC_120",
+    "covered_windows": 0,
+    "timed_unflagged": 0,
+    "timed_rows_lost": 0,
+    "exoclock_matched": 0,
+    "exoclock_max_abs_z": null
+   },
+   {
+    "product": "HD63433c|S47|SPOC_120",
+    "covered_windows": 0,
+    "timed_unflagged": 0,
+    "timed_rows_lost": 0,
+    "exoclock_matched": 0,
+    "exoclock_max_abs_z": null
+   },
+   {
+    "product": "HD63433c|S72|SPOC_120",
+    "covered_windows": 1,
+    "timed_unflagged": 0,
+    "timed_rows_lost": 0,
+    "exoclock_matched": 0,
+    "exoclock_max_abs_z": null
+   },
+   {
+    "product": "K2-25b|S70|SPOC_120",
+    "covered_windows": 6,
+    "timed_unflagged": 0,
+    "timed_rows_lost": 0,
+    "exoclock_matched": 0,
+    "exoclock_max_abs_z": null
+   },
+   {
+    "product": "K2-333b|S72|SPOC_120",
+    "covered_windows": 2,
+    "timed_unflagged": 1,
+    "timed_rows_lost": 1,
+    "exoclock_matched": 1,
+    "exoclock_max_abs_z": 0.57
+   },
+   {
+    "product": "Kepler-41b|S54|SPOC_120",
+    "covered_windows": 12,
+    "timed_unflagged": 4,
+    "timed_rows_lost": 4,
+    "exoclock_matched": 1,
+    "exoclock_max_abs_z": 0.07
+   },
+   {
+    "product": "Kepler-435b|S54|SPOC_120",
+    "covered_windows": 3,
+    "timed_unflagged": 0,
+    "timed_rows_lost": 0,
+    "exoclock_matched": 0,
+    "exoclock_max_abs_z": null
+   },
+   {
+    "product": "Kepler-435b|S55|SPOC_120",
+    "covered_windows": 3,
+    "timed_unflagged": 1,
+    "timed_rows_lost": 1,
+    "exoclock_matched": 1,
+    "exoclock_max_abs_z": 0.15
+   },
+   {
+    "product": "Kepler-447b|S53|SPOC_120",
+    "covered_windows": 2,
+    "timed_unflagged": 0,
+    "timed_rows_lost": 0,
+    "exoclock_matched": 0,
+    "exoclock_max_abs_z": null
+   },
+   {
+    "product": "Kepler-447b|S54|SPOC_120",
+    "covered_windows": 2,
+    "timed_unflagged": 0,
+    "timed_rows_lost": 0,
+    "exoclock_matched": 0,
+    "exoclock_max_abs_z": null
+   },
+   {
+    "product": "TOI-125b|S69|SPOC_120",
+    "covered_windows": 1,
+    "timed_unflagged": 0,
+    "timed_rows_lost": 1,
+    "exoclock_matched": 1,
+    "exoclock_max_abs_z": 1.8
+   },
+   {
+    "product": "TOI-201b|S67|SPOC_120",
+    "covered_windows": 1,
+    "timed_unflagged": 0,
+    "timed_rows_lost": 0,
+    "exoclock_matched": 0,
+    "exoclock_max_abs_z": null
+   },
+   {
+    "product": "TOI-2076b|S50|SPOC_120",
+    "covered_windows": 0,
+    "timed_unflagged": 0,
+    "timed_rows_lost": 0,
+    "exoclock_matched": 0,
+    "exoclock_max_abs_z": null
+   },
+   {
+    "product": "TOI-837b|S63|SPOC_120",
+    "covered_windows": 3,
+    "timed_unflagged": 0,
+    "timed_rows_lost": 0,
+    "exoclock_matched": 0,
+    "exoclock_max_abs_z": null
+   },
+   {
+    "product": "TOI-837b|S64|SPOC_120",
+    "covered_windows": 3,
+    "timed_unflagged": 0,
+    "timed_rows_lost": 0,
+    "exoclock_matched": 0,
+    "exoclock_max_abs_z": null
+   },
+   {
+    "product": "WASP-54b|S50|SPOC_120",
+    "covered_windows": 3,
+    "timed_unflagged": 1,
+    "timed_rows_lost": 1,
+    "exoclock_matched": 0,
+    "exoclock_max_abs_z": null
+   },
+   {
+    "product": "WASP-92b|S50|SPOC_120",
+    "covered_windows": 7,
+    "timed_unflagged": 0,
+    "timed_rows_lost": 0,
+    "exoclock_matched": 0,
+    "exoclock_max_abs_z": null
+   }
+  ]
+ },
+ "adopted_as_production_rule": false
+}
