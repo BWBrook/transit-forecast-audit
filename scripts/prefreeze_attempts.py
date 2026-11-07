@@ -1,18 +1,27 @@
-"""Fixed intended-event attempt ledger (D056 §3), exercised on development outcomes.
+# /// script
+# requires-python = ">=3.12,<3.14"
+# dependencies = ["numpy<2.4", "scipy", "astropy", "batman-package", "setuptools", "lightkurve==2.5.1",
+#                 "astroquery", "tess-point==0.9.5.post1"]
+# ///
+"""Fixed intended-event attempt ledger under the shared acceptance contract (D058 §3).
 
-Every intended event (planet, sector, DRD epoch) from a manifest built before
-fitting receives exactly one terminal status. Recovered windows map to events by
-DRD cycle number (nearest epoch to the window centre or timed mid-time); a
-window whose timed mid-time lies more than P/4 from its DRD prediction is
-retained as `cycle_ambiguous`, never silently re-assigned. Product-level
-failures propagate to every intended event of the product. Windows with no
-intended event are reported as `outside_manifest`.
+Manifest: every DRD epoch inside each selected SPOC 120-s product's header
+TSTART-TSTOP (development) or the frozen sealed-era manifest. Each intended
+event receives one terminal status:
 
-Development use: the manifest is every DRD epoch inside each remeasured SPOC
-product's header TSTART-TSTOP interval (metadata support, not cadence
-observability). The sealed-era manifest is results/sprint2/freeze_candidate/events_drd.csv.
+* product states from scripts/acceptance.py (unavailable, read failure,
+  identification failure, shape diagnostic unresolved, shape gate);
+* a matched recovered window (by DRD cycle number) -> its acceptance state;
+* no matched window -> a direct cadence check at the DRD-predicted position
+  (quality-0 cadences, declared window half-width): `no_cadence_coverage_at_prediction`
+  when window or in-transit coverage < 0.75, otherwise `unmatched_expected_event`.
+  The prediction locates the check only; it never enters timing or acceptance.
 
-    .venv/bin/python scripts/prefreeze_attempts.py
+Windows whose cycle has no intended event are reported as outside the manifest;
+two windows on one cycle make the event `ambiguous_multiple_windows`.
+Development photometry only (S46-S73, both guards).
+
+    uv run scripts/prefreeze_attempts.py
 """
 
 from __future__ import annotations
@@ -25,106 +34,96 @@ import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-sys.path[:0] = [str(ROOT / "scripts"), str(ROOT / "src")]
+import numpy as np
+
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parent
+sys.path[:0] = [str(HERE), str(ROOT / "src")]
+import acceptance as A  # noqa: E402
+import sprint2_outcomes as so  # noqa: E402
+import t015_timing_pipeline as tp  # noqa: E402
 from reproduce_table5 import load  # noqa: E402
-from sprint2_freeze_package import fits_header_cards  # noqa: E402
 
 OUT = ROOT / "results" / "prefreeze"
-SHAPE_RCHI_MAX = 10.0
-INTEG = {"mass_outside_fine", "coarse_fine_shift"}
 
 
-def terminal_status(window):
-    st = window["status"]
-    if st == "timed" and INTEG & set((window.get("flags") or "").split(";")):
-        return "integration_unresolved"
-    return st
-
-
-def build_ledger(manifest, windows, product_state, ephemeris):
-    """manifest: rows with planet, sector, epoch. windows: outcome rows. product_state: {(planet, sector): status}."""
-    by_event = defaultdict(list)
-    outside = []
-    keys = {(m["planet"], str(m["sector"]), int(m["epoch"])) for m in manifest}
-    for w in windows:
-        e = ephemeris[w["planet"]]
-        ref = float(w.get("tc_bjd_tdb") or w.get("window_centre_bjd_tdb") or w.get("predicted_bjd_tdb_drd"))
-        n = int(round((ref - e.t0_bjd_tdb) / e.period_days))
-        k = (w["planet"], str(w["sector"]), n)
-        (by_event[k] if k in keys else outside).append(w)
-    ledger = []
-    for m in manifest:
-        k = (m["planet"], str(m["sector"]), int(m["epoch"]))
-        ps = product_state.get(k[:2], "no_product")
-        row = {"planet": k[0], "sector": k[1], "epoch": k[2]}
-        if ps != "ok":
-            ledger.append({**row, "status": ps})
-            continue
-        ws = by_event.get(k, [])
-        if not ws:
-            # Identified products enumerate a window wherever any cadence lies within the half-width,
-            # so an intended epoch with no window had no cadences there (a data gap, not a recovery failure).
-            ledger.append({**row, "status": "no_cadence_in_window"})
-            continue
-        if len(ws) > 1:
-            ledger.append({**row, "status": "ambiguous_multiple_windows"})
-            continue
-        w = ws[0]
-        st = terminal_status(w)
-        if st == "timed":
-            e = ephemeris[k[0]]
-            if abs(float(w["tc_bjd_tdb"]) - (e.t0_bjd_tdb + k[2] * e.period_days)) > e.period_days / 4:
-                st = "cycle_ambiguous"
-        ledger.append({**row, "status": st, "event_id": w["event_id"]})
-    return ledger, outside
+def coverage_at(t, centre, per, t14):
+    cad = float(np.median(np.diff(t))) if len(t) > 1 else 120 / 86400
+    half = so.half_width(per, t14)
+    return tp.coverage(t, centre, half, cad), tp.coverage(t, centre, t14 / 2, cad)
 
 
 def development():
     eph, _, _ = load()
     drd = eph["DRD"]
-    out = [r for r in csv.DictReader(gzip.open(ROOT / "results/outcomes/t015v3/outcomes.csv.gz", "rt"))
-           if r["product"] == "SPOC_120"]
-    pid = [r for r in csv.DictReader((ROOT / "results/outcomes/t015v3/product_identification.csv").open())
-           if r.get("product") == "SPOC_120"]
-    prod_rows = [r for r in csv.DictReader((ROOT / "results/outcomes/t015v3/products.csv").open())
-                 if r["status"] == "selected" and r["product"] == "SPOC_120"]
-    spans = {}
-    for p in prod_rows:
+    outcomes = [r for r in csv.DictReader(gzip.open(ROOT / "results/outcomes/t015v3/outcomes.csv.gz", "rt"))
+                if r["product"] == A.PRODUCT]
+    pid = {(r["planet"], str(r["sector"])): r for r in
+           csv.DictReader((ROOT / "results/outcomes/t015v3/product_identification.csv").open())
+           if r.get("planet") and r.get("product") == A.PRODUCT}
+    windows = defaultdict(list)
+    for w in outcomes:
+        e = drd[w["planet"]]
+        ref = float(w.get("tc_bjd_tdb") or w.get("window_centre_bjd_tdb") or w.get("predicted_bjd_tdb_drd"))
+        windows[(w["planet"], str(w["sector"]), int(round((ref - e.t0_bjd_tdb) / e.period_days)))].append(w)
+    products = [r for r in csv.DictReader((ROOT / "results/outcomes/t015v3/products.csv").open())
+                if r["status"] == "selected" and r["product"] == A.PRODUCT]
+    ledger, unenumerated, used = [], [], set()
+    for p in products:
         f = ROOT / "data/raw/mast" / p["tic"].replace(" ", "_") / p["uri"].split("/")[-1]
-        if f.exists():
-            h = fits_header_cards(f)
-            bjd0 = float(h[1]["BJDREFI"]) + float(h[1]["BJDREFF"])
-            spans[(p["host"], str(p["sector"]))] = (float(h[1]["TSTART"]) + bjd0, float(h[1]["TSTOP"]) + bjd0)
-    state, manifest = {}, []
-    for r in pid:
-        planet, sector = r["planet"], str(r["sector"])
-        st = "ok"
-        if r["status"] != "ok":
-            st = "product_id_failed"
-        elif r.get("shape_rchi2") and float(r["shape_rchi2"]) > SHAPE_RCHI_MAX:
-            st = "product_shape_gate_failed"
-        state[(planet, sector)] = st
-        span = spans.get((r["host"], sector))
-        if span is None:
+        try:
+            t, _, _, _, meta = tp.read(f, "pdcsap")
+            bjd0 = float(meta["BJDREFI"]) + float(meta["BJDREFF"])
+            span = (float(meta["TSTART"]) + bjd0, float(meta["TSTOP"]) + bjd0)
+            tt = t + bjd0
+        except Exception as exc:  # noqa: BLE001
+            for planet in p["planets"].split(";"):
+                unenumerated.append({"planet": planet, "sector": p["sector"], "status": "product_read_failed",
+                                     "reason": repr(exc)[:120]})
             continue
-        e = drd[planet]
-        n0, n1 = math.ceil((span[0] - e.t0_bjd_tdb) / e.period_days), math.floor((span[1] - e.t0_bjd_tdb) / e.period_days)
-        manifest += [{"planet": planet, "sector": sector, "epoch": n} for n in range(n0, n1 + 1)]
-    ledger, outside = build_ledger(manifest, out, state, drd)
+        for planet in p["planets"].split(";"):
+            e = drd[planet]
+            diag = pid.get((planet, str(p["sector"])))
+            ps = A.product_state(diag)
+            t14 = (float(diag["t14_min"]) / 1440 if diag and A._finite(diag.get("t14_min")) else so.t14_guess(e.period_days))
+            n0 = math.ceil((span[0] - e.t0_bjd_tdb) / e.period_days)
+            n1 = math.floor((span[1] - e.t0_bjd_tdb) / e.period_days)
+            for n in range(n0, n1 + 1):
+                pred = e.t0_bjd_tdb + n * e.period_days
+                cw, ci = coverage_at(tt, pred, e.period_days, t14)
+                row = {"event_id": f"{planet}|S{p['sector']}|DRD{n}", "planet": planet, "sector": p["sector"],
+                       "product": A.PRODUCT, "epoch": n, "drd_predicted_bjd_tdb": round(pred, 6),
+                       "coverage_window_at_prediction": round(min(cw, 1), 4),
+                       "coverage_in_transit_at_prediction": round(min(ci, 1), 4)}
+                key = (planet, str(p["sector"]), n)
+                ws = windows.get(key, [])
+                used.add(key)
+                if ws:
+                    row["window_event_id"] = ";".join(w["event_id"] for w in ws)
+                st = A.terminal_status(ps, ws, diag, pred, e.period_days, cw >= .75 and ci >= .75)
+                ledger.append({**row, "status": st})
+    outside = [w for k, ws in windows.items() if k not in used for w in ws]
     counts = Counter(r["status"] for r in ledger)
-    by_planet = defaultdict(lambda: [0, 0])
+    byp = defaultdict(lambda: [0, 0])
     for r in ledger:
-        by_planet[r["planet"]][0] += r["status"] == "timed"
-        by_planet[r["planet"]][1] += 1
+        byp[r["planet"]][0] += r["status"] == A.ACCEPTED
+        byp[r["planet"]][1] += 1
+    cov_ok = [r for r in ledger if r["coverage_window_at_prediction"] >= .75 and r["coverage_in_transit_at_prediction"] >= .75]
+    with gzip.open(OUT / "attempt_ledger_development.csv.gz", "wt", newline="") as fh:
+        keys = list(dict.fromkeys(k for r in ledger for k in r))
+        w = csv.DictWriter(fh, fieldnames=keys, lineterminator="\n")
+        w.writeheader()
+        w.writerows(ledger)
     return {"intended_events": len(ledger), "terminal_status_counts": dict(counts.most_common()),
-            "timed_fraction_events": round(counts["timed"] / len(ledger), 4),
-            "planet_balanced_timed_fraction": round(sum(a / b for a, b in by_planet.values()) / len(by_planet), 4),
+            "accepted_fraction_all_intended": round(counts[A.ACCEPTED] / len(ledger), 4),
+            "planet_balanced_accepted_fraction": round(sum(a / b for a, b in byp.values()) / len(byp), 4),
+            "coverage_qualified_events_at_prediction": len(cov_ok),
+            "accepted_fraction_coverage_qualified": round(sum(r["status"] == A.ACCEPTED for r in cov_ok) / len(cov_ok), 4),
             "windows_outside_manifest": len(outside),
             "outside_manifest_status": dict(Counter(w["status"] for w in outside)),
-            "products": len(state), "product_states": dict(Counter(state.values())),
-            "shape_gate_max_reduced_chi2": SHAPE_RCHI_MAX,
-            "manifest_basis": "DRD epochs inside header TSTART-TSTOP of each remeasured SPOC product; metadata support only"}
+            "products_unenumerated": unenumerated,
+            "rule": "scripts/acceptance.py", "shape_rchi_max": A.SHAPE_RCHI_MAX,
+            "manifest_basis": "DRD epochs inside header TSTART-TSTOP of each selected SPOC product (development)"}
 
 
 def main():

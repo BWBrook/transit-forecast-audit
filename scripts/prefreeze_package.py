@@ -24,6 +24,7 @@ import numpy as np
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 sys.path[:0] = [str(HERE), str(ROOT / "src")]
+import acceptance as A  # noqa: E402
 import sprint1_forecast_core as c  # noqa: E402
 import sprint2_forecasts as s2  # noqa: E402
 from reproduce_table5 import load  # noqa: E402
@@ -31,9 +32,8 @@ from transit_audit.exoclock import host_of  # noqa: E402
 
 OUT = ROOT / "results" / "prefreeze"
 MANIFEST = ROOT / "results" / "sprint2_review" / "freeze_candidate" / "events_drd.csv"
-SHAPE_RCHI_MAX = 10.0
-INTEG = {"mass_outside_fine", "coarse_fine_shift"}
-RULE = "t015v3a: frozen t015v3 timing, integration fail-closed, SPOC 120-s PDCSAP, product shape reduced chi2 <= 10"
+RULE = "t015v3a: scripts/acceptance.py (shared fail-closed contract, shape reduced chi2 <= 100, adapter support)"
+SEEDS = json.loads((ROOT / "configs" / "candidate_freeze.json").read_text())["seeds"]
 
 
 def sha(p):
@@ -68,21 +68,15 @@ def manifests(args):
 
 
 def gated_rows():
+    """Every development outcome row through the shared acceptance contract; only accepted rows stay 'timed'."""
     rows = list(csv.DictReader(gzip.open(ROOT / "results/outcomes/t015v3/outcomes.csv.gz", "rt")))
     pid = {(r["planet"], r["sector"], r["product"]): r for r in
-           csv.DictReader((ROOT / "results/outcomes/t015v3/product_identification.csv").open())}
+           csv.DictReader((ROOT / "results/outcomes/t015v3/product_identification.csv").open()) if r.get("planet")}
     out, why = [], Counter()
     for r in rows:
-        if r["product"] != "SPOC_120":
-            why["not_spoc"] += 1
-            continue
-        p = pid.get((r["planet"], r["sector"], r["product"]))
-        if r["status"] == "timed" and p and p.get("shape_rchi2") and float(p["shape_rchi2"]) > SHAPE_RCHI_MAX:
-            r = {**r, "status": "product_shape_gate_failed"}
-        if r["status"] == "timed" and INTEG & set(r.get("flags", "").split(";")):
-            r = {**r, "status": "integration_unresolved"}
-        why[r["status"]] += 1
-        out.append(r)
+        st = A.accept(r, pid.get((r["planet"], r["sector"], r["product"])), r["product"])
+        why[st] += 1
+        out.append({**r, "status": "timed" if st == A.ACCEPTED else st})
     return out, dict(why)
 
 
@@ -120,14 +114,15 @@ def candidate(args):
     cfg = json.loads((ROOT / "configs/sprint1.json").read_text())
     sp = cfg["experiments"]["release_transfer"]["test"]
     core = core_planets(eph)
-    res = {"rule": RULE, "gate_counts_all_spoc_rows": gate_counts, "fits": {}}
+    res = {"rule": RULE, "acceptance_counts_all_rows": gate_counts, "fits": {},
+           "seed": SEEDS["candidate_calibration_bootstrap"]}
     for label, sel in (("core_matched", lambda r: r["planet"] in core), ("all_spoc", lambda r: True)):
         ev, rej = s2.our_events(sp["release"], sp["start"], sp["end"], [r for r in rows if sel(r)], eph, flags, cov,
                                 convention="t015v3")
         tp_ = c.visit_planets(ev)
         models = c.fit_methods(tp_)
         t0 = time.monotonic()
-        hosts, draws = joint_draws(tp_, [], args.bootstrap, cfg["seed"])
+        hosts, draws = joint_draws(tp_, [], args.bootstrap, SEEDS["candidate_calibration_bootstrap"])
         res["fits"][label] = {"training_planets": len(tp_), "training_hosts": len({p["host"] for p in tp_}),
                               "training_events": len(ev), "excluded_rows": len(rej),
                               "models": {k: {"b": v["b"], "s_log_lambda": v["s_log_lambda"], "at_bound": v["at_bound"]}
@@ -136,8 +131,9 @@ def candidate(args):
                                                                    for q in (.025, .975)] for p in ("b", "s_log_lambda")}
                                                            for m in ("M1", "M2", "M3")},
                               "bootstrap_seconds": round(time.monotonic() - t0, 1)}
-        with gzip.open(OUT / f"candidate_draws_{label}.json.gz", "wt") as fh:
-            json.dump({"hosts": hosts, "draws": draws, "rule": RULE, "convention": "t015v3a"}, fh)
+        with gzip.open(OUT / f"candidate_calibration_draws_{label}.json.gz", "wt") as fh:
+            json.dump({"kind": "calibration-only host-refit draws (no evaluation hosts)", "hosts": hosts,
+                       "draws": draws, "rule": RULE, "seed": SEEDS["candidate_calibration_bootstrap"]}, fh)
         print(label, res["fits"][label]["training_planets"], {k: (round(v["b"], 3), round(v["s_log_lambda"], 3))
                                                               for k, v in models.items()})
     res["training_window"] = [sp["start"], sp["end"]]
@@ -161,7 +157,7 @@ def exercise(args):
                           convention="t015v3")
     train = c.visit_planets(tr)
     man = list(csv.DictReader((OUT / "manifest_core_primary.csv").open()))
-    rng = np.random.default_rng(20261108)
+    rng = np.random.default_rng(SEEDS["synthetic_exercise_outcomes"])
     drd = eph["DRD"]
     test = []
     for m in man:
@@ -180,7 +176,7 @@ def exercise(args):
     point = {m: c.predictive_scores(test, models[m]) for m in c.METHODS}
     agg = c.aggregate(test, point)
     t0 = time.monotonic()
-    hosts, draws = joint_draws(train, test, args.bootstrap, cfg["seed"])
+    hosts, draws = joint_draws(train, test, args.bootstrap, SEEDS["synthetic_exercise_joint_bootstrap"])
     ix = {h: i for i, h in enumerate(hosts)}
     ids, _ = c.planet_aggregate(test, point["M0"]["is95_standardised"])
     phost = {e["planet"]: e["host"] for e in test}
@@ -198,14 +194,44 @@ def exercise(args):
     for d in draws:
         w = np.asarray(d["multiplicity"])[ws_idx]
         fixed.append(float(np.average(pm0, weights=w)) if w.sum() else np.nan)
+    with gzip.open(OUT / "exercise_joint_draws.json.gz", "wt") as fh:
+        json.dump({"kind": "joint host-refit draws spanning calibration and evaluation hosts (synthetic evaluation)",
+                   "hosts": hosts, "draws": [{**d, "paired_delta_M2_M0": dl, "fixed_parameter_delta": fx}
+                                             for d, dl, fx in zip(draws, deltas.tolist(), fixed)]}, fh)
     out = {"synthetic": "M2-truth residuals (s=2.585) on DRD core manifest forecasts, sigma_y=60 s; not data",
+           "scope": "scoring and refit path only: event dictionaries are constructed directly; measurement, acceptance and mapping are exercised in tests/test_prefreeze_contract.py",
+           "seeds": {k: SEEDS[k] for k in ("synthetic_exercise_outcomes", "synthetic_exercise_joint_bootstrap")},
+           "joint_draws_file": "results/prefreeze/exercise_joint_draws.json.gz",
+           "hosts_union": len(hosts), "train_hosts": len({p["host"] for p in train}), "test_hosts": len({e["host"] for e in test}),
            "test_events": len(test), "test_planets": len(ids), "train_planets": len(train),
            "primary_delta_M2_M0": agg["M2"]["delta_standardised_vs_M0"],
            "joint_refit_ci95": [float(np.nanquantile(deltas, .025)), float(np.nanquantile(deltas, .975))],
            "fixed_parameter_ci95": [float(np.nanquantile(fixed, .025)), float(np.nanquantile(fixed, .975))],
-           "draws": args.bootstrap, "seconds": round(time.monotonic() - t0, 1),
-           "multiplicities_and_parameters_stored": True}
+           "draws": args.bootstrap, "seconds": round(time.monotonic() - t0, 1)}
     (OUT / "evaluation_path_exercise.json").write_text(json.dumps(out, indent=1) + "\n")
+    print(out)
+
+
+def forecasts(args):
+    """Draft (unfrozen) DRD forecasts for the primary and exploratory manifests from the core-matched candidate."""
+    import subprocess
+    cand = json.loads((OUT / "candidate_parameters.json").read_text())
+    models = {k: {"b": v["b"], "s_log_lambda": v["s_log_lambda"]} for k, v in cand["fits"]["core_matched"]["models"].items()}
+    params = OUT / "candidate_models_core_matched.json"
+    c.write_json(params, {"models": models, "source": "results/prefreeze/candidate_parameters.json fits.core_matched",
+                          "rule": cand["rule"], "frozen": False})
+    out = {}
+    for name in ("manifest_core_primary", "manifest_extension_exploratory"):
+        dest = OUT / f"forecasts_{name.split('_')[1]}_draft.csv"
+        subprocess.run([str(ROOT / ".venv/bin/python"), str(HERE / "sprint1_forecasts.py"), "make_forecasts",
+                        "--events", str(OUT / f"{name}.csv"), "--parameters", str(params), "--release", "DRD",
+                        "--output", str(dest)], check=True)
+        with dest.open("rb") as a, gzip.open(str(dest) + ".gz", "wb") as b:
+            b.write(a.read())
+        out[name] = {"rows": sum(1 for _ in dest.open()) - 1, "sha256_csv": sha(dest)}
+        dest.unlink()
+    out["parameters_sha256"] = sha(params)
+    (OUT / "forecasts_draft_receipt.json").write_text(json.dumps(out, indent=1) + "\n")
     print(out)
 
 
@@ -213,6 +239,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__)
     sub = ap.add_subparsers(dest="cmd", required=True)
     sub.add_parser("manifests").set_defaults(func=manifests)
+    sub.add_parser("forecasts").set_defaults(func=forecasts)
     p = sub.add_parser("candidate")
     p.add_argument("--bootstrap", type=int, default=400)
     p.set_defaults(func=candidate)

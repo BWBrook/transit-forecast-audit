@@ -1,19 +1,20 @@
 {
-  "rule": "t015v3a: frozen t015v3 timing, integration fail-closed, SPOC 120-s PDCSAP, product shape reduced chi2 <= 10",
-  "gate_counts_all_spoc_rows": {
-    "excluded_coverage": 470,
-    "timed": 3905,
-    "id_failed": 116,
+  "rule": "t015v3a: scripts/acceptance.py (shared fail-closed contract, shape reduced chi2 <= 100, adapter support)",
+  "acceptance_counts_all_rows": {
+    "excluded_coverage": 464,
+    "accepted": 3897,
+    "product_id_failed": 116,
     "integration_unresolved": 32,
-    "edge": 83,
-    "not_spoc": 8,
-    "product_shape_gate_failed": 1
+    "edge": 74,
+    "likelihood_support_unresolved": 8,
+    "product_not_in_scope": 8,
+    "product_shape_gate_failed": 16
   },
   "fits": {
     "core_matched": {
       "training_planets": 206,
       "training_hosts": 206,
-      "training_events": 2189,
+      "training_events": 2186,
       "excluded_rows": 30,
       "models": {
         "M0": {
@@ -22,26 +23,26 @@
           "at_bound": false
         },
         "M1": {
-          "b": 9.35293259813357,
+          "b": 9.352953131558086,
           "s_log_lambda": 0.0,
           "at_bound": false
         },
         "M2": {
           "b": 1.0,
-          "s_log_lambda": 2.0467781499427358,
+          "s_log_lambda": 2.0469590063091716,
           "at_bound": false
         },
         "M3": {
-          "b": 1.0797920783987551,
-          "s_log_lambda": 1.9678929474825517,
+          "b": 1.0800284430276275,
+          "s_log_lambda": 1.967824820067871,
           "at_bound": false
         }
       },
       "draw_parameter_q025_q975": {
         "M1": {
           "b": [
-            1.570238243181071,
-            16.101073600657642
+            1.691723242300172,
+            16.055051780161698
           ],
           "s_log_lambda": [
             0.0,
@@ -54,27 +55,27 @@
             1.0
           ],
           "s_log_lambda": [
-            1.2094070587447259,
-            2.7275933973392843
+            1.282226991833002,
+            2.6575823732423878
           ]
         },
         "M3": {
           "b": [
-            0.7983052227681832,
-            1.4525078360837242
+            0.7719237801173601,
+            1.4131906867693702
           ],
           "s_log_lambda": [
-            0.9607888358927636,
-            2.8622277844959214
+            0.9376969646906427,
+            2.7891882997851534
           ]
         }
       },
-      "bootstrap_seconds": 176.7
+      "bootstrap_seconds": 126.5
     },
     "all_spoc": {
       "training_planets": 216,
       "training_hosts": 215,
-      "training_events": 2288,
+      "training_events": 2283,
       "excluded_rows": 30,
       "models": {
         "M0": {
@@ -83,26 +84,26 @@
           "at_bound": false
         },
         "M1": {
-          "b": 9.941945868403437,
+          "b": 9.941916539674375,
           "s_log_lambda": 0.0,
           "at_bound": false
         },
         "M2": {
           "b": 1.0,
-          "s_log_lambda": 2.4652967523459584,
+          "s_log_lambda": 2.46471464553395,
           "at_bound": false
         },
         "M3": {
-          "b": 1.009928334366176,
-          "s_log_lambda": 2.45547709784797,
+          "b": 1.0120275729034813,
+          "s_log_lambda": 2.452831812174041,
           "at_bound": false
         }
       },
       "draw_parameter_q025_q975": {
         "M1": {
           "b": [
-            1.9017535364538218,
-            16.549680096850636
+            1.9417473411317907,
+            18.297933382839453
           ],
           "s_log_lambda": [
             0.0,
@@ -115,24 +116,25 @@
             1.0
           ],
           "s_log_lambda": [
-            1.5589481504500506,
-            3.0735183497719776
+            1.6571248209809633,
+            3.1324437613635463
           ]
         },
         "M3": {
           "b": [
-            0.7130839016607203,
-            1.3558373420241527
+            0.7109200637434322,
+            1.3280742386556645
           ],
           "s_log_lambda": [
-            1.2721415636178908,
-            3.260421873104234
+            1.4310959398860612,
+            3.3751858397162717
           ]
         }
       },
-      "bootstrap_seconds": 184.5
+      "bootstrap_seconds": 143.5
     }
   },
+  "seed": 20261107,
   "training_window": [
     "2022-09-28",
     "2024-01-03"

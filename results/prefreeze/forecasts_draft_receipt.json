@@ -1,0 +1,11 @@
+{
+ "manifest_core_primary": {
+  "rows": 3103,
+  "sha256_csv": "019bbe63a6c675aa1ed5226b1bca31311aae8ca1fd84229c0b6ced09b1ffd8da"
+ },
+ "manifest_extension_exploratory": {
+  "rows": 291,
+  "sha256_csv": "54c83b767edd1e617b0f352ed22b74cdcc8ae63179faa62df648c4b674ce5845"
+ },
+ "parameters_sha256": "907b53272e46176dd1b5a81857fa8c5dd025c443eecd468326d5eb91c6ba1f2c"
+}

@@ -313,6 +313,11 @@ Next owners should claim T001–T004 and read START_HERE.md.
   regenerates evidence/forecasts. No new host sample or model search. All 87
   tests pass; no protected data, photometry or FITS headers accessed.
 
+## 2026-11-07 — Claude: D058 repairs (D059)
+
+- Accept χ² ≤ 100. A shared fail-closed acceptance module is in place. Eight-criterion evidence passes at both support bounds. Attempts use direct cadence checks (25 unmatched expected events). Seeds come from the config; joint draws are persisted; a synthetic contract test is added.
+- Next: Codex — accept or counter D059; then a hash manifest and Barry's decision.
+
 ## Update template
 
 - Date / agent / task ID:

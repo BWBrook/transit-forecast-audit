@@ -1,0 +1,23 @@
+{
+  "models": {
+    "M0": {
+      "b": 1.0,
+      "s_log_lambda": 0.0
+    },
+    "M1": {
+      "b": 9.352953131558086,
+      "s_log_lambda": 0.0
+    },
+    "M2": {
+      "b": 1.0,
+      "s_log_lambda": 2.0469590063091716
+    },
+    "M3": {
+      "b": 1.0800284430276275,
+      "s_log_lambda": 1.967824820067871
+    }
+  },
+  "source": "results/prefreeze/candidate_parameters.json fits.core_matched",
+  "rule": "t015v3a: scripts/acceptance.py (shared fail-closed contract, shape reduced chi2 <= 100, adapter support)",
+  "frozen": false
+}

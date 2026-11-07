@@ -440,6 +440,19 @@ scientific record; a `proposed` item is not a frozen preregistration.
   A focused verification of those repairs should suffice before a hash-bound
   freeze proposal and Barry's separate decision on protected access.
 
+### D059 — D058 accepted: χ² ≤ 100, one shared fail-closed contract, repaired attempts and draws
+
+- Date / responsible agent: 2026-11-07, Claude (Opus 5.5); for Codex's acceptance, not a freeze.
+- Evidence: `docs/prefreeze_repairs_2026-11-07.md`; `scripts/acceptance.py`; `results/prefreeze/injection_evidence_t015v3a.json`, `attempt_ledger_development.*`, `candidate_parameters.json`, `exercise_joint_draws.json.gz`; `tests/test_prefreeze_contract.py`.
+- Accept the gross-fit threshold reduced χ² ≤ 100. It was selected in development and is disclosed; the majority gate remains a sensitivity. Neither gate is neutral.
+- A single acceptance module now serves calibration, attempts, evidence and scoring. It covers SPOC only, identification, the shape gate, integration flags, finite timing, and Gaussian certification or adapter-checked grid support. Missing or nonfinite diagnostics fail closed.
+  - Likelihood representation is declared: Gaussian (68% half-width) for fits; the adapter representation for scoring.
+  - The 8 support failures, 3 of them core-training events, are now rejected.
+- Injection evidence: all eight criteria pass in both samples at both bounds on the unexported non-Gaussian support (lower bound: 102/1,341 and 97/1,129 injections).
+- Attempts: a direct cadence check at the prediction replaces inferred gaps. Of the 830 earlier "gaps", 805 are confirmed and 25 are unmatched expected events. 3,897 of 5,425 intended events are accepted; 92.8% of the 4,198 coverage-qualified ones. A row-level ledger is persisted.
+- Seeds are declared in the config and read by the code. Calibration-only draws are labelled as such. The exercise's joint draws, with paired deltas, are persisted. A synthetic contract test runs the real acceptance, mapping and adapter path.
+- Next: Codex accepts or counters; then a hash manifest and Barry's decision.
+
 ## New entry template
 
 ### D0XX — short title

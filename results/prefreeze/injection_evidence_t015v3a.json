@@ -1,0 +1,231 @@
+{
+ "rule": "t015v3a (scripts/acceptance.py)",
+ "shape_rchi_max": 100.0,
+ "bootstrap": 10000,
+ "seed": 20261107,
+ "acceptance_source_sha256": "2a85239e358bcaff75e83631d3f3573a682fffa8bf1ab920f6924040c56e9432",
+ "samples": {
+  "confirm": {
+   "injection_states": {
+    "accepted": 1341,
+    "product_id_failed": 144,
+    "excluded_coverage": 143,
+    "not_recovered": 140,
+    "likelihood_support_not_exported": 137,
+    "run_dropped_window_overlap": 94,
+    "run_id_failed": 12,
+    "edge": 5,
+    "integration_unresolved": 5
+   },
+   "upper_nonGaussian_pass": {
+    "hosts": 104,
+    "events": 1478,
+    "z_rms": 0.9867,
+    "z_rms_ci90": [
+     0.9527,
+     1.02
+    ],
+    "cover95": 0.9473,
+    "cover95_ci90": [
+     0.9349,
+     0.959
+    ],
+    "mean_z": -0.0032,
+    "mean_z_ci90": [
+     -0.0562,
+     0.0492
+    ],
+    "z_rms_tmag9_ci90": [
+     0.971,
+     1.0639
+    ],
+    "z_rms_tmag13.5_ci90": [
+     0.8798,
+     1.0006
+    ],
+    "noise_control": {
+     "host_products": 104,
+     "beta_ratio": 1.0,
+     "resid_rms_ratio": 1.0045,
+     "resid_rms_ratio_iqr": [
+      0.9828,
+      1.0226
+     ]
+    },
+    "verdict": {
+     "checks": {
+      "min_hosts": true,
+      "z_rms": true,
+      "cover95": true,
+      "mean_z": true,
+      "tmag9": true,
+      "tmag13.5": true,
+      "noise_beta_ratio": true,
+      "noise_resid_rms_ratio": true
+     },
+     "pass": true
+    }
+   },
+   "lower_nonGaussian_fail": {
+    "hosts": 102,
+    "events": 1341,
+    "z_rms": 0.9848,
+    "z_rms_ci90": [
+     0.9463,
+     1.0233
+    ],
+    "cover95": 0.9535,
+    "cover95_ci90": [
+     0.9416,
+     0.965
+    ],
+    "mean_z": 0.0114,
+    "mean_z_ci90": [
+     -0.0513,
+     0.0745
+    ],
+    "z_rms_tmag9_ci90": [
+     0.9896,
+     1.1011
+    ],
+    "z_rms_tmag13.5_ci90": [
+     0.8174,
+     0.9791
+    ],
+    "noise_control": {
+     "host_products": 102,
+     "beta_ratio": 1.0,
+     "resid_rms_ratio": 1.0046,
+     "resid_rms_ratio_iqr": [
+      0.9827,
+      1.0209
+     ]
+    },
+    "verdict": {
+     "checks": {
+      "min_hosts": true,
+      "z_rms": true,
+      "cover95": true,
+      "mean_z": true,
+      "tmag9": true,
+      "tmag13.5": true,
+      "noise_beta_ratio": true,
+      "noise_resid_rms_ratio": true
+     },
+     "pass": true
+    }
+   }
+  },
+  "confirm2": {
+   "injection_states": {
+    "accepted": 1129,
+    "likelihood_support_not_exported": 239,
+    "product_id_failed": 160,
+    "not_recovered": 150,
+    "excluded_coverage": 128,
+    "run_dropped_window_overlap": 94,
+    "edge": 24,
+    "integration_unresolved": 6,
+    "run_id_failed": 1
+   },
+   "upper_nonGaussian_pass": {
+    "hosts": 100,
+    "events": 1368,
+    "z_rms": 1.0156,
+    "z_rms_ci90": [
+     0.9798,
+     1.0518
+    ],
+    "cover95": 0.9502,
+    "cover95_ci90": [
+     0.9382,
+     0.9615
+    ],
+    "mean_z": 0.0697,
+    "mean_z_ci90": [
+     0.0134,
+     0.1261
+    ],
+    "z_rms_tmag9_ci90": [
+     0.9646,
+     1.1244
+    ],
+    "z_rms_tmag13.5_ci90": [
+     0.8639,
+     1.0715
+    ],
+    "noise_control": {
+     "host_products": 99,
+     "beta_ratio": 1.0,
+     "resid_rms_ratio": 0.9998,
+     "resid_rms_ratio_iqr": [
+      0.9802,
+      1.0177
+     ]
+    },
+    "verdict": {
+     "checks": {
+      "min_hosts": true,
+      "z_rms": true,
+      "cover95": true,
+      "mean_z": true,
+      "tmag9": true,
+      "tmag13.5": true,
+      "noise_beta_ratio": true,
+      "noise_resid_rms_ratio": true
+     },
+     "pass": true
+    }
+   },
+   "lower_nonGaussian_fail": {
+    "hosts": 97,
+    "events": 1129,
+    "z_rms": 1.0274,
+    "z_rms_ci90": [
+     0.9839,
+     1.0706
+    ],
+    "cover95": 0.9496,
+    "cover95_ci90": [
+     0.9368,
+     0.9615
+    ],
+    "mean_z": 0.0458,
+    "mean_z_ci90": [
+     -0.0302,
+     0.119
+    ],
+    "z_rms_tmag9_ci90": [
+     0.963,
+     1.1047
+    ],
+    "z_rms_tmag13.5_ci90": [
+     0.8963,
+     1.1263
+    ],
+    "noise_control": {
+     "host_products": 96,
+     "beta_ratio": 1.0,
+     "resid_rms_ratio": 0.9953,
+     "resid_rms_ratio_iqr": [
+      0.9787,
+      1.0125
+     ]
+    },
+    "verdict": {
+     "checks": {
+      "min_hosts": true,
+      "z_rms": true,
+      "cover95": true,
+      "mean_z": true,
+      "tmag9": true,
+      "tmag13.5": true,
+      "noise_beta_ratio": true,
+      "noise_resid_rms_ratio": true
+     },
+     "pass": true
+    }
+   }
+  }
+ }
+}
