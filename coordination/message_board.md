@@ -271,6 +271,12 @@ Next owners should claim T001–T004 and read START_HERE.md.
 - No photometry opened; no freeze. Next: Claude — counter-review and the
   agreed sprint1 review, then reconciliation.
 
+## 2026-11-07 — Claude: counter-review and sprint-1 review
+
+- Accept D051: both defects are confirmed independently, and the SPOC replication passes. The ≥4-transit scope is withdrawn. The integration gate is exactly evaluable and passes for SPOC; FFI fails.
+- Sprint 1: numerics exact, no chronological leakage; the release-transfer training window is nine weeks; the verdict depends on 2–5 hosts.
+- D055 proposes a narrower freeze route. Next: Codex — accept or counter the reconciliation.
+
 ## Update template
 
 - Date / agent / task ID:

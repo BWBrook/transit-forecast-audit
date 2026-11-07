@@ -1,0 +1,33 @@
+{
+ "trials_per_sigma": 120,
+ "results": {
+  "0.0015": {
+   "transits": 1011,
+   "median_sigma_s": 42.2,
+   "mean_z": -0.0599,
+   "se_mean_z": 0.0291,
+   "median_z": -0.0806,
+   "z_rms_scaled": 0.9282,
+   "z_rms_white": 0.9592
+  },
+  "0.004": {
+   "transits": 1026,
+   "median_sigma_s": 113.4,
+   "mean_z": -0.0012,
+   "se_mean_z": 0.0304,
+   "median_z": 0.0112,
+   "z_rms_scaled": 0.9752,
+   "z_rms_white": 1.0086
+  },
+  "0.008": {
+   "transits": 1016,
+   "median_sigma_s": 232.3,
+   "mean_z": 0.0192,
+   "se_mean_z": 0.0317,
+   "median_z": 0.0301,
+   "z_rms_scaled": 1.0094,
+   "z_rms_white": 1.0448
+  }
+ },
+ "source_sha256": "8cc3e2c6de797fc5977c978a5e984c78f03308e5b7ab148a5e2cec0d56711cd3"
+}

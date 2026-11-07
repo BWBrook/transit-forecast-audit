@@ -1,0 +1,332 @@
+{
+ "tails": [
+  {
+   "s": 1.0,
+   "ratio_sy_sf": 0.05,
+   "q975_quad": 2.6455327280011067,
+   "q975_core": 2.6455327280015073,
+   "q975_rel_err": 1.5143442055887135e-13,
+   "q84_quad": 1.0211428880461502,
+   "logdens_abs_err_max": 1.509903313490213e-14
+  },
+  {
+   "s": 1.0,
+   "ratio_sy_sf": 0.3,
+   "q975_quad": 2.6961313144244823,
+   "q975_core": 2.6961313144299304,
+   "q975_rel_err": 2.020605904817785e-12,
+   "q84_quad": 1.0733302019276423,
+   "logdens_abs_err_max": 1.7763568394002505e-14
+  },
+  {
+   "s": 1.0,
+   "ratio_sy_sf": 1.0,
+   "q975_quad": 3.2244754897388406,
+   "q975_core": 3.2244754897388224,
+   "q975_rel_err": -5.662137425588298e-15,
+   "q84_quad": 1.4907925166939926,
+   "logdens_abs_err_max": 1.4210854715202004e-14
+  },
+  {
+   "s": 1.0,
+   "ratio_sy_sf": 3.0,
+   "q975_quad": 6.403655837792825,
+   "q975_core": 6.4036558377928445,
+   "q975_rel_err": 3.1086244689504383e-15,
+   "q84_quad": 3.2394510618964354,
+   "logdens_abs_err_max": 1.4210854715202004e-14
+  },
+  {
+   "s": 1.0,
+   "ratio_sy_sf": 10.0,
+   "q975_quad": 19.761319521861623,
+   "q975_core": 19.76131952186862,
+   "q975_rel_err": 3.5416114485542494e-13,
+   "q84_quad": 10.081024616692293,
+   "logdens_abs_err_max": 8.881784197001252e-16
+  },
+  {
+   "s": 2.16,
+   "ratio_sy_sf": 0.05,
+   "q975_quad": 5.3878215363026465,
+   "q975_core": 5.387821536303562,
+   "q975_rel_err": 1.6986412276764895e-13,
+   "q84_quad": 1.1604292847917488,
+   "logdens_abs_err_max": 5.660361068748898e-11
+  },
+  {
+   "s": 2.16,
+   "ratio_sy_sf": 0.3,
+   "q975_quad": 5.406212671057253,
+   "q975_core": 5.406212671057343,
+   "q975_rel_err": 1.6653345369377348e-14,
+   "q84_quad": 1.209910606505308,
+   "logdens_abs_err_max": 5.31699129169283e-11
+  },
+  {
+   "s": 2.16,
+   "ratio_sy_sf": 1.0,
+   "q975_quad": 5.602488786552859,
+   "q975_core": 5.602488786552913,
+   "q975_rel_err": 9.547918011776346e-15,
+   "q84_quad": 1.6879569245304618,
+   "logdens_abs_err_max": 2.7556623649616085e-11
+  },
+  {
+   "s": 2.16,
+   "ratio_sy_sf": 3.0,
+   "q975_quad": 7.735930509934918,
+   "q975_core": 7.735930509934707,
+   "q975_rel_err": -2.731148640577885e-14,
+   "q84_quad": 3.528201344690753,
+   "logdens_abs_err_max": 1.2079226507921703e-13
+  },
+  {
+   "s": 2.16,
+   "ratio_sy_sf": 10.0,
+   "q975_quad": 20.432195554299003,
+   "q975_core": 20.432195554299042,
+   "q975_rel_err": 1.9984014443252818e-15,
+   "q84_quad": 10.31414721146145,
+   "logdens_abs_err_max": 3.552713678800501e-15
+  },
+  {
+   "s": 2.6,
+   "ratio_sy_sf": 0.05,
+   "q975_quad": 7.315649468183162,
+   "q975_core": 7.315649468003314,
+   "q975_rel_err": -2.458400150118223e-11,
+   "q84_quad": 1.244240294576637,
+   "logdens_abs_err_max": 2.248219388434336e-09
+  },
+  {
+   "s": 2.6,
+   "ratio_sy_sf": 0.3,
+   "q975_quad": 7.328165951566468,
+   "q975_core": 7.3281659514790425,
+   "q975_rel_err": -1.1930012533412082e-11,
+   "q84_quad": 1.2899198469218545,
+   "logdens_abs_err_max": 2.1455868193243077e-09
+  },
+  {
+   "s": 2.6,
+   "ratio_sy_sf": 1.0,
+   "q975_quad": 7.460218431578854,
+   "q975_core": 7.460218431579193,
+   "q975_rel_err": 4.551914400963142e-14,
+   "q84_quad": 1.776916181164982,
+   "logdens_abs_err_max": 1.3222436479054522e-09
+  },
+  {
+   "s": 2.6,
+   "ratio_sy_sf": 3.0,
+   "q975_quad": 8.930225225266916,
+   "q975_core": 8.930225225266778,
+   "q975_rel_err": -1.554312234475219e-14,
+   "q84_quad": 3.675237081994589,
+   "logdens_abs_err_max": 3.715960872341384e-11
+  },
+  {
+   "s": 2.6,
+   "ratio_sy_sf": 10.0,
+   "q975_quad": 21.1557183619157,
+   "q975_core": 21.155718361907645,
+   "q975_rel_err": -3.806954751439662e-13,
+   "q84_quad": 10.500912603957557,
+   "logdens_abs_err_max": 5.329070518200751e-15
+  },
+  {
+   "s": 3.2,
+   "ratio_sy_sf": 0.05,
+   "q975_quad": 11.287023554081848,
+   "q975_core": 11.287023570751254,
+   "q975_rel_err": 1.4768646305896027e-09,
+   "q84_quad": 1.383436564652888,
+   "logdens_abs_err_max": 7.011598857076251e-08
+  },
+  {
+   "s": 3.2,
+   "ratio_sy_sf": 0.3,
+   "q975_quad": 11.294465717340621,
+   "q975_core": 11.294465731046694,
+   "q975_rel_err": 1.2135210614161451e-09,
+   "q84_quad": 1.4236073208394497,
+   "logdens_abs_err_max": 6.784788109115425e-08
+  },
+  {
+   "s": 3.2,
+   "ratio_sy_sf": 1.0,
+   "q975_quad": 11.372340059915711,
+   "q975_core": 11.372340062405506,
+   "q975_rel_err": 2.1893420409924147e-10,
+   "q84_quad": 1.9081828333591178,
+   "logdens_abs_err_max": 4.832164712809117e-08
+  },
+  {
+   "s": 3.2,
+   "ratio_sy_sf": 3.0,
+   "q975_quad": 12.115056919119885,
+   "q975_core": 12.115056919122043,
+   "q975_rel_err": 1.780797731498751e-13,
+   "q84_quad": 3.8938153065060903,
+   "logdens_abs_err_max": 4.35045688362834e-09
+  },
+  {
+   "s": 3.2,
+   "ratio_sy_sf": 10.0,
+   "q975_quad": 22.833961475933602,
+   "q975_core": 22.833961475929954,
+   "q975_rel_err": -1.5976109324356003e-13,
+   "q84_quad": 10.838605217203108,
+   "logdens_abs_err_max": 5.062616992290714e-14
+  }
+ ],
+ "chronology": {
+  "chronological|train": {
+   "release": "DRC",
+   "events": 1696,
+   "events_in_DRC_timing_table": 0,
+   "planets_with_any": 0,
+   "planets": 133,
+   "pre_issue_events": 1297
+  },
+  "chronological|test": {
+   "release": "DRC",
+   "events": 1925,
+   "events_in_DRC_timing_table": 0,
+   "planets_with_any": 0,
+   "planets": 206,
+   "pre_issue_events": 0
+  },
+  "release_transfer|train": {
+   "release": "DRB",
+   "events": 172,
+   "events_in_DRC_timing_table": 172,
+   "planets_with_any": 15,
+   "planets": 15,
+   "pre_issue_events": 0
+  },
+  "release_transfer|test": {
+   "release": "DRC",
+   "events": 2324,
+   "events_in_DRC_timing_table": 0,
+   "planets_with_any": 0,
+   "planets": 238,
+   "pre_issue_events": 0
+  }
+ },
+ "influence": {
+  "release_transfer": {
+   "replicates": 400,
+   "q025": -5.756230785337786,
+   "q975": 0.18732631206473524,
+   "fraction_above_zero": 0.035,
+   "note": "replicate host multiplicities are not stored; see leave-hosts-out below",
+   "fixed_parameter_leave_hosts_out": {
+    "drop_top_0_gain_hosts": {
+     "hosts": [],
+     "delta": -2.444936365328318
+    },
+    "drop_top_1_gain_hosts": {
+     "hosts": [
+      "TOI-1130"
+     ],
+     "delta": -1.4214630349961064
+    },
+    "drop_top_2_gain_hosts": {
+     "hosts": [
+      "TOI-1130",
+      "TOI-125"
+     ],
+     "delta": -0.7800476801440805
+    },
+    "drop_top_3_gain_hosts": {
+     "hosts": [
+      "TOI-1130",
+      "TOI-125",
+      "HAT-P-69"
+     ],
+     "delta": -0.416211529460271
+    },
+    "drop_top_5_gain_hosts": {
+     "hosts": [
+      "TOI-1130",
+      "TOI-125",
+      "HAT-P-69",
+      "TOI-1478",
+      "TOI-201"
+     ],
+     "delta": 0.17311144078327362
+    }
+   },
+   "fraction_planets_improved": 0.23529411764705882,
+   "median_planet_delta": 0.9311628018740521,
+   "fixed_parameter_bootstrap": {
+    "ci95": [
+     -5.442842731815901,
+     -0.13712041640519487
+    ],
+    "P_above_zero": 0.01545,
+    "P_above_zero_given_both_top2_absent": 0.10652414301511243,
+    "P_above_zero_given_any_top2_present": 0.001156938740093712,
+    "P_both_absent": 0.13565
+   }
+  },
+  "chronological": {
+   "replicates": 400,
+   "q025": -6.350647971925365,
+   "q975": 0.06749004120616929,
+   "fraction_above_zero": 0.0325,
+   "note": "replicate host multiplicities are not stored; see leave-hosts-out below",
+   "fixed_parameter_leave_hosts_out": {
+    "drop_top_0_gain_hosts": {
+     "hosts": [],
+     "delta": -2.628470476861958
+    },
+    "drop_top_1_gain_hosts": {
+     "hosts": [
+      "TOI-1130"
+     ],
+     "delta": -1.2403731993050784
+    },
+    "drop_top_2_gain_hosts": {
+     "hosts": [
+      "TOI-1130",
+      "TOI-125"
+     ],
+     "delta": -0.36418466741933986
+    },
+    "drop_top_3_gain_hosts": {
+     "hosts": [
+      "TOI-1130",
+      "TOI-125",
+      "HAT-P-69"
+     ],
+     "delta": 0.13958504447123865
+    },
+    "drop_top_5_gain_hosts": {
+     "hosts": [
+      "TOI-1130",
+      "TOI-125",
+      "HAT-P-69",
+      "TOI-1478",
+      "TOI-201"
+     ],
+     "delta": 0.9665393799546941
+    }
+   },
+   "fraction_planets_improved": 0.1941747572815534,
+   "median_planet_delta": 1.174306731250388,
+   "fixed_parameter_bootstrap": {
+    "ci95": [
+     -6.554012073266384,
+     0.4542393746454044
+    ],
+    "P_above_zero": 0.05765,
+    "P_above_zero_given_both_top2_absent": 0.3559822747415066,
+    "P_above_zero_given_any_top2_present": 0.010929909784871617,
+    "P_both_absent": 0.1354
+   }
+  }
+ }
+}

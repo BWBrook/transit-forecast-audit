@@ -1,0 +1,170 @@
+{
+ "confirm|production": {
+  "hosts": 105,
+  "events": 1490,
+  "flagged_removed": 5,
+  "z_rms": [
+   0.9896,
+   0.9558,
+   1.0227
+  ],
+  "cover95": [
+   0.9462,
+   0.9338
+  ],
+  "mean_z": [
+   -0.0036,
+   -0.0564,
+   0.0486
+  ],
+  "tmag9": [
+   0.978,
+   1.07
+  ],
+  "tmag13.5": [
+   0.875,
+   0.999
+  ],
+  "passes_amended_A2": true
+ },
+ "confirm|SPOC_120": {
+  "hosts": 104,
+  "events": 1478,
+  "flagged_removed": 5,
+  "z_rms": [
+   0.9867,
+   0.9527,
+   1.02
+  ],
+  "cover95": [
+   0.9473,
+   0.9349
+  ],
+  "mean_z": [
+   -0.0032,
+   -0.0562,
+   0.0492
+  ],
+  "tmag9": [
+   0.971,
+   1.064
+  ],
+  "tmag13.5": [
+   0.88,
+   1.001
+  ],
+  "passes_amended_A2": true
+ },
+ "confirm|TESS-SPOC_200": {
+  "hosts": 106,
+  "events": 1471,
+  "flagged_removed": 4,
+  "z_rms": [
+   0.9943,
+   0.9512,
+   1.0394
+  ],
+  "cover95": [
+   0.9493,
+   0.9363
+  ],
+  "mean_z": [
+   -0.0108,
+   -0.0645,
+   0.0424
+  ],
+  "tmag9": [
+   0.959,
+   1.135
+  ],
+  "tmag13.5": [
+   0.834,
+   0.999
+  ],
+  "passes_amended_A2": true
+ },
+ "confirm2|production": {
+  "hosts": 100,
+  "events": 1368,
+  "flagged_removed": 6,
+  "z_rms": [
+   1.0156,
+   0.9798,
+   1.0518
+  ],
+  "cover95": [
+   0.9502,
+   0.9382
+  ],
+  "mean_z": [
+   0.0697,
+   0.0134,
+   0.1261
+  ],
+  "tmag9": [
+   0.965,
+   1.124
+  ],
+  "tmag13.5": [
+   0.864,
+   1.071
+  ],
+  "passes_amended_A2": true
+ },
+ "confirm2|SPOC_120": {
+  "hosts": 100,
+  "events": 1368,
+  "flagged_removed": 6,
+  "z_rms": [
+   1.0156,
+   0.9798,
+   1.0518
+  ],
+  "cover95": [
+   0.9502,
+   0.9382
+  ],
+  "mean_z": [
+   0.0697,
+   0.0134,
+   0.1261
+  ],
+  "tmag9": [
+   0.965,
+   1.124
+  ],
+  "tmag13.5": [
+   0.864,
+   1.071
+  ],
+  "passes_amended_A2": true
+ },
+ "confirm2|TESS-SPOC_200": {
+  "hosts": 102,
+  "events": 1347,
+  "flagged_removed": 13,
+  "z_rms": [
+   1.1048,
+   0.9968,
+   1.2284
+  ],
+  "cover95": [
+   0.9285,
+   0.9015
+  ],
+  "mean_z": [
+   0.0481,
+   -0.0518,
+   0.1428
+  ],
+  "tmag9": [
+   0.993,
+   1.347
+  ],
+  "tmag13.5": [
+   0.732,
+   1.286
+  ],
+  "passes_amended_A2": false
+ }
+}

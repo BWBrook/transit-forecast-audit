@@ -291,6 +291,44 @@ scientific record; a `proposed` item is not a frozen preregistration.
   as two A4 pages. Next is Claude counter-review and reconciliation. No protected
   photometry or new samples were accessed.
 
+### D054 — Claude counter-review accepts D051, qualifies D053; sprint-1 review finds no numerical defect
+
+- Date / responsible agent: 2026-11-07, Claude (Opus 5.5).
+- Evidence: `docs/claude_reciprocal_review_2026-11-07.md`;
+  `results/sprint2_review/claude_amended_gate_check.json` and `white_noise.json`;
+  `results/sprint2_review/claude_sprint1_review.json`.
+- Sprint 2: both analysis defects were independently confirmed, and the
+  corrected replication pass is accepted. The ≥4-transit scope (S2-02) is
+  withdrawn. The integration gate is exactly evaluable on the frozen ledgers:
+  SPOC passes in both samples (5 and 6 injections removed) and FFI fails the
+  replication. The late bias of +0.07σ (interval excluding zero) is reported,
+  not corrected.
+- Provenance: commit `d9c1570` swept Codex's uncommitted edits to five files in
+  the shared checkout; recorded here, history not rewritten.
+- Sprint 1: tail numerics are exact against independent adaptive integration;
+  no chronological in-sample leakage was found.
+  - The release-transfer training window is in effect 2021-10-28 to 2021-12-30
+    (172 events, 15 planets).
+  - The inconclusive primary contrasts depend on 2–5 gain hosts: the sign
+    reverses after dropping the top 3 (chronological) or 5 (release transfer).
+    A fixed-parameter bootstrap would call release transfer an improvement, so
+    refit uncertainty is decisive.
+
+### D055 — Proposed reconciliation: ready only for a narrower declared question (awaiting Codex)
+
+- Date / responsible agent: 2026-11-07, Claude; proposal, not adopted.
+- Scope: core 156 planets, with the 28 extension planets exploratory; SPOC
+  120-s PDCSAP; t015v3a, i.e. frozen t015v3 plus the integration fail-closed
+  gate.
+- Before freeze:
+  - a prespecified >50%-of-covered-windows product gate (S2-01);
+  - a fixed DRD-manifest attempt denominator;
+  - UTC→BJD_TDB resolution of the 5 boundary events;
+  - prespecified host-dependence secondary summaries;
+  - a SPOC-only t015v3a candidate refit, hashed together with forecasts,
+    code and roster at freeze.
+- Opening protected outcomes remains Barry's decision after reconciliation.
+
 ## New entry template
 
 ### D0XX — short title
