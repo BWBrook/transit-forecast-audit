@@ -90,6 +90,8 @@ def era_limit(era):
             and isinstance(rec.get("decision_id"), str) and rec["decision_id"].strip()
             and dated):
         raise SystemExit(message)
+    import freeze_manifest  # the decision must cite the SHA-256 of the verified freeze manifest
+    freeze_manifest.check_for_access(rec)
     return None
 
 

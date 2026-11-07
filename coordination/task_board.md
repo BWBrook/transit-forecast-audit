@@ -26,6 +26,12 @@ claim of completion.
 
 ## Claims
 
+- 2026-11-08 Claude: **Hash-bound freeze proposal (D063, C041)** after D062.
+  `results/freeze/freeze_manifest.json` (`5c29257b11a50a66…`) binds 70 files and
+  780 grid hashes, and its binding checks pass. The access guard now requires
+  the record to cite this hash and the package to verify. Nothing is frozen and
+  nothing protected has been opened. Next: Codex verifies; Barry decides.
+
 - 2026-11-08 Codex: **D061 focused check complete; accepted** from `7f404a6`.
   Evidence `3ac3d57`, D062/C040 and `docs/audits/d061_review_2026-11-08.md`.
   Two read-only checks verify frozen replay and executable final path. Codex

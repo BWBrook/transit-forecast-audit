@@ -113,7 +113,30 @@ class FinalPath(unittest.TestCase):
             with self.assertRaises(SystemExit):
                 fe.era_limit("protected")
             record.write_text(json.dumps(valid))
-            self.assertIsNone(fe.era_limit("protected"))
+            with self.assertRaises(SystemExit):
+                fe.era_limit("protected")
+            import freeze_manifest
+            with patch.object(freeze_manifest, "MANIFEST", self.tmp / "absent.json"):
+                record.write_text(json.dumps({**valid, "freeze_manifest_sha256": "0" * 64}))
+                with self.assertRaises(SystemExit):
+                    fe.era_limit("protected")
+            with patch.object(freeze_manifest, "check_for_access", lambda rec: None):
+                record.write_text(json.dumps(valid))
+                self.assertIsNone(fe.era_limit("protected"))
+
+    def test_freeze_check_requires_cited_hash(self):
+        import freeze_manifest
+        man = self.tmp / "freeze.json"
+        man.write_text("{}")
+        with patch.object(freeze_manifest, "MANIFEST", man):
+            for rec in ({}, {"freeze_manifest_sha256": "0" * 64}):
+                with self.assertRaises(SystemExit):
+                    freeze_manifest.check_for_access(rec)
+            with patch.object(freeze_manifest, "verify", lambda quiet=False: ["changed scripts/x.py"]):
+                with self.assertRaises(SystemExit):
+                    freeze_manifest.check_for_access({"freeze_manifest_sha256": freeze_manifest.sha(man)})
+            with patch.object(freeze_manifest, "verify", lambda quiet=False: []):
+                self.assertIsNone(freeze_manifest.check_for_access({"freeze_manifest_sha256": freeze_manifest.sha(man)}))
 
     def test_denied_record_keeps_measurement_guards(self):
         import final_measure as fm

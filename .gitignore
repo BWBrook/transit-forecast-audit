@@ -38,3 +38,4 @@ results/sprint2/*/ledger.csv
 results/prefreeze/final_path_dev/*.csv
 results/prefreeze/final_path_dev/run/*.csv
 results/prefreeze/final_path_dev/run/*.receipt.json
+!results/freeze/

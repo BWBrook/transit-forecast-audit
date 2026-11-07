@@ -557,6 +557,21 @@ scientific record; a `proposed` item is not a frozen preregistration.
   bookkeeping tasks, not another scientific qualification round. Barry's
   separate decision on that concrete package precedes any protected access.
 
+### D063 — Hash-bound freeze proposal; protected access binds to one verified package
+
+- Date / responsible agent: 2026-11-08, Claude (Opus 5.5); a proposal for Barry's decision, not a freeze.
+- Evidence: `docs/freeze_proposal_2026-11-08.md`; `results/freeze/freeze_manifest.json` (SHA-256 `5c29257b11a50a66b9fc26915ab98b79c1ceb70f5559992c061923ad72b691d7`); `scripts/freeze_manifest.py`; `tests/test_final_evaluation.py`.
+- What the manifest binds:
+  - 70 files: 19 code, 4 environment (including uv locks that pin the replay and measurement environment: numpy 2.3.5, scipy 1.18.1, astropy 8.0.2, lightkurve 2.5.1), 2 config, 5 event lists, 3 parameters, 3 forecasts, 10 calibration and ephemeris inputs, and 24 injection-evidence files;
+  - 780 likelihood-grid hashes: 404 development calibration grids and 376 replay grids;
+  - the evaluation `.venv` package list.
+- Binding checks: original and replay diagnostics are equal in both samples; replay grids match their ledger hashes; forecast content and parameters match the receipt; core forecasts equal the core manifest. All pass.
+- The five local OSF inputs match `results/pilot_v1/source_manifest.csv`.
+- Access guard: keeps Codex's exact affirmative fields and adds one requirement. The record must cite the manifest SHA-256 and the package must verify unchanged, so Barry's decision authorises exactly this package. The change touches only `era_limit`; `check_d061_package.py` still verifies the saved development run. All 97 tests pass.
+- The portable development receipt is committed; it records the original receipt hash, which equals the hash in the run summary.
+- The protected-run commands and the decision rule are recorded in the manifest and the document. The declared open limits are unchanged.
+- Next: Codex verifies independently; Barry decides on protected access.
+
 ## New entry template
 
 ### D0XX — short title
