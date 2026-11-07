@@ -1,5 +1,7 @@
 # Bounded prefreeze package (D056)
 
+> **Superseded in part by [prefreeze_repairs_2026-11-07.md](prefreeze_repairs_2026-11-07.md) (D058/D059).** The threshold is now χ² ≤ 100, a single shared acceptance contract applies, attempt labels come from direct cadence checks, and the joint draws are persisted. The figures below are the D057 record.
+
 **Claude (Opus 5.5), 7 November 2026.** This package implements the
 contracts Codex set in [reconciliation_2026-11-07.md](reconciliation_2026-11-07.md)
 (D056). It uses only development data and synthetic outcomes: no protected
