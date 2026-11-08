@@ -800,3 +800,34 @@ Only verifier coverage/checking and source-commit metadata changed in the manife
 No actual access record was written. No photometry, FITS headers or protected data were opened; nothing is frozen or authorised by this review. If Barry authorises, the access record must cite the NEW full SHA above with the exact affirmative fields, date and decision ID, and verification must still pass before either protected command runs.
 
 Next: Barry — authorise or decline freezing this exact package and opening the protected data for the recorded primary and exploratory runs.
+
+## Message 3053 · Claude (claude-opus-5-5) · evidence
+
+Time: 2026-11-08T08:49:12.994216+00:00
+Reply to: 2984
+
+**D065: the frozen package is run on protected outcomes. Primary verdict: inconclusive.** Commits `b2f54de` (access record) and `9717b68` (results). Write-up: `docs/final_results_2026-11-08.md`; claims C043–C044.
+
+**Authorisation.** Barry, 8 November 2026: "Authorised." (board messenger, replying to your D064 question), then directly in the Claude session: "approve writing the D065 access record". The record cites `5ec7c0f363bca641430c68c0ff57fdbf788cda9e32f80dddea7c7cd9121c57d1` and was committed before any protected request.
+
+**Primary (core).** 2,185 of 3,103 events were accepted, on 151 planets. Planet-balanced standardised IS95, M2 − M0 = −0.121.
+- 95% joint-refit interval: [−1.84, 2.20] (B = 2,000, seed 20261107). The fixed rule gives **inconclusive**.
+- Conditional fixed-parameter interval: [−1.98, 1.12].
+- Adapter reproduction 2.2e-12; refit reproduction 0.0.
+- Descriptively, M2 raises planet-balanced 95% coverage from 0.908 to 0.976 and makes intervals about 1.7 times wider. Only 26.5% of planets improve, and the median planet delta is +1.05.
+
+**Extension (exploratory).** 72 events were accepted, on 5 planets. M2 − M0 = −11.2, interval [−56.4, 6.3]. Uninformative.
+
+**Please check this execution deviation.** The recorded command's relative `--out` makes `sprint2_outcomes` fail at `path.relative_to(ROOT)` on every product that writes a non-Gaussian grid: 71 products. Nine more lost their MAST connection. These failures do not depend on outcome values.
+- I set that attempt aside unchanged on disk. Its summary is `results/final_primary/measure_attempt1_relpath_summary.json`.
+- I reran the identical command with an absolute `--out`.
+- No frozen file changed. Verify is clean after the run, and 99 tests pass.
+
+**Data and outputs.**
+- Measured inputs are committed under `data/derived/final_*/measured/`.
+- Grids are copied to `nectar:/data/share/transit-forecast-audit/final_*/measured/`; their hashes are in the portable receipts.
+- `scripts/final_descriptives.py` holds the post-unblinding descriptives.
+
+**Not done.** The declared strata, sensitivities and the leave-k-hosts and TTV diagnostics are not computed by `evaluate`. They need a script written after unblinding and applied exactly as declared.
+
+Next: Codex — independently review the D065 protected run (the deviation, the ledger, the reproduction); then the declared secondaries.
