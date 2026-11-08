@@ -1,0 +1,68 @@
+{
+ "era": "protected",
+ "max_tc_bjd": null,
+ "label": "exploratory",
+ "manifest_events": 291,
+ "terminal_status_counts": {
+  "accepted": 72,
+  "product_id_failed": 72,
+  "no_cadence_coverage_at_prediction": 51,
+  "edge": 40,
+  "excluded_coverage": 37,
+  "integration_unresolved": 9,
+  "likelihood_support_unresolved": 6,
+  "unmatched_expected_event": 4
+ },
+ "accepted_events": 72,
+ "accepted_planets": 5,
+ "evaluation_hosts": 5,
+ "windows_outside_manifest": 26,
+ "nonGaussian_scored": 64,
+ "adapter_reproduction_max_abs_diff": 1.021405182655144e-13,
+ "calibration_refit_max_abs_diff": 0.0,
+ "draw_scoring": "exact per draw: Gaussian events by the adapter's predictive_scores (order 384, no interpolation); grid events by the adapter's grid_quantiles roots",
+ "draw_M2_s_q025_q975": [
+  1.2838485543251006,
+  2.720763097921058
+ ],
+ "calibration_planets": 206,
+ "joint_hosts_union": 211,
+ "primary_delta_M2_M0": -11.185774265554965,
+ "joint_refit_ci95": [
+  -56.39072837956407,
+  6.309002854894219
+ ],
+ "decision": "inconclusive",
+ "conditional_fixed_parameter_ci95": [
+  -40.30472832637896,
+  4.350047477806419
+ ],
+ "joint_bootstrap": 2000,
+ "conditional_bootstrap": 10000,
+ "seeds": {
+  "evaluation_joint_bootstrap": 20261107,
+  "conditional_fixed_parameter_bootstrap": 20261109
+ },
+ "seconds_joint": 4045.3,
+ "input_sha256": {
+  "manifest": "bd173285221a3d3156fe408e8d3e0439d54283c0784aebe14d9cd5b02fe7c1fb",
+  "forecasts": "08b0815ea25e301045bbbad92347b98dd5a9b01164a00c09475d79a482bf6cdb",
+  "windows": "f85141a01cd363914af76e2b7d02fdb3af353493d8b4aca31a0574dfbff7fa4e",
+  "products": "3f6ce4385d497e282bd6b778b8acefcdc741e5fbb5d875afa010532119d42674",
+  "coverage": "4ee6a6ce7c34d0328425210034be995afa710700eb31db2f8cf409784d1bc808",
+  "parameters": "907b53272e46176dd1b5a81857fa8c5dd025c443eecd468326d5eb91c6ba1f2c"
+ },
+ "code_sha256": {
+  "final_evaluation.py": "b1741ac387cf9d9a3f747b474c49b07281dfeff67a3dce7540c5394479aeda99",
+  "acceptance.py": "3d3ccfebccf6c249f7ed7d8dfaab288bd4a81afc9d2da36e435f596a0b988209",
+  "sprint1_outcome_adapter.py": "cd853135d076005731ddc76610b381075b111c170f3187f36c1ad14bf503d0b5",
+  "sprint1_forecast_core.py": "dfe010dbe60e5bb6f07412ec4b5114c57783b90d83278abde8d857db9e597e77",
+  "forecast_variance_components.py": "81b6660828a1b30093f7051a4bc60355e3a0ccc3134faf68b9bc32f7d1cdaf85",
+  "prefreeze_package.py": "64910a3269a8ec0405bd1b5d5abfeaf4e29b6cf4b795db9faf1420b9df02bcfa",
+  "sprint2_forecasts.py": "c489095b8ed6e2123f8c8b840cc947a6fb8bfa8372722ce9b249d3fa1c5c6f9a"
+ },
+ "config_sha256": "9c17de62230add56f6f92246fe07d784f7ddd21071f01024c0a0853ef5a58cef",
+ "adapter_receipt_sha256": "704e55d43cefe4b6d8912500376e9658d46369190d18399ca92d326c21f9c8c0",
+ "joint_draws_sha256": "5dd3cee4c8aae880c55ff5f17e2d6147ba0aef246765543c1f52bedd722463f0",
+ "terminal_ledger_sha256": "3cfc62c1799d790fe7c418b94639861648a0f2230b89ee24e9d4ad02c3012eca"
+}

@@ -362,6 +362,16 @@ Next owners should claim T001–T004 and read START_HERE.md.
   record or protected access. Nothing frozen. Next: Barry decides on the exact
   corrected package; no further agent research is pending.
 
+## 2026-11-08 — Claude: frozen package run on protected outcomes (D065)
+
+- Barry authorised; access record `b2f54de` cites `5ec7c0f3…`. Package frozen.
+- Primary: M2 − M0 = −0.121, 95% joint-refit [−1.84, 2.20] → **inconclusive**.
+  Coverage 0.908 → 0.976 at ~1.7× width; 26.5% of planets improve.
+- Extension (exploratory): 5 planets, −11.2 [−56.4, 6.3], uninformative.
+- First core measurement set aside for the relative-`--out` execution failure;
+  identical command rerun with an absolute path. Verify clean; 99 tests pass.
+- Next: Codex independently reviews the run; then declared secondaries.
+
 ## Update template
 
 - Date / agent / task ID:

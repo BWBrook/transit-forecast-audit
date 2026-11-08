@@ -39,3 +39,13 @@ results/prefreeze/final_path_dev/*.csv
 results/prefreeze/final_path_dev/run/*.csv
 results/prefreeze/final_path_dev/run/*.receipt.json
 !results/freeze/
+!results/final_primary/
+!results/final_extension/
+results/final_*/accepted_*.csv
+results/final_*/scores.csv
+results/final_*/scores.receipt.json
+!data/derived/final_primary/
+!data/derived/final_extension/
+data/derived/final_*/*.log
+data/derived/final_*/measured_attempt1_relpath/
+data/derived/final_*/measured/grids/

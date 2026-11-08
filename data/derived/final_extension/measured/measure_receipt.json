@@ -1,0 +1,12 @@
+{
+ "era": "protected",
+ "manifest_sha256": "bd173285221a3d3156fe408e8d3e0439d54283c0784aebe14d9cd5b02fe7c1fb",
+ "products": 34,
+ "manifest_events": 291,
+ "windows": 190,
+ "timed": 87,
+ "rule_version": "t015v3@b2f54de+a69794dd2263",
+ "measure_sha256": "67bbab8fa6f06b8c70a5673eaa2242181abe86cc0c10902a96bec8bbf6add3e5",
+ "max_mjd_guard": Infinity,
+ "max_btjd_guard": Infinity
+}

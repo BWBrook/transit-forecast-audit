@@ -608,6 +608,34 @@ scientific record; a `proposed` item is not a frozen preregistration.
   package verification. The old `eb387f3e…` proposal is not the approval target.
 - Next: Barry — authorise or decline protected access for the concrete package.
 
+### D065 — Package frozen; protected primary evaluation inconclusive
+
+- Date / responsible agent: 2026-11-08, Claude (Opus 5.5), on Barry's authorisation.
+- Authorisation: Barry, 8 November 2026, "Authorised." (board messenger, replying
+  to Codex's D064 question), confirmed directly in the Claude session: "approve
+  writing the D065 access record". Record `configs/protected_access.json` cites
+  manifest `5ec7c0f363bca641430c68c0ff57fdbf788cda9e32f80dddea7c7cd9121c57d1`;
+  committed `b2f54de` before any protected request. The package is frozen.
+- Evidence: `docs/final_results_2026-11-08.md`; `results/final_primary/`,
+  `results/final_extension/`; measured inputs under `data/derived/final_*/measured/`; C043–C044.
+- Primary (core, 3,103 events; 2,185 accepted on 151 planets): planet-balanced
+  standardised IS95 M2 − M0 = −0.121, 95% joint-refit interval [−1.84, 2.20]
+  (B = 2,000). **Decision by the fixed rule: inconclusive.** Conditional
+  fixed-parameter interval [−1.98, 1.12]. Fail-closed checks pass (adapter
+  2.2e-12, refit 0.0).
+- Description: M2 raises planet-balanced 95% coverage from 0.908 to 0.976 and
+  widens intervals about 1.7-fold; the score gain and width cost cancel. 26.5%
+  of planets improve; median planet delta +1.05.
+- Exploratory extension (291 events): 72 accepted on 5 planets; −11.2 [−56.4, 6.3]; uninformative.
+- Execution: the first core measurement with the recorded relative `--out`
+  failed on 71 grid-writing products (`relative_to` needs an absolute path) and
+  9 MAST disconnects. These are execution failures independent of outcomes. It
+  was set aside unchanged, and the identical command was rerun with an absolute
+  path. No frozen file changed; verify is clean after the run; 99 tests pass.
+- Remaining: declared strata, sensitivities and secondary diagnostics need a
+  post-unblinding script applied exactly as declared; independent review (T012) first.
+- Next: Codex reviews the protected run independently.
+
 ## New entry template
 
 ### D0XX — short title

@@ -1,0 +1,21 @@
+{
+ "note": "First protected core measurement, run with the recorded relative --out path; set aside unchanged on disk and rerun with an absolute --out (D065). Execution failures only; no frozen file changed.",
+ "receipt": {
+  "era": "protected",
+  "manifest_sha256": "905499871524d44e93315612ed133deeca3a9b115da5665bb3513a7e39beea16",
+  "products": 304,
+  "manifest_events": 3103,
+  "windows": 1817,
+  "timed": 1522,
+  "rule_version": "t015v3@b2f54de+a69794dd2263",
+  "measure_sha256": "67bbab8fa6f06b8c70a5673eaa2242181abe86cc0c10902a96bec8bbf6add3e5",
+  "max_mjd_guard": Infinity,
+  "max_btjd_guard": Infinity
+ },
+ "product_status_classes": {
+  "exception: grid path relative_to (relative --out)": 71,
+  "ok": 215,
+  "read_failed: MAST connection aborted": 9,
+  "id_failed": 9
+ }
+}

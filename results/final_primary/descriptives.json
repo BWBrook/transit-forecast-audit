@@ -1,0 +1,48 @@
+{
+ "M0": {
+  "planets": 151,
+  "events": 2185,
+  "planet_balanced_is95_std": 11.334968248643618,
+  "planet_balanced_is95_min": 106.2515597847953,
+  "planet_balanced_cov68": 0.618555857228915,
+  "planet_balanced_cov95": 0.9079364975831289,
+  "planet_balanced_width95_min": 10.485120494440435,
+  "event_cov95": 0.9194508009153318
+ },
+ "M1": {
+  "planets": 151,
+  "events": 2185,
+  "planet_balanced_is95_std": 19.89542148752863,
+  "planet_balanced_is95_min": 78.65425114644836,
+  "planet_balanced_cov68": 0.9851220863664274,
+  "planet_balanced_cov95": 0.9933774834437086,
+  "planet_balanced_width95_min": 56.371589313197326,
+  "event_cov95": 0.9926773455377574
+ },
+ "M2": {
+  "planets": 151,
+  "events": 2185,
+  "planet_balanced_is95_std": 11.213660444119661,
+  "planet_balanced_is95_min": 97.79111886763295,
+  "planet_balanced_cov68": 0.6789912632977965,
+  "planet_balanced_cov95": 0.9757619919679326,
+  "planet_balanced_width95_min": 17.473022575232037,
+  "event_cov95": 0.9647597254004576
+ },
+ "M3": {
+  "planets": 151,
+  "events": 2185,
+  "planet_balanced_is95_std": 11.264718600503766,
+  "planet_balanced_is95_min": 97.56667271086759,
+  "planet_balanced_cov68": 0.6915468206137231,
+  "planet_balanced_cov95": 0.977428169793051,
+  "planet_balanced_width95_min": 17.799338198014553,
+  "event_cov95": 0.9670480549199084
+ },
+ "M2_minus_M0_planets": {
+  "mean": -0.12130780452395674,
+  "median": 1.0453269265035,
+  "fraction_improved": 0.26490066225165565,
+  "n": 151
+ }
+}
