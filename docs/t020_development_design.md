@@ -60,3 +60,23 @@ matching or a new fit; it already used some of these development outcomes.
 No candidate-host outcomes enter this exercise. A new-test cohort, exact
 manifest, feature-availability certification, access gate and feasibility
 assessment still require T021 and independent review before Barry decides.
+
+## Dated developmental extension before longer-horizon scoring
+
+The first, saved S56–S73 run has 1,493 intended events on 93 planets, 1,078
+accepted on 92; no accepted error meets the proposed >60-minute/3-sigma gross
+miss definition (maximum 30.39 minutes). Every positive pad loses to at least
+one equal-budget comparator and every fold selects no pad. This is a valid
+negative result, not an estimate that a rare-gross-miss rule is useful.
+
+Before scoring the longer-horizon slice, fix this extension: reconstruct DRC
+forecasts for the ALREADY INSPECTED 2026 roster events, apply exactly the same
+DRC-core/release-feature conditions, six directions, q, pad grid and host folds.
+Evaluate this slice separately and pooled with the earlier slice, keeping hosts
+together across eras and including all intended events for budgets. No rule
+feature or pad is added in response to the negative result. Preserve the first
+run unchanged; the new script/output subdirectory is separate. These outcomes
+are development, not a new test or independent confirmation. The longer-horizon
+and pooled candidates require separate held-out evaluation; none changes the
+frozen experiment. DRD is an identification reference only; all primary rule
+features and forecast windows remain DRC-derived.
