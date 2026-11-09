@@ -1,0 +1,44 @@
+{
+  "development_only": true,
+  "S74_S97_opened": false,
+  "design_commit": "6768a75",
+  "script_sha256": "a854551e0cc92fd98115856c01240ed657ce923a79479c572077b7e508d5e96c",
+  "input_sha256": {
+    "results/prefreeze/attempt_ledger_development.csv.gz": "77ac9435c973fcb545221001c1d1c60bc83509d7fcbb4a6e7921f9e8c173db90",
+    "results/outcomes/t015v3/outcomes.csv.gz": "79c9d323b852f47a6519df7671764baad358486c558e3dad0dd36fc4b9437ef8",
+    "results/sprint2/freeze_candidate/roster.csv": "54492734189a942505747d9d32a343033642d84abe482dbe8ab8aeb7912382da",
+    "results/information_ledger/release_planets.csv": "56d2ca5ee3baea1eeab8325c0197aa2027a25e73e3db58873e362b46b255b72d",
+    "data/raw/osf/p298n/catalogue_of_ephemerides.txt": "2f1e4a3ad9dd3cc9f78e38f25c3a1d1e0ead1604ea0a86f66cc752ff1a666033",
+    "results/pilot_v1/covariance_completeness.csv": "a195f1e01e2aecffcd7c5362129f46eb8f986898b562985af297279c650033f4",
+    "results/prefreeze/candidate_models_core_matched.json": "907b53272e46176dd1b5a81857fa8c5dd025c443eecd468326d5eb91c6ba1f2c",
+    "docs/t020_development_design.md": "3210699bdf9d72a718de26e781ed45e837d59ebbe0de3f9f00da1f03902facae"
+  },
+  "output_sha256": {
+    "c2_candidate_events.csv": "45c534b767aab08be2d6a50c186a30718e7c5338623c2a5304216ec2424aecfd",
+    "c2_capture_cost_curve.csv": "599de564677c39123c0331a3e550e1cd6a38252b72e5f7e5756d19e0b3871655",
+    "c2_crossfit_events.csv": "963c7d8ee12acdc06a3bd4ac8b2f89828f665e49cdd2c64bbdc76b2b753ca946",
+    "c2_planet_features.csv": "71cfdbd42903bca2ea1fa9f371849a923ab666352c68848218eeac5f876b0575",
+    "candidate_search.csv": "3805cecd8fa7aa9e6c5e96783b7e921be1dcb5b08ba2cdfb5eceea52e7d2b933",
+    "summary.json": "febe249906ff199b2b669e9b53450a19baee9c5a21eea7a249cb13c1e16c951e",
+    "zero_candidate_events.csv": "b8bac294f602574936bdd7cde405e581b519c24b027ce26e2f8dcd4657ce430b",
+    "zero_capture_cost_curve.csv": "21fd19e1e872a6a87f5a9c20d4f8ee8d4062b94f58e4886fb872c5d7918d5d8a",
+    "zero_crossfit_events.csv": "ea5606244699e312aef74f7937070ae686eaac2394ff90387219a20c1cae2da4",
+    "zero_planet_features.csv": "bed87a28d5b68ff5e2b4c9c4258b53587912f1d25f9f9c8edf54fc54145f5a14"
+  },
+  "seed": 2026110920,
+  "folds": 5,
+  "bootstrap_draws": 10000,
+  "interval_scope": "Host resampling conditional on realised cross-fitted rules; no selection refit",
+  "features_are_release_internal_only": true,
+  "limits": [
+    "C2 is reconstructed covariance, not issued posterior.",
+    "Current metadata/release-paper cohort labels need historical availability audit.",
+    "Measured-midpoint capture is not full-transit or latent capture.",
+    "No exact new-test manifest, power qualification or access authority.",
+    "Space-source fraction is the only searched source-mix direction.",
+    "q=.05/.20 curves are descriptive, not alternative selected primary fractions."
+  ],
+  "historical_input_versions": {
+    "docs/t020_development_design.md": "6768a75:docs/t020_development_design.md; retained as design_at_first_run.md"
+  }
+}
