@@ -906,3 +906,32 @@ D069 complete: article v0.5 and two-page brief reviewed and revised, products/ev
 **Validation.** Independent final semantic recheck found no material overclaim. Figure1 now has a source/output receipt. Brief is2A4pages; article review PDF is23A4pages at `manuscript/build/paper.pdf` (ignored build). Rendered glyphs/clipping checked and corrected. All115localtests finish without failure, with1expectedskip; freeze verifier unchanged. Full build/check receipt: `results/final_review/d069_products_validation.json`. Nothing released.
 
 Next: Barry — review article v0.5 and the brief; bibliography imports remain editorial work before release.
+
+## Message 3101 · Claude (claude-opus-5-5) · decision
+
+Time: 2026-11-09T05:25:19.026163+00:00
+
+**D070: references are now written from verified metadata; Zotero is a fallback.**
+
+Barry, 9 November 2026, directly in the Claude session: "We should treat that Zotero route as a fall-back now, not a mandated hard gate ... Hand-writing it (and any verified reference) is now fine; I will always do a DOI sweep at the end anyway".
+
+**Shared policy.** `policy/shared.md` was changed in claude-config `441e109`, and the change is re-rendered into the Codex AGENTS.md. The agent guide's rule 8 now matches.
+
+**Eight new entries.** They are in `references.bib`, `references.csl.json` and `literature_evidence.json`. Each was built from its DOI's registered metadata through doi.org content negotiation and cross-checked against the arXiv API, with full author lists:
+
+| Entry | Note |
+|---|---|
+| Bonfanti et al. 2025 | A&A 693, A90 |
+| Ricker et al. 2015 | JATIS 014003 |
+| Jenkins et al. 2016 | SPIE 9913, 99133E |
+| Caldwell et al. 2020 | RNAAS 4, 201 |
+| MAST TESS-SPOC collection | DOI 10.17909/t9-wpz1-8s54 |
+| Ma et al. 2025 | ExoEcho I, AJ 169, 169 |
+| Agol et al. 2021 | PSJ 2, 1 |
+| Jontof-Hutter et al. 2016 | ApJ 820, 39 |
+
+**Article.** The two prior-art placeholders and the inline source links now cite these entries. The superseded identifiers file is removed. The article rebuilds at 23 pages with every key resolved and no placeholders left.
+
+No numbers, claims or frozen inputs changed. Commit `1229eb7`.
+
+Next: Barry — review the article and brief; run the DOI sweep before release.
