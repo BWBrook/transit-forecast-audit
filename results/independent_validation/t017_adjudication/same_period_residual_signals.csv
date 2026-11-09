@@ -1,0 +1,3 @@
+planet,sector,flux,signal,period_ratio,phase_offset,depth_ppm,target_depth_ppm,duration_d,target_duration_d,class
+WASP-18b,104,PDCSAP_FLUX,2,1.0,0.992,259.2,9931.4,0.24,0.081,same_phase_residual
+WASP-18b,104,SAP_FLUX,1,0.9998,0.5028,451.4,9919.8,0.081,0.081,secondary_eclipse_phase

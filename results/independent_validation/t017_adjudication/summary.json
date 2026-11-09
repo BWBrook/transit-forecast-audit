@@ -1,0 +1,131 @@
+{
+ "products_with_more_pairs_under_gating": [
+  "HR858b|S105|SAP_FLUX: 2->4",
+  "TOI-157b|S98|PDCSAP_FLUX: 10->11",
+  "WASP-170b|S99|PDCSAP_FLUX: 4->5",
+  "WASP-82b|S98|PDCSAP_FLUX: 6->9"
+ ],
+ "unpaired_frozen_timings": 25,
+ "unpaired_with_independent_window_timed": 0,
+ "unpaired_timed_by_other_route_or_c050_checker": 25,
+ "control_unpaired": [
+  {
+   "planet": "TOI-157b",
+   "sector": 98,
+   "flux": "PDCSAP_FLUX",
+   "event_id": "TOI-157b|S98|DRD752",
+   "frozen_sigma_min": 1.568,
+   "independent_window_status": "insufficient_window_coverage",
+   "other_route_timed": false,
+   "other_route_diff_min": "",
+   "c050_checker_diff_min": -0.099
+  },
+  {
+   "planet": "TOI-157b",
+   "sector": 98,
+   "flux": "SAP_FLUX",
+   "event_id": "TOI-157b|S98|DRD752",
+   "frozen_sigma_min": 1.568,
+   "independent_window_status": "insufficient_window_coverage",
+   "other_route_timed": false,
+   "other_route_diff_min": "",
+   "c050_checker_diff_min": -0.21
+  },
+  {
+   "planet": "WASP-126b",
+   "sector": 98,
+   "flux": "SAP_FLUX",
+   "event_id": "WASP-126b|S98|DRD579",
+   "frozen_sigma_min": 1.142,
+   "independent_window_status": "insufficient_window_coverage",
+   "other_route_timed": true,
+   "other_route_diff_min": -0.095,
+   "c050_checker_diff_min": ""
+  },
+  {
+   "planet": "WASP-170b",
+   "sector": 99,
+   "flux": "PDCSAP_FLUX",
+   "event_id": "WASP-170b|S99|DRD768",
+   "frozen_sigma_min": 0.996,
+   "independent_window_status": "insufficient_window_coverage",
+   "other_route_timed": true,
+   "other_route_diff_min": -0.164,
+   "c050_checker_diff_min": ""
+  },
+  {
+   "planet": "WASP-20b",
+   "sector": 107,
+   "flux": "SAP_FLUX",
+   "event_id": "WASP-20b|S107|DRD556",
+   "frozen_sigma_min": 0.722,
+   "independent_window_status": "insufficient_window_coverage",
+   "other_route_timed": true,
+   "other_route_diff_min": -0.123,
+   "c050_checker_diff_min": ""
+  },
+  {
+   "planet": "WASP-22b",
+   "sector": 105,
+   "flux": "PDCSAP_FLUX",
+   "event_id": "WASP-22b|S105|DRD1183",
+   "frozen_sigma_min": 1.015,
+   "independent_window_status": "insufficient_window_coverage",
+   "other_route_timed": true,
+   "other_route_diff_min": 0.846,
+   "c050_checker_diff_min": ""
+  },
+  {
+   "planet": "WASP-82b",
+   "sector": 98,
+   "flux": "PDCSAP_FLUX",
+   "event_id": "WASP-82b|S98|DRD1024",
+   "frozen_sigma_min": 0.758,
+   "independent_window_status": "insufficient_window_coverage",
+   "other_route_timed": true,
+   "other_route_diff_min": 0.676,
+   "c050_checker_diff_min": ""
+  },
+  {
+   "planet": "WASP-82b",
+   "sector": 98,
+   "flux": "PDCSAP_FLUX",
+   "event_id": "WASP-82b|S98|DRD1035",
+   "frozen_sigma_min": 0.753,
+   "independent_window_status": "insufficient_window_coverage",
+   "other_route_timed": true,
+   "other_route_diff_min": 0.841,
+   "c050_checker_diff_min": ""
+  }
+ ],
+ "control_large_discrepancies_gated": 0,
+ "same_period_residual_signals": [
+  {
+   "planet": "WASP-18b",
+   "sector": 104,
+   "flux": "PDCSAP_FLUX",
+   "signal": 2,
+   "period_ratio": 1.0,
+   "phase_offset": 0.992,
+   "depth_ppm": 259.2,
+   "target_depth_ppm": 9931.4,
+   "duration_d": 0.24,
+   "target_duration_d": 0.081,
+   "class": "same_phase_residual"
+  },
+  {
+   "planet": "WASP-18b",
+   "sector": 104,
+   "flux": "SAP_FLUX",
+   "signal": 1,
+   "period_ratio": 0.9998,
+   "phase_offset": 0.5028,
+   "depth_ppm": 451.4,
+   "target_depth_ppm": 9919.8,
+   "duration_d": 0.081,
+   "target_duration_d": 0.081,
+   "class": "secondary_eclipse_phase"
+  }
+ ],
+ "opens_photometry": false
+}

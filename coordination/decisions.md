@@ -899,6 +899,46 @@ scientific record; a `proposed` item is not a frozen preregistration.
   reconcile D072 before T020–T021. Barry's access decision follows a concrete
   independently reviewed freeze package.
 
+### D073 — T017 controls adjudicated; new test fixed as a locked retrospective DRC test
+
+- Date / responsible agent: 9 November 2026, Claude (Opus 5.5), from
+  `6405766`; proposal for Codex's challenge, not a freeze.
+- Question: do the seven T017 control triggers reveal frozen timing faults,
+  and what exact design should T020–T021 build?
+- Evidence: `docs/d073_adjudication_2026-11-09.md`;
+  `results/independent_validation/t017_adjudication/` from
+  `scripts/t017_adjudicate.py` (no photometry opened); C050 checker run on
+  cached TOI-157 S98 (`results/independent_validation/toi157_s98/`).
+- Findings: every control trigger is checker-side. `t017_compare.py` pairs on
+  ungated absolute distance, whose tied optima shift trains by a cycle; a
+  P/4-capped cost recovers pairs in four products (WASP-82b PDCSAP 6→9,
+  TOI-157b 10→11, WASP-170b 4→5, HR858b S105 SAP 2→4). All 25 frozen timings
+  still unpaired are `insufficient_window_coverage` refusals, and all are
+  timed by the other route or the C050 checker. WASP-18b's ambiguity is its
+  secondary eclipse (phase 0.503) and a broad residual around transit. Zero
+  control large discrepancies after gating (C057). HR858b S105 shows a
+  sign-consistent 7–22 min departure of four independent route/flux timings
+  from three frozen timings; immaterial against the 6–7 h miss, material to
+  how its convolved score is described.
+- Decision and scope: no broader 2026 remeasurement tranche; an independent
+  audit of a random sample of new-block products joins the freeze package.
+  Accept D072's corrections (HR858b z-RMS 2.2, not "5.5 times"; PDCSAP label
+  for c; weighting labels; conditional propriety). The new test is a locked
+  retrospective, host-held-out test of one release-feature rule on issued DRC
+  forecasts (origin 2022-09-27T15:26:09Z), primary cohort the audited
+  DRC-core hosts with no 2026 attempt, rule developed on roster hosts only.
+  Outcome identification and the P/4 gate centre on DRD, never on the DRC
+  forecast under test. Primary endpoint: planet-balanced capture difference,
+  triage (q = 10%, pad fixed in development) minus each of two equal-budget
+  comparators (proportional and additive); success requires both lower 95%
+  host-bootstrap bounds > 0. Feasibility gate: projected interval width from
+  development data decides confirmatory versus descriptive before access.
+- Consequences: Codex amends T017 pairing (C051 regenerated) and adds an
+  HR858b S105 rescore sensitivity to T018; T020 then T021 follow D073 section
+  4. Article, brief and guide rewrite waits for T020. The D071 memo carries
+  corrections for the scatter and artefact wording.
+- Status: proposed. S74–S97 remain closed; nothing released.
+
 ## New entry template
 
 ### D0XX — short title

@@ -28,12 +28,15 @@ component for further work, before revising the paper."
    reading the issued epoch, reproduces all 16 frozen timings. It also finds
    the near-resonant companion c running about 9.5 h *late* while b runs about
    6.5 h *early*, and the third planet, d, on time. That is the signature of
-   b–c transit-timing variations, and it rules out a time-system or extraction
-   artefact (section 2).
+   b–c transit-timing variations. It excludes a shared additive clock shift
+   and disfavours an extraction artefact, without proving a unique dynamical
+   cause (section 2; *wording narrowed in D073 after D072*).
 4. **The issued ephemeris carried visible warning signs.** DRD's HR 858 b
    ephemeris rests on 16 TESS timings that ended in November 2020: a 756-day
-   baseline extrapolated about 5.5 years. Its own timings scatter 5.5 times
-   their stated errors about the issued line. Information age, baseline and
+   baseline extrapolated about 5.5 years. Its own timings scatter well beyond
+   their stated errors about the issued line (χ²/(N−2) = 5.52, standardised
+   RMS 2.2; *corrected in D073: an earlier draft wrongly said "5.5 times their
+   stated errors"*). Information age, baseline and
    past excess scatter can be computed for every planet from the release
    files, so the reviewer's "historical information" programme is concrete.
 5. **There is an untouched outcome block.** No stage of this project has

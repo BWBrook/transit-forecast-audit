@@ -151,7 +151,7 @@ def linear(tc, n, w=None):
 
 def main(cfg_path):
     cfg = json.loads(Path(cfg_path).read_text())
-    paths = sorted((ROOT / cfg["fits_dir"]).glob("*_lc.fits"))
+    paths = sorted((ROOT / cfg["fits_dir"]).glob(cfg.get("fits_glob", "*_lc.fits")))
     out_dir = ROOT / cfg["out_dir"]; out_dir.mkdir(parents=True, exist_ok=True)
     report = {"config": cfg, "fits": [p.name for p in paths], "routes": {}}
     for column in cfg["flux_columns"]:

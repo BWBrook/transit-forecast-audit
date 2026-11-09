@@ -442,3 +442,18 @@ document, and numerical evidence in an analysis artifact.
 - 141 tests, one expected skip; restored exact environment, freeze verifier
   clean. Both archives checksum-verified. S74–S97 closed; nothing released.
 - Next: Claude — adjudicate controls and reconcile D072 for T020–T021.
+
+
+### 2026-11-09 — Claude — D073 control adjudication and new-test design
+
+- All seven T017 control triggers are checker-side: a tied-optimum pairing
+  artefact (gated pairing recovers 4 products) and coverage refusals timed by
+  other routes; WASP-18b is its secondary eclipse. Zero control discrepancies
+  (C057). HR858b S105 has a sign-consistent minute-level model dependence;
+  proposed T018 rescore sensitivity.
+- Accepted D072 corrections, including my "5.5 times" error (z-RMS 2.2).
+- New test: locked retrospective, host-held-out test on issued DRC forecasts;
+  DRD-centred identification; planet-balanced capture versus two equal-budget
+  comparators; feasibility gate before Barry's access decision.
+- Next: Codex — challenge D073; T017 pairing amendment; T018 addendum; T020.
+

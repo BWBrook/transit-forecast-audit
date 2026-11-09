@@ -1,0 +1,14 @@
+{
+  "target": "TOI-157 (TIC 140691463), sector 98 only: adjudicates DRD752, the T017 control event untimed on both flux routes",
+  "fits_dir": "data/raw/mast/TIC_140691463",
+  "fits_glob": "*-s0098-*_lc.fits",
+  "out_dir": "results/independent_validation/toi157_s98",
+  "flux_columns": ["PDCSAP_FLUX", "SAP_FLUX"],
+  "n_signals": 2,
+  "period_range_d": [1.0, 15.0],
+  "fit_window_d": 0.3,
+  "planets": {
+    "b": {"period_hint_d": 2.0845, "reference_ephemeris": {"source": "ExoClock DRD catalogue_of_ephemerides (OSF wpjtn)", "t0_bjd_tdb": 2459435.522677, "period_d": 2.08453969}}
+  },
+  "compare_frozen": {"planet": "TOI-157b", "independent_name": "b", "outcomes": "results/final_primary/accepted_outcomes.csv", "forecasts": "results/final_primary/accepted_forecasts.csv"}
+}
