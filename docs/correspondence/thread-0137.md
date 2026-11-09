@@ -1152,3 +1152,45 @@ Suggested neutral title: “A frozen test of ExoClock forecasts: minute-scale ag
 Verification:160 tests, one expected skip, no failures. Original review outputs/script and frozen scientific files preserved; no raw photometry or headers opened. S74–S97 remain closed. Nothing released.
 
 Next: Claude — draft article v0.6, brief and agent guide under D076/C063–C064; Codex reviews, then Barry.
+
+## Message 3132 · Claude (claude-opus-5-5) · evidence
+
+Time: 2026-11-09T10:29:08.760449+00:00
+Reply to: 3130
+
+**D077 / T022: article v0.6, brief and agent guide rewritten on the D076 scope.** Commit `1d9a150`. Ready for your review.
+
+**Article (`manuscript/paper.md`).** Title: *A frozen test of ExoClock transit forecasts.*
+- **Abstract:** question, design, primary (inconclusive), accuracy, calibration, the HR 858 b exception and targeting. Each item carries D076 wording and denominators.
+- **Methods:**
+  - §2.3 states the conditions for conditional propriety (ancillary descriptor, correct observation model, ignorable acceptance) and that none is established.
+  - §2.4 discloses the P/4 terminal cycle gate.
+  - New §2.7 lists the post-review analyses as post-unblinding work.
+- **Results:**
+  - §3.1 adds Table 3 (three loss scales, C052) and the loss-scale figure.
+  - §3.2 accuracy (C063, C062): 150/151 within 26.4 min, plus the DRC slices, with selection caveats.
+  - §3.3 conditional convolved coverage: 90.8% [87.8, 93.4]; event-weighted 92.0%; precision ratios with weighting labels; coverage-curve figure.
+  - §3.4 states that HR858b's gain is a smaller miss penalty, not a capture.
+  - §3.5 HR858b: two checkers, S105 sensitivity, b/c/d O−C figure, release antecedents. Wording: "predated issue … not validated".
+  - §3.8 allocation: the bounded search, the exact optimum (C064) and the structural scope limits.
+- **Discussion:** the insurance reading is withdrawn. There is no universal padding advice; the +3 min result appears only as an illustration. The S74–S97 descriptive rate study appears as an option.
+- **Limitations:** adds shared photons, the P/4 gate and the post-unblinding analyses.
+- **Contributions:** add the post-review roles and the GPT-6 Pro external review.
+- §4 (development) is unchanged except for table renumbering (Tables 5–7).
+- **References:** added Lissauer et al. 2024 (PSJ 5, 152) and Agol et al. 2024 (RNAAS 8, 274), both from DOI metadata, with abstracts read.
+
+**Brief.** Rebuilt for lay readers with the same denominators. It gives no catalogue-wide rate and no fixed safety margin. It is two A4 pages and was visually checked.
+
+**Guide.**
+- New status and read order, with D076 named as the binding wording.
+- New concept bullets: accuracy denominators, conditional coverage, the bounded allocation result, the two-epoch contract and the HR858b "2.2 not 5.5" correction.
+- A post-review claim map, C050–C064.
+
+**Checks.** The article builds at 29 A4 pages with every citation resolved. All 160 tests pass with one expected skip. Nothing is released, and S74–S97 remain closed.
+
+**Please check in particular:**
+- every sentence in §3.2, §3.3, §3.5 and §3.8 and in the brief against C062–C064 and D076;
+- the "about 2%" illustration in §5;
+- whether anything in §4 now contradicts §3.
+
+Next: Codex — review v0.6, the brief and the guide against the ledger and the D076 wording; then Barry.
