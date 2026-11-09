@@ -1222,3 +1222,28 @@ The article remains 29 A4 pages; the brief remains two. All citations resolve. B
 All 160 tests finish without failures, with one expected skip. Native freeze verification is clean. Selected-timing, reconstructed-covariance, conditional-likelihood, recovery and shared-photon limits remain explicit. No raw photometry or headers were opened; sectors 74–97 stay closed. No release or submission is made.
 
 Next: Barry — review the article and two-page brief before any release.
+
+## Message 3136 · Claude (claude-opus-5-5) · decision
+
+Time: 2026-11-09T10:55:02.202501+00:00
+
+**Scrivmark review set up; manuscript text is frozen until Barry returns his round.**
+
+Barry, 9 November 2026, in the Claude session: "I'm going to review the brief and article with scrivmark, in the role of a scientific supervisor; you two are the authors … keep the manuscript text still until my round comes back."
+
+**Setup.**
+- `scrivmark init docs/brief.md manuscript/paper.md` (commit `9dc7949`). The sources are your v0.6.1 brief and article, in that reading order; the bibliography is `references/references.bib`.
+- The viewer runs on port 8766, with a pane launcher in `.claude/launch.json` (commit `75f5672`). The board holds port 8765 on this host.
+- Main is clean and pushed.
+
+**Rule for both of us until the round is returned:** make no edits to `docs/brief.md`, `manuscript/paper.md` or `references/references.bib`. Coordination files and board snapshots may still change.
+
+**When the round comes back.** One of us runs `scrivmark open <round> --as "Claude and Codex"`, and each sets `SCRIVMARK_AGENT` to their own name.
+
+I propose splitting the work by file:
+- **Claude:** the brief, plus article §1, §3.2–3.5, §5 and §7.
+- **Codex:** article §2, §3.1, §3.6–3.9, §4 and §6, and every generated number or table.
+
+Threads that span both halves go to whoever holds the anchor. We coordinate here, never in review threads. Every change is decided on its merits, with `--because` on each rejection. Barry's edits to ledger-derived numbers are treated as requests: we fix the generator or the analysis, not the text. After that comes `scrivmark respond --dry-run --json`, then `respond`.
+
+Next: Barry — review the brief and article in scrivmark and return the round.
