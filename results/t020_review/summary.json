@@ -1,0 +1,290 @@
+{
+ "earlier_S56_S73": {
+  "describe": {
+   "intended_events": 1493,
+   "accepted_events": 1078,
+   "accepted_planets": 92,
+   "abs_residual_min_median": 0.97,
+   "abs_residual_min_p99": 10.62,
+   "abs_residual_min_max": 30.39,
+   "events_over_60_min": 0,
+   "events_over_30_min": 2,
+   "forecast_sd_min_median": 0.47,
+   "measurement_over_forecast_sd_median": 2.73,
+   "capture_forecast_sd_planet_balanced": 0.5566,
+   "capture_combined_sd_planet_balanced": 0.9338,
+   "event_fraction_abs_z_combined_over_3": 0.0074,
+   "worst_planets_max_abs_residual_min": [
+    [
+     "HD110113b",
+     30.4
+    ],
+    [
+     "GJ1252b",
+     30.3
+    ],
+    [
+     "HATS-23b",
+     13.1
+    ],
+    [
+     "GJ357b",
+     11.5
+    ],
+    [
+     "HATS-34b",
+     11.4
+    ]
+   ]
+  },
+  "oracle_ceiling": [
+   {
+    "pad_min": 15,
+    "flagged_planets": 10,
+    "triage": 0.6131,
+    "proportional": 0.7733,
+    "additive": 0.8539,
+    "gain_vs_proportional": -0.1602,
+    "gain_vs_additive": -0.2409,
+    "proportional_factor": 1.652,
+    "additive_pad_min": 1.32
+   },
+   {
+    "pad_min": 30,
+    "flagged_planets": 10,
+    "triage": 0.6153,
+    "proportional": 0.8676,
+    "additive": 0.9298,
+    "gain_vs_proportional": -0.2523,
+    "gain_vs_additive": -0.3145,
+    "proportional_factor": 2.304,
+    "additive_pad_min": 2.63
+   },
+   {
+    "pad_min": 60,
+    "flagged_planets": 10,
+    "triage": 0.6174,
+    "proportional": 0.9517,
+    "additive": 0.9697,
+    "gain_vs_proportional": -0.3342,
+    "gain_vs_additive": -0.3523,
+    "proportional_factor": 3.609,
+    "additive_pad_min": 5.26
+   },
+   {
+    "pad_min": 120,
+    "flagged_planets": 10,
+    "triage": 0.6174,
+    "proportional": 0.9766,
+    "additive": 0.9948,
+    "gain_vs_proportional": -0.3591,
+    "gain_vs_additive": -0.3774,
+    "proportional_factor": 6.218,
+    "additive_pad_min": 10.53
+   },
+   {
+    "pad_min": 240,
+    "flagged_planets": 10,
+    "triage": 0.6174,
+    "proportional": 0.9891,
+    "additive": 0.9957,
+    "gain_vs_proportional": -0.3717,
+    "gain_vs_additive": -0.3782,
+    "proportional_factor": 11.435,
+    "additive_pad_min": 21.06
+   }
+  ]
+ },
+ "inspected_2026": {
+  "describe": {
+   "intended_events": 2771,
+   "accepted_events": 1974,
+   "accepted_planets": 128,
+   "abs_residual_min_median": 1.2,
+   "abs_residual_min_p99": 25.58,
+   "abs_residual_min_max": 36.62,
+   "events_over_60_min": 0,
+   "events_over_30_min": 8,
+   "forecast_sd_min_median": 0.82,
+   "measurement_over_forecast_sd_median": 1.692,
+   "capture_forecast_sd_planet_balanced": 0.6229,
+   "capture_combined_sd_planet_balanced": 0.8764,
+   "event_fraction_abs_z_combined_over_3": 0.0193,
+   "worst_planets_max_abs_residual_min": [
+    [
+     "GJ1252b",
+     36.6
+    ],
+    [
+     "HD110113b",
+     32.4
+    ],
+    [
+     "TOI-1478b",
+     24.8
+    ],
+    [
+     "GJ357b",
+     17.7
+    ],
+    [
+     "HATS-29b",
+     17.0
+    ]
+   ]
+  },
+  "oracle_ceiling": [
+   {
+    "pad_min": 15,
+    "flagged_planets": 13,
+    "triage": 0.6572,
+    "proportional": 0.7666,
+    "additive": 0.8773,
+    "gain_vs_proportional": -0.1094,
+    "gain_vs_additive": -0.2201,
+    "proportional_factor": 1.388,
+    "additive_pad_min": 1.62
+   },
+   {
+    "pad_min": 30,
+    "flagged_planets": 13,
+    "triage": 0.6709,
+    "proportional": 0.8421,
+    "additive": 0.9496,
+    "gain_vs_proportional": -0.1712,
+    "gain_vs_additive": -0.2787,
+    "proportional_factor": 1.776,
+    "additive_pad_min": 3.25
+   },
+   {
+    "pad_min": 60,
+    "flagged_planets": 13,
+    "triage": 0.6718,
+    "proportional": 0.9393,
+    "additive": 0.9792,
+    "gain_vs_proportional": -0.2675,
+    "gain_vs_additive": -0.3073,
+    "proportional_factor": 2.552,
+    "additive_pad_min": 6.5
+   },
+   {
+    "pad_min": 120,
+    "flagged_planets": 13,
+    "triage": 0.6718,
+    "proportional": 0.9759,
+    "additive": 0.9844,
+    "gain_vs_proportional": -0.3041,
+    "gain_vs_additive": -0.3125,
+    "proportional_factor": 4.105,
+    "additive_pad_min": 12.99
+   },
+   {
+    "pad_min": 240,
+    "flagged_planets": 13,
+    "triage": 0.6718,
+    "proportional": 0.9844,
+    "additive": 0.998,
+    "gain_vs_proportional": -0.3125,
+    "gain_vs_additive": -0.3262,
+    "proportional_factor": 7.21,
+    "additive_pad_min": 25.98
+   }
+  ]
+ },
+ "pooled": {
+  "describe": {
+   "intended_events": 4264,
+   "accepted_events": 3052,
+   "accepted_planets": 128,
+   "abs_residual_min_median": 1.1,
+   "abs_residual_min_p99": 24.13,
+   "abs_residual_min_max": 36.62,
+   "events_over_60_min": 0,
+   "events_over_30_min": 10,
+   "forecast_sd_min_median": 0.69,
+   "measurement_over_forecast_sd_median": 1.979,
+   "capture_forecast_sd_planet_balanced": 0.5979,
+   "capture_combined_sd_planet_balanced": 0.8922,
+   "event_fraction_abs_z_combined_over_3": 0.0151,
+   "worst_planets_max_abs_residual_min": [
+    [
+     "GJ1252b",
+     36.6
+    ],
+    [
+     "HD110113b",
+     32.4
+    ],
+    [
+     "TOI-1478b",
+     24.8
+    ],
+    [
+     "GJ357b",
+     17.7
+    ],
+    [
+     "HATS-29b",
+     17.0
+    ]
+   ]
+  },
+  "oracle_ceiling": [
+   {
+    "pad_min": 15,
+    "flagged_planets": 13,
+    "triage": 0.6389,
+    "proportional": 0.7474,
+    "additive": 0.8665,
+    "gain_vs_proportional": -0.1085,
+    "gain_vs_additive": -0.2276,
+    "proportional_factor": 1.414,
+    "additive_pad_min": 1.42
+   },
+   {
+    "pad_min": 30,
+    "flagged_planets": 13,
+    "triage": 0.6483,
+    "proportional": 0.8376,
+    "additive": 0.9425,
+    "gain_vs_proportional": -0.1893,
+    "gain_vs_additive": -0.2943,
+    "proportional_factor": 1.828,
+    "additive_pad_min": 2.84
+   },
+   {
+    "pad_min": 60,
+    "flagged_planets": 13,
+    "triage": 0.6495,
+    "proportional": 0.9323,
+    "additive": 0.9733,
+    "gain_vs_proportional": -0.2828,
+    "gain_vs_additive": -0.3238,
+    "proportional_factor": 2.655,
+    "additive_pad_min": 5.67
+   },
+   {
+    "pad_min": 120,
+    "flagged_planets": 13,
+    "triage": 0.6495,
+    "proportional": 0.9742,
+    "additive": 0.9873,
+    "gain_vs_proportional": -0.3247,
+    "gain_vs_additive": -0.3378,
+    "proportional_factor": 4.311,
+    "additive_pad_min": 11.34
+   },
+   {
+    "pad_min": 240,
+    "flagged_planets": 13,
+    "triage": 0.6495,
+    "proportional": 0.9893,
+    "additive": 0.9964,
+    "gain_vs_proportional": -0.3398,
+    "gain_vs_additive": -0.3469,
+    "proportional_factor": 7.621,
+    "additive_pad_min": 22.68
+   }
+  ]
+ }
+}

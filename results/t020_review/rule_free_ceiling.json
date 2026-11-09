@@ -1,0 +1,20 @@
+{
+ "earlier_S56_S73": {
+  "baseline": 0.5566,
+  "triage_upper_bound": 0.6653,
+  "min_budget_proportional": 0.6309,
+  "min_budget_additive": 0.6859
+ },
+ "inspected_2026": {
+  "baseline": 0.6229,
+  "triage_upper_bound": 0.7245,
+  "min_budget_proportional": 0.6579,
+  "min_budget_additive": 0.7096
+ },
+ "pooled": {
+  "baseline": 0.5979,
+  "triage_upper_bound": 0.6995,
+  "min_budget_proportional": 0.6398,
+  "min_budget_additive": 0.6928
+ }
+}

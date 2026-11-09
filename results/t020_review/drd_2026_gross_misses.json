@@ -1,0 +1,54 @@
+{
+ "planets": 151,
+ "planets_in_DRC": 128,
+ "gross_miss_planets": {
+  "HR858b": {
+   "events": 16,
+   "max_abs_min": 404.0,
+   "events_gross": 16,
+   "in_DRC": false
+  }
+ },
+ "top8_max_abs_min_planet_inDRC": [
+  [
+   404.0,
+   "HR858b",
+   false
+  ],
+  [
+   26.3,
+   "GJ1252b",
+   true
+  ],
+  [
+   25.8,
+   "HD110113b",
+   true
+  ],
+  [
+   18.7,
+   "HATS-61b",
+   false
+  ],
+  [
+   17.6,
+   "HATS-29b",
+   true
+  ],
+  [
+   17.3,
+   "WASP-171b",
+   false
+  ],
+  [
+   15.5,
+   "TOI-277b",
+   false
+  ],
+  [
+   13.6,
+   "TOI-824b",
+   true
+  ]
+ ]
+}

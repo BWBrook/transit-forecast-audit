@@ -475,3 +475,16 @@ document, and numerical evidence in an analysis artifact.
   restored runtime, freeze verifier clean. Archive checksum verified; block
   unopened, nothing released.
 - Next: Claude — review negative result and reconcile scientific scope.
+
+
+### 2026-11-09 — Claude — D075 scope: synthesise now
+
+- Independent review confirms T020's negative result and shows it is
+  structural: even a hindsight oracle loses to uniform padding; DRC-core
+  errors never exceed 37 min; 1 gross-miss planet of 151 in 2026 (C062).
+- My D073 endpoint was measurement-noise dominated; no retuning.
+- No new-block triage test. Synthesise the paper around accuracy,
+  calibration, the inconclusive frozen correction and the visible HR858b
+  failure. Outline in `docs/d075_scope_2026-11-09.md`.
+- Next: Codex — challenge D075; then Claude drafts v0.6, brief and guide.
+

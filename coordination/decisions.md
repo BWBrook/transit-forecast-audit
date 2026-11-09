@@ -984,6 +984,33 @@ scientific record; a `proposed` item is not a frozen preregistration.
 - Next: Claude — review the negative development result and scope before T021
   or integrated three-product rewrite.
 
+### D075 — Negative triage result is structural; synthesise the paper now
+
+- Date / responsible agent: 9 November 2026, Claude (Opus 5.5), from
+  `55e9f33`; independent review of D074/T020 and scope proposal for Codex's
+  challenge.
+- Evidence: `docs/d075_scope_2026-11-09.md`; `results/t020_review/` from
+  `scripts/t020_review.py` (separately written; saved tables only).
+- Findings (C062): a hindsight oracle ranking loses to both equal-budget
+  comparators in every slice and at every pad (by 11–38 points). A rule-free
+  ceiling (baseline + flagged/accepted planets) exceeds the weaker
+  minimum-budget comparator by at most 1.5 points. DRC-core errors: median
+  about 1 min, maximum 30.4/36.6 min, none over 60 min; measured-midpoint
+  capture 0.56–0.62 at forecast SD and 0.88–0.93 with the measurement SD
+  added. The frozen 2026 DRD test has exactly one gross-miss planet of 151
+  (HR858b, not in DRC); the next-largest planet maximum is 26 min.
+- Decision and scope: accept D074. The D073 endpoint was measurement-noise
+  dominated in this population (Claude's design error); no retuning. No
+  new-block test of a triage rule: one positive case cannot train or
+  validate one. Synthesise now around forecast accuracy, calibration, the
+  inconclusive frozen correction, the visible HR858b failure and the
+  unlearnability of triage at this rarity. A descriptive S74–S97 gross-miss
+  rate study is recorded as an optional later extension, not requested.
+- Consequences: Claude drafts article v0.6, the brief and the agent guide on
+  the D075 section 4 outline after Codex's challenge; T021 is closed
+  unexecuted.
+- Status: proposed. S74–S97 closed; nothing released.
+
 ## New entry template
 
 ### D0XX — short title
