@@ -1,0 +1,15 @@
+{
+  "declared_settings": "configs/candidate_freeze.json sensitivities; implementations specified post-unblinding 2026-11-09",
+  "calibration_population": "Full DRD core-eligible development population; pp.gated_rows plus pp.core_planets; DRC2022-09-28..2024-01-03. Not an evaluation-roster intersection",
+  "covariance_and_outcome_changes": "Applied to development fitting and evaluation; M1-M3 refitted only on development; midtimes and residuals fixed",
+  "C2_only": "C3 removed from development and original evaluation intended cohort; original and eligible denominators both retained",
+  "all_spoc_training": "Remove development core-eligibility restriction only; assert frozen fits.all_spoc; evaluation unchanged",
+  "outcome_scales": "sigma and grid coordinates scaled; grid masses unchanged; M0 denominator recomputed using actual grid variance",
+  "t015v3c": "Frozen so.tmag_multiplier; frozen development row Tmag and evaluation frozen roster Tmag; no bias correction",
+  "journal_anchor": "Original intended IDs selected by frozen predicted BJD versus numeric UTC JD2026-02-12 plus inherited10min conservative boundary exclusion. Restricted numeric sensitivity, not an exact time-system conversion; models unchanged",
+  "journal_anchor_numeric_jd": 2461083.5,
+  "majority": "All raw recovered windows, including outside-manifest; denominator timed/edge/integration_unresolved; numerator raw timed without integration flags; strict2*num>den, zero fails; extra gate atop original acceptance on both sides; evaluation original intended denominator retained",
+  "evaluation_outside_manifest_windows_in_majority_source": 186,
+  "intervals": "CONDITIONAL ON SCENARIO FIT; B10000 seed20261109; paired whole-host multiplicities and equal-planet aggregation; no scenario joint bootstrap and no new verdict rule",
+  "primary": "Frozen primary run and its joint-refit verdict are unchanged"
+}

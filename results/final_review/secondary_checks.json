@@ -1,0 +1,78 @@
+{
+  "all_checks_pass": true,
+  "cases": {
+    "baseline": {
+      "equal_planet_metric_max_error": 0.0,
+      "conditional_interval_max_error": 4.440892098500626e-16,
+      "accepted_planets": 151,
+      "score_and_ledger_hashes_match": true
+    },
+    "rho_zero": {
+      "equal_planet_metric_max_error": 0.0,
+      "conditional_interval_max_error": 8.881784197001252e-16,
+      "accepted_planets": 151,
+      "score_and_ledger_hashes_match": true
+    },
+    "rho_minus1": {
+      "equal_planet_metric_max_error": 0.0,
+      "conditional_interval_max_error": 0.0,
+      "accepted_planets": 151,
+      "score_and_ledger_hashes_match": true
+    },
+    "rho_plus1": {
+      "equal_planet_metric_max_error": 0.0,
+      "conditional_interval_max_error": 0.0,
+      "accepted_planets": 151,
+      "score_and_ledger_hashes_match": true
+    },
+    "all_spoc_training": {
+      "equal_planet_metric_max_error": 0.0,
+      "conditional_interval_max_error": 1.4710455076283324e-15,
+      "accepted_planets": 151,
+      "score_and_ledger_hashes_match": true
+    },
+    "journal_anchor": {
+      "equal_planet_metric_max_error": 0.0,
+      "conditional_interval_max_error": 1.7763568394002505e-15,
+      "accepted_planets": 122,
+      "score_and_ledger_hashes_match": true
+    },
+    "C2_only": {
+      "equal_planet_metric_max_error": 0.0,
+      "conditional_interval_max_error": 4.440892098500626e-16,
+      "accepted_planets": 151,
+      "score_and_ledger_hashes_match": true
+    },
+    "outcome_scale_div_1p1": {
+      "equal_planet_metric_max_error": 0.0,
+      "conditional_interval_max_error": 7.216449660063518e-16,
+      "accepted_planets": 151,
+      "score_and_ledger_hashes_match": true
+    },
+    "outcome_scale_x_1p1": {
+      "equal_planet_metric_max_error": 0.0,
+      "conditional_interval_max_error": 4.440892098500626e-16,
+      "accepted_planets": 151,
+      "score_and_ledger_hashes_match": true
+    },
+    "majority_gate": {
+      "equal_planet_metric_max_error": 0.0,
+      "conditional_interval_max_error": 1.7763568394002505e-15,
+      "accepted_planets": 151,
+      "score_and_ledger_hashes_match": true
+    },
+    "t015v3c": {
+      "equal_planet_metric_max_error": 0.0,
+      "conditional_interval_max_error": 1.7763568394002505e-15,
+      "accepted_planets": 151,
+      "score_and_ledger_hashes_match": true
+    }
+  },
+  "primary_influence_k0_k1_independent": true,
+  "closed_form_Gaussian_M0_scenario_events": 19240,
+  "closed_form_Gaussian_M0_max_metric_error": 3.637978807091713e-12,
+  "closed_form_Gaussian_M0_standardised_score_error": 2.2737367544323206e-13,
+  "interval_limit": "Conditional on scenario fit; not joint-refit inference or a new verdict.",
+  "raw_photometry_or_headers_read": false,
+  "summary_sha256": "cff6a71f4e8ceaef37bb2249abc2c8ea0cb10356314061f262e9b2a3614dc4c5"
+}

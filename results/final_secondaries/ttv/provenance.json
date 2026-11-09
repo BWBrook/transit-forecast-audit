@@ -1,0 +1,50 @@
+{
+  "acquire": ".venv/bin/python scripts/final_ttv_labels.py --acquire",
+  "archive_rows": 184,
+  "documentation": {
+    "acknowledgement": "https://exoplanetarchive.ipac.caltech.edu/docs/acknowledge.html",
+    "aliases": "https://exoplanetarchive.ipac.caltech.edu/docs/sysaliases.html",
+    "columns": "https://exoplanetarchive.ipac.caltech.edu/docs/API_PS_columns.html",
+    "doi": "https://exoplanetarchive.ipac.caltech.edu/docs/doi.html",
+    "tap": "https://exoplanetarchive.ipac.caltech.edu/docs/TAP/usingTAP.html"
+  },
+  "files_sha256": {
+    "alias_HD108236d.json": "98d6933ba53cbfa383956080d28a2bfc852f7fa623f47b310848435d4df45c32",
+    "alias_HD108236d.request.json": "fe449a32ea5a3b3241c6301e3a4022ac185fa92270c6e4c4a226f8198f18651d",
+    "ps_default_ttv.json": "18b9e908935d83100f7c40c771464b9c0e4b279607bc1e7960756e472999a33f",
+    "ps_default_ttv.request.json": "4797f0fc39eb5bfbe661898cc25f86911689ea553a7c568bef5cc7c104f245a0",
+    "schema.json": "5b95d7a36e68385c5f0eff3aeda966756573c62b329b9311ff3fc1319291ab3b",
+    "schema.request.json": "6cca23fb453d079ee038385c52b79c23f02d01dad0344e6b032ae7125f971b99"
+  },
+  "inputs_sha256": {
+    "data/fixtures/exoclock_ttv_flags.csv": "7eff71a7a435941d619a3caca995e6eb3eed8db1d229e3b372dc63cf643b23a0",
+    "data/raw/exoplanet_archive/pscomppars.csv": "b99a83e46a3c332050ba4ed1d7f8c2f8019f6a8ecb4ada23d2b30f0995b73fb7",
+    "results/sprint2/freeze_candidate/roster.csv": "54492734189a942505747d9d32a343033642d84abe482dbe8ab8aeb7912382da"
+  },
+  "label": "Current catalogue flag retrieved after unblinding; descriptive only",
+  "label_counts": {
+    "current_archive_flagged": 8,
+    "current_archive_unflagged_physical_status_unknown": 176
+  },
+  "labels_sha256": "fbf8bb8b7f10ee96a0a54ca745ef69c3e134db2912c929ebd9a148e6f7f05598",
+  "licence": "No explicit dataset licence established from the inspected archive documentation; do not infer CC BY-SA from this repository",
+  "limits": [
+    "Flag 0 is an unflagged catalogue row, not proof of no TTV",
+    "The flag concerns variations attributed to another planet and is not a complete timing-anomaly classification",
+    "Parameter dates/reference describe the current default parameter set, not TTV discovery or first-public dates",
+    "No current label establishes that TTV knowledge arose after the DRD origin",
+    "Aliases were matched at planet level; host-only matching is forbidden",
+    "No outcome, score, ranking or photometry was read"
+  ],
+  "match_counts": {
+    "cached_name_whitespace_only": 183,
+    "official_planet_alias": 1
+  },
+  "reproduce": ".venv/bin/python scripts/final_ttv_labels.py",
+  "retrieval_date_hobart": "2026-11-09",
+  "script_sha256": "1f31c16704f43455634892a9c1161b8b505a7cb08c82ca83fda480b0b3cd0dde",
+  "source": "NASA Exoplanet Archive Planetary Systems table, current default rows",
+  "source_dataset_doi": "10.26133/NEA12",
+  "source_note_sha256": "22705bd4478cbf869af0390e003a88143aacbca8d992171b99affd1dbd53ace1",
+  "target_planets": 184
+}

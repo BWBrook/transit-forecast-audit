@@ -1,0 +1,7 @@
+{
+  "bytes": 1393,
+  "query": "select table_name,column_name,datatype,description from TAP_SCHEMA.columns where table_name in ('ps','pscomppars') and column_name in ('pl_name','hostname','ttv_flag','pl_ttvflag','default_flag','rowupdate','pl_pubdate','releasedate','pl_refname','pl_tranmid_reflink')",
+  "retrieved_at_utc": "2026-11-09T01:00:58.735129+00:00",
+  "sha256": "5b95d7a36e68385c5f0eff3aeda966756573c62b329b9311ff3fc1319291ab3b",
+  "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+table_name%2Ccolumn_name%2Cdatatype%2Cdescription+from+TAP_SCHEMA.columns+where+table_name+in+%28%27ps%27%2C%27pscomppars%27%29+and+column_name+in+%28%27pl_name%27%2C%27hostname%27%2C%27ttv_flag%27%2C%27pl_ttvflag%27%2C%27default_flag%27%2C%27rowupdate%27%2C%27pl_pubdate%27%2C%27releasedate%27%2C%27pl_refname%27%2C%27pl_tranmid_reflink%27%29&format=json"
+}

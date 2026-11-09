@@ -1,0 +1,11 @@
+{
+  "input_sha256": {
+    "results/final_primary/evaluation_summary.json": "8deacf156f9693de3a5baf7100d507eac3c9eed0b1bd3f8545efd4831f344a91",
+    "results/final_secondaries/descriptive/leave_gain_hosts_out.csv": "d3ed2d7ba6ab88951abe5b7cc214ca11e3a8f83bb011c7e8f966e2d0c09af27f"
+  },
+  "script_sha256": "6b39fb8da8a3d3e9a243ba6f53ee3212105ef7452100c23e302df389ccf7d9a0",
+  "output_sha256": {
+    "results/final_review/figures/primary_and_influence.png": "c9d4f1b8629490285c8b63b63d3f03dd71eeaeff526f8f3ddaf97ad6dd6aa22d",
+    "results/final_review/figures/primary_and_influence.pdf": "83bee81ffa4a81aa474bc6ba73a82015199b12e491c56e228cf920afece39a16"
+  }
+}

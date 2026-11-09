@@ -1,8 +1,8 @@
 # Agent guide: using the transit-forecast-audit work
 
-**Audience:** a new AI agent (Claude, Codex or another) that must use, extend, review or reproduce this work. **Status at this draft (7 November 2026):** development evidence only, protocol not frozen, protected outcomes unopened, and the frozen t015v3 SPOC conditional replication **passes after correction**, while end-to-end freeze readiness remains blocked (C028–C030). Companion products from the same ledger: `manuscript/paper.md` (article) and `docs/brief.md` (public brief). All three cite claim IDs in `coordination/claims.md`; if a number differs between them, the ledger wins and the product is out of date.
+**Audience:** a new AI agent (Claude, Codex or another) that must use, extend, review or reproduce this work. **Current status (9 November 2026):** D065's authorised frozen protected evaluation is complete; its primary verdict is **inconclusive**, independently supported by D066. The declared secondaries are implemented with dated post-unblinding conventions. Start with `docs/final_results_2026-11-08.md`, `docs/audits/d065_review_2026-11-09.md`, `docs/final_secondaries_2026-11-09.md` and the claims ledger. The article `manuscript/paper.md` and public brief `docs/brief.md` are still the dated 7 November development drafts and need integration from the current ledger. Do not cite those older drafts as the protected result.
 
-Current integrated account: `docs/sprint2_review.md`. The original `docs/sprint2_report.md` and original results are historical evidence qualified by that review.
+Historical development account: `docs/sprint2_review.md`. The original `docs/sprint2_report.md` and original results are historical evidence qualified by that review and the later decisions. Follow the current read order above for the protected result.
 
 ## 1. The question and the boundary
 
@@ -10,11 +10,13 @@ Current integrated account: `docs/sprint2_review.md`. The original `docs/sprint2
 
 **Primary contrast.** Planet-balanced standardised 95% interval score (IS95), M2 minus M0. Negative favours M2. Decision is "improves", "worsens" or "inconclusive" from a 95% host-cluster percentile interval.
 
-**What exists.** A complete development forecast experiment (sprint 1); an outcome-measurement rule with calibration, identification tests, a 120-host confirmation and a 120-host replication, the brightness-corrected primary failed, while the uncorrected SPOC replication passes after the analysis repair (C028); a remeasured-outcome convention comparison (C026); a candidate freeze package that is not freeze-ready (C027); and these drafts.
+**What exists.** The development experiments and documented corrections, the accepted amended SPOC timing rule, the exact frozen package `5ec7c0f363bca641430c68c0ff57fdbf788cda9e32f80dddea7c7cd9121c57d1`, the D065 protected primary/exploratory runs, independent numerical/provenance audits and the declared secondary results. The historical sprint sections below retain their dated context.
 
-**What does not exist.** A final evaluation. Every empirical result so far is inspected development material (D014). Never describe a development result as validation, an untouched test or a held-out result.
+**Primary answer.** On 2,185 accepted timings and 151 core planets, M2−M0 standardised IS95 is −0.121 with joint-refit 95% interval [−1.84,2.20] (C043). Neither improvement nor worsening is established; this is not equivalence. Keep development calibration, frozen protected primary inference and post-unblinding descriptive implementation distinct.
 
-**Protected-data boundary.** TESS outcomes dated after 2025-11-18 stay unopened until a protocol freeze is recorded and reciprocal review has finished (Barry's instruction, paraphrased in D023, 2026-11-04). The inspected development era is 2022-01-01 to 2024-01-03. Do not request, open or fit photometry outside it, and do not open anything under `data/raw/` unless your task is development-era acquisition through the guarded scripts.
+**Access and immutability.** Barry authorised the exact package in D065; `configs/protected_access.json` was committed before protected requests. Verify the manifest before using it, preserve all bound bytes and original run outputs, and use new paths for audits/secondaries. The frozen config still contains its old candidate-status wording because its bytes are immutable; current authority comes from the access record and manifest. Never tune the primary rule, remove influential/TTV hosts, or label new post-unblinding implementation choices as pre-registered details.
+
+**Reproduction traps.** The recorded relative measurement output path fails when writing grids; use the documented absolute path and retain the failed attempt. The accepted rerun preserved all earlier windows. The extension's interval uses 1,989 defined draws of 2,000 because eleven sampled no evaluation host. Earlier `check_d061_package.py`/`check_freeze_proposal.py` were pre-authorisation checks and deliberately assert that no access record exists; use the current freeze verifier and D065 audit commands after authorisation.
 
 ## 2. Repository map
 
@@ -165,11 +167,15 @@ uv run --project ~/work/correspondence correspondence-export docs/correspondence
 GIT_CONFIG_GLOBAL=/dev/null gitleaks protect --staged   # before pushing to this public repository
 ```
 
-## 6. Access guards and the protected-data boundary
+## 6. Historical development guards and current access
+
+The two era limits below governed development acquisition. D065 subsequently
+authorised the exact protected package through the shared record/hash guard.
+Do not overwrite its bound pre-access receipt after protected downloads.
 
 - **Guard 1, before the request.** The MAST product's `t_max` must be within the development era. `sprint2_outcomes.py` and `t015_timing_pipeline.py` check it before any download.
 - **Guard 2, before flux is read.** The FITS header `TSTOP` must be at most BTJD 3313.49 (the end of 2024-01-03 less a light-time margin; `MAX_BTJD = 3313.5` in the pipeline denotes 4 January 2024 00:00 TDB, see `docs/t015_provenance_review.md`).
-- **Receipt.** `sprint2_freeze_package.py receipt` scans every FITS file under `data/raw/mast` by header only and records the maximum TSTOP, files violating the guard, and a listing hash. The current receipt (2026-11-07 06:26:59 UTC, after the confirmation and replication downloads) scanned 996 files, all in sectors 46-73, with maximum TSTOP BTJD 3312.655 and no violations; listing hash `de08107d...`. Re-run it before any freeze.
+- **Historical receipt.** `sprint2_freeze_package.py receipt` produced the bound pre-access header receipt: 996 files in sectors46–73, maximum TSTOP3312.655 and no violations. Preserve it; do not regenerate it in place over the now-expanded raw archive.
 - **Eligibility anchor for the final era.** 2025-11-19 00:00 UTC (the first whole day after DRD's public time). The journal-date sensitivity (2026-02-11 plus one day) is a secondary anchor.
 - **What may not be done without Barry's explicit instruction.** Open any TESS product dated after 2025-11-18, fit anything to it, or use it to select a model. An agent that must deviate records the reason in `coordination/decisions.md` first.
 - **The metadata roster** (`results/sprint2/freeze_candidate/roster.csv`, `events_drd.csv`) uses only pointing predictions and calendars. It is not an outcome table. Its epochs come from the issued ephemeris, not from data.
@@ -305,15 +311,32 @@ Limitations to state in any derivative work:
 
 ## 12. Current review outputs and unresolved work
 
-`results/sprint2_review/handoff.json` indexes corrected statistics, numerical-support checks, the source-qualified I1 replay, boundary annotations and all current limitations. Original outputs remain under `results/sprint2/`; do not overwrite them with the repaired analysis.
+The original development defects, corrections and qualification sequence remain
+under `results/sprint2_review/` and D051–D064. Actual support replay resolved
+the missing-grid selection problem before protected access. Preserve these
+historical outputs rather than rerunning a superseded checker on the current
+authorised state.
 
-The review found product fallback and asymmetric-coverage defects, repaired them, and obtained the corrected replication pass without changing criteria. It also changed numerical-support handling; those timing-code changes are a new implementation and cannot inherit qualification automatically. No new sample or transit-count restriction is authorised by this review.
+`results/final_review/` now contains the independent protected numerical and
+execution audits. `results/final_secondaries/` contains strata, influence,
+dated catalogue labels and sensitivity comparisons. Settings were declared
+before unblinding, but executable details are dated in
+`docs/secondary_execution_2026-11-09.md`. Sensitivity intervals are conditional
+on scenario fits and cannot replace the primary joint-refit interval.
 
-Use the reviewed source-to-score replay command in the handoff. Raw and detailed derived files are in the shared bulk archive named by its receipt. A final evaluation does not exist. Full-support likelihoods, product identification, outcome attempt denominators, multi-planet validation and exact time-boundary handling remain open. Claude counter-review and reconciliation are next.
+Remaining scientific limits include accepted-timing selection, reconstructed
+covariance, Gaussian calibration fitting, limited multi-planet recovery and
+conservative rather than exact boundary eligibility. The article and brief
+still require integration of the current ledger; release/submission remains
+separate from repository work.
 
 ## 13. Suggested first moves for a new agent
 
-1. Read `AGENTS.md`, this guide, `docs/sprint1_report.md`, `docs/sprint2_outcome_design.md` and the claims ledger.
-2. Run the unit tests and `.venv/bin/python scripts/sprint1_handoff.py` to confirm the environment reproduces the sprint-1 receipts.
-3. If asked to review, start from the independence argument: check that the calibration inputs do not overlap the scored observations (S1-05), and that no development-era result is labelled as validation.
-4. If asked to extend, check the I1/I2/I3 contracts and the access guards before touching photometry, and confirm in `coordination/decisions.md` that the freeze state allows what you intend.
+1. Read `AGENTS.md`, the current read order at the top, the claims ledger and
+   D065 onward. Historical plans explain provenance, not current readiness.
+2. Verify the frozen package and run the unit tests; use a writable temporary
+   uv cache where the tool sandbox cannot read the global cache.
+3. Reproduce the audit/secondary commands into their own paths. Preserve frozen
+   inputs and original primary outputs; do not refit on protected errors.
+4. Before extending the study, distinguish the fixed primary result, declared
+   post-unblinding implementation and a genuinely new exploratory question.

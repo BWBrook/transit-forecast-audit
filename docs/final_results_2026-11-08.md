@@ -28,7 +28,8 @@ fixed-parameter interval (B = 10,000, seed
 
 The fail-closed checks pass: adapter reproduction 2.2e-12, calibration refit
 reproduction 0.0. The freeze manifest verifies unchanged after the run, and all
-99 tests pass.
+99 tests in the original run's suite pass. Later audit/secondary checks are
+recorded separately in D066–D067.
 
 ## What the calibration does (descriptive)
 
@@ -132,11 +133,12 @@ uv run scripts/final_measure.py --manifest results/prefreeze/manifest_core_prima
 .venv/bin/python scripts/final_descriptives.py results/final_primary/scores.csv
 ```
 
-## Not yet done
+## Declared secondaries completed after independent review
 
-The config declares further secondary results that `evaluate` does not
-compute. Each needs a separate script written after unblinding, applied exactly
-as declared, and reported whatever it shows:
+The config's secondary results were implemented on 9 November after independent
+review of this run. [The report](final_secondaries_2026-11-09.md) and
+[execution conventions](secondary_execution_2026-11-09.md) distinguish declared
+settings from post-unblinding executable details:
 
 - **Strata:** lead time, Tmag, covariance tier, core vs extension, product type.
 - **Sensitivities:** covariance settings, all-SPOC training, journal anchor,
@@ -145,5 +147,5 @@ as declared, and reported whatever it shows:
 - **Diagnostics:** the leave-k-gain-hosts-out curve and the TTV label
   diagnostic.
 
-None of them can change the primary verdict. Independent review of this run
-(T012) should precede them.
+They do not change the primary verdict. Sensitivity intervals are conditional
+on scenario fits and do not replace the frozen joint-refit interval.
