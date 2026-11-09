@@ -28,9 +28,20 @@ claim of completion.
 | T019 | P1.2 Issue-time information ledger | Release-file predictors for DRB/DRC/DRD planets; origin-dated companions and published TTV evidence with explicit unknown states | D071 | **Internal ledger/candidate screen complete; historical external certification pending (D072/C054):** `064cbf5`, `docs/t019_information_ledger.md`; unknown durations/dates retained. Not a historically certified triage feature set |
 | T020 | Release-feature triage and midpoint-window comparison (development) | One transparent candidate compared with equal-budget policies, selection disclosed | T017–T019 | **Bounded screen executed, negative (D074/C061):** no positive-pad candidate beats both comparators in either era/pooled or covariance sensitivity; every fit selects no pad. D076/C064 exact allocation optimum confirms no subset can beat both within the fixed empirical policy class; closed |
 | T021 | Stage 2 design on S74–S97 | Exact cohort/cycle manifest, useful fixed rule/endpoint, feasibility and independently reviewed access-bound package | T020 | **Closed unexecuted (D075–D076):** no triage candidate to test. A descriptive S74–S97 gross-miss rate study is an optional later extension needing its own freeze and Barry's access decision; S74–S97 closed |
-| T022 | Integrated rewrite: article v0.6, brief, agent guide | Three products rebuilt on the D075 question and outline, citing claims; Codex review | D075–D076 | **Drafted (D077).** Next: Codex reviews against the ledger and D076 wording; then Barry |
+| T022 | Integrated rewrite: article v0.6.1, brief, agent guide | Three products match D076 and claims, rebuilt and independently reviewed | D075–D078 | **Complete for human review (D078):** products `513db40`; 29-page article, two-page brief, guide, independent semantic recheck and PDF validation. Next: Barry; no release |
 
 ## Claims
+
+- 2026-11-09 Codex: **D077/T022 review and bounded corrections complete (D078)**,
+  from `dbc24bd`. Parent owns article/brief/guide source corrections, PDF
+  rebuild/visual inspection and integration records. Three read-only delegates
+  check article semantics/numbers, brief/guide consistency and the two new
+  primary references; their only writes are separate audit reports. Preserve
+  all frozen inputs/results; no new photometry or headers. Handoff: reviewed
+  products ready for Barry, with remaining scientific limits explicit and
+  no release or new-data access. Evidence `513db40`: reviewed v0.6.1,
+  independent semantic rechecks, full-size brief and article layout checks.
+  160 tests, one expected skip; frozen verifier clean. Next: Barry reviews.
 
 - 2026-11-09 Codex: **D075 scope/accuracy/calibration/oracle review complete (D076)**,
   from `d7f4bea`. Parent owns new D075 reconciliation memo and integration

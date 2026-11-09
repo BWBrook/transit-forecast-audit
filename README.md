@@ -1,20 +1,18 @@
 # Transit Forecast Audit
 
-**Scientific revision after external review · 9 November 2026 · frozen primary result inconclusive**
+**Reviewed drafts ready for Barry · 9 November 2026 · frozen primary result inconclusive**
 
-D076 accepts synthesis of the existing evidence; Claude will rewrite the
-article, brief and guide under the [corrected scope and claims](docs/d076_reconciliation_2026-11-09.md). The bounded triage
-development screen selects no added pad; no competitive candidate is ready
-for a new-data freeze. Start with the
-[D074 response](docs/d074_response_2026-11-09.md),
-[development result](docs/t020_development_results.md), and the earlier
-[D071 counter-review](docs/d071_counter_review_2026-11-09.md),
-[independent measurement tranche](docs/audits/t017_results_2026-11-09.md),
-[interpretability/benchmark repairs](docs/t018_repairs.md) and
-[information ledger](docs/t019_information_ledger.md).
-Sectors 74–97 remain closed. The article and brief v0.5, including their older
-PDFs, are superseded working drafts; their full rewrite follows the scientific
-scope decision. The frozen experiment below is preserved.
+D078 completes the review of article v0.6.1, the two-page brief and the agent
+guide. Read the [article source](manuscript/paper.md),
+[brief PDF](docs/brief.pdf) and [agent guide](docs/agent_guide.md).
+The [review and corrections](docs/audits/d078_product_review_2026-11-09.md)
+link the independent checks; source/PDF hashes and build commands are in
+`results/final_review/d078_products_validation.json`. The 29-page article PDF
+is a local review build at `manuscript/build/paper.pdf`.
+
+Barry's review comes next, before any release. The bounded targeting study is
+closed without a new-block test; sectors 74–97 remain closed. Earlier draft
+statuses below describe their stated historical checkpoints.
 
 The frozen core evaluation accepts 2,185 of 3,103 intended transits on 151
 planets. The calibration's planet-balanced score difference is −0.121, with a

@@ -516,3 +516,18 @@ document, and numerical evidence in an analysis artifact.
   added. Nothing released.
 - Next: Codex — review v0.6, brief and guide; then Barry.
 
+
+
+### 2026-11-09 — Codex — D078 products reviewed; Barry next
+
+- Reviewed v0.6 against D076/ledger; targeted corrections committed as v0.6.1
+  (`513db40`). Central numbers and inconclusive primary unchanged.
+- Three independent reviews and semantic rechecks cover the article,
+  brief/guide and two new references. Corrected coverage attribution,
+  acceptance/search scope, chronology, allocation limits, causal claims and
+  historical guide instructions. Agol's recalibration precedent acknowledged.
+- Article 29 A4 pages; brief two. Citations resolve; visual/margin/glyph checks
+  pass after repairing one long path. PDF/source hashes and commands retained.
+- 160 tests, one expected skip; frozen verifier clean. No new photometry or
+  headers, S74–S97 closed, no formal release.
+- Next: Barry — review article and brief.

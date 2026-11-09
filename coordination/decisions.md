@@ -1078,6 +1078,44 @@ scientific record; a `proposed` item is not a frozen preregistration.
   renumbering.
 - Status: draft for review. S74–S97 closed; nothing released.
 
+### D078 — v0.6 reviewed and corrected to v0.6.1; ready for Barry
+
+- Date / responsible agent: 9 November 2026, Codex (GPT-6.1-sol), from
+  `dbc24bd`; products/audits `513db40`.
+- Decision: accept the central v0.6 results and complete targeted corrections
+  across article, brief and guide. The reviewed products are ready for Barry;
+  no additional research or data-access decision precedes his review.
+- Three independent bounded reviews cover article semantics/numbers,
+  brief/guide consistency and primary-source verification of Lissauer/Agol
+  2024. Parent checked the new Agol calibration/later-timing precedent and
+  acknowledged it explicitly. The changed scientific passages were rechecked.
+- Corrections: combined conditional coverage rather than attribution to
+  measurement noise or catalogue SD alone; accepted-sample accuracy rather
+  than prospective assurance; both budget comparators and five discrete pads;
+  coherent shared-photon HR858b evidence rather than unique cause/exclusion;
+  epoch-blind search versus forecast-dependent acceptance; specific design
+  commitments versus retrospective diagnostics; reduced recovery rather than
+  hard universal cutoffs; joint primary versus conditional diagnostics.
+- Guide historical defects/writers are explicitly superseded or isolated;
+  pinned-interpreter instructions and C063/C064 evidence paths are repaired.
+  Original white-noise non-reproducibility is dated separately from the later
+  retained synthetic check. No numerical result, code, data or frozen byte
+  changes. One overlong path was rendered as a short link to prevent clipping.
+- Verification: article 29 A4 pages, brief two A4 pages; all citations resolved.
+  Full-size brief, article contact sheets, selected full-size figure/table
+  pages and repaired page checked. Body bounding boxes/glyph checks pass;
+  no build warnings. Sources, PDF hashes and commands are recorded in
+  `results/final_review/d078_products_validation.json`. 160 tests, one expected
+  skip, no failures; native freeze verifier reports zero mismatches.
+- Limits retained: selected accepted timings, reconstructed covariance,
+  conditional measurement likelihood, incomplete recovery/lineage,
+  shared photons and limited multi-planet scope. This is human-review
+  readiness, not release/submission or an external-specialist endorsement.
+- Evidence: `docs/audits/d078_product_review_2026-11-09.md` and three adjacent
+  v0.6 review reports; revised products and literature-access record.
+- Status: adopted. S74–S97 remain closed; no formal release or submission.
+- Next: Barry — review article and two-page brief before release.
+
 ## New entry template
 
 ### D0XX — short title
