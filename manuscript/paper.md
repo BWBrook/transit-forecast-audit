@@ -3,7 +3,7 @@ title: "How well do published transit ephemerides predict later transits?"
 subtitle: "An availability-aware audit of ExoClock forecasts against independently measured TESS mid-times, with a population calibration trained on an earlier release"
 author:
   - "Barry W. Brook"
-date: "Repository draft v0.5, 9 November 2026 (independently reviewed; awaiting human review)"
+date: "Repository draft v0.5, 9 November 2026 (under scientific revision after external review)"
 bibliography: ../references/references.bib
 link-citations: true
 ---
@@ -14,7 +14,7 @@ Held-out claims: C043 primary protected evaluation; C044 exploratory extension; 
 Missing citations are written [CITATION NEEDED: ...]. Bibliography entries are written from verified DOI metadata (references/); Barry's DOI sweep precedes release.
 -->
 
-> **Under revision (D071, 9 November 2026).** An external review found that this draft reports one correction under one conditional loss without asking which forecasts fail or why. Its discussion also misreads HR 858 b, whose accepted timings lie outside every model's 95% interval. The revision plan is in [docs/review_response_2026-11-09.md](../docs/review_response_2026-11-09.md). The frozen result below is unchanged.
+> **Under revision (D071–D072, 9 November 2026).** An external review prompted further measurement validation, interpretation repairs and an issue-time information audit. HR 858 b remains outside every model's 95% interval despite its score gain. The [counter-review and scope conditions](../docs/d071_counter_review_2026-11-09.md) qualify the [original revision proposal](../docs/review_response_2026-11-09.md). This historical body will be rewritten after reconciliation; the frozen result below is unchanged.
 
 # Abstract
 

@@ -1,6 +1,15 @@
 # Transit Forecast Audit
 
-**Protected evaluation independently reviewed · 9 November 2026 · primary result inconclusive**
+**Scientific revision after external review · 9 November 2026 · frozen primary result inconclusive**
+
+The integrated revision programme is under reconciliation. Start with the
+[D071 counter-review](docs/d071_counter_review_2026-11-09.md),
+[independent measurement tranche](docs/audits/t017_results_2026-11-09.md),
+[interpretability/benchmark repairs](docs/t018_repairs.md) and
+[information ledger](docs/t019_information_ledger.md).
+Sectors 74–97 remain closed. The article and brief v0.5, including their older
+PDFs, are superseded working drafts; their full rewrite follows the scientific
+scope decision. The frozen experiment below is preserved.
 
 The frozen core evaluation accepts 2,185 of 3,103 intended transits on 151
 planets. The calibration's planet-balanced score difference is −0.121, with a
@@ -13,10 +22,9 @@ Start with the [independent review](docs/audits/d065_review_2026-11-09.md),
 [primary result](docs/final_results_2026-11-08.md) and
 [completed declared secondaries](docs/final_secondaries_2026-11-09.md).
 Secondary intervals are conditional on scenario fits; they do not replace
-the frozen joint-refit result. The article v0.5 and two-page brief integrate
-these results and have passed independent review (D069); Barry's review and
-formal bibliography imports remain before release. Earlier milestones below
-describe their status at the stated dates.
+the frozen joint-refit result. D069 reviewed the earlier article/brief; D070
+completed verified references and D071 reopened the scientific scope after
+external review. Earlier milestones below describe their status at those dates.
 
 A project for Barry W. Brook to evaluate the predictive reliability of exoplanet
 transit ephemerides using historical forecasts and later independent timing

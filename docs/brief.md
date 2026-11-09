@@ -2,7 +2,7 @@
 
 *Research brief · 9 November 2026 · held-out result. Claim IDs refer to the shared claims ledger.*
 
-> **Under revision (9 November 2026).** An external review prompted further work, including an independent check that HR 858 b's six-hour departure is real: its neighbouring planet runs late by a matching amount. This brief will be rewritten; see the revision plan in the repository.
+> **Under scientific revision (9 November 2026).** Independent light-curve checks support HR 858 b's large timing departure and find its neighbour late, with remaining shape/identification limits. The new work distinguishes measured-time scores from observing capture. This historical brief and its older PDF will be rewritten after scope reconciliation; start with the D071 counter-review and Stage 0 reports in the repository.
 
 ## The answer
 

@@ -1,5 +1,17 @@
 # Agent guide: using the transit-forecast-audit work
 
+**D072 revision status (9 November 2026):** Read
+`docs/d071_counter_review_2026-11-09.md` and the T017/T018/T019 reports before
+the historical article/brief. The fixed independent-check tranche and repair
+products are complete; seven control-review triggers and external historical
+feature certification remain open. The original primary verdict is unchanged.
+S74–S97 are not authorised: current-roster hosts all had 2026 products attempted,
+and metadata leads for a new cohort are not yet a frozen confirmatory design.
+The exact evaluation environment has been restored; the earlier v0.5 PDFs are
+historical drafts pending the later integrated rewrite. D070 supersedes the old
+mandatory-Zotero workflow: write references from verified registered/source
+metadata, retaining unknowns and Barry's eventual DOI sweep.
+
 **Audience:** a new AI agent (Claude, Codex or another) that must use, extend, review or reproduce this work. **Current status (9 November 2026):** D065's authorised frozen protected evaluation is complete; its primary verdict is **inconclusive**, independently supported by D066. The declared secondaries are implemented with dated post-unblinding conventions. Start with `docs/final_results_2026-11-08.md`, `docs/audits/d065_review_2026-11-09.md`, `docs/final_secondaries_2026-11-09.md` and the claims ledger. The article `manuscript/paper.md` (v0.5) and public brief `docs/brief.md` integrate the held-out result as of 9 November; neither has yet been reviewed by Barry.
 
 Historical development account: `docs/sprint2_review.md`. The original `docs/sprint2_report.md` and original results are historical evidence qualified by that review and the later decisions. Follow the current read order above for the protected result.

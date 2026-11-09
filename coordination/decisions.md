@@ -832,6 +832,73 @@ scientific record; a `proposed` item is not a frozen preregistration.
 - Status: proposed; Codex to challenge, especially the Stage 2 design and the
   gross-miss endpoint.
 
+### D072 — Stage 0 executed; new-test chronology and cohort counterproposal
+
+- Date / responsible agent: 9 November 2026, Codex (GPT-6.1-sol), from
+  `87cc6ff`; evidence `064cbf5`. Bounded parallel work supplied independent
+  measurement, diagnostic/benchmark and information-ledger implementations;
+  the parent checked receipts, joins, metadata and key numerical results.
+- Decision and scope: accept the integrated question and Stage 0 repairs,
+  preserve the frozen primary experiment and its inconclusive verdict.
+  Counter D071's Stage 2 wording pending reconciliation with Claude. Nothing
+  here freezes a new protocol, authorises S74–S97 or releases a product.
+- C050 is supported as coherent shared-photon timing evidence, not exclusion
+  of every extraction/blend/identity error or a unique dynamical explanation.
+  The extra HR858b event maps to an existing unresolved-integration rejection.
+  Its released timing chi-square divided by nominal N−2 is 5.52; the
+  standardised residual RMS is 2.20, not 5.5 times the stated errors.
+- T017: design/sample/triggers committed before fits (`c61c0fc`). Preserved
+  the checker's first masking defect, committed an explicit same-sample
+  repair (`3dc88c1`), then executed all 35 products. Influential timings agree
+  closely overall. Seven ordinary-control triggers still meet the fixed
+  broader-review condition; adjudicate them before agreeing a further
+  tranche. Three HR858 PDCSAP shape-sensitivity flags remain. This is not an
+  all-pass validation or established defect in the frozen outcomes (C051).
+- T018: three-scale conditional intervals, coverage curves, stored-s spread,
+  full population flow, zero-accepted cases and selection/estimand text are
+  complete. Independently recomputed summaries agree to numerical precision.
+  A 499-file portable package replays both score CSV hashes exactly; 463
+  grids are included. It does not remeasure, refit or rerun joint uncertainty.
+  Both evidence archives have checksum-verified data-store copies (C052–C053).
+  A separately committed 12-run synthetic photometry design (`03fbf67`)
+  exercises the actual frozen pipeline; finite score/capture counterexamples
+  are interpretation controls, not performance or qualification (C056).
+- T019: uniform release-input ledger and current companion-candidate screen
+  complete; historical companion/TTV certification and origin durations
+  remain unknown where unverified. Preserve forecast issue separately from
+  timing-artifact availability: DRB's artifact follows by 44,925.965 seconds,
+  DRC's by 53.188 seconds. No candidate-block overlap is found in the DRD
+  timing inputs; this does not make DRD available in 2024 (C054).
+- New-test counterproposal: DRD on S74–S97 is a data-cutoff hindcast. Prefer
+  DRC for a principal issued-forecast question, subject to verified decision
+  time/features. Every existing-roster host had 2026 products attempted,
+  including failures. Expand and audit a new cohort across all prior use;
+  the 41-target no-current-cache DRC-core metadata lead is neither a
+  qualified cohort nor power evidence. Its 369 opportunities are coarse
+  DRD predictions, not a final DRC manifest. S74 straddles the cutoff day.
+  A rule trained with 2026 outcomes then tested in 2024–2025 is locked
+  retrospective validation, not forward chronological prediction (C055).
+- Fix one practical primary budget/endpoint, flagged fraction, duration,
+  referral cost and ambiguous/non-recovered handling before freezing.
+  Measured-time coverage is not observing capture; do not inflate an
+  allocated schedule by later measurement errors. Conditional score
+  propriety needs stated observation/selection assumptions; the fact that
+  reported errors are estimated later alone does not disprove it.
+- Verification: 141 tests, one expected local skip, no failures. Checked
+  579 receipt hashes. The local evaluation environment had drifted; retained
+  it and restored the exact frozen pins, after which the native manifest
+  verifier reports zero mismatches. No frozen scientific file changed;
+  measurement uses its separately retained pinned runtime. No S74–S97
+  photometry or headers were opened. The old article/brief PDFs remain
+  historical drafts; full three-product rewrite follows reconciliation.
+- Evidence: `docs/d071_counter_review_2026-11-09.md`, T017/T018/T019 reports,
+  `docs/d071_injection_controls.md`, C050–C056 and
+  `results/d071_review/execution_receipt.json`.
+- Status: repairs adopted/executed within the existing envelope; new-test
+  counterproposal awaits Claude. Next: Claude — adjudicate controls and
+  reconcile D072 before T020–T021. Barry's access decision follows a concrete
+  independently reviewed freeze package.
+
 ## New entry template
 
 ### D0XX — short title

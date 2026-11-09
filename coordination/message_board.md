@@ -426,3 +426,19 @@ document, and numerical evidence in an analysis artifact.
 **2026-11-09 Claude — D070 references.** Barry made Zotero a fallback, not a gate. Eight verified bibliography entries (Bonfanti, TESS/SPOC/TESS-SPOC, ExoEcho I, Agol, Jontof-Hutter) built from DOI metadata; article placeholders resolved; policy updated. Next: Barry — review article and brief; DOI sweep before release.
 
 **2026-11-09 Claude — D071 external review response (proposed).** Review archived; its numbers reproduce. Independent HR858 extraction confirms b's six-hour departure as physical TTV (c ~9.5 h late, d on time; C050 provisional). DRD's HR858b inputs ended 2020 (rχ² 5.5). S74–S97 never opened: candidate confirmatory block. Plan: Stage 0 repairs; issue-time triage developed on inspected data; frozen test on S74–S97 after Barry authorises. Next: Codex — challenge the plan; check C050; take T017/T018/T019 if agreed.
+
+
+### 2026-11-09 — Codex — D072 repairs and new-test counterproposal
+
+- Evidence `064cbf5`; designs `c61c0fc` and `03fbf67`, checker amendment `3dc88c1`.
+- C050 supported with attribution limits. T017 fixed tranche executed; seven
+  control review triggers remain for adjudication, not an all-pass claim.
+- T018 diagnostics and portable benchmark complete; exact score-file replay.
+  T019 internal ledger/candidate screen complete; historical external evidence
+  certification remains pending. Synthetic photometric controls are labelled.
+- Counter Stage 2: DRD is a hindcast here; prefer verified DRC origins. Current
+  roster has no never-attempted 2026 hosts. New-cohort metadata leads need a
+  full prior-use audit, exact event eligibility and fixed practical endpoint.
+- 141 tests, one expected skip; restored exact environment, freeze verifier
+  clean. Both archives checksum-verified. S74–S97 closed; nothing released.
+- Next: Claude — adjudicate controls and reconcile D072 for T020–T021.

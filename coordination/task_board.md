@@ -19,17 +19,32 @@ claim of completion.
 | T010 | Fit earlier-only calibration rule | Reproducible development outputs; bound/uncertainty diagnostics | T009 | **Frozen and verified (D064–D066):** 206 core development planets; saved parameters and forecasts reproduce |
 | T011 | Execute held-out evaluation | Paired scores, uncertainty, planned sensitivities and complete provenance | T010 | **Complete (D065–D067, C043–C047):** primary −0.121 [−1.84, 2.20], inconclusive; exploratory extension; declared strata, closed sensitivity comparisons and influence/TTV diagnostics saved. Secondary intervals conditional only |
 | T012 | Independent scientific review | Reproduction/criticism with concrete evidence; findings resolved or reported | T011 | **Done (D066, D068):** Codex audit of D065 accepted; Claude cross-review of secondaries reproduces all headline numbers |
-| T013 | Write manuscript and release artifacts | Every result traceable to analysis; scope and citations verified | T012 | **D068–D069 integrated/reviewed:** article v0.5, two-page brief and guide ready for Barry; bibliography imports/two prior-art placeholders remain before release; no release requested |
+| T013 | Write manuscript and release artifacts | Every result traceable to analysis; scope and citations verified | T012 | **Under scientific revision (D071–D072):** D070 resolved bibliography placeholders. Historical v0.5 article/brief PDFs remain labelled; integrated rewrite follows scientific-scope reconciliation, not ready for release |
 | T014 | Identifiable variance-components model on the development era | Outcome scale independently constrained or declared a sensitivity; shared ephemeris covariance specified; simulation checks separation of b and any extra variance before fitting | T005, D021–D024 | **Development model in place** (Claude, D026–D027): outcome scale a=1.09 as fixed sensitivity; two-stage planet-level scale mixture (b, s) with recovery simulation on the real DRC design, `results/pilot_v1/variance_components/`. **Production repaired (D036):** continuous posterior summaries and 400 host resamples retained in `variance_components_v2/`. Chronological refit instability prevents selecting the span correction (D037) |
 | T015 | Forecast-independent TESS mid-time pipeline | Re-measures a sample of DRD 2022–2023 TESS mid-times from SPOC light curves with a broad timing prior; agreement and σ calibration documented; then frozen | T003 | **Amended SPOC rule accepted (D062, C038–C040):** actual support on frozen injections passes all eight criteria; manifest-to-decision path verifies and access guard is repaired. Conditional development evidence, not a new replication. Multi-planet identification/full-support fitting remain declared limits; no freeze or protected access |
 | T016 | Untouched DRD-era outcome inventory (metadata only) | List TESS sectors from 2025-11-19 and the DRD planets they cover, without fitting any light curve | D018 | **Metadata correction complete (D043/D045):** public product/date inventory in `results/sprint1/inventory/`; 184 core+extension planets, 3399 opportunities after origin flags, no protected FITS opened. Actual cadence capture and outcome recovery remain unverified |
-| T017 | P0.1 Influential-case validation (review R03) | Second independent implementation on TOI-905b, WASP-184b, TOI-559b, top-5 calibration-influence planets and ~10 controls; HR858 cross-check; discrepancy rule agreed in advance | D071 | HR858 done by Claude (C050); rest proposed for Codex |
-| T018 | P0.2–P0.4 Interpretability, estimand text and benchmark package | Three loss scales with intervals; coverage vs nominal; s distribution; flow figure; five zero-accepted planets; estimand/terminology text; scoreable Zenodo-ready derived package and entry point | D071 | Proposed |
-| T019 | P1.2 Issue-time information ledger | Release-file predictors for DRB/DRC/DRD planets; origin-dated companions and published TTV evidence with explicit unknown states | D071 | Proposed |
-| T020 | P1.3–P1.4 Triage rule and capture endpoint (development) | One simple rule vs M0/M2 with flagged fraction; capture vs allocated minutes | T017–T019 | Proposed |
-| T021 | Stage 2 confirmatory design on S74–S97 | Metadata-only inventory; frozen rule and plan; Barry authorises opening | T020 | Proposed |
+| T017 | P0.1 Influential-case validation (review R03) | Second independent implementation on TOI-905b, WASP-184b, TOI-559b, top-5 calibration-influence planets and ~10 controls; HR858 cross-check; discrepancy rule agreed in advance | D071 | **Fixed tranche executed (D072/C051):** design `c61c0fc`, explicit checker repair `3dc88c1`, results `064cbf5`. 35 products; seven control review triggers and HR858 shape checks remain open for adjudication; no universal qualification |
+| T018 | P0.2–P0.4 Interpretability, estimand text and benchmark package | Three loss scales with intervals; coverage vs nominal; s distribution; flow figure; five zero-accepted planets; estimand/terminology text; scoreable Zenodo-ready derived package and entry point | D071 | **Complete at declared scope (D072/C052–C053):** `064cbf5`, `docs/t018_repairs.md`; benchmark replays exact score CSV hashes, archives checksum-verified. Actual bounded synthetic photometry control C056. No publication |
+| T019 | P1.2 Issue-time information ledger | Release-file predictors for DRB/DRC/DRD planets; origin-dated companions and published TTV evidence with explicit unknown states | D071 | **Internal ledger/candidate screen complete; historical external certification pending (D072/C054):** `064cbf5`, `docs/t019_information_ledger.md`; unknown durations/dates retained. Not a historically certified triage feature set |
+| T020 | P1.3–P1.4 Triage rule and capture endpoint (development) | One simple rule vs M0/M2 with flagged fraction; capture vs allocated minutes | T017–T019 | **Next: Claude** — adjudicate controls and reconcile D072; fix practical endpoint, decision time and feature availability before fitting one rule |
+| T021 | Stage 2 confirmatory design on S74–S97 | Metadata-only inventory; frozen rule and plan; Barry authorises opening | T020 | **Not freeze-ready (D072/C055):** current roster has no never-attempted 2026 hosts; 41-target DRC-core metadata lead requires full prior-use audit/exact manifest. DRC proposed for issued forecasts; DRD is a hindcast. S74–S97 remain closed |
 
 ## Claims
+
+- 2026-11-09 Codex: **D071 challenge and bounded Stage 0/T019 execution complete (D072)**
+  from `87cc6ff`. Parent owns D071/C050 review, access-history/chronology audit
+  and integration records. Delegates own new T017 independent timing,
+  T018 repair/benchmark and T019 information-ledger paths respectively.
+  Freeze the T017 sample/discrepancy design before new fits. Preserve all
+  frozen artifacts; reuse only authorised S46–S73/S98+ products. S74–S97
+  remain closed. Stop with reviewed Stage 0 outputs, an honest information
+  ledger and a concrete accepted/countered programme; no new-test opening.
+  Evidence `064cbf5`; reports link fixed T017 tranche, T018 repairs/portable
+  replay, T019 internal ledger/candidate screen and actual synthetic control.
+  Seven T017 control triggers and historical external-feature certification
+  remain open, explicitly handed to Claude. 141 tests, one expected skip;
+  exact evaluation environment restored, native freeze verification clean.
+  Archives checksum-verified on the project data store; no release.
 
 - 2026-11-09 Codex: **D068 article/brief review complete (D069)** from `9eade0b`.
   Parent owns article/brief/guide corrections, render review and coordination;
