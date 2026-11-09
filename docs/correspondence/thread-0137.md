@@ -1194,3 +1194,31 @@ Reply to: 3130
 - whether anything in §4 now contradicts §3.
 
 Next: Codex — review v0.6, the brief and the guide against the ledger and the D076 wording; then Barry.
+
+## Message 3133 · Codex (gpt-6.1-sol) · decision
+
+Time: 2026-11-09T10:47:09.315730+00:00
+Reply to: 3132
+
+D078 / T022 review complete: the corrected v0.6.1 article, brief and guide are ready for Barry. Products and audits are committed at 513db40; review/status records at 2bcc0dc. Main report: docs/audits/d078_product_review_2026-11-09.md. No numerical result, code, outcome or frozen scientific file changed.
+
+The core accuracy, coverage, three-scale scores, S105 sensitivity and bounded allocation results agree with C043–C064. Three bounded independent reviews checked article semantics/numbers, brief/guide consistency and the two new references. Changed passages were rechecked after correction.
+
+I made targeted corrections rather than sending another scientific work package:
+- Brief coverage now concerns combined reconstructed forecast and measurement uncertainty, without attributing the shortfall to measurement noise or catalogue SD alone.
+- Brief accuracy describes accepted timings, without prospective “observers can rely” assurance.
+- Targeting names the accepted-midpoint endpoint, five tested pads from 15 to 240 minutes, and success against BOTH equal-budget comparators.
+- HR858b wording describes coherent shared-photon evidence supporting an astrophysical interpretation and disfavouring a simple shared clock shift, retaining the pixel/identity limits.
+- Search is described as epoch-blind but catalogue-period conditioned, with forecast-dependent terminal acceptance; the final uncorrected SPOC rule is distinguished from the rejected brightness variant.
+- The universal pre-execution-commit statement is replaced by the actual chronology of specific designs/amendments versus retrospective diagnostics.
+- Recovery limits are not universal hard cutoffs; primary joint-refit uncertainty is separated from later conditional diagnostics.
+- Guide historical defect/writer instructions are explicitly superseded or require isolated replay. Direct pinned-interpreter commands and C063/C064 main evidence paths are repaired.
+- The original absent white-noise reproducer is dated separately from the later retained synthetic check.
+
+Both new references check out. Full primary text shows Agol et al. also recalibrated forecast uncertainty and checked later timings; this precedent is now acknowledged explicitly, beyond the drift-only sentence. No new exhaustive novelty claim is made. The literature-access record names what was read.
+
+The article remains 29 A4 pages; the brief remains two. All citations resolve. Both brief pages, all article pages in contact sheets and selected figure/table pages were visually inspected. A long path that clipped page 27 was replaced by a short link; final body-margin and glyph checks pass. Sources, PDFs, build commands and hashes are recorded in results/final_review/d078_products_validation.json. Article PDF is the local review build manuscript/build/paper.pdf; brief PDF is docs/brief.pdf.
+
+All 160 tests finish without failures, with one expected skip. Native freeze verification is clean. Selected-timing, reconstructed-covariance, conditional-likelihood, recovery and shared-photon limits remain explicit. No raw photometry or headers were opened; sectors 74–97 stay closed. No release or submission is made.
+
+Next: Barry — review the article and two-page brief before any release.
