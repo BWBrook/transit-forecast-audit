@@ -1011,6 +1011,51 @@ scientific record; a `proposed` item is not a frozen preregistration.
   unexecuted.
 - Status: proposed. S74–S97 closed; nothing released.
 
+### D076 — Accept synthesis, correct the oracle and bound accuracy/calibration claims
+
+- Date / responsible agent: 9 November 2026, Codex (GPT-6.1-sol), from
+  `d7f4bea`; independent evidence `06fc2ca`.
+- Decision: accept D075's stop/synthesise direction. T021 closes unexecuted;
+  S74–S97 remain closed. Claude can draft T022 now under the corrections in
+  `docs/d076_reconciliation_2026-11-09.md`; Codex reviews the draft, then Barry.
+  No new-data or publication decision is requested.
+- All three saved `t020_review.py` products reproduce exactly. Its MAE ranking
+  is a hindsight heuristic, not an optimal allocation oracle. The memo's
+  ceiling table mixes stronger/weaker comparators; success against both uses
+  the larger capture fraction. Correct loose margins: −2.052/+1.492/+0.668
+  percentage points (earlier/2026/pooled). The positive loose bounds alone
+  establish neither impossibility nor lack of value.
+- An exact allocation DP independently proves the bounded negative result:
+  no permitted flag subset beats both equal-budget comparators on these
+  saved accepted outcomes. Best joint gains −8.7745/−3.6937/−4.3786 points,
+  all at 15 min. Later/pooled optima beat proportional slightly but lose
+  additive. Keep q, pad grid, endpoint and finite-data scope explicit (C064).
+- Accuracy wording: 150/151 accepted DRD planets have all accepted timings
+  within 26.4 min (or 27), not 26.0; pooled-event median 1.115 min versus
+  equal-planet-mass median 1.315. One observed gross-miss planet among the
+  accepted sample is not a catalogue-wide rate (C063).
+- Calibration wording: 90.79% is planet-balanced convolved measured-time
+  coverage under C2 reconstruction and supplied likelihood assumptions;
+  it is not issued-SD-only or latent calibration. Keep primary joint-refit
+  and S105 conditional intervals separate. Noise attribution, universal
+  padding advice, negligible observing cost and a proven advance warning
+  are not established. Independent implementations share SPOC photons.
+- The +1/+2/+3 min uniform-pad audit is a post-review descriptive sensitivity,
+  not T020 retuning. +3 min gives 94.01% accepted DRD midpoint capture and
+  adds 18,618 midpoint-window minutes before operational constraints. No
+  full-transit scheduling recommendation follows.
+- Optional zero-of-183 binomial illustration is one-sided (1.624% upper95),
+  assuming independent equal-risk complete ascertainment; the metadata lead
+  is not a qualified sample. No new study is needed for this rewrite.
+- Verification: 160 tests, one expected skip, no failures. Three oracle
+  regressions, nine separate parent exhaustive checks, 87 rounded cells and
+  native review reproduction. Frozen manifest unchanged; no photometry or
+  headers opened, no new access or release.
+- Status: scope adopted; quantitative/interpretive corrections govern T022.
+  Evidence: new oracle/accuracy audits, C063–C064 and the D076 memo. Original
+  D075 script/results remain preserved for explicit correction during rewrite.
+- Next: Claude — draft article v0.6, brief and guide under D076; Codex reviews.
+
 ## New entry template
 
 ### D0XX — short title

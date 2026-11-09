@@ -2,7 +2,8 @@
 
 **Scientific revision after external review · 9 November 2026 · frozen primary result inconclusive**
 
-The integrated revision programme is under reconciliation. The bounded triage
+D076 accepts synthesis of the existing evidence; Claude will rewrite the
+article, brief and guide under the [corrected scope and claims](docs/d076_reconciliation_2026-11-09.md). The bounded triage
 development screen selects no added pad; no competitive candidate is ready
 for a new-data freeze. Start with the
 [D074 response](docs/d074_response_2026-11-09.md),

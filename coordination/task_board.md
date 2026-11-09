@@ -26,11 +26,22 @@ claim of completion.
 | T017 | P0.1 Influential-case validation (review R03) | Second independent implementation and discrepancy adjudication | D071 | **Complete at bounded scope (D074/C058):** 347 pairs after recorded amendment506ab58, independent pair-set replay. Controls adjudicated; six raw flags remain explained, zero large control discrepancies. No wider 2026 tranche; S105 sensitivity C059 |
 | T018 | P0.2–P0.4 Interpretability, estimand text and benchmark package | Three loss scales with intervals; coverage vs nominal; s distribution; flow figure; five zero-accepted planets; estimand/terminology text; scoreable Zenodo-ready derived package and entry point | D071 | **Complete at declared scope (D072/C052–C053):** `064cbf5`, `docs/t018_repairs.md`; benchmark replays exact score CSV hashes, archives checksum-verified. Actual bounded synthetic photometry control C056. No publication  S105 sensitivity added (D074/C059), all3 scales qualitatively unchanged. |
 | T019 | P1.2 Issue-time information ledger | Release-file predictors for DRB/DRC/DRD planets; origin-dated companions and published TTV evidence with explicit unknown states | D071 | **Internal ledger/candidate screen complete; historical external certification pending (D072/C054):** `064cbf5`, `docs/t019_information_ledger.md`; unknown durations/dates retained. Not a historically certified triage feature set |
-| T020 | Release-feature triage and midpoint-window comparison (development) | One transparent candidate compared with equal-budget policies, selection disclosed | T017–T019 | **Bounded screen executed, negative (D074/C061):** no positive-pad candidate beats both comparators in either era/pooled or covariance sensitivity; every fit selects no pad. Claude's review (D075/C062): structural, a hindsight oracle also loses; closed |
-| T021 | Stage 2 design on S74–S97 | Exact cohort/cycle manifest, useful fixed rule/endpoint, feasibility and independently reviewed access-bound package | T020 | **Closed unexecuted (D075):** no triage candidate to test. A descriptive S74–S97 gross-miss rate study is an optional later extension needing its own freeze and Barry's access decision; S74–S97 closed |
-| T022 | Integrated rewrite: article v0.6, brief, agent guide | Three products rebuilt on the D075 question and outline, citing claims; Codex review | D075 | **Next: Codex** challenges D075; then Claude drafts |
+| T020 | Release-feature triage and midpoint-window comparison (development) | One transparent candidate compared with equal-budget policies, selection disclosed | T017–T019 | **Bounded screen executed, negative (D074/C061):** no positive-pad candidate beats both comparators in either era/pooled or covariance sensitivity; every fit selects no pad. D076/C064 exact allocation optimum confirms no subset can beat both within the fixed empirical policy class; closed |
+| T021 | Stage 2 design on S74–S97 | Exact cohort/cycle manifest, useful fixed rule/endpoint, feasibility and independently reviewed access-bound package | T020 | **Closed unexecuted (D075–D076):** no triage candidate to test. A descriptive S74–S97 gross-miss rate study is an optional later extension needing its own freeze and Barry's access decision; S74–S97 closed |
+| T022 | Integrated rewrite: article v0.6, brief, agent guide | Three products rebuilt on the D075 question and outline, citing claims; Codex review | D075 | **Next: Claude** drafts under D076 corrected wording and C063–C064; then Codex reviews, then Barry |
 
 ## Claims
+
+- 2026-11-09 Codex: **D075 scope/accuracy/calibration/oracle review complete (D076)**,
+  from `d7f4bea`. Parent owns new D075 reconciliation memo and integration
+  records. Independent delegates own new oracle/ceiling and accuracy audits,
+  with separate scripts/results/report paths. Check saved tables only; do
+  not alter frozen files or open S74–S97 photometry/headers. Handoff: checked
+  quantitative claims and exact permitted wording for Claude's three-product
+  rewrite, retaining a negative developmental result without unrestricted
+  impossibility claims or unqualified observing advice. Evidence `06fc2ca`:
+  exact restricted oracle and corrected accuracy/coverage wording; 160 tests,
+  one expected skip. No new block opened; T022 handed to Claude.
 
 - 2026-11-09 Codex: **D073 challenge, T017 amendment, S105 sensitivity and
   bounded T020 development complete (D074)**, from `2661f82`. Parent owns new T020

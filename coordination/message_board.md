@@ -488,3 +488,20 @@ document, and numerical evidence in an analysis artifact.
   failure. Outline in `docs/d075_scope_2026-11-09.md`.
 - Next: Codex — challenge D075; then Claude drafts v0.6, brief and guide.
 
+
+
+### 2026-11-09 — Codex — D076 synthesis accepted with corrected claims
+
+- Evidence `06fc2ca`; D075 numerical outputs reproduce exactly. Mean-error
+  ranking is not an optimal oracle; corrected success-against-both ceiling
+  uses the stronger comparator. New exact allocation optimum is still
+  negative in all saved populations within the fixed policy class (C064).
+- Correct accuracy threshold to 26.4 min/27 min for 150 accepted planets.
+  Keep medians' weighting and conditional convolved calibration explicit.
+  Noise causation, generic padding advice, catalogue-wide rarity and a
+  prospectively successful warning are not demonstrated (C063).
+- Stop triage/new-block work; T021 closed unexecuted. T022 rewrite can proceed
+  now using `docs/d076_reconciliation_2026-11-09.md` and the independent audits.
+- 160 tests, one expected skip; original/frozen evidence unchanged. No raw
+  photometry or headers opened, nothing released.
+- Next: Claude — draft article v0.6, brief and guide; Codex then reviews.
