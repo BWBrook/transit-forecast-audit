@@ -542,7 +542,7 @@
    "pages": "152",
    "doi": "10.3847/PSJ/ad0e6e",
    "url": "https://doi.org/10.3847/PSJ/ad0e6e",
-   "access_depth": "Abstract and catalogue description read via arXiv:2311.00238 abstract, 9 November 2026.",
+   "access_depth": "Abstract and primary full-text Sections IV/V.1 read by the independent reference reviewer, https://arxiv.org/html/2311.00238v2#S4, 9 November 2026 (Codex review D078).",
    "verified_claims": [
     "Tabulated Kepler period uncertainties do not fully account for transit timing variations; ephemerides are less accurate on multi-decadal timescales than the small formal period errors imply."
    ],
@@ -622,9 +622,10 @@
    "pages": "274",
    "doi": "10.3847/2515-5172/ad8b46",
    "url": "https://doi.org/10.3847/2515-5172/ad8b46",
-   "access_depth": "Abstract read via arXiv:2409.11620, 9 November 2026.",
+   "access_depth": "Abstract and full primary text Section II read, https://arxiv.org/html/2409.11620v1#S2, 9 November 2026 (Codex review D078).",
    "verified_claims": [
-    "23 JWST timings update TRAPPIST-1 transit-time forecasts; TRAPPIST-1h transit times drifted from a prior published forecast by up to tens of minutes."
+    "23 JWST timings update TRAPPIST-1 transit-time forecasts; TRAPPIST-1h transit times drifted from a prior published forecast by up to tens of minutes.",
+    "A leave-one-out check on 23 JWST timings led to uncertainty inflation by 3.14; five later July 2024 timings of b, d and e were checked and all lay within one quoted SD. This is prior uncertainty recalibration and later-timing checking, not the same multi-release population design."
    ],
    "metadata_source": "Registered DOI metadata via doi.org content negotiation, 9 November 2026",
    "added_by": "Claude Opus 5.5, T022"

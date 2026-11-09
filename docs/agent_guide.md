@@ -1,11 +1,12 @@
 # Agent guide: using the transit-forecast-audit work
 
-**Current status (T022, 9 November 2026):** The frozen D065 evaluation is
+**Current status (D078, 9 November 2026):** The frozen D065 evaluation is
 complete and **inconclusive** (C043). The external review of v0.5 (GPT-6 Pro,
 `docs/external_review/`) was accepted (D071), and the post-review programme is
-closed (D072–D076). The article (`manuscript/paper.md`, v0.6), the brief
+closed (D072–D076). The reviewed article (`manuscript/paper.md`, v0.6.1), the brief
 (`docs/brief.md`) and this guide were rewritten together on the D075/D076
-scope; Codex reviews them, then Barry. Nothing is released.
+scope. Codex corrected remaining wording and historical-guide drift in D078;
+Barry reviews next. Nothing is released.
 
 Read in this order: the claims ledger, `docs/final_results_2026-11-08.md`,
 `docs/d076_reconciliation_2026-11-09.md` (the binding wording for accuracy,
@@ -82,12 +83,15 @@ Historical development account: `docs/sprint2_review.md`. The original `docs/spr
 - **Frozen evaluation runtime:** use `.venv/bin/python` directly after `scripts/freeze_manifest.py verify` passes. Match the manifest's observed Python/package list, not merely the project minimum dependencies. A project `uv run` can resynchronise a different Python/minimal environment and remove SciPy; do not use it to launch frozen evaluation or these development scripts. The pre-restoration environments are retained under ignored `data/derived/`. Measurement scripts keep their separate pinned environments.
 - **Photometry scripts:** PEP 723 inline-metadata files run with `uv run scripts/<name>.py`. They declare their own dependencies and a pinned Python range. Dependencies include `lightkurve==2.5.1`, `batman-package`, `astroquery`, `astropy`, `scipy` and `tess-point==0.9.5.post1`.
 - **R:** `scripts/independent_table5.R` is an independent base-R reproduction of the benchmark.
-- **Tests:** 70 pass at sprint 1; 75 with the sprint-2 tests.
+- **Tests:** 160 tests at this reviewed draft, with one expected skip. Earlier counts of 70/75 describe the historical sprint checkpoints.
 - **Seed:** sprint-1 comparisons use 20261106; sprint-2 injections use 20261107, with the TIC identifier as a second seed element.
 
 ## 5. Decisive commands
 
-Run from the repository root. Do not change a flag when reproducing a claim.
+The commands below record the historical generation sequence. Run writers
+from the repository root in an isolated checkout at the evidence commit; they
+may overwrite now-bound results. Preserve the frozen current checkout and use
+its native verifier/read-only audits. Do not change a flag when reproducing a claim.
 
 ### 5.1 Sprint 1, exactly as in `results/sprint1/handoff.json` "commands"
 
@@ -129,7 +133,12 @@ uv run scripts/sprint2_confirm2.py run
 
 The first confirmation and the replication are done. Neither is to be repeated or extended: the replication design states there will be no further replication, and a changed rule is a new rule version needing new evidence. Any new photometry request must pass the access guards of section 6.
 
-### 5.3 Sprint-2 forecast, freeze and figure commands
+### 5.3 Historical sprint-2 generation commands
+
+These writers are a provenance record. Reproduce them only in an isolated
+checkout at the evidence commit: several overwrite now-bound inputs or the
+pre-access receipt. In the current checkout use the native freeze verifier
+and read-only audit commands; do not rebuild the frozen package in place.
 
 ```bash
 .venv/bin/python scripts/sprint2_forecasts.py run
@@ -150,21 +159,21 @@ The first confirmation and the replication are done. Neither is to be repeated o
 
 ```bash
 Rscript scripts/independent_table5.R                                                     # C001
-python scripts/review_measurement_diagnostic.py                                          # C002, C003, C004
-uv run --extra analysis python scripts/local_noise_structure.py                          # C005
-uv run --extra analysis python scripts/forecast_variance_components.py                   # C006
-uv run --extra analysis python scripts/sealed_era_inventory.py                           # C007
-python scripts/review_tranche2_noise.py --bootstrap 400                                  # C008
-python scripts/review_tranche2_mixture.py                                                # C009
-python scripts/review_tranche2_predictors.py --order 192                                 # C010 (repeat with --order 384, then --verify)
-python scripts/review_tranche2_schedule.py --acquire                                     # C011
+.venv/bin/python scripts/review_measurement_diagnostic.py                                          # C002, C003, C004
+.venv/bin/python scripts/local_noise_structure.py                          # C005
+.venv/bin/python scripts/forecast_variance_components.py                   # C006
+.venv/bin/python scripts/sealed_era_inventory.py                           # C007
+.venv/bin/python scripts/review_tranche2_noise.py --bootstrap 400                                  # C008
+.venv/bin/python scripts/review_tranche2_mixture.py                                                # C009
+.venv/bin/python scripts/review_tranche2_predictors.py --order 192                                 # C010 (repeat with --order 384, then --verify)
+.venv/bin/python scripts/review_tranche2_schedule.py --acquire                                     # C011
 uv run scripts/t015_timing_pipeline.py                                                   # C012, C016
-python scripts/review_t015_injections.py --bootstrap 100000                              # C013
-python scripts/review_t015_grid.py                                                       # C013
-python scripts/review_t015_provenance.py                                                 # C013
-python scripts/forecast_variance_components.py --reps 20 --bootstrap 400                 # C014
-python scripts/chronological_calibration.py --bootstrap 400 --a 1.0                      # C015
-python scripts/review_chronological_extremes.py                                          # C015
+.venv/bin/python scripts/review_t015_injections.py --bootstrap 100000                              # C013
+.venv/bin/python scripts/review_t015_grid.py                                                       # C013
+.venv/bin/python scripts/review_t015_provenance.py                                                 # C013
+.venv/bin/python scripts/forecast_variance_components.py --reps 20 --bootstrap 400                 # C014
+.venv/bin/python scripts/chronological_calibration.py --bootstrap 400 --a 1.0                      # C015
+.venv/bin/python scripts/review_chronological_extremes.py                                          # C015
 uv run scripts/t015_stratified_validation.py select                                      # C017 (then run, then analyse)
 .venv/bin/python scripts/review_sprint1_availability.py                                  # C019
 .venv/bin/python scripts/review_sprint1_timing.py                                        # C020
@@ -177,7 +186,7 @@ C018's reproduce commands are the first two lines of section 5.1 (`--experiment 
 ### 5.5 Other
 
 ```bash
-python -m unittest discover -s tests -v                 # AGENTS.md form
+.venv/bin/python -m unittest discover -s tests -v                 # AGENTS.md form
 uv run --project ~/work/correspondence correspondence-export docs/correspondence/publication.toml   # refresh the correspondence snapshot on the board host
 GIT_CONFIG_GLOBAL=/dev/null gitleaks protect --staged   # before pushing to this public repository
 MPLCONFIGDIR=/private/tmp/transit-final-review-mpl .venv/bin/python scripts/plot_final_planet_deltas.py   # article Figure 3
@@ -189,7 +198,7 @@ pandoc docs/brief.md --pdf-engine=xelatex -V papersize:a4 -V geometry:margin=20m
 
 The article review PDF is `manuscript/build/paper.pdf` (ignored build output),
 built from `manuscript/` with the Pandoc command recorded in
-`results/final_review/d069_products_validation.json`; v0.6 is 29 A4 pages. The
+`results/final_review/d069_products_validation.json`; the reviewed article page count is recorded in `results/final_review/d078_products_validation.json`. The
 brief must stay two A4 pages. These are review drafts, not released artefacts.
 
 The two era limits below governed development acquisition. D065 subsequently
@@ -250,10 +259,10 @@ Keys: `date`, `status`, `development_only`, `protocol_frozen`, `protected_outcom
 - **Host-cluster resampling.** Planets of one host and repeated transits of one planet are dependent. Counts of events, planets and hosts accompany every comparison.
 - **Observed coverage is not latent coverage.** Intervals describe measured mid-times (forecast convolved with outcome error), not the unobserved true time.
 - **Score contrasts are bounded for fixed intervals (C049).** A single interval's miss penalty is unbounded, but its difference from another fixed interval saturates beyond both endpoints. For nested symmetric widening, −19Δw ≤ ΔIS95 ≤ Δw; standardise both sides by the common positive divisor. Do not revive v0.4's unbounded-gain explanation.
-- **HR858b: physical departure on shared photons (C048, C050, C051, C057, C059).** Two independent checkers reproduce all 16 timings; against Bonfanti et al.'s ephemerides b is 374–422 min early, c 541–599 min late (PDCSAP) and d within 13 min. That disfavours a common clock or extraction artefact but is not pixel-level validation or a unique dynamical solution. Its S105 timings carry minute-level model dependence (rescore −0.089, C059). Its release features (inputs end November 2020, 756-day span, standardised RMS 2.198; not "5.5 times its errors") predated issue but are not a validated warning rule (C054, D076). Bonfanti's source is arXiv:2411.14911 / A&A 693, A90. Absence of a DRD flag follows that release's detection criterion.
+- **HR858b: coherent departure on shared photons (C048, C050, C051, C057, C059).** Two independent checkers reproduce all 16 timings; against Bonfanti et al.'s ephemerides b is 374–422 min early, c 541–599 min late (PDCSAP) and d within 13 min. That supports an astrophysical interpretation and disfavours a simple shared clock shift but is not pixel-level validation or a unique dynamical solution. Its S105 timings carry minute-level model dependence (rescore −0.089, C059). Its release features (inputs end November 2020, 756-day span, standardised RMS 2.198; not "5.5 times its errors") predated issue but are not a validated warning rule (C054, D076). Bonfanti's source is arXiv:2411.14911 / A&A 693, A90. Absence of a DRD flag follows that release's detection criterion.
 - **Accuracy claims carry their denominators (C063, C062).** 150 of 151 accepted planets within 26.4 min (not 26), median 1.11 min event-weighted / 1.31 equal-planet; DRC-era development maxima 30.4 and 36.6 min. These describe accepted timings in selected samples, never a catalogue-wide failure rate.
 - **Coverage is conditional and convolved (C063).** 90.8% planet-balanced (event-weighted 92.0%) under C2 covariance and the supplied measurement likelihoods; it does not isolate the catalogue SD. Precision ratio 2.69 is event-weighted; 1.86 equal-planet (C052).
-- **The allocation result is bounded (C061, C064).** No subset of ⌈10%⌉ planets with pads 15–240 min beats both equal-budget comparators on the saved measured-midpoint data, even with hindsight. It is not a theorem about all warning rules, full-transit capture or other populations; do not retune q, pads or cohort to find a winner. A uniform +3 min pad is a descriptive illustration (94.0% capture, 18,618 window-minutes), not advice.
+- **The allocation result is bounded (C061, C064).** No subset containing 10% of intended planets (rounded up) with pads 15–240 min beats both equal-budget comparators on the saved measured-midpoint data, even with hindsight. It is not a theorem about all warning rules, full-transit capture or other populations; do not retune q, pads or cohort to find a winner. A uniform +3 min pad is a descriptive illustration (94.0% capture, 18,618 window-minutes), not advice.
 - **Two epochs for any new block (C060).** DRD labels cycles; DRC is the scored forecast. The frozen P/4 terminal gate would otherwise turn gross misses into non-identifications.
 
 ## 9. Where every claim's evidence lives
@@ -308,12 +317,17 @@ Claims C022-C027 are cited in the sprint-2 report; check that `coordination/clai
 | C060 | DRD-identify/DRC-score interface proof | `results/d073_identification/` | not access authority |
 | C061 | Bounded T020 allocation search: no pad selected | `results/t020_development/` | inspected data |
 | C062 | Hindsight ranking and DRC/DRD error descriptives | `results/t020_review/` | corrected by D076 |
-| C063 | Accuracy and conditional calibration wording | `results/d075_review_checks/` | binding for products |
-| C064 | Exact allocation optimum over all permitted subsets | `results/d075_review_checks/` | fixed policy class |
+| C063 | Accuracy and conditional calibration wording | `results/d075_accuracy_audit/`; parent check `results/d075_review_checks/` | binding for products |
+| C064 | Exact allocation optimum over all permitted subsets | `results/d075_oracle_audit/`; parent check `results/d075_review_checks/` | fixed policy class |
 
-## 10. Known limitations and open defects
+## 10. Historical development limitations and defects
 
-Open defects (from `results/sprint1/handoff.json`, with sprint-2 status as of this draft):
+The following is a retained sprint-2 development snapshot, superseded by
+D051–D076 and current Section 12. Its "Open" labels are historical, not current
+tasks or freeze blockers. The shape gate, intended-event ledger and actual-grid
+support were resolved before D065; preserve this record without reopening them.
+
+Historical defects (from `results/sprint1/handoff.json` and the sprint-2 review):
 
 | ID | Defect | Status |
 |---|---|---|
@@ -329,9 +343,9 @@ Open defects (from `results/sprint1/handoff.json`, with sprint-2 status as of th
 | S2-04 | Equal-host weighting gives single-transit hosts full weight; consider weighting by expected final-evaluation transits | Retain equal-host target; product fallback caused part of the apparent sparse-host failure |
 | S2-05 | 21 of 404 non-Gaussian grids truncated by the ±60-min prior; the adapter refuses them and they count as failed attempts | Endpoint gate and unresolved integration flags are separate; reviewed replay retains failures (C029–C030) |
 
-Limitations to state in any derivative work:
+Limits on those historical development outputs:
 
-1. All results are development material (D014); several designs were chosen after inspection.
+1. Those outputs are development material (D014); several designs were chosen after inspection. The later frozen held-out result is distinct.
 2. Covariance is reconstructed; C2 is an approximation (C004, D021).
 3. Release-transfer and chronological comparisons are proxies; the DRC timing file followed its forecast by 53 s (C019).
 4. The t015v3c multiplier fails confirmation. Corrected t015v3 passes the frozen replication criteria on 100 timed SPOC hosts: RMS 1.0144 [0.9787,1.0509], coverage0.9502 [0.9382,0.9611]. The original failure was caused by two analysis defects; the sparse-host restriction loses its basis. Prior-contact and adaptive-design qualifications remain (C028).
@@ -376,10 +390,10 @@ Post-review outputs (D071–D076) are mapped in Section 9. Remaining scientific
 limits include accepted-timing selection, reconstructed covariance, Gaussian
 calibration fitting, limited multi-planet recovery, shared-photon (not
 pixel-level) independent timing, a single hour-scale failure and conservative
-rather than exact boundary eligibility. The article (v0.6), brief and this guide
+rather than exact boundary eligibility. The article (v0.6.1), brief and this guide
 were rewritten together on the D075/D076 scope; all references are built from
 registered DOI metadata (D070), with no open placeholders. Open next steps:
-Codex's review of v0.6, Barry's review, the Zenodo deposit of the benchmark at
+Barry's review of v0.6.1, the Zenodo deposit of the benchmark at
 release, and, only if Barry chooses, a separately frozen descriptive study of
 S74–S97. Release/submission needs Barry's review.
 

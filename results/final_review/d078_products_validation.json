@@ -1,0 +1,99 @@
+{
+  "review": "D078",
+  "base_commit": "dbc24bd",
+  "article_version": "0.6.1",
+  "primary_verdict": "inconclusive; unchanged",
+  "frozen_manifest_sha256": "5ec7c0f363bca641430c68c0ff57fdbf788cda9e32f80dddea7c7cd9121c57d1",
+  "sources_sha256": {
+    "manuscript/paper.md": "f61ce6a87ef1197530b132ca570def2733c39aa5dd11577e529608e4e5535a8d",
+    "docs/brief.md": "a80bf1aafff5e28a157b7b2010f82c173d5672837266ed74c51e7f551e353763",
+    "docs/agent_guide.md": "b114aaf0d66173d2fa3af2e341b0844d9ea0ffb6c04775de6193ab3cf7c7ba88",
+    "references/references.bib": "fbe8f9892a8fcf98d4e549f0b95ed63969fec07ff372b5af7340a0af1b586cbe",
+    "references/references.csl.json": "e0c00de4745be4c8f9728671d624c21c0e3f7c53ac7ab2d7340fcbf7cc61605d",
+    "references/literature_evidence.json": "342bdc0c3cf8fe0f22936425becb40ffebd944723229f055373b7ea13b44fb2c",
+    "docs/audits/v06_article_review_2026-11-09.md": "b9f0269143051f2ca72dd2541c1e4c918202934879c5cf9193c20ae2dc2191bd",
+    "docs/audits/v06_brief_guide_review_2026-11-09.md": "a24f20789b9abaf160197a3ae90060b9b8931b157a92346df82eb6af4c2eec6d",
+    "docs/audits/v06_reference_review_2026-11-09.md": "fce744c662fed2e2f780fc519007b60b6004c1c5faa1959bb3bb27d5438ce5d5"
+  },
+  "render": {
+    "brief": {
+      "path": "docs/brief.pdf",
+      "sha256": "bcc2e696c48731783b9c38fdcea8ec691722d19311324802bd5fa5ff8cd6ff46",
+      "bytes": 30530,
+      "pages": 2,
+      "A4": true,
+      "outside_body_margin_words": [],
+      "expected_page_number_footers": 2,
+      "replacement_or_empty_box_words": [],
+      "build_warnings": []
+    },
+    "paper": {
+      "path": "manuscript/build/paper.pdf",
+      "sha256": "90b978ef4f803d80457cb6725cc472008a0f5839245a5697a177568aa611f4c3",
+      "bytes": 992697,
+      "pages": 29,
+      "A4": true,
+      "outside_body_margin_words": [],
+      "expected_page_number_footers": 29,
+      "replacement_or_empty_box_words": [],
+      "build_warnings": []
+    }
+  },
+  "build_commands": [
+    {
+      "cwd": ".",
+      "argv": [
+        "pandoc",
+        "docs/brief.md",
+        "--pdf-engine=xelatex",
+        "-V",
+        "papersize:a4",
+        "-V",
+        "geometry:margin=20mm",
+        "-V",
+        "fontsize=11pt",
+        "-V",
+        "mainfont=texgyrepagella-regular.otf",
+        "-V",
+        "mainfontoptions=BoldFont=texgyrepagella-bold.otf,ItalicFont=texgyrepagella-italic.otf,BoldItalicFont=texgyrepagella-bolditalic.otf",
+        "-o",
+        "docs/brief.pdf"
+      ]
+    },
+    {
+      "cwd": "manuscript",
+      "argv": [
+        "pandoc",
+        "paper.md",
+        "--citeproc",
+        "--resource-path=.:..",
+        "--pdf-engine=xelatex",
+        "-V",
+        "papersize:a4",
+        "-V",
+        "geometry:margin=20mm",
+        "-V",
+        "fontsize=11pt",
+        "-V",
+        "mainfont=texgyrepagella-regular.otf",
+        "-V",
+        "mainfontoptions=BoldFont=texgyrepagella-bold.otf,ItalicFont=texgyrepagella-italic.otf,BoldItalicFont=texgyrepagella-bolditalic.otf",
+        "-o",
+        "build/paper.pdf"
+      ]
+    }
+  ],
+  "visual_review": "Both final brief pages at full size; all 29 article pages in contact sheets; pages 11/15/21 at full size for tables/figures; corrected final page 27 at full size and pages 28\u201329 rendered after the path-link repair. No clipping or missing glyphs. Final shortened Section 3.5 heading on page 13 rerendered after semantic alignment.",
+  "independent_review": "Separate article, brief/guide and reference audits; changed source passages independently rechecked after corrections. Final scope clarifications requested by reviewers applied.",
+  "tests": {
+    "command": ".venv/bin/python -m unittest discover -s tests -v",
+    "run": 160,
+    "skipped": 1,
+    "failures": 0,
+    "log_sha256": "7829b7df71d572befaf7b4d82d046db20afdd5a033035e3c89a0dd067496504f"
+  },
+  "frozen_mismatches": [],
+  "S74_S97_photometry_or_headers_opened": false,
+  "remaining_review": "Barry reviews article and two-page brief before release",
+  "released": false
+}
