@@ -1,0 +1,176 @@
+{
+  "primary": {
+    "calculated_descriptives": {
+      "M0": {
+        "planet_balanced_is95_std": 11.334968248643618,
+        "planet_balanced_is95_min": 106.2515597847953,
+        "planet_balanced_cov68": 0.618555857228915,
+        "planet_balanced_cov95": 0.9079364975831289,
+        "planet_balanced_width95_min": 10.485120494440435,
+        "event_cov95": 0.9194508009153318
+      },
+      "M1": {
+        "planet_balanced_is95_std": 19.89542148752863,
+        "planet_balanced_is95_min": 78.65425114644836,
+        "planet_balanced_cov68": 0.9851220863664274,
+        "planet_balanced_cov95": 0.9933774834437086,
+        "planet_balanced_width95_min": 56.371589313197326,
+        "event_cov95": 0.9926773455377574
+      },
+      "M2": {
+        "planet_balanced_is95_std": 11.213660444119661,
+        "planet_balanced_is95_min": 97.79111886763295,
+        "planet_balanced_cov68": 0.6789912632977965,
+        "planet_balanced_cov95": 0.9757619919679326,
+        "planet_balanced_width95_min": 17.473022575232037,
+        "event_cov95": 0.9647597254004576
+      },
+      "M3": {
+        "planet_balanced_is95_std": 11.264718600503766,
+        "planet_balanced_is95_min": 97.56667271086759,
+        "planet_balanced_cov68": 0.6915468206137231,
+        "planet_balanced_cov95": 0.977428169793051,
+        "planet_balanced_width95_min": 17.799338198014553,
+        "event_cov95": 0.9670480549199084
+      }
+    },
+    "descriptives_max_abs_error": 0.0,
+    "mean_delta": -0.12130780452395674,
+    "mean_delta_summary_error": 4.3021142204224816e-16,
+    "median_delta": 1.0453269265035,
+    "fraction_improved": 0.26490066225165565,
+    "num_improved": 40,
+    "events_per_model": {
+      "M0": 2185,
+      "M1": 2185,
+      "M2": 2185,
+      "M3": 2185
+    },
+    "same_event_sets": true,
+    "score_rows": 8740,
+    "score_finite": true,
+    "weight_sum_per_model": {
+      "M0": 1.0,
+      "M1": 1.0,
+      "M2": 1.0,
+      "M3": 1.0
+    },
+    "joint_draw_count": 2000,
+    "joint_ci95": [
+      -1.8397729107986793,
+      2.1956849634535907
+    ],
+    "joint_ci_max_error": 0.0,
+    "M2_s_quantile_error": 0.0,
+    "joint_seed": 20261107,
+    "seeds_match_frozen_config": true,
+    "bootstrap_count_matches_summary": true,
+    "seed_multiplicity_mismatches": [],
+    "fixed_draw_max_error": 4.045375145977914e-15,
+    "undefined_draw_indices": [],
+    "joint_undefined_count": 0,
+    "joint_effective_draws": 2000,
+    "undefined_draw_reason": "No evaluation host was selected in the union-host resample",
+    "conditional_ci95": [
+      -1.9752966023830043,
+      1.1236836140273578
+    ],
+    "conditional_ci_max_error": 6.661338147750939e-16,
+    "draw_host_sets_correct": true,
+    "planets": 151,
+    "hosts": 151
+  },
+  "extension": {
+    "calculated_descriptives": {
+      "M0": {
+        "planet_balanced_is95_std": 51.367414470442235,
+        "planet_balanced_is95_min": 389.0740572975475,
+        "planet_balanced_cov68": 0.6945454545454546,
+        "planet_balanced_cov95": 0.7890909090909091,
+        "planet_balanced_width95_min": 36.891270737906225,
+        "event_cov95": 0.9305555555555556
+      },
+      "M1": {
+        "planet_balanced_is95_std": 26.120978427438267,
+        "planet_balanced_is95_min": 254.34043651968963,
+        "planet_balanced_cov68": 0.8,
+        "planet_balanced_cov95": 1.0,
+        "planet_balanced_width95_min": 254.34043651968963,
+        "event_cov95": 1.0
+      },
+      "M2": {
+        "planet_balanced_is95_std": 40.18164020488726,
+        "planet_balanced_is95_min": 318.24768220946424,
+        "planet_balanced_cov68": 0.7127272727272727,
+        "planet_balanced_cov95": 0.8,
+        "planet_balanced_width95_min": 72.46995593372029,
+        "event_cov95": 0.9722222222222222
+      },
+      "M3": {
+        "planet_balanced_is95_std": 39.66087499447863,
+        "planet_balanced_is95_min": 314.83634560699113,
+        "planet_balanced_cov68": 0.7163636363636364,
+        "planet_balanced_cov95": 0.8,
+        "planet_balanced_width95_min": 74.08969664791873,
+        "event_cov95": 0.9722222222222222
+      }
+    },
+    "descriptives_max_abs_error": 0.0,
+    "mean_delta": -11.185774265554977,
+    "mean_delta_summary_error": 1.2434497875801753e-14,
+    "median_delta": 2.5472819716024193,
+    "fraction_improved": 0.2,
+    "num_improved": 1,
+    "events_per_model": {
+      "M0": 72,
+      "M1": 72,
+      "M2": 72,
+      "M3": 72
+    },
+    "same_event_sets": true,
+    "score_rows": 288,
+    "score_finite": true,
+    "weight_sum_per_model": {
+      "M0": 1.0,
+      "M1": 1.0,
+      "M2": 1.0,
+      "M3": 1.0
+    },
+    "joint_draw_count": 2000,
+    "joint_ci95": [
+      -56.39072837956407,
+      6.309002854894219
+    ],
+    "joint_ci_max_error": 0.0,
+    "M2_s_quantile_error": 0.0,
+    "joint_seed": 20261107,
+    "seeds_match_frozen_config": true,
+    "bootstrap_count_matches_summary": true,
+    "seed_multiplicity_mismatches": [],
+    "fixed_draw_max_error": 3.375077994860476e-14,
+    "undefined_draw_indices": [
+      20,
+      414,
+      453,
+      552,
+      738,
+      863,
+      1178,
+      1179,
+      1297,
+      1649,
+      1752
+    ],
+    "joint_undefined_count": 11,
+    "joint_effective_draws": 1989,
+    "undefined_draw_reason": "No evaluation host was selected in the union-host resample",
+    "conditional_ci95": [
+      -40.304728326378964,
+      4.350047477806413
+    ],
+    "conditional_ci_max_error": 7.105427357601002e-15,
+    "draw_host_sets_correct": true,
+    "planets": 5,
+    "hosts": 5
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "frozen_package_and_record_verified": true,
+  "protected_runs": {
+    "primary": {
+      "intended": 3103,
+      "accepted": 2185,
+      "windows": 2819,
+      "outside_manifest_windows": 186,
+      "grid_hashes_checked": 399
+    },
+    "extension": {
+      "intended": 291,
+      "accepted": 72,
+      "windows": 190,
+      "outside_manifest_windows": 26,
+      "grid_hashes_checked": 64
+    }
+  },
+  "retry": {
+    "same_product_keys": 304,
+    "prior_completed_products_unchanged": 224,
+    "prior_windows_unchanged": 1817,
+    "new_windows": 1002,
+    "prior_grids_unchanged": 71
+  },
+  "chronology": {
+    "access_commit_epoch": 1794107697,
+    "first_log_birth_epoch": 1794107715.8042047,
+    "limit": "Consistent saved Git/filesystem records, not an immutable invocation audit."
+  },
+  "interpretation": "Path failure depended on non-Gaussian likelihood output, not forecast score; full-manifest rerun restored every prior window without selection.",
+  "raw_FITS_or_headers_reopened": false,
+  "input_sha256": {
+    "configs/protected_access.json": "08243fadfa888dcafb7bf640660d01aa15b275b6fcf1b281a6bd4f8be3e1d57a",
+    "data/derived/final_extension/measured/coverage.csv": "4ee6a6ce7c34d0328425210034be995afa710700eb31db2f8cf409784d1bc808",
+    "data/derived/final_extension/measured/measure_receipt.json": "20a03fc015e07ac7e32ec1acebf40fb377341af2aadd5c4c18e6811b9b127408",
+    "data/derived/final_extension/measured/products.csv": "3f6ce4385d497e282bd6b778b8acefcdc741e5fbb5d875afa010532119d42674",
+    "data/derived/final_extension/measured/windows.csv.gz": "f85141a01cd363914af76e2b7d02fdb3af353493d8b4aca31a0574dfbff7fa4e",
+    "data/derived/final_primary/measured/coverage.csv": "4748d3066aeaf246eccfdd160c0fce41206e92fd46f4b262f56eb24754a3e40d",
+    "data/derived/final_primary/measured/measure_receipt.json": "da8ccd13fcba3d2c582bfbe121f26cd0a24ae7846099fe0394e562a709d5bac4",
+    "data/derived/final_primary/measured/products.csv": "63d5b108bf49dfcc5a5efd5f7c394123f409737e528615b192c8f81eeea02f92",
+    "data/derived/final_primary/measured/windows.csv.gz": "5988f039e79676c23e9813b06027a229a45b998ae71b88cd507c87b8f89e7152",
+    "data/derived/final_primary/measured_attempt1_relpath/coverage.csv": "869cb18fae214d1515d92c41a1d1cd64ecb8612dee920f7c5131b78de9eca359",
+    "data/derived/final_primary/measured_attempt1_relpath/measure_receipt.json": "61822d009da184584d9e41193c50ed28fe39855879967933838e71e2764816a1",
+    "data/derived/final_primary/measured_attempt1_relpath/products.csv": "12c1054aec439e5fcc3c0bcfeb311bf9e0162a60ed96ddb7bf68db185316286e",
+    "data/derived/final_primary/measured_attempt1_relpath/windows.csv.gz": "a18aed2ff9052d7d158bfee22205aacc636223a523741f7039993128785510e9",
+    "results/final_extension/evaluation_summary.json": "97bd9d7a55c91478d272da82f96ffc0af296954c489fe8c97e1326dcde148dab",
+    "results/final_extension/scores.receipt.portable.json": "57685251fd4b2d502ff7f3f57ba999068c6d5947b6d6b51909df5c14ae4f1678",
+    "results/final_extension/terminal_ledger.csv.gz": "3cfc62c1799d790fe7c418b94639861648a0f2230b89ee24e9d4ad02c3012eca",
+    "results/final_primary/evaluation_summary.json": "8deacf156f9693de3a5baf7100d507eac3c9eed0b1bd3f8545efd4831f344a91",
+    "results/final_primary/scores.receipt.portable.json": "dfb8aa77ada49397b3698c580e900ed5dfc9f07bfdffbe2a038a1892f9020d0f",
+    "results/final_primary/terminal_ledger.csv.gz": "6a17c4646b42ec7f87af49cfc2f900ed1065c53bf4887f213f7ba65c9079c3f8",
+    "results/freeze/freeze_manifest.json": "5ec7c0f363bca641430c68c0ff57fdbf788cda9e32f80dddea7c7cd9121c57d1",
+    "results/prefreeze/candidate_models_core_matched.json": "907b53272e46176dd1b5a81857fa8c5dd025c443eecd468326d5eb91c6ba1f2c",
+    "results/prefreeze/forecasts_core_draft.csv.gz": "85f86291616093c226ff5be023581cadb73f8ef2cb8a45cba83d5be82f4832b8",
+    "results/prefreeze/forecasts_extension_draft.csv.gz": "08b0815ea25e301045bbbad92347b98dd5a9b01164a00c09475d79a482bf6cdb",
+    "results/prefreeze/manifest_core_primary.csv": "905499871524d44e93315612ed133deeca3a9b115da5665bb3513a7e39beea16",
+    "results/prefreeze/manifest_extension_exploratory.csv": "bd173285221a3d3156fe408e8d3e0439d54283c0784aebe14d9cd5b02fe7c1fb"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "training_planets": 206,
+  "training_hosts": 206,
+  "point_independent_M2": {
+    "s": 2.046958896268182,
+    "nll": 2597.2851797817248,
+    "success": true
+  },
+  "point_M2_s_error": 1.1004098965372577e-07,
+  "independent_likelihood": "Dense whitened covariance eigensystem; scalar M2 optimization; frozen calibration design",
+  "runs": {
+    "primary": {
+      "draw": 0,
+      "independent_M2": {
+        "s": 1.4222839159055876,
+        "nll": 2490.3611299261756,
+        "success": true
+      },
+      "stored_M2_s": 1.4222839618702159,
+      "independent_M2_s_error": 4.5964628325734225e-08,
+      "exact_all_models_max_parameter_error": 0.0,
+      "rescored_delta": -0.5888752238796057,
+      "stored_delta": -0.5888752238796057,
+      "rescored_delta_error": 0.0
+    },
+    "extension": {
+      "draw": 0,
+      "independent_M2": {
+        "s": 2.614498782122199,
+        "nll": 2669.725620852243,
+        "success": true
+      },
+      "stored_M2_s": 2.6144985093823223,
+      "independent_M2_s_error": 2.7273987690534796e-07,
+      "exact_all_models_max_parameter_error": 0.0,
+      "rescored_delta": -61.39465586637814,
+      "stored_delta": -61.39465586637814,
+      "rescored_delta_error": 0.0
+    }
+  }
+}

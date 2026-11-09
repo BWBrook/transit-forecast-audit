@@ -8,14 +8,22 @@ session, "approve writing the D065 access record". The record
 `configs/protected_access.json` was committed as `b2f54de` before any protected
 product was requested.
 
+**Independent review, 9 November (D066):** numerical and execution checks
+support the frozen primary verdict. The path workaround preserves every
+previously completed window. Interpretation and the exploratory effective-draw
+count are clarified below; original run files remain unchanged. See
+[the audit](audits/d065_review_2026-11-09.md) and
+[secondary execution conventions](secondary_execution_2026-11-09.md).
+
 ## Verdict
 
 **Inconclusive.** For the primary core set (3,103 manifest events, 2,185
 accepted events on 151 planets and hosts), the planet-balanced standardised
 IS95 difference M2 − M0 is −0.121. Its 95% joint host-refit interval
 (B = 2,000, seed 20261107) is [−1.84, 2.20]. The interval spans zero, so by the
-rule fixed before unblinding the calibration neither improves nor worsens the
-interval score. The conditional fixed-parameter interval (B = 10,000, seed
+rule fixed before unblinding neither improvement nor worsening of the interval
+score is established; this is not an equivalence result. The conditional
+fixed-parameter interval (B = 10,000, seed
 20261109) is [−1.98, 1.12], and it also spans zero.
 
 The fail-closed checks pass: adapter reproduction 2.2e-12, calibration refit
@@ -33,12 +41,18 @@ Values are planet-balanced over 151 planets, from `results/final_primary/descrip
 | M2, frozen calibration | 11.21 | 97.8 | 0.679 | 0.976 | 17.5 |
 | M3 | 11.26 | 97.6 | 0.692 | 0.977 | 17.8 |
 
-- **Coverage:** M2 repairs the issued intervals' 95% coverage, from 0.908 to
-  0.976 by planet and from 0.919 to 0.965 by event.
+M0 retains issued DRD marginal uncertainties and uses a reconstructed T0–P
+correlation; the joint covariance was not issued. Coverage and scores concern
+accepted measured timings under the convolved measurement model.
+
+- **Coverage:** M2 increases observed mid-time 95% coverage from 0.908 to
+  0.976 by planet and from 0.919 to 0.965 by event. These conditional point
+  estimates do not establish ideal calibration across populations or strata.
 - **Width:** to do so it widens the planet-balanced mean 95% interval width
   about 1.7-fold, from 10.5 to 17.5 min.
-- **Interval score:** the gain in coverage and the cost in width almost exactly
-  cancel in the planet-balanced standardised score.
+- **Interval score:** the point estimate of the planet-balanced standardised
+  score changes little. Its broad interval permits material benefit or harm;
+  the coverage/width description is not an additional inferential verdict.
 - **Spread across planets:**
   - only 26.5% of planets improve, and the median planet difference is +1.05;
   - the small negative mean comes from a minority of planets with large
@@ -73,7 +87,11 @@ scored, by design.
 Only 72 events on 5 planets were accepted. Identification failed on 72 events,
 because multi-planet identification is a declared open limit. M2 − M0 is −11.2
 with a 95% interval of [−56.4, 6.3], so the result is inconclusive and
-uninformative at this size. It is reported as exploratory, as declared.
+imprecise at this size. Eleven of the 2,000 union-host draws contain no
+evaluation host, so the frozen `nanquantile` implementation calculates this
+interval from 1,989 defined draws. The original draw file records these as
+nonstandard JSON `NaN`; new audit summaries state the effective count explicitly.
+It is reported as exploratory, as declared.
 
 ## Execution record
 
@@ -81,13 +99,19 @@ uninformative at this size. It is reported as exploratory, as declared.
    `--out` path. Every product whose timing writes a non-Gaussian grid then
    failed in `sprint2_outcomes` at `path.relative_to(ROOT)`, which needs an
    absolute path. That was 71 products. Nine more lost their MAST connection.
-   - These are execution failures, independent of outcome values. The
-     development chain check had used absolute paths, so it never hit this.
+   - The path failure is triggered by data-derived non-Gaussian likelihood
+     output, so it is not independent of measured outcomes. It did not select
+     by forecast residual or score. The complete rerun restores the affected
+     products; the development chain check used absolute paths and missed the bug.
    - The attempt is kept on disk unchanged. Its status classes and receipt are
      in `results/final_primary/measure_attempt1_relpath_summary.json`; the raw
      products file is not committed because it contains local paths.
    - The identical command was rerun with an absolute `--out`. No frozen file
      changed.
+   - Independent comparison finds identical product keys, all 224 previously
+     completed product diagnostics unchanged, all 1,817 prior windows unchanged,
+     and all 71 previously written grids hash-identical. The rerun adds 1,002
+     windows, with no favourable subset or replacement of successful timings.
 2. **Rerun.** 304 products and 2,819 windows, 2,301 of them timed. Every
    manifest event has a coverage row. Measurement and evaluation inputs are
    committed under `data/derived/final_primary/measured/`.

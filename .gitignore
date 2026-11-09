@@ -39,6 +39,8 @@ results/prefreeze/final_path_dev/*.csv
 results/prefreeze/final_path_dev/run/*.csv
 results/prefreeze/final_path_dev/run/*.receipt.json
 !results/freeze/
+!results/final_review/
+!results/final_secondaries/
 !results/final_primary/
 !results/final_extension/
 results/final_*/accepted_*.csv
