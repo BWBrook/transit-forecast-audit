@@ -1,0 +1,25 @@
+{
+  "saved_tables_only": true,
+  "new_photometry_or_headers_opened": false,
+  "source_sha256": "65b7c691f92ee600290c8d23a76fea47dc5cd376f84f348f71573868da694124",
+  "input_sha256": {
+    "results/t020_development/c2_candidate_events.csv": "45c534b767aab08be2d6a50c186a30718e7c5338623c2a5304216ec2424aecfd",
+    "results/t020_development/longer_horizon/c2_inspected_2026_candidate_events.csv.gz": "4b1da817fb991ba78ecc8adac31c3c05f0772d393ad6f799b6f8d399ed2b175b",
+    "results/t020_development/longer_horizon/c2_pooled_candidate_events.csv.gz": "a3b6ef3b7b60b921ebb72cef0a3451cd83cb1ebc10b088a2d6e508d9d0987908",
+    "scripts/t020_review.py": "03294b8fa254203669b75c8130ecddbfa0e13aa1366eceadccfe4dd26c8a39cf",
+    "results/t020_review/rule_free_ceiling.json": "27de73a6c07d4c0cd792ff28070529f086bc2fc279b85929c4d9cfca69b270ca",
+    "results/t020_review/summary.json": "e48c58df9cc163fce260808500cca59e6fdcdc4499a4a704d639ca4e28ee1886",
+    "docs/d075_scope_2026-11-09.md": "3a40b805f396747eebb96709fde0162ddca02760d5323785dceb3d4898e9c236"
+  },
+  "output_sha256": {
+    "summary.json": "5e862d1832fd41747f3097b9556b6859555ec2a3d56f4e687e6cfe9e814c84bb",
+    "review_reproduction.json": "7a90ae45da85e8022e04337d0920dbbe7f9a36c4ccedfa2e9bebbb962471b808"
+  },
+  "objective": "exact hindsight allocation optimum for fixed q and pad grid; accepted-midpoint endpoint only",
+  "limits": [
+    "Not a forecastable rule or an out-of-sample result.",
+    "Measurement noise attribution is not established by this oracle.",
+    "Unrecovered events contribute budgets, not known capture outcomes.",
+    "Flag-count/variable per-planet event counts and both comparators are respected."
+  ]
+}

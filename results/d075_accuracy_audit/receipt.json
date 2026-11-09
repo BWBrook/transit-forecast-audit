@@ -1,0 +1,22 @@
+{
+  "raw_photometry_or_headers_opened": false,
+  "S74_S97_accessed": false,
+  "script_sha256": "31ba731bdefd85b93100fc91507f8f633baac5b38ce9e3737df669eba12f4c8a",
+  "input_sha256": {
+    "results/final_primary/accepted_outcomes.csv": "2c2fa9559d24fd55ddb1890b2c8814a4ebb3f53a9dbabf934387341e46f8f62b",
+    "results/final_primary/accepted_forecasts.csv": "67c76e6432a1ce2b4b010c4f62daf6eba016451c9d5730fe80eaf3823e5f84ac",
+    "results/final_primary/scores.csv": "3ba24636684e42d2d99dbbe68c336d2726aa702d70ea0ed7001005a7a223412c",
+    "results/final_primary/evaluation_summary.json": "8deacf156f9693de3a5baf7100d507eac3c9eed0b1bd3f8545efd4831f344a91",
+    "results/final_primary/terminal_ledger.csv.gz": "6a17c4646b42ec7f87af49cfc2f900ed1065c53bf4887f213f7ba65c9079c3f8",
+    "results/t020_development/c2_candidate_events.csv": "45c534b767aab08be2d6a50c186a30718e7c5338623c2a5304216ec2424aecfd",
+    "results/t020_development/longer_horizon/c2_inspected_2026_candidate_events.csv.gz": "4b1da817fb991ba78ecc8adac31c3c05f0772d393ad6f799b6f8d399ed2b175b",
+    "results/t020_development/longer_horizon/c2_pooled_candidate_events.csv.gz": "a3b6ef3b7b60b921ebb72cef0a3451cd83cb1ebc10b088a2d6e508d9d0987908",
+    "results/revision_stage0/interpretability/coverage_vs_nominal.csv": "b7fb2d046da7e1d7a7df63dc1c19e50114dad7fc9a315eb4f538187303a3b907",
+    "results/information_ledger/release_planets.csv": "56d2ca5ee3baea1eeab8325c0197aa2027a25e73e3db58873e362b46b255b72d",
+    "results/d073_s105_rescore/summary.csv": "a06ca63349537b7df5440d734213de20cefc2ac02fcb2f15a27aa0407f32d218",
+    "results/prefreeze/forecasts_core_draft.csv.gz": "85f86291616093c226ff5be023581cadb73f8ef2cb8a45cba83d5be82f4832b8"
+  },
+  "output_sha256": {
+    "audit.json": "4a206827d6f1120281baf6967661437baf4b1323472f2a2d755c95c836a2d655"
+  }
+}

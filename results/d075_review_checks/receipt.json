@@ -1,0 +1,61 @@
+{
+  "parent_independent_bruteforce_oracle_cases": 9,
+  "saved_outputs_reproduced_exactly": true,
+  "original_results_mutated": false,
+  "script_sha256": "96068d346656a95d4813f1a0cc701aa6ec7f421fd4442502bca1775209c9d5eb",
+  "input_sha256": {
+    "scripts/t020_review.py": "03294b8fa254203669b75c8130ecddbfa0e13aa1366eceadccfe4dd26c8a39cf",
+    "scripts/d075_oracle_audit.py": "65b7c691f92ee600290c8d23a76fea47dc5cd376f84f348f71573868da694124",
+    "results/t020_development/c2_candidate_events.csv": "45c534b767aab08be2d6a50c186a30718e7c5338623c2a5304216ec2424aecfd",
+    "results/t020_development/longer_horizon/c2_inspected_2026_candidate_events.csv.gz": "4b1da817fb991ba78ecc8adac31c3c05f0772d393ad6f799b6f8d399ed2b175b",
+    "results/t020_development/longer_horizon/c2_pooled_candidate_events.csv.gz": "a3b6ef3b7b60b921ebb72cef0a3451cd83cb1ebc10b088a2d6e508d9d0987908",
+    "results/t020_review/summary.json": "e48c58df9cc163fce260808500cca59e6fdcdc4499a4a704d639ca4e28ee1886",
+    "results/t020_review/rule_free_ceiling.json": "27de73a6c07d4c0cd792ff28070529f086bc2fc279b85929c4d9cfca69b270ca",
+    "results/t020_review/drd_2026_gross_misses.json": "69cab7747081c6a6a2c063a6a14a8c757ff16dff475cdd951581681cfd9cf49c",
+    "results/final_primary/accepted_forecasts.csv": "67c76e6432a1ce2b4b010c4f62daf6eba016451c9d5730fe80eaf3823e5f84ac",
+    "results/final_primary/accepted_outcomes.csv": "2c2fa9559d24fd55ddb1890b2c8814a4ebb3f53a9dbabf934387341e46f8f62b",
+    "data/raw/osf/p298n/catalogue_of_ephemerides.txt": "2f1e4a3ad9dd3cc9f78e38f25c3a1d1e0ead1604ea0a86f66cc752ff1a666033"
+  },
+  "corrected_loose_ceiling": [
+    {
+      "scope": "earlier_S56_S73",
+      "baseline": 0.5566403857476017,
+      "loose_ceiling": 0.6653360379215147,
+      "minimum_budget_flagged_events": 31,
+      "minimum_budget_proportional": 0.630877426449581,
+      "minimum_budget_additive": 0.6858579091307238,
+      "stronger_comparator": 0.6858579091307238,
+      "weaker_comparator": 0.630877426449581,
+      "upper_gain_for_beating_both": -0.02052187120920901,
+      "upper_gain_over_weaker": 0.03445861147193374
+    },
+    {
+      "scope": "inspected_2026",
+      "baseline": 0.6229182390604191,
+      "loose_ceiling": 0.7244807390604191,
+      "minimum_budget_flagged_events": 50,
+      "minimum_budget_proportional": 0.6579385481747748,
+      "minimum_budget_additive": 0.7095581778793856,
+      "stronger_comparator": 0.7095581778793856,
+      "weaker_comparator": 0.6579385481747748,
+      "upper_gain_for_beating_both": 0.014922561181033522,
+      "upper_gain_over_weaker": 0.06654219088564428
+    },
+    {
+      "scope": "pooled",
+      "baseline": 0.597921572049593,
+      "loose_ceiling": 0.699484072049593,
+      "minimum_budget_flagged_events": 78,
+      "minimum_budget_proportional": 0.6398415988353716,
+      "minimum_budget_additive": 0.6928036812098488,
+      "stronger_comparator": 0.6928036812098488,
+      "weaker_comparator": 0.6398415988353716,
+      "upper_gain_for_beating_both": 0.006680390839744144,
+      "upper_gain_over_weaker": 0.059642473214221337
+    }
+  ],
+  "hypothetical_zero_of_183_one_sided_95_binomial_upper": 0.016236859435101225,
+  "hypothetical_zero_of_183_two_sided_95_CP_upper": 0.019956000841316213,
+  "binomial_limit_scope": "Idealised independent equal-rate trials with complete detection, not qualified cohort or incidence inference",
+  "new_photometry_or_headers_opened": false
+}

@@ -62,3 +62,6 @@ data/derived/final_*/measured/grids/
 !results/t020_development/
 !results/d074_review/
 !results/t020_review/
+!results/d075_review_checks/
+!results/d075_accuracy_audit/
+!results/d075_oracle_audit/

@@ -1,0 +1,338 @@
+{
+  "DRD_2026_accepted": {
+    "events": 2185,
+    "planets": 151,
+    "event_weighted_median_absolute_error_min": 1.114775687456131,
+    "equal_planet_mass_median_absolute_error_min": 1.3149476051330566,
+    "median_of_planet_median_absolute_errors_min": 1.3555294275283813,
+    "event_p99_absolute_error_min": 17.61196702122684,
+    "maximum_absolute_error_min": 404.0422710031271,
+    "top_planet_maxima_min": [
+      {
+        "planet": "HR858b",
+        "maximum": 404.0422710031271
+      },
+      {
+        "planet": "GJ1252b",
+        "maximum": 26.298979595303535
+      },
+      {
+        "planet": "HD110113b",
+        "maximum": 25.788240060210228
+      },
+      {
+        "planet": "HATS-61b",
+        "maximum": 18.741974383592606
+      },
+      {
+        "planet": "HATS-29b",
+        "maximum": 17.564658969640732
+      },
+      {
+        "planet": "WASP-171b",
+        "maximum": 17.267024964094162
+      },
+      {
+        "planet": "TOI-277b",
+        "maximum": 15.54956629872322
+      },
+      {
+        "planet": "TOI-824b",
+        "maximum": 13.58817145228386
+      }
+    ],
+    "planets_all_accepted_within_26_min": 149,
+    "planets_all_accepted_within_26_4_min": 150,
+    "events_over_60_min": 16,
+    "uniform_0min_measured_capture": 0.573309001600757,
+    "uniform_0min_all_intended_midpoint_window_minutes": 14540.303599588677,
+    "uniform_1min_measured_capture": 0.8013124919239082,
+    "uniform_1min_all_intended_midpoint_window_minutes": 20746.303599588675,
+    "uniform_2min_measured_capture": 0.8958502566313011,
+    "uniform_2min_all_intended_midpoint_window_minutes": 26952.303599588675,
+    "uniform_3min_measured_capture": 0.9400798842618958,
+    "uniform_3min_all_intended_midpoint_window_minutes": 33158.303599588675
+  },
+  "DRC_slices": {
+    "earlier": {
+      "events": 1078,
+      "planets": 92,
+      "event_weighted_median_absolute_error_min": 0.9684645384550095,
+      "equal_planet_mass_median_absolute_error_min": 1.051761880517006,
+      "median_of_planet_median_absolute_errors_min": 1.104271151125431,
+      "event_p99_absolute_error_min": 10.62452232241631,
+      "maximum_absolute_error_min": 30.387183129787445,
+      "top_planet_maxima_min": [
+        {
+          "planet": "HD110113b",
+          "maximum": 30.387183129787445
+        },
+        {
+          "planet": "GJ1252b",
+          "maximum": 30.26512786746025
+        },
+        {
+          "planet": "HATS-23b",
+          "maximum": 13.060397207736969
+        },
+        {
+          "planet": "GJ357b",
+          "maximum": 11.468131318688393
+        },
+        {
+          "planet": "HATS-34b",
+          "maximum": 11.369390487670898
+        },
+        {
+          "planet": "HD86226c",
+          "maximum": 10.467345491051674
+        },
+        {
+          "planet": "TOI-1478b",
+          "maximum": 10.357242822647095
+        },
+        {
+          "planet": "K2-260b",
+          "maximum": 10.27468778192997
+        }
+      ],
+      "planets_all_accepted_within_26_min": 90,
+      "planets_all_accepted_within_26_4_min": 90,
+      "events_over_60_min": 0,
+      "intended_events": 1493,
+      "intended_planets": 93,
+      "forecast_sd_event_median_min": 0.47485518723104214,
+      "measurement_sigma_over_forecast_event_median": 2.729625828571015,
+      "uniform_0min_measured_capture": 0.5566403857476017,
+      "uniform_0min_all_intended_midpoint_window_minutes": 6025.63884241842,
+      "uniform_1min_measured_capture": 0.8135265933927935,
+      "uniform_1min_all_intended_midpoint_window_minutes": 9011.63884241842,
+      "uniform_2min_measured_capture": 0.9001722455567361,
+      "uniform_2min_all_intended_midpoint_window_minutes": 11997.63884241842,
+      "uniform_3min_measured_capture": 0.9454514786502943,
+      "uniform_3min_all_intended_midpoint_window_minutes": 14983.63884241842,
+      "combined_sigma_gaussian_surrogate_measured_capture": 0.9338208060230642
+    },
+    "2026": {
+      "events": 1974,
+      "planets": 128,
+      "event_weighted_median_absolute_error_min": 1.2006720900535583,
+      "equal_planet_mass_median_absolute_error_min": 1.342741996049881,
+      "median_of_planet_median_absolute_errors_min": 1.444546915590763,
+      "event_p99_absolute_error_min": 25.582293292880056,
+      "maximum_absolute_error_min": 36.61570094525814,
+      "top_planet_maxima_min": [
+        {
+          "planet": "GJ1252b",
+          "maximum": 36.61570094525814
+        },
+        {
+          "planet": "HD110113b",
+          "maximum": 32.36029922962189
+        },
+        {
+          "planet": "TOI-1478b",
+          "maximum": 24.766170904040337
+        },
+        {
+          "planet": "GJ357b",
+          "maximum": 17.720409482717514
+        },
+        {
+          "planet": "HATS-29b",
+          "maximum": 16.98102705180645
+        },
+        {
+          "planet": "HD86226c",
+          "maximum": 15.023290067911148
+        },
+        {
+          "planet": "HATS-40b",
+          "maximum": 14.62798073887825
+        },
+        {
+          "planet": "WASP-169b",
+          "maximum": 11.94936454296112
+        }
+      ],
+      "planets_all_accepted_within_26_min": 126,
+      "planets_all_accepted_within_26_4_min": 126,
+      "events_over_60_min": 0,
+      "intended_events": 2771,
+      "intended_planets": 129,
+      "forecast_sd_event_median_min": 0.8205174119222101,
+      "measurement_sigma_over_forecast_event_median": 1.6916102885780422,
+      "uniform_0min_measured_capture": 0.6229182390604191,
+      "uniform_0min_all_intended_midpoint_window_minutes": 23189.023873446426,
+      "uniform_1min_measured_capture": 0.827939690557564,
+      "uniform_1min_all_intended_midpoint_window_minutes": 28731.023873446426,
+      "uniform_2min_measured_capture": 0.9000452104757719,
+      "uniform_2min_all_intended_midpoint_window_minutes": 34273.02387344642,
+      "uniform_3min_measured_capture": 0.9438444264410419,
+      "uniform_3min_all_intended_midpoint_window_minutes": 39815.02387344642,
+      "combined_sigma_gaussian_surrogate_measured_capture": 0.8764443768755019
+    },
+    "pooled": {
+      "events": 3052,
+      "planets": 128,
+      "event_weighted_median_absolute_error_min": 1.0997999086976051,
+      "equal_planet_mass_median_absolute_error_min": 1.2647373229265213,
+      "median_of_planet_median_absolute_errors_min": 1.394614577293396,
+      "event_p99_absolute_error_min": 24.126943626254793,
+      "maximum_absolute_error_min": 36.61570094525814,
+      "top_planet_maxima_min": [
+        {
+          "planet": "GJ1252b",
+          "maximum": 36.61570094525814
+        },
+        {
+          "planet": "HD110113b",
+          "maximum": 32.36029922962189
+        },
+        {
+          "planet": "TOI-1478b",
+          "maximum": 24.766170904040337
+        },
+        {
+          "planet": "GJ357b",
+          "maximum": 17.720409482717514
+        },
+        {
+          "planet": "HATS-29b",
+          "maximum": 16.98102705180645
+        },
+        {
+          "planet": "HD86226c",
+          "maximum": 15.023290067911148
+        },
+        {
+          "planet": "HATS-40b",
+          "maximum": 14.62798073887825
+        },
+        {
+          "planet": "HATS-23b",
+          "maximum": 13.060397207736969
+        }
+      ],
+      "planets_all_accepted_within_26_min": 126,
+      "planets_all_accepted_within_26_4_min": 126,
+      "events_over_60_min": 0,
+      "intended_events": 4264,
+      "intended_planets": 129,
+      "forecast_sd_event_median_min": 0.6926337200167855,
+      "measurement_sigma_over_forecast_event_median": 1.9785433093000022,
+      "uniform_0min_measured_capture": 0.597921572049593,
+      "uniform_0min_all_intended_midpoint_window_minutes": 29214.662715864844,
+      "uniform_1min_measured_capture": 0.8240289406480453,
+      "uniform_1min_all_intended_midpoint_window_minutes": 37742.66271586484,
+      "uniform_2min_measured_capture": 0.8993001206009552,
+      "uniform_2min_all_intended_midpoint_window_minutes": 46270.66271586484,
+      "uniform_3min_measured_capture": 0.9472829680802962,
+      "uniform_3min_all_intended_midpoint_window_minutes": 54798.66271586484,
+      "combined_sigma_gaussian_surrogate_measured_capture": 0.8922276273527702
+    }
+  },
+  "coverage_width": {
+    "M0": {
+      "coverage95_planet_balanced": 0.9079364975831289,
+      "coverage95_event_weighted": 0.9194508009153318,
+      "mean_width95_planet_balanced_min": 10.485120494440435
+    },
+    "M2": {
+      "coverage95_planet_balanced": 0.9757619919679326,
+      "coverage95_event_weighted": 0.9647597254004576,
+      "mean_width95_planet_balanced_min": 17.473022575232037
+    },
+    "M2_to_M0_ratio_of_mean_widths": 1.6664589199997102,
+    "M0_covariance_metadata": {
+      "c2; released-input WLS reconstruction; not issued covariance": 2185
+    },
+    "conditional_coverage_ci95": {
+      "M0": [
+        0.8777913807929647,
+        0.934031017378188
+      ],
+      "M2": [
+        0.9582051439784874,
+        0.9889060356440096
+      ]
+    }
+  },
+  "selection": {
+    "intended_planets": 156,
+    "intended_events": 3103,
+    "accepted_planets": 151,
+    "terminal_status_counts": {
+      "no_cadence_coverage_at_prediction": 431,
+      "accepted": 2185,
+      "excluded_coverage": 290,
+      "integration_unresolved": 75,
+      "edge": 71,
+      "likelihood_support_unresolved": 12,
+      "product_id_failed": 39
+    },
+    "zero_accepted_planets": [
+      "HIP94235b",
+      "TOI-251b",
+      "TOI-262b",
+      "TOI-269b",
+      "TOI-4308b"
+    ]
+  },
+  "HR858_named_release_membership": {
+    "DRB": false,
+    "DRC": false,
+    "DRD": true
+  },
+  "HR858_DRD_inputs": {
+    "release": "DRD",
+    "planet": "HR858b",
+    "catalogue_host_label": "HR858",
+    "catalogued_planets_with_same_host_label": "1",
+    "host_label_basis": "repository name heuristic; not physical companion inventory",
+    "t0_bjd_tdb": "2458903.961",
+    "period_days": "3.585266",
+    "origin_release_ttv_flag": "False",
+    "origin_flag_basis": "release-specific detection criterion, not exhaustive literature knowledge",
+    "release_flag_source_type": "publication_table_transcription_not_forecast_column",
+    "flag_at_exact_forecast_origin_verified": "False",
+    "flag_source_availability_limit": "publication first-public timestamp not independently checked against forecast timestamp",
+    "released_timing_rows": "16",
+    "valid_timing_rows": "16",
+    "invalid_timing_rows": "0",
+    "first_input_bjd_tdb": "2458412.7763",
+    "last_input_bjd_tdb": "2459169.2599",
+    "input_baseline_days": "756.4835999999195",
+    "issued_line_chi2": "77.2872429152448",
+    "issued_line_chi2_over_N": "4.8304526822028",
+    "issued_line_reduced_chi2_Nminus2": "5.520517351088914",
+    "issued_line_z_rms": "2.1978290839377843",
+    "issued_line_residual_rms_minutes": "10.705446662588493",
+    "first_input_calendar_tdb": "2018-10-21",
+    "last_input_calendar_tdb": "2020-11-15",
+    "nominal_dof_Nminus2": "14",
+    "row_source_counts": "{\"space\": 16}",
+    "unique_nearest_orbit_epochs": "16",
+    "same_epoch_extra_rows": "0",
+    "input_table_status": "released_rows_not_independently_certified_fitting_membership",
+    "strict_origin_timing_features_eligible": "True",
+    "timing_artifact_delay_seconds": "0.0",
+    "forecast_first_public_utc": "2025-11-18T09:43:24.090310+00:00",
+    "release_bundle_first_public_utc": "2025-11-18T09:43:24.090310+00:00",
+    "DRB_individual_source_preforecast_log_found": "",
+    "DRB_zip_member_sha256": "",
+    "origin_transit_duration_minutes": "",
+    "duration_status": "not_present_as_verified_duration_in_exact_ephemeris_timing_inputs"
+  },
+  "S105_CI_scope": {
+    "original_joint95": [
+      -1.8397729107986793,
+      2.1956849634535907
+    ],
+    "perturbed_fixed_fit_conditional95": [
+      -1.8797051916873835,
+      1.1236836140273576
+    ],
+    "warning": "Different uncertainty scopes; do not present perturbed CI as recomputed primary joint interval."
+  }
+}
