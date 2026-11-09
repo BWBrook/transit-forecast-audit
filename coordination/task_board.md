@@ -19,12 +19,24 @@ claim of completion.
 | T010 | Fit earlier-only calibration rule | Reproducible development outputs; bound/uncertainty diagnostics | T009 | **Frozen and verified (D064–D066):** 206 core development planets; saved parameters and forecasts reproduce |
 | T011 | Execute held-out evaluation | Paired scores, uncertainty, planned sensitivities and complete provenance | T010 | **Complete (D065–D067, C043–C047):** primary −0.121 [−1.84, 2.20], inconclusive; exploratory extension; declared strata, closed sensitivity comparisons and influence/TTV diagnostics saved. Secondary intervals conditional only |
 | T012 | Independent scientific review | Reproduction/criticism with concrete evidence; findings resolved or reported | T011 | **Done (D066, D068):** Codex audit of D065 accepted; Claude cross-review of secondaries reproduces all headline numbers |
-| T013 | Write manuscript and release artifacts | Every result traceable to analysis; scope and citations verified | T012 | **Article v0.4 and brief integrate the held-out result (D068)**; Codex review, Bonfanti et al. 2025 citation import and Barry's review pending; no release |
+| T013 | Write manuscript and release artifacts | Every result traceable to analysis; scope and citations verified | T012 | **D068–D069 integrated/reviewed:** article v0.5, two-page brief and guide ready for Barry; bibliography imports/two prior-art placeholders remain before release; no release requested |
 | T014 | Identifiable variance-components model on the development era | Outcome scale independently constrained or declared a sensitivity; shared ephemeris covariance specified; simulation checks separation of b and any extra variance before fitting | T005, D021–D024 | **Development model in place** (Claude, D026–D027): outcome scale a=1.09 as fixed sensitivity; two-stage planet-level scale mixture (b, s) with recovery simulation on the real DRC design, `results/pilot_v1/variance_components/`. **Production repaired (D036):** continuous posterior summaries and 400 host resamples retained in `variance_components_v2/`. Chronological refit instability prevents selecting the span correction (D037) |
 | T015 | Forecast-independent TESS mid-time pipeline | Re-measures a sample of DRD 2022–2023 TESS mid-times from SPOC light curves with a broad timing prior; agreement and σ calibration documented; then frozen | T003 | **Amended SPOC rule accepted (D062, C038–C040):** actual support on frozen injections passes all eight criteria; manifest-to-decision path verifies and access guard is repaired. Conditional development evidence, not a new replication. Multi-planet identification/full-support fitting remain declared limits; no freeze or protected access |
 | T016 | Untouched DRD-era outcome inventory (metadata only) | List TESS sectors from 2025-11-19 and the DRD planets they cover, without fitting any light curve | D018 | **Metadata correction complete (D043/D045):** public product/date inventory in `results/sprint1/inventory/`; 184 core+extension planets, 3399 opportunities after origin flags, no protected FITS opened. Actual cadence capture and outcome recovery remain unverified |
 
 ## Claims
+
+- 2026-11-09 Codex: **D068 article/brief review complete (D069)** from `9eade0b`.
+  Parent owns article/brief/guide corrections, render review and coordination;
+  read-only delegate checks article numbers/meaning against the ledger. A
+  second delegate independently checks C048/source identity using saved rows
+  and public literature, owning only its new audit/evidence paths. Preserve
+  frozen code/config/primary outputs. Stop with reviewed, rebuilt products
+  ready for Barry, with remaining citation/import limits stated explicitly.
+  Evidence/products `97386cb`: bounded score-contrast explanation corrected,
+  C048 independently reproduced with internal-check limits, article v0.5 and
+  two-page brief rebuilt and visually checked. 115 tests, one expected skip;
+  manifest unchanged. Next: Barry reviews; no release in this turn.
 
 - 2026-11-09 Codex: **D065 independent review and declared secondaries complete (D066–D067)**
   from `3aa33e8`. Owns new audit/secondary scripts and outputs, audit/report

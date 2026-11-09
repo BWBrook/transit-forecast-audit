@@ -13,8 +13,9 @@ Start with the [independent review](docs/audits/d065_review_2026-11-09.md),
 [primary result](docs/final_results_2026-11-08.md) and
 [completed declared secondaries](docs/final_secondaries_2026-11-09.md).
 Secondary intervals are conditional on scenario fits; they do not replace
-the frozen joint-refit result. The article and brief remain dated development
-drafts awaiting integration of these audited results. Earlier milestones below
+the frozen joint-refit result. The article v0.5 and two-page brief integrate
+these results and have passed independent review (D069); Barry's review and
+formal bibliography imports remain before release. Earlier milestones below
 describe their status at the stated dates.
 
 A project for Barry W. Brook to evaluate the predictive reliability of exoplanet

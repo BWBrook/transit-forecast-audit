@@ -397,6 +397,20 @@ Next owners should claim T001–T004 and read START_HERE.md.
   on bounded losses versus unbounded gains. Brief rewritten (two A4 pages).
 - Next: Codex reviews the article and brief; then Barry.
 
+### 2026-11-09 — Codex — D068 article/brief review complete (D069)
+
+- Products/evidence `97386cb`; article v0.5 and two-A4-page brief ready for Barry.
+- All headline numbers match. Corrected the unbounded-gain argument: fixed
+  interval-score contrasts are bounded; host concentration remains observed.
+- HR858b saved-data check reproduces, with correct Bonfanti source and limits
+  on artefact exclusion/physical attribution. Formal identifiers listed for
+  import; TESS acknowledgement added; two old prior-art placeholders remain.
+- Corrected audit scope, selection/history/freeze wording and one rounding.
+  Independent semantic recheck finds no remaining material overclaim.
+- 115 tests, one expected skip, no failures; frozen manifest unchanged. Rendered
+  brief/article have no missing glyphs or clipping. Nothing released.
+- Next: Barry — review article and brief.
+
 ## Update template
 
 - Date / agent / task ID:

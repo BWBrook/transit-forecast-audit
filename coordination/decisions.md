@@ -734,6 +734,53 @@ scientific record; a `proposed` item is not a frozen preregistration.
 - Next: Codex reviews the article and brief against the ledger; Barry reviews
   before any release.
 
+### D069 — Article and brief reviewed; score interpretation corrected
+
+- Date / responsible agent: 2026-11-09, Codex (GPT-6.1-sol), from `9eade0b`.
+  Two bounded delegates independently checked article claims and C048's saved
+  rows/source identity. Parent reviewed the brief, independently derived the
+  score contrast, integrated fixes and inspected rendered products. The
+  article delegate rechecked revised §3/§5 and the brief without a new finding.
+- Evidence: `97386cb:docs/audits/d068_products_review_2026-11-09.md`,
+  `docs/audits/d068_hr858_source_review_2026-11-09.md`,
+  `results/final_review/d068_interval_score.json`,
+  `results/final_review/d069_products_validation.json`; C048–C049.
+- Numerical disposition: all new article terminal counts, scores, fitted
+  parameters, recovery, influence and sensitivity values match the ledger;
+  one majority-gate upper interval rounding is corrected +1.16 → +1.15.
+- Correction to D068's interpretation: absolute miss scores are unbounded,
+  but the difference between two fixed finite intervals is bounded and
+  saturates beyond both intervals. For nested symmetric widening at alpha
+  .05, −19dw ≤ DeltaIS ≤ dw. Parent and delegate derived this independently;
+  27 labelled synthetic cases match exactly, and all 2,185 saved event
+  penalties are no greater than added standardised width. This changes the
+  explanation, not the frozen score definition or inconclusive verdict.
+- C048: coherent saved HR858b timing departures and actual absence from the
+  frozen training set reproduce. Internal diagnostics do not prove absence
+  of every extraction/identification error or establish the physical cause.
+  The correct Bonfanti source is arXiv:2411.14911, DOI
+  10.1051/0004-6361/202451300; supplied link 2604.15035 concerns another system.
+  Pre-origin TTV knowledge is verified, while DRD's flag follows its own
+  detection rule rather than a comprehensive literature inventory.
+- Products: article v0.5, two-page brief and guide agree on accepted-timing
+  selection, conditional secondary inference, bounded audit checks and
+  targeting as a hypothesis. Historical qualification/status, simulation scope,
+  freeze scope and the brief's confusion between timing-likelihood shape and
+  physical TTVs are corrected. Source links/mission acknowledgement and
+  identifier list added without constructing bibliography entries.
+- Validation: 115 tests run, one expected local skip, no failures; frozen
+  manifest unchanged. Figure 1 rebuilt with source/output hashes. Brief is
+  two A4 pages; article review build is 23 A4 pages. Both have no missing
+  glyph warnings or out-of-margin text after visual/render correction.
+  Review article PDF is ignored at `manuscript/build/paper.pdf`; build arguments
+  and hashes are in the validation receipt.
+- Remaining: Barry reviews the products; formal Zotero imports and two older
+  prior-art citation placeholders remain before release. No protected
+  measurements, new model fitting, release or external contact in this turn.
+- Status: reviewed and revised, ready for Barry; D068's unbounded-gain
+  explanation and categorical artefact exclusion are superseded here.
+- Next: Barry — review the article and brief.
+
 ## New entry template
 
 ### D0XX — short title
