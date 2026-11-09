@@ -1,0 +1,501 @@
+{
+  "task": "T017",
+  "status": "pre-fit sample; requires parent review and commit before raw access",
+  "seed": 2026110917,
+  "calibration_planets": 206,
+  "baseline_s": 2.0469590063091716,
+  "cases": [
+    {
+      "planet": "HR858b",
+      "category": "evaluation_influence",
+      "period_hint_d": 3.585266,
+      "products": [
+        {
+          "sector": 106,
+          "tic": "TIC 178155732",
+          "relative_fits_path": "data/raw/mast/TIC_178155732/tess2026192185000-s0106-0000000178155732-0308-s_lc.fits",
+          "expected_sha256": "86d37df8173180ae374f3548ae899a0d75e093861a6a6cad8fea31335b02d361",
+          "original_status": "ok"
+        },
+        {
+          "sector": 105,
+          "tic": "TIC 178155732",
+          "relative_fits_path": "data/raw/mast/TIC_178155732/tess2026164183000-s0105-0000000178155732-0307-s_lc.fits",
+          "expected_sha256": "1862b621dadb39848bb0981639498637c5024cca6652f29b0fc057097a20e2a5",
+          "original_status": "ok"
+        },
+        {
+          "sector": 107,
+          "tic": "TIC 178155732",
+          "relative_fits_path": "data/raw/mast/TIC_178155732/tess2026221103959-s0107-0000000178155732-0309-s_lc.fits",
+          "expected_sha256": "d7aeef3239ea1bfb1ac8ed7f7f5f69a4ab8bea2d7a413e83662e7245a4ce6541",
+          "original_status": "ok"
+        }
+      ]
+    },
+    {
+      "planet": "TOI-905b",
+      "category": "evaluation_influence",
+      "period_hint_d": 3.73956562,
+      "products": [
+        {
+          "sector": 100,
+          "tic": "TIC 261867566",
+          "relative_fits_path": "data/raw/mast/TIC_261867566/tess2026033082000-s0100-0000000261867566-0302-s_lc.fits",
+          "expected_sha256": "809ef63b069c1c0a7232af507a775786d6685eed1a902783552d17922b6425bf",
+          "original_status": "ok"
+        },
+        {
+          "sector": 101,
+          "tic": "TIC 261867566",
+          "relative_fits_path": "data/raw/mast/TIC_261867566/tess2026060005000-s0101-0000000261867566-0303-s_lc.fits",
+          "expected_sha256": "ff24374e3b6a2b5f37a8c870f30de92a66183c20af95fd1ca28aa72ad7a539e1",
+          "original_status": "ok"
+        },
+        {
+          "sector": 102,
+          "tic": "TIC 261867566",
+          "relative_fits_path": "data/raw/mast/TIC_261867566/tess2026086090000-s0102-0000000261867566-0304-s_lc.fits",
+          "expected_sha256": "9f63ada58dee86b60ca37c5efa9621fed33f1322d467e1f0b41586bae311141c",
+          "original_status": "ok"
+        },
+        {
+          "sector": 99,
+          "tic": "TIC 261867566",
+          "relative_fits_path": "data/raw/mast/TIC_261867566/tess2026005125623-s0099-0000000261867566-0300-s_lc.fits",
+          "expected_sha256": "63a1d17cdb8368001bbaa0aeda602ee724fef79ded0cfe9125cdacf4b24a9ed7",
+          "original_status": "ok"
+        }
+      ]
+    },
+    {
+      "planet": "WASP-184b",
+      "category": "evaluation_influence",
+      "period_hint_d": 5.1817242,
+      "products": [
+        {
+          "sector": 102,
+          "tic": "TIC 112099249",
+          "relative_fits_path": "data/raw/mast/TIC_112099249/tess2026086090000-s0102-0000000112099249-0304-s_lc.fits",
+          "expected_sha256": "a1574813f9ffe495276088939fea6f7939e23b5fbc60ef404af700c46d76b356",
+          "original_status": "ok"
+        }
+      ]
+    },
+    {
+      "planet": "TOI-559b",
+      "category": "evaluation_influence",
+      "period_hint_d": 6.9839033,
+      "products": [
+        {
+          "sector": 105,
+          "tic": "TIC 209459275",
+          "relative_fits_path": "data/raw/mast/TIC_209459275/tess2026164183000-s0105-0000000209459275-0307-s_lc.fits",
+          "expected_sha256": "2e9178671ee4b2d6d9a816952bef7ce1350c1b590f430a6ed6adf86d812c2409",
+          "original_status": "ok"
+        },
+        {
+          "sector": 106,
+          "tic": "TIC 209459275",
+          "relative_fits_path": "data/raw/mast/TIC_209459275/tess2026192185000-s0106-0000000209459275-0308-s_lc.fits",
+          "expected_sha256": "9621b66b56000101bec5507065e41314c3d5767ac5fcd04ec6b99c8bb598c97a",
+          "original_status": "ok"
+        }
+      ]
+    },
+    {
+      "planet": "WASP-161b",
+      "category": "calibration_influence",
+      "period_hint_d": 5.405515,
+      "products": [
+        {
+          "sector": 61,
+          "tic": "TIC 50712784",
+          "relative_fits_path": "data/raw/mast/TIC_50712784/tess2023018032328-s0061-0000000050712784-0250-s_lc.fits",
+          "expected_sha256": "3ad0bcafdf4b74b2f20c85fcd7e343897e84e3d269b9251790fd3bf86b8a0e41",
+          "original_status": "ok"
+        }
+      ]
+    },
+    {
+      "planet": "TOI-1478b",
+      "category": "calibration_influence",
+      "period_hint_d": 10.18021,
+      "products": [
+        {
+          "sector": 61,
+          "tic": "TIC 409794137",
+          "relative_fits_path": "data/raw/mast/TIC_409794137/tess2023018032328-s0061-0000000409794137-0250-s_lc.fits",
+          "expected_sha256": "0d74dd2e843b47e531917507968ce960bfa9d744cf72f5c4e4c9a13df99dbbc1",
+          "original_status": "ok"
+        }
+      ]
+    },
+    {
+      "planet": "XO-3b",
+      "category": "calibration_influence",
+      "period_hint_d": 3.19152416,
+      "products": [
+        {
+          "sector": 59,
+          "tic": "TIC 8400842",
+          "relative_fits_path": "data/raw/mast/TIC_8400842/tess2022330142927-s0059-0000000008400842-0248-s_lc.fits",
+          "expected_sha256": "d5a469c0de38521c517ed8c753277e986594b820ea1dadcbbd821987f11a05c9",
+          "original_status": "ok"
+        }
+      ]
+    },
+    {
+      "planet": "WASP-186b",
+      "category": "calibration_influence",
+      "period_hint_d": 5.026797,
+      "products": [
+        {
+          "sector": 57,
+          "tic": "TIC 411608801",
+          "relative_fits_path": "data/raw/mast/TIC_411608801/tess2022273165103-s0057-0000000411608801-0245-s_lc.fits",
+          "expected_sha256": "d971b468220e134e49e83bdf4660eb4a584035cffcb1f3a40859f7bc61d4abac",
+          "original_status": "ok"
+        }
+      ]
+    },
+    {
+      "planet": "HAT-P-69b",
+      "category": "calibration_influence",
+      "period_hint_d": 4.786962,
+      "products": [
+        {
+          "sector": 61,
+          "tic": "TIC 379929661",
+          "relative_fits_path": "data/raw/mast/TIC_379929661/tess2023018032328-s0061-0000000379929661-0250-s_lc.fits",
+          "expected_sha256": "0cceb628896a244a5b9b97bee688ebae9990fc6f39422edf343238b0102ab28f",
+          "original_status": "ok"
+        }
+      ]
+    },
+    {
+      "planet": "WASP-170b",
+      "category": "seeded_control",
+      "period_hint_d": 2.34477791,
+      "products": [
+        {
+          "sector": 99,
+          "tic": "TIC 118956453",
+          "relative_fits_path": "data/raw/mast/TIC_118956453/tess2026005125623-s0099-0000000118956453-0300-s_lc.fits",
+          "expected_sha256": "eb5efa10c34148378ef039da41fa3ab2c9fb74e863282139e8cad01cd151df7b",
+          "original_status": "ok"
+        }
+      ]
+    },
+    {
+      "planet": "WASP-20b",
+      "category": "seeded_control",
+      "period_hint_d": 4.89964519,
+      "products": [
+        {
+          "sector": 107,
+          "tic": "TIC 211438925",
+          "relative_fits_path": "data/raw/mast/TIC_211438925/tess2026221103959-s0107-0000000211438925-0309-s_lc.fits",
+          "expected_sha256": "c82bb6a854e97d6d650a7c0492d44ad3eb93cbabfda87809700a7eec071c7f66",
+          "original_status": "ok"
+        }
+      ]
+    },
+    {
+      "planet": "WASP-82b",
+      "category": "seeded_control",
+      "period_hint_d": 2.705784,
+      "products": [
+        {
+          "sector": 98,
+          "tic": "TIC 452808876",
+          "relative_fits_path": "data/raw/mast/TIC_452808876/tess2025312202959-s0098-0000000452808876-0298-s_lc.fits",
+          "expected_sha256": "1aa68cf40d039d58c0d11522f291dc553cdca16a3974f52f1f905bebc4bce8f0",
+          "original_status": "ok"
+        }
+      ]
+    },
+    {
+      "planet": "WASP-29b",
+      "category": "seeded_control",
+      "period_hint_d": 3.92271189,
+      "products": [
+        {
+          "sector": 103,
+          "tic": "TIC 183537452",
+          "relative_fits_path": "data/raw/mast/TIC_183537452/tess2026111101500-s0103-0000000183537452-0305-s_lc.fits",
+          "expected_sha256": "975360cab044a8f11d7e5c7253c493a73e81015b23923f11abb12c556cc85899",
+          "original_status": "ok"
+        }
+      ]
+    },
+    {
+      "planet": "WASP-18b",
+      "category": "seeded_control",
+      "period_hint_d": 0.941452406,
+      "products": [
+        {
+          "sector": 104,
+          "tic": "TIC 100100827",
+          "relative_fits_path": "data/raw/mast/TIC_100100827/tess2026137223500-s0104-0000000100100827-0306-s_lc.fits",
+          "expected_sha256": "98f01b99da07122f63c58000af48d6fcfa8ad39651e8e3fe0409171a443f9444",
+          "original_status": "ok"
+        }
+      ]
+    },
+    {
+      "planet": "HATS-27b",
+      "category": "seeded_control",
+      "period_hint_d": 4.6370484,
+      "products": [
+        {
+          "sector": 100,
+          "tic": "TIC 248111245",
+          "relative_fits_path": "data/raw/mast/TIC_248111245/tess2026033082000-s0100-0000000248111245-0302-s_lc.fits",
+          "expected_sha256": "82a35b1a589e4fcb8a55b79e52217b7371c9d521fdf062d8d9ad7bb2b8297db7",
+          "original_status": "ok"
+        }
+      ]
+    },
+    {
+      "planet": "TOI-157b",
+      "category": "seeded_control",
+      "period_hint_d": 2.08453969,
+      "products": [
+        {
+          "sector": 98,
+          "tic": "TIC 140691463",
+          "relative_fits_path": "data/raw/mast/TIC_140691463/tess2025312202959-s0098-0000000140691463-0298-s_lc.fits",
+          "expected_sha256": "3f316d165a34321a2dbb178fcf87fedf213af027e57999206facf968cb42e8ab",
+          "original_status": "ok"
+        }
+      ]
+    },
+    {
+      "planet": "WASP-22b",
+      "category": "seeded_control",
+      "period_hint_d": 3.53272911,
+      "products": [
+        {
+          "sector": 105,
+          "tic": "TIC 257567854",
+          "relative_fits_path": "data/raw/mast/TIC_257567854/tess2026164183000-s0105-0000000257567854-0307-s_lc.fits",
+          "expected_sha256": "48ff213201c33a5d94d7be42ea01d61a13d5984693c0b3d314f66e76aeee8ba7",
+          "original_status": "ok"
+        }
+      ]
+    },
+    {
+      "planet": "WASP-126b",
+      "category": "seeded_control",
+      "period_hint_d": 3.28878721,
+      "products": [
+        {
+          "sector": 98,
+          "tic": "TIC 25155310",
+          "relative_fits_path": "data/raw/mast/TIC_25155310/tess2025312202959-s0098-0000000025155310-0298-s_lc.fits",
+          "expected_sha256": "5d1c954ee885a9dd2366fd88aeb1ded8d51a50b3a5dc56e7f000def3572fcd79",
+          "original_status": "ok"
+        }
+      ]
+    },
+    {
+      "planet": "WASP-45b",
+      "category": "seeded_control",
+      "period_hint_d": 3.12607676,
+      "products": [
+        {
+          "sector": 107,
+          "tic": "TIC 120610833",
+          "relative_fits_path": "data/raw/mast/TIC_120610833/tess2026221103959-s0107-0000000120610833-0309-s_lc.fits",
+          "expected_sha256": "bdf1c7861e7b16cb889de5321e79dbfef4c677001d30f5a5f9a95cdc6b9297b5",
+          "original_status": "ok"
+        }
+      ]
+    },
+    {
+      "planet": "HIP94235b",
+      "category": "zero_accepted",
+      "period_hint_d": 7.713071,
+      "products": [
+        {
+          "sector": 101,
+          "tic": "TIC 464646604",
+          "relative_fits_path": "data/raw/mast/TIC_464646604/tess2026060005000-s0101-0000000464646604-0303-s_lc.fits",
+          "expected_sha256": "4c74f32780bc0f4b72bcb20150b4ccc58fd78fb5d127cdbf8db3aa48fe91b72e",
+          "original_status": "ok"
+        }
+      ]
+    },
+    {
+      "planet": "TOI-251b",
+      "category": "zero_accepted",
+      "period_hint_d": 4.9377287,
+      "products": [
+        {
+          "sector": 106,
+          "tic": "TIC 224225541",
+          "relative_fits_path": "data/raw/mast/TIC_224225541/tess2026192185000-s0106-0000000224225541-0308-s_lc.fits",
+          "expected_sha256": "4263eca46ba0a9d64d2e2e45c28f497c87ddc6c7b908a48248223dca376c8368",
+          "original_status": "id_failed:shape_t14_64.5min_inconsistent_with_bls_463min"
+        }
+      ]
+    },
+    {
+      "planet": "TOI-262b",
+      "category": "zero_accepted",
+      "period_hint_d": 11.145293,
+      "products": [
+        {
+          "sector": 104,
+          "tic": "TIC 70513361",
+          "relative_fits_path": "data/raw/mast/TIC_70513361/tess2026137223500-s0104-0000000070513361-0306-s_lc.fits",
+          "expected_sha256": "5c34fcd259fdcc12c69272503bf7d7a9c8d756144dd3cfd093217e687eda55d5",
+          "original_status": "id_failed:shape_t14_0.0min_inconsistent_with_bls_73min"
+        }
+      ]
+    },
+    {
+      "planet": "TOI-269b",
+      "category": "zero_accepted",
+      "period_hint_d": 3.6977156,
+      "products": [
+        {
+          "sector": 98,
+          "tic": "TIC 220479565",
+          "relative_fits_path": "data/raw/mast/TIC_220479565/tess2025312202959-s0098-0000000220479565-0298-s_lc.fits",
+          "expected_sha256": "ea799aa1272074f23a5a4bda1e1afe6e1334ed6bb984be7fa8df76035b9b0f75",
+          "original_status": "ok"
+        }
+      ]
+    },
+    {
+      "planet": "TOI-4308b",
+      "category": "zero_accepted",
+      "period_hint_d": 9.15122,
+      "products": [
+        {
+          "sector": 105,
+          "tic": "TIC 144193715",
+          "relative_fits_path": "data/raw/mast/TIC_144193715/tess2026164183000-s0105-0000000144193715-0307-s_lc.fits",
+          "expected_sha256": "9f1f0e23cfc32f7f59f5c11afacfa7141f41804c0970ac4cbf5b9435275d090b",
+          "original_status": "id_failed:id_snr_4.9_lt_7"
+        }
+      ]
+    },
+    {
+      "planet": "GJ1252b",
+      "category": "covered_failure_edge",
+      "period_hint_d": 0.51824231,
+      "products": [
+        {
+          "sector": 101,
+          "tic": "TIC 370133522",
+          "relative_fits_path": "data/raw/mast/TIC_370133522/tess2026060005000-s0101-0000000370133522-0303-s_lc.fits",
+          "expected_sha256": "0e72ba50ca89f1cb20a40f4a1405202911fba6e7cef628ab06ccf2d00aa948cc",
+          "original_status": "ok"
+        }
+      ]
+    },
+    {
+      "planet": "EPIC246851721b",
+      "category": "covered_failure_excluded_coverage",
+      "period_hint_d": 6.1802688,
+      "products": [
+        {
+          "sector": 98,
+          "tic": "TIC 411839167",
+          "relative_fits_path": "data/raw/mast/TIC_411839167/tess2025312202959-s0098-0000000411839167-0298-s_lc.fits",
+          "expected_sha256": "ccca12a7fb234aaacdd3992b417784414990db3ffea2cf1d76d87072e8cd516e",
+          "original_status": "ok"
+        }
+      ]
+    },
+    {
+      "planet": "GJ1132b",
+      "category": "covered_failure_integration_unresolved",
+      "period_hint_d": 1.62892951,
+      "products": [
+        {
+          "sector": 99,
+          "tic": "TIC 101955023",
+          "relative_fits_path": "data/raw/mast/TIC_101955023/tess2026005125623-s0099-0000000101955023-0300-s_lc.fits",
+          "expected_sha256": "32f42e8861f2f358b4213034e9e7fc58535a34a78ddee13256645ac54de5a826",
+          "original_status": "ok"
+        }
+      ]
+    },
+    {
+      "planet": "GJ1252b",
+      "category": "covered_failure_likelihood_support_unresolved",
+      "period_hint_d": 0.51824231,
+      "products": [
+        {
+          "sector": 103,
+          "tic": "TIC 370133522",
+          "relative_fits_path": "data/raw/mast/TIC_370133522/tess2026111101500-s0103-0000000370133522-0305-s_lc.fits",
+          "expected_sha256": "219d0a86a75f3f1f3b765f349d9b801c567000fcd3a86f977d34d89880f8ae36",
+          "original_status": "ok"
+        }
+      ]
+    },
+    {
+      "planet": "TOI-122b",
+      "category": "covered_failure_product_id_failed",
+      "period_hint_d": 5.0780234,
+      "products": [
+        {
+          "sector": 103,
+          "tic": "TIC 231702397",
+          "relative_fits_path": "data/raw/mast/TIC_231702397/tess2026111101500-s0103-0000000231702397-0305-s_lc.fits",
+          "expected_sha256": "d69438c621a01385efa11d9c65669f3f16071dd6751cd991030f05f943d21028",
+          "original_status": "id_failed:shape_t14_0.0min_inconsistent_with_bls_56min"
+        }
+      ]
+    }
+  ],
+  "raw_products_opened_by_this_design": false,
+  "forbidden_sectors": [
+    74,
+    97
+  ],
+  "download_allowed": false,
+  "selection": "All products for four evaluation gain hosts; top five development-only absolute leave-one-out s changes; ten seeded accepted controls excluding four leaders; one maximum-saved-timing product per ordinary/calibration/zero-accepted case; one lexical unrepresented product per covered-failure class.",
+  "method": "Independent broad-phase BoxLeastSquares identification, empirical symmetric trapezoid fit and per-window local linear baseline/depth profiling; no issued epoch used to find or fit transits; report SAP and PDCSAP separately. The use of the shared standard Astropy BLS library is disclosed; no pipeline extraction/fitting code is imported.",
+  "method_settings": {
+    "blind_period_range_d": [
+      0.3,
+      15.0
+    ],
+    "period_grid_size": 20000,
+    "durations_d": [
+      0.03,
+      0.05,
+      0.08,
+      0.12,
+      0.18,
+      0.24
+    ],
+    "maximum_sequential_signals": 3,
+    "minimum_bls_snr": 5,
+    "target_period_tolerance_fraction": 0.05,
+    "detrend_bin_width_d": 0.5,
+    "continuum_quantile": 0.8,
+    "fit_window_duration_multiplier": 2.5,
+    "maximum_local_half_window_fraction_period": 0.45,
+    "minimum_points_each_outside_side": 8,
+    "timing_profile_step_s": 15,
+    "joint_nuisance_check": "Every influential event marked non-Gaussian by the frozen run; free depth/duration/ingress plus local baseline with empirical trapezoid shape."
+  },
+  "discrepancy_triggers": {
+    "product_review": "Median absolute timing difference >max(3 minutes, 0.5 median frozen sigma), any event difference >max(10 minutes, 3 frozen sigma), >10% of accepted frozen windows unmatched, or alias/companion ambiguity.",
+    "shape_review": "For influential non-Gaussian events, compare fixed shape with a joint local depth/duration/ingress fit. A shift >max(3 minutes, 0.5 frozen sigma) requires explicit shape-driven discrepancy review.",
+    "wider_remeasurement": "Any influential product with a coherent discrepant train or at least two large event discrepancies, or at least two seeded controls passing the product-review trigger, warrants a separately agreed broader measurement tranche. Complete/report this fixed sample first; no automatic enlargement or frozen replacement.",
+    "interpretation": "These are diagnostic triggers on shared photons, not calibrated significance tests. Non-detection/ambiguity is not an ephemeris miss. Trapezoid model differences and lack of pixels remain limits."
+  },
+  "source_sha256": {
+    "results/final_primary/accepted_outcomes.csv": "2c2fa9559d24fd55ddb1890b2c8814a4ebb3f53a9dbabf934387341e46f8f62b",
+    "results/outcomes/t015v3/outcomes.csv.gz": "79c9d323b852f47a6519df7671764baad358486c558e3dad0dd36fc4b9437ef8",
+    "results/prefreeze/candidate_parameters.json": "e68cc5291ce6abb55f88bb9907cf0eabe0ac930c35e73dc07ed056059309f99f"
+  }
+}

@@ -1,0 +1,1444 @@
+[
+  {
+    "planet": "WASP-161b",
+    "host": "WASP-161",
+    "s_without": 1.6267352270707018,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.42022377923846976
+  },
+  {
+    "planet": "TOI-1478b",
+    "host": "TOI-1478",
+    "s_without": 1.9662772745365726,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.08068173177259896
+  },
+  {
+    "planet": "XO-3b",
+    "host": "XO-3",
+    "s_without": 1.986470851522103,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.06048815478706859
+  },
+  {
+    "planet": "WASP-186b",
+    "host": "WASP-186",
+    "s_without": 1.9950762385938277,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.05188276771534395
+  },
+  {
+    "planet": "HAT-P-69b",
+    "host": "HAT-P-69",
+    "s_without": 1.9966676320090366,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.05029137430013497
+  },
+  {
+    "planet": "WASP-21b",
+    "host": "WASP-21",
+    "s_without": 2.0242178143983907,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.022741191910780945
+  },
+  {
+    "planet": "HAT-P-6b",
+    "host": "HAT-P-6",
+    "s_without": 2.0257241661104635,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.021234840198708138
+  },
+  {
+    "planet": "HATS-35b",
+    "host": "HATS-35",
+    "s_without": 2.026226375041997,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.020732631267174728
+  },
+  {
+    "planet": "TOI-169b",
+    "host": "TOI-169",
+    "s_without": 2.0597227387359927,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.01276373242682105
+  },
+  {
+    "planet": "GJ1132b",
+    "host": "GJ1132",
+    "s_without": 2.059230749200456,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.012271742891284187
+  },
+  {
+    "planet": "TOI-172b",
+    "host": "TOI-172",
+    "s_without": 2.0583484079502736,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.011389401641102026
+  },
+  {
+    "planet": "GJ1252b",
+    "host": "GJ1252",
+    "s_without": 2.058136379272838,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.01117737296366661
+  },
+  {
+    "planet": "MASCARA-4b",
+    "host": "MASCARA-4",
+    "s_without": 2.0580233732517144,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.011064366942542758
+  },
+  {
+    "planet": "TOI-905b",
+    "host": "TOI-905",
+    "s_without": 2.0579782765397874,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.011019270230615774
+  },
+  {
+    "planet": "KELT-7b",
+    "host": "KELT-7",
+    "s_without": 2.057608984610113,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.010649978300941498
+  },
+  {
+    "planet": "KELT-11b",
+    "host": "KELT-11",
+    "s_without": 2.057491610247757,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.01053260393858535
+  },
+  {
+    "planet": "WASP-10b",
+    "host": "WASP-10",
+    "s_without": 2.0365560163602554,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.010402989948916197
+  },
+  {
+    "planet": "HD86226c",
+    "host": "HD86226",
+    "s_without": 2.057327822918615,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.010368816609443332
+  },
+  {
+    "planet": "HD209458b",
+    "host": "HD209458",
+    "s_without": 2.057112970291569,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.010153963982397318
+  },
+  {
+    "planet": "HATS-64b",
+    "host": "HATS-64",
+    "s_without": 2.0570671199076953,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.010108113598523705
+  },
+  {
+    "planet": "WASP-173Ab",
+    "host": "WASP-173A",
+    "s_without": 2.0569637907728477,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.010004784463676142
+  },
+  {
+    "planet": "WASP-183b",
+    "host": "WASP-183",
+    "s_without": 2.05688733348666,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.009928327177488594
+  },
+  {
+    "planet": "WASP-156b",
+    "host": "WASP-156",
+    "s_without": 2.0370735005949143,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.009885505714257281
+  },
+  {
+    "planet": "piMenc",
+    "host": "piMen",
+    "s_without": 2.0568185068626508,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.009859500553479172
+  },
+  {
+    "planet": "TOI-564b",
+    "host": "TOI-564",
+    "s_without": 2.0566540997043554,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.009695093395183818
+  },
+  {
+    "planet": "WASP-131b",
+    "host": "WASP-131",
+    "s_without": 2.0566448680730507,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.009685861763879089
+  },
+  {
+    "planet": "HATS-34b",
+    "host": "HATS-34",
+    "s_without": 2.037311519087834,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.00964748722133768
+  },
+  {
+    "planet": "TOI-481b",
+    "host": "TOI-481",
+    "s_without": 2.056576269150321,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.009617262841149277
+  },
+  {
+    "planet": "HAT-P-32b",
+    "host": "HAT-P-32",
+    "s_without": 2.056353102453574,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.009394096144402564
+  },
+  {
+    "planet": "K2-29b",
+    "host": "K2-29",
+    "s_without": 2.0561393701769886,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.009180363867816954
+  },
+  {
+    "planet": "TOI-1518b",
+    "host": "TOI-1518",
+    "s_without": 2.056122154419468,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.009163148110296504
+  },
+  {
+    "planet": "TOI-163b",
+    "host": "TOI-163",
+    "s_without": 2.0559419999177586,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.008982993608587009
+  },
+  {
+    "planet": "HAT-P-19b",
+    "host": "HAT-P-19",
+    "s_without": 2.03800383907312,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.008955167236051498
+  },
+  {
+    "planet": "WASP-127b",
+    "host": "WASP-127",
+    "s_without": 2.0558656091878373,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.008906602878665737
+  },
+  {
+    "planet": "HATS-68b",
+    "host": "HATS-68",
+    "s_without": 2.055487118722441,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.00852811241326945
+  },
+  {
+    "planet": "WASP-136b",
+    "host": "WASP-136",
+    "s_without": 2.0552348073109963,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.008275801001824679
+  },
+  {
+    "planet": "HATS-1b",
+    "host": "HATS-1",
+    "s_without": 2.0551318633829543,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.00817285707378268
+  },
+  {
+    "planet": "WASP-99b",
+    "host": "WASP-99",
+    "s_without": 2.055055836500634,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.008096830191462345
+  },
+  {
+    "planet": "HAT-P-59b",
+    "host": "HAT-P-59",
+    "s_without": 2.054845115811683,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.007886109502511562
+  },
+  {
+    "planet": "LHS3844b",
+    "host": "LHS3844",
+    "s_without": 2.039109003553312,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.007850002755859453
+  },
+  {
+    "planet": "WASP-60b",
+    "host": "WASP-60",
+    "s_without": 2.054684384537713,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0077253782285415795
+  },
+  {
+    "planet": "HAT-P-20b",
+    "host": "HAT-P-20",
+    "s_without": 2.0546785633863798,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.007719557077208172
+  },
+  {
+    "planet": "KELT-10b",
+    "host": "KELT-10",
+    "s_without": 2.0393228854648413,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.007636120844330296
+  },
+  {
+    "planet": "WASP-28b",
+    "host": "WASP-28",
+    "s_without": 2.0544633762111353,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.007504369901963681
+  },
+  {
+    "planet": "Qatar-5b",
+    "host": "Qatar-5",
+    "s_without": 2.039591785965826,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.007367220343345693
+  },
+  {
+    "planet": "WASP-123b",
+    "host": "WASP-123",
+    "s_without": 2.054198632035438,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.007239625726266574
+  },
+  {
+    "planet": "WASP-11b",
+    "host": "WASP-11",
+    "s_without": 2.054030808037209,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.007071801728037563
+  },
+  {
+    "planet": "K2-261b",
+    "host": "K2-261",
+    "s_without": 2.054029507181748,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.007070500872576435
+  },
+  {
+    "planet": "HATS-52b",
+    "host": "HATS-52",
+    "s_without": 2.0539025919182863,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0069435856091146775
+  },
+  {
+    "planet": "WASP-167b",
+    "host": "WASP-167",
+    "s_without": 2.05390087392148,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.006941867612308528
+  },
+  {
+    "planet": "TOI-157b",
+    "host": "TOI-157",
+    "s_without": 2.0538278805101684,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0068688742009968
+  },
+  {
+    "planet": "TOI-1296b",
+    "host": "TOI-1296",
+    "s_without": 2.0404791681349352,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.006479838174236363
+  },
+  {
+    "planet": "WASP-192b",
+    "host": "WASP-192",
+    "s_without": 2.0532047535154363,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.006245747206264696
+  },
+  {
+    "planet": "HAT-P-30b",
+    "host": "HAT-P-30",
+    "s_without": 2.0529217449599564,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.005962738650784782
+  },
+  {
+    "planet": "WASP-45b",
+    "host": "WASP-45",
+    "s_without": 2.0528932106960083,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.005934204386836672
+  },
+  {
+    "planet": "WASP-174b",
+    "host": "WASP-174",
+    "s_without": 2.052682912940922,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.005723906631750264
+  },
+  {
+    "planet": "TOI-561c",
+    "host": "TOI-561",
+    "s_without": 2.052675969989588,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.005716963680416409
+  },
+  {
+    "planet": "HATS-27b",
+    "host": "HATS-27",
+    "s_without": 2.0526077938154565,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.005648787506284947
+  },
+  {
+    "planet": "WASP-144b",
+    "host": "WASP-144",
+    "s_without": 2.0525735915309586,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0056145852217870384
+  },
+  {
+    "planet": "HATS-46b",
+    "host": "HATS-46",
+    "s_without": 2.0525140512182087,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.005555044909037132
+  },
+  {
+    "planet": "HATS-33b",
+    "host": "HATS-33",
+    "s_without": 2.0524307913318087,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.005471785022637121
+  },
+  {
+    "planet": "GJ357b",
+    "host": "GJ357",
+    "s_without": 2.052291808347755,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0053328020385832176
+  },
+  {
+    "planet": "WASP-85Ab",
+    "host": "WASP-85A",
+    "s_without": 2.052250201186315,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.005291194877143468
+  },
+  {
+    "planet": "WASP-5b",
+    "host": "WASP-5",
+    "s_without": 2.0521294419294818,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.005170435620310165
+  },
+  {
+    "planet": "WASP-175b",
+    "host": "WASP-175",
+    "s_without": 2.052125707339134,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.005166701029962528
+  },
+  {
+    "planet": "WASP-62b",
+    "host": "WASP-62",
+    "s_without": 2.0520852388555437,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0051262325463721226
+  },
+  {
+    "planet": "HATS-2b",
+    "host": "HATS-2",
+    "s_without": 2.052041317519742,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.005082311210570456
+  },
+  {
+    "planet": "HAT-P-56b",
+    "host": "HAT-P-56",
+    "s_without": 2.0519098866907823,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.004950880381610734
+  },
+  {
+    "planet": "HATS-7b",
+    "host": "HATS-7",
+    "s_without": 2.051862657550304,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.004903651241132234
+  },
+  {
+    "planet": "WASP-190b",
+    "host": "WASP-190",
+    "s_without": 2.051793737564893,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.004834731255721536
+  },
+  {
+    "planet": "WASP-66b",
+    "host": "WASP-66",
+    "s_without": 2.051783463056356,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.004824456747184236
+  },
+  {
+    "planet": "HD2685b",
+    "host": "HD2685",
+    "s_without": 2.051782863258468,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0048238569492964345
+  },
+  {
+    "planet": "WASP-142b",
+    "host": "WASP-142",
+    "s_without": 2.042157770083247,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.004801236225924654
+  },
+  {
+    "planet": "WASP-133b",
+    "host": "WASP-133",
+    "s_without": 2.0516897828222707,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.004730776513099055
+  },
+  {
+    "planet": "HAT-P-54b",
+    "host": "HAT-P-54",
+    "s_without": 2.051531894919006,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.00457288860983418
+  },
+  {
+    "planet": "GJ3470b",
+    "host": "GJ3470",
+    "s_without": 2.051496487657215,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.004537481348043215
+  },
+  {
+    "planet": "TIC257060897b",
+    "host": "TIC257060897",
+    "s_without": 2.05137217017837,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.004413163869198211
+  },
+  {
+    "planet": "HAT-P-16b",
+    "host": "HAT-P-16",
+    "s_without": 2.051353487238667,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.004394480929495348
+  },
+  {
+    "planet": "HAT-P-9b",
+    "host": "HAT-P-9",
+    "s_without": 2.0513301773978507,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.004371171088679127
+  },
+  {
+    "planet": "HAT-P-24b",
+    "host": "HAT-P-24",
+    "s_without": 2.0512268661985384,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.004267859889366843
+  },
+  {
+    "planet": "WASP-132b",
+    "host": "WASP-132",
+    "s_without": 2.0511489512093677,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.004189944900196085
+  },
+  {
+    "planet": "WASP-164b",
+    "host": "WASP-164",
+    "s_without": 2.051127193411517,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.004168187102345566
+  },
+  {
+    "planet": "HAT-P-40b",
+    "host": "HAT-P-40",
+    "s_without": 2.051068482685177,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.00410947637600545
+  },
+  {
+    "planet": "K2-121b",
+    "host": "K2-121",
+    "s_without": 2.051031582214832,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.004072575905660347
+  },
+  {
+    "planet": "WASP-7b",
+    "host": "WASP-7",
+    "s_without": 2.051002721926901,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.004043715617729315
+  },
+  {
+    "planet": "WASP-121b",
+    "host": "WASP-121",
+    "s_without": 2.0509967658880113,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0040377595788396725
+  },
+  {
+    "planet": "WASP-1b",
+    "host": "WASP-1",
+    "s_without": 2.050968409791402,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.004009403482230223
+  },
+  {
+    "planet": "WASP-73b",
+    "host": "WASP-73",
+    "s_without": 2.050963356335474,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0040043500263022835
+  },
+  {
+    "planet": "XO-2Nb",
+    "host": "XO-2N",
+    "s_without": 2.050884206471721,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.00392520016254938
+  },
+  {
+    "planet": "XO-6b",
+    "host": "XO-6",
+    "s_without": 2.0508320966197267,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0038730903105550496
+  },
+  {
+    "planet": "HATS-22b",
+    "host": "HATS-22",
+    "s_without": 2.0506760957210335,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0037170894118618847
+  },
+  {
+    "planet": "WASP-71b",
+    "host": "WASP-71",
+    "s_without": 2.050646213812581,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.00368720750340934
+  },
+  {
+    "planet": "WASP-130b",
+    "host": "WASP-130",
+    "s_without": 2.0506459876869445,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.003686981377772902
+  },
+  {
+    "planet": "WASP-162b",
+    "host": "WASP-162",
+    "s_without": 2.0506458613883827,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.003686855079211071
+  },
+  {
+    "planet": "WASP-180Ab",
+    "host": "WASP-180A",
+    "s_without": 2.0505954139162865,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.003636407607114922
+  },
+  {
+    "planet": "HATS-53b",
+    "host": "HATS-53",
+    "s_without": 2.0505530965757686,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.003594090266596961
+  },
+  {
+    "planet": "WASP-93b",
+    "host": "WASP-93",
+    "s_without": 2.050548766846894,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0035897605377224195
+  },
+  {
+    "planet": "WASP-20b",
+    "host": "WASP-20",
+    "s_without": 2.0505473481584926,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0035883418493209973
+  },
+  {
+    "planet": "WASP-94Ab",
+    "host": "WASP-94A",
+    "s_without": 2.0433899222713436,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.003569084037827963
+  },
+  {
+    "planet": "K2-284b",
+    "host": "K2-284",
+    "s_without": 2.0505165807539245,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.003557574444752909
+  },
+  {
+    "planet": "Qatar-7b",
+    "host": "Qatar-7",
+    "s_without": 2.0504958430967246,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0035368367875530105
+  },
+  {
+    "planet": "TOI-1298b",
+    "host": "TOI-1298",
+    "s_without": 2.0504170872276957,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0034580809185240646
+  },
+  {
+    "planet": "WASP-31b",
+    "host": "WASP-31",
+    "s_without": 2.0503622839583766,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0034032776492050054
+  },
+  {
+    "planet": "HAT-P-38b",
+    "host": "HAT-P-38",
+    "s_without": 2.050327314341862,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0033683080326905035
+  },
+  {
+    "planet": "K2-113b",
+    "host": "K2-113",
+    "s_without": 2.0503270732206724,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.003368066911500822
+  },
+  {
+    "planet": "WASP-119b",
+    "host": "WASP-119",
+    "s_without": 2.043600010465178,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.003358995843993462
+  },
+  {
+    "planet": "KELT-23Ab",
+    "host": "KELT-23A",
+    "s_without": 2.0503096226937507,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0033506163845791193
+  },
+  {
+    "planet": "HATS-13b",
+    "host": "HATS-13",
+    "s_without": 2.050308760751372,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0033497544422003145
+  },
+  {
+    "planet": "WASP-18b",
+    "host": "WASP-18",
+    "s_without": 2.050296173433728,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0033371671245565615
+  },
+  {
+    "planet": "WASP-43b",
+    "host": "WASP-43",
+    "s_without": 2.0502889152334465,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0033299089242748714
+  },
+  {
+    "planet": "HATS-25b",
+    "host": "HATS-25",
+    "s_without": 2.050268264472181,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.003309258163009421
+  },
+  {
+    "planet": "HATS-56b",
+    "host": "HATS-56",
+    "s_without": 2.0502603937406403,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.003301387431468683
+  },
+  {
+    "planet": "HATS-24b",
+    "host": "HATS-24",
+    "s_without": 2.0502286337609177,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.003269627451746082
+  },
+  {
+    "planet": "K2-34b",
+    "host": "K2-34",
+    "s_without": 2.050193339282772,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.003234332973600207
+  },
+  {
+    "planet": "HATS-70b",
+    "host": "HATS-70",
+    "s_without": 2.050191525981124,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.003232519671952261
+  },
+  {
+    "planet": "WASP-41b",
+    "host": "WASP-41",
+    "s_without": 2.0501818215338004,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.00322281522462875
+  },
+  {
+    "planet": "HAT-P-42b",
+    "host": "HAT-P-42",
+    "s_without": 2.0501643187948284,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0032053124856568083
+  },
+  {
+    "planet": "WASP-96b",
+    "host": "WASP-96",
+    "s_without": 2.0501564745901644,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0031974682809927657
+  },
+  {
+    "planet": "HAT-P-15b",
+    "host": "HAT-P-15",
+    "s_without": 2.050061641839019,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.003102635529847575
+  },
+  {
+    "planet": "HATS-30b",
+    "host": "HATS-30",
+    "s_without": 2.05005424933967,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0030952430304984624
+  },
+  {
+    "planet": "WASP-88b",
+    "host": "WASP-88",
+    "s_without": 2.0500531077211517,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.003094101411980077
+  },
+  {
+    "planet": "Qatar-10b",
+    "host": "Qatar-10",
+    "s_without": 2.0438764199888872,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.003082586320284353
+  },
+  {
+    "planet": "KELT-24b",
+    "host": "KELT-24",
+    "s_without": 2.0500208811142566,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0030618748050850186
+  },
+  {
+    "planet": "HAT-P-43b",
+    "host": "HAT-P-43",
+    "s_without": 2.050011284249547,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0030522779403754363
+  },
+  {
+    "planet": "KELT-2Ab",
+    "host": "KELT-2A",
+    "s_without": 2.050009853616708,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.003050847307536575
+  },
+  {
+    "planet": "WASP-106b",
+    "host": "WASP-106",
+    "s_without": 2.0499970264423744,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0030380201332027568
+  },
+  {
+    "planet": "HAT-P-52b",
+    "host": "HAT-P-52",
+    "s_without": 2.049978434350158,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.003019428040986316
+  },
+  {
+    "planet": "K2-238b",
+    "host": "K2-238",
+    "s_without": 2.0499554918730105,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.002996485563838913
+  },
+  {
+    "planet": "WASP-124b",
+    "host": "WASP-124",
+    "s_without": 2.049935780235897,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.00297677392672524
+  },
+  {
+    "planet": "HATS-42b",
+    "host": "HATS-42",
+    "s_without": 2.0499177255691055,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0029587192599338508
+  },
+  {
+    "planet": "HAT-P-39b",
+    "host": "HAT-P-39",
+    "s_without": 2.0499120393546417,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0029530330454701215
+  },
+  {
+    "planet": "WASP-172b",
+    "host": "WASP-172",
+    "s_without": 2.0499065629499778,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.002947556640806148
+  },
+  {
+    "planet": "HATS-48Ab",
+    "host": "HATS-48A",
+    "s_without": 2.04990520892476,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0029462026155884224
+  },
+  {
+    "planet": "HATS-58Ab",
+    "host": "HATS-58A",
+    "s_without": 2.049903043312138,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0029440370029663043
+  },
+  {
+    "planet": "HAT-P-11b",
+    "host": "HAT-P-11",
+    "s_without": 2.049840877427762,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0028818711185905066
+  },
+  {
+    "planet": "WASP-23b",
+    "host": "WASP-23",
+    "s_without": 2.049831954225092,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0028729479159204097
+  },
+  {
+    "planet": "WASP-42b",
+    "host": "WASP-42",
+    "s_without": 2.049825314967563,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0028663086583913255
+  },
+  {
+    "planet": "WASP-97b",
+    "host": "WASP-97",
+    "s_without": 2.049821484694284,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0028624783851123325
+  },
+  {
+    "planet": "K2-232b",
+    "host": "K2-232",
+    "s_without": 2.0497945595884324,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.002835553279260772
+  },
+  {
+    "planet": "HD219666b",
+    "host": "HD219666",
+    "s_without": 2.0441350368774205,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0028239694317511166
+  },
+  {
+    "planet": "K2-295b",
+    "host": "K2-295",
+    "s_without": 2.04977114748841,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0028121411792385587
+  },
+  {
+    "planet": "HAT-P-50b",
+    "host": "HAT-P-50",
+    "s_without": 2.0497520240196474,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.002793017710475798
+  },
+  {
+    "planet": "HD202772Ab",
+    "host": "HD202772A",
+    "s_without": 2.049730864296905,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0027718579877333838
+  },
+  {
+    "planet": "HAT-P-68b",
+    "host": "HAT-P-68",
+    "s_without": 2.049722896219444,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0027638899102724324
+  },
+  {
+    "planet": "EPIC246851721b",
+    "host": "EPIC246851721",
+    "s_without": 2.0496718462616705,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0027128399524989355
+  },
+  {
+    "planet": "HAT-P-33b",
+    "host": "HAT-P-33",
+    "s_without": 2.0496580881215354,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0026990818123637794
+  },
+  {
+    "planet": "HATS-39b",
+    "host": "HATS-39",
+    "s_without": 2.0496577634378457,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0026987571286740675
+  },
+  {
+    "planet": "KELT-14b",
+    "host": "KELT-14",
+    "s_without": 2.0495875233848517,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0026285170756801257
+  },
+  {
+    "planet": "WASP-29b",
+    "host": "WASP-29",
+    "s_without": 2.0495440689933146,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.002585062684143047
+  },
+  {
+    "planet": "WASP-147b",
+    "host": "WASP-147",
+    "s_without": 2.049498000874399,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.002538994565227437
+  },
+  {
+    "planet": "WASP-117b",
+    "host": "WASP-117",
+    "s_without": 2.0494338883161625,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.002474882006990864
+  },
+  {
+    "planet": "WASP-46b",
+    "host": "WASP-46",
+    "s_without": 2.0493771836527555,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0024181773435838494
+  },
+  {
+    "planet": "WASP-48b",
+    "host": "WASP-48",
+    "s_without": 2.0493530380523635,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.00239403174319186
+  },
+  {
+    "planet": "TrES-5b",
+    "host": "TrES-5",
+    "s_without": 2.0492304381694115,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0022714318602399253
+  },
+  {
+    "planet": "Qatar-3b",
+    "host": "Qatar-3",
+    "s_without": 2.0492290518771066,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.002270045567934975
+  },
+  {
+    "planet": "WASP-151b",
+    "host": "WASP-151",
+    "s_without": 2.0492277207574063,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.002268714448234732
+  },
+  {
+    "planet": "K2-260b",
+    "host": "K2-260",
+    "s_without": 2.0492136648652766,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0022546585561049604
+  },
+  {
+    "planet": "XO-5b",
+    "host": "XO-5",
+    "s_without": 2.049180024632886,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.002221018323714574
+  },
+  {
+    "planet": "WASP-34b",
+    "host": "WASP-34",
+    "s_without": 2.049162746404711,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0022037400955392528
+  },
+  {
+    "planet": "WASP-145Ab",
+    "host": "WASP-145A",
+    "s_without": 2.0491094013598277,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.002150395050656062
+  },
+  {
+    "planet": "WASP-75b",
+    "host": "WASP-75",
+    "s_without": 2.049071576279574,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0021125699704023226
+  },
+  {
+    "planet": "TOI-824b",
+    "host": "TOI-824",
+    "s_without": 2.0490504726986685,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0020914663894968655
+  },
+  {
+    "planet": "TOI-1259Ab",
+    "host": "TOI-1259A",
+    "s_without": 2.0449039264968523,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.002055079812319338
+  },
+  {
+    "planet": "WASP-65b",
+    "host": "WASP-65",
+    "s_without": 2.0489783671271447,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0020193608179730482
+  },
+  {
+    "planet": "XO-4b",
+    "host": "XO-4",
+    "s_without": 2.045033562255396,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0019254440537754824
+  },
+  {
+    "planet": "WASP-8b",
+    "host": "WASP-8",
+    "s_without": 2.0488640621037226,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.001905055794551025
+  },
+  {
+    "planet": "HATS-26b",
+    "host": "HATS-26",
+    "s_without": 2.0488527107237045,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0018937044145328485
+  },
+  {
+    "planet": "55Cnce",
+    "host": "55Cnc",
+    "s_without": 2.04874535544022,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0017863491310485813
+  },
+  {
+    "planet": "WASP-36b",
+    "host": "WASP-36",
+    "s_without": 2.0487257682816074,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0017667619724357486
+  },
+  {
+    "planet": "HIP65Ab",
+    "host": "HIP65A",
+    "s_without": 2.045193862443675,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0017651438654966434
+  },
+  {
+    "planet": "WASP-118b",
+    "host": "WASP-118",
+    "s_without": 2.0486857019743603,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0017266956651886822
+  },
+  {
+    "planet": "WASP-158b",
+    "host": "WASP-158",
+    "s_without": 2.048595582217536,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0016365759083645237
+  },
+  {
+    "planet": "HAT-P-51b",
+    "host": "HAT-P-51",
+    "s_without": 2.0485508011060527,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0015917947968810964
+  },
+  {
+    "planet": "HAT-P-35b",
+    "host": "HAT-P-35",
+    "s_without": 2.04854566022795,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0015866539187783246
+  },
+  {
+    "planet": "HAT-P-25b",
+    "host": "HAT-P-25",
+    "s_without": 2.048531555780789,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.001572549471617446
+  },
+  {
+    "planet": "WASP-129b",
+    "host": "WASP-129",
+    "s_without": 2.0485086700465045,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0015496637373328959
+  },
+  {
+    "planet": "WASP-168b",
+    "host": "WASP-168",
+    "s_without": 2.0484845960371043,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.001525589727932708
+  },
+  {
+    "planet": "WASP-181b",
+    "host": "WASP-181",
+    "s_without": 2.0484813502188923,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0015223439097207248
+  },
+  {
+    "planet": "Qatar-4b",
+    "host": "Qatar-4",
+    "s_without": 2.0484760104362847,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0015170041271130863
+  },
+  {
+    "planet": "HATS-31b",
+    "host": "HATS-31",
+    "s_without": 2.045479288493694,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0014797178154775104
+  },
+  {
+    "planet": "HAT-P-62b",
+    "host": "HAT-P-62",
+    "s_without": 2.045556106648144,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.001402899661027579
+  },
+  {
+    "planet": "HAT-P-1b",
+    "host": "HAT-P-1",
+    "s_without": 2.045597568481393,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0013614378277786443
+  },
+  {
+    "planet": "LTT9779b",
+    "host": "LTT9779",
+    "s_without": 2.0457003566660013,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0012586496431703509
+  },
+  {
+    "planet": "HATS-67b",
+    "host": "HATS-67",
+    "s_without": 2.0481723326340857,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0012133263249141102
+  },
+  {
+    "planet": "HAT-P-28b",
+    "host": "HAT-P-28",
+    "s_without": 2.0481647368852105,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0012057305760388992
+  },
+  {
+    "planet": "TOI-150.01",
+    "host": "TOI-150",
+    "s_without": 2.0457708518283964,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0011881544807752498
+  },
+  {
+    "planet": "WASP-91b",
+    "host": "WASP-91",
+    "s_without": 2.048071234761687,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0011122284525155735
+  },
+  {
+    "planet": "KELT-1b",
+    "host": "KELT-1",
+    "s_without": 2.0480324429940815,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0010734366849098897
+  },
+  {
+    "planet": "KELT-15b",
+    "host": "KELT-15",
+    "s_without": 2.0460202759364483,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0009387303727232954
+  },
+  {
+    "planet": "HATS-23b",
+    "host": "HATS-23",
+    "s_without": 2.047782989136729,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0008239828275575789
+  },
+  {
+    "planet": "Qatar-8b",
+    "host": "Qatar-8",
+    "s_without": 2.047684358530611,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0007253522214392127
+  },
+  {
+    "planet": "WASP-170b",
+    "host": "WASP-170",
+    "s_without": 2.046261467524894,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0006975387842778069
+  },
+  {
+    "planet": "WASP-126b",
+    "host": "WASP-126",
+    "s_without": 2.047587870060772,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.000628863751600317
+  },
+  {
+    "planet": "KELT-17b",
+    "host": "KELT-17",
+    "s_without": 2.0463591598989224,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0005998464102492385
+  },
+  {
+    "planet": "WASP-6b",
+    "host": "WASP-6",
+    "s_without": 2.0475272174951122,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0005682111859406369
+  },
+  {
+    "planet": "HAT-P-29b",
+    "host": "HAT-P-29",
+    "s_without": 2.0464089805242978,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0005500257848738421
+  },
+  {
+    "planet": "WASP-166b",
+    "host": "WASP-166",
+    "s_without": 2.0474947200662377,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0005357137570660697
+  },
+  {
+    "planet": "K2-30b",
+    "host": "K2-30",
+    "s_without": 2.047479827590408,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0005208212812362056
+  },
+  {
+    "planet": "WASP-100b",
+    "host": "WASP-100",
+    "s_without": 2.047426273136568,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.0004672668273966174
+  },
+  {
+    "planet": "XO-7b",
+    "host": "XO-7",
+    "s_without": 2.046511925683965,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.00044708062520681935
+  },
+  {
+    "planet": "Kepler-6b",
+    "host": "Kepler-6",
+    "s_without": 2.0473449255992135,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.00038591929004194725
+  },
+  {
+    "planet": "WASP-105b",
+    "host": "WASP-105",
+    "s_without": 2.0466627362875323,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.00029627002163934435
+  },
+  {
+    "planet": "TOI-674b",
+    "host": "TOI-674",
+    "s_without": 2.046775344277038,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 0.00018366203213382448
+  },
+  {
+    "planet": "HAT-P-8b",
+    "host": "HAT-P-8",
+    "s_without": 2.04686770900637,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 9.129730280177384e-05
+  },
+  {
+    "planet": "WASP-165b",
+    "host": "WASP-165",
+    "s_without": 2.047012051022014,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 5.304471284217627e-05
+  },
+  {
+    "planet": "HD110113b",
+    "host": "HD110113",
+    "s_without": 2.0469772934751296,
+    "s_full": 2.0469590063091716,
+    "absolute_change": 1.8287165957975304e-05
+  }
+]

@@ -40,6 +40,9 @@ results/prefreeze/final_path_dev/run/*.csv
 results/prefreeze/final_path_dev/run/*.receipt.json
 !results/freeze/
 !results/final_review/
+!results/revision_stage0/
+!results/information_ledger/
+!results/d071_review/
 !results/final_secondaries/
 !results/final_primary/
 !results/final_extension/
