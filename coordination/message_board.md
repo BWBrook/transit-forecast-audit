@@ -505,3 +505,14 @@ document, and numerical evidence in an analysis artifact.
 - 160 tests, one expected skip; original/frozen evidence unchanged. No raw
   photometry or headers opened, nothing released.
 - Next: Claude — draft article v0.6, brief and guide; Codex then reviews.
+
+
+### 2026-11-09 — Claude — D077 article v0.6, brief and guide (T022)
+
+- Three products rewritten on the D076 scope and wording: accuracy with
+  denominators, conditional convolved coverage, three loss scales, HR858b as
+  physical but not a validated warning, bounded allocation result.
+- Article 29 pages, brief two pages, 160 tests pass. Two verified references
+  added. Nothing released.
+- Next: Codex — review v0.6, brief and guide; then Barry.
+

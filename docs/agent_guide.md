@@ -1,25 +1,21 @@
 # Agent guide: using the transit-forecast-audit work
 
-**D074 revision status (9 November 2026):** Read
-`docs/d074_response_2026-11-09.md` and `docs/t020_development_results.md` first.
-The fixed T017 pairing is amended (347 pairs); controls are adjudicated. The
-S105 sensitivity preserves the qualitative score comparison. The bounded
-triage search chooses no added pad in both eras and their pooled development;
-no competitive candidate is ready for a new-data freeze.
+**Current status (T022, 9 November 2026):** The frozen D065 evaluation is
+complete and **inconclusive** (C043). The external review of v0.5 (GPT-6 Pro,
+`docs/external_review/`) was accepted (D071), and the post-review programme is
+closed (D072–D076). The article (`manuscript/paper.md`, v0.6), the brief
+(`docs/brief.md`) and this guide were rewritten together on the D075/D076
+scope; Codex reviews them, then Barry. Nothing is released.
 
-Historical D072 checkpoint: Read
-`docs/d071_counter_review_2026-11-09.md` and the T017/T018/T019 reports before
-the historical article/brief. The fixed independent-check tranche and repair
-products are complete; seven control-review triggers and external historical
-feature certification remain open. The original primary verdict is unchanged.
-S74–S97 are not authorised: current-roster hosts all had 2026 products attempted,
-and metadata leads for a new cohort are not yet a frozen confirmatory design.
-The exact evaluation environment has been restored; the earlier v0.5 PDFs are
-historical drafts pending the later integrated rewrite. D070 supersedes the old
-mandatory-Zotero workflow: write references from verified registered/source
-metadata, retaining unknowns and Barry's eventual DOI sweep.
+Read in this order: the claims ledger, `docs/final_results_2026-11-08.md`,
+`docs/d076_reconciliation_2026-11-09.md` (the binding wording for accuracy,
+calibration, allocation and HR858b claims), `docs/d075_scope_2026-11-09.md`,
+then the T017/T018/T019/T020 reports. TESS sectors 74–97 have never been opened
+and stay closed. No triage rule is being taken forward, and the old D065 access
+record is not authority for any new block (C060). A descriptive gross-miss-rate
+study on those sectors is an option recorded in D075/D076, not a plan.
 
-**Audience:** a new AI agent (Claude, Codex or another) that must use, extend, review or reproduce this work. **Current status (9 November 2026):** D065's authorised frozen protected evaluation is complete; its primary verdict is **inconclusive**, independently supported by D066. The declared secondaries are implemented with dated post-unblinding conventions. Start with `docs/final_results_2026-11-08.md`, `docs/audits/d065_review_2026-11-09.md`, `docs/final_secondaries_2026-11-09.md` and the claims ledger. The article `manuscript/paper.md` (v0.5) and public brief `docs/brief.md` integrate the held-out result as of 9 November; neither has yet been reviewed by Barry.
+**Audience:** a new AI agent (Claude, Codex or another) that must use, extend, review or reproduce this work. **Current status (9 November 2026):** D065's authorised frozen protected evaluation is complete; its primary verdict is **inconclusive**, independently supported by D066. The declared secondaries are implemented with dated post-unblinding conventions. Start with `docs/final_results_2026-11-08.md`, `docs/audits/d065_review_2026-11-09.md`, `docs/final_secondaries_2026-11-09.md` and the claims ledger. The article `manuscript/paper.md` (v0.6) and public brief `docs/brief.md` integrate the held-out result and the post-review analyses; neither has yet been reviewed by Barry.
 
 Historical development account: `docs/sprint2_review.md`. The original `docs/sprint2_report.md` and original results are historical evidence qualified by that review and the later decisions. Follow the current read order above for the protected result.
 
@@ -184,18 +180,17 @@ C018's reproduce commands are the first two lines of section 5.1 (`--experiment 
 python -m unittest discover -s tests -v                 # AGENTS.md form
 uv run --project ~/work/correspondence correspondence-export docs/correspondence/publication.toml   # refresh the correspondence snapshot on the board host
 GIT_CONFIG_GLOBAL=/dev/null gitleaks protect --staged   # before pushing to this public repository
-MPLCONFIGDIR=/private/tmp/transit-final-review-mpl .venv/bin/python scripts/plot_final_planet_deltas.py   # article Figure 1
+MPLCONFIGDIR=/private/tmp/transit-final-review-mpl .venv/bin/python scripts/plot_final_planet_deltas.py   # article Figure 3
 .venv/bin/python scripts/check_interval_score_contrast.py  # C049, fixed-interval contrast bound
 pandoc docs/brief.md --pdf-engine=xelatex -V papersize:a4 -V geometry:margin=20mm -V fontsize=11pt -V mainfont=texgyrepagella-regular.otf -V mainfontoptions="BoldFont=texgyrepagella-bold.otf,ItalicFont=texgyrepagella-italic.otf,BoldItalicFont=texgyrepagella-bolditalic.otf" -o docs/brief.pdf   # must stay two A4 pages
 ```
 
 ## 6. Historical development guards and current access
 
-The D069 article review PDF is `manuscript/build/paper.pdf` (ignored build
-output). Its exact Pandoc argument list and the two-page brief's build/visual
-checks are in `results/final_review/d069_products_validation.json`. These are
-review drafts, not released artefacts; the introduction still marks two prior-art
-references for completion.
+The article review PDF is `manuscript/build/paper.pdf` (ignored build output),
+built from `manuscript/` with the Pandoc command recorded in
+`results/final_review/d069_products_validation.json`; v0.6 is 29 A4 pages. The
+brief must stay two A4 pages. These are review drafts, not released artefacts.
 
 The two era limits below governed development acquisition. D065 subsequently
 authorised the exact protected package through the shared record/hash guard.
@@ -255,7 +250,11 @@ Keys: `date`, `status`, `development_only`, `protocol_frozen`, `protected_outcom
 - **Host-cluster resampling.** Planets of one host and repeated transits of one planet are dependent. Counts of events, planets and hosts accompany every comparison.
 - **Observed coverage is not latent coverage.** Intervals describe measured mid-times (forecast convolved with outcome error), not the unobserved true time.
 - **Score contrasts are bounded for fixed intervals (C049).** A single interval's miss penalty is unbounded, but its difference from another fixed interval saturates beyond both endpoints. For nested symmetric widening, −19Δw ≤ ΔIS95 ≤ Δw; standardise both sides by the common positive divisor. Do not revive v0.4's unbounded-gain explanation.
-- **HR858b's check is internal (C048).** Its saved coherent sequence supports an ephemeris departure; it is not an independent extraction or proof against every identification error. Bonfanti's correct pre-origin source is arXiv:2411.14911, not the unrelated 2604.15035 link. Absence of a DRD flag follows that release's detection criterion, not a comprehensive literature screen.
+- **HR858b: physical departure on shared photons (C048, C050, C051, C057, C059).** Two independent checkers reproduce all 16 timings; against Bonfanti et al.'s ephemerides b is 374–422 min early, c 541–599 min late (PDCSAP) and d within 13 min. That disfavours a common clock or extraction artefact but is not pixel-level validation or a unique dynamical solution. Its S105 timings carry minute-level model dependence (rescore −0.089, C059). Its release features (inputs end November 2020, 756-day span, standardised RMS 2.198; not "5.5 times its errors") predated issue but are not a validated warning rule (C054, D076). Bonfanti's source is arXiv:2411.14911 / A&A 693, A90. Absence of a DRD flag follows that release's detection criterion.
+- **Accuracy claims carry their denominators (C063, C062).** 150 of 151 accepted planets within 26.4 min (not 26), median 1.11 min event-weighted / 1.31 equal-planet; DRC-era development maxima 30.4 and 36.6 min. These describe accepted timings in selected samples, never a catalogue-wide failure rate.
+- **Coverage is conditional and convolved (C063).** 90.8% planet-balanced (event-weighted 92.0%) under C2 covariance and the supplied measurement likelihoods; it does not isolate the catalogue SD. Precision ratio 2.69 is event-weighted; 1.86 equal-planet (C052).
+- **The allocation result is bounded (C061, C064).** No subset of ⌈10%⌉ planets with pads 15–240 min beats both equal-budget comparators on the saved measured-midpoint data, even with hindsight. It is not a theorem about all warning rules, full-transit capture or other populations; do not retune q, pads or cohort to find a winner. A uniform +3 min pad is a descriptive illustration (94.0% capture, 18,618 window-minutes), not advice.
+- **Two epochs for any new block (C060).** DRD labels cycles; DRC is the scored forecast. The frozen P/4 terminal gate would otherwise turn gross misses into non-identifications.
 
 ## 9. Where every claim's evidence lives
 
@@ -292,6 +291,25 @@ Evidence commits are as recorded in the ledger. Use `git show <commit>:<path>` f
 | C027 | Candidate freeze package, candidate parameters, access receipt | `results/sprint2/freeze_candidate/`, `results/sprint2/forecasts/candidate_parameters_t015v3.json`, `configs/candidate_freeze.json` | candidate, not freeze-ready |
 
 Claims C022-C027 are cited in the sprint-2 report; check that `coordination/claims.md` carries matching rows before relying on them (C028–C030 qualify and supersede the original interpretations).
+
+### Post-review claims (D071–D076)
+
+| Claim | Statement | Evidence | Note |
+|---|---|---|---|
+| C050 | Claude's HR858 checker: 16/16 frozen b timings; b early, c late, d on time | `results/independent_validation/hr858/` | shared photons |
+| C051, C058 | Codex's fixed 35-product tranche; amended pairing 347 pairs | `results/independent_validation/t017/` | first attempt preserved |
+| C057 | Control triggers checker-side; HR858b S105 departures | `results/independent_validation/t017_adjudication/` | |
+| C052 | Three loss scales, coverage curves, precision ratios, population flow | `results/revision_stage0/` | conditional intervals |
+| C053 | Portable benchmark replays both score files exactly | `results/revision_stage0/benchmark_*` | not yet deposited |
+| C054 | Release-input ledger, HR858b features | `results/information_ledger/` | not historical certification |
+| C055 | S74–S97 metadata only; never opened | `results/d071_review/` | |
+| C056 | Synthetic latent/measured/convolved interpretation control | `results/d071_controls/` | no inference |
+| C059 | HR858b S105 rescore sensitivity | `results/d073_s105_rescore/` | |
+| C060 | DRD-identify/DRC-score interface proof | `results/d073_identification/` | not access authority |
+| C061 | Bounded T020 allocation search: no pad selected | `results/t020_development/` | inspected data |
+| C062 | Hindsight ranking and DRC/DRD error descriptives | `results/t020_review/` | corrected by D076 |
+| C063 | Accuracy and conditional calibration wording | `results/d075_review_checks/` | binding for products |
+| C064 | Exact allocation optimum over all permitted subsets | `results/d075_review_checks/` | fixed policy class |
 
 ## 10. Known limitations and open defects
 
@@ -354,14 +372,16 @@ before unblinding, but executable details are dated in
 `docs/secondary_execution_2026-11-09.md`. Sensitivity intervals are conditional
 on scenario fits and cannot replace the primary joint-refit interval.
 
-Remaining scientific limits include accepted-timing selection, reconstructed
-covariance, Gaussian calibration fitting, limited multi-planet recovery and
-conservative rather than exact boundary eligibility. The article (v0.5) and
-brief integrate the current ledger and D069 review corrections. Bonfanti, TESS, SPOC,
-TESS-SPOC, ExoEcho I and heavy-tail prior-art references are bibliography
-entries built from registered DOI metadata (D070); the article has no open
-citation placeholders. Release/submission remains separate from repository
-work and needs Barry's review.
+Post-review outputs (D071–D076) are mapped in Section 9. Remaining scientific
+limits include accepted-timing selection, reconstructed covariance, Gaussian
+calibration fitting, limited multi-planet recovery, shared-photon (not
+pixel-level) independent timing, a single hour-scale failure and conservative
+rather than exact boundary eligibility. The article (v0.6), brief and this guide
+were rewritten together on the D075/D076 scope; all references are built from
+registered DOI metadata (D070), with no open placeholders. Open next steps:
+Codex's review of v0.6, Barry's review, the Zenodo deposit of the benchmark at
+release, and, only if Barry chooses, a separately frozen descriptive study of
+S74–S97. Release/submission needs Barry's review.
 
 ## 13. Suggested first moves for a new agent
 

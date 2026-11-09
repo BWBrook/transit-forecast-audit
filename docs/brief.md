@@ -1,14 +1,14 @@
 # Can we trust predicted exoplanet transit times?
 
-*Research brief · 9 November 2026 · held-out result. Claim IDs refer to the shared claims ledger.*
-
-> **Under scientific revision (9 November 2026).** Independent light-curve checks support HR 858 b's large timing departure and find its neighbour late, with remaining shape/identification limits. The new work distinguishes measured-time scores from observing capture. The first bounded warning-rule development screen selects no added pad. This historical brief and its older PDF will be rewritten after scope reconciliation; start with the D071 counter-review and Stage 0 reports in the repository.
+*Research brief · 9 November 2026 · repository draft v0.6. Claim IDs refer to the shared claims ledger.*
 
 ## The answer
 
-Most accepted transit times lie within the published ranges, but fewer than their nominal coverage implies. We tested ExoClock's predictions for 151 planets against 2,185 later TESS transits. Giving every planet equal weight, the quoted 95% ranges contained 90.8% of measured times. A correction learned from earlier data widened the ranges and increased coverage to 97.6%. It did not clearly improve the overall forecast score: the result is inconclusive, with uncertainty spanning substantial benefit and harm (C043). The result applies to transits we could measure, not to missed transits.
+Mostly, and to within minutes. We tested ExoClock's published predictions for 151 planets against 2,185 transits that NASA's TESS satellite later observed and that we measured ourselves. For 150 of the 151 planets, every measured transit fell within 26.4 minutes of its prediction. The typical difference was about one minute (C063).
 
-The score gains are concentrated. Most planets scored worse after correction; a few gained substantially. HR 858 b's measured transits arrived about six hours early, against a quoted uncertainty scale of 16 minutes. That planet supplies most of the average gain (C046, C048).
+The quoted uncertainty ranges were slightly too narrow. Counting each planet equally, the "95%" ranges contained 90.8% of measured times (C063). A correction learned from an earlier catalogue edition widened the ranges and brought coverage close to 95%. It did not clearly improve the overall forecast score: the result is inconclusive (C043).
+
+One planet, HR 858 b, was six hours early. Its timings are real, and its neighbour in the same system was hours late (C050). Hints of trouble existed before the prediction was issued. One case, however, cannot show that such hints reliably flag failures in advance.
 
 ## Why it matters
 
@@ -16,41 +16,44 @@ A planet crosses its star for only a few hours. Astronomers use predicted transi
 
 ## How we tested it
 
-We treated each catalogue edition as an issued forecast and its uncertainties as a claim about future errors.
+We treated each catalogue edition as an issued forecast, and its uncertainties as a claim about future errors.
 
-- **We locked the primary test first.** Its code, inputs, forecasts and decision rule were fingerprinted before protected TESS data were opened, with human authorisation. Declared secondary analyses were implemented afterwards under dated conventions (C042, D065, D067).
-- **We measured transit times ourselves.** The search used a catalogue period but searched the transit phase without centring on the forecast time. Thousands of artificial transits in real data checked its timing errors, conditional on recovery (C038).
-- **We scored the whole forecast.** The score rewards narrow ranges and heavily penalises misses, with every planet counted equally.
+- **We locked the main test first.** Its code, inputs, forecasts and decision rule were fingerprinted before any TESS data from after the edition's release were opened, with human authorisation (C042, D065).
+- **We measured transit times ourselves.** The search used each planet's catalogue period but did not centre on the predicted time. Thousands of artificial transits checked the timing errors (C038).
+- **We scored the whole forecast.** The score rewards narrow ranges and penalises misses, with every planet counted equally.
 - **We trained the correction only on the past.** It was learned from the previous edition's errors and applied unchanged.
+- **We then invited criticism.** An external AI review of the previous draft prompted further checks. They are reported separately from the locked test and did not change its verdict (D071–D076).
 
 ## What the results show
 
-**Coverage is below nominal in the measured sample.** Nominal 95% ranges contained 90.8% of outcomes, and nominal 68% ranges 61.9%, with planets weighted equally. Earlier development comparisons also under-covered (C043, C018).
+**Predictions are accurate to minutes.** Forecasts from the earlier edition, issued in 2022, also stayed within 37 minutes for all 128 planets we could check, up to four years later (C062). These figures cover the transits we could measure. They are not a guaranteed failure rate for the whole catalogue.
 
-**Wider ranges do not clearly improve the score.** The correction increases mean width about 1.7-fold, rather than multiplying every range by the same factor. The score changes by −0.12 (negative favours the correction), with a 95% interval from −1.84 to +2.20 (C043). Only 40 of 151 planets score better (C046).
+**The ranges are a little too narrow.** The shortfall from 95% to about 91% partly reflects our own measurement uncertainty, which is often larger than the forecast's. We cannot say how much of the shortfall belongs to the catalogue alone (C052, C063).
 
-**A few planets decide the average.** Removing HR 858 in a diagnostic turns the average against the correction; it stays in the primary test (C046). Ten alternative settings give point averages on either side of zero. Their intervals hold fitted parameters fixed and do not replace the primary uncertainty interval (C047).
+**Widening the ranges does not clearly help.** The correction widened the ranges about 1.7-fold. The score change was −0.12, where negative favours the correction, with a 95% interval from −1.84 to +2.20. That interval allows substantial benefit or harm (C043). Only 40 of 151 planets scored better. Most of the average gain came from HR 858 b, and even the corrected forecasts never contained its transits (C046, C052).
 
-**One large miss had a prior warning.** HR 858 b belongs to a system with timing variations published before the catalogue edition. Its coherent measured sequence supports a large departure from the straight-line forecast, but this internal check cannot rule out every measurement or identification error. It had no flag under the catalogue's own detection rule (C048).
+**The one big miss is physical.** Two separate timing programs, sharing no code with the main pipeline, reproduce HR 858 b's six-hour early arrival from the same TESS data (C050, C051). Its sister planet c ran 9–10 hours late, and a third planet, d, was on time. That is the signature of planets tugging on each other. It argues against a clock or software error.
+
+**The warning signs were there, but unproven.** HR 858 b was new to the catalogue edition. Its forecast rested on observations that ended in 2020, which fit the forecast line poorly. Astronomers had published its timing variations a year before the edition appeared (C054). Those are reasonable grounds for scrutiny, but one example does not make a tested warning rule.
+
+**Failures were too rare to target.** We asked whether giving a tenth of planets wider observing windows could capture more transits than spreading the same extra time evenly. In earlier data with no hour-scale misses, no choice of planets did so, even one made with hindsight (C061, C064). So we did not use the untouched TESS data from 2024–2025 to test a warning rule.
 
 ## What it means
 
-Published ranges cover most accepted timings, but large departures matter for scheduling. A wider range costs precision and can reduce the penalty for a miss. Both gains and losses between two fixed ranges are finite; this result does not depend on an unlimited possible score gain (C049).
-
-A targeted rule using known timing variations or neighbouring planets is worth testing. This study has not shown that it beats population-wide correction. The next question is which forecasts we can tell in advance will fail.
+Observers can rely on these predictions to within minutes for planets like those tested. Whether a few minutes matters depends on the observation, so we do not prescribe a fixed safety margin. Rare large failures do happen. The information that might foreshadow them, such as old input data, a poor fit or published timing variations, could usefully be shown alongside each prediction. Whether it actually predicts failure remains to be tested.
 
 ## What we can and cannot say
 
-- **It is one test of one edition.** The result covers one catalogue edition and one season of TESS observations.
-- **The interval is wide in both directions.** Substantial benefit and harm remain possible; the data do not show that the correction makes no difference.
+- **It is one locked test of one edition.** It covers one catalogue edition and one season of TESS observations, with one large failure.
 - **Scoring needs a measured transit.** We measured 70% of predicted opportunities, and 92% of those where TESS was observing at the predicted time (C046). A transit that is far off schedule or poorly observed can go unmeasured.
-- **Multi-planet systems remain hard.** A small exploratory set with several catalogued planets per star was too small to inform (C044).
-- **One measurement run was repeated.** A file-path fault interrupted data products that needed a detailed, non-bell-shaped timing-error description; this does not diagnose physical timing variations. A complete rerun preserved every previously completed window and grid (C045).
+- **The extra checks used the same light.** Independent programs re-analysed the same TESS data; no new telescope observations or pixel-level checks were made.
+- **Multi-planet systems remain hard.** An exploratory set with several catalogued planets per star was too small to inform (C044).
+- **One measurement run was repeated.** A file-path fault was fixed and the run repeated in full. The repeat preserved every previously completed result (C045).
 
 ## The record
 
-The code, compact results, audits and reviewed correspondence are in [the public repository](https://github.com/BWBrook/transit-forecast-audit). Bulk inputs and likelihood grids are kept outside Git with recorded hashes. This brief summarises that living research record.
+The code, compact results, the external review, audits and reviewed correspondence are in [the public repository](https://github.com/BWBrook/transit-forecast-audit). A portable package re-scores every measured transit exactly (C053). Bulk inputs are kept outside Git with recorded hashes.
 
-*Sources: C043–C049 in the shared ledger; Bonfanti et al., doi:10.1051/0004-6361/202451300; NASA TESS/MAST observations.*
+*Sources: ledger claims C042–C064; Bonfanti et al. 2025, doi:10.1051/0004-6361/202451300; NASA TESS observations via MAST.*
 
-*Barry W. Brook leads the research, authorised the opening of the protected data and reviews release versions. Claude Opus 5.5 (Anthropic) and Codex GPT-6.1-sol (OpenAI) designed and ran the analyses and reviewed each other's work. Claude drafted this brief; Codex audited the held-out run and computed the secondary analyses. Code: MIT. Project text: CC BY-SA 4.0.*
+*Barry W. Brook leads the research, authorised the opening of the protected data, commissioned the external review (GPT-6 Pro, OpenAI) and reviews release versions. Claude Opus 5.5 (Anthropic) and Codex GPT-6.1-sol (OpenAI) designed and ran the analyses, each built an independent timing check, and reviewed each other's work. Claude drafted this brief. Code: MIT. Project text: CC BY-SA 4.0.*

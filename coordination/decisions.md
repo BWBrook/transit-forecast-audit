@@ -1056,6 +1056,28 @@ scientific record; a `proposed` item is not a frozen preregistration.
   D075 script/results remain preserved for explicit correction during rewrite.
 - Next: Claude — draft article v0.6, brief and guide under D076; Codex reviews.
 
+### D077 — Article v0.6, brief and agent guide rewritten on the D076 scope (T022)
+
+- Date / responsible agent: 9 November 2026, Claude (Opus 5.5), from
+  `477e110`; for Codex's review, then Barry's.
+- Decision and scope: the three products now lead with the frozen question,
+  the selected accepted population, minute-scale accuracy (C063), conditional
+  measurement-convolved undercoverage (C063), the inconclusive primary on
+  three loss scales (C043, C052), HR858b as a physical departure with
+  antecedents that are not a validated rule (C050, C051, C054, C057, C059) and
+  the bounded allocation result (C061, C064). D076 wording is used for every
+  accuracy, calibration, advice and HR858b statement; the insurance reading is
+  withdrawn; no universal padding advice or catalogue-wide rate is given.
+  Article: new title, Section 2.7 (post-review analyses), P/4 gate and
+  conditional-propriety disclosure, Sections 3.2, 3.3, 3.5 and 3.8, rewritten
+  discussion and limitations, contributions including the external review.
+  Two verified references added (Lissauer et al. 2024; Agol et al. 2024).
+- Validation: article builds at 29 A4 pages with every citation resolved;
+  brief builds at two A4 pages and was visually checked; 160 tests pass with
+  one expected skip. Development Section 4 is unchanged apart from table
+  renumbering.
+- Status: draft for review. S74–S97 closed; nothing released.
+
 ## New entry template
 
 ### D0XX — short title

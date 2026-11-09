@@ -1,46 +1,61 @@
 ---
-title: "How well do published transit ephemerides predict later transits?"
-subtitle: "An availability-aware audit of ExoClock forecasts against independently measured TESS mid-times, with a population calibration trained on an earlier release"
+title: "A frozen test of ExoClock transit forecasts"
+subtitle: "Minute-scale agreement with later TESS timings, conditional undercoverage, an inconclusive population calibration and one hour-scale exception"
 author:
   - "Barry W. Brook"
-date: "Repository draft v0.5, 9 November 2026 (under scientific revision after external review)"
+date: "Repository draft v0.6, 9 November 2026 (rewritten after external review; not yet reviewed by the human lead)"
 bibliography: ../references/references.bib
 link-citations: true
 ---
 
 <!--
-DRAFT STATUS. Repository draft, not a submission. Written to be rebuilt from the living repository: every number carries a claim ID from coordination/claims.md.
-Held-out claims: C043 primary protected evaluation; C044 exploratory extension; C045 independent audit; C046 strata, recovery, influence and TTV labels; C047 sensitivities; C048 descriptive HR858b check; C049 interval-score interpretation. Freeze: C038–C042 (rule, final path, package). Development claims as cited in Section 4.
-Missing citations are written [CITATION NEEDED: ...]. Bibliography entries are written from verified DOI metadata (references/); Barry's DOI sweep precedes release.
+DRAFT STATUS. Repository draft, not a submission. Every number carries a claim ID from coordination/claims.md.
+Frozen held-out claims: C043 primary; C044 extension; C045 independent audit; C046 strata, recovery, influence and TTV labels; C047 sensitivities; C048 HR858b descriptive check; C049 interval-score bounds. Freeze: C038–C042.
+Post-review analyses (D071–D076, labelled post-unblinding): C050–C051, C057–C058 independent timing; C052 loss scales, coverage curves and precision ratios; C053 benchmark; C054 release-input ledger; C059 HR858b S105 sensitivity; C061–C064 accuracy, calibration wording and allocation screen. Development claims as cited in Section 4.
+Bibliography entries are written from verified DOI metadata (references/); Barry's DOI sweep precedes release.
 -->
-
-> **Under revision (D071–D074, 9 November 2026).** An external review prompted further measurement validation, interpretation repairs and an issue-time information audit. HR 858 b remains outside every model's 95% interval despite its score gain. The [counter-review and scope conditions](../docs/d071_counter_review_2026-11-09.md) qualify the [original revision proposal](../docs/review_response_2026-11-09.md). This historical body will be rewritten after reconciliation; the frozen result below is unchanged.
 
 # Abstract
 
-**Question.** ExoClock publishes linear transit ephemerides with timing uncertainties. We ask whether those uncertainties describe later, independently measured TESS transit mid-times, and whether a population calibration learned from the previous release improves the predictive distribution of the next one.
+**Question.** ExoClock publishes linear transit ephemerides with timing uncertainties that observers use to schedule telescope time. We ask how well the issued forecasts and their uncertainties describe later, independently measured TESS transit mid-times. We also ask whether a population calibration learned from the previous release improves the next release's predictive distribution.
 
-**Design.** We froze a hash-bound protocol (75 files and 780 likelihood grids) before opening any TESS photometry from after the DRD release (18 November 2025). It fixed the cohort, the issued DRD forecasts, a forecast-independent outcome rule qualified on injected transits, a calibration fitted only to the earlier release's errors, the scoring and the decision rule (C038–C042). The primary contrast is the planet-balanced change in the standardised 95% interval score between the issued Gaussian forecast (M0) and a tails-only calibrated forecast (M2), with a 95% interval from 2,000 joint host resamples that refit the calibration in each draw.
+**Design.** Before opening any TESS photometry from after the DRD release (18 November 2025), we froze a hash-bound protocol: 75 files and 780 likelihood grids (C038–C042). It fixed the cohort, the issued DRD forecasts, a forecast-blind measurement rule qualified on injected transits, a calibration fitted only to the earlier release's errors, the scoring and the decision rule. The primary contrast is the planet-balanced change in the standardised 95% interval score (IS95) between the issued Gaussian forecast (M0) and a tails-only calibrated forecast (M2). Its 95% interval comes from 2,000 joint host resamples that refit the calibration in each draw. An external review then prompted further analyses (D071–D076). They are labelled as post-unblinding throughout and leave the frozen result unchanged.
 
-**Primary result: inconclusive.** Of 3,103 predicted opportunities on 156 single-catalogue-planet hosts, 2,185 transits of 151 planets were measured and accepted. M2 − M0 is −0.121, 95% interval [−1.84, 2.20] (C043). The interval spans substantial benefit and substantial harm; the data establish neither, and they do not establish equivalence. Independent aggregation reproduces the contrast and stored-draw intervals, with separate bounded checks of scoring and refitting (C045).
+**Primary result: inconclusive.** The core cohort has 3,103 predicted opportunities on 156 single-catalogue-planet hosts. Of these, 2,185 transits of 151 planets were measured and accepted. M2 − M0 is −0.121, with a 95% interval of [−1.84, 2.20] (C043). The interval spans substantial benefit and substantial harm; the data establish neither, and they do not establish equivalence. On two other loss scales the point contrast changes sign or magnitude, and all three intervals span zero (C052).
 
-**What the calibration does.** The issued 95% intervals cover 90.8% of measured outcomes (planet-balanced). M2 raises this to 97.6% while widening the mean 95% interval from 10.5 to 17.5 minutes (C043). Only 40 of 151 planets score better; the median planet difference is +1.05, against the less favourable direction. One planet, HR 858 b, whose transits arrived about 6.3 hours earlier than the issued ephemeris predicted against a quoted 16-minute uncertainty, supplies most of the average gain: holding parameters fixed, removing its host moves the mean from −0.121 to +0.602 (C046). Across ten declared sensitivity settings the point contrast ranges from −0.72 to +0.64 and every conditional interval spans zero (C047). A small exploratory extension to multi-planet and long-period hosts (5 planets) is uninformative (C044).
+**Accuracy.** The forecasts agree with the measured timings to minutes. The median absolute difference is 1.11 minutes (event-weighted; 1.31 with equal planet weight). For 150 of the 151 accepted planets, every accepted timing lay within 26.4 minutes of the issued prediction (C063). Forecasts from the earlier DRC release (public September 2022), scored retrospectively against inspected development timings, stayed within 37 minutes for all 128 accepted planets (C062). These figures describe accepted timings in selected samples, not a catalogue-wide failure rate.
 
-**Interpretation.** Most accepted timings lie within the issued 95% intervals, but observed coverage is below nominal and some departures are tens of quoted standard deviations. The calibration increases coverage and width, with score gains concentrated in a few planets. Neither average score benefit nor harm is established. These conclusions condition on successful timing; they do not assess missed transits or establish an effective targeting policy. Concentrated gains also appeared in development data (Section 4).
+**Calibration.** Under the reconstructed covariance and the supplied measurement likelihoods, M0's nominal 95% intervals covered an average of 90.8% of accepted measured timings per planet (conditional host interval 87.8–93.4%). M2 raised this to 97.6% with intervals 1.67 times wider (C063). This is undercoverage of the measurement-convolved distribution; it does not isolate the catalogue uncertainty alone.
+
+**The exception.** HR 858 b's 16 accepted transits arrived 5.9–6.7 hours early, outside every model's 95% interval. Two further timing implementations reproduce them from the same TESS light curves. In the same data, measured against their published ephemerides, its neighbour planet c runs 9–10 hours late while planet d is on time. That pattern supports transit-timing variations and argues against a shared clock or extraction artefact (C050, C051, C057). HR 858 b first appears in DRD. Its catalogue inputs ended in 2020, scatter about the issued line more than their errors allow, and timing variations had been published before issue (C054). These signs predated the forecast, but one retrospective case cannot validate them as a warning rule.
+
+**Can warnings be targeted?** We tested whether any allocation of wider observing windows to 10% of planets could beat spreading the same minutes evenly. In the inspected development data no permitted allocation, including ones chosen with hindsight, beat both equal-budget comparators (C061, C064). Hour-scale failures were too rare in these samples for a targeting rule to be learned or tested, so we did not open a further data block to test one.
 
 # 1. Introduction
 
-Planning a transit observation requires a predicted mid-time and an honest statement of how wrong it may be. Ephemeris catalogues supply both. A user who schedules telescope time, or a space mission that must point at a window, relies on the quoted uncertainty being a calibrated description of future error. Whether it is has been tested less often than the ephemerides have been refitted.
+Planning a transit observation requires a predicted mid-time and an honest statement of how wrong it may be. Ephemeris catalogues supply both. A user who schedules telescope time, or a space mission that must point at a window, relies on the quoted uncertainty being a calibrated description of future error. That reliance has been tested less often than the ephemerides have been refitted.
 
-**Prior work.** ExoClock IV compares DRB, DRC and DRD predictions with later TESS timings in its Section 5.1 and Table 5, and states that the DRD comparison is optimistic because those timings entered that release [@Kokori2026ExoClockIV]. The release series is documented in @Kokori2022ExoClockI, @Kokori2022ExoClockII and @Kokori2023ExoClockIII. Shan et al. compare an archive of predictions with TESS timings for 262 hot Jupiters and then study 31 discrepant systems [@Shan2023TESSTimings]. Large TESS timing compilations and ephemeris refits supply alternative outcome products [@IvshinaWinn2022; @Mallonn2019; @Edwards2021ORBYTS; @Wang2024PeriodVariation]. Kaye and Aigrain propagate epoch-period covariance into forecasts for Kepler and K2 planets [@KayeAigrain2025], following the pivot argument of @Deeg2015. @Dragomir2020 model how ephemerides degrade with time, and @Lissauer2020Ephemerides document unreliability from timing variations. @Eastman2010 set the time-standard conventions we rely on. Proper scoring rules and the calibration-sharpness framework are standard [@GneitingRaftery2007; @GneitingBalabdaouiRaftery2007]. ExoEcho I's HST timing analysis, with leave-one-out refits and an enlarged error floor for influential points [@Ma2025ExoEchoI], and Student-t transit-timing likelihoods [@JontofHutter2016; @Agol2021TRAPPIST1] are the other closest methods we screened.
+**Prior work.** ExoClock IV compares DRB, DRC and DRD predictions with later TESS timings in its Section 5.1 and Table 5. It notes that the DRD comparison is optimistic, because those timings entered that release [@Kokori2026ExoClockIV]. The release series is documented in @Kokori2022ExoClockI, @Kokori2022ExoClockII and @Kokori2023ExoClockIII.
 
-**What this work adds, and what it does not.** Retrospective validation of old ephemerides against later timings is not new, and neither are covariance propagation, heavy-tailed timing models or proper scores. The contribution is a combination, now executed on a held-out block. It joins five features that we did not find together in the 82 forward citations of ExoClock III and IV returned by OpenAlex (a bounded search; other indexes return different totals): (i) exact issued ephemeris files with documented public-availability times; (ii) probabilistic scoring of measured outcomes with forecast and outcome uncertainty kept distinct; (iii) a proper interval score as the primary comparison; (iv) planet-balanced summaries with host-cluster uncertainty; and (v) a calibration trained before, and applied unchanged to, a later block that the investigators have not inspected (C019, `docs/sprint1_literature_review.md`).
+Shan et al. compare an archive of predictions with TESS timings for 262 hot Jupiters and then study 31 discrepant systems [@Shan2023TESSTimings]. Large TESS timing compilations and ephemeris refits supply alternative outcome products [@IvshinaWinn2022; @Mallonn2019; @Edwards2021ORBYTS; @Wang2024PeriodVariation]. Kaye and Aigrain propagate epoch–period covariance into forecasts for Kepler and K2 planets [@KayeAigrain2025], following the pivot argument of @Deeg2015. @Dragomir2020 model how ephemerides degrade with time.
 
-**Retrospective evaluation as method.** The design follows the logic of Brook et al., who estimated population-viability models on the first half of long ecological time series and scored their predictions on the second half [@Brook2000PVA]. The physical processes differ. The shared principle is that a model's stated uncertainty is a hypothesis about its future errors and should be tested on replicated, later data.
+Formal period uncertainties do not capture transit-timing variations (TTVs). @Lissauer2020Ephemerides and @Lissauer2024KeplerPeriods document this for Kepler, and @Agol2024TRAPPIST1Forecast report a TRAPPIST-1 forecast that drifted by tens of minutes. @Eastman2010 set the time-standard conventions we rely on. Proper scoring rules and the calibration–sharpness framework are standard [@GneitingRaftery2007; @GneitingBalabdaouiRaftery2007]. The closest methods we screened were ExoEcho I's HST timing analysis, with leave-one-out refits and an enlarged error floor for influential points [@Ma2025ExoEchoI], and Student-t transit-timing likelihoods [@JontofHutter2016; @Agol2021TRAPPIST1].
 
-**Central question.** For the DRC and DRD releases, do the issued uncertainties support their intended interpretation for later independent TESS mid-times, and does a calibration learned from the earlier release improve the predictive distribution? The prespecified primary contrast is the planet-balanced change in the standardised 95% interval score between the issued Gaussian forecast and the tails-only calibrated forecast (M2 minus M0).
+**What this work adds.** Retrospective validation of old ephemerides against later timings is not new, nor are covariance propagation, heavy-tailed timing models or proper scores. The contribution is a combination, executed on a held-out block. It joins five features that we did not find together in the 82 forward citations of ExoClock III and IV returned by OpenAlex (a bounded search; other indexes return different totals) (C019, `docs/sprint1_literature_review.md`):
 
-**Scope of evidence.** The article is a snapshot of a living repository. Section 3 reports the held-out evaluation: TESS outcomes after 2025-11-18, first opened after the protocol was frozen and authorised (D065), scored once by the frozen code. Section 4 reports the development evidence that shaped the protocol: TESS outcomes dated 2022-01-01 to 2024-01-03, all inspected during design, none of which can serve as untouched validation (D014). Secondary analyses of the held-out block that were declared before unblinding but implemented after it are labelled as such (D067).
+1. exact issued ephemeris files with documented public-availability times;
+2. probabilistic scoring of measured outcomes, keeping forecast and outcome uncertainty distinct;
+3. a proper interval score as the primary comparison;
+4. planet-balanced summaries with host-cluster uncertainty;
+5. a calibration trained before, and applied unchanged to, a later block that the investigators had not inspected.
+
+To these the post-review work adds independent timing checks of the influential cases, a portable scoring benchmark and a test of whether hindsight-free warnings could target the failures.
+
+**Retrospective evaluation as method.** The design follows the logic of Brook et al. They estimated population-viability models on the first half of long ecological time series and scored the predictions on the second half [@Brook2000PVA]. The physical processes differ, but the principle is shared: a model's stated uncertainty is a hypothesis about its future errors and should be tested on replicated, later data.
+
+**Questions.** (i) Did the issued DRD forecasts and their uncertainties describe later, independently measured TESS mid-times? (ii) Did a calibration learned from the earlier release improve the predictive distribution? The prespecified primary contrast for (ii) is the planet-balanced change in standardised IS95 from M0 to M2. (iii) After review, we added a further question: could the rare large failures have been targeted in advance?
+
+**Scope of evidence.** The article is a snapshot of a living repository. Section 3 reports the held-out evaluation. It used TESS outcomes after 2025-11-18, first opened after the protocol was frozen and authorised (D065) and scored once by the frozen code. It also reports the post-review analyses of that block, each labelled as such. Section 4 reports the development evidence that shaped the protocol: TESS outcomes from 2022-01-01 to 2024-01-03, all inspected during design, none of which can serve as untouched validation (D014). TESS sectors 74–97 (January 2024 to November 2025) have never been opened by this project and remain closed (C055).
 
 # 2. Methods
 
@@ -88,7 +103,7 @@ The latent forecast error is convolved with the independent measurement error of
 
 **Interval score.** The 95% interval score is $\mathrm{IS}(l,u;x)=(u-l)+(2/\alpha)(l-x)_+ +(2/\alpha)(x-u)_+$ with α = 0.05, where [l, u] is the central 95% interval of the predictive distribution and x the measured mid-time [@GneitingRaftery2007]. Smaller is better. It penalises width and misses together.
 
-**Standardised IS95 (primary).** Each event's IS95 is divided by the **M0 predictive SD at that event, outcome error included**, the same divisor for every method. This reduces differences in loss scale across planets; it does not prevent a few large standardised misses from dominating the average. Because the outcome-error term is measured after the forecast is issued and depends on the photometry, this is a conditional weighted loss and not an unconditionally proper issue-time score (D042). We report alongside it the raw score in minutes, the score divided by the forecast-only SD, the negative log score, 68.27% and 95% coverage, mean 95% width, the fraction of planets that improve, and the declared leave-k-gain-hosts-out curve for k = 0–5.
+**Standardised IS95 (primary).** Each event's IS95 is divided by the **M0 predictive SD at that event, outcome error included**, the same divisor for every method. This reduces differences in loss scale across planets; it does not prevent a few large standardised misses from dominating the average. The outcome-error term is estimated from the photometry after the forecast is issued. The score is therefore a conditional weighted loss (D042). It remains proper conditionally if the measurement descriptor is ancillary, the observation model is correct and acceptance is ignorable; none of these is established here, so we report its sign on two other normalisations as well (C052). We report alongside it the raw score in minutes, the score divided by the forecast-only SD, the negative log score, 68.27% and 95% coverage, mean 95% width, the fraction of planets that improve, and the declared leave-k-gain-hosts-out curve for k = 0–5.
 
 **Weighting.** Each planet has weight one. Events within a planet are weighted equally. Each comparison uses one forecast origin.
 
@@ -110,7 +125,7 @@ The final evaluation scores forecasts against mid-times we measure from TESS pho
 
 **Outcome-error convention and Tmag multiplier.** `t015v3c` multiplies σ, its quantiles and any likelihood grid by g(Tmag) = √max(0.8857 − 0.0919(T − 11), 0.25), with T clamped to [8, 13.5]. g is 1.034 at Tmag 9 and 0.810 at Tmag 13.5. The coefficients are an equal-host least-squares fit of host mean z² on Tmag − 11 using all 45 development hosts, so the multiplier is fitted in-sample. A split-half check overshot (slope −0.18 from 22 hosts), so the slope is uncertain. `t015v3` without the multiplier is analysed in full as a prespecified secondary rule and cannot replace a failed `t015v3c` after the fact (C022).
 
-**Final outcome rule (`t015v3a`).** Review of the development work (Section 4.6) left the frozen `t015v3` timing core intact but showed that its acceptance needed one explicit, fail-closed contract. The held-out rule therefore accepts a timing only if the product is SPOC 120-s PDCSAP (no FFI fallback), identification succeeded, the product's shape fit has finite reduced χ² ≤ 100, no integration warning is raised, the timing is finite, and either the Gaussian summary agrees with the exact 2.5% and 97.5% posterior quantiles or the likelihood grid passes the scoring adapter's support check (`scripts/acceptance.py`; D061). Replaying the frozen SPOC confirmation and replication injections through this rule, with grids exported and checked, reproduces every saved timing exactly and passes all eight injection criteria in both samples: 104 hosts and 1,477 injections, 95% coverage interval [0.934, 0.959]; and 100 hosts and 1,361 injections, [0.938, 0.961] (C038). This is conditional calibration on successful identification, not a recovery guarantee.
+**Final outcome rule (`t015v3a`).** Review of the development work (Section 4.6) left the frozen `t015v3` timing core intact but showed that its acceptance needed one explicit, fail-closed contract. The held-out rule therefore accepts a timing only if the product is SPOC 120-s PDCSAP (no FFI fallback), identification succeeded, the product's shape fit has finite reduced χ² ≤ 100, no integration warning is raised, the timing is finite, and either the Gaussian summary agrees with the exact 2.5% and 97.5% posterior quantiles or the likelihood grid passes the scoring adapter's support check (`scripts/acceptance.py`; D061). Replaying the frozen SPOC confirmation and replication injections through this rule, with grids exported and checked, reproduces every saved timing exactly and passes all eight injection criteria in both samples: 104 hosts and 1,477 injections, 95% coverage interval [0.934, 0.959]; and 100 hosts and 1,361 injections, [0.938, 0.961] (C038). This is conditional calibration on successful identification, not a recovery guarantee. Recovered windows are mapped to issued DRD cycles, and an accepted timing more than a quarter period from its prediction becomes `cycle_ambiguous` rather than a scored miss (`scripts/acceptance.py`). Gross misses beyond P/4 therefore cannot enter the score; HR 858 b's six-hour departure is well inside its 21.5-hour quarter period.
 
 **Injection calibration and the attempt ledger.** To calibrate the posterior timing error without photometry from the protected era, we inject synthetic transit trains into real development-era light curves and rerun identification, shape fit and timing. The real transits are removed (primary) or subtracted (control) from the host. One row per intended injected truth is written before any fit, so recovery has an explicit denominator. Recovered windows are assigned to truths one-to-one (Hungarian assignment, 60-min gate, equal to the prior half-width). Every attempt receives a terminal status: timed, excluded_coverage, product_id_failed, run_id_failed, edge or not_recovered. Injected phases are 0.27 and 0.73 (± U(0.02)), with per-transit offsets U(±2 min).
 
@@ -167,11 +182,26 @@ Release transfer and the chronological split are the primary development compari
 
 **Secondaries.** The configuration declared strata, sensitivities and diagnostics by name before unblinding but not their executable detail. Their implementation conventions were fixed in a dated document before any variant was computed and are reported as post-unblinding implementations (D067). They do not alter the primary decision.
 
+
+## 2.7 Analyses added after external review
+
+An external review of draft v0.5 (GPT-6 Pro, commissioned by the human lead; `docs/external_review/`) found the frozen result correctly reported but its interpretation under-qualified. Its ten findings were accepted (D071). The responses below were each designed and committed before execution, used saved held-out outputs or inspected development data, and opened no photometry outside already-cached products (D072–D076).
+
+- **Independent timing.** Two implementations that share no code with the frozen pipeline re-time HR 858 b and its companions (C050), and a fixed 35-product sample of influential, calibration and control cases (C051). Their discrepancy triggers were adjudicated before any interpretation (C057, C058).
+- **Interpretation diagnostics.** IS95 on three normalisations, coverage at six nominal levels, precision ratios with their weighting, and population flow including zero-accepted planets (C052).
+- **Sensitivity.** A bounded rescore of the three HR 858 b sector-105 events where the independent timings departed from the frozen ones (C059).
+- **Release-input ledger.** Features computable from each release's own files at issue, such as input age, baseline and scatter about the issued line (C054).
+- **Allocation screen.** Whether release-file features could target wider observing windows, on DRC forecasts and inspected development timings, with DRD used only to label transit cycles (C060, C061), and its exact optimum (C064).
+
+These are post-unblinding analyses. They do not alter the frozen decision.
+
 # 3. Held-out evaluation
+
+Sections 3.1, 3.4, 3.6, 3.7 and 3.9 report the frozen evaluation and its declared secondaries. Sections 3.2, 3.3, 3.5 and 3.8 report analyses added after external review (D071–D076). Those used the saved held-out outputs and inspected development data; they opened no new photometry except already-cached held-out light curves for independent timing checks (C050, C051).
 
 ## 3.1 Primary result
 
-The frozen evaluation assigns all 3,103 primary events a terminal status (Table 1). It accepts 2,185 timings of 151 planets on 151 hosts, of which 399 are scored from non-Gaussian likelihood grids. Its scorer reproduces the independent adapter to 2.2e-12 and its refit reproduces the frozen parameters exactly (C043).
+The frozen evaluation assigns all 3,103 primary events a terminal status (Table 1). It accepts 2,185 timings of 151 planets on 151 hosts, of which 399 are scored from non-Gaussian likelihood grids. Its scorer reproduces the independent adapter to 2.2e-12, and its refit reproduces the frozen parameters exactly (C043). Five intended planets have no accepted timing (C046).
 
 **Table 1. Terminal status of the primary opportunities (C043).**
 
@@ -185,9 +215,17 @@ The frozen evaluation assigns all 3,103 primary events a terminal status (Table 
 | Product identification failed | 39 |
 | Likelihood support unresolved | 12 |
 
-**The planet-balanced standardised IS95 contrast, M2 − M0, is −0.121 with a 95% joint-refit interval of [−1.84, 2.20]. By the pre-registered rule the result is inconclusive** (C043). The conditional fixed-parameter interval is [−1.98, 1.12]. The joint interval spans substantial benefit and substantial harm, establishing neither and not equivalence (D066). Independent aggregation reproduces the point contrast and both stored-draw intervals, and regenerates every seeded host multiplicity. Separate checks cover all Gaussian M0 events in closed form, six selected events per run through independent convolution/roots, and one complete refit/rescore draw per run; a dense-covariance likelihood independently checks selected M2 fits. These bounded checks are not a second full 2,000-refit execution (C045).
+**The planet-balanced standardised IS95 contrast, M2 − M0, is −0.121 with a 95% joint-refit interval of [−1.84, 2.20]. By the pre-registered rule the result is inconclusive** (C043). The interval spans substantial benefit and substantial harm; it establishes neither, and it does not establish equivalence (D066).
 
-**Table 2. Held-out scores, primary set (C043).** Planet-balanced over 151 planets; smaller IS95 is better.
+Independent aggregation reproduces the point contrast and both stored-draw intervals, and regenerates every seeded host multiplicity (C045). Separate bounded checks cover:
+- all Gaussian M0 events, in closed form;
+- six selected events per run, through independent convolution and root-finding;
+- one complete refit-and-rescore draw per run;
+- selected M2 fits, through a dense-covariance likelihood.
+
+These checks are not a second full 2,000-refit execution. A portable package of 499 hash-bound files, including 463 timing grids, replays both saved score files exactly (C053).
+
+**Table 2. Held-out scores, primary set (C043, C063).** Planet-balanced over 151 planets; smaller IS95 is better. Coverage is of accepted measured timings under the measurement-convolved predictive distribution.
 
 | Method | Standardised IS95 | IS95 (min) | 68% coverage | 95% coverage | Mean 95% width (min) |
 |---|---:|---:|---:|---:|---:|
@@ -196,33 +234,90 @@ The frozen evaluation assigns all 3,103 primary events a terminal status (Table 
 | M2, tails only | 11.21 | 97.8 | 0.679 | 0.976 | 17.5 |
 | M3, both | 11.26 | 97.6 | 0.692 | 0.977 | 17.8 |
 
-As in development, the issued intervals under-cover: 90.8% of planet-balanced outcomes fall inside the nominal 95% interval and 61.9% inside the nominal 68% interval. M2 brings both close to nominal by widening the intervals about 1.7-fold. The single-scale M1, whose factor of 9.35 was learned from DRC's errors, overcovers badly and scores worst on the primary standardised score. Raw minute scores rank the methods differently (Table 2); these point comparisons do not replace the primary inference. These coverage and width changes are point descriptions of the accepted timings, not separate tests.
+The single-scale M1, whose factor of 9.35 was learned from DRC's errors, overcovers badly and scores worst on the primary scale.
 
-## 3.2 Where the average comes from
+**The verdict does not depend on the loss scale, but the point estimate does.** Table 3 compares three normalisations of the same IS95 contrast (C052). Dividing by the forecast-only SD instead of the M0 predictive SD reverses the sign of the point contrast. In raw minutes M2 has the lower mean. Omitting HR 858 b moves all three point contrasts towards M0. That omission is an influence diagnostic chosen after seeing the outcomes, not an analysis.
 
-The planet differences are strongly asymmetric (Figure 1). Under M2, 111 of 151 planets score worse, each by a bounded amount: no planet loses more than 6 standardised units, the cost of a wider interval. The 40 planets that score better include four whose issued forecasts missed badly: HR 858 b (−109), TOI-905 b (−48), WASP-184 b (−14) and TOI-559 b (−12). The median planet difference is +1.05 (C046).
+**Table 3. M2 − M0 on three loss scales, primary set (C052).** Conditional fixed-parameter host intervals (B = 10,000). Only the first row's joint-refit interval in Section 3.1 is the decision.
+
+| Normalisation | M2 − M0 | Conditional 95% interval | Without HR 858 b |
+|---|---:|---|---:|
+| M0 predictive SD (primary) | −0.121 | [−1.98, 1.12] | +0.602 |
+| Forecast-only SD | +0.082 | [−2.07, 1.67] | +0.834 |
+| Raw minutes | −8.46 | [−34.2, 5.68] | +3.65 |
+
+![M2 − M0 on three loss scales with conditional 95% host intervals, for all planets and without HR 858 b (post-unblinding diagnostic, C052).](../results/revision_stage0/interpretability/loss_scales.png)
+
+## 3.2 Accuracy of the issued forecasts
+
+In the frozen core, the 2,185 accepted timings on 151 planets have a median absolute difference from the DRD prediction of 1.11 minutes, pooling events (1.31 minutes with equal weight per planet). For 150 of the 151 planets, every accepted timing lies within 26.4 minutes of the prediction. HR 858 b is the only accepted planet with errors exceeding both 60 minutes and three forecast SDs. That holds for all 16 of its accepted events, with a maximum of 404 minutes (C063, C062).
+
+The earlier DRC release tells the same story over a longer horizon. Its forecasts were public on 27 September 2022. We scored them retrospectively against the inspected development timings of the current-roster hosts, with DRD used only to label transit cycles (C060, C061):
+
+| Slice | Accepted planets / timings | Median absolute error | Maximum |
+|---|---|---:|---:|
+| S56–S73 (2022–2023) | 92 / 1,078 | 0.97 min | 30.4 min |
+| 2026 sectors | 128 / 1,974 | 1.20 min | 36.6 min |
+
+Medians are event-weighted. Every accepted planet stayed within 37 minutes in both slices, and none had an error over 60 minutes (C062). HR 858 b is not in DRC under that name.
+
+These are observations of accepted timings in selected samples. Recovery, catalogue-period identification, matching within a quarter period, shape and numerical-support requirements all shape the accepted set (Section 2.4). Five core planets have no accepted timing, and no error can be assigned to unrecovered events. The figures are therefore not a catalogue-wide failure probability.
+
+## 3.3 Calibration
+
+Under the reconstructed C2 covariance and the supplied measurement likelihoods, M0's nominal 95% intervals covered an average of 90.8% of accepted measured timings per planet. The conditional host interval was [87.8%, 93.4%]; event-weighted coverage was 92.0%. M2 increased planet-balanced coverage to 97.6%, with mean interval width 1.67 times larger (C063). The undercoverage under M0 holds across nominal levels from 50% to 99% (Figure 2).
+
+![Left: planet-balanced coverage of accepted measured timings against nominal central-interval probability, for M0 and M2, with conditional host intervals. Right: the M2 tail parameter s across the 2,000 stored joint refits, which describes parameter uncertainty, not a forecast mixture (post-unblinding diagnostic, C052).](../results/revision_stage0/interpretability/coverage_and_s.png)
+
+This is undercoverage of the reconstructed, measurement-convolved predictive distribution. It does not by itself show that the catalogue SD alone is too small, recover an issued covariance or establish calibration of the latent true mid-time. The measurement likelihood, shape treatment, selection and visit dependence all enter it.
+
+Measurement uncertainty is large relative to the forecast uncertainty. The reported timing SD divided by the forecast SD has a median of 2.69 over events and 1.86 with equal planet weight (C052). That is consistent with measurement noise contributing substantially to misses of these narrow windows, but it does not identify which misses it caused.
+
+## 3.4 Where the average comes from
+
+The planet differences are strongly asymmetric (Figure 3). Under M2, 111 of 151 planets score worse, each by a bounded amount: no planet loses more than 6 standardised units, the cost of a wider interval. The 40 planets that score better include four whose issued forecasts missed badly: HR 858 b (−109), TOI-905 b (−48), WASP-184 b (−14) and TOI-559 b (−12). The median planet difference is +1.05 (C046).
 
 ![Planet-mean M2 − M0 standardised IS95 differences in the held-out primary set, sorted, on a symmetric-log axis. Score gains are concentrated in a few planets; both gains and losses between fixed intervals are bounded (C049). Triangles mark planets carrying a current NASA Exoplanet Archive TTV flag. Descriptive (C046).](../results/final_review/figures/planet_deltas.png)
 
-HR 858 b alone contributes −0.720 to the mean of −0.121. Its 16 accepted transits in sectors 105-107 arrived 5.9 to 6.7 hours before the DRD prediction, against a forecast SD of 16 minutes. They form a coherent sequence with a local period of 3.58395 d against the issued 3.585266 d, scatter of 4.3 minutes about a line, and shape fits with reduced χ² of 1.2-2.7. HR 858 (TOI-396) had published transit-timing variations before DRD [@Bonfanti2025TOI396, public preprint arXiv:2411.14911, November 2024]. The planet has a current NASA archive TTV flag but no DRD flag. DRD's flag follows its own detection criterion, not a comprehensive known-literature list. The coherent timings support a substantial ephemeris departure; this internal check neither independently validates transit identification nor excludes every measurement artefact or establishes its physical cause. HR858b and its host are absent from the actual frozen calibration training set (C048).
+HR 858 b alone contributes −0.720 to the mean of −0.121. The declared leave-k-gain-hosts-out diagnostic holds the frozen parameters fixed and removes whole hosts in order of their contribution to the mean gain (Figure 4). Removing HR 858 moves the mean to +0.602; removing the five largest-gain hosts moves it to +1.165 (C046). No host was removed from the primary analysis, and this curve provides no new decision.
 
-The declared leave-k-gain-hosts-out diagnostic holds the frozen parameters fixed and removes whole hosts in order of their contribution to the mean gain (Figure 2). Removing HR 858 moves the mean to +0.602; removing the five largest-gain hosts moves it to +1.165 (C046). No host was removed from the primary analysis, and this curve provides no new decision.
+The gain on HR 858 b is a smaller penalty for a miss, not a captured transit. All 16 of its events lie outside the 95% interval of every model (C052). A larger penalty reduction for a continuing miss is what the interval score rewards, and it should not be read as M2 protecting observers against such failures.
 
 ![Left: the frozen primary contrast with its joint-refit (decision) and fixed-parameter (conditional) 95% intervals. Right: the declared descriptive influence diagnostic, removing the largest-gain hosts with parameters fixed (C043, C046).](../results/final_review/figures/primary_and_influence.png)
 
-**Catalogue TTV labels.** Matching all 184 frozen targets to the current NASA Exoplanet Archive default parameter rows, retrieved without reference to scores, flags eight. Three are in the accepted primary set: HR 858 b, WASP-18 b and WASP-43 b. Their mean M2 − M0 is −36.7, almost entirely HR 858 b's; the 148 unflagged planets average +0.619 (C046). An unflagged row does not establish the absence of timing variations, and the catalogue does not date when variations became known. The label is a dated diagnostic and never changes the origin-defined cohort.
+**Catalogue TTV labels.** We matched all 184 frozen targets to the current NASA Exoplanet Archive default parameter rows, retrieved without reference to scores. Eight are flagged. Three are in the accepted primary set: HR 858 b, WASP-18 b and WASP-43 b. Their mean M2 − M0 is −36.7, almost entirely HR 858 b's; the 148 unflagged planets average +0.619 (C046). An unflagged row does not establish the absence of timing variations, and the catalogue does not date when variations became known. The label is a dated diagnostic and never changes the cohort, which is defined at the forecast origin.
 
-## 3.3 Recovery and strata
+## 3.5 HR 858 b: a physical timing departure with visible antecedents
 
-The frozen pipeline timed and accepted 70.4% of the 3,103 intended opportunities (2,185), and 92.1% of the 2,369 opportunities whose predicted time had qualifying cadence coverage (2,181; four accepted timings had unqualified prediction coverage and remain scored, since prediction coverage is a recovery diagnostic, not an acceptance gate). Five intended primary planets have no accepted timing (C046). These rates describe recovery of predicted opportunities; they do not establish whether a transit displaced far from its prediction was missed.
+**The timings.** HR 858 b's 16 accepted transits in sectors 105–107 arrived 5.9 to 6.7 hours before the DRD prediction, against a forecast SD of 16 minutes (C048). They form a coherent sequence with local period 3.58395 d, against the issued 3.585266 d.
+
+**Two independent checks.** Two further timing implementations reproduce these timings from the same SPOC light curves; neither shares code with the frozen pipeline or uses the predicted epoch to find the transits.
+- *Claude's checker* runs a phase-blind box search and a batman shape fit. It matches all 16 frozen timings, with median absolute difference 0.53 minutes on PDCSAP flux and 0.78 minutes on SAP flux (C050).
+- *Codex's checker* uses an empirical trapezoid with profiled baseline. It matches all 16 with median absolute difference 2.2 minutes on PDCSAP (C051).
+
+**The sector-105 caveat.** In sector 105, the noisiest sector, four independent route/flux timings depart from three frozen timings in a consistent direction by 4–22 minutes (C057). Shifting those three likelihoods to the checkers' median and doubling their widths changes the primary contrast from −0.121 to −0.089 (fixed-parameter conditional interval [−1.88, 1.12]). Every HR 858 b event remains outside every model's 95% interval (C059).
+
+**The system's other planets.** The same light curves also contain planets c and d. Against the published ephemerides of @Bonfanti2025TOI396, b runs 374–422 minutes early and c runs 541–599 minutes late, while d is within 13 minutes (PDCSAP; C050; Figure 5). Opposite drifts of b and c, with d on time, are the pattern expected from mutual perturbations near their 5:3 period commensurability. They argue against a common clock offset or a simple extraction artefact.
+
+These checks share photons. Without pixel-level or centroid validation, they do not exclude every blend or identity error, and they do not establish a unique dynamical solution.
+
+![HR 858 observed minus calculated transit times in TESS sectors 105–107 for planets b, c and d against the published ephemerides of Bonfanti et al. (2025), from the independent checker, with the frozen b timings overlaid. Post-unblinding check on the same photons (C050).](../results/independent_validation/hr858/oc.png)
+
+**What was known at issue.** HR 858 b appears in DRD but not, under that name, in DRB or DRC. Its 16 released catalogue timings are all from space and end in November 2020. They span 756 days and scatter about the issued line with standardised RMS 2.20 (χ²/(N−2) = 5.52) (C054). @Bonfanti2025TOI396 reported significant TTVs for b and c, with simulated amplitudes up to about five hours, in a preprint posted a year before DRD (arXiv:2411.14911, November 2024). DRD's own TTV flag follows its detection criterion and was not raised.
+
+This information predated the forecast and could have prompted scrutiny. One retrospective case does not show that it would have predicted this miss prospectively, or that every recent, old, sparse or TTV-labelled ephemeris will fail.
+
+## 3.6 Recovery and strata
+
+The frozen pipeline timed and accepted 70.4% of the 3,103 intended opportunities (2,185). It accepted 92.1% of the 2,369 opportunities whose predicted time had qualifying cadence coverage (2,181). Four further accepted timings had unqualified prediction coverage and remain scored, since prediction coverage is a recovery diagnostic, not an acceptance gate (C046). These rates describe recovery of predicted opportunities. They do not show whether a transit displaced far from its prediction was missed.
 
 All accepted events fall in the first lead-time year, all carry the C2 covariance tier, and all are SPOC 120-s products, so those declared strata provide no contrast. Brightness strata are reported with all metrics and empty cells in `results/final_secondaries/descriptive/scores_by_stratum.csv` (C046).
 
-## 3.4 Sensitivities
+## 3.7 Sensitivities
 
-Each declared sensitivity was refitted on development data where it changes the calibration and rescored on the held-out set (Table 3). Intervals hold each scenario's fitted parameters fixed (B = 10,000) and are not decision intervals (C047, D067).
+Each declared sensitivity was refitted on development data where it changes the calibration, and rescored on the held-out set (Table 4). Intervals hold each scenario's fitted parameters fixed (B = 10,000) and are not decision intervals (C047, D067).
 
-**Table 3. Declared sensitivities, primary set (C047).** M2 − M0 planet-balanced standardised IS95 with conditional 95% host interval, and raw IS95 difference.
+**Table 4. Declared sensitivities, primary set (C047).** M2 − M0 planet-balanced standardised IS95 with conditional 95% host interval, and raw IS95 difference.
 
 | Setting | Accepted events / planets | M2 − M0 | Conditional 95% interval | Raw difference (min) |
 |---|---:|---:|---|---:|
@@ -238,11 +333,28 @@ Each declared sensitivity was refitted on development data where it changes the 
 | Majority-of-windows product gate | 2,147 / 151 | −0.104 | [−1.98, 1.15] | −8.51 |
 | `t015v3c` brightness multiplier | 2,185 / 151 | −0.422 | [−2.30, 0.88] | −9.06 |
 
-The standardised point contrast changes sign across settings, from −0.72 to +0.64, and every interval spans zero. In raw minutes M2 has the lower mean score in every setting, because raw scores weight the hours-scale misses even more heavily than the standardised score does; the common M0 normaliser is recomputed within each setting, so standardised magnitudes are not comparable across rows.
+The standardised point contrast changes sign across settings, from −0.72 to +0.64, and every interval spans zero. In raw minutes M2 has the lower mean score in every setting, because raw scores weight the hours-scale misses even more heavily than the standardised score does. The common M0 normaliser is recomputed within each setting, so standardised magnitudes are not comparable across rows.
 
-## 3.5 Exploratory extension
+## 3.8 Could the failures have been targeted?
 
-The 28-planet extension adds multi-planet hosts and long periods, where identification is a declared limit. Of 291 opportunities, 72 events of 5 planets are accepted and 72 fail identification. M2 − M0 is −11.2 with interval [−56.4, 6.3], from 1,989 defined joint draws (eleven resamples contain no extension host) (C044). One host, TOI-178, carries the mean gain. The extension is uninformative.
+After review we asked a practical version of the targeting question. Could a rule using only information released with the forecast choose a tenth of planets for wider observing windows, and capture more measured transit midpoints than spending the same window minutes evenly? Two even-spending comparators were used: scaling every window proportionally and adding the same pad to every window.
+
+The data were the inspected DRC-era development slices above: the earlier S56–S73 timings, the 2026 timings rescored under DRC, and both pooled, all on current-roster hosts only. The search was bounded and committed before execution:
+- six single release-file features, each ranking the planets;
+- flagging ⌈10%⌉ of intended planets;
+- pads of 0, 15, 30, 60, 120 or 240 minutes on the flagged windows.
+
+Budgets counted every intended event, and capture averaged accepted events within planets. All six full fits and all 30 host-held-out training folds selected no pad. No positive pad beat both comparators in any slice (C061).
+
+An exact calculation over every permitted flagged set, including sets chosen with hindsight, gives the same answer. The largest achievable minimum gain against both comparators is −8.8, −3.7 and −4.4 percentage points of capture in the earlier, 2026 and pooled slices (C064). In the later and pooled slices the best sets beat proportional scaling slightly but lose to the additive pad.
+
+The reason is that there was little to target. No accepted DRC error reached an hour (Section 3.2), and the windows at ±1.96 forecast SD are only minutes wide while the measurement SD is often larger. Planet-balanced measured-midpoint capture is 0.56–0.62 with forecast-only windows. It rises to 0.88–0.93 when the measurement SD is combined in quadrature, a Gaussian surrogate rather than the full convolution (C062).
+
+This result is structural within its fixed policy class: q = 10%, these pads, measured midpoints, these samples. It is not a proof that every warning rule fails, a statement about full-transit capture, or a prediction for other populations. With a single hour-scale failure in the frozen test, and none in the DRC samples, a targeting rule could be neither learned nor tested here. We therefore did not open the untouched sectors 74–97 to test one (D075, D076).
+
+## 3.9 Exploratory extension
+
+The 28-planet extension adds multi-planet hosts and long periods, where identification is a declared limit. Of 291 opportunities, 72 events of 5 planets are accepted and 72 fail identification. M2 − M0 is −11.2, with interval [−56.4, 6.3], from 1,989 defined joint draws; eleven resamples contain no extension host (C044). One host, TOI-178, carries the mean gain. The extension is uninformative.
 
 # 4. Development evidence
 
@@ -254,9 +366,9 @@ An independent base-R calculation reproduces every DRB and DRC count and percent
 
 ## 4.2 Issued uncertainties are overconfident in the tails
 
-Table 4 gives the release-transfer and chronological comparisons at the reference convention (a = 1.087, C2 covariance).
+Table 5 gives the release-transfer and chronological comparisons at the reference convention (a = 1.087, C2 covariance).
 
-**Table 4. Forecast comparison, development data (C018).** Standardised IS95 is planet-balanced; smaller is better. Events/planets/hosts scored: release transfer 2,324/238/232; chronological 1,925/206/200. Training: 15 planets on 15 hosts (172 events); 133 planets on 131 hosts (1,696 events).
+**Table 5. Forecast comparison, development data (C018).** Standardised IS95 is planet-balanced; smaller is better. Events/planets/hosts scored: release transfer 2,324/238/232; chronological 1,925/206/200. Training: 15 planets on 15 hosts (172 events); 133 planets on 131 hosts (1,696 events).
 
 | Design | Method | Fitted parameters | Standardised IS95 | 95% coverage | 68% coverage | Mean 95% width (min) | Negative log score | Planets improved |
 |---|---|---|---:|---:|---:|---:|---:|---:|
@@ -312,7 +424,7 @@ We injected, with real transits subtracted and epochs uniform over phase, trains
 
 The original report classified the replication as a failure (C025). Independent review identified two implementation defects and reran the same frozen analysis, without changing samples, timing measurements, thresholds, weighting or bootstrap count (C028). Product preference is now determined from the full attempt ledger before restricting to timed rows. If error is fitted time minus truth and the posterior limits are fitted−lo and fitted+hi, coverage requires −hi ≤ error ≤ lo; the former analysis used the sides in the opposite order.
 
-**Table 5. Corrected production-set qualification, injected transits.** Equal-host estimates; 90% host-cluster percentile intervals, B=10,000. All 120 selected hosts remain in the recovery ledger; the table gives hosts with timed injections.
+**Table 6. Corrected production-set qualification, injected transits.** Equal-host estimates; 90% host-cluster percentile intervals, B=10,000. All 120 selected hosts remain in the recovery ledger; the table gives hosts with timed injections.
 
 | Sample / rule | Timed hosts / injections | z-RMS [90% interval] | 95% coverage [90% interval] | Mean z [90% interval] | Verdict |
 |---|---:|---|---|---|---|
@@ -332,9 +444,9 @@ At this historical stage the corrected SPOC algorithm met its conditional inject
 
 ## 4.7 Transfer of the calibration to our outcome convention
 
-We remeasured the development cohort with the frozen rule and refitted M1-M3 under each convention (Section 2.5; C026). Table 6 gives the M2 minus M0 contrast (planet-balanced standardised IS95, 95% host-refit interval, 400 resamples).
+We remeasured the development cohort with the frozen rule and refitted M1-M3 under each convention (Section 2.5; C026). Table 7 gives the M2 minus M0 contrast (planet-balanced standardised IS95, 95% host-refit interval, 400 resamples).
 
-**Table 6. Convention comparison, development data.** Negative favours M2. Every cell is inconclusive.
+**Table 7. Convention comparison, development data.** Negative favours M2. Every cell is inconclusive.
 
 | Design (training / scored planets) | ExoClock × 1.087 | `t015v3c` | `t015v3` |
 |---|---|---|---|
@@ -356,63 +468,100 @@ We remeasured the development cohort with the frozen rule and refitted M1-M3 und
 
 # 5. Discussion
 
-**What the held-out evaluation shows.** Among accepted timings, observed planet-balanced coverage is 90.8% for nominal 95% intervals and 61.9% for nominal 68% intervals (C043). M2 increases coverage to 97.6% and 67.9%, respectively, while increasing width. These are point descriptions, not proof of ideal population calibration. The pre-registered score comparison is inconclusive: −0.121 [−1.84, 2.20] (C043). Its point gain is smaller than the inspected development estimates of about −2.4 to −2.6 (Table 4). An earlier illustrative simulation gave −2.95 under M2-generated outcomes on the 3,399-event union with fixed parameters; it was not a prediction or power calculation for the final core/joint-refit design (C021). Average score benefit and harm remain unresolved.
+**Minute-scale agreement, conditional undercoverage.** For the accepted timings, issued ExoClock forecasts agree with independent TESS mid-times to about a minute at the median. That holds for DRD, scored on the frozen block, and for the earlier DRC release scored retrospectively up to about four years after issue (Section 3.2). At the same time, the issued intervals, convolved with the measurement uncertainty, cover fewer accepted timings than nominal: 90.8% for nominal 95% (Section 3.3). The two statements are compatible. The forecast windows are only minutes wide, so small absolute differences can still fall outside them. For an observer, the practical question is whether a few minutes of disagreement matters for the observation being planned. That depends on transit duration, baseline and scheduling constraints, none of which this study models. We therefore do not recommend a universal padding rule. As an illustration only, adding three minutes to every forecast half-window raises measured-midpoint capture in the frozen sample to 94.0%, at a cost of 18,618 window-minutes across the intended events (C063).
 
-**Why the average is fragile.** The observed gains are concentrated, but this is not an unbounded-gain property of interval-score differences. For nested intervals, let dL and dU be the outward shifts of their lower and upper limits and Δw = dL + dU. Then Δw − 40 max(dL,dU) ≤ IS2 − IS0 ≤ Δw. A single interval's score grows without bound with a miss; the contrast between two fixed intervals becomes constant once the outcome lies beyond both limits. For symmetric widening its bounds are −19Δw and +Δw (C049). Widening can therefore produce much larger gains than losses, but both are finite for fixed endpoints. In this sample 111 of 151 planets score worse and a few large gains dominate the mean, led by HR 858 b (Section 3.2). Development also had concentrated gains (Section 4.2). Host influence demonstrates sensitivity to the realised sample; it does not establish that every such bootstrap must be wide or that an interval-score contrast has unbounded tails.
+**The population calibration is not established either way.** The pre-registered comparison is inconclusive: −0.121 [−1.84, 2.20] (C043). M2 moves coverage towards nominal by widening intervals about 1.7-fold. On the standardised scale this costs 111 of 151 planets a bounded amount and gains on a few with large misses. Its point gain is smaller than the inspected development estimates of about −2.4 to −2.6 (Table 5). An earlier illustrative simulation gave −2.95 under M2-generated outcomes on the 3,399-event union with fixed parameters. It was not a prediction or power calculation for the final core joint-refit design (C021).
 
-**A hypothesis for targeted forecasts.** HR 858 b supplies a case in which substantial forecast departure coincides with literature timing variations known before issue (C048). One case does not show that all gross misses are predictable or that they cannot be represented by a population tail model. Known variations and near-resonant companions are candidate issue-time predictors. A useful follow-up would predefine a targeting rule, compare it with population calibration on equal information, and score it prospectively. This study has not demonstrated that such a rule improves forecasts or scheduling.
+**Why the average is fragile.** A single interval's score grows without bound with a miss, but the contrast between two fixed intervals does not. For nested intervals, let dL and dU be the outward shifts of the lower and upper limits, with Δw = dL + dU. Then Δw − 40 max(dL, dU) ≤ IS2 − IS0 ≤ Δw. The contrast becomes constant once the outcome lies beyond both limits; for symmetric widening its bounds are −19Δw and +Δw (C049). Widening can therefore produce much larger gains than losses, but both are finite for fixed endpoints.
 
-**Release transfer remains the crux.** The single-scale M1 learned from DRC's errors (b = 9.35) overcovers DRD badly and scores worst of the four methods on the primary standardised score (Table 2), as the development work predicted (Section 4.2). M2 increases observed coverage without establishing a score improvement.
+In this sample one planet decides the sign. HR 858 b supplies the largest gain, yet M2 does not capture any of its transits (Section 3.4). The sign also changes with the loss normalisation (Table 3). An earlier draft read the result as a small premium paying for insurance against rare gross misses. We withdraw that interpretation: the insurance did not pay out on the one gross miss.
 
-**The outcome pipeline worked at scale, with one production fault.** The frozen rule recovered 70.4% of all predicted opportunities and 92.1% of those with qualifying cadence at the predicted time (C046), and an independent audit reproduced the run (C045). The one fault, a relative output path that broke grid writing, was missed by a development chain check that used absolute paths. End-to-end checks should execute the exact recorded invocation, not an equivalent one. Because the fault depended on the measured likelihood shape, keeping the first attempt would have scored a Gaussian-only subset; the complete rerun restored the intended pipeline (Section 2.6).
+**One failure, physical and foreshadowed.** HR 858 b's six-hour departure is reproduced by two independent timing implementations. It is accompanied by an opposite drift of its neighbour c and an on-time d, the signature expected of TTVs near a 5:3 commensurability (Section 3.5). The information that could have prompted scrutiny existed at issue:
+- the planet was new to the catalogue;
+- its inputs were five years old and spanned two years;
+- the issued line fitted them poorly;
+- TTVs had been published.
 
-**Prior art and novelty.** ExoClock IV's Table 5 is the direct benchmark, and we reproduce it. We do not claim the first retrospective validation of ephemerides. The bounded combination in Section 1 has now been executed on a held-out block; its primary answer is inconclusive, and the literature screen cannot show absence of earlier work (C019).
+Catalogue curators could reasonably surface such diagnostics alongside each ephemeris, and the release files already contain what is needed to compute most of them (C054). Whether they predict failure is a separate claim, and one case cannot support it.
+
+**Targeting cannot be learned at this rarity.** One hour-scale failure among 151 accepted planets, and none among 128 DRC-core planets, gives a warning rule no positive cases to learn from. Within the tested policy class, no allocation of wider windows to a tenth of planets, even one chosen with hindsight, beat both even-spending comparators (Section 3.8). The untouched sectors 74–97 could still answer a descriptive question: how often issued forecasts fail by hours on hosts this project has never examined. That would need its own frozen design and access decision. For scale, zero failures among about 180 independent, fully observed hosts would bound the failure rate below about 2% at 95% confidence. The current metadata lead is not such a qualified sample (D076).
+
+**Release transfer remains the crux of calibration.** The single-scale M1 learned from DRC's errors (b = 9.35) overcovers DRD badly and scores worst of the four methods on the primary scale (Table 2), as the development work predicted (Section 4.2). A tails-only correction transfers better, but it has not been shown to improve the score.
+
+**The outcome pipeline worked at scale, with one production fault.** The frozen rule recovered 70.4% of all predicted opportunities and 92.1% of those with qualifying cadence at the predicted time (C046). An independent audit reproduced the run (C045), and two independent timing implementations agree with its influential and control timings (C051, C058). The one fault, a relative output path that broke grid writing, was missed by a development check that used absolute paths. End-to-end checks should execute the exact recorded invocation, not an equivalent one. Because the fault depended on the measured likelihood shape, keeping the first attempt would have scored a Gaussian-only subset; the complete rerun restored the intended pipeline (Section 2.6).
+
+**Prior art and novelty.** ExoClock IV's Table 5 is the direct benchmark, and we reproduce it. We do not claim the first retrospective validation of ephemerides. The bounded combination in Section 1 has now been executed on a held-out block. Its primary answer is inconclusive, and the literature screen cannot show absence of earlier work (C019).
 
 ## 5.1 Limitations
 
-1. *One held-out block.* The evaluation covers one release (DRD) and one season of TESS sectors after its issue. Average conclusions about the calibration depend on how many gross misses that season contains.
-2. *Covariance is reconstructed.* ExoClock does not publish Cov(T0, P). C2 is an approximation tested with zero and ±1 correlations (Table 3), and it is not recovery of the issued covariance (C004, C047).
-3. *Availability and epoch mapping are partly proxy in development.* The release-transfer and chronological development designs are event-date and observation-date proxies (C019). The held-out evaluation fixes each event's epoch from the issued ephemeris before any photometry is read.
-4. *Selection.* Scoring conditions on accepted timings: 70.4% of intended primary opportunities (C046). Identification excludes period errors above 0.5% and per-transit timing variations above about an hour (Section 4.5), so the most extreme misses can be lost rather than scored. Missed-transit frequency is not estimable from the accepted timings.
-5. *Dependence.* Transits of one planet share an ephemeris error and a fitted shape. Joint host resampling addresses this; the measured intraclass correlation of z is about zero (D039), which is a check, not an assumption.
-6. *Score semantics.* The standardised IS95 is a conditional weighted loss, because outcome error is estimated after issue (D042). Its planet-balanced mean is dominated by rare gross misses (Section 5).
-7. *The bootstrap is slightly anti-conservative.* Nominal 90% intervals cover 0.853-0.927 in negative controls (C023).
-8. *Outcome calibration is conditional.* The rule's injection coverage passes with narrow margins (lower bounds 0.934 and 0.938) and its replication shows a late bias of +0.07 σ, reported and not corrected (C038). Calibration fitting uses a Gaussian visit approximation rather than the full likelihood support. The shape gate (reduced χ² ≤ 100) was selected on development data.
-9. *Multi-planet hosts and time boundaries.* Identification in multi-planet systems is unvalidated, which is why the extension is exploratory and uninformative (C044). Five events near unconverted metadata boundaries were excluded conservatively; eligibility is not exhaustive.
-10. *Shared outcome lineage is incompletely known.* Exposure lineage across ExoClock rows, TESS timings and our remeasurement is incomplete, so independence of calibration inputs from scored observations is assumed in places (S1-05, open).
-11. *Execution deviation and post-unblinding secondaries.* The primary measurement was rerun once for an execution fault (Section 2.6; C045). The declared secondaries were implemented after unblinding under dated conventions; their intervals are conditional and carry no decisions (D067). Catalogue TTV labels are current, not origin-dated.
-12. *Population.* Results describe ExoClock planets on single-catalogue-planet hosts with SPOC 120-s TESS coverage, not all transiting planets, future Ariel targets or ground-based observations.
+1. **One held-out block.** The evaluation covers one release (DRD) and one season of TESS sectors after its issue. Average conclusions about the calibration depend on how many gross misses that season contains; it contained one.
+2. **Covariance is reconstructed.** ExoClock does not publish Cov(T0, P). C2 is an approximation, tested with zero and ±1 correlations (Table 4). It does not recover the issued covariance (C004, C047).
+3. **Availability and epoch mapping are partly proxy in development.** The release-transfer and chronological development designs are event-date and observation-date proxies (C019). The held-out evaluation fixes each event's epoch from the issued ephemeris before any photometry is read.
+4. **Selection.** Scoring conditions on accepted timings: 70.4% of intended primary opportunities (C046). Several restrictions can lose the most extreme misses rather than score them:
+   - identification excludes period errors above 0.5% and per-transit timing variations above about an hour (Section 4.5);
+   - a timing more than a quarter period from its prediction is not matched to it (Section 2.4).
+
+   Missed-transit frequency is not estimable from the accepted timings, and the accuracy figures are not catalogue-wide rates.
+5. **Dependence.** Transits of one planet share an ephemeris error and a fitted shape. Joint host resampling addresses this. The measured intraclass correlation of z is about zero (D039), which is a check, not an assumption.
+6. **Score semantics.** The standardised IS95 conditions on an estimated observation model and on acceptance (Section 2.3). Its planet-balanced mean is dominated by rare gross misses, and its sign depends on the normalisation (Table 3).
+7. **The bootstrap is slightly anti-conservative.** Nominal 90% intervals cover 0.853–0.927 in negative controls (C023).
+8. **Outcome calibration is conditional.** The rule's injection coverage passes with narrow margins (lower bounds 0.934 and 0.938). Its replication shows a late bias of +0.07σ, reported and not corrected (C038). Calibration fitting uses a Gaussian visit approximation rather than the full likelihood support. The shape gate (reduced χ² ≤ 100) was selected on development data.
+9. **Independent timing checks share photons.** They test the pipeline, not the data. There is no pixel-level or centroid validation, and HR 858 b's sector-105 timings show minute-level model dependence (C057, C059).
+10. **Multi-planet hosts and time boundaries.** Identification in multi-planet systems is unvalidated, which is why the extension is exploratory and uninformative (C044). Five events near unconverted metadata boundaries were excluded conservatively; eligibility is not exhaustive.
+11. **Shared outcome lineage is incompletely known.** Exposure lineage across ExoClock rows, TESS timings and our remeasurement is incomplete, so independence of calibration inputs from scored observations is assumed in places (S1-05, open).
+12. **Post-unblinding analyses.** These comprise the execution rerun (Section 2.6), the declared secondaries (D067) and all of Sections 3.2, 3.3, 3.5 and 3.8. None changes the primary decision, and their intervals are conditional. The allocation screen used inspected data only. Catalogue TTV labels are current, not origin-dated.
+13. **Population.** Results describe ExoClock planets on single-catalogue-planet hosts with SPOC 120-s TESS coverage. They do not cover all transiting planets, future Ariel targets or ground-based observations.
 
 # 6. Data, code and reproducibility
 
-**Repository.** `github.com/BWBrook/transit-forecast-audit`, public. Code is MIT-licensed. Text, figures and derived data written for this project are CC BY-SA 4.0. The repository holds the claims ledger (`coordination/claims.md`), decision log (`coordination/decisions.md`), results and a machine-readable handoff (`results/sprint1/handoff.json`). The agent guide (`docs/agent_guide.md`) gives every decisive command, the access guards and the evidence location of every claim. The brief (`docs/brief.md`) states the findings for a broad audience.
+**Repository.** `github.com/BWBrook/transit-forecast-audit`, public. Code is MIT-licensed; text, figures and derived data written for this project are CC BY-SA 4.0. The repository holds the claims ledger (`coordination/claims.md`), the decision log (`coordination/decisions.md`) and the results. The agent guide (`docs/agent_guide.md`) gives every decisive command, the access guards and the evidence location of every claim. The brief (`docs/brief.md`) states the findings for a broad audience. The external review and the responses to it are archived in `docs/external_review/` and the D071–D076 memos.
 
-**Source data.** The ExoClock DRB, DRC and DRD ephemeris and timing releases (OSF, CC BY 4.0; DOIs 10.17605/OSF.IO/WNA5E, 10.17605/OSF.IO/P298N and 10.17605/OSF.IO/WPJTN) and TESS photometry from MAST. Raw files are not committed. `scripts/acquire_osf.py` re-fetches the release bytes and verifies their hashes, and the raw TESS products carry SHA-256 hashes in the product tables. Source descriptions are @Ricker2015TESS for TESS, @Jenkins2016SPOC for SPOC and @Caldwell2020TESSSPOC for the development TESS-SPOC FFI products [@MAST2020TESSSPOCData].
+**Source data.** The sources are the ExoClock DRB, DRC and DRD ephemeris and timing releases, and TESS photometry from MAST. The releases are on OSF under CC BY 4.0, with DOIs 10.17605/OSF.IO/WNA5E, 10.17605/OSF.IO/P298N and 10.17605/OSF.IO/WPJTN. Raw files are not committed. `scripts/acquire_osf.py` re-fetches the release bytes and verifies their hashes, and the raw TESS products carry SHA-256 hashes in the product tables. Source descriptions are @Ricker2015TESS for TESS, @Jenkins2016SPOC for SPOC and @Caldwell2020TESSSPOC for the development TESS-SPOC FFI products [@MAST2020TESSSPOCData].
 
 **Mission acknowledgement.** We acknowledge TESS observations obtained through MAST at STScI. The NASA Explorer Program supports TESS work at US institutions; AURA operates STScI under NASA contract NAS5-26555. This acknowledgement follows [MAST's current mission guidance](https://archive.stsci.edu/publishing/mission-acknowledgements), checked 9 November 2026. NASA's [TESS documentation](https://heasarc.gsfc.nasa.gov/docs/tess/documentation.html) identifies the mission and processing references above.
 
-**Environments.** A locked Python environment (`.venv`, `uv.lock`) runs analysis, tests and scoring. Photometry scripts are PEP 723 files run with `uv run` from their own lock files. The [freeze manifest](../results/freeze/freeze_manifest.json) records the full SHA-256 fingerprint (`5ec7c0f3…`, source commit `bc85326`); `scripts/freeze_manifest.py verify` recomputes every bound hash.
+**Environments.** A locked Python environment (`.venv`, `uv.lock`) runs analysis, tests and scoring. Photometry scripts are PEP 723 files, run with `uv run` from their own lock files. The [freeze manifest](../results/freeze/freeze_manifest.json) records the full SHA-256 fingerprint (`5ec7c0f3…`, source commit `bc85326`), and `scripts/freeze_manifest.py verify` recomputes every bound hash.
 
-**Held-out run.** Access record `configs/protected_access.json` (commit `b2f54de`); measured inputs under `data/derived/final_primary/` and `data/derived/final_extension/`; outputs, terminal ledgers, stored joint draws and portable scoring receipts in `results/final_primary/` and `results/final_extension/` (commit `9717b68`). The [independent audit](../docs/audits/d065_review_2026-11-09.md), [secondary report](../docs/final_secondaries_2026-11-09.md), [run report](../docs/final_results_2026-11-08.md) and [agent guide](../docs/agent_guide.md) give evidence paths and exact commands. Likelihood grids (about 50 MB) are regenerable and kept outside the repository with their hashes in the receipts.
+**Held-out run.**
+- The access record is `configs/protected_access.json` (commit `b2f54de`).
+- Measured inputs are under `data/derived/final_primary/` and `data/derived/final_extension/`.
+- Outputs, terminal ledgers, stored joint draws and portable scoring receipts are in `results/final_primary/` and `results/final_extension/` (commit `9717b68`).
+- The [independent audit](../docs/audits/d065_review_2026-11-09.md), [secondary report](../docs/final_secondaries_2026-11-09.md) and [run report](../docs/final_results_2026-11-08.md) give evidence paths and exact commands.
+- Likelihood grids (about 50 MB) are regenerable. They are kept outside the repository, with their hashes in the receipts.
 
-**Access guards.** Development work read only photometry up to BTJD 3313.49, enforced on MAST `t_max` before request and on FITS TSTOP before flux was read. Protected products were first requested after the access record was committed.
+**Portable benchmark.** A derived package of 499 hash-bound files, including the 463 accepted timing grids, scores the primary and extension events under all four models and replays both saved score files exactly (C053). It is prepared for a Zenodo deposit with this snapshot.
 
-**Tests.** The full suite passes (115 tests, one expected skip). The known one-count DRD benchmark discrepancy is reported, not hidden.
+**Post-review evidence.**
+- Independent timing: `results/independent_validation/` (C050, C051, C057, C058).
+- Loss scales and coverage: `results/revision_stage0/` (C052).
+- Release-input ledger: `results/information_ledger/` (C054).
+- Sector-105 sensitivity: `results/d073_s105_rescore/` (C059).
+- Allocation screen and its review: `results/t020_development/`, `results/t020_review/` and `results/d075_review_checks/` (C061–C064).
 
-**Correspondence record.** The human-AI correspondence record is published as reviewed snapshots in `docs/correspondence/`, with addresses, home paths and listed hostnames redacted and flagged messages withheld.
+**Access guards.** Development work read only photometry up to BTJD 3313.49, enforced on MAST `t_max` before request and on FITS TSTOP before flux was read. Protected products were first requested after the access record was committed. No photometry or header from TESS sectors 74–97 has been requested (C055).
+
+**Tests.** The full suite passes (160 tests, one expected skip). The known one-count DRD benchmark discrepancy is reported, not hidden.
+
+**Correspondence record.** The human–AI correspondence record is published as reviewed snapshots in `docs/correspondence/`. Addresses, home paths and listed hostnames are redacted, and flagged messages are withheld.
 
 # 7. Contributions
 
-**Human lead.** Barry W. Brook (University of Tasmania) set the question, the open-by-default and repository-as-paper model, the instruction that TESS outcomes after 2025-11-18 stay unopened until protocol freeze, the sequence of work between the two AI systems, and the scientific decisions recorded in the log. He reviews at least the final version of any paper or research artefact before release. He authorised the frozen package and the opening of protected outcomes on 8 November 2026 (D065). This repository draft has not yet been reviewed by him.
+**Human lead.** Barry W. Brook (University of Tasmania) set the question and the open-by-default, repository-as-paper model. He instructed that TESS outcomes after 2025-11-18 stay unopened until the protocol was frozen. He set the sequence of work between the two AI systems and made the scientific decisions recorded in the log. He authorised the frozen package and the opening of protected outcomes on 8 November 2026 (D065). He commissioned the external review. He reviews at least the final version of any paper or research artefact before release; this draft has not yet been reviewed by him.
 
 **AI systems and their roles.** The analysis, code and drafts are by AI systems, working through the repository and the project's correspondence board. The record below follows the coordination files (`coordination/decisions.md`, `docs/correspondence/`).
 
-- *Claude (Anthropic, Claude Opus 5.5)* ran the pilot (acquired the release files and reproduced ExoClock IV Table 5, Track R); wrote the revision of the two-sprint plan (R1-R9, I1-I3); built and validated the forecast-independent timing pipeline and the injection validation; wrote the sprint-2 outcome rule `t015v3`/`t015v3c`, its attempt ledger, identification and shape controls, estimand criteria and negative controls, the confirmation design, the remeasurement and convention-comparison code, the candidate freeze package and the figures; ran the sprint-2 analyses; and directed the drafts. In the final phase it built the fail-closed acceptance contract (`t015v3a`), the manifest-driven measurement and evaluation path and the hash-bound freeze manifest; ran the authorised protected measurement and evaluation; checked the HR 858 b timings and cross-reviewed the secondaries; and revised this article and the brief.
-- *Claude (Anthropic, Claude Sonnet 5.5)* wrote the first drafts of this article, the brief and the agent guide as a delegated subagent under Claude Opus 5.5, from the claims ledger and result files, without running analyses or opening raw data.
-- *Codex (OpenAI; the board records the models gpt-6 and gpt-5.6-luna)* independently reproduced Table 5 in base R, audited covariance and measurement-error claims, completed the stable mixture and variance-components fits, built the sprint-1 forecast experiment and scoring interface (M0-M3, host-refit uncertainty), reconstructed release availability from OSF logs, screened the forward citations, audited the timing validation, built the metadata inventory and precision simulations, and reviewed the scoring. The coordination record does not assign individual tasks to each of the two Codex models. In the final phase Codex (GPT-6.1-sol) reviewed the final path, repaired an access-guard defect that accepted denial text, independently verified and corrected the freeze manifest, audited the protected run and implemented the declared secondaries, with three GPT-6.1-sol delegates for numerical, specification and sensitivity checks.
-- *GPT-6 Pro (OpenAI)* supplied the initial topic ideation conversation, tracked unchanged as `docs/gpt-6-pro_ideation.md` and recorded as historical ideation, not findings (D025).
+- **Claude (Anthropic, Claude Opus 5.5).**
+  - *Before the freeze:* ran the pilot, acquiring the release files and reproducing ExoClock IV Table 5 (Track R), and wrote the revision of the two-sprint plan (R1–R9, I1–I3). Built and validated the forecast-blind timing pipeline and the injection validation. Wrote the sprint-2 outcome rule `t015v3`/`t015v3c`, with its attempt ledger, identification and shape controls, estimand criteria and negative controls. Wrote the confirmation design, the remeasurement and convention-comparison code, the candidate freeze package and the figures. Ran the sprint-2 analyses and directed the drafts.
+  - *Freeze and held-out run:* built the fail-closed acceptance contract (`t015v3a`), the manifest-driven measurement and evaluation path and the hash-bound freeze manifest. Ran the authorised protected measurement and evaluation, checked the HR 858 b timings and cross-reviewed the secondaries.
+  - *After the external review:* proposed the response programme (D071), wrote the independent HR 858 timing checker, adjudicated the independent-check triggers (D073), reviewed the allocation screen (D075) and rewrote this article, the brief and the agent guide.
+- **Claude (Anthropic, Claude Sonnet 5.5)** wrote the first drafts of this article, the brief and the agent guide. It worked as a delegated subagent under Claude Opus 5.5, from the claims ledger and result files, without running analyses or opening raw data.
+- **Codex (OpenAI).** The board records the models gpt-6 and gpt-5.6-luna for the earlier phases, without assigning individual tasks to each, and GPT-6.1-sol from the final phase.
+  - *Earlier phases:* independently reproduced ExoClock IV Table 5 in base R and audited the covariance and measurement-error claims. Completed the stable mixture and variance-components fits. Built the sprint-1 forecast experiment and scoring interface (M0–M3, host-refit uncertainty). Reconstructed release availability from OSF logs and screened the forward citations. Audited the timing validation, built the metadata inventory and precision simulations, and reviewed the scoring.
+  - *Final phase:* reviewed the final path and repaired an access-guard defect that accepted denial text. Independently verified and corrected the freeze manifest, audited the protected run and implemented the declared secondaries. Three GPT-6.1-sol delegates performed numerical, specification and sensitivity checks.
+  - *After the review:* wrote the second independent timing checker and its fixed-sample tranche (D072), the loss-scale and coverage diagnostics, the portable benchmark and the release-input ledger. Ran the sector-105 sensitivity, the DRC/DRD identification audit and the bounded allocation search with its exact optimum (D074, D076).
+- **GPT-6 Pro (OpenAI)** supplied the initial topic ideation, tracked unchanged as `docs/gpt-6-pro_ideation.md` and recorded as ideation, not findings (D025). It also wrote the external review of draft v0.5 commissioned by Barry W. Brook (9 November 2026; archived in `docs/external_review/`). Its ten findings were all accepted (D071) and shaped this revision.
 
-Each AI system contributed ideas and criticism as an equal participant. Barry weighed them on their merits. Agreement between the two systems is not treated as independent validation: each key result carries an independent implementation, numerical check or primary-source check where one exists, and disagreements stay visible in the record. Reciprocal reviews, corrections and their timing are recorded in the decision log; source checks and independent numerical implementations provide the evidence, rather than agreement alone.
+Each AI system contributed ideas and criticism as an equal participant, and Barry weighed them on their merits. Agreement between the systems is not treated as independent validation. Each key result carries an independent implementation, numerical check or primary-source check where one exists, and disagreements stay visible in the record. Reciprocal reviews, corrections and their timing are recorded in the decision log.
 
 **Data providers.** ExoClock contributors, MAST and the TESS mission, whose data this work builds on.
 

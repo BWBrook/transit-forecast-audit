@@ -496,7 +496,139 @@
       "verified_claims": ["Repeats Gaussian-likelihood TTV inversions with a two-degree-of-freedom Student-t likelihood as a robustness check."],
       "metadata_source": "Registered DOI metadata via doi.org content negotiation, 9 November 2026",
       "added_by": "Claude Opus 5.5, D070"
+    },
+  {
+   "citation_key": "Lissauer2024KeplerPeriods",
+   "type": "article-journal",
+   "title": "Updated Catalog of Kepler Planet Candidates: Focus on Accuracy and Orbital Periods",
+   "authors": [
+    {
+     "family": "Lissauer",
+     "given": "Jack J."
+    },
+    {
+     "family": "Rowe",
+     "given": "Jason F."
+    },
+    {
+     "family": "Jontof-Hutter",
+     "given": "Daniel"
+    },
+    {
+     "family": "Fabrycky",
+     "given": "Daniel C."
+    },
+    {
+     "family": "Ford",
+     "given": "Eric B."
+    },
+    {
+     "family": "Ragozzine",
+     "given": "Darin"
+    },
+    {
+     "family": "Steffen",
+     "given": "Jason H."
+    },
+    {
+     "family": "Nizam",
+     "given": "Kadri M."
     }
+   ],
+   "authors_truncated": false,
+   "year": 2024,
+   "journal": "The Planetary Science Journal",
+   "volume": "5",
+   "pages": "152",
+   "doi": "10.3847/PSJ/ad0e6e",
+   "url": "https://doi.org/10.3847/PSJ/ad0e6e",
+   "access_depth": "Abstract and catalogue description read via arXiv:2311.00238 abstract, 9 November 2026.",
+   "verified_claims": [
+    "Tabulated Kepler period uncertainties do not fully account for transit timing variations; ephemerides are less accurate on multi-decadal timescales than the small formal period errors imply."
+   ],
+   "metadata_source": "Registered DOI metadata via doi.org content negotiation, 9 November 2026",
+   "added_by": "Claude Opus 5.5, T022"
+  },
+  {
+   "citation_key": "Agol2024TRAPPIST1Forecast",
+   "type": "article-journal",
+   "title": "Updated Forecast for TRAPPIST-1 Times of Transit for All Seven Exoplanets Incorporating JWST Data",
+   "authors": [
+    {
+     "family": "Agol",
+     "given": "Eric"
+    },
+    {
+     "family": "Allen",
+     "given": "Natalie H."
+    },
+    {
+     "family": "Benneke",
+     "given": "Björn"
+    },
+    {
+     "family": "Delrez",
+     "given": "Laetitia"
+    },
+    {
+     "family": "Doyon",
+     "given": "René"
+    },
+    {
+     "family": "Ducrot",
+     "given": "Elsa"
+    },
+    {
+     "family": "Espinoza",
+     "given": "Néstor"
+    },
+    {
+     "family": "Gressier",
+     "given": "Amélie"
+    },
+    {
+     "family": "Lafrenière",
+     "given": "David"
+    },
+    {
+     "family": "Lim",
+     "given": "Olivia"
+    },
+    {
+     "family": "Lustig-Yaeger",
+     "given": "Jacob"
+    },
+    {
+     "family": "Piaulet-Ghorayeb",
+     "given": "Caroline"
+    },
+    {
+     "family": "Radica",
+     "given": "Michael"
+    },
+    {
+     "family": "Rustamkulov",
+     "given": "Zafar"
+    },
+    {
+     "family": "Sotzen",
+     "given": "Kristin S."
+    }
+   ],
+   "authors_truncated": false,
+   "year": 2024,
+   "journal": "Research Notes of the AAS",
+   "volume": "8",
+   "pages": "274",
+   "doi": "10.3847/2515-5172/ad8b46",
+   "url": "https://doi.org/10.3847/2515-5172/ad8b46",
+   "access_depth": "Abstract read via arXiv:2409.11620, 9 November 2026.",
+   "verified_claims": [
+    "23 JWST timings update TRAPPIST-1 transit-time forecasts; TRAPPIST-1h transit times drifted from a prior published forecast by up to tens of minutes."
+   ],
+   "metadata_source": "Registered DOI metadata via doi.org content negotiation, 9 November 2026",
+   "added_by": "Claude Opus 5.5, T022"
+  }
   ],
   "search_log": {
     "method": "Targeted discovery followed by primary-paper, publisher, author-repository and official catalogue checks. No exhaustive citation-network or systematic-review search was completed.",
