@@ -1,6 +1,6 @@
 # Agent guide: using the transit-forecast-audit work
 
-**Audience:** a new AI agent (Claude, Codex or another) that must use, extend, review or reproduce this work. **Current status (9 November 2026):** D065's authorised frozen protected evaluation is complete; its primary verdict is **inconclusive**, independently supported by D066. The declared secondaries are implemented with dated post-unblinding conventions. Start with `docs/final_results_2026-11-08.md`, `docs/audits/d065_review_2026-11-09.md`, `docs/final_secondaries_2026-11-09.md` and the claims ledger. The article `manuscript/paper.md` and public brief `docs/brief.md` are still the dated 7 November development drafts and need integration from the current ledger. Do not cite those older drafts as the protected result.
+**Audience:** a new AI agent (Claude, Codex or another) that must use, extend, review or reproduce this work. **Current status (9 November 2026):** D065's authorised frozen protected evaluation is complete; its primary verdict is **inconclusive**, independently supported by D066. The declared secondaries are implemented with dated post-unblinding conventions. Start with `docs/final_results_2026-11-08.md`, `docs/audits/d065_review_2026-11-09.md`, `docs/final_secondaries_2026-11-09.md` and the claims ledger. The article `manuscript/paper.md` (v0.4) and public brief `docs/brief.md` integrate the held-out result as of 9 November; neither has yet been reviewed by Barry.
 
 Historical development account: `docs/sprint2_review.md`. The original `docs/sprint2_report.md` and original results are historical evidence qualified by that review and the later decisions. Follow the current read order above for the protected result.
 
@@ -165,6 +165,8 @@ C018's reproduce commands are the first two lines of section 5.1 (`--experiment 
 python -m unittest discover -s tests -v                 # AGENTS.md form
 uv run --project ~/work/correspondence correspondence-export docs/correspondence/publication.toml   # refresh the correspondence snapshot on the board host
 GIT_CONFIG_GLOBAL=/dev/null gitleaks protect --staged   # before pushing to this public repository
+MPLCONFIGDIR=/private/tmp/transit-final-review-mpl .venv/bin/python scripts/plot_final_planet_deltas.py   # article Figure 1
+pandoc docs/brief.md --pdf-engine=xelatex -V papersize:a4 -V geometry:margin=20mm -V fontsize=11pt -V mainfont=texgyrepagella-regular.otf -V mainfontoptions="BoldFont=texgyrepagella-bold.otf,ItalicFont=texgyrepagella-italic.otf,BoldItalicFont=texgyrepagella-bolditalic.otf" -o docs/brief.pdf   # must stay two A4 pages
 ```
 
 ## 6. Historical development guards and current access
@@ -326,9 +328,11 @@ on scenario fits and cannot replace the primary joint-refit interval.
 
 Remaining scientific limits include accepted-timing selection, reconstructed
 covariance, Gaussian calibration fitting, limited multi-planet recovery and
-conservative rather than exact boundary eligibility. The article and brief
-still require integration of the current ledger; release/submission remains
-separate from repository work.
+conservative rather than exact boundary eligibility. The article (v0.4) and
+brief integrate the current ledger; the outstanding citation is Bonfanti et al.
+2025 (arXiv 2411.14911, in `references/identifiers_2026-11-09_final.txt`) for
+HR 858 timing variations. Release/submission remains separate from repository
+work and needs Barry's review.
 
 ## 13. Suggested first moves for a new agent
 

@@ -389,6 +389,14 @@ Next owners should claim T001–T004 and read START_HERE.md.
   115 tests run, one expected local skip, no failures. No frozen file changed.
 - Next: Claude — cross-review secondaries, then integrate article and brief.
 
+## 2026-11-09 — Claude: secondaries cross-reviewed; article and brief integrated (D068)
+
+- Independent recomputation reproduces influence, TTV groups, recovery and all
+  sensitivity aggregates. HR858b's gain is a real ~6.3 h ephemeris departure (C048).
+- Article v0.4: frozen protocol §2.6, held-out §3, development §4, discussion
+  on bounded losses versus unbounded gains. Brief rewritten (two A4 pages).
+- Next: Codex reviews the article and brief; then Barry.
+
 ## Update template
 
 - Date / agent / task ID:

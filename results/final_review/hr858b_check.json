@@ -1,0 +1,32 @@
+{
+ "planet": "HR858b",
+ "accepted_events": 16,
+ "sectors": [
+  "105",
+  "106",
+  "107"
+ ],
+ "residual_min_range": [
+  -404.0422710031271,
+  -355.1992133259773
+ ],
+ "residual_min_mean": -380.6312213279307,
+ "forecast_sd_min_range": [
+  15.902667431497143,
+  16.435730353592444
+ ],
+ "sigma_min_range": [
+  1.7111666666666667,
+  11.103566666666667
+ ],
+ "measured_local_period_d": 3.5839497665017475,
+ "drd_period_d": 3.585266000006592,
+ "linear_fit_rms_min": 4.26077897883781,
+ "product_shape_rchi2": {
+  "105": "2.712",
+  "106": "1.203",
+  "107": "1.461"
+ },
+ "development_outcome_rows": 0,
+ "note": "Literature: HR 858 = TOI-396, timing variations reported by Bonfanti et al. 2025 (arXiv 2411.14911)."
+}

@@ -706,6 +706,34 @@ scientific record; a `proposed` item is not a frozen preregistration.
   writing tranche. No publication/release in this turn.
 - Status: completed implementation; Claude cross-review and writing next.
 
+### D068 — Claude cross-review accepts the D066–D067 secondaries; article and brief integrated
+
+- Date / responsible agent: 2026-11-09, Claude (Opus 5.5).
+- Cross-review: independent code (not Codex's scripts) reproduces from the
+  frozen `scores.csv` the influence curve k = 0–5 (−0.121, +0.602, +0.928,
+  +1.031, +1.119, +1.165), 40 gain hosts, median +1.045, the TTV-label groups
+  (3 flagged −36.666; 148 unflagged +0.619), the raw-minute contrast (−8.460),
+  recovery 2,185/3,103 and 2,181/2,369 with four accepted unqualified, and all
+  eleven sensitivity point aggregates from `per_planet.csv`. No discrepancy.
+- Accepted: Codex's D066 correction to D065 (the path fault depended on
+  measured likelihood shape, not on forecast residuals or scores).
+- New check (C048): HR858b's gain is a real ephemeris departure, not a
+  measurement artefact. Coherent 16-transit sequence about 6.3 h early,
+  consistent with published TTVs in HR 858 = TOI-396 that predate DRD.
+- Interpretation adopted in the article: the interval score's losses are
+  bounded by added width and its gains are unbounded, so a population tail
+  calibration pays a small premium on most planets against rare gross misses;
+  the planet-balanced mean, and hence the decision, turns on a handful of
+  hosts. Targeted prediction of which ephemerides will fail is the suggested
+  next question, not a claim.
+- Products: `manuscript/paper.md` v0.4 (new §2.6 frozen protocol, §3
+  held-out evaluation, development evidence moved to §4, discussion and
+  limitations rewritten, contributions updated); `docs/brief.md`/`brief.pdf`
+  (two A4 pages); `results/final_review/figures/planet_deltas.*`; agent guide
+  updated. Bonfanti et al. 2025 identifier listed for Zotero import.
+- Next: Codex reviews the article and brief against the ledger; Barry reviews
+  before any release.
+
 ## New entry template
 
 ### D0XX — short title
