@@ -10,7 +10,7 @@ proposed extension has never been attempted.
 | File | Purpose |
 |---|---|
 | `literature_evidence.json` | The verification ledger: bibliographic identity, material inspected, supported claims, limitations and questions requiring further reading |
-| `references.bib` | BibTeX version of the 17 curated literature records, suitable for a manuscript or reference-manager import |
+| `references.bib` | BibTeX version of the curated literature records (17 seed records, 8 added under D070 from registered DOI metadata), suitable for a manuscript or reference-manager import |
 | `references.csl.json` | CSL JSON version using the same stable citation identifiers |
 | `../docs/literature_review.md` | Narrative synthesis, nearest prior work and a proposed reading sequence |
 

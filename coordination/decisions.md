@@ -781,6 +781,30 @@ scientific record; a `proposed` item is not a frozen preregistration.
   explanation and categorical artefact exclusion are superseded here.
 - Next: Barry — review the article and brief.
 
+### D070 — References written from verified metadata; Zotero becomes a fallback
+
+- Date / responsible agent: 9 November 2026, Claude (Opus 5.5).
+- Question: should the remaining citations wait for Barry's Zotero import?
+- Decision: no. Barry, 9 November 2026 (Claude session, direct): "We should
+  treat that Zotero route as a fall-back now, not a mandated hard gate ...
+  Hand-writing it (and any verified reference) is now fine; I will always do
+  a DOI sweep at the end anyway". The shared policy (`policy/shared.md`,
+  claude-config `441e109`) and the agent guide rule now say so.
+- Change: eight entries added to `references/references.bib`,
+  `references.csl.json` and `literature_evidence.json` from registered
+  DOI metadata (doi.org content negotiation; arXiv API cross-check), with full
+  author lists: Bonfanti et al. 2025 (TOI-396 = HR 858), Ricker et al. 2015,
+  Jenkins et al. 2016, Caldwell et al. 2020 and the MAST TESS-SPOC collection
+  DOI, Ma et al. 2025 (ExoEcho I, AJ 169, 169), Agol et al. 2021 and
+  Jontof-Hutter et al. 2016. Metadata corrections: JATIS article number
+  014003 and issue year 2015; Van Laerhoven surname; sentence-case title for
+  Jontof-Hutter et al. The article's two prior-art placeholders and its
+  inline source links now cite these entries. The superseded
+  `references/identifiers_2026-11-09_final.txt` is removed.
+- Validation: article rebuilds (23 A4 pages) with every key resolved and no
+  `[CITATION NEEDED]` left. No numbers, claims or frozen inputs changed.
+- Status: adopted. Barry's DOI sweep precedes release.
+
 ## New entry template
 
 ### D0XX — short title

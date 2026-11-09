@@ -609,5 +609,904 @@
     "DOI": "10.1111/j.1467-9868.2007.00587.x",
     "page": "243-268",
     "note": "Publisher online date: 2007-03-05. Bibliographic issued year follows the journal citation."
+  },
+  {
+    "id": "Bonfanti2025TOI396",
+    "type": "article-journal",
+    "title": "Radii, masses, and transit-timing variations of the three-planet system orbiting the naked-eye star TOI-396",
+    "author": [
+      {
+        "family": "Bonfanti",
+        "given": "A."
+      },
+      {
+        "family": "Amateis",
+        "given": "I."
+      },
+      {
+        "family": "Gandolfi",
+        "given": "D."
+      },
+      {
+        "family": "Borsato",
+        "given": "L."
+      },
+      {
+        "family": "Egger",
+        "given": "J. A."
+      },
+      {
+        "family": "Cubillos",
+        "given": "P. E."
+      },
+      {
+        "family": "Armstrong",
+        "given": "D."
+      },
+      {
+        "family": "Leão",
+        "given": "I. C."
+      },
+      {
+        "family": "Fridlund",
+        "given": "M."
+      },
+      {
+        "family": "Canto Martins",
+        "given": "B. L."
+      },
+      {
+        "family": "Sousa",
+        "given": "S. G."
+      },
+      {
+        "family": "De Medeiros",
+        "given": "J. R."
+      },
+      {
+        "family": "Fossati",
+        "given": "L."
+      },
+      {
+        "family": "Adibekyan",
+        "given": "V."
+      },
+      {
+        "family": "Collier Cameron",
+        "given": "A."
+      },
+      {
+        "family": "Grziwa",
+        "given": "S."
+      },
+      {
+        "family": "Lam",
+        "given": "K. W. F."
+      },
+      {
+        "family": "Goffo",
+        "given": "E."
+      },
+      {
+        "family": "Nielsen",
+        "given": "L. D."
+      },
+      {
+        "family": "Rodler",
+        "given": "F."
+      },
+      {
+        "family": "Alarcon",
+        "given": "J."
+      },
+      {
+        "family": "Lillo-Box",
+        "given": "J."
+      },
+      {
+        "family": "Cochran",
+        "given": "W. D."
+      },
+      {
+        "family": "Luque",
+        "given": "R."
+      },
+      {
+        "family": "Redfield",
+        "given": "S."
+      },
+      {
+        "family": "Santos",
+        "given": "N. C."
+      },
+      {
+        "family": "Barros",
+        "given": "S. C. C."
+      },
+      {
+        "family": "Bayliss",
+        "given": "D."
+      },
+      {
+        "family": "Dumusque",
+        "given": "X."
+      },
+      {
+        "family": "Keniger",
+        "given": "M. A. F."
+      },
+      {
+        "family": "Livingston",
+        "given": "J."
+      },
+      {
+        "family": "Murgas",
+        "given": "F."
+      },
+      {
+        "family": "Nowak",
+        "given": "G."
+      },
+      {
+        "family": "Osborn",
+        "given": "A."
+      },
+      {
+        "family": "Osborn",
+        "given": "H. P."
+      },
+      {
+        "family": "Pallé",
+        "given": "E."
+      },
+      {
+        "family": "Persson",
+        "given": "C. M."
+      },
+      {
+        "family": "Serrano",
+        "given": "L. M."
+      },
+      {
+        "family": "Strøm",
+        "given": "P. A."
+      },
+      {
+        "family": "Udry",
+        "given": "S."
+      },
+      {
+        "family": "Wheatley",
+        "given": "P. J."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "container-title": "Astronomy & Astrophysics",
+    "volume": "693",
+    "page": "A90",
+    "DOI": "10.1051/0004-6361/202451300",
+    "URL": "https://doi.org/10.1051/0004-6361/202451300",
+    "note": "arXiv:2411.14911 (v1 22 November 2024)."
+  },
+  {
+    "id": "Ricker2015TESS",
+    "type": "article-journal",
+    "title": "Transiting Exoplanet Survey Satellite",
+    "author": [
+      {
+        "family": "Ricker",
+        "given": "George R."
+      },
+      {
+        "family": "Winn",
+        "given": "Joshua N."
+      },
+      {
+        "family": "Vanderspek",
+        "given": "Roland"
+      },
+      {
+        "family": "Latham",
+        "given": "David W."
+      },
+      {
+        "family": "Bakos",
+        "given": "Gáspár Á."
+      },
+      {
+        "family": "Bean",
+        "given": "Jacob L."
+      },
+      {
+        "family": "Berta-Thompson",
+        "given": "Zachory K."
+      },
+      {
+        "family": "Brown",
+        "given": "Timothy M."
+      },
+      {
+        "family": "Buchhave",
+        "given": "Lars"
+      },
+      {
+        "family": "Butler",
+        "given": "Nathaniel R."
+      },
+      {
+        "family": "Butler",
+        "given": "R. Paul"
+      },
+      {
+        "family": "Chaplin",
+        "given": "William J."
+      },
+      {
+        "family": "Charbonneau",
+        "given": "David B."
+      },
+      {
+        "family": "Christensen-Dalsgaard",
+        "given": "Jørgen"
+      },
+      {
+        "family": "Clampin",
+        "given": "Mark"
+      },
+      {
+        "family": "Deming",
+        "given": "Drake"
+      },
+      {
+        "family": "Doty",
+        "given": "John P."
+      },
+      {
+        "family": "De Lee",
+        "given": "Nathan"
+      },
+      {
+        "family": "Dressing",
+        "given": "Courtney"
+      },
+      {
+        "family": "Dunham",
+        "given": "Edward W."
+      },
+      {
+        "family": "Endl",
+        "given": "Michael"
+      },
+      {
+        "family": "Fressin",
+        "given": "François"
+      },
+      {
+        "family": "Ge",
+        "given": "Jian"
+      },
+      {
+        "family": "Henning",
+        "given": "Thomas"
+      },
+      {
+        "family": "Holman",
+        "given": "Matthew J."
+      },
+      {
+        "family": "Howard",
+        "given": "Andrew W."
+      },
+      {
+        "family": "Ida",
+        "given": "Shigeru"
+      },
+      {
+        "family": "Jenkins",
+        "given": "Jon M."
+      },
+      {
+        "family": "Jernigan",
+        "given": "Garrett"
+      },
+      {
+        "family": "Johnson",
+        "given": "John Asher"
+      },
+      {
+        "family": "Kaltenegger",
+        "given": "Lisa"
+      },
+      {
+        "family": "Kawai",
+        "given": "Nobuyuki"
+      },
+      {
+        "family": "Kjeldsen",
+        "given": "Hans"
+      },
+      {
+        "family": "Laughlin",
+        "given": "Gregory"
+      },
+      {
+        "family": "Levine",
+        "given": "Alan M."
+      },
+      {
+        "family": "Lin",
+        "given": "Douglas"
+      },
+      {
+        "family": "Lissauer",
+        "given": "Jack J."
+      },
+      {
+        "family": "MacQueen",
+        "given": "Phillip"
+      },
+      {
+        "family": "Marcy",
+        "given": "Geoffrey"
+      },
+      {
+        "family": "McCullough",
+        "given": "Peter R."
+      },
+      {
+        "family": "Morton",
+        "given": "Timothy D."
+      },
+      {
+        "family": "Narita",
+        "given": "Norio"
+      },
+      {
+        "family": "Paegert",
+        "given": "Martin"
+      },
+      {
+        "family": "Palle",
+        "given": "Enric"
+      },
+      {
+        "family": "Pepe",
+        "given": "Francesco"
+      },
+      {
+        "family": "Pepper",
+        "given": "Joshua"
+      },
+      {
+        "family": "Quirrenbach",
+        "given": "Andreas"
+      },
+      {
+        "family": "Rinehart",
+        "given": "Stephen A."
+      },
+      {
+        "family": "Sasselov",
+        "given": "Dimitar"
+      },
+      {
+        "family": "Sato",
+        "given": "Bun’ei"
+      },
+      {
+        "family": "Seager",
+        "given": "Sara"
+      },
+      {
+        "family": "Sozzetti",
+        "given": "Alessandro"
+      },
+      {
+        "family": "Stassun",
+        "given": "Keivan G."
+      },
+      {
+        "family": "Sullivan",
+        "given": "Peter"
+      },
+      {
+        "family": "Szentgyorgyi",
+        "given": "Andrew"
+      },
+      {
+        "family": "Torres",
+        "given": "Guillermo"
+      },
+      {
+        "family": "Udry",
+        "given": "Stephane"
+      },
+      {
+        "family": "Villasenor",
+        "given": "Joel"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "container-title": "Journal of Astronomical Telescopes, Instruments, and Systems",
+    "volume": "1",
+    "issue": "1",
+    "page": "014003",
+    "DOI": "10.1117/1.JATIS.1.1.014003",
+    "URL": "https://doi.org/10.1117/1.JATIS.1.1.014003",
+    "note": "Published online 24 October 2014; issue year 2015."
+  },
+  {
+    "id": "Jenkins2016SPOC",
+    "type": "paper-conference",
+    "title": "The TESS science processing operations center",
+    "author": [
+      {
+        "family": "Jenkins",
+        "given": "Jon M."
+      },
+      {
+        "family": "Twicken",
+        "given": "Joseph D."
+      },
+      {
+        "family": "McCauliff",
+        "given": "Sean"
+      },
+      {
+        "family": "Campbell",
+        "given": "Jennifer"
+      },
+      {
+        "family": "Sanderfer",
+        "given": "Dwight"
+      },
+      {
+        "family": "Lung",
+        "given": "David"
+      },
+      {
+        "family": "Mansouri-Samani",
+        "given": "Masoud"
+      },
+      {
+        "family": "Girouard",
+        "given": "Forrest"
+      },
+      {
+        "family": "Tenenbaum",
+        "given": "Peter"
+      },
+      {
+        "family": "Klaus",
+        "given": "Todd"
+      },
+      {
+        "family": "Smith",
+        "given": "Jeffrey C."
+      },
+      {
+        "family": "Caldwell",
+        "given": "Douglas A."
+      },
+      {
+        "family": "Chacon",
+        "given": "A. D."
+      },
+      {
+        "family": "Henze",
+        "given": "Christopher"
+      },
+      {
+        "family": "Heiges",
+        "given": "Cory"
+      },
+      {
+        "family": "Latham",
+        "given": "David W."
+      },
+      {
+        "family": "Morgan",
+        "given": "Edward"
+      },
+      {
+        "family": "Swade",
+        "given": "Daryl"
+      },
+      {
+        "family": "Rinehart",
+        "given": "Stephen"
+      },
+      {
+        "family": "Vanderspek",
+        "given": "Roland"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "container-title": "Proceedings of the SPIE",
+    "volume": "9913",
+    "page": "99133E",
+    "DOI": "10.1117/12.2233418",
+    "URL": "https://doi.org/10.1117/12.2233418"
+  },
+  {
+    "id": "Caldwell2020TESSSPOC",
+    "type": "article-journal",
+    "title": "TESS Science Processing Operations Center FFI Target List Products",
+    "author": [
+      {
+        "family": "Caldwell",
+        "given": "Douglas A."
+      },
+      {
+        "family": "Tenenbaum",
+        "given": "Peter"
+      },
+      {
+        "family": "Twicken",
+        "given": "Joseph D."
+      },
+      {
+        "family": "Jenkins",
+        "given": "Jon M."
+      },
+      {
+        "family": "Ting",
+        "given": "Eric"
+      },
+      {
+        "family": "Smith",
+        "given": "Jeffrey C."
+      },
+      {
+        "family": "Hedges",
+        "given": "Christina"
+      },
+      {
+        "family": "Fausnaugh",
+        "given": "Michael M."
+      },
+      {
+        "family": "Rose",
+        "given": "Mark"
+      },
+      {
+        "family": "Burke",
+        "given": "Christopher"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "container-title": "Research Notes of the AAS",
+    "volume": "4",
+    "page": "201",
+    "DOI": "10.3847/2515-5172/abc9b3",
+    "URL": "https://doi.org/10.3847/2515-5172/abc9b3",
+    "note": "arXiv:2011.05495."
+  },
+  {
+    "id": "MAST2020TESSSPOCData",
+    "type": "dataset",
+    "title": "TESS Light Curves From Full Frame Images (\"TESS-SPOC\")",
+    "author": [
+      {
+        "family": "Caldwell",
+        "given": "Douglas A."
+      },
+      {
+        "family": "Jenkins",
+        "given": "Jon M."
+      },
+      {
+        "family": "Ting",
+        "given": "Eric B."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "publisher": "MAST, Space Telescope Science Institute",
+    "DOI": "10.17909/t9-wpz1-8s54",
+    "URL": "https://doi.org/10.17909/t9-wpz1-8s54"
+  },
+  {
+    "id": "Ma2025ExoEchoI",
+    "type": "article-journal",
+    "title": "Exoplanet Ephemerides Change Observations (ExoEcho). I. Transit Timing Analysis of 37 Exoplanets Using HST/WFC3 Data",
+    "author": [
+      {
+        "family": "Ma",
+        "given": "Xinyue"
+      },
+      {
+        "family": "Wang",
+        "given": "Wenqin"
+      },
+      {
+        "family": "Zhang",
+        "given": "Zixin"
+      },
+      {
+        "family": "Yu",
+        "given": "Cong"
+      },
+      {
+        "family": "Chen",
+        "given": "Dichang"
+      },
+      {
+        "family": "Xie",
+        "given": "Jiwei"
+      },
+      {
+        "family": "Liu",
+        "given": "Shangfei"
+      },
+      {
+        "family": "Zhou",
+        "given": "Li"
+      },
+      {
+        "family": "Ma",
+        "given": "Bo"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "container-title": "The Astronomical Journal",
+    "volume": "169",
+    "page": "169",
+    "DOI": "10.3847/1538-3881/ada95d",
+    "URL": "https://doi.org/10.3847/1538-3881/ada95d",
+    "note": "arXiv:2501.05704."
+  },
+  {
+    "id": "Agol2021TRAPPIST1",
+    "type": "article-journal",
+    "title": "Refining the Transit-timing and Photometric Analysis of TRAPPIST-1: Masses, Radii, Densities, Dynamics, and Ephemerides",
+    "author": [
+      {
+        "family": "Agol",
+        "given": "Eric"
+      },
+      {
+        "family": "Dorn",
+        "given": "Caroline"
+      },
+      {
+        "family": "Grimm",
+        "given": "Simon L."
+      },
+      {
+        "family": "Turbet",
+        "given": "Martin"
+      },
+      {
+        "family": "Ducrot",
+        "given": "Elsa"
+      },
+      {
+        "family": "Delrez",
+        "given": "Laetitia"
+      },
+      {
+        "family": "Gillon",
+        "given": "Michaël"
+      },
+      {
+        "family": "Demory",
+        "given": "Brice-Olivier"
+      },
+      {
+        "family": "Burdanov",
+        "given": "Artem"
+      },
+      {
+        "family": "Barkaoui",
+        "given": "Khalid"
+      },
+      {
+        "family": "Benkhaldoun",
+        "given": "Zouhair"
+      },
+      {
+        "family": "Bolmont",
+        "given": "Emeline"
+      },
+      {
+        "family": "Burgasser",
+        "given": "Adam"
+      },
+      {
+        "family": "Carey",
+        "given": "Sean"
+      },
+      {
+        "family": "de Wit",
+        "given": "Julien"
+      },
+      {
+        "family": "Fabrycky",
+        "given": "Daniel"
+      },
+      {
+        "family": "Foreman-Mackey",
+        "given": "Daniel"
+      },
+      {
+        "family": "Haldemann",
+        "given": "Jonas"
+      },
+      {
+        "family": "Hernandez",
+        "given": "David M."
+      },
+      {
+        "family": "Ingalls",
+        "given": "James"
+      },
+      {
+        "family": "Jehin",
+        "given": "Emmanuel"
+      },
+      {
+        "family": "Langford",
+        "given": "Zachary"
+      },
+      {
+        "family": "Leconte",
+        "given": "Jérémy"
+      },
+      {
+        "family": "Lederer",
+        "given": "Susan M."
+      },
+      {
+        "family": "Luger",
+        "given": "Rodrigo"
+      },
+      {
+        "family": "Malhotra",
+        "given": "Renu"
+      },
+      {
+        "family": "Meadows",
+        "given": "Victoria S."
+      },
+      {
+        "family": "Morris",
+        "given": "Brett M."
+      },
+      {
+        "family": "Pozuelos",
+        "given": "Francisco J."
+      },
+      {
+        "family": "Queloz",
+        "given": "Didier"
+      },
+      {
+        "family": "Raymond",
+        "given": "Sean N."
+      },
+      {
+        "family": "Selsis",
+        "given": "Franck"
+      },
+      {
+        "family": "Sestovic",
+        "given": "Marko"
+      },
+      {
+        "family": "Triaud",
+        "given": "Amaury H. M. J."
+      },
+      {
+        "family": "Grootel",
+        "given": "Valerie Van"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "container-title": "The Planetary Science Journal",
+    "volume": "2",
+    "page": "1",
+    "DOI": "10.3847/PSJ/abd022",
+    "URL": "https://doi.org/10.3847/PSJ/abd022"
+  },
+  {
+    "id": "JontofHutter2016",
+    "type": "article-journal",
+    "title": "Secure Mass Measurements from Transit Timing: 10 Kepler Exoplanets between 3 and 8 M⊕ with Diverse Densities and Incident Fluxes",
+    "author": [
+      {
+        "family": "Jontof-Hutter",
+        "given": "Daniel"
+      },
+      {
+        "family": "Ford",
+        "given": "Eric B."
+      },
+      {
+        "family": "Rowe",
+        "given": "Jason F."
+      },
+      {
+        "family": "Lissauer",
+        "given": "Jack J."
+      },
+      {
+        "family": "Fabrycky",
+        "given": "Daniel C."
+      },
+      {
+        "family": "Van Laerhoven",
+        "given": "Christa"
+      },
+      {
+        "family": "Agol",
+        "given": "Eric"
+      },
+      {
+        "family": "Deck",
+        "given": "Katherine M."
+      },
+      {
+        "family": "Holczer",
+        "given": "Tomer"
+      },
+      {
+        "family": "Mazeh",
+        "given": "Tsevi"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "container-title": "The Astrophysical Journal",
+    "volume": "820",
+    "page": "39",
+    "DOI": "10.3847/0004-637X/820/1/39",
+    "URL": "https://doi.org/10.3847/0004-637X/820/1/39"
   }
 ]

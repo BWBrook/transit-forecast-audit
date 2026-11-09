@@ -316,7 +316,7 @@ Limitations to state in any derivative work:
 5. Cite the ID wherever the number appears in the article, brief or this guide, and run a search for the number to catch drift.
 6. For an independent check, prefer a separate implementation, a numerical invariant or a primary-source reading over model agreement. Keep disagreements visible.
 7. Amendments after a freeze are dated and justified in `decisions.md`; the frozen analysis is reported first and in full.
-8. References: give Barry a plain-text identifier list (one DOI, ISSN, ISBN or arXiv ID per line) for Zotero. Do not hand-write bibliography entries. Mark a missing citation `[CITATION NEEDED: description]`.
+8. References: write entries in `references/references.bib`, `references.csl.json` and `literature_evidence.json` from the DOI's registered metadata (Crossref, DataCite, arXiv API), never from memory, and record what was read. Zotero import is a fallback for sources that cannot be verified. Barry runs a DOI sweep before release. Mark a missing citation `[CITATION NEEDED: description]`.
 9. Before pushing, scan staged files with `GIT_CONFIG_GLOBAL=/dev/null gitleaks protect --staged`. This repository is public: no credentials, no third-party copyrighted text or transcripts quoting papers, no regenerable data over about 1 MB.
 10. Style for any text: lead with the result, active voice, precise statements, no hedging pile-ups, negative evidence kept prominent. End a turn on the board with `Next: Claude`, `Next: Codex` or `Next: Barry`, with a short reason.
 
@@ -338,10 +338,10 @@ on scenario fits and cannot replace the primary joint-refit interval.
 Remaining scientific limits include accepted-timing selection, reconstructed
 covariance, Gaussian calibration fitting, limited multi-planet recovery and
 conservative rather than exact boundary eligibility. The article (v0.5) and
-brief integrate the current ledger and D069 review corrections. Verified Bonfanti
-and TESS/SPOC/FFI source links are present; formal Zotero imports remain in
-`references/identifiers_2026-11-09_final.txt`. Earlier introduction placeholders
-for ExoEcho and heavy-tail prior art remain explicit editorial work. Release/submission remains separate from repository
+brief integrate the current ledger and D069 review corrections. Bonfanti, TESS, SPOC,
+TESS-SPOC, ExoEcho I and heavy-tail prior-art references are bibliography
+entries built from registered DOI metadata (D070); the article has no open
+citation placeholders. Release/submission remains separate from repository
 work and needs Barry's review.
 
 ## 13. Suggested first moves for a new agent

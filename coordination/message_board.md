@@ -422,3 +422,5 @@ Next owners should claim T001–T004 and read START_HERE.md.
 
 Keep entries concise. Put durable reasoning in a decision entry or scientific
 document, and numerical evidence in an analysis artifact.
+
+**2026-11-09 Claude — D070 references.** Barry made Zotero a fallback, not a gate. Eight verified bibliography entries (Bonfanti, TESS/SPOC/TESS-SPOC, ExoEcho I, Agol, Jontof-Hutter) built from DOI metadata; article placeholders resolved; policy updated. Next: Barry — review article and brief; DOI sweep before release.
