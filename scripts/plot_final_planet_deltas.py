@@ -7,6 +7,8 @@ marked. Descriptive; reads the committed planet table only.
 """
 
 import csv
+import hashlib
+import json
 from pathlib import Path
 
 import matplotlib
@@ -21,10 +23,14 @@ OUT = ROOT / "results/final_review/figures/planet_deltas"
 
 def main():
     with SRC.open() as fh:
-        rows = [r for r in csv.DictReader(fh) if r["analysis_set"] == "primary" and r["delta"] not in ("", "nan")]
-    rows.sort(key=lambda r: float(r["delta"]))
+        rows = [r for r in csv.DictReader(fh) if r["analysis_set"] == "primary" and int(r["accepted_planets"]) == 1]
+    rows.sort(key=lambda r: (float(r["delta"]), r["planet"]))
     d = np.array([float(r["delta"]) for r in rows])
     flagged = np.array([r["current_catalogue_ttv_label"] == "current_archive_flagged" for r in rows])
+    if (len(rows), int((d < 0).sum()), int(flagged.sum())) != (151, 40, 3):
+        raise ValueError("Figure membership differs from the audited primary set")
+    if len({r["planet"] for r in rows}) != len(rows) or not np.all(np.isfinite(d)):
+        raise ValueError("Expected one finite contrast per primary planet")
     plt.rcParams.update({"font.size": 10, "axes.spines.top": False, "axes.spines.right": False,
                          "font.family": "DejaVu Sans", "pdf.fonttype": 42})
     fig, ax = plt.subplots(figsize=(8.5, 3.8))
@@ -48,8 +54,25 @@ def main():
     ax.set_ylabel("M2 − M0 standardised IS95\n(planet mean; symlog; lower is better)")
     ax.legend(frameon=False, fontsize=8, loc="upper left")
     fig.tight_layout()
-    for ext in ("png", "pdf"):
-        fig.savefig(OUT.with_suffix("." + ext), dpi=200)
+    fig.savefig(OUT.with_suffix(".png"), dpi=200)
+    fig.savefig(OUT.with_suffix(".pdf"), metadata={"CreationDate": None, "ModDate": None})
+    plt.close(fig)
+    def digest(p):
+        return hashlib.sha256(p.read_bytes()).hexdigest()
+    receipt = {
+        "description": "Descriptive fixed-fit planet contrasts, no new verdict",
+        "filter": "analysis_set=primary and accepted_planets=1; one finite delta per planet",
+        "sort": "delta ascending, planet name as tie-break",
+        "accepted_planets": len(rows), "improved_planets": int((d < 0).sum()),
+        "current_flagged_planets": [r["planet"] for r, flag in zip(rows, flagged) if flag],
+        "mean_delta": float(d.mean()), "median_delta": float(np.median(d)),
+        "script_sha256": digest(Path(__file__)),
+        "input_sha256": {str(SRC.relative_to(ROOT)): digest(SRC)},
+        "output_sha256": {str(OUT.with_suffix(ext).relative_to(ROOT)): digest(OUT.with_suffix(ext))
+                          for ext in (".png", ".pdf")},
+        "matplotlib_version": matplotlib.__version__, "numpy_version": np.__version__,
+    }
+    OUT.with_suffix(".receipt.json").write_text(json.dumps(receipt, indent=2, allow_nan=False) + "\n")
 
 
 if __name__ == "__main__":

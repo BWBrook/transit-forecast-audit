@@ -1,0 +1,55 @@
+{
+  "audit": "Independent centered least squares and direct membership checks, no invocation of check_hr858b.py",
+  "accepted_events": 16,
+  "distinct_event_ids": 16,
+  "distinct_epochs": 16,
+  "epoch_range": [
+    643,
+    665
+  ],
+  "sectors": [
+    105,
+    106,
+    107
+  ],
+  "residual_min_range": [
+    -404.0422710031271,
+    -355.1992133259773
+  ],
+  "residual_mean_min": -380.6312213279307,
+  "forecast_sd_min_range": [
+    15.902667431497143,
+    16.435730353592444
+  ],
+  "local_period_d_centered": 3.583949766464514,
+  "linear_fit_rms_min": 4.260778959075804,
+  "product_shape_rchi2": {
+    "105": 2.712,
+    "106": 1.203,
+    "107": 1.461
+  },
+  "development_saved_rows": 0,
+  "actual_frozen_training_planets": 206,
+  "HR858b_in_actual_frozen_calibration": false,
+  "HR858_host_in_actual_frozen_calibration": false,
+  "DRD_catalogue_row": [
+    "HR858b         \t2458903.961    \t0.0016         \t3.585266       \t1.7e-05"
+  ],
+  "in_origin_DRD_TTV_transcription": false,
+  "origin_DRD_flag_count": 42,
+  "input_sha256": {
+    "results/final_primary/accepted_outcomes.csv": "2c2fa9559d24fd55ddb1890b2c8814a4ebb3f53a9dbabf934387341e46f8f62b",
+    "results/final_primary/accepted_forecasts.csv": "67c76e6432a1ce2b4b010c4f62daf6eba016451c9d5730fe80eaf3823e5f84ac",
+    "data/derived/final_primary/measured/products.csv": "63d5b108bf49dfcc5a5efd5f7c394123f409737e528615b192c8f81eeea02f92",
+    "results/outcomes/t015v3/outcomes.csv.gz": "79c9d323b852f47a6519df7671764baad358486c558e3dad0dd36fc4b9437ef8",
+    "results/prefreeze/candidate_parameters.json": "e68cc5291ce6abb55f88bb9907cf0eabe0ac930c35e73dc07ed056059309f99f",
+    "data/fixtures/exoclock_ttv_flags.csv": "7eff71a7a435941d619a3caca995e6eb3eed8db1d229e3b372dc63cf643b23a0",
+    "data/raw/osf/wpjtn/catalogue_of_ephemerides.txt": "582a6ca8e65d85a5c840452f93e8dd5f0f0ef404b4c28fb4836e7b15efc094af",
+    "results/final_review/hr858b_check.json": "625ca805603dc2c49c10c0cdf89c192f159b574108b6793eda133b6ac2051267"
+  },
+  "limits": [
+    "Saved timing/diagnostic evidence only; no independent photometry extraction or identification.",
+    "A locally straight timing sequence does not identify the physical mechanism or prove absence of systematic artifacts.",
+    "No saved row means absence in this development dataset, not absence of timing observations in the world."
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "review": "D069",
+  "base_commit": "9eade0b",
+  "article_version": "0.5",
+  "primary_verdict": "inconclusive; unchanged",
+  "frozen_manifest_sha256": "5ec7c0f363bca641430c68c0ff57fdbf788cda9e32f80dddea7c7cd9121c57d1",
+  "frozen_mismatches": [],
+  "sources_sha256": {
+    "manuscript/paper.md": "aeedaf37533a72cf5c205985544359ab36aba12fe9e57f9c3a656a93415d7631",
+    "docs/brief.md": "569170f5114d35ad3d74a90001d3f29f1743aef8a7e4408852f4c8ba0d3e2139",
+    "docs/agent_guide.md": "42f578980dc00cbfe21e560168c86be9c6a05c8dd6d3590a788a057627e0ba0a",
+    "references/identifiers_2026-11-09_final.txt": "0a4b6205617320b3d38dc8b32342548bde3ddffd53d4eaa6df74b80a0b45ff92",
+    "scripts/plot_final_planet_deltas.py": "61ee66a089e9b59edeba4771286df84901804740ae8a61e97848d04e6dd5cefd",
+    "scripts/check_interval_score_contrast.py": "b222474647a31bd1ca6f8f032c26b11187cd15349fd9242aa5b01c5a5c9431d6"
+  },
+  "render": {
+    "brief": {
+      "path": "docs/brief.pdf",
+      "sha256": "cba6f24e0b2d8119a58dcfd17c267e1a5180df6597832852d8739de65aa942b0",
+      "pages": 2,
+      "A4": true,
+      "outside_margin_words": [],
+      "build_warnings": []
+    },
+    "paper": {
+      "path": "manuscript/build/paper.pdf",
+      "sha256": "66ea16bbb087ab3a7c90cb49a67649843229004d8bc48d4c4a4c130c14746f48",
+      "pages": 23,
+      "A4": true,
+      "outside_margin_words": [],
+      "build_warnings": []
+    }
+  },
+  "visual_review": "Both final brief pages at full size; all 23 article pages in contact sheets, with corrected final page 20 at full size; figures checked. No clipping or missing glyphs.",
+  "build_commands": [
+    {
+      "cwd": ".",
+      "argv": [
+        "pandoc",
+        "docs/brief.md",
+        "--pdf-engine=xelatex",
+        "-V",
+        "papersize:a4",
+        "-V",
+        "geometry:margin=20mm",
+        "-V",
+        "fontsize=11pt",
+        "-V",
+        "mainfont=texgyrepagella-regular.otf",
+        "-V",
+        "mainfontoptions=BoldFont=texgyrepagella-bold.otf,ItalicFont=texgyrepagella-italic.otf,BoldItalicFont=texgyrepagella-bolditalic.otf",
+        "-o",
+        "docs/brief.pdf"
+      ]
+    },
+    {
+      "cwd": "manuscript",
+      "argv": [
+        "pandoc",
+        "paper.md",
+        "--citeproc",
+        "--resource-path=.:..",
+        "--pdf-engine=xelatex",
+        "-V",
+        "papersize:a4",
+        "-V",
+        "geometry:margin=20mm",
+        "-V",
+        "fontsize=11pt",
+        "-V",
+        "mainfont=texgyrepagella-regular.otf",
+        "-V",
+        "mainfontoptions=BoldFont=texgyrepagella-bold.otf,ItalicFont=texgyrepagella-italic.otf,BoldItalicFont=texgyrepagella-bolditalic.otf",
+        "-o",
+        "build/paper.pdf"
+      ]
+    }
+  ],
+  "pandoc_version": "pandoc 3.12.1",
+  "tests": {
+    "command": ".venv/bin/python -m unittest discover -s tests -v",
+    "run": 115,
+    "skipped": 1,
+    "failures": 0,
+    "log_sha256": "61d9729c5d652a4bc6ee2c421ef08dc79477bed65218639febe6b21e7bcc6a9e"
+  },
+  "math_check": {
+    "path": "results/final_review/d068_interval_score.json",
+    "sha256": "50dd0d339879200509cea2c3a2be435d9274866fe1ab592461544d4a351111b5",
+    "synthetic_cases": 27,
+    "saved_events": 2185
+  },
+  "remaining_editorial_work": [
+    "Formal Zotero import of verified Bonfanti/TESS/SPOC/FFI identifiers.",
+    "Earlier introduction placeholders for ExoEcho and heavy-tail prior art.",
+    "Barry review before release."
+  ],
+  "released": false
+}

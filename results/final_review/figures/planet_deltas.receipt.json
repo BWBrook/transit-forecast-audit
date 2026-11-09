@@ -1,0 +1,24 @@
+{
+  "description": "Descriptive fixed-fit planet contrasts, no new verdict",
+  "filter": "analysis_set=primary and accepted_planets=1; one finite delta per planet",
+  "sort": "delta ascending, planet name as tie-break",
+  "accepted_planets": 151,
+  "improved_planets": 40,
+  "current_flagged_planets": [
+    "HR858b",
+    "WASP-43b",
+    "WASP-18b"
+  ],
+  "mean_delta": -0.12130780452395712,
+  "median_delta": 1.0453269265035008,
+  "script_sha256": "61ee66a089e9b59edeba4771286df84901804740ae8a61e97848d04e6dd5cefd",
+  "input_sha256": {
+    "results/final_secondaries/descriptive/planet_deltas.csv": "a5adceaa9690f03304dddfc9cf12888b7c7fa6d2ba9bf5d84a4a898c63fa0a74"
+  },
+  "output_sha256": {
+    "results/final_review/figures/planet_deltas.png": "6a8d906726aacf03b959b6ce845845eed5799ee6d4e6ce8b3c721c8432647d3e",
+    "results/final_review/figures/planet_deltas.pdf": "b01c2329383915780a0f40d696723786601940ec2de770bd4950a5d44eb55193"
+  },
+  "matplotlib_version": "3.11.2",
+  "numpy_version": "2.5.4"
+}

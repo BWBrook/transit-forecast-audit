@@ -1,6 +1,6 @@
 # Agent guide: using the transit-forecast-audit work
 
-**Audience:** a new AI agent (Claude, Codex or another) that must use, extend, review or reproduce this work. **Current status (9 November 2026):** D065's authorised frozen protected evaluation is complete; its primary verdict is **inconclusive**, independently supported by D066. The declared secondaries are implemented with dated post-unblinding conventions. Start with `docs/final_results_2026-11-08.md`, `docs/audits/d065_review_2026-11-09.md`, `docs/final_secondaries_2026-11-09.md` and the claims ledger. The article `manuscript/paper.md` (v0.4) and public brief `docs/brief.md` integrate the held-out result as of 9 November; neither has yet been reviewed by Barry.
+**Audience:** a new AI agent (Claude, Codex or another) that must use, extend, review or reproduce this work. **Current status (9 November 2026):** D065's authorised frozen protected evaluation is complete; its primary verdict is **inconclusive**, independently supported by D066. The declared secondaries are implemented with dated post-unblinding conventions. Start with `docs/final_results_2026-11-08.md`, `docs/audits/d065_review_2026-11-09.md`, `docs/final_secondaries_2026-11-09.md` and the claims ledger. The article `manuscript/paper.md` (v0.5) and public brief `docs/brief.md` integrate the held-out result as of 9 November; neither has yet been reviewed by Barry.
 
 Historical development account: `docs/sprint2_review.md`. The original `docs/sprint2_report.md` and original results are historical evidence qualified by that review and the later decisions. Follow the current read order above for the protected result.
 
@@ -166,10 +166,17 @@ python -m unittest discover -s tests -v                 # AGENTS.md form
 uv run --project ~/work/correspondence correspondence-export docs/correspondence/publication.toml   # refresh the correspondence snapshot on the board host
 GIT_CONFIG_GLOBAL=/dev/null gitleaks protect --staged   # before pushing to this public repository
 MPLCONFIGDIR=/private/tmp/transit-final-review-mpl .venv/bin/python scripts/plot_final_planet_deltas.py   # article Figure 1
+.venv/bin/python scripts/check_interval_score_contrast.py  # C049, fixed-interval contrast bound
 pandoc docs/brief.md --pdf-engine=xelatex -V papersize:a4 -V geometry:margin=20mm -V fontsize=11pt -V mainfont=texgyrepagella-regular.otf -V mainfontoptions="BoldFont=texgyrepagella-bold.otf,ItalicFont=texgyrepagella-italic.otf,BoldItalicFont=texgyrepagella-bolditalic.otf" -o docs/brief.pdf   # must stay two A4 pages
 ```
 
 ## 6. Historical development guards and current access
+
+The D069 article review PDF is `manuscript/build/paper.pdf` (ignored build
+output). Its exact Pandoc argument list and the two-page brief's build/visual
+checks are in `results/final_review/d069_products_validation.json`. These are
+review drafts, not released artefacts; the introduction still marks two prior-art
+references for completion.
 
 The two era limits below governed development acquisition. D065 subsequently
 authorised the exact protected package through the shared record/hash guard.
@@ -222,12 +229,14 @@ Keys: `date`, `status`, `development_only`, `protocol_frozen`, `protected_outcom
 - **Four dates.** training end, first public availability, forecast origin, retrieval. A reference epoch is not an issue date.
 - **Covariance tiers C1-C4.** ExoClock gives no issued covariance (D021). M0 is a reconstruction. Never set missing covariance to zero without a label.
 - **Models.** M0 issued Gaussian; M1 one fitted scale b; M2 b = 1 with a lognormal multiplier of log-scale SD s (median 1); M3 both. The comparator set is closed; nothing outside it competes (D041).
-- **Outcome error.** `exoclock_reported` timings are multiplied by a = 1.087; `t015v3c` multiplies its own σ by g(Tmag) = √max(0.8857 − 0.0919(T − 11), 0.25) with T clamped to [8, 13.5]; that multiplier failed confirmation (C025). `t015v3` is the same pipeline without it. The frozen uncorrected SPOC rule passes conditional criteria after review; the amended implementation and end-to-end rule remain unqualified (C028–C029).
+- **Outcome error.** `exoclock_reported` timings are multiplied by a = 1.087; `t015v3c` multiplies its own σ by g(Tmag) = √max(0.8857 − 0.0919(T − 11), 0.25) with T clamped to [8, 13.5]; that multiplier failed confirmation (C025). `t015v3` is the same pipeline without it. The amended SPOC rule carries conditional qualification from actual-grid replay on the frozen samples (C038–C040); old C028–C029 limits describe the earlier review stage.
 - **Standardised IS95.** Each event's interval score divided by the M0 predictive SD including outcome error. It is a conditional weighted loss (D042), not an issue-time proper score. Always report raw minute IS95 and the forecast-only normalisation beside it.
 - **Equal-host estimand.** For outcome calibration, each host has weight one and its timed events share it equally. Pooled event-weighted numbers are reproduction-only (C020).
 - **Failure denominators.** Product failures, run failures, event failures and end-to-end recovery are separate. Never add them into one rate. Recovery is reported, never imputed.
 - **Host-cluster resampling.** Planets of one host and repeated transits of one planet are dependent. Counts of events, planets and hosts accompany every comparison.
 - **Observed coverage is not latent coverage.** Intervals describe measured mid-times (forecast convolved with outcome error), not the unobserved true time.
+- **Score contrasts are bounded for fixed intervals (C049).** A single interval's miss penalty is unbounded, but its difference from another fixed interval saturates beyond both endpoints. For nested symmetric widening, −19Δw ≤ ΔIS95 ≤ Δw; standardise both sides by the common positive divisor. Do not revive v0.4's unbounded-gain explanation.
+- **HR858b's check is internal (C048).** Its saved coherent sequence supports an ephemeris departure; it is not an independent extraction or proof against every identification error. Bonfanti's correct pre-origin source is arXiv:2411.14911, not the unrelated 2604.15035 link. Absence of a DRD flag follows that release's detection criterion, not a comprehensive literature screen.
 
 ## 9. Where every claim's evidence lives
 
@@ -328,10 +337,11 @@ on scenario fits and cannot replace the primary joint-refit interval.
 
 Remaining scientific limits include accepted-timing selection, reconstructed
 covariance, Gaussian calibration fitting, limited multi-planet recovery and
-conservative rather than exact boundary eligibility. The article (v0.4) and
-brief integrate the current ledger; the outstanding citation is Bonfanti et al.
-2025 (arXiv 2411.14911, in `references/identifiers_2026-11-09_final.txt`) for
-HR 858 timing variations. Release/submission remains separate from repository
+conservative rather than exact boundary eligibility. The article (v0.5) and
+brief integrate the current ledger and D069 review corrections. Verified Bonfanti
+and TESS/SPOC/FFI source links are present; formal Zotero imports remain in
+`references/identifiers_2026-11-09_final.txt`. Earlier introduction placeholders
+for ExoEcho and heavy-tail prior art remain explicit editorial work. Release/submission remains separate from repository
 work and needs Barry's review.
 
 ## 13. Suggested first moves for a new agent

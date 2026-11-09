@@ -1,0 +1,288 @@
+{
+  "claim": "C049",
+  "alpha": 0.05,
+  "formula": "DeltaIS = dw - 40[min(dL,(l0-y)+) + min(dU,(y-u0)+)]",
+  "nested_bounds": "dw - 40 max(dL,dU) <= DeltaIS <= dw",
+  "symmetric_bounds": "-19 dw <= DeltaIS <= dw",
+  "scope": "Fixed endpoints and positive common standardisation; no bound across varying interval widths.",
+  "max_formula_error": 0.0,
+  "synthetic_examples": [
+    {
+      "d_left": 1.0,
+      "d_right": 1.0,
+      "y": -1000000.0,
+      "delta": -38.0,
+      "bounds": [
+        -38.0,
+        2.0
+      ]
+    },
+    {
+      "d_left": 1.0,
+      "d_right": 1.0,
+      "y": -10.0,
+      "delta": -38.0,
+      "bounds": [
+        -38.0,
+        2.0
+      ]
+    },
+    {
+      "d_left": 1.0,
+      "d_right": 1.0,
+      "y": -3.0,
+      "delta": -38.0,
+      "bounds": [
+        -38.0,
+        2.0
+      ]
+    },
+    {
+      "d_left": 1.0,
+      "d_right": 1.0,
+      "y": -1.0,
+      "delta": 2.0,
+      "bounds": [
+        -38.0,
+        2.0
+      ]
+    },
+    {
+      "d_left": 1.0,
+      "d_right": 1.0,
+      "y": 0.0,
+      "delta": 2.0,
+      "bounds": [
+        -38.0,
+        2.0
+      ]
+    },
+    {
+      "d_left": 1.0,
+      "d_right": 1.0,
+      "y": 1.0,
+      "delta": 2.0,
+      "bounds": [
+        -38.0,
+        2.0
+      ]
+    },
+    {
+      "d_left": 1.0,
+      "d_right": 1.0,
+      "y": 3.0,
+      "delta": -38.0,
+      "bounds": [
+        -38.0,
+        2.0
+      ]
+    },
+    {
+      "d_left": 1.0,
+      "d_right": 1.0,
+      "y": 10.0,
+      "delta": -38.0,
+      "bounds": [
+        -38.0,
+        2.0
+      ]
+    },
+    {
+      "d_left": 1.0,
+      "d_right": 1.0,
+      "y": 1000000.0,
+      "delta": -38.0,
+      "bounds": [
+        -38.0,
+        2.0
+      ]
+    },
+    {
+      "d_left": 0.25,
+      "d_right": 2.0,
+      "y": -1000000.0,
+      "delta": -7.75,
+      "bounds": [
+        -77.75,
+        2.25
+      ]
+    },
+    {
+      "d_left": 0.25,
+      "d_right": 2.0,
+      "y": -10.0,
+      "delta": -7.75,
+      "bounds": [
+        -77.75,
+        2.25
+      ]
+    },
+    {
+      "d_left": 0.25,
+      "d_right": 2.0,
+      "y": -3.0,
+      "delta": -7.75,
+      "bounds": [
+        -77.75,
+        2.25
+      ]
+    },
+    {
+      "d_left": 0.25,
+      "d_right": 2.0,
+      "y": -1.0,
+      "delta": 2.25,
+      "bounds": [
+        -77.75,
+        2.25
+      ]
+    },
+    {
+      "d_left": 0.25,
+      "d_right": 2.0,
+      "y": 0.0,
+      "delta": 2.25,
+      "bounds": [
+        -77.75,
+        2.25
+      ]
+    },
+    {
+      "d_left": 0.25,
+      "d_right": 2.0,
+      "y": 1.0,
+      "delta": 2.25,
+      "bounds": [
+        -77.75,
+        2.25
+      ]
+    },
+    {
+      "d_left": 0.25,
+      "d_right": 2.0,
+      "y": 3.0,
+      "delta": -77.75,
+      "bounds": [
+        -77.75,
+        2.25
+      ]
+    },
+    {
+      "d_left": 0.25,
+      "d_right": 2.0,
+      "y": 10.0,
+      "delta": -77.75,
+      "bounds": [
+        -77.75,
+        2.25
+      ]
+    },
+    {
+      "d_left": 0.25,
+      "d_right": 2.0,
+      "y": 1000000.0,
+      "delta": -77.75,
+      "bounds": [
+        -77.75,
+        2.25
+      ]
+    },
+    {
+      "d_left": 0.0,
+      "d_right": 3.0,
+      "y": -1000000.0,
+      "delta": 3.0,
+      "bounds": [
+        -117.0,
+        3.0
+      ]
+    },
+    {
+      "d_left": 0.0,
+      "d_right": 3.0,
+      "y": -10.0,
+      "delta": 3.0,
+      "bounds": [
+        -117.0,
+        3.0
+      ]
+    },
+    {
+      "d_left": 0.0,
+      "d_right": 3.0,
+      "y": -3.0,
+      "delta": 3.0,
+      "bounds": [
+        -117.0,
+        3.0
+      ]
+    },
+    {
+      "d_left": 0.0,
+      "d_right": 3.0,
+      "y": -1.0,
+      "delta": 3.0,
+      "bounds": [
+        -117.0,
+        3.0
+      ]
+    },
+    {
+      "d_left": 0.0,
+      "d_right": 3.0,
+      "y": 0.0,
+      "delta": 3.0,
+      "bounds": [
+        -117.0,
+        3.0
+      ]
+    },
+    {
+      "d_left": 0.0,
+      "d_right": 3.0,
+      "y": 1.0,
+      "delta": 3.0,
+      "bounds": [
+        -117.0,
+        3.0
+      ]
+    },
+    {
+      "d_left": 0.0,
+      "d_right": 3.0,
+      "y": 3.0,
+      "delta": -77.0,
+      "bounds": [
+        -117.0,
+        3.0
+      ]
+    },
+    {
+      "d_left": 0.0,
+      "d_right": 3.0,
+      "y": 10.0,
+      "delta": -117.0,
+      "bounds": [
+        -117.0,
+        3.0
+      ]
+    },
+    {
+      "d_left": 0.0,
+      "d_right": 3.0,
+      "y": 1000000.0,
+      "delta": -117.0,
+      "bounds": [
+        -117.0,
+        3.0
+      ]
+    }
+  ],
+  "saved_events_checked": 2185,
+  "penalty_above_added_width": [],
+  "observed_check_limit": "Checks the observed score/width inequality, not interval nesting or new inference.",
+  "input_sha256": {
+    "results/final_primary/scores.csv": "3ba24636684e42d2d99dbbe68c336d2726aa702d70ea0ed7001005a7a223412c"
+  },
+  "script_sha256": "b222474647a31bd1ca6f8f032c26b11187cd15349fd9242aa5b01c5a5c9431d6"
+}
