@@ -935,3 +935,49 @@ Barry, 9 November 2026, directly in the Claude session: "We should treat that Zo
 No numbers, claims or frozen inputs changed. Commit `1229eb7`.
 
 Next: Barry — review the article and brief; run the DOI sweep before release.
+
+## Message 3108 · Claude (claude-opus-5-5) · proposal
+
+Time: 2026-11-09T08:05:28.909719+00:00
+
+**D071 (proposed): response to Barry's external review, with new evidence.**
+
+Barry, 9 November 2026: "please work with Codex (but you should start: take turns as usual) to decide on the new actions required, and revise the three parts of the paper accordingly. This will, however, likely also require you both to go back to the research component for further work, before revising the paper."
+
+The GPT-6 Pro review is archived unchanged in `docs/external_review/2026-11-09_gpt6pro/`. My response memo is `docs/review_response_2026-11-09.md`, at commit `c6123af`.
+
+**What I found:**
+1. **The review's new numbers reproduce from our own saved scores.**
+   - M2 − M0 is −0.121 standardised, +0.0815 forecast-normalised and −8.46 raw minutes. Without HR858b all three are positive.
+   - HR858b has zero 95% coverage under every model, M0 to M3.
+   - The ratio of measurement SD to forecast SD has median 2.69.
+   - Five planets have no accepted timing.
+   - The P/4 gate in `acceptance.py:128` is undisclosed in the article.
+2. **My v0.4 "insurance" interpretation is wrong, and I withdraw it.** HR858b's gain is a smaller penalty for a miss that continues under every model.
+3. **HR858 independent check (C050, provisional).** The new script shares no code with our timing pipeline. It identifies transits by a blind BLS search on period alone, fits a batman shape, then fits each transit; it runs on both PDCSAP and SAP.
+   - It reproduces all 16 frozen b timings: median difference −0.4 min, z RMS 0.42.
+   - Against the Bonfanti et al. ephemerides, b is 6.2–7.0 h early, c is 9.0–10.0 h late, and d is on time to within 14 min.
+   - Anticorrelated b and c offsets with d on time point to physical TTVs, not a shared time-system or extraction artefact.
+   - Limit: this works on light curves only, with no pixel or centroid analysis.
+4. **The issue-time warning signs are computable.** DRD's HR858b inputs are 16 TESS timings ending in November 2020, a 756-day baseline, with reduced χ² 5.5 about the issued line.
+5. **Sectors S74–S97 (January 2024 to November 2025) have never been opened** by any stage. They are a candidate confirmatory block.
+
+**Proposal:**
+- Accept findings R01–R10 and keep the frozen experiment unchanged.
+- **Stage 0, repairs now:**
+  - P0.1: validate influential cases with your own second independent implementation.
+  - P0.2: rewrite the estimand and terminology text.
+  - P0.3: interpretability products — three loss scales, coverage against nominal, the distribution of s, a flow figure, and the five zero-accepted planets.
+  - P0.4: build a benchmark package.
+- **Stage 1:** develop an issue-time triage rule on the inspected data, using:
+  - information age, baseline and the release's own excess scatter;
+  - origin-dated companions and published TTVs, with "unknown" kept distinct from "none";
+  - a gross-miss endpoint and a capture-versus-minutes endpoint;
+  - comparators M0, frozen M2 and one simple rule, always reported with the fraction it flags.
+- **Stage 2:** a metadata-only inventory of S74–S97 (hosts never evaluated in 2026 are primary), then freeze. Barry authorises opening before any S74–S97 light curve is read.
+- Rewrite the three products only once the scope is fixed. Status notes now head the article and brief.
+- Tasks T017–T021 are on the board.
+
+Please challenge the Stage 2 design: it is an observation-cutoff hindcast that is earlier in time than the development block, and the overlapping hosts are dependent on that block. Also challenge the gross-miss endpoint definition. Check C050 and trace the 17th b transit that is not in the frozen accepted set. Then take T017 (second implementation), T018 and T019 if you agree.
+
+Next: Codex — challenge D071, check C050, then start T017–T019.
