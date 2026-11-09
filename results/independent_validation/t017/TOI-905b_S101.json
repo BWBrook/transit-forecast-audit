@@ -1,0 +1,348 @@
+{
+  "planet": "TOI-905b",
+  "category": "evaluation_influence",
+  "sector": 101,
+  "relative_fits_path": "data/raw/mast/TIC_261867566/tess2026060005000-s0101-0000000261867566-0303-s_lc.fits",
+  "fluxes": {
+    "PDCSAP_FLUX": {
+      "signals": [
+        {
+          "period_d": 3.7397433323739806,
+          "epoch_btjd": 4103.939412828821,
+          "duration_d": 0.051000000000000004,
+          "depth": 0.014126444626944103,
+          "snr": 141.79723612414764
+        },
+        {
+          "period_d": 12.126839289555067,
+          "epoch_btjd": 4101.251412828821,
+          "duration_d": 0.081,
+          "depth": 0.0012927040893622652,
+          "snr": 8.48774388908435
+        },
+        {
+          "period_d": 6.895630657380414,
+          "epoch_btjd": 4106.2306456489005,
+          "duration_d": 0.03,
+          "depth": 0.0013438796991575054,
+          "snr": 5.901966849106369
+        }
+      ],
+      "selected_signal": 0,
+      "phase_ambiguity": false,
+      "good_cadences": 15971,
+      "tc_uses_issued_epoch": false,
+      "companion_mask_diagnostics": [
+        {
+          "signal": 1,
+          "period_ratio": 3.2426929368591124,
+          "harmonic_candidate": false,
+          "overlapping_target_cadences": 0,
+          "target_cadences_protected_from_harmonic_mask": 0,
+          "interpretation": "Nonharmonic signal masked, including overlaps."
+        },
+        {
+          "signal": 2,
+          "period_ratio": 1.843878053792286,
+          "harmonic_candidate": false,
+          "overlapping_target_cadences": 0,
+          "target_cadences_protected_from_harmonic_mask": 0,
+          "interpretation": "Nonharmonic signal masked, including overlaps."
+        }
+      ],
+      "status": "identified",
+      "shared_shape": {
+        "phase_shift_d": 0.0012225740265679244,
+        "duration_d": 0.08175695156634062,
+        "ingress_fraction": 0.2785317709187074,
+        "reduced_chi2": 0.9670266185316009,
+        "points": 1102,
+        "empirical_model": "symmetric trapezoid, depth and linear baseline profiled"
+      },
+      "transits": [
+        {
+          "status": "timed",
+          "window_centre_btjd": 4103.940635402848,
+          "points": 294,
+          "tc_btjd": 4103.9413297294,
+          "profile_median_btjd": 4103.941261833084,
+          "sigma_min": 0.6412539431177233,
+          "q025_btjd": 4103.94038140388,
+          "q975_btjd": 4103.9421334408,
+          "depth": 0.01505513245061583,
+          "reduced_chi2": 1.0,
+          "profile_signal_snr": 56.79871043259768,
+          "profile_boundary_weight": 0.0,
+          "profile_edge": false,
+          "weak_profile": false,
+          "local_epoch": 0,
+          "tc_bjd_tdb": 2461103.9413297293
+        },
+        {
+          "status": "timed",
+          "window_centre_btjd": 4107.680378735222,
+          "points": 294,
+          "tc_btjd": 4107.681246643413,
+          "profile_median_btjd": 4107.681191273784,
+          "sigma_min": 0.5746933769603858,
+          "q025_btjd": 4107.680324694496,
+          "q975_btjd": 4107.681942794111,
+          "depth": 0.015131886625807786,
+          "reduced_chi2": 1.0,
+          "profile_signal_snr": 57.12286987618917,
+          "profile_boundary_weight": 0.0,
+          "profile_edge": false,
+          "weak_profile": false,
+          "local_epoch": 1,
+          "tc_bjd_tdb": 2461107.6812466434
+        },
+        {
+          "status": "timed",
+          "window_centre_btjd": 4111.420122067596,
+          "points": 294,
+          "tc_btjd": 4111.419948485957,
+          "profile_median_btjd": 4111.419947978479,
+          "sigma_min": 0.573216641315573,
+          "q025_btjd": 4111.419173428876,
+          "q975_btjd": 4111.420766005132,
+          "depth": 0.014931504862644905,
+          "reduced_chi2": 1.0406709521758375,
+          "profile_signal_snr": 55.322273258657425,
+          "profile_boundary_weight": 0.0,
+          "profile_edge": false,
+          "weak_profile": false,
+          "local_epoch": 2,
+          "tc_bjd_tdb": 2461111.419948486
+        },
+        {
+          "status": "timed",
+          "window_centre_btjd": 4115.15986539997,
+          "points": 294,
+          "tc_btjd": 4115.160212563246,
+          "profile_median_btjd": 4115.1602775043,
+          "sigma_min": 0.5872317658592362,
+          "q025_btjd": 4115.159482883784,
+          "q975_btjd": 4115.161076628646,
+          "depth": 0.01474494731644506,
+          "reduced_chi2": 1.0,
+          "profile_signal_snr": 55.67060125230503,
+          "profile_boundary_weight": 0.0,
+          "profile_edge": false,
+          "weak_profile": false,
+          "local_epoch": 3,
+          "tc_bjd_tdb": 2461115.1602125634
+        },
+        {
+          "status": "timed",
+          "window_centre_btjd": 4118.899608732344,
+          "points": 294,
+          "tc_btjd": 4118.899087987429,
+          "profile_median_btjd": 4118.8990997185065,
+          "sigma_min": 0.5852477834486272,
+          "q025_btjd": 4118.898280986117,
+          "q975_btjd": 4118.899871752474,
+          "depth": 0.015344999832762213,
+          "reduced_chi2": 1.0,
+          "profile_signal_snr": 58.01946424921857,
+          "profile_boundary_weight": 0.0,
+          "profile_edge": false,
+          "weak_profile": false,
+          "local_epoch": 4,
+          "tc_bjd_tdb": 2461118.8990879874
+        },
+        {
+          "status": "timed",
+          "window_centre_btjd": 4122.639352064718,
+          "points": 294,
+          "tc_btjd": 4122.638657738165,
+          "profile_median_btjd": 4122.638665583319,
+          "sigma_min": 0.58973935515785,
+          "q025_btjd": 4122.637871414744,
+          "q975_btjd": 4122.639462981444,
+          "depth": 0.015378324669266296,
+          "reduced_chi2": 1.0,
+          "profile_signal_snr": 58.22700162973044,
+          "profile_boundary_weight": 0.0,
+          "profile_edge": false,
+          "weak_profile": false,
+          "local_epoch": 5,
+          "tc_bjd_tdb": 2461122.638657738
+        }
+      ]
+    },
+    "SAP_FLUX": {
+      "signals": [
+        {
+          "period_d": 3.7397433323739806,
+          "epoch_btjd": 4103.939412828821,
+          "duration_d": 0.051000000000000004,
+          "depth": 0.012963724767771452,
+          "snr": 141.13952250319846
+        },
+        {
+          "period_d": 6.299786367643083,
+          "epoch_btjd": 4107.162912828821,
+          "duration_d": 0.24,
+          "depth": 0.001024751496628186,
+          "snr": 10.171552066881791
+        },
+        {
+          "period_d": 12.812071223592579,
+          "epoch_btjd": 4112.610912828822,
+          "duration_d": 0.24,
+          "depth": 0.0006192903034721657,
+          "snr": 6.054642472730034
+        }
+      ],
+      "selected_signal": 0,
+      "phase_ambiguity": false,
+      "good_cadences": 15971,
+      "tc_uses_issued_epoch": false,
+      "companion_mask_diagnostics": [
+        {
+          "signal": 1,
+          "period_ratio": 1.684550464495111,
+          "harmonic_candidate": false,
+          "overlapping_target_cadences": 0,
+          "target_cadences_protected_from_harmonic_mask": 0,
+          "interpretation": "Nonharmonic signal masked, including overlaps."
+        },
+        {
+          "signal": 2,
+          "period_ratio": 3.425922606153697,
+          "harmonic_candidate": false,
+          "overlapping_target_cadences": 0,
+          "target_cadences_protected_from_harmonic_mask": 0,
+          "interpretation": "Nonharmonic signal masked, including overlaps."
+        }
+      ],
+      "status": "identified",
+      "shared_shape": {
+        "phase_shift_d": 0.001240785000516394,
+        "duration_d": 0.08151824407021721,
+        "ingress_fraction": 0.2778830419776551,
+        "reduced_chi2": 1.041724325208979,
+        "points": 1102,
+        "empirical_model": "symmetric trapezoid, depth and linear baseline profiled"
+      },
+      "transits": [
+        {
+          "status": "timed",
+          "window_centre_btjd": 4103.940653613822,
+          "points": 294,
+          "tc_btjd": 4103.94117394304,
+          "profile_median_btjd": 4103.941249771891,
+          "sigma_min": 0.6407830742797782,
+          "q025_btjd": 4103.940383718411,
+          "q975_btjd": 4103.9421247575565,
+          "depth": 0.013858532995706791,
+          "reduced_chi2": 1.0,
+          "profile_signal_snr": 56.68436792896255,
+          "profile_boundary_weight": 0.0,
+          "profile_edge": false,
+          "weak_profile": false,
+          "local_epoch": 0,
+          "tc_bjd_tdb": 2461103.941173943
+        },
+        {
+          "status": "timed",
+          "window_centre_btjd": 4107.680396946196,
+          "points": 293,
+          "tc_btjd": 4107.681264161559,
+          "profile_median_btjd": 4107.681209944142,
+          "sigma_min": 0.5814856628099361,
+          "q025_btjd": 4107.680325335232,
+          "q975_btjd": 4107.68196720224,
+          "depth": 0.013959464938145845,
+          "reduced_chi2": 1.0,
+          "profile_signal_snr": 57.117919830184256,
+          "profile_boundary_weight": 0.0,
+          "profile_edge": false,
+          "weak_profile": false,
+          "local_epoch": 1,
+          "tc_bjd_tdb": 2461107.6812641616
+        },
+        {
+          "status": "timed",
+          "window_centre_btjd": 4111.42014027857,
+          "points": 294,
+          "tc_btjd": 4111.419966835498,
+          "profile_median_btjd": 4111.419949351682,
+          "sigma_min": 0.5872413587685346,
+          "q025_btjd": 4111.419158800747,
+          "q975_btjd": 4111.420783125741,
+          "depth": 0.013794117470911603,
+          "reduced_chi2": 1.0902706908865603,
+          "profile_signal_snr": 54.13969546578095,
+          "profile_boundary_weight": 0.0,
+          "profile_edge": false,
+          "weak_profile": false,
+          "local_epoch": 2,
+          "tc_bjd_tdb": 2461111.4199668355
+        },
+        {
+          "status": "timed",
+          "window_centre_btjd": 4115.159883610944,
+          "points": 293,
+          "tc_btjd": 4115.160230497089,
+          "profile_median_btjd": 4115.1602188024735,
+          "sigma_min": 0.6034475678276106,
+          "q025_btjd": 4115.159404481148,
+          "q975_btjd": 4115.161048783417,
+          "depth": 0.013585984072467134,
+          "reduced_chi2": 1.024588172071004,
+          "profile_signal_snr": 54.92812170688035,
+          "profile_boundary_weight": 0.0,
+          "profile_edge": false,
+          "weak_profile": false,
+          "local_epoch": 3,
+          "tc_bjd_tdb": 2461115.160230497
+        },
+        {
+          "status": "timed",
+          "window_centre_btjd": 4118.899626943318,
+          "points": 293,
+          "tc_btjd": 4118.899106614101,
+          "profile_median_btjd": 4118.899127909216,
+          "sigma_min": 0.6584589329964453,
+          "q025_btjd": 4118.898239706451,
+          "q975_btjd": 4118.89997876001,
+          "depth": 0.013894029393331623,
+          "reduced_chi2": 1.1715417654457896,
+          "profile_signal_snr": 52.608827917826865,
+          "profile_boundary_weight": 0.0,
+          "profile_edge": false,
+          "weak_profile": false,
+          "local_epoch": 4,
+          "tc_bjd_tdb": 2461118.8991066143
+        },
+        {
+          "status": "timed",
+          "window_centre_btjd": 4122.639370275692,
+          "points": 294,
+          "tc_btjd": 4122.638676503402,
+          "profile_median_btjd": 4122.63871241368,
+          "sigma_min": 0.6091994781410227,
+          "q025_btjd": 4122.637898194686,
+          "q975_btjd": 4122.639523858602,
+          "depth": 0.01422180840313635,
+          "reduced_chi2": 1.0471015474839724,
+          "profile_signal_snr": 57.05732334316218,
+          "profile_boundary_weight": 0.0,
+          "profile_edge": false,
+          "weak_profile": false,
+          "local_epoch": 5,
+          "tc_bjd_tdb": 2461122.638676503
+        }
+      ]
+    }
+  },
+  "file_sha256": "ff24374e3b6a2b5f37a8c870f30de92a66183c20af95fd1ca28aa72ad7a539e1",
+  "time_metadata": {
+    "TIMESYS": "TDB",
+    "TIMEREF": "SOLARSYSTEM",
+    "BJDREF": 2457000.0
+  },
+  "status": "completed",
+  "seconds": 10.652445291983895
+}

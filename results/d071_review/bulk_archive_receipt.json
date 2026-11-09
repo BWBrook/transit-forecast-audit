@@ -1,0 +1,21 @@
+{
+  "benchmark": {
+    "path": "data/derived/revision_stage0/benchmark.tar.gz",
+    "sha256": "d1511bca52d7225f90171324722f76ff7f8d535264e88a6a83adb33158e9d58e",
+    "bytes": 15949651
+  },
+  "supplemental": {
+    "path": "data/derived/revision_stage0/supplemental_validation.tar.gz",
+    "sha256": "dba9857139a297193ce9f96b03d0cdc9ce523a4fcde99bd8093024e79af0a857",
+    "bytes": 3286605,
+    "files": 81
+  },
+  "supplemental_contents": "Synthetic timing grids and preserved first independent-checker attempt; no raw TESS photometry.",
+  "remote_verified": true,
+  "storage_directory": "nectar:/data/share/transit-forecast-audit/stage0-2026-11-09/d1511bca52d7/",
+  "remote_sha256": {
+    "benchmark.tar.gz": "d1511bca52d7225f90171324722f76ff7f8d535264e88a6a83adb33158e9d58e",
+    "supplemental_validation.tar.gz": "dba9857139a297193ce9f96b03d0cdc9ce523a4fcde99bd8093024e79af0a857"
+  },
+  "public_release": false
+}

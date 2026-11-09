@@ -1,0 +1,20 @@
+{
+  "primary": {
+    "draws": 2000,
+    "q025": 1.2423401806385892,
+    "median": 1.9641842418107411,
+    "q975": 2.715738831424854,
+    "minimum": 0.83071107379079,
+    "maximum": 3.1953624382426136,
+    "scope": "stored joint-refit calibration parameters, not a posterior predictive mixture"
+  },
+  "extension": {
+    "draws": 2000,
+    "q025": 1.2838485543251006,
+    "median": 2.013219201320287,
+    "q975": 2.720763097921058,
+    "minimum": 0.8036934798810216,
+    "maximum": 3.195364890632223,
+    "scope": "stored joint-refit calibration parameters, not a posterior predictive mixture"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "input_sha256": {
+    "results/final_primary/terminal_ledger.csv.gz": "6a17c4646b42ec7f87af49cfc2f900ed1065c53bf4887f213f7ba65c9079c3f8",
+    "results/final_primary/accepted_outcomes.csv": "2c2fa9559d24fd55ddb1890b2c8814a4ebb3f53a9dbabf934387341e46f8f62b",
+    "results/final_primary/accepted_forecasts.csv": "67c76e6432a1ce2b4b010c4f62daf6eba016451c9d5730fe80eaf3823e5f84ac",
+    "results/final_primary/scores.csv": "3ba24636684e42d2d99dbbe68c336d2726aa702d70ea0ed7001005a7a223412c",
+    "results/final_extension/terminal_ledger.csv.gz": "3cfc62c1799d790fe7c418b94639861648a0f2230b89ee24e9d4ad02c3012eca",
+    "results/final_extension/accepted_outcomes.csv": "74a7f7276d578103ecd16019b59f81d81ec74b2939e86187a70d25902322f499",
+    "results/final_extension/accepted_forecasts.csv": "7d2cc88d87aa91487bf4f0e5773a4a8dd086b9e53e7a7ec2814415c87f19d9a4",
+    "results/final_extension/scores.csv": "685d8bdceb97795e710265d61f99be3c22cb274297520cb9fd7e5e69ffbfccd8"
+  },
+  "script_sha256": "45988f11cd9e1e05b3ad6b87a1b58fe60c0c0e84cdc483aed5c180db588393fd",
+  "runtime": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "raw_photometry_or_headers_opened": false,
+  "output_sha256": {
+    "results/revision_stage0/selection/coverage_gain_saved_levels.csv": "ea0a7158a4a10c142334085f7588d0ae6ee49b09cf64a58d6c1dcdb9e2052c39",
+    "results/revision_stage0/selection/per_planet_recovery.csv": "2353b259cade1249f92be342064025ec3ea367d316bcc5d7126972e0dce89854",
+    "results/revision_stage0/selection/planet_balanced_precision_ratio.csv": "7266c4e4c000a07462668e097879dd9f4378e90fa67c04b9f40fb6d9a614a612",
+    "results/revision_stage0/selection/prediction_coverage_cross_table.csv": "0d490846070d9339cd0f1a0fced177b75c830101525c50b7b9b09a09dfc41233",
+    "results/revision_stage0/selection/synthetic_interpretation_examples.json": "135d55b055e15131caecba2557a4107c68e8aeb7354962981a182f7f5f4b89aa"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "package_root": "data/derived/revision_stage0/benchmark",
+  "file_count": 499,
+  "grid_files": 463,
+  "file_manifest_sha256": "ef0c6bcf8e4a31a21765d5fde0c2a1586c6e19d85d3df9fc2e15b649eb6572dc",
+  "archive": "data/derived/revision_stage0/benchmark.tar.gz",
+  "archive_sha256": "d1511bca52d7225f90171324722f76ff7f8d535264e88a6a83adb33158e9d58e",
+  "archive_bytes": 15949651,
+  "original_inputs_unchanged": true,
+  "released": false,
+  "runtime": {
+    "python": "3.13.16",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  }
+}

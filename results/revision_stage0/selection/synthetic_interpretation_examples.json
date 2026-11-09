@@ -1,0 +1,38 @@
+{
+  "label": "synthetic numerical counterexamples, not photometry qualification",
+  "selection": {
+    "planet_a": {
+      "intended": 100,
+      "accepted": 1,
+      "covered_accepted": 1
+    },
+    "planet_b": {
+      "intended": 1,
+      "accepted": 1,
+      "covered_accepted": 0
+    },
+    "equal_planet_binary_completion_bounds": [
+      0.005,
+      0.5
+    ],
+    "event_recovery_times_accepted_planet_coverage": 0.009900990099009901,
+    "why_invalid": "Event and planet denominators differ; product is not intended-planet coverage."
+  },
+  "capture": {
+    "forecast_sd": 1.0,
+    "measurement_sd": 3.0,
+    "true_time": 3.0,
+    "measured_time": 4.0,
+    "latent_95_limits": [
+      -1.95996398454,
+      1.95996398454
+    ],
+    "convolved_measured_95_limits": [
+      -6.197950323045445,
+      6.197950323045445
+    ],
+    "measured_interval_covers_Y": true,
+    "latent_schedule_captures_T": false,
+    "why_distinct": "Later measurement error is used for verification, not scheduling padding."
+  }
+}

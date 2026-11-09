@@ -1,0 +1,92 @@
+{
+  "synthetic": true,
+  "design_commit": "03fbf67",
+  "seed": 20261109,
+  "runs": 12,
+  "intended_events": 48,
+  "status_counts": {
+    "accepted": 45,
+    "edge": 1,
+    "integration_unresolved": 2
+  },
+  "latent_gaussian_draws_s": [
+    48.624966307241344,
+    10.06988612814564
+  ],
+  "runtime": {
+    "measurement_and_control_scoring_python": "3.13.16",
+    "measurement_and_control_scoring_packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.18.1",
+      "astropy": "8.0.2",
+      "batman-package": "2.5.3"
+    },
+    "separate_frozen_evaluation_runtime": {
+      "python": "3.13.16",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1"
+    }
+  },
+  "source_sha256_before_after": {
+    "scripts/d071_injection_controls.py": "1661da0677d4bb79bef8ec4c4da44f3b4b0b30e5ec3aeed980591808129f9f5e",
+    "scripts/sprint2_outcomes.py": "e5155a8fafe7f1fb23ecc5610e88269996f39c7d3dc8652a74bf34429b442878",
+    "scripts/t015_timing_pipeline.py": "2e1a1f1d9b4992bf05502f23fe194abf08d79743ba747c7239b2b7e730c1617e",
+    "scripts/acceptance.py": "3d3ccfebccf6c249f7ed7d8dfaab288bd4a81afc9d2da36e435f596a0b988209",
+    "scripts/sprint1_forecast_core.py": "dfe010dbe60e5bb6f07412ec4b5114c57783b90d83278abde8d857db9e597e77",
+    "scripts/sprint1_outcome_adapter.py": "cd853135d076005731ddc76610b381075b111c170f3187f36c1ad14bf503d0b5",
+    "docs/d071_injection_controls.md": "99c3aabcb06c5ad303e16d1f7b41b740e227d9d7ef148be8812bbed5227f5659"
+  },
+  "grid_sha256": {
+    "results/d071_controls/grids/gaussian_0_complete_white_0.json": "f6f54061f8eec161ed7f7565594c895f547fbda69501462a8925ef27fbe772c5",
+    "results/d071_controls/grids/gaussian_0_complete_white_1.json": "5cdbc264e143583b3c29d51cb5edb4bf119ff837b58bcb5bc0fe1f71e008141a",
+    "results/d071_controls/grids/gaussian_0_complete_white_2.json": "745d3cc1bada175b77c133bad09fc518c6fc8de6491ec3568f6cfc5e46e9d981",
+    "results/d071_controls/grids/gaussian_0_complete_white_3.json": "749fc43a711e82953e1495fb021cfc02fd46a518d4688d28ad2102378d90f68f",
+    "results/d071_controls/grids/gaussian_0_forecast_phase_gaps_1.json": "ab9038b5c9b4876e200435922b3217bd8a8192998bc8762b8a14cbb29b3669f0",
+    "results/d071_controls/grids/gaussian_0_forecast_phase_gaps_3.json": "a32cd50b3b12b5266b87c3afc29abd6aa8d528c0b0a0749bc644201b334ead34",
+    "results/d071_controls/grids/gaussian_0_gaps_shared_shape_red_understated_errors_0.json": "d73b8a2898acf25d9bab0ad5522c84801ee46aed64933814e4b9856f2a71c86d",
+    "results/d071_controls/grids/gaussian_0_gaps_shared_shape_red_understated_errors_1.json": "cf4a5bf9e2bbec47571925ac2c4f87863f832c182f3332217321634e6dc13b51",
+    "results/d071_controls/grids/gaussian_0_gaps_shared_shape_red_understated_errors_2.json": "682ce8e5336fdc173bafe9ab14cbaf95a25787864a083ad485e05cc00df47ddb",
+    "results/d071_controls/grids/gaussian_0_gaps_shared_shape_red_understated_errors_3.json": "9d9b2f8d7cf9c9e8fcd12b1d225f961875360add61499fe93b6b28b6cc3a6b48",
+    "results/d071_controls/grids/gaussian_1_complete_white_0.json": "2c7bc67e96a6e8c0d780ea2bcacb18b2e30fc059da535d8f83bb2dfb0214d65a",
+    "results/d071_controls/grids/gaussian_1_complete_white_1.json": "46476a0f40bf4f4ced3dbebe6522b83525ff2b7039b3c099eb65c95337e41640",
+    "results/d071_controls/grids/gaussian_1_complete_white_2.json": "0190fd5788d6095b01203e5b342adeab0821d706f474b84771d29a3c18d54adb",
+    "results/d071_controls/grids/gaussian_1_complete_white_3.json": "6cacbad0d79eb40c4dc77fb445b52be0e3743dc7a6c6f96ad2a2b0a0c4c54a29",
+    "results/d071_controls/grids/gaussian_1_forecast_phase_gaps_0.json": "e1ed4abaecec146570f5a526fa5107f312457b2310c2aeb3d1b87d26e53c3243",
+    "results/d071_controls/grids/gaussian_1_forecast_phase_gaps_1.json": "9a3a52c0940e7b7300401314d83562390961303af3a0b23cfd2d27bd3a77a4a9",
+    "results/d071_controls/grids/gaussian_1_forecast_phase_gaps_3.json": "9682520e36fe029ec8c1e03ca69fcb05f3df52717d2e4608270c86aaf2aecb2c",
+    "results/d071_controls/grids/gaussian_1_gaps_shared_shape_red_understated_errors_0.json": "92102467ed2b0e7fca64fab5bbb7dd14df38544657fe12a26ddc88e557bc2bd6",
+    "results/d071_controls/grids/gaussian_1_gaps_shared_shape_red_understated_errors_1.json": "c060351fdb941b95bc7fc3187df7ae130741024f5258d7ac6304955df54d3dff",
+    "results/d071_controls/grids/gaussian_1_gaps_shared_shape_red_understated_errors_2.json": "c30443fbf4b0a66fbc90db8f7b5eb4b976bbb1a8d50a532efc5b7888b7b14a48",
+    "results/d071_controls/grids/two_point_0_complete_white_0.json": "d177d48905b96ff5fdd363fa5e7f417468188c8a4aea27973eb52be24bcddbd0",
+    "results/d071_controls/grids/two_point_0_complete_white_2.json": "ced177a0198fc63ab950cfb47dec6e809fab396f00d71cb0838f8a6ea1127c27",
+    "results/d071_controls/grids/two_point_0_complete_white_3.json": "53f8fbdb9b19cd9ff4799554d74e5a54c358f00dc8d4b76e4c61c6d354548b36",
+    "results/d071_controls/grids/two_point_0_forecast_phase_gaps_0.json": "ececd9f51617f01c9ba2664fe5c61eef8092011620b204a0396bcb76d7217f70",
+    "results/d071_controls/grids/two_point_0_forecast_phase_gaps_2.json": "eaa58cb101e24ea2d86bd06c7acd91d6a16546d51ba47504b35d3686ccb85a0f",
+    "results/d071_controls/grids/two_point_0_forecast_phase_gaps_3.json": "e1fdf78d66fbbad65cfbe11f2045bf8576af657fb0e17c6cc62bc395a7da1ded",
+    "results/d071_controls/grids/two_point_0_gaps_shared_shape_red_understated_errors_0.json": "f69d650abbf9cbc115be348582967f71bcb8f01980dbe71440db47d5ab509adc",
+    "results/d071_controls/grids/two_point_0_gaps_shared_shape_red_understated_errors_1.json": "360bbbc262a4a2d2be29d48ae504717f670c272be6993d4e4b45f9440550c7d0",
+    "results/d071_controls/grids/two_point_1_complete_white_0.json": "d603f364f2f28916d68b7d025d79ba246324e3d5bf1eb455da26073566a83c80",
+    "results/d071_controls/grids/two_point_1_complete_white_1.json": "36e6d2bffd41f254728ff396fba66f3af2558cafbba3a95be969fb673d6817de",
+    "results/d071_controls/grids/two_point_1_complete_white_2.json": "540a30b14a13a7a918c788891c402abca849d55678d91b891b3be4d048a4e232",
+    "results/d071_controls/grids/two_point_1_complete_white_3.json": "c3a452f67e887ca140811d380571769d376dde69cde0f3c103552327eb5fbf67",
+    "results/d071_controls/grids/two_point_1_forecast_phase_gaps_0.json": "440461e5ff196911df23a52e21c1a2ab7858087925e653926afdc37926aed879",
+    "results/d071_controls/grids/two_point_1_forecast_phase_gaps_1.json": "1adfaf88a93c3acf8c11db996730e8bf31ea8dfbf25263e1cbcfbcf21d658304",
+    "results/d071_controls/grids/two_point_1_forecast_phase_gaps_2.json": "11c704b814586e16288d888f90b266437a561ab08f082dcaa66f2bf2c31f5089",
+    "results/d071_controls/grids/two_point_1_forecast_phase_gaps_3.json": "478cdc3e0e66429a9e0bc346bee4f4883cff5fa88ce8f59a84d2b6bd05fe4141",
+    "results/d071_controls/grids/two_point_1_gaps_shared_shape_red_understated_errors_0.json": "27c53747f0db8bb4ac5046af4dd53c40e2f6b30017569f120d54efabc6978dde",
+    "results/d071_controls/grids/two_point_1_gaps_shared_shape_red_understated_errors_1.json": "c61837c2c459b222b4823c16050ee386335599072141ffe36b57fe032c4154e0",
+    "results/d071_controls/grids/two_point_1_gaps_shared_shape_red_understated_errors_2.json": "b98c4e78753c13536ad21e37372ea66e14dab0597570ff55455baa3419c77213",
+    "results/d071_controls/grids/two_point_1_gaps_shared_shape_red_understated_errors_3.json": "ca9e027a7cabc9bd36d60652022f1e86410896d3dcc6236fbb3fa39c20ac1e83"
+  },
+  "outputs_sha256": {
+    "results/d071_controls/truth_ledger.csv": "70abe0caaaefa2e200d2277f904f69c4f5ca4ac414873e5a07802387d52b63e7",
+    "results/d071_controls/target_comparisons.csv": "85dec9bf079aec661dfdb25ae60099c1a049f2875cb0a4173c9419f12e19aa97",
+    "results/d071_controls/scores.csv": "ee367341dc540e61fd08912145386d420013b3ea5fe5f8b591ce66c974526847",
+    "results/d071_controls/runs.json": "ea15eaac42109c1b22355f48aedf9daee1458a96af08a71c48bad4297e43624a"
+  },
+  "scope": "Small labelled interpretation control; no bootstrap, power estimate, model qualification or new primary verdict.",
+  "raw_photometry_or_headers_read": false,
+  "network_requests": 0,
+  "measurement_convolution_limit": "uses returned reported conditional timing distribution; misspecification can invalidate it",
+  "new_framework_added": false
+}

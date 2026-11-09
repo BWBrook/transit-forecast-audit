@@ -1,0 +1,18 @@
+{
+  "script_sha256": "347c00ab5ef84b12bbc34e900866a97e00337f1fa34abbcacf1ee73318cf0db0",
+  "input_sha256": {
+    "results/revision_stage0/interpretability/loss_scales.csv": "b957e0c09243e0aeb151544bb3d24eff4630f5bf0ee04a885a68c5293540fd80",
+    "results/revision_stage0/interpretability/coverage_vs_nominal.csv": "b7fb2d046da7e1d7a7df63dc1c19e50114dad7fc9a315eb4f538187303a3b907",
+    "results/final_primary/joint_draws.json.gz": "0a50c499f956a5a233863a92661f97d70696cfe87af1a3a8486619b14fa5e1d2",
+    "results/revision_stage0/interpretability/population_flow.csv": "80e22cb5dba7a1798ab3a97a509d81189e059f09800a9c4987aa67692d2548a9",
+    "results/revision_stage0/selection/per_planet_recovery.csv": "2353b259cade1249f92be342064025ec3ea367d316bcc5d7126972e0dce89854",
+    "results/prefreeze/manifest_summary.json": "a2ebf7fcc16bdd9a0aed886246e477a7cd7b768784d3c23eb9898362d845022d"
+  },
+  "output_sha256": {
+    "results/revision_stage0/interpretability/loss_scales.png": "93ce587e06630c0bd58a1ce3eb11687ed87ffa4e498719a2ed7cd9ee2c027a22",
+    "results/revision_stage0/interpretability/coverage_and_s.png": "15f87a1347193d1701f35c6bfa3562821c94685c2119799e87dae4cf4f07cdd0",
+    "results/revision_stage0/interpretability/population_flow.png": "46f8ee5e4bac381cb685136ac4fd51f90302c764c9afb46058939b0cb89a7003"
+  },
+  "matplotlib": "3.11.2",
+  "scope": "Descriptive; conditional intervals are not primary decisions"
+}

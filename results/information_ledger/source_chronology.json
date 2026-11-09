@@ -1,0 +1,32 @@
+{
+  "DRB": {
+    "forecast_first_public_utc": "2021-10-27T12:03:15.545999+00:00",
+    "released_timing_artifact_first_public_utc": "2021-10-28T00:32:01.511020+00:00",
+    "release_bundle_first_public_utc": "2021-10-28T00:32:01.511020+00:00",
+    "timing_after_forecast_seconds": 44925.965021,
+    "timing_features_verified_at_exact_forecast_origin": false,
+    "forecast_path": "data/raw/osf/wna5e/updated_ephemerides.txt",
+    "timing_path": "data/raw/osf/wna5e/5_complete_ExoClock_DRB.zip",
+    "interpretation": "max(node made-public transition, immutable-v1 artifact creation); exact DRB member provenance qualified separately"
+  },
+  "DRC": {
+    "forecast_first_public_utc": "2022-09-27T15:25:16.186146+00:00",
+    "released_timing_artifact_first_public_utc": "2022-09-27T15:26:09.374125+00:00",
+    "release_bundle_first_public_utc": "2022-09-27T15:26:09.374125+00:00",
+    "timing_after_forecast_seconds": 53.187979,
+    "timing_features_verified_at_exact_forecast_origin": false,
+    "forecast_path": "data/raw/osf/p298n/catalogue_of_ephemerides.txt",
+    "timing_path": "data/raw/osf/p298n/all_mid_time_data.txt",
+    "interpretation": "max(node made-public transition, immutable-v1 artifact creation); exact DRB member provenance qualified separately"
+  },
+  "DRD": {
+    "forecast_first_public_utc": "2025-11-18T09:43:24.090310+00:00",
+    "released_timing_artifact_first_public_utc": "2025-11-18T09:43:24.090310+00:00",
+    "release_bundle_first_public_utc": "2025-11-18T09:43:24.090310+00:00",
+    "timing_after_forecast_seconds": 0.0,
+    "timing_features_verified_at_exact_forecast_origin": true,
+    "forecast_path": "data/raw/osf/wpjtn/catalogue_of_ephemerides.txt",
+    "timing_path": "data/raw/osf/wpjtn/all_mid_time_data.txt",
+    "interpretation": "max(node made-public transition, immutable-v1 artifact creation); exact DRB member provenance qualified separately"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "design_commit": "c61c0fc",
+  "amendment_commit": "3dc88c1",
+  "complete_products": 35,
+  "raw_input_hashes_equal_between_runs": true,
+  "original_design_unchanged": true,
+  "first_attempt_archive_files_verified": 41,
+  "current_output_and_comparison_hashes_verified": true,
+  "forbidden_S74_S97_accessed": false,
+  "downloads": 0,
+  "synthetic_tests_run": 7,
+  "synthetic_failures": 0,
+  "test_command": "python -m unittest discover -s tests -p test_t017_independent.py -v",
+  "test_log_sha256": "0d135da3726fe0ccf4d70e8c63a7815c883340742a395b8009d53f1359ce62ab",
+  "source_sha256": {
+    "scripts/t017_independent.py": "efa4c0179a6d3aaa588a219ea7ef3e0772737a9c53ed1509a60911e34022b589",
+    "scripts/t017_compare.py": "7d83875dd4439699a3597ec792f4c7658f48f74d4ef9323287207500e57b880e",
+    "tests/test_t017_independent.py": "18a4a8ca496a1d270a9aac98efa27ebc586a15a93e38afea4b46b6f542ddfa75",
+    "scripts/independent_timing_check.py": "cb6da3b664397c5b7c03097bdd86310ddf76c3133d8aab3e0a9c2e703f667f0d"
+  },
+  "limits": "Fixed exploratory sample complete; surviving coverage/alias/shape review triggers retained, not universal identification/timing qualification."
+}

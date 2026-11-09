@@ -1,0 +1,31 @@
+{
+  "kind": "T018 completed diagnostics and portable replay",
+  "runtime": {
+    "python": "3.13.16",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "sources_sha256": {
+    "scripts/t018_benchmark.py": "6691ca775bee944a5345e4c9dd4500089fd5738167e45ef27b4f77ebe251514c",
+    "scripts/t018_diagnostics.py": "8d6673ecd48eb7f13c2df7ac5e1e04f842cb5f39397632f91f4bccd8a5013cf5",
+    "scripts/t018_selection.py": "45988f11cd9e1e05b3ad6b87a1b58fe60c0c0e84cdc483aed5c180db588393fd",
+    "scripts/t018_figures.py": "347c00ab5ef84b12bbc34e900866a97e00337f1fa34abbcacf1ee73318cf0db0",
+    "tests/test_t018_repairs.py": "042b6f95ccd74b4c49003c41c3cc34a88f2de9c4f7df121216468d354ea88193",
+    "docs/t018_estimands.md": "a2613be02d02472fdc5628ee67ffcd7deb8257fb7ebc9a4f093431848f197704",
+    "docs/t018_repairs.md": "51318460492b957bb72a98266390128b5190646d365674397a2988cb97299ac6"
+  },
+  "package_files_verified": 499,
+  "score_replay_max_error": 0.0,
+  "tests": {
+    "command": ".venv/bin/python -m unittest discover -s tests -p test_t018_repairs.py -v",
+    "run": 8,
+    "failures": 0,
+    "skips": 0
+  },
+  "visual_review": "All three PNG figures inspected; no clipped labels or overlapping content.",
+  "nominal_coverage_reproduces_saved_68_and_95": true,
+  "input_output_receipt_hashes_verified": true,
+  "no_raw_photometry_or_headers_opened": true,
+  "new_sector_downloads": 0,
+  "released": false
+}

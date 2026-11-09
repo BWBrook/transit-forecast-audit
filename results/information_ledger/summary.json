@@ -1,0 +1,101 @@
+{
+  "release_planets": {
+    "DRB": 180,
+    "DRC": 450,
+    "DRD": 620
+  },
+  "strict_origin_timing_feature_eligible_planets": {
+    "DRD": 620
+  },
+  "fixed_opportunity_age_rows": 7426,
+  "origin_knowledge_rows": 552,
+  "external_predictor_complete": false,
+  "external_search_status": "uniform_cached_companion_metadata_screen_complete; historical_primary_source_curation_pending",
+  "external_targets_screened": 184,
+  "current_directed_companion_candidates": 65,
+  "companion_reference_release_ratios_available": 46,
+  "duration_complete": false,
+  "DRD_all_source_cutoff_audit": {
+    "etd": {
+      "rows": 181,
+      "max_input_bjd_tdb": 2459459.3891,
+      "max_input_calendar_tdb": "2021-09-01",
+      "rows_at_or_after_nominal_2024_01_04_TDB": 0,
+      "planets_with_such_rows": 0
+    },
+    "exoclock": {
+      "rows": 7316,
+      "max_input_bjd_tdb": 2460310.11861,
+      "max_input_calendar_tdb": "2023-12-31",
+      "rows_at_or_after_nominal_2024_01_04_TDB": 0,
+      "planets_with_such_rows": 0
+    },
+    "literature": {
+      "rows": 3109,
+      "max_input_bjd_tdb": 2460292.47802,
+      "max_input_calendar_tdb": "2023-12-13",
+      "rows_at_or_after_nominal_2024_01_04_TDB": 0,
+      "planets_with_such_rows": 0
+    },
+    "space": {
+      "rows": 19738,
+      "max_input_bjd_tdb": 2460312.54006,
+      "max_input_calendar_tdb": "2024-01-03",
+      "rows_at_or_after_nominal_2024_01_04_TDB": 0,
+      "planets_with_such_rows": 0
+    }
+  },
+  "cutoff_definition": "JD2460313.5 is nominal TDB calendar2024-01-04, not a UTC/barycentric boundary conversion",
+  "HR858b_DRD": {
+    "release": "DRD",
+    "planet": "HR858b",
+    "catalogue_host_label": "HR858",
+    "catalogued_planets_with_same_host_label": 1,
+    "host_label_basis": "repository name heuristic; not physical companion inventory",
+    "t0_bjd_tdb": 2458903.961,
+    "period_days": 3.585266,
+    "origin_release_ttv_flag": false,
+    "origin_flag_basis": "release-specific detection criterion, not exhaustive literature knowledge",
+    "release_flag_source_type": "publication_table_transcription_not_forecast_column",
+    "flag_at_exact_forecast_origin_verified": false,
+    "flag_source_availability_limit": "publication first-public timestamp not independently checked against forecast timestamp",
+    "released_timing_rows": 16,
+    "valid_timing_rows": 16,
+    "invalid_timing_rows": 0,
+    "first_input_bjd_tdb": 2458412.7763,
+    "last_input_bjd_tdb": 2459169.2599,
+    "input_baseline_days": 756.4835999999195,
+    "issued_line_chi2": 77.2872429152448,
+    "issued_line_chi2_over_N": 4.8304526822028,
+    "issued_line_reduced_chi2_Nminus2": 5.520517351088914,
+    "issued_line_z_rms": 2.1978290839377843,
+    "issued_line_residual_rms_minutes": 10.705446662588493,
+    "first_input_calendar_tdb": "2018-10-21",
+    "last_input_calendar_tdb": "2020-11-15",
+    "nominal_dof_Nminus2": 14,
+    "row_source_counts": "{\"space\": 16}",
+    "unique_nearest_orbit_epochs": 16,
+    "same_epoch_extra_rows": 0,
+    "input_table_status": "released_rows_not_independently_certified_fitting_membership",
+    "strict_origin_timing_features_eligible": true,
+    "timing_artifact_delay_seconds": 0.0,
+    "forecast_first_public_utc": "2025-11-18T09:43:24.090310+00:00",
+    "release_bundle_first_public_utc": "2025-11-18T09:43:24.090310+00:00",
+    "DRB_individual_source_preforecast_log_found": null,
+    "DRB_zip_member_sha256": null,
+    "origin_transit_duration_minutes": null,
+    "duration_status": "not_present_as_verified_duration_in_exact_ephemeris_timing_inputs"
+  },
+  "HR858b_fixed_opportunity_age_range_days": [
+    2036.4418720002286,
+    2118.902989999857
+  ],
+  "limits": [
+    "Released rows are not an independently certified fit-inclusion mask.",
+    "Nominal N-minus2 reduced chi-square uses published rounded ephemeris without refit; it is not residual scatter in sigma units.",
+    "DRB/DRC timing-derived predictors are not verified available at exact forecast origin.",
+    "DRC/DRD flag lists are publication-table labels, whose exact first-public timestamp has not been checked against forecast availability.",
+    "Current metadata does not reconstruct historical companion inventories or prove negative TTV evidence.",
+    "No raw photometry, headers, new measurements or S74-S97 outcomes read."
+  ]
+}

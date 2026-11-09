@@ -1,0 +1,2511 @@
+{
+  "descriptive_shared_photon_comparison": true,
+  "products": 35,
+  "products_with_primary_reference": 28,
+  "summary_rows": [
+    {
+      "planet": "EPIC246851721b",
+      "sector": 98,
+      "categories": [
+        "covered_failure_excluded_coverage"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 4,
+      "independent_timed_windows": 5,
+      "matched": 4,
+      "median_difference_min": 0.7481663301587105,
+      "median_absolute_difference_min": 0.7956907153129578,
+      "maximum_absolute_difference_min": 0.9960034489631653,
+      "median_frozen_sigma_min": 2.0569083333333333,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 5,
+        "insufficient_window_coverage": 3
+      }
+    },
+    {
+      "planet": "EPIC246851721b",
+      "sector": 98,
+      "categories": [
+        "covered_failure_excluded_coverage"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "reference_timings": 4,
+      "independent_timed_windows": 5,
+      "matched": 4,
+      "median_difference_min": -1.7059208080172539,
+      "median_absolute_difference_min": 1.7059208080172539,
+      "maximum_absolute_difference_min": 3.5358890891075134,
+      "median_frozen_sigma_min": 2.0569083333333333,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 5,
+        "insufficient_window_coverage": 3
+      }
+    },
+    {
+      "planet": "GJ1132b",
+      "sector": 99,
+      "categories": [
+        "covered_failure_integration_unresolved"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 9,
+      "independent_timed_windows": 11,
+      "matched": 9,
+      "median_difference_min": 0.2705765515565872,
+      "median_absolute_difference_min": 0.4063144326210022,
+      "maximum_absolute_difference_min": 3.814835473895073,
+      "median_frozen_sigma_min": 2.0828166666666665,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 11,
+        "insufficient_window_coverage": 5
+      }
+    },
+    {
+      "planet": "GJ1132b",
+      "sector": 99,
+      "categories": [
+        "covered_failure_integration_unresolved"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "reference_timings": 9,
+      "independent_timed_windows": 10,
+      "matched": 8,
+      "median_difference_min": 0.1660434901714325,
+      "median_absolute_difference_min": 0.5780978500843048,
+      "maximum_absolute_difference_min": 4.098087474703789,
+      "median_frozen_sigma_min": 2.0828166666666665,
+      "unmatched_fraction": 0.1111111111111111,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": true,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": true,
+      "independent_status_counts": {
+        "timed": 10,
+        "insufficient_window_coverage": 6
+      }
+    },
+    {
+      "planet": "GJ1252b",
+      "sector": 101,
+      "categories": [
+        "covered_failure_edge"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 16,
+      "independent_timed_windows": 40,
+      "matched": 15,
+      "median_difference_min": 0.8812746405601501,
+      "median_absolute_difference_min": 1.7418265342712402,
+      "maximum_absolute_difference_min": 9.587422013282776,
+      "median_frozen_sigma_min": 5.593325,
+      "unmatched_fraction": 0.0625,
+      "weak_profiles": 20,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 40,
+        "insufficient_window_coverage": 6
+      }
+    },
+    {
+      "planet": "GJ1252b",
+      "sector": 101,
+      "categories": [
+        "covered_failure_edge"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "reference_timings": 16,
+      "independent_timed_windows": 41,
+      "matched": 16,
+      "median_difference_min": 0.9033941477537155,
+      "median_absolute_difference_min": 1.458292230963707,
+      "maximum_absolute_difference_min": 10.407254621386528,
+      "median_frozen_sigma_min": 5.593325,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 25,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 41,
+        "insufficient_window_coverage": 5
+      }
+    },
+    {
+      "planet": "GJ1252b",
+      "sector": 103,
+      "categories": [
+        "covered_failure_likelihood_support_unresolved"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 11,
+      "independent_timed_windows": 37,
+      "matched": 11,
+      "median_difference_min": 1.3753978908061981,
+      "median_absolute_difference_min": 3.2007651776075363,
+      "maximum_absolute_difference_min": 7.5370509177446365,
+      "median_frozen_sigma_min": 7.571883333333333,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 18,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 37,
+        "insufficient_window_coverage": 10
+      }
+    },
+    {
+      "planet": "GJ1252b",
+      "sector": 103,
+      "categories": [
+        "covered_failure_likelihood_support_unresolved"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "reference_timings": 11,
+      "independent_timed_windows": 39,
+      "matched": 11,
+      "median_difference_min": -0.340825617313385,
+      "median_absolute_difference_min": 1.923166662454605,
+      "maximum_absolute_difference_min": 9.541418105363846,
+      "median_frozen_sigma_min": 7.571883333333333,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 17,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 39,
+        "insufficient_window_coverage": 8
+      }
+    },
+    {
+      "planet": "HAT-P-69b",
+      "sector": 61,
+      "categories": [
+        "calibration_influence"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 4,
+      "independent_timed_windows": 4,
+      "matched": 4,
+      "median_difference_min": -0.2989194542169571,
+      "median_absolute_difference_min": 0.6026551499962807,
+      "maximum_absolute_difference_min": 0.8153459429740906,
+      "median_frozen_sigma_min": 0.6361166666666667,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 4,
+        "insufficient_window_coverage": 1
+      }
+    },
+    {
+      "planet": "HAT-P-69b",
+      "sector": 61,
+      "categories": [
+        "calibration_influence"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "reference_timings": 4,
+      "independent_timed_windows": 3,
+      "matched": 3,
+      "median_difference_min": 0.1910986751317978,
+      "median_absolute_difference_min": 0.21165043115615845,
+      "maximum_absolute_difference_min": 0.44034160673618317,
+      "median_frozen_sigma_min": 0.6361166666666667,
+      "unmatched_fraction": 0.25,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": true,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": true,
+      "independent_status_counts": {
+        "timed": 3,
+        "insufficient_window_coverage": 2
+      }
+    },
+    {
+      "planet": "HATS-27b",
+      "sector": 100,
+      "categories": [
+        "seeded_control"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 4,
+      "independent_timed_windows": 4,
+      "matched": 4,
+      "median_difference_min": 0.03280743956565857,
+      "median_absolute_difference_min": 0.47999873757362366,
+      "maximum_absolute_difference_min": 1.6541927307844162,
+      "median_frozen_sigma_min": 3.715275,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 4,
+        "insufficient_window_coverage": 1
+      }
+    },
+    {
+      "planet": "HATS-27b",
+      "sector": 100,
+      "categories": [
+        "seeded_control"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "reference_timings": 4,
+      "independent_timed_windows": 4,
+      "matched": 4,
+      "median_difference_min": -0.9945805370807648,
+      "median_absolute_difference_min": 0.9945805370807648,
+      "maximum_absolute_difference_min": 3.280724510550499,
+      "median_frozen_sigma_min": 3.715275,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 4,
+        "insufficient_window_coverage": 1
+      }
+    },
+    {
+      "planet": "HIP94235b",
+      "sector": 101,
+      "categories": [
+        "zero_accepted"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "target_not_identified",
+      "reference_timings": 0,
+      "independent_timed_windows": 0,
+      "matched": 0,
+      "median_difference_min": null,
+      "median_absolute_difference_min": null,
+      "maximum_absolute_difference_min": null,
+      "median_frozen_sigma_min": null,
+      "unmatched_fraction": null,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {}
+    },
+    {
+      "planet": "HIP94235b",
+      "sector": 101,
+      "categories": [
+        "zero_accepted"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "target_not_identified",
+      "reference_timings": 0,
+      "independent_timed_windows": 0,
+      "matched": 0,
+      "median_difference_min": null,
+      "median_absolute_difference_min": null,
+      "maximum_absolute_difference_min": null,
+      "median_frozen_sigma_min": null,
+      "unmatched_fraction": null,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {}
+    },
+    {
+      "planet": "HR858b",
+      "sector": 105,
+      "categories": [
+        "evaluation_influence"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 5,
+      "independent_timed_windows": 6,
+      "matched": 5,
+      "median_difference_min": 2.3043950647115707,
+      "median_absolute_difference_min": 8.475297689437866,
+      "maximum_absolute_difference_min": 12.789982259273529,
+      "median_frozen_sigma_min": 5.3877,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 2,
+      "maximum_joint_shape_shift_min": 10.075788404792547,
+      "review_triggers": {
+        "median_shift": true,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": true
+      },
+      "review_required": true,
+      "independent_status_counts": {
+        "timed": 6,
+        "insufficient_window_coverage": 1
+      }
+    },
+    {
+      "planet": "HR858b",
+      "sector": 105,
+      "categories": [
+        "evaluation_influence"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "reference_timings": 5,
+      "independent_timed_windows": 5,
+      "matched": 2,
+      "median_difference_min": -9.472849443554878,
+      "median_absolute_difference_min": 12.474052906036377,
+      "maximum_absolute_difference_min": 21.946902349591255,
+      "median_frozen_sigma_min": 5.3877,
+      "unmatched_fraction": 0.6,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 1,
+      "joint_shape_review_events": 2,
+      "maximum_joint_shape_shift_min": 5.09231277363142,
+      "review_triggers": {
+        "median_shift": true,
+        "large_event": true,
+        "unmatched": true,
+        "phase_ambiguity": false,
+        "shape_shift": true
+      },
+      "review_required": true,
+      "independent_status_counts": {
+        "timed": 5,
+        "insufficient_window_coverage": 2
+      }
+    },
+    {
+      "planet": "HR858b",
+      "sector": 106,
+      "categories": [
+        "evaluation_influence"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 6,
+      "independent_timed_windows": 6,
+      "matched": 6,
+      "median_difference_min": 0.4671895131468773,
+      "median_absolute_difference_min": 1.297302357852459,
+      "maximum_absolute_difference_min": 2.7659938484430313,
+      "median_frozen_sigma_min": 2.6156083333333333,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 1.667590850702254,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 6,
+        "insufficient_window_coverage": 1
+      }
+    },
+    {
+      "planet": "HR858b",
+      "sector": 106,
+      "categories": [
+        "evaluation_influence"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "reference_timings": 6,
+      "independent_timed_windows": 6,
+      "matched": 6,
+      "median_difference_min": -0.176192969083786,
+      "median_absolute_difference_min": 1.0137640312314034,
+      "maximum_absolute_difference_min": 2.8494856506586075,
+      "median_frozen_sigma_min": 2.6156083333333333,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 1.3022097827342805,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 6,
+        "insufficient_window_coverage": 1
+      }
+    },
+    {
+      "planet": "HR858b",
+      "sector": 107,
+      "categories": [
+        "evaluation_influence"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 5,
+      "independent_timed_windows": 6,
+      "matched": 5,
+      "median_difference_min": -2.1868130564689636,
+      "median_absolute_difference_min": 2.1868130564689636,
+      "maximum_absolute_difference_min": 3.8721536099910736,
+      "median_frozen_sigma_min": 2.771716666666667,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 1,
+      "maximum_joint_shape_shift_min": 3.175325085176155,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": true
+      },
+      "review_required": true,
+      "independent_status_counts": {
+        "timed": 6,
+        "insufficient_window_coverage": 1
+      }
+    },
+    {
+      "planet": "HR858b",
+      "sector": 107,
+      "categories": [
+        "evaluation_influence"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "reference_timings": 5,
+      "independent_timed_windows": 6,
+      "matched": 5,
+      "median_difference_min": -1.9702065736055374,
+      "median_absolute_difference_min": 1.9702065736055374,
+      "maximum_absolute_difference_min": 5.548644885420799,
+      "median_frozen_sigma_min": 2.771716666666667,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 2.905237844242947,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 6,
+        "insufficient_window_coverage": 1
+      }
+    },
+    {
+      "planet": "TOI-122b",
+      "sector": 103,
+      "categories": [
+        "covered_failure_product_id_failed"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 0,
+      "independent_timed_windows": 3,
+      "matched": 0,
+      "median_difference_min": null,
+      "median_absolute_difference_min": null,
+      "maximum_absolute_difference_min": null,
+      "median_frozen_sigma_min": null,
+      "unmatched_fraction": null,
+      "weak_profiles": 1,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 3,
+        "insufficient_window_coverage": 1
+      }
+    },
+    {
+      "planet": "TOI-122b",
+      "sector": 103,
+      "categories": [
+        "covered_failure_product_id_failed"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "reference_timings": 0,
+      "independent_timed_windows": 4,
+      "matched": 0,
+      "median_difference_min": null,
+      "median_absolute_difference_min": null,
+      "maximum_absolute_difference_min": null,
+      "median_frozen_sigma_min": null,
+      "unmatched_fraction": null,
+      "weak_profiles": 1,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 4
+      }
+    },
+    {
+      "planet": "TOI-1478b",
+      "sector": 61,
+      "categories": [
+        "calibration_influence"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 1,
+      "independent_timed_windows": 2,
+      "matched": 1,
+      "median_difference_min": -0.5128665268421173,
+      "median_absolute_difference_min": 0.5128665268421173,
+      "maximum_absolute_difference_min": 0.5128665268421173,
+      "median_frozen_sigma_min": 0.7106,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 2
+      }
+    },
+    {
+      "planet": "TOI-1478b",
+      "sector": 61,
+      "categories": [
+        "calibration_influence"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "reference_timings": 1,
+      "independent_timed_windows": 1,
+      "matched": 1,
+      "median_difference_min": -0.5140057951211929,
+      "median_absolute_difference_min": 0.5140057951211929,
+      "maximum_absolute_difference_min": 0.5140057951211929,
+      "median_frozen_sigma_min": 0.7106,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 1,
+        "insufficient_window_coverage": 1
+      }
+    },
+    {
+      "planet": "TOI-157b",
+      "sector": 98,
+      "categories": [
+        "seeded_control"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 12,
+      "independent_timed_windows": 14,
+      "matched": 10,
+      "median_difference_min": 0.022834986448287964,
+      "median_absolute_difference_min": 0.6227774173021317,
+      "maximum_absolute_difference_min": 1.8415624648332596,
+      "median_frozen_sigma_min": 1.4756166666666668,
+      "unmatched_fraction": 0.16666666666666666,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": true,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": true,
+      "independent_status_counts": {
+        "insufficient_window_coverage": 13,
+        "timed": 14
+      }
+    },
+    {
+      "planet": "TOI-157b",
+      "sector": 98,
+      "categories": [
+        "seeded_control"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "reference_timings": 12,
+      "independent_timed_windows": 14,
+      "matched": 11,
+      "median_difference_min": -0.04284292459487915,
+      "median_absolute_difference_min": 0.28079040348529816,
+      "maximum_absolute_difference_min": 1.9427943974733353,
+      "median_frozen_sigma_min": 1.4756166666666668,
+      "unmatched_fraction": 0.08333333333333333,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "insufficient_window_coverage": 13,
+        "timed": 14
+      }
+    },
+    {
+      "planet": "TOI-251b",
+      "sector": 106,
+      "categories": [
+        "zero_accepted"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "target_not_identified",
+      "reference_timings": 0,
+      "independent_timed_windows": 0,
+      "matched": 0,
+      "median_difference_min": null,
+      "median_absolute_difference_min": null,
+      "maximum_absolute_difference_min": null,
+      "median_frozen_sigma_min": null,
+      "unmatched_fraction": null,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {}
+    },
+    {
+      "planet": "TOI-251b",
+      "sector": 106,
+      "categories": [
+        "zero_accepted"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "target_not_identified",
+      "reference_timings": 0,
+      "independent_timed_windows": 0,
+      "matched": 0,
+      "median_difference_min": null,
+      "median_absolute_difference_min": null,
+      "maximum_absolute_difference_min": null,
+      "median_frozen_sigma_min": null,
+      "unmatched_fraction": null,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {}
+    },
+    {
+      "planet": "TOI-262b",
+      "sector": 104,
+      "categories": [
+        "zero_accepted"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 0,
+      "independent_timed_windows": 2,
+      "matched": 0,
+      "median_difference_min": null,
+      "median_absolute_difference_min": null,
+      "maximum_absolute_difference_min": null,
+      "median_frozen_sigma_min": null,
+      "unmatched_fraction": null,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 2
+      }
+    },
+    {
+      "planet": "TOI-262b",
+      "sector": 104,
+      "categories": [
+        "zero_accepted"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "target_not_identified",
+      "reference_timings": 0,
+      "independent_timed_windows": 0,
+      "matched": 0,
+      "median_difference_min": null,
+      "median_absolute_difference_min": null,
+      "maximum_absolute_difference_min": null,
+      "median_frozen_sigma_min": null,
+      "unmatched_fraction": null,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {}
+    },
+    {
+      "planet": "TOI-269b",
+      "sector": 98,
+      "categories": [
+        "zero_accepted"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "target_not_identified",
+      "reference_timings": 0,
+      "independent_timed_windows": 0,
+      "matched": 0,
+      "median_difference_min": null,
+      "median_absolute_difference_min": null,
+      "maximum_absolute_difference_min": null,
+      "median_frozen_sigma_min": null,
+      "unmatched_fraction": null,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {}
+    },
+    {
+      "planet": "TOI-269b",
+      "sector": 98,
+      "categories": [
+        "zero_accepted"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "target_not_identified",
+      "reference_timings": 0,
+      "independent_timed_windows": 0,
+      "matched": 0,
+      "median_difference_min": null,
+      "median_absolute_difference_min": null,
+      "maximum_absolute_difference_min": null,
+      "median_frozen_sigma_min": null,
+      "unmatched_fraction": null,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {}
+    },
+    {
+      "planet": "TOI-4308b",
+      "sector": 105,
+      "categories": [
+        "zero_accepted"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 0,
+      "independent_timed_windows": 3,
+      "matched": 0,
+      "median_difference_min": null,
+      "median_absolute_difference_min": null,
+      "maximum_absolute_difference_min": null,
+      "median_frozen_sigma_min": null,
+      "unmatched_fraction": null,
+      "weak_profiles": 1,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 3
+      }
+    },
+    {
+      "planet": "TOI-4308b",
+      "sector": 105,
+      "categories": [
+        "zero_accepted"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "target_not_identified",
+      "reference_timings": 0,
+      "independent_timed_windows": 0,
+      "matched": 0,
+      "median_difference_min": null,
+      "median_absolute_difference_min": null,
+      "maximum_absolute_difference_min": null,
+      "median_frozen_sigma_min": null,
+      "unmatched_fraction": null,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {}
+    },
+    {
+      "planet": "TOI-559b",
+      "sector": 105,
+      "categories": [
+        "evaluation_influence"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 2,
+      "independent_timed_windows": 2,
+      "matched": 2,
+      "median_difference_min": 0.42369481176137924,
+      "median_absolute_difference_min": 0.4862513020634651,
+      "maximum_absolute_difference_min": 0.9099461138248444,
+      "median_frozen_sigma_min": 0.922375,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 2,
+        "insufficient_window_coverage": 1
+      }
+    },
+    {
+      "planet": "TOI-559b",
+      "sector": 105,
+      "categories": [
+        "evaluation_influence"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "reference_timings": 2,
+      "independent_timed_windows": 1,
+      "matched": 0,
+      "median_difference_min": null,
+      "median_absolute_difference_min": null,
+      "maximum_absolute_difference_min": null,
+      "median_frozen_sigma_min": 0.922375,
+      "unmatched_fraction": 1.0,
+      "weak_profiles": 1,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": true,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": true,
+      "independent_status_counts": {
+        "insufficient_window_coverage": 3,
+        "timed": 1
+      }
+    },
+    {
+      "planet": "TOI-559b",
+      "sector": 106,
+      "categories": [
+        "evaluation_influence"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "target_not_identified",
+      "reference_timings": 0,
+      "independent_timed_windows": 0,
+      "matched": 0,
+      "median_difference_min": null,
+      "median_absolute_difference_min": null,
+      "maximum_absolute_difference_min": null,
+      "median_frozen_sigma_min": null,
+      "unmatched_fraction": null,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {}
+    },
+    {
+      "planet": "TOI-559b",
+      "sector": 106,
+      "categories": [
+        "evaluation_influence"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "reference_timings": 0,
+      "independent_timed_windows": 1,
+      "matched": 0,
+      "median_difference_min": null,
+      "median_absolute_difference_min": null,
+      "maximum_absolute_difference_min": null,
+      "median_frozen_sigma_min": null,
+      "unmatched_fraction": null,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 1,
+        "insufficient_window_coverage": 2
+      }
+    },
+    {
+      "planet": "TOI-905b",
+      "sector": 99,
+      "categories": [
+        "evaluation_influence"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 4,
+      "independent_timed_windows": 4,
+      "matched": 3,
+      "median_difference_min": -0.15224888920783997,
+      "median_absolute_difference_min": 0.15224888920783997,
+      "maximum_absolute_difference_min": 0.44648587703704834,
+      "median_frozen_sigma_min": 0.6547666666666667,
+      "unmatched_fraction": 0.25,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": true,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": true,
+      "independent_status_counts": {
+        "timed": 4,
+        "insufficient_window_coverage": 3
+      }
+    },
+    {
+      "planet": "TOI-905b",
+      "sector": 99,
+      "categories": [
+        "evaluation_influence"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "reference_timings": 4,
+      "independent_timed_windows": 5,
+      "matched": 4,
+      "median_difference_min": 0.10535817593336105,
+      "median_absolute_difference_min": 0.2482236921787262,
+      "maximum_absolute_difference_min": 0.42722761631011963,
+      "median_frozen_sigma_min": 0.6547666666666667,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 5,
+        "insufficient_window_coverage": 2
+      }
+    },
+    {
+      "planet": "TOI-905b",
+      "sector": 100,
+      "categories": [
+        "evaluation_influence"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 6,
+      "independent_timed_windows": 6,
+      "matched": 6,
+      "median_difference_min": 0.0029192492365837097,
+      "median_absolute_difference_min": 0.07662266492843628,
+      "maximum_absolute_difference_min": 0.424259752035141,
+      "median_frozen_sigma_min": 0.6492249999999999,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 6
+      }
+    },
+    {
+      "planet": "TOI-905b",
+      "sector": 100,
+      "categories": [
+        "evaluation_influence"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "reference_timings": 6,
+      "independent_timed_windows": 6,
+      "matched": 6,
+      "median_difference_min": 0.2195414900779724,
+      "median_absolute_difference_min": 0.2195414900779724,
+      "maximum_absolute_difference_min": 0.40455155074596405,
+      "median_frozen_sigma_min": 0.6492249999999999,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 6
+      }
+    },
+    {
+      "planet": "TOI-905b",
+      "sector": 101,
+      "categories": [
+        "evaluation_influence"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 6,
+      "independent_timed_windows": 6,
+      "matched": 6,
+      "median_difference_min": -0.008371174335479736,
+      "median_absolute_difference_min": 0.11006008833646774,
+      "maximum_absolute_difference_min": 0.2775697410106659,
+      "median_frozen_sigma_min": 0.6062333333333334,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 6
+      }
+    },
+    {
+      "planet": "TOI-905b",
+      "sector": 101,
+      "categories": [
+        "evaluation_influence"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "reference_timings": 6,
+      "independent_timed_windows": 6,
+      "matched": 6,
+      "median_difference_min": -0.05043692886829376,
+      "median_absolute_difference_min": 0.08430551737546921,
+      "maximum_absolute_difference_min": 0.25174543261528015,
+      "median_frozen_sigma_min": 0.6062333333333334,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 6
+      }
+    },
+    {
+      "planet": "TOI-905b",
+      "sector": 102,
+      "categories": [
+        "evaluation_influence"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 6,
+      "independent_timed_windows": 6,
+      "matched": 6,
+      "median_difference_min": -0.19120126962661743,
+      "median_absolute_difference_min": 0.2773856744170189,
+      "maximum_absolute_difference_min": 0.40910661220550537,
+      "median_frozen_sigma_min": 0.6510083333333334,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": true,
+        "shape_shift": false
+      },
+      "review_required": true,
+      "independent_status_counts": {
+        "timed": 6
+      }
+    },
+    {
+      "planet": "TOI-905b",
+      "sector": 102,
+      "categories": [
+        "evaluation_influence"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "reference_timings": 6,
+      "independent_timed_windows": 5,
+      "matched": 5,
+      "median_difference_min": -0.20089074969291687,
+      "median_absolute_difference_min": 0.20089074969291687,
+      "maximum_absolute_difference_min": 0.44453859329223633,
+      "median_frozen_sigma_min": 0.6510083333333334,
+      "unmatched_fraction": 0.16666666666666666,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": true,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": true,
+      "independent_status_counts": {
+        "timed": 5,
+        "insufficient_window_coverage": 1
+      }
+    },
+    {
+      "planet": "WASP-126b",
+      "sector": 98,
+      "categories": [
+        "seeded_control"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 7,
+      "independent_timed_windows": 10,
+      "matched": 7,
+      "median_difference_min": -0.26181846857070923,
+      "median_absolute_difference_min": 0.4901837557554245,
+      "maximum_absolute_difference_min": 1.1953137069940567,
+      "median_frozen_sigma_min": 1.1419333333333335,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "insufficient_window_coverage": 7,
+        "timed": 10
+      }
+    },
+    {
+      "planet": "WASP-126b",
+      "sector": 98,
+      "categories": [
+        "seeded_control"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "reference_timings": 7,
+      "independent_timed_windows": 8,
+      "matched": 6,
+      "median_difference_min": -0.27295399457216263,
+      "median_absolute_difference_min": 0.5905962735414505,
+      "maximum_absolute_difference_min": 1.046239212155342,
+      "median_frozen_sigma_min": 1.1419333333333335,
+      "unmatched_fraction": 0.14285714285714285,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": true,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": true,
+      "independent_status_counts": {
+        "insufficient_window_coverage": 9,
+        "timed": 8
+      }
+    },
+    {
+      "planet": "WASP-161b",
+      "sector": 61,
+      "categories": [
+        "calibration_influence"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 4,
+      "independent_timed_windows": 4,
+      "matched": 4,
+      "median_difference_min": 1.7521356046199799,
+      "median_absolute_difference_min": 2.0370009541511536,
+      "maximum_absolute_difference_min": 2.707046940922737,
+      "median_frozen_sigma_min": 1.2666083333333331,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 4
+      }
+    },
+    {
+      "planet": "WASP-161b",
+      "sector": 61,
+      "categories": [
+        "calibration_influence"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "reference_timings": 4,
+      "independent_timed_windows": 3,
+      "matched": 3,
+      "median_difference_min": 0.5231541395187378,
+      "median_absolute_difference_min": 0.5231541395187378,
+      "maximum_absolute_difference_min": 1.0738056153059006,
+      "median_frozen_sigma_min": 1.2666083333333331,
+      "unmatched_fraction": 0.25,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": true,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": true,
+      "independent_status_counts": {
+        "insufficient_window_coverage": 1,
+        "timed": 3
+      }
+    },
+    {
+      "planet": "WASP-170b",
+      "sector": 99,
+      "categories": [
+        "seeded_control"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 6,
+      "independent_timed_windows": 6,
+      "matched": 4,
+      "median_difference_min": -0.2727223187685013,
+      "median_absolute_difference_min": 0.2913951873779297,
+      "maximum_absolute_difference_min": 0.31765200197696686,
+      "median_frozen_sigma_min": 1.0799583333333334,
+      "unmatched_fraction": 0.3333333333333333,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": true,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": true,
+      "independent_status_counts": {
+        "timed": 6,
+        "insufficient_window_coverage": 5
+      }
+    },
+    {
+      "planet": "WASP-170b",
+      "sector": 99,
+      "categories": [
+        "seeded_control"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "reference_timings": 6,
+      "independent_timed_windows": 7,
+      "matched": 6,
+      "median_difference_min": -0.23268532007932663,
+      "median_absolute_difference_min": 0.3017307445406914,
+      "maximum_absolute_difference_min": 0.533536970615387,
+      "median_frozen_sigma_min": 1.0799583333333334,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 7,
+        "insufficient_window_coverage": 4
+      }
+    },
+    {
+      "planet": "WASP-184b",
+      "sector": 102,
+      "categories": [
+        "evaluation_influence"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 4,
+      "independent_timed_windows": 4,
+      "matched": 4,
+      "median_difference_min": 0.6478537246584892,
+      "median_absolute_difference_min": 0.7701852545142174,
+      "maximum_absolute_difference_min": 2.034614458680153,
+      "median_frozen_sigma_min": 2.9288333333333334,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 4
+      }
+    },
+    {
+      "planet": "WASP-184b",
+      "sector": 102,
+      "categories": [
+        "evaluation_influence"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "reference_timings": 4,
+      "independent_timed_windows": 3,
+      "matched": 3,
+      "median_difference_min": 2.339794859290123,
+      "median_absolute_difference_min": 2.339794859290123,
+      "maximum_absolute_difference_min": 2.550431415438652,
+      "median_frozen_sigma_min": 2.9288333333333334,
+      "unmatched_fraction": 0.25,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": true,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": true,
+      "independent_status_counts": {
+        "insufficient_window_coverage": 1,
+        "timed": 3
+      }
+    },
+    {
+      "planet": "WASP-186b",
+      "sector": 57,
+      "categories": [
+        "calibration_influence"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 5,
+      "independent_timed_windows": 4,
+      "matched": 4,
+      "median_difference_min": -0.03091614693403244,
+      "median_absolute_difference_min": 0.1730531081557274,
+      "maximum_absolute_difference_min": 0.4219476878643036,
+      "median_frozen_sigma_min": 1.1050666666666666,
+      "unmatched_fraction": 0.2,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": true,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": true,
+      "independent_status_counts": {
+        "timed": 4,
+        "insufficient_window_coverage": 2
+      }
+    },
+    {
+      "planet": "WASP-186b",
+      "sector": 57,
+      "categories": [
+        "calibration_influence"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "reference_timings": 5,
+      "independent_timed_windows": 5,
+      "matched": 5,
+      "median_difference_min": 0.2883850783109665,
+      "median_absolute_difference_min": 0.29581479728221893,
+      "maximum_absolute_difference_min": 0.688711479306221,
+      "median_frozen_sigma_min": 1.1050666666666666,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 5,
+        "insufficient_window_coverage": 1
+      }
+    },
+    {
+      "planet": "WASP-18b",
+      "sector": 104,
+      "categories": [
+        "seeded_control"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 22,
+      "independent_timed_windows": 23,
+      "matched": 22,
+      "median_difference_min": 0.011360496282577515,
+      "median_absolute_difference_min": 0.1359112188220024,
+      "maximum_absolute_difference_min": 0.45332953333854675,
+      "median_frozen_sigma_min": 0.2762916666666666,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": true,
+        "shape_shift": false
+      },
+      "review_required": true,
+      "independent_status_counts": {
+        "timed": 23,
+        "insufficient_window_coverage": 3
+      }
+    },
+    {
+      "planet": "WASP-18b",
+      "sector": 104,
+      "categories": [
+        "seeded_control"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "reference_timings": 22,
+      "independent_timed_windows": 23,
+      "matched": 22,
+      "median_difference_min": 0.002499818801879883,
+      "median_absolute_difference_min": 0.160728357732296,
+      "maximum_absolute_difference_min": 0.9245105087757111,
+      "median_frozen_sigma_min": 0.2762916666666666,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": true,
+        "shape_shift": false
+      },
+      "review_required": true,
+      "independent_status_counts": {
+        "timed": 23,
+        "insufficient_window_coverage": 3
+      }
+    },
+    {
+      "planet": "WASP-20b",
+      "sector": 107,
+      "categories": [
+        "seeded_control"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 4,
+      "independent_timed_windows": 4,
+      "matched": 4,
+      "median_difference_min": -0.04747241735458374,
+      "median_absolute_difference_min": 0.18783073872327805,
+      "maximum_absolute_difference_min": 0.5645667761564255,
+      "median_frozen_sigma_min": 0.7537333333333334,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 4,
+        "insufficient_window_coverage": 1
+      }
+    },
+    {
+      "planet": "WASP-20b",
+      "sector": 107,
+      "categories": [
+        "seeded_control"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "reference_timings": 4,
+      "independent_timed_windows": 3,
+      "matched": 3,
+      "median_difference_min": 0.2825767546892166,
+      "median_absolute_difference_min": 0.3078632801771164,
+      "maximum_absolute_difference_min": 0.5342786014080048,
+      "median_frozen_sigma_min": 0.7537333333333334,
+      "unmatched_fraction": 0.25,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": true,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": true,
+      "independent_status_counts": {
+        "timed": 3,
+        "insufficient_window_coverage": 2
+      }
+    },
+    {
+      "planet": "WASP-22b",
+      "sector": 105,
+      "categories": [
+        "seeded_control"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 6,
+      "independent_timed_windows": 5,
+      "matched": 5,
+      "median_difference_min": -0.1577400416135788,
+      "median_absolute_difference_min": 0.32842643558979034,
+      "maximum_absolute_difference_min": 0.3859464079141617,
+      "median_frozen_sigma_min": 1.0162833333333334,
+      "unmatched_fraction": 0.16666666666666666,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": true,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": true,
+      "independent_status_counts": {
+        "insufficient_window_coverage": 2,
+        "timed": 5
+      }
+    },
+    {
+      "planet": "WASP-22b",
+      "sector": 105,
+      "categories": [
+        "seeded_control"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "reference_timings": 6,
+      "independent_timed_windows": 6,
+      "matched": 6,
+      "median_difference_min": 0.13740621507167816,
+      "median_absolute_difference_min": 0.4126216471195221,
+      "maximum_absolute_difference_min": 0.845860093832016,
+      "median_frozen_sigma_min": 1.0162833333333334,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 6,
+        "insufficient_window_coverage": 1
+      }
+    },
+    {
+      "planet": "WASP-29b",
+      "sector": 103,
+      "categories": [
+        "seeded_control"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 4,
+      "independent_timed_windows": 5,
+      "matched": 4,
+      "median_difference_min": 0.15586450695991516,
+      "median_absolute_difference_min": 0.18111012876033783,
+      "maximum_absolute_difference_min": 0.28637610375881195,
+      "median_frozen_sigma_min": 0.5486833333333334,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 5,
+        "insufficient_window_coverage": 1
+      }
+    },
+    {
+      "planet": "WASP-29b",
+      "sector": 103,
+      "categories": [
+        "seeded_control"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "reference_timings": 4,
+      "independent_timed_windows": 5,
+      "matched": 4,
+      "median_difference_min": 0.17112359404563904,
+      "median_absolute_difference_min": 0.19639603793621063,
+      "maximum_absolute_difference_min": 0.27118340134620667,
+      "median_frozen_sigma_min": 0.5486833333333334,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 5,
+        "insufficient_window_coverage": 1
+      }
+    },
+    {
+      "planet": "WASP-45b",
+      "sector": 107,
+      "categories": [
+        "seeded_control"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 6,
+      "independent_timed_windows": 7,
+      "matched": 6,
+      "median_difference_min": 0.11125937104225159,
+      "median_absolute_difference_min": 0.25889016687870026,
+      "maximum_absolute_difference_min": 0.5181504786014557,
+      "median_frozen_sigma_min": 1.3109916666666668,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 7,
+        "insufficient_window_coverage": 1
+      }
+    },
+    {
+      "planet": "WASP-45b",
+      "sector": 107,
+      "categories": [
+        "seeded_control"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "reference_timings": 6,
+      "independent_timed_windows": 7,
+      "matched": 6,
+      "median_difference_min": 0.13571910560131073,
+      "median_absolute_difference_min": 0.3310459479689598,
+      "maximum_absolute_difference_min": 0.6822272390127182,
+      "median_frozen_sigma_min": 1.3109916666666668,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 7,
+        "insufficient_window_coverage": 1
+      }
+    },
+    {
+      "planet": "WASP-82b",
+      "sector": 98,
+      "categories": [
+        "seeded_control"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 11,
+      "independent_timed_windows": 11,
+      "matched": 6,
+      "median_difference_min": 0.04821941256523132,
+      "median_absolute_difference_min": 0.07667127996683121,
+      "maximum_absolute_difference_min": 0.40297776460647583,
+      "median_frozen_sigma_min": 0.7487166666666667,
+      "unmatched_fraction": 0.45454545454545453,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": true,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": true,
+      "independent_status_counts": {
+        "timed": 11,
+        "insufficient_window_coverage": 8
+      }
+    },
+    {
+      "planet": "WASP-82b",
+      "sector": 98,
+      "categories": [
+        "seeded_control"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "reference_timings": 11,
+      "independent_timed_windows": 13,
+      "matched": 11,
+      "median_difference_min": 0.17828509211540222,
+      "median_absolute_difference_min": 0.2571815997362137,
+      "maximum_absolute_difference_min": 0.8406740427017212,
+      "median_frozen_sigma_min": 0.7487166666666667,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 13,
+        "insufficient_window_coverage": 6
+      }
+    },
+    {
+      "planet": "XO-3b",
+      "sector": 59,
+      "categories": [
+        "calibration_influence"
+      ],
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "reference_timings": 6,
+      "independent_timed_windows": 7,
+      "matched": 6,
+      "median_difference_min": -0.11982735246419907,
+      "median_absolute_difference_min": 0.11982735246419907,
+      "maximum_absolute_difference_min": 0.1822654902935028,
+      "median_frozen_sigma_min": 0.5917166666666667,
+      "unmatched_fraction": 0.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": false,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": false,
+      "independent_status_counts": {
+        "timed": 7,
+        "insufficient_window_coverage": 1
+      }
+    },
+    {
+      "planet": "XO-3b",
+      "sector": 59,
+      "categories": [
+        "calibration_influence"
+      ],
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "reference_timings": 6,
+      "independent_timed_windows": 0,
+      "matched": 0,
+      "median_difference_min": null,
+      "median_absolute_difference_min": null,
+      "maximum_absolute_difference_min": null,
+      "median_frozen_sigma_min": 0.5917166666666667,
+      "unmatched_fraction": 1.0,
+      "weak_profiles": 0,
+      "profile_edges": 0,
+      "large_discrepancies": 0,
+      "joint_shape_review_events": 0,
+      "maximum_joint_shape_shift_min": 0.0,
+      "review_triggers": {
+        "median_shift": false,
+        "large_event": false,
+        "unmatched": true,
+        "phase_ambiguity": false,
+        "shape_shift": false
+      },
+      "review_required": true,
+      "independent_status_counts": {
+        "insufficient_window_coverage": 8
+      }
+    }
+  ],
+  "no_reference_cases": [
+    {
+      "planet": "HIP94235b",
+      "sector": 101,
+      "flux": "PDCSAP_FLUX",
+      "status": "target_not_identified",
+      "independent_candidate_times_bjd_tdb": [],
+      "informative_nonedge_candidates": 0,
+      "interpretation": "Independent light-curve candidates; no prior accepted timing is not itself a forecast miss."
+    },
+    {
+      "planet": "HIP94235b",
+      "sector": 101,
+      "flux": "SAP_FLUX",
+      "status": "target_not_identified",
+      "independent_candidate_times_bjd_tdb": [],
+      "informative_nonedge_candidates": 0,
+      "interpretation": "Independent light-curve candidates; no prior accepted timing is not itself a forecast miss."
+    },
+    {
+      "planet": "TOI-122b",
+      "sector": 103,
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "independent_candidate_times_bjd_tdb": [
+        2461157.582414337,
+        2461167.7400623914,
+        2461172.8192335377
+      ],
+      "informative_nonedge_candidates": 2,
+      "interpretation": "Independent light-curve candidates; no prior accepted timing is not itself a forecast miss."
+    },
+    {
+      "planet": "TOI-122b",
+      "sector": 103,
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "independent_candidate_times_bjd_tdb": [
+        2461157.581561289,
+        2461162.654737196,
+        2461167.739713632,
+        2461172.8196574897
+      ],
+      "informative_nonedge_candidates": 3,
+      "interpretation": "Independent light-curve candidates; no prior accepted timing is not itself a forecast miss."
+    },
+    {
+      "planet": "TOI-251b",
+      "sector": 106,
+      "flux": "PDCSAP_FLUX",
+      "status": "target_not_identified",
+      "independent_candidate_times_bjd_tdb": [],
+      "informative_nonedge_candidates": 0,
+      "interpretation": "Independent light-curve candidates; no prior accepted timing is not itself a forecast miss."
+    },
+    {
+      "planet": "TOI-251b",
+      "sector": 106,
+      "flux": "SAP_FLUX",
+      "status": "target_not_identified",
+      "independent_candidate_times_bjd_tdb": [],
+      "informative_nonedge_candidates": 0,
+      "interpretation": "Independent light-curve candidates; no prior accepted timing is not itself a forecast miss."
+    },
+    {
+      "planet": "TOI-262b",
+      "sector": 104,
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "independent_candidate_times_bjd_tdb": [
+        2461187.309946683,
+        2461198.459005891
+      ],
+      "informative_nonedge_candidates": 2,
+      "interpretation": "Independent light-curve candidates; no prior accepted timing is not itself a forecast miss."
+    },
+    {
+      "planet": "TOI-262b",
+      "sector": 104,
+      "flux": "SAP_FLUX",
+      "status": "target_not_identified",
+      "independent_candidate_times_bjd_tdb": [],
+      "informative_nonedge_candidates": 0,
+      "interpretation": "Independent light-curve candidates; no prior accepted timing is not itself a forecast miss."
+    },
+    {
+      "planet": "TOI-269b",
+      "sector": 98,
+      "flux": "PDCSAP_FLUX",
+      "status": "target_not_identified",
+      "independent_candidate_times_bjd_tdb": [],
+      "informative_nonedge_candidates": 0,
+      "interpretation": "Independent light-curve candidates; no prior accepted timing is not itself a forecast miss."
+    },
+    {
+      "planet": "TOI-269b",
+      "sector": 98,
+      "flux": "SAP_FLUX",
+      "status": "target_not_identified",
+      "independent_candidate_times_bjd_tdb": [],
+      "informative_nonedge_candidates": 0,
+      "interpretation": "Independent light-curve candidates; no prior accepted timing is not itself a forecast miss."
+    },
+    {
+      "planet": "TOI-4308b",
+      "sector": 105,
+      "flux": "PDCSAP_FLUX",
+      "status": "identified",
+      "independent_candidate_times_bjd_tdb": [
+        2461207.1328647593,
+        2461216.136165672,
+        2461225.1363418144
+      ],
+      "informative_nonedge_candidates": 2,
+      "interpretation": "Independent light-curve candidates; no prior accepted timing is not itself a forecast miss."
+    },
+    {
+      "planet": "TOI-4308b",
+      "sector": 105,
+      "flux": "SAP_FLUX",
+      "status": "target_not_identified",
+      "independent_candidate_times_bjd_tdb": [],
+      "informative_nonedge_candidates": 0,
+      "interpretation": "Independent light-curve candidates; no prior accepted timing is not itself a forecast miss."
+    },
+    {
+      "planet": "TOI-559b",
+      "sector": 106,
+      "flux": "PDCSAP_FLUX",
+      "status": "target_not_identified",
+      "independent_candidate_times_bjd_tdb": [],
+      "informative_nonedge_candidates": 0,
+      "interpretation": "Independent light-curve candidates; no prior accepted timing is not itself a forecast miss."
+    },
+    {
+      "planet": "TOI-559b",
+      "sector": 106,
+      "flux": "SAP_FLUX",
+      "status": "identified",
+      "independent_candidate_times_bjd_tdb": [
+        2461240.4096988486
+      ],
+      "informative_nonedge_candidates": 1,
+      "interpretation": "Independent light-curve candidates; no prior accepted timing is not itself a forecast miss."
+    }
+  ],
+  "seeded_control_planets_requiring_review": [
+    "TOI-157b",
+    "WASP-126b",
+    "WASP-170b",
+    "WASP-18b",
+    "WASP-20b",
+    "WASP-22b",
+    "WASP-82b"
+  ],
+  "influential_planets_with_at_least_two_large_discrepancies": [],
+  "wider_tranche_trigger_from_counts": true,
+  "wider_tranche_note": "Diagnostic trigger only. First inspect weak/gapped/model-mismatch cases; no frozen correction or automatic expansion.",
+  "limits": [
+    "Shared photons: differences and reported sigma summaries are not independent sampling tests.",
+    "One-to-one comparison gate P/4 is applied only after phase-blind extraction, never to find/fix a timing.",
+    "Empirical trapezoid/profile uncertainty differs from the frozen physical model; disagreements require adjudication."
+  ]
+}

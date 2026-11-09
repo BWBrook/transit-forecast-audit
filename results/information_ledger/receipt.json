@@ -1,0 +1,35 @@
+{
+  "script_sha256": "20168157234159f92769ad13acb7f63aa22e9a55e5400f09c6372711db53b42b",
+  "input_sha256": {
+    "data/fixtures/exoclock_ttv_flags.csv": "7eff71a7a435941d619a3caca995e6eb3eed8db1d229e3b372dc63cf643b23a0",
+    "data/raw/osf/p298n/all_mid_time_data.txt": "68231e16f2de416b2070570ec71085db6ee91622cc231ef942bb91cc747c8f09",
+    "data/raw/osf/p298n/catalogue_of_ephemerides.txt": "2f1e4a3ad9dd3cc9f78e38f25c3a1d1e0ead1604ea0a86f66cc752ff1a666033",
+    "data/raw/osf/wna5e/5_complete_ExoClock_DRB.zip": "f8a43bf718015f97db36ee3c220e654b98f008646396be8a380c137ce8f50df4",
+    "data/raw/osf/wna5e/updated_ephemerides.txt": "086e964793d40cf99d534a806be885aaa61d172072c8810f994e197dc3a18357",
+    "data/raw/osf/wpjtn/all_mid_time_data.txt": "533449b7a9bede2541d78c6a2697913762ad30262bce319c79d87f02f538348c",
+    "data/raw/osf/wpjtn/catalogue_of_ephemerides.txt": "582a6ca8e65d85a5c840452f93e8dd5f0f0ef404b4c28fb4836e7b15efc094af",
+    "data/raw/sprint1_osf_logs/wna5e.json": "1839d37924d09a69ad35ec0a2fa86020346679d94278bfba176306cb5b06d7d6",
+    "results/final_secondaries/ttv/labels.csv": "fbf8bb8b7f10ee96a0a54ca745ef69c3e134db2912c929ebd9a148e6f7f05598",
+    "results/information_ledger/external_metadata/companion_candidates.csv": "2e811f0d5b18b75422bff8883e92310f86c6d69ce193aa8aeec58fb93ee40e32",
+    "results/information_ledger/external_metadata/origin_candidate_dates.csv": "6595f779a1c638b60c17a3bc45634e303125983ea432aedf04706c6ce913eec0",
+    "results/information_ledger/external_metadata/provenance.json": "5667719b989a5b37f4739993a3062ac13c516fc55949711561e115f92fdca71d",
+    "results/information_ledger/external_metadata/targets.csv": "dd7a0ad7db5bae64ba4894dbb360d0c559762243954d20970b3d4b115fbdb11b",
+    "results/pilot_v1/source_manifest.csv": "00fd83688d2cdeeae888fd0f2a2c0d2524b926561a121830d3feb65d217287d9",
+    "results/prefreeze/manifest_core_primary.csv": "905499871524d44e93315612ed133deeca3a9b115da5665bb3513a7e39beea16",
+    "results/prefreeze/manifest_extension_exploratory.csv": "bd173285221a3d3156fe408e8d3e0439d54283c0784aebe14d9cd5b02fe7c1fb",
+    "results/sprint1/literature/osf_history_verification.json": "ae2de3e08b2b4d309a4d730412b951fc268e2c183d60ed09c6acf853bee5117f",
+    "results/sprint2/freeze_candidate/roster.csv": "54492734189a942505747d9d32a343033642d84abe482dbe8ab8aeb7912382da"
+  },
+  "output_sha256": {
+    "results/information_ledger/companion_period_candidates.csv": "0ab7fabc54d11c63dc2881197b06c89a89d100ec88b88c60b914c66bce9c36ed",
+    "results/information_ledger/fixed_opportunity_ages.csv.gz": "72a88a78133a78728983c8ba154063d4884d7a589c96b52b2f81943a635fabdc",
+    "results/information_ledger/origin_knowledge.csv": "f619cd89679f0727ef328f65118563f555cd1d483f1095a6408ccb68e8d67e87",
+    "results/information_ledger/release_planets.csv": "56d2ca5ee3baea1eeab8325c0197aa2027a25e73e3db58873e362b46b255b72d",
+    "results/information_ledger/source_chronology.json": "36d541a887aa6ee947e3f0043116ec661a2762e24e73eaecc14d50783e28d2bb",
+    "results/information_ledger/summary.json": "eb6afe0dc51d77e191c802be78b98c596941f6a1b722704f1e88d3f3d3025235"
+  },
+  "input_unchanged_after": true,
+  "photometry_or_headers_opened": false,
+  "external_network_requests": 0,
+  "primary_outputs_changed": false
+}

@@ -1,0 +1,420 @@
+{
+  "planet": "HR858b",
+  "category": "evaluation_influence",
+  "sector": 105,
+  "relative_fits_path": "data/raw/mast/TIC_178155732/tess2026164183000-s0105-0000000178155732-0307-s_lc.fits",
+  "fluxes": {
+    "PDCSAP_FLUX": {
+      "signals": [
+        {
+          "period_d": 3.578717592775155,
+          "epoch_btjd": 4209.0543547679235,
+          "duration_d": 0.081,
+          "depth": 0.00020539707253791362,
+          "snr": 29.231085287929776
+        },
+        {
+          "period_d": 5.976866192560663,
+          "epoch_btjd": 4211.760354767924,
+          "duration_d": 0.081,
+          "depth": 0.0001714062751757139,
+          "snr": 19.83444336938705
+        },
+        {
+          "period_d": 14.594790803798503,
+          "epoch_btjd": 4217.362854767924,
+          "duration_d": 0.12,
+          "depth": 0.00021021849032228782,
+          "snr": 17.30872678184231
+        }
+      ],
+      "selected_signal": 0,
+      "phase_ambiguity": false,
+      "good_cadences": 15001,
+      "tc_uses_issued_epoch": false,
+      "companion_mask_diagnostics": [
+        {
+          "signal": 1,
+          "period_ratio": 1.6701139549616817,
+          "harmonic_candidate": false,
+          "overlapping_target_cadences": 0,
+          "target_cadences_protected_from_harmonic_mask": 0,
+          "interpretation": "Nonharmonic signal masked, including overlaps."
+        },
+        {
+          "signal": 2,
+          "period_ratio": 4.078218083836232,
+          "harmonic_candidate": false,
+          "overlapping_target_cadences": 0,
+          "target_cadences_protected_from_harmonic_mask": 0,
+          "interpretation": "Nonharmonic signal masked, including overlaps."
+        }
+      ],
+      "status": "identified",
+      "shared_shape": {
+        "phase_shift_d": -0.003702100501703288,
+        "duration_d": 0.1241313405274819,
+        "ingress_fraction": 0.28812766167660814,
+        "reduced_chi2": 2.81741880222313,
+        "points": 1747,
+        "empirical_model": "symmetric trapezoid, depth and linear baseline profiled"
+      },
+      "transits": [
+        {
+          "status": "timed",
+          "window_centre_btjd": 4209.050652667422,
+          "points": 447,
+          "tc_btjd": 4209.041972154098,
+          "profile_median_btjd": 4209.041043217274,
+          "sigma_min": 5.080504923882447,
+          "q025_btjd": 4209.0338175395655,
+          "q975_btjd": 4209.047602031978,
+          "depth": 0.00028174026076004945,
+          "reduced_chi2": 2.447540497485121,
+          "profile_signal_snr": 9.36447013440002,
+          "profile_boundary_weight": 9.07071788914934e-20,
+          "profile_edge": false,
+          "weak_profile": false,
+          "local_epoch": 0,
+          "tc_bjd_tdb": 2461209.0419721543,
+          "joint_nuisance": {
+            "status": "joint_fit",
+            "tc_btjd": 4209.039217207943,
+            "duration_d": 0.11718441334028297,
+            "ingress_fraction": 0.16611343590966565,
+            "chi2": 1078.833372342654,
+            "note": "Local shape sensitivity with baseline/depth profiled, not nuisance marginalisation."
+          }
+        },
+        {
+          "status": "timed",
+          "window_centre_btjd": 4212.629370260197,
+          "points": 447,
+          "tc_btjd": 4212.621557798206,
+          "profile_median_btjd": 4212.62015742855,
+          "sigma_min": 4.628121636408149,
+          "q025_btjd": 4212.61398783215,
+          "q975_btjd": 4212.626083964573,
+          "depth": 0.00030055714237184306,
+          "reduced_chi2": 1.8796958011103286,
+          "profile_signal_snr": 11.40270772666046,
+          "profile_boundary_weight": 5.836293653581358e-29,
+          "profile_edge": false,
+          "weak_profile": false,
+          "local_epoch": 1,
+          "tc_bjd_tdb": 2461212.6215577982,
+          "joint_nuisance": {
+            "status": "joint_fit",
+            "tc_btjd": 4212.619897693006,
+            "duration_d": 0.12746636319230253,
+            "ingress_fraction": 0.27242011968741286,
+            "chi2": 834.076354081804,
+            "note": "Local shape sensitivity with baseline/depth profiled, not nuisance marginalisation."
+          }
+        },
+        {
+          "status": "timed",
+          "window_centre_btjd": 4216.208087852972,
+          "points": 446,
+          "tc_btjd": 4216.208435073505,
+          "profile_median_btjd": 4216.210074863246,
+          "sigma_min": 6.423141392413539,
+          "q025_btjd": 4216.202882778685,
+          "q975_btjd": 4216.22171336809,
+          "depth": 0.00029326558866271473,
+          "reduced_chi2": 2.2894008997625925,
+          "profile_signal_snr": 10.083611251326632,
+          "profile_boundary_weight": 8.329881287881639e-23,
+          "profile_edge": false,
+          "weak_profile": false,
+          "local_epoch": 2,
+          "tc_bjd_tdb": 2461216.2084350735,
+          "joint_nuisance": {
+            "status": "joint_fit",
+            "tc_btjd": 4216.215432148786,
+            "duration_d": 0.14647864412147396,
+            "ingress_fraction": 0.4899999999999956,
+            "chi2": 998.0815697312539,
+            "note": "Local shape sensitivity with baseline/depth profiled, not nuisance marginalisation."
+          }
+        },
+        {
+          "status": "insufficient_window_coverage",
+          "window_centre_btjd": 4219.786805445747,
+          "points": 0,
+          "local_epoch": 3
+        },
+        {
+          "status": "timed",
+          "window_centre_btjd": 4223.365523038522,
+          "points": 427,
+          "tc_btjd": 4223.372814669714,
+          "profile_median_btjd": 4223.377272150045,
+          "sigma_min": 11.089294189457485,
+          "q025_btjd": 4223.365343692232,
+          "q975_btjd": 4223.3927359628915,
+          "depth": 0.0001862381723971546,
+          "reduced_chi2": 2.906092073854449,
+          "profile_signal_snr": 5.650955852558128,
+          "profile_boundary_weight": 1.1635138729791211e-07,
+          "profile_edge": false,
+          "weak_profile": false,
+          "local_epoch": 4,
+          "tc_bjd_tdb": 2461223.3728146697,
+          "joint_nuisance": {
+            "status": "joint_fit",
+            "tc_btjd": 4223.378192653158,
+            "duration_d": 0.10515787316417982,
+            "ingress_fraction": 0.020000002053200173,
+            "chi2": 1217.2339112796164,
+            "note": "Local shape sensitivity with baseline/depth profiled, not nuisance marginalisation."
+          }
+        },
+        {
+          "status": "timed",
+          "window_centre_btjd": 4226.944240631297,
+          "points": 447,
+          "tc_btjd": 4226.953962806219,
+          "profile_median_btjd": 4226.953568742555,
+          "sigma_min": 10.411423805653774,
+          "q025_btjd": 4226.939560544791,
+          "q975_btjd": 4226.968736389797,
+          "depth": 0.00015888191301109862,
+          "reduced_chi2": 2.722711109485523,
+          "profile_signal_snr": 5.011836683245399,
+          "profile_boundary_weight": 3.5122508094069904e-06,
+          "profile_edge": false,
+          "weak_profile": false,
+          "local_epoch": 5,
+          "tc_bjd_tdb": 2461226.953962806
+        },
+        {
+          "status": "timed",
+          "window_centre_btjd": 4230.522958224073,
+          "points": 441,
+          "tc_btjd": 4230.525388767804,
+          "profile_median_btjd": 4230.526183322174,
+          "sigma_min": 7.091104012137758,
+          "q025_btjd": 4230.516683172135,
+          "q975_btjd": 4230.539241836293,
+          "depth": 0.0002502662574859844,
+          "reduced_chi2": 4.007356048179249,
+          "profile_signal_snr": 6.5012828358639725,
+          "profile_boundary_weight": 6.636015273850011e-10,
+          "profile_edge": false,
+          "weak_profile": false,
+          "local_epoch": 6,
+          "tc_bjd_tdb": 2461230.525388768,
+          "joint_nuisance": {
+            "status": "joint_fit",
+            "tc_btjd": 4230.525337955389,
+            "duration_d": 0.1227729398439832,
+            "ingress_fraction": 0.3098806734343794,
+            "chi2": 1754.8005682744306,
+            "note": "Local shape sensitivity with baseline/depth profiled, not nuisance marginalisation."
+          }
+        }
+      ]
+    },
+    "SAP_FLUX": {
+      "signals": [
+        {
+          "period_d": 3.5773177940500265,
+          "epoch_btjd": 4209.057354767923,
+          "duration_d": 0.081,
+          "depth": 0.00021644861250597113,
+          "snr": 30.67111705550604
+        },
+        {
+          "period_d": 6.455723419968854,
+          "epoch_btjd": 4212.631854767923,
+          "duration_d": 0.18,
+          "depth": 0.0003468101604814519,
+          "snr": 24.927842984545325
+        },
+        {
+          "period_d": 6.389140229376434,
+          "epoch_btjd": 4212.046854767923,
+          "duration_d": 0.24,
+          "depth": 0.0001560180722034497,
+          "snr": 24.55528010219319
+        }
+      ],
+      "selected_signal": 0,
+      "phase_ambiguity": false,
+      "good_cadences": 15001,
+      "tc_uses_issued_epoch": false,
+      "companion_mask_diagnostics": [
+        {
+          "signal": 1,
+          "period_ratio": 1.8046267599446535,
+          "harmonic_candidate": false,
+          "overlapping_target_cadences": 140,
+          "target_cadences_protected_from_harmonic_mask": 0,
+          "interpretation": "Nonharmonic signal masked, including overlaps."
+        },
+        {
+          "signal": 2,
+          "period_ratio": 1.7860141584298634,
+          "harmonic_candidate": false,
+          "overlapping_target_cadences": 0,
+          "target_cadences_protected_from_harmonic_mask": 0,
+          "interpretation": "Nonharmonic signal masked, including overlaps."
+        }
+      ],
+      "status": "identified",
+      "shared_shape": {
+        "phase_shift_d": -0.002925817624985276,
+        "duration_d": 0.11851437036439467,
+        "ingress_fraction": 0.3456562213132155,
+        "reduced_chi2": 4.4602571623766805,
+        "points": 1544,
+        "empirical_model": "symmetric trapezoid, depth and linear baseline profiled"
+      },
+      "transits": [
+        {
+          "status": "timed",
+          "window_centre_btjd": 4209.054428950299,
+          "points": 427,
+          "tc_btjd": 4209.042456049046,
+          "profile_median_btjd": 4209.042719881411,
+          "sigma_min": 5.827071589200854,
+          "q025_btjd": 4209.035501236503,
+          "q975_btjd": 4209.050915603816,
+          "depth": 0.00029104593367728986,
+          "reduced_chi2": 2.4583004607032546,
+          "profile_signal_snr": 8.86396326918104,
+          "profile_boundary_weight": 9.291566242351039e-18,
+          "profile_edge": false,
+          "weak_profile": false,
+          "local_epoch": 0,
+          "tc_bjd_tdb": 2461209.042456049,
+          "joint_nuisance": {
+            "status": "joint_fit",
+            "tc_btjd": 4209.038919720731,
+            "duration_d": 0.11570825716369737,
+            "ingress_fraction": 0.16424957711801552,
+            "chi2": 1022.4136955175945,
+            "note": "Local shape sensitivity with baseline/depth profiled, not nuisance marginalisation."
+          }
+        },
+        {
+          "status": "insufficient_window_coverage",
+          "window_centre_btjd": 4212.631746744349,
+          "points": 219,
+          "local_epoch": 1
+        },
+        {
+          "status": "timed",
+          "window_centre_btjd": 4216.209064538399,
+          "points": 427,
+          "tc_btjd": 4216.209932139939,
+          "profile_median_btjd": 4216.210302722812,
+          "sigma_min": 6.534169583844281,
+          "q025_btjd": 4216.20199459756,
+          "q975_btjd": 4216.221414955603,
+          "depth": 0.00033602029542736814,
+          "reduced_chi2": 3.490920156440314,
+          "profile_signal_snr": 8.59694419594193,
+          "profile_boundary_weight": 8.937195404544399e-17,
+          "profile_edge": false,
+          "weak_profile": false,
+          "local_epoch": 2,
+          "tc_bjd_tdb": 2461216.20993214,
+          "joint_nuisance": {
+            "status": "joint_fit",
+            "tc_btjd": 4216.21024242226,
+            "duration_d": 0.11946378129378184,
+            "ingress_fraction": 0.4651197373761199,
+            "chi2": 1467.5897021373355,
+            "note": "Local shape sensitivity with baseline/depth profiled, not nuisance marginalisation."
+          }
+        },
+        {
+          "status": "insufficient_window_coverage",
+          "window_centre_btjd": 4219.786382332449,
+          "points": 0,
+          "local_epoch": 3
+        },
+        {
+          "status": "timed",
+          "window_centre_btjd": 4223.363700126499,
+          "points": 427,
+          "tc_btjd": 4223.368905735739,
+          "profile_median_btjd": 4223.369060496972,
+          "sigma_min": 7.622857236328362,
+          "q025_btjd": 4223.357761949421,
+          "q975_btjd": 4223.379811573479,
+          "depth": 0.00023644700511977226,
+          "reduced_chi2": 3.3813115077210916,
+          "profile_signal_snr": 6.14680707188912,
+          "profile_boundary_weight": 6.244163874557826e-09,
+          "profile_edge": false,
+          "weak_profile": false,
+          "local_epoch": 4,
+          "tc_bjd_tdb": 2461223.3689057357,
+          "joint_nuisance": {
+            "status": "joint_fit",
+            "tc_btjd": 4223.368917066838,
+            "duration_d": 0.1252160045038736,
+            "ingress_fraction": 0.3122532584897519,
+            "chi2": 1430.1580533563026,
+            "note": "Local shape sensitivity with baseline/depth profiled, not nuisance marginalisation."
+          }
+        },
+        {
+          "status": "timed",
+          "window_centre_btjd": 4226.941017920549,
+          "points": 426,
+          "tc_btjd": 4226.951776179645,
+          "profile_median_btjd": 4226.949566828953,
+          "sigma_min": 14.937420882659179,
+          "q025_btjd": 4226.927417772534,
+          "q975_btjd": 4226.969360747607,
+          "depth": 0.0001927764371678665,
+          "reduced_chi2": 4.11785887964614,
+          "profile_signal_snr": 4.540179697305597,
+          "profile_boundary_weight": 3.3411318374008095e-05,
+          "profile_edge": false,
+          "weak_profile": false,
+          "local_epoch": 5,
+          "tc_bjd_tdb": 2461226.9517761795
+        },
+        {
+          "status": "timed",
+          "window_centre_btjd": 4230.518335714599,
+          "points": 423,
+          "tc_btjd": 4230.519029795831,
+          "profile_median_btjd": 4230.517528768102,
+          "sigma_min": 8.198894834176237,
+          "q025_btjd": 4230.504815316643,
+          "q975_btjd": 4230.529901117721,
+          "depth": 0.00033476671770999377,
+          "reduced_chi2": 8.099518366569539,
+          "profile_signal_snr": 5.621748130105867,
+          "profile_boundary_weight": 1.3717257680129278e-07,
+          "profile_edge": false,
+          "weak_profile": false,
+          "local_epoch": 6,
+          "tc_bjd_tdb": 2461230.5190297957,
+          "joint_nuisance": {
+            "status": "joint_fit",
+            "tc_btjd": 4230.515625871783,
+            "duration_d": 0.08570302833516527,
+            "ingress_fraction": 0.1903514567115897,
+            "chi2": 3381.2824672228853,
+            "note": "Local shape sensitivity with baseline/depth profiled, not nuisance marginalisation."
+          }
+        }
+      ]
+    }
+  },
+  "file_sha256": "1862b621dadb39848bb0981639498637c5024cca6652f29b0fc057097a20e2a5",
+  "time_metadata": {
+    "TIMESYS": "TDB",
+    "TIMEREF": "SOLARSYSTEM",
+    "BJDREF": 2457000.0
+  },
+  "status": "completed",
+  "seconds": 10.681634333101101
+}

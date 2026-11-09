@@ -1,0 +1,13 @@
+set,prediction_coverage,accepted,events,planets
+primary,True,True,2181,151
+primary,True,False,188,20
+primary,False,True,4,3
+primary,False,False,730,141
+primary,unknown,True,0,0
+primary,unknown,False,0,0
+extension,True,True,72,5
+extension,True,False,119,25
+extension,False,True,0,0
+extension,False,False,100,15
+extension,unknown,True,0,0
+extension,unknown,False,0,0

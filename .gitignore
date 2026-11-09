@@ -43,6 +43,7 @@ results/prefreeze/final_path_dev/run/*.receipt.json
 !results/revision_stage0/
 !results/information_ledger/
 !results/d071_review/
+!results/d071_controls/
 !results/final_secondaries/
 !results/final_primary/
 !results/final_extension/

@@ -1,0 +1,5 @@
+set,metric,M2_minus_M0,ci95_lower,ci95_upper,scope
+primary,covered68,0.06043540606888127,0.04509137130251412,0.07682524709742744,"paired fixed-fit measured-time coverage, conditional on accepted timings"
+primary,covered95,0.06782549438480386,0.04750810880595133,0.0919000048794306,"paired fixed-fit measured-time coverage, conditional on accepted timings"
+extension,covered68,0.01818181818181818,0.0,0.05454545454545454,"paired fixed-fit measured-time coverage, conditional on accepted timings"
+extension,covered95,0.010909090909090908,0.0,0.03272727272727273,"paired fixed-fit measured-time coverage, conditional on accepted timings"

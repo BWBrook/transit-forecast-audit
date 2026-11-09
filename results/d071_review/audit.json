@@ -1,0 +1,250 @@
+{
+  "C050": {
+    "routes": {
+      "PDCSAP_FLUX": {
+        "planets": {
+          "b": {
+            "events": 17,
+            "reference_residual_min_range": [
+              -422.0269506558543,
+              -374.12091900085215
+            ],
+            "unweighted_local_period_d": 3.5839015804307177,
+            "reference_period_d": 3.585287,
+            "local_minus_reference_period_min": -1.995004179766653
+          },
+          "c": {
+            "events": 11,
+            "reference_residual_min_range": [
+              540.8721576412063,
+              598.681694428742
+            ],
+            "unweighted_local_period_d": 5.976879863140975,
+            "reference_period_d": 5.973865,
+            "local_minus_reference_period_min": 4.341402923003983
+          },
+          "d": {
+            "events": 5,
+            "reference_residual_min_range": [
+              -12.788083523773821,
+              0.6745493240305223
+            ],
+            "unweighted_local_period_d": 11.231785442675728,
+            "reference_period_d": 11.230511,
+            "local_minus_reference_period_min": 1.8351974530477833
+          }
+        },
+        "frozen_matches": 16,
+        "signed_median_difference_min": -0.39282090961933136,
+        "median_absolute_difference_min": 0.5253632739186287,
+        "maximum_absolute_difference_min": 7.9395941644907,
+        "extra_independent_events": [
+          {
+            "tc_bjd": 2461226.96323928,
+            "terminal_event_id": "HR858b|S105|DRD648",
+            "terminal_status": "integration_unresolved",
+            "coverage_at_prediction": "True"
+          }
+        ]
+      },
+      "SAP_FLUX": {
+        "planets": {
+          "b": {
+            "events": 17,
+            "reference_residual_min_range": [
+              -421.4803915604716,
+              -374.2883532163978
+            ],
+            "unweighted_local_period_d": 3.583967999037062,
+            "reference_period_d": 3.585287,
+            "local_minus_reference_period_min": -1.899361386631071
+          },
+          "c": {
+            "events": 11,
+            "reference_residual_min_range": [
+              543.3611776698672,
+              630.542165925799
+            ],
+            "unweighted_local_period_d": 5.9774758762398195,
+            "reference_period_d": 5.973865,
+            "local_minus_reference_period_min": 5.199661785340055
+          },
+          "d": {
+            "events": 5,
+            "reference_residual_min_range": [
+              -13.890236735605868,
+              -0.20780691731488332
+            ],
+            "unweighted_local_period_d": 11.231820454684806,
+            "reference_period_d": 11.230511,
+            "local_minus_reference_period_min": 1.885614746121007
+          }
+        },
+        "frozen_matches": 16,
+        "signed_median_difference_min": -0.13260271400213242,
+        "median_absolute_difference_min": 0.7823188975453377,
+        "maximum_absolute_difference_min": 12.28922925889492,
+        "extra_independent_events": [
+          {
+            "tc_bjd": 2461226.9622623078,
+            "terminal_event_id": "HR858b|S105|DRD648",
+            "terminal_status": "integration_unresolved",
+            "coverage_at_prediction": "True"
+          }
+        ]
+      }
+    },
+    "saved_SPOC_header_metadata": [
+      {
+        "sector": "105",
+        "file": "tess2026164183000-s0105-0000000178155732-0307-s_lc.fits",
+        "file_sha256": "1862b621dadb39848bb0981639498637c5024cca6652f29b0fc057097a20e2a5",
+        "timesys": "TDB",
+        "timeref": "SOLARSYSTEM",
+        "bjdrefi": "2457000",
+        "bjdreff": "0.0"
+      },
+      {
+        "sector": "106",
+        "file": "tess2026192185000-s0106-0000000178155732-0308-s_lc.fits",
+        "file_sha256": "86d37df8173180ae374f3548ae899a0d75e093861a6a6cad8fea31335b02d361",
+        "timesys": "TDB",
+        "timeref": "SOLARSYSTEM",
+        "bjdrefi": "2457000",
+        "bjdreff": "0.0"
+      },
+      {
+        "sector": "107",
+        "file": "tess2026221103959-s0107-0000000178155732-0309-s_lc.fits",
+        "file_sha256": "d7aeef3239ea1bfb1ac8ed7f7f5f69a4ab8bea2d7a413e83662e7245a4ce6541",
+        "timesys": "TDB",
+        "timeref": "SOLARSYSTEM",
+        "bjdrefi": "2457000",
+        "bjdreff": "0.0"
+      }
+    ],
+    "reference_values_match_Bonfanti_table2": true,
+    "reference_source": "https://arxiv.org/pdf/2411.14911#page=6",
+    "reference_time_standard_limit": "Table labels BJD, not an explicitly verified TDB standard; no conversion made. Numerical hours-scale departures are descriptive, not a new time-system validation.",
+    "interpretation": "Different implementations on shared SPOC photons support a coherent departure. Opposite signs/slopes and an approximately on-time d disfavor a simple common additive shift; they are not a unique dynamical explanation or a pixel/blend exclusion.",
+    "comparison_uncertainty_limit": "The two timing estimates share photons; quadrature-combined errors do not calibrate independent residuals."
+  },
+  "candidate_block": {
+    "recorded_2026_attempted_planets": 184,
+    "recorded_2026_attempted_hosts": 175,
+    "current_roster_never_attempted_2026_hosts": 0,
+    "current_roster_unattempted_host_names": [],
+    "current_roster_unattempted_planet_names": [],
+    "project_raw_filename_sector_counts": {
+      "46": 28,
+      "47": 19,
+      "48": 20,
+      "49": 17,
+      "50": 17,
+      "51": 17,
+      "52": 17,
+      "53": 26,
+      "54": 35,
+      "55": 34,
+      "56": 40,
+      "57": 52,
+      "58": 27,
+      "59": 29,
+      "60": 33,
+      "61": 56,
+      "62": 51,
+      "63": 52,
+      "64": 57,
+      "65": 32,
+      "66": 17,
+      "67": 58,
+      "68": 47,
+      "69": 59,
+      "70": 34,
+      "71": 38,
+      "72": 62,
+      "73": 22,
+      "98": 31,
+      "99": 29,
+      "100": 36,
+      "101": 35,
+      "102": 31,
+      "103": 28,
+      "104": 35,
+      "105": 36,
+      "106": 37,
+      "107": 40
+    },
+    "unparsed_raw_filenames": [],
+    "raw_filenames_in_candidate_sectors": 0,
+    "all_saved_SPOC120_metadata_candidates": {
+      "planets": 447,
+      "hosts": 424,
+      "planet_products": 924,
+      "coarse_opportunities": 6541
+    },
+    "not_2026_attempted": {
+      "planets": 324,
+      "hosts": 306,
+      "planet_products": 729,
+      "coarse_opportunities": 4800
+    },
+    "not_local_raw_cached": {
+      "planets": 108,
+      "hosts": 98,
+      "planet_products": 187,
+      "coarse_opportunities": 929
+    },
+    "DRC_core_not_2026_attempted": {
+      "planets": 183,
+      "hosts": 183,
+      "planet_products": 372,
+      "coarse_opportunities": 2990
+    },
+    "DRC_core_not_raw_cached": {
+      "planets": 41,
+      "hosts": 41,
+      "planet_products": 46,
+      "coarse_opportunities": 369
+    },
+    "single_sector_light_curve_filter": "SPOC120 timeseries with single-sector -sNNNN-ID-processing-s_lc.fits URL; combined-sector validation products excluded",
+    "limits": [
+      "Saved MAST product metadata only: no flux, headers or downloads requested.",
+      "No local filename does not prove that no agent ever opened a now-absent file.",
+      "New metadata candidates are not a qualified cohort, power calculation or access authority.",
+      "Coarse DRD event counts use one-day interiors without time-system conversion or cadence/gap checks; DRC needs its own exact manifest.",
+      "No-cache classification is a conservative lead, not a complete audit of past development/injection/scoring host reuse."
+    ]
+  },
+  "new_photometry_or_headers_opened": false,
+  "new_downloads": false,
+  "protected_sector_access_authorised": false,
+  "input_sha256": {
+    "results/independent_validation/hr858/summary.json": "918d3e7a36c8ae6532e13c8bb78b382b454bb9e03c0705adbd3a0ee17ffb190c",
+    "results/final_primary/accepted_outcomes.csv": "2c2fa9559d24fd55ddb1890b2c8814a4ebb3f53a9dbabf934387341e46f8f62b",
+    "results/final_primary/accepted_forecasts.csv": "67c76e6432a1ce2b4b010c4f62daf6eba016451c9d5730fe80eaf3823e5f84ac",
+    "results/final_primary/terminal_ledger.csv.gz": "6a17c4646b42ec7f87af49cfc2f900ed1065c53bf4887f213f7ba65c9079c3f8",
+    "data/raw/osf/wpjtn/catalogue_of_ephemerides.txt": "582a6ca8e65d85a5c840452f93e8dd5f0f0ef404b4c28fb4836e7b15efc094af",
+    "data/raw/osf/p298n/catalogue_of_ephemerides.txt": "2f1e4a3ad9dd3cc9f78e38f25c3a1d1e0ead1604ea0a86f66cc752ff1a666033",
+    "data/raw/exoplanet_archive/pscomppars.csv": "b99a83e46a3c332050ba4ed1d7f8c2f8019f6a8ecb4ada23d2b30f0995b73fb7",
+    "data/raw/exoplanet_archive/toi.csv": "caca7276b188f9af45c6446055cefbade59532a833328b689d561e0be2647c5e",
+    "data/raw/sprint1_metadata/mast_caom_filtered_000.json": "9407981c9c99d875687856aac7cc3e724f5a446706ed0f5436aca6acd3340a25",
+    "data/raw/sprint1_metadata/mast_caom_filtered_001.json": "febffe2754eb190c73ea051ea51a469b67f9effe245ea015b6750a50f4aef74d",
+    "data/raw/sprint1_metadata/mast_caom_filtered_002.json": "2ddc652c834a8a85075911e07a83c01425358484edafe5f054434c82871a4dbc",
+    "data/raw/sprint1_metadata/mast_caom_filtered_003.json": "5410d9f2cd7ccae2e0c88f4a7c8d67f6c45676168c7cf976c72cee2b69db28f5",
+    "data/raw/sprint1_metadata/mast_caom_filtered_004.json": "7909d02a49a0919b6ac3f1a2281f9bd556d682966e0ab1b3f4f6b53b6d30dfb0",
+    "data/raw/sprint1_metadata/mast_caom_filtered_005.json": "27b109c616e02c9ca9a31580b931d1bcbeac5c1669e5c43471c3a716b2e5c633",
+    "data/raw/sprint1_metadata/mast_caom_filtered_006.json": "754241aa16461168f6f59755ea8d4090a68d88d1cc08271d6cf30a29691f5893",
+    "data/raw/sprint1_metadata/mast_caom_filtered_007.json": "c2c63dc2072b361a243f348d0dc3f6a6b80f539527a1d18bf3da7196ca8eee0a",
+    "data/raw/sprint1_metadata/mast_caom_filtered_008.json": "cc0805161c1ae8ec158a8f45fec83a180915cd044dce2749676d63c0f38f3a84",
+    "data/raw/sprint1_metadata/mast_caom_filtered_009.json": "36baee42bb30c95fab5152a221ccbb73a36f0262cb3d8bacb26571d73903a74f",
+    "data/raw/sprint1_metadata/mast_caom_filtered_010.json": "4df55c275fc9ef3c7e9bb87d806915022699c9d2ee40c2f2e9564344b3471eaf",
+    "data/raw/sprint1_metadata/mast_caom_filtered_011.json": "b261308499fb260a33484c3f7d3764c74dc7e499c278435df31bdb2031b980c4",
+    "data/derived/final_primary/measured/products.csv": "63d5b108bf49dfcc5a5efd5f7c394123f409737e528615b192c8f81eeea02f92",
+    "data/derived/final_extension/measured/products.csv": "3f6ce4385d497e282bd6b778b8acefcdc741e5fbb5d875afa010532119d42674",
+    "results/prefreeze/manifest_core_primary.csv": "905499871524d44e93315612ed133deeca3a9b115da5665bb3513a7e39beea16",
+    "results/prefreeze/manifest_extension_exploratory.csv": "bd173285221a3d3156fe408e8d3e0439d54283c0784aebe14d9cd5b02fe7c1fb",
+    "data/fixtures/exoclock_ttv_flags.csv": "7eff71a7a435941d619a3caca995e6eb3eed8db1d229e3b372dc63cf643b23a0"
+  },
+  "script_sha256": "d2951805c53eb24884d0c941815e07906aa9a160eb332e9ae24073f25b7eb31b"
+}

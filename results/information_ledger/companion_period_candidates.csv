@@ -1,0 +1,196 @@
+release,planet,companion_archive_name,target_in_release,companion_in_release_by_whitespace_only_name,released_period_ratio_companion_over_target,status,historical_knowledge_eligible
+DRB,GJ1132b,GJ 1132 c,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,GJ1132b,GJ 1132 c,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,GJ1132b,GJ 1132 c,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,GJ3090b,GJ 3090 c,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,GJ3090b,GJ 3090 c,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,GJ3090b,GJ 3090 c,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,GJ357b,GJ 357 c,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,GJ357b,GJ 357 c,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,GJ357b,GJ 357 c,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,GJ357b,GJ 357 d,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,GJ357b,GJ 357 d,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,GJ357b,GJ 357 d,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,HD108236c,HD 108236 b,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,HD108236c,HD 108236 b,True,True,0.6120004745564253,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRD,HD108236c,HD 108236 b,True,True,0.6119760645062909,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRB,HD108236c,TOI-1233.01,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,HD108236c,TOI-1233.01,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,HD108236c,TOI-1233.01,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,HD108236c,HD 108236 e,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,HD108236c,HD 108236 e,True,True,3.1578290204149533,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRD,HD108236c,HD 108236 e,True,True,3.157844690098158,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRB,HD108236c,HD 108236 f,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,HD108236c,HD 108236 f,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,HD108236c,HD 108236 f,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,HD108236d,HD 108236 c,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,HD108236d,HD 108236 c,True,True,0.43762290245766816,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRD,HD108236d,HD 108236 c,True,True,0.43762086525662197,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRB,HD108236d,HD 108236 b,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,HD108236d,HD 108236 b,True,True,0.26782542398085313,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRD,HD108236d,HD 108236 b,True,True,0.26781349486558537,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRB,HD108236d,HD 108236 e,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,HD108236d,HD 108236 e,True,True,1.381938301379047,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRD,HD108236d,HD 108236 e,True,True,1.3819387256267852,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRB,HD108236d,HD 108236 f,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,HD108236d,HD 108236 f,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,HD108236d,HD 108236 f,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,HD108236e,HD 108236 c,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,HD108236e,HD 108236 c,True,True,0.3166732567010849,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRD,HD108236e,HD 108236 c,True,True,0.3166716853224711,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRB,HD108236e,HD 108236 b,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,HD108236e,HD 108236 b,True,True,0.19380418338039263,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRD,HD108236e,HD 108236 b,True,True,0.19379549172422042,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRB,HD108236e,TOI-1233.01,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,HD108236e,TOI-1233.01,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,HD108236e,TOI-1233.01,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,HD108236e,HD 108236 f,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,HD108236e,HD 108236 f,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,HD108236e,HD 108236 f,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,HD110113b,HD 110113 c,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,HD110113b,HD 110113 c,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,HD110113b,HD 110113 c,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,HD136352c,HD 136352 d,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,HD136352c,HD 136352 d,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,HD136352c,HD 136352 d,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,HD136352c,HD 136352 b,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,HD136352c,HD 136352 b,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,HD136352c,HD 136352 b,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,HD86226c,HD 86226 b,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,HD86226c,HD 86226 b,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,HD86226c,HD 86226 b,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,HR858b,HR 858 c,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,HR858b,HR 858 c,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,HR858b,HR 858 c,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,HR858b,HR 858 d,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,HR858b,HR 858 d,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,HR858b,HR 858 d,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,L98-59d,L 98-59 b,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,L98-59d,L 98-59 b,True,True,0.3024016818738871,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRD,L98-59d,L 98-59 b,True,True,0.3024022731085959,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRB,L98-59d,L 98-59 c,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,L98-59d,L 98-59 c,True,True,0.49534315867007517,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRD,L98-59d,L 98-59 c,True,True,0.49534404592022097,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRB,L98-59d,L 98-59 e,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,L98-59d,L 98-59 e,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,L98-59d,L 98-59 e,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,L98-59d,L 98-59 f,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,L98-59d,L 98-59 f,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,L98-59d,L 98-59 f,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,LHS1140b,LHS 1140 c,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,LHS1140b,LHS 1140 c,True,True,0.1527226756776532,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRD,LHS1140b,LHS 1140 c,True,True,0.15272275182461922,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRB,LHS1140c,LHS 1140 b,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,LHS1140c,LHS 1140 b,True,True,6.547816135114522,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRD,LHS1140c,LHS 1140 b,True,True,6.547812870399039,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRB,LTT3780c,LTT 3780 b,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,LTT3780c,LTT 3780 b,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,LTT3780c,LTT 3780 b,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,TOI-1064c,TOI-1064 b,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-1064c,TOI-1064 b,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,TOI-1064c,TOI-1064 b,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,TOI-178d,TOI-178 b,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-178d,TOI-178 b,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,TOI-178d,TOI-178 b,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,TOI-178d,TOI-178 c,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-178d,TOI-178 c,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,TOI-178d,TOI-178 c,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,TOI-178d,TOI-178 e,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-178d,TOI-178 e,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,TOI-178d,TOI-178 e,True,True,1.519040357677657,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRB,TOI-178d,TOI-178 f,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-178d,TOI-178 f,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,TOI-178d,TOI-178 f,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,TOI-178d,TOI-178 g,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-178d,TOI-178 g,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,TOI-178d,TOI-178 g,True,True,3.1580158771306492,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRB,TOI-178e,TOI-178 b,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-178e,TOI-178 b,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,TOI-178e,TOI-178 b,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,TOI-178e,TOI-178 c,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-178e,TOI-178 c,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,TOI-178e,TOI-178 c,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,TOI-178e,TOI-178 d,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-178e,TOI-178 d,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,TOI-178e,TOI-178 d,True,True,0.6583103568945479,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRB,TOI-178e,TOI-178 f,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-178e,TOI-178 f,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,TOI-178e,TOI-178 f,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,TOI-178e,TOI-178 g,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-178e,TOI-178 g,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,TOI-178e,TOI-178 g,True,True,2.0789545591525265,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRB,TOI-178g,TOI-178 b,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-178g,TOI-178 b,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,TOI-178g,TOI-178 b,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,TOI-178g,TOI-178 c,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-178g,TOI-178 c,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,TOI-178g,TOI-178 c,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,TOI-178g,TOI-178 d,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-178g,TOI-178 d,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,TOI-178g,TOI-178 d,True,True,0.3166545194537124,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRB,TOI-178g,TOI-178 e,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-178g,TOI-178 e,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,TOI-178g,TOI-178 e,True,True,0.48101099449121393,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRB,TOI-178g,TOI-178 f,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-178g,TOI-178 f,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,TOI-178g,TOI-178 f,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,TOI-270b,TOI-270 c,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-270b,TOI-270 c,True,True,1.6846166070860997,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRD,TOI-270b,TOI-270 c,True,True,1.684608141383491,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRB,TOI-270b,TOI-270 d,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-270b,TOI-270 d,True,True,3.386618954596156,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRD,TOI-270b,TOI-270 d,True,True,3.3866032213884676,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRB,TOI-421c,TOI-421 b,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-421c,TOI-421 b,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,TOI-421c,TOI-421 b,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,TOI-431b,TOI-431 c,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-431b,TOI-431 c,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,TOI-431b,TOI-431 c,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,TOI-431b,TOI-431 d,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-431b,TOI-431 d,True,True,25.42795723719116,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRD,TOI-431b,TOI-431 d,True,True,25.427760658538386,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRB,TOI-431d,TOI-431 b,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-431d,TOI-431 b,True,True,0.039326792579995024,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRD,TOI-431d,TOI-431 b,True,True,0.03932709661022431,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRB,TOI-431d,TOI-431 c,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-431d,TOI-431 c,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,TOI-431d,TOI-431 c,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,TOI-451c,TOI-451 b,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-451c,TOI-451 b,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,TOI-451c,TOI-451 b,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,TOI-451c,TOI-451 d,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-451c,TOI-451 d,True,True,1.7802647229744741,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRD,TOI-451c,TOI-451 d,True,True,1.7802678216515275,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRB,TOI-451d,TOI-451 b,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-451d,TOI-451 b,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,TOI-451d,TOI-451 b,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,TOI-451d,TOI-451 c,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-451d,TOI-451 c,True,True,0.5617142142373049,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRD,TOI-451d,TOI-451 c,True,True,0.5617132365355653,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRB,TOI-776b,TOI-776 c,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-776b,TOI-776 c,True,True,1.8996050507904443,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRD,TOI-776b,TOI-776 c,True,True,1.8996157574024632,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRB,TOI-776c,TOI-776 b,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-776c,TOI-776 b,True,True,0.5264252164332214,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRD,TOI-776c,TOI-776 b,True,True,0.5264222493960574,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRB,TOI-942b,TOI-942 c,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-942b,TOI-942 c,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,TOI-942b,TOI-942 c,True,True,2.3487301745511346,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRB,TOI-942c,TOI-942 b,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,TOI-942c,TOI-942 b,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,TOI-942c,TOI-942 b,True,True,0.42576197591156245,release_periods_for_current_archive_companion_candidate; historical_confirmation_not_verified,False
+DRB,WASP-132b,WASP-132 c,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,WASP-132b,WASP-132 c,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,WASP-132b,WASP-132 c,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,WASP-132b,WASP-132 d,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,WASP-132b,WASP-132 d,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,WASP-132b,WASP-132 d,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,WASP-41b,WASP-41 c,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,WASP-41b,WASP-41 c,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,WASP-41b,WASP-41 c,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,WASP-53b,WASP-53 c,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,WASP-53b,WASP-53 c,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,WASP-53b,WASP-53 c,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRB,WASP-8b,WASP-8 c,False,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRC,WASP-8b,WASP-8 c,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False
+DRD,WASP-8b,WASP-8 c,True,False,,period_ratio_unknown; companion_or_target_not_in_release,False

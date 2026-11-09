@@ -1,0 +1,96 @@
+{
+  "planet": "TOI-559b",
+  "category": "evaluation_influence",
+  "sector": 106,
+  "relative_fits_path": "data/raw/mast/TIC_209459275/tess2026192185000-s0106-0000000209459275-0308-s_lc.fits",
+  "fluxes": {
+    "PDCSAP_FLUX": {
+      "signals": [
+        {
+          "period_d": 12.05116781702758,
+          "epoch_btjd": 4240.4075553112725,
+          "duration_d": 0.18,
+          "depth": 0.008115391388465443,
+          "snr": 67.79487521122327
+        },
+        {
+          "period_d": 14.83658350169696,
+          "epoch_btjd": 4235.817555311272,
+          "duration_d": 0.24,
+          "depth": 0.0004065709585721379,
+          "snr": 5.215033859143696
+        }
+      ],
+      "selected_signal": null,
+      "phase_ambiguity": false,
+      "good_cadences": 12869,
+      "tc_uses_issued_epoch": false,
+      "status": "target_not_identified"
+    },
+    "SAP_FLUX": {
+      "signals": [
+        {
+          "period_d": 6.752802496359415,
+          "epoch_btjd": 4240.4075553112725,
+          "duration_d": 0.18,
+          "depth": 0.008261934024838453,
+          "snr": 69.58996754781911
+        }
+      ],
+      "selected_signal": 0,
+      "phase_ambiguity": false,
+      "good_cadences": 12869,
+      "tc_uses_issued_epoch": false,
+      "companion_mask_diagnostics": [],
+      "status": "identified",
+      "shared_shape": {
+        "phase_shift_d": 0.0044864542752778794,
+        "duration_d": 0.2057428203593778,
+        "ingress_fraction": 0.10901315374999332,
+        "reduced_chi2": 1.0502332780441521,
+        "points": 793,
+        "empirical_model": "symmetric trapezoid, depth and linear baseline profiled"
+      },
+      "transits": [
+        {
+          "status": "timed",
+          "window_centre_btjd": 4240.412041765548,
+          "points": 578,
+          "tc_btjd": 4240.409698848572,
+          "profile_median_btjd": 4240.409683649105,
+          "sigma_min": 0.9623919867840419,
+          "q025_btjd": 4240.408349512295,
+          "q975_btjd": 4240.41098731107,
+          "depth": 0.009142918985998226,
+          "reduced_chi2": 1.0,
+          "profile_signal_snr": 66.21537371322349,
+          "profile_boundary_weight": 0.0,
+          "profile_edge": false,
+          "weak_profile": false,
+          "local_epoch": 0,
+          "tc_bjd_tdb": 2461240.4096988486
+        },
+        {
+          "status": "insufficient_window_coverage",
+          "window_centre_btjd": 4247.164844261907,
+          "points": 258,
+          "local_epoch": 1
+        },
+        {
+          "status": "insufficient_window_coverage",
+          "window_centre_btjd": 4253.9176467582665,
+          "points": 0,
+          "local_epoch": 2
+        }
+      ]
+    }
+  },
+  "file_sha256": "9621b66b56000101bec5507065e41314c3d5767ac5fcd04ec6b99c8bb598c97a",
+  "time_metadata": {
+    "TIMESYS": "TDB",
+    "TIMEREF": "SOLARSYSTEM",
+    "BJDREF": 2457000.0
+  },
+  "status": "completed",
+  "seconds": 8.181575333001092
+}

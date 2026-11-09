@@ -1,0 +1,13 @@
+set,selection,metric,accepted_events,point,planets,hosts,ci95_lower,ci95_upper,interval,B,seed
+primary,all,is95_standardised,2185,-0.1213078045239567,151,151,-1.9752966023830039,1.1236836140273576,conditional fixed-fit paired host bootstrap,10000,20261109
+primary,all,is95_forecast_normalised,2185,0.0815048150187216,151,151,-2.070316319590662,1.673816171349628,conditional fixed-fit paired host bootstrap,10000,20261109
+primary,all,is95_minutes,2185,-8.460440917162334,151,151,-34.22567660655782,5.67761045991285,conditional fixed-fit paired host bootstrap,10000,20261109
+primary,without_HR858,is95_standardised,2169,0.6021900380664033,150,150,-0.26684886908449,1.2527505037999596,conditional fixed-fit paired host bootstrap,10000,20261109
+primary,without_HR858,is95_forecast_normalised,2169,0.8343297716666606,150,150,-0.5427211124924919,1.8863559313131997,conditional fixed-fit paired host bootstrap,10000,20261109
+primary,without_HR858,is95_minutes,2169,3.6478025638305485,150,150,1.2436754997964865,6.433267198065236,conditional fixed-fit paired host bootstrap,10000,20261109
+extension,all,is95_standardised,72,-11.185774265554972,5,5,-40.304728326378964,4.350047477806412,conditional fixed-fit paired host bootstrap,10000,20261109
+extension,all,is95_forecast_normalised,72,-15.20084054154292,5,5,-54.71691755128438,5.290286018441625,conditional fixed-fit paired host bootstrap,10000,20261109
+extension,all,is95_minutes,72,-70.82637508808324,5,5,-286.6130967204115,54.87152894876954,conditional fixed-fit paired host bootstrap,10000,20261109
+extension,without_HR858,is95_standardised,72,-11.185774265554972,5,5,-40.304728326378964,4.350047477806412,conditional fixed-fit paired host bootstrap,10000,20261109
+extension,without_HR858,is95_forecast_normalised,72,-15.20084054154292,5,5,-54.71691755128438,5.290286018441625,conditional fixed-fit paired host bootstrap,10000,20261109
+extension,without_HR858,is95_minutes,72,-70.82637508808324,5,5,-286.6130967204115,54.87152894876954,conditional fixed-fit paired host bootstrap,10000,20261109

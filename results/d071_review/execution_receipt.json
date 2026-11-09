@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-09",
+  "base_commit": "87cc6ff",
+  "frozen_manifest_sha256": "5ec7c0f363bca641430c68c0ff57fdbf788cda9e32f80dddea7c7cd9121c57d1",
+  "scientific_frozen_files_changed": false,
+  "runtime_restoration": {
+    "before": "Current .venv was Python3.12 with a different package set; native freeze verifier reported both differences.",
+    "preserved_environment": "data/derived/revision_stage0/runtime_backups/venv_before_restore_20261109",
+    "restored_evaluation": {
+      "evaluation_python": "Python 3.13.16",
+      "evaluation_venv_packages": [
+        "astropy==8.0.2",
+        "astropy-iers-data==0.2026.11.2.0.34.55",
+        "contourpy==1.4.0",
+        "cycler==0.12.1",
+        "fonttools==4.68.0",
+        "kiwisolver==1.5.1",
+        "matplotlib==3.11.2",
+        "numpy==2.5.4",
+        "packaging==26.3",
+        "pillow==13.0.0",
+        "pyerfa==2.0.1.5",
+        "pyparsing==3.3.3",
+        "python-dateutil==4.0.0",
+        "pyyaml==6.0.3",
+        "scipy==1.18.1",
+        "tess-point==0.9.5.post1",
+        "tzdata==2026.6"
+      ],
+      "measurement_environment": "uv run with scripts/final_measure.py.lock"
+    },
+    "new_measurements": "Retained final-measure Python3.13.16/numpy2.3.5/scipy1.18.1 stack, separate from evaluation stack."
+  },
+  "tests": {
+    "command": ".venv/bin/python -m unittest discover -s tests -v",
+    "run": 141,
+    "expected_local_skips": 1,
+    "failures": 0
+  },
+  "native_freeze_verifier": "zero mismatches after restoring exact environment",
+  "parent_hash_checks": 579,
+  "independent_cross_checks": {
+    "T018": "All12 three-scale point/conditional interval rows and intended-planet completion bounds independently recomputed; max interval error1.42e-14.",
+    "candidate_inventory": "Independent metadata recomputation found and fixed an omitted HLSP filename class; final manifest/product differences computed rather than hard-coded.",
+    "figures": "All three Stage0 PNG figures visually inspected; no clipping/overlap."
+  },
+  "S74_S97_photometry_or_headers_opened": false,
+  "release_or_external_outreach": false
+}

@@ -1,0 +1,21 @@
+{
+  "targets": 184,
+  "frozen_hosts": 175,
+  "cached_planets_on_frozen_hosts": 215,
+  "targets_with_current_companion_candidates": 32,
+  "directed_target_companion_pairs": 65,
+  "companion_parameter_date_candidate_states": {
+    "unknown": 129,
+    "metadata_pre_origin_source_unverified": 38,
+    "metadata_on_or_after_origin": 26,
+    "boundary_or_unknown": 2
+  },
+  "target_current_ttv_flags": 8,
+  "historically_verified_companion_inventories": 0,
+  "missing_target_matches": 0,
+  "name_cache_recorded_retrieval_utc": "2026-11-04T21:40:21.513070+00:00",
+  "name_cache_retrieval_time_limit": "original acquisition script recorded file modification time; not immutable source-availability evidence",
+  "method": "same saved complete name/host table screened for all 175 hosts, independent of outcomes; source dates are leads only",
+  "ttv_limit": "Default parameter reference does not date the TTV flag; no physical negatives inferred.",
+  "failed_public_route": "NASA TAP HTTP522 for 175-host query and 35-host first batch; no response data; retry after source becomes reachable"
+}

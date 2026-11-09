@@ -1,0 +1,44 @@
+{
+  "script_sha256": "812db4fcd8b60217078d88e31afb25f5493925e768bbf991a46414db70018dc3",
+  "input_sha256": {
+    "results/final_secondaries/ttv/ps_default_ttv.json": "18b9e908935d83100f7c40c771464b9c0e4b279607bc1e7960756e472999a33f",
+    "results/final_secondaries/ttv/labels.csv": "fbf8bb8b7f10ee96a0a54ca745ef69c3e134db2912c929ebd9a148e6f7f05598",
+    "data/raw/exoplanet_archive/pscomppars.csv": "b99a83e46a3c332050ba4ed1d7f8c2f8019f6a8ecb4ada23d2b30f0995b73fb7",
+    "results/sealed_inventory/sealed_inventory_summary.json": "0868d884115191ed0e2926006704696a4093f0565d8190fbf12c79a075625abc"
+  },
+  "output_sha256": {
+    "results/information_ledger/external_metadata/targets.csv": "dd7a0ad7db5bae64ba4894dbb360d0c559762243954d20970b3d4b115fbdb11b",
+    "results/information_ledger/external_metadata/companion_candidates.csv": "2e811f0d5b18b75422bff8883e92310f86c6d69ce193aa8aeec58fb93ee40e32",
+    "results/information_ledger/external_metadata/origin_candidate_dates.csv": "6595f779a1c638b60c17a3bc45634e303125983ea432aedf04706c6ce913eec0",
+    "results/information_ledger/external_metadata/summary.json": "051f3734f689bef8ec80beda6da8614df4aa25952ec8a010245663f80d0a7940"
+  },
+  "source_documentation": "https://exoplanetarchive.ipac.caltech.edu/docs/API_PS_columns.html",
+  "source_doi": "10.26133/NEA12",
+  "licence": "not established; do not impute repository licence",
+  "no_photometry_or_headers_requested": true,
+  "network_requests_in_offline_rebuild": 0,
+  "failed_live_requests": [
+    {
+      "endpoint": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync",
+      "method": "GET",
+      "format": "json",
+      "query": "select pl_name,hostname,pl_orbper,pl_trandur,disc_year,disc_pubdate,disc_refname,pl_refname,pl_pubdate,releasedate,rowupdate,ttv_flag,sy_pnum from ps where default_flag=1 and hostname in ('EPIC 246851721','GJ 1132','GJ 1252','GJ 3090','GJ 357','HAT-P-64','HAT-P-70','HATS-1','HATS-17','HATS-18','HATS-2','HATS-22','HATS-23','HATS-24','HATS-26','HATS-27','HATS-29','HATS-30','HATS-31','HATS-33','HATS-34','HATS-35','HATS-38','HATS-4','HATS-40','HATS-43','HATS-46','HATS-48 A','HATS-5','HATS-51','HATS-52','HATS-53','HATS-56','HATS-57','HATS-58 A','HATS-6','HATS-61','HATS-64','HATS-67','HATS-68','HD 108236','HD 110113','HD 136352','HD 183579','HD 207496','HD 219666','HD 86226','HIP 65 A','HIP 94235','HR 858','K2-260','KELT-10','KELT-11','L 98-59','LHS 1140','LHS 3844','LTT 3780','LTT 9779','NGTS-12','NGTS-13','NGTS-2','NGTS-24','NGTS-6','TIC 237913194','TOI-1064','TOI-122','TOI-1478','TOI-150','TOI-157','TOI-163','TOI-178','TOI-181','TOI-2459','TOI-251','TOI-262','TOI-2641','TOI-269','TOI-270','TOI-277','TOI-2803 A','TOI-421','TOI-4308','TOI-431','TOI-4406','TOI-444','TOI-451','TOI-532','TOI-559','TOI-564','TOI-672','TOI-674','TOI-776','TOI-824','TOI-892','TOI-905','TOI-913','TOI-942','WASP-100','WASP-101','WASP-105','WASP-106','WASP-117','WASP-124','WASP-126','WASP-129','WASP-130','WASP-131','WASP-132','WASP-139','WASP-140','WASP-141','WASP-142','WASP-144','WASP-145 A','WASP-147','WASP-15','WASP-159','WASP-160 B','WASP-162','WASP-164','WASP-165','WASP-166','WASP-167','WASP-168','WASP-169','WASP-170','WASP-171','WASP-172','WASP-173 A','WASP-174','WASP-175','WASP-178','WASP-18','WASP-182','WASP-184','WASP-190','WASP-192','WASP-20','WASP-22','WASP-25','WASP-26','WASP-29','WASP-31','WASP-34','WASP-35','WASP-36','WASP-41','WASP-42','WASP-43','WASP-45','WASP-46','WASP-49','WASP-5','WASP-53','WASP-61','WASP-62','WASP-63','WASP-66','WASP-7','WASP-72','WASP-73','WASP-78','WASP-79','WASP-8','WASP-82','WASP-83','WASP-87','WASP-88','WASP-91','WASP-94 A','WASP-95','WASP-96','WASP-97','WASP-98','WASP-99') order by hostname,pl_name",
+      "timeout_seconds": 60,
+      "http_status": 522,
+      "attempt_date_utc": "2026-11-09",
+      "exact_clock_time": "not retained",
+      "response_data_retrieved": false
+    },
+    {
+      "endpoint": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync",
+      "method": "GET",
+      "format": "json",
+      "query": "select pl_name,hostname,pl_orbper,pl_trandur,disc_year,disc_pubdate,disc_refname,pl_refname,pl_pubdate,releasedate,rowupdate,ttv_flag,sy_pnum from ps where default_flag=1 and hostname in ('EPIC 246851721','GJ 1132','GJ 1252','GJ 3090','GJ 357','HAT-P-64','HAT-P-70','HATS-1','HATS-17','HATS-18','HATS-2','HATS-22','HATS-23','HATS-24','HATS-26','HATS-27','HATS-29','HATS-30','HATS-31','HATS-33','HATS-34','HATS-35','HATS-38','HATS-4','HATS-40','HATS-43','HATS-46','HATS-48 A','HATS-5','HATS-51','HATS-52','HATS-53','HATS-56','HATS-57','HATS-58 A') order by hostname,pl_name",
+      "timeout_seconds": 45,
+      "http_status": 522,
+      "attempt_date_utc": "2026-11-09",
+      "exact_clock_time": "not retained",
+      "response_data_retrieved": false
+    }
+  ]
+}

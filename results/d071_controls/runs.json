@@ -1,0 +1,136 @@
+[
+  {
+    "run_id": "gaussian_0_complete_white",
+    "status": "ok",
+    "id_snr": 18.22536768979302,
+    "shape_rchi2": 0.9409951018981131,
+    "fitted_duration_minutes": 141.68303566993873,
+    "accepted": 4,
+    "status_counts": {
+      "accepted": 4
+    }
+  },
+  {
+    "run_id": "gaussian_0_forecast_phase_gaps",
+    "status": "ok",
+    "id_snr": 18.268244724552147,
+    "shape_rchi2": 0.9282195130817986,
+    "fitted_duration_minutes": 165.81204168903415,
+    "accepted": 4,
+    "status_counts": {
+      "accepted": 4
+    }
+  },
+  {
+    "run_id": "gaussian_0_gaps_shared_shape_red_understated_errors",
+    "status": "ok",
+    "id_snr": 33.277430082774124,
+    "shape_rchi2": 3.982901812738957,
+    "fitted_duration_minutes": 134.46741471427754,
+    "accepted": 4,
+    "status_counts": {
+      "accepted": 4
+    }
+  },
+  {
+    "run_id": "gaussian_1_complete_white",
+    "status": "ok",
+    "id_snr": 17.2644666586946,
+    "shape_rchi2": 0.9604695639402933,
+    "fitted_duration_minutes": 145.29864504171945,
+    "accepted": 4,
+    "status_counts": {
+      "accepted": 4
+    }
+  },
+  {
+    "run_id": "gaussian_1_forecast_phase_gaps",
+    "status": "ok",
+    "id_snr": 17.31471048485622,
+    "shape_rchi2": 0.9680961645669205,
+    "fitted_duration_minutes": 133.19065908998235,
+    "accepted": 4,
+    "status_counts": {
+      "accepted": 4
+    }
+  },
+  {
+    "run_id": "gaussian_1_gaps_shared_shape_red_understated_errors",
+    "status": "ok",
+    "id_snr": 31.251645746672114,
+    "shape_rchi2": 4.314067236448324,
+    "fitted_duration_minutes": 132.37539314525065,
+    "accepted": 4,
+    "status_counts": {
+      "accepted": 4
+    }
+  },
+  {
+    "run_id": "two_point_0_complete_white",
+    "status": "ok",
+    "id_snr": 16.5639019849197,
+    "shape_rchi2": 0.9754991016166321,
+    "fitted_duration_minutes": 142.13245969058272,
+    "accepted": 4,
+    "status_counts": {
+      "accepted": 4
+    }
+  },
+  {
+    "run_id": "two_point_0_forecast_phase_gaps",
+    "status": "ok",
+    "id_snr": 16.44027779101041,
+    "shape_rchi2": 1.0064071086124726,
+    "fitted_duration_minutes": 141.68067044376707,
+    "accepted": 4,
+    "status_counts": {
+      "accepted": 4
+    }
+  },
+  {
+    "run_id": "two_point_0_gaps_shared_shape_red_understated_errors",
+    "status": "ok",
+    "id_snr": 26.876689282380234,
+    "shape_rchi2": 4.382530406743802,
+    "fitted_duration_minutes": 141.0827814058057,
+    "accepted": 3,
+    "status_counts": {
+      "edge": 1,
+      "accepted": 3
+    }
+  },
+  {
+    "run_id": "two_point_1_complete_white",
+    "status": "ok",
+    "id_snr": 19.924458204700674,
+    "shape_rchi2": 0.9931517846940069,
+    "fitted_duration_minutes": 143.62274636370256,
+    "accepted": 4,
+    "status_counts": {
+      "accepted": 4
+    }
+  },
+  {
+    "run_id": "two_point_1_forecast_phase_gaps",
+    "status": "ok",
+    "id_snr": 16.13383479424125,
+    "shape_rchi2": 0.990519718450458,
+    "fitted_duration_minutes": 80.88144809689838,
+    "accepted": 2,
+    "status_counts": {
+      "accepted": 2,
+      "integration_unresolved": 2
+    }
+  },
+  {
+    "run_id": "two_point_1_gaps_shared_shape_red_understated_errors",
+    "status": "ok",
+    "id_snr": 36.79219976746385,
+    "shape_rchi2": 4.261484960858082,
+    "fitted_duration_minutes": 88.5869701492239,
+    "accepted": 4,
+    "status_counts": {
+      "accepted": 4
+    }
+  }
+]

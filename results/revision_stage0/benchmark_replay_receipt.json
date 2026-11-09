@@ -1,0 +1,50 @@
+{
+  "kind": "complete primary and extension score replay",
+  "all_checks_pass": true,
+  "package_files_verified": 499,
+  "results": {
+    "primary": {
+      "timed_events": 2185,
+      "nonGaussian_events": 399,
+      "score_sha256": "3ba24636684e42d2d99dbbe68c336d2726aa702d70ea0ed7001005a7a223412c",
+      "max_absolute_metric_errors": {
+        "weight": 0.0,
+        "is95_standardised": 0.0,
+        "is95_minutes": 0.0,
+        "is95_forecast_normalised": 0.0,
+        "negative_log_score_seconds": 0.0,
+        "covered68": 0.0,
+        "covered95": 0.0,
+        "width95_minutes": 0.0,
+        "m0_predictive_sd_s": 0.0
+      },
+      "tolerance": 1e-09,
+      "scope": "Exact saved accepted outcomes; no fitting, raw data access, or capture claim"
+    },
+    "extension": {
+      "timed_events": 72,
+      "nonGaussian_events": 64,
+      "score_sha256": "685d8bdceb97795e710265d61f99be3c22cb274297520cb9fd7e5e69ffbfccd8",
+      "max_absolute_metric_errors": {
+        "weight": 0.0,
+        "is95_standardised": 0.0,
+        "is95_minutes": 0.0,
+        "is95_forecast_normalised": 0.0,
+        "negative_log_score_seconds": 0.0,
+        "covered68": 0.0,
+        "covered95": 0.0,
+        "width95_minutes": 0.0,
+        "m0_predictive_sd_s": 0.0
+      },
+      "tolerance": 1e-09,
+      "scope": "Exact saved accepted outcomes; no fitting, raw data access, or capture claim"
+    }
+  },
+  "runtime": {
+    "python": "3.13.16",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "raw_photometry_or_headers_opened": false,
+  "network_requests": false
+}

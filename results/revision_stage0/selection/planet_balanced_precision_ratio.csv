@@ -1,0 +1,3 @@
+set,weighting,quantile_convention,q25,median,q75,scope
+primary,"equal accepted planet, events equally within planet",weighted empirical inverse CDF,1.2307577690514164,1.8579971789142646,2.817078131057464,"reported timing sigma convention / forecast SD, not full non-Gaussian variance"
+extension,"equal accepted planet, events equally within planet",weighted empirical inverse CDF,0.5108789126147348,0.9689624432099287,1.3459622798933075,"reported timing sigma convention / forecast SD, not full non-Gaussian variance"

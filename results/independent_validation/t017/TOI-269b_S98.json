@@ -1,0 +1,76 @@
+{
+  "planet": "TOI-269b",
+  "category": "zero_accepted",
+  "sector": 98,
+  "relative_fits_path": "data/raw/mast/TIC_220479565/tess2025312202959-s0098-0000000220479565-0298-s_lc.fits",
+  "fluxes": {
+    "PDCSAP_FLUX": {
+      "signals": [
+        {
+          "period_d": 14.546338099973834,
+          "epoch_btjd": 3994.9463907179124,
+          "duration_d": 0.24,
+          "depth": 0.04505916268380161,
+          "snr": 63.67644336453608
+        },
+        {
+          "period_d": 0.6710992676549292,
+          "epoch_btjd": 3988.5278907179127,
+          "duration_d": 0.051000000000000004,
+          "depth": 0.010754088473512214,
+          "snr": 27.219031338607348
+        },
+        {
+          "period_d": 14.918067989034453,
+          "epoch_btjd": 4002.617890609991,
+          "duration_d": 0.12,
+          "depth": 0.06287478494181932,
+          "snr": 26.32219323888551
+        }
+      ],
+      "selected_signal": null,
+      "phase_ambiguity": false,
+      "good_cadences": 22962,
+      "tc_uses_issued_epoch": false,
+      "status": "target_not_identified"
+    },
+    "SAP_FLUX": {
+      "signals": [
+        {
+          "period_d": 14.523592519866147,
+          "epoch_btjd": 3994.9403907179126,
+          "duration_d": 0.24,
+          "depth": 0.10395328455005758,
+          "snr": 130.98412655172788
+        },
+        {
+          "period_d": 14.385049842725477,
+          "epoch_btjd": 3988.7393907179126,
+          "duration_d": 0.18,
+          "depth": 0.08838679437057577,
+          "snr": 53.731333449830004
+        },
+        {
+          "period_d": 14.53780433595783,
+          "epoch_btjd": 3994.4843907179124,
+          "duration_d": 0.24,
+          "depth": 0.05505308852276288,
+          "snr": 48.70456161405921
+        }
+      ],
+      "selected_signal": null,
+      "phase_ambiguity": false,
+      "good_cadences": 22962,
+      "tc_uses_issued_epoch": false,
+      "status": "target_not_identified"
+    }
+  },
+  "file_sha256": "ea799aa1272074f23a5a4bda1e1afe6e1334ed6bb984be7fa8df76035b9b0f75",
+  "time_metadata": {
+    "TIMESYS": "TDB",
+    "TIMEREF": "SOLARSYSTEM",
+    "BJDREF": 2457000.0
+  },
+  "status": "completed",
+  "seconds": 12.777632166049443
+}
