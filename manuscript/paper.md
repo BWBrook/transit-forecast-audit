@@ -14,7 +14,7 @@ Held-out claims: C043 primary protected evaluation; C044 exploratory extension; 
 Missing citations are written [CITATION NEEDED: ...]. Bibliography entries are written from verified DOI metadata (references/); Barry's DOI sweep precedes release.
 -->
 
-> **Under revision (D071–D072, 9 November 2026).** An external review prompted further measurement validation, interpretation repairs and an issue-time information audit. HR 858 b remains outside every model's 95% interval despite its score gain. The [counter-review and scope conditions](../docs/d071_counter_review_2026-11-09.md) qualify the [original revision proposal](../docs/review_response_2026-11-09.md). This historical body will be rewritten after reconciliation; the frozen result below is unchanged.
+> **Under revision (D071–D074, 9 November 2026).** An external review prompted further measurement validation, interpretation repairs and an issue-time information audit. HR 858 b remains outside every model's 95% interval despite its score gain. The [counter-review and scope conditions](../docs/d071_counter_review_2026-11-09.md) qualify the [original revision proposal](../docs/review_response_2026-11-09.md). This historical body will be rewritten after reconciliation; the frozen result below is unchanged.
 
 # Abstract
 

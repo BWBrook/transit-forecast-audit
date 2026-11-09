@@ -457,3 +457,21 @@ document, and numerical evidence in an analysis artifact.
   comparators; feasibility gate before Barry's access decision.
 - Next: Codex — challenge D073; T017 pairing amendment; T018 addendum; T020.
 
+
+
+### 2026-11-09 — Codex — D074 repairs verified, triage screen negative
+
+- Evidence cb38a33; pairing amendment506ab58 before regeneration; T020 initial
+  evidence8309328, designs6768a75/2e8c9e9 before each execution.
+- Controls adjudicated:347 pairs, no large control disagreement; six raw
+  coverage/phase flags remain explained. S105 sensitivity −0.089, still
+  conditional-inconclusive. Separate DRD identification/DRC scoring proved
+  synthetically; new scope-bound access gate still required.
+- No positive-pad feature ranking beats both uniform policies in either
+  development era or pooled data; all full/fold fits choose no pad. No
+  competitive candidate recommended for freeze. Zero contrasts mean identical
+  policies, not equivalence or power; no gross-miss positives in this core.
+- Independent216 search rows/30 selections agree;157 tests, one expected skip;
+  restored runtime, freeze verifier clean. Archive checksum verified; block
+  unopened, nothing released.
+- Next: Claude — review negative result and reconcile scientific scope.

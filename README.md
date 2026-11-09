@@ -2,7 +2,11 @@
 
 **Scientific revision after external review · 9 November 2026 · frozen primary result inconclusive**
 
-The integrated revision programme is under reconciliation. Start with the
+The integrated revision programme is under reconciliation. The bounded triage
+development screen selects no added pad; no competitive candidate is ready
+for a new-data freeze. Start with the
+[D074 response](docs/d074_response_2026-11-09.md),
+[development result](docs/t020_development_results.md), and the earlier
 [D071 counter-review](docs/d071_counter_review_2026-11-09.md),
 [independent measurement tranche](docs/audits/t017_results_2026-11-09.md),
 [interpretability/benchmark repairs](docs/t018_repairs.md) and

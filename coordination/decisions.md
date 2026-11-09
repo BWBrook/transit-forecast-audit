@@ -939,6 +939,51 @@ scientific record; a `proposed` item is not a frozen preregistration.
   corrections for the scatter and artefact wording.
 - Status: proposed. S74–S97 remain closed; nothing released.
 
+### D074 — D073 repairs verified; no competitive triage candidate selected
+
+- Date / responsible agent: 9 November 2026, Codex (GPT-6.1-sol), from2661f82.
+  Evidence cb38a33; earlier development8309328; designs6768a75/2e8c9e9.
+- Accept D073's control adjudication with attribution limits. Fix the pairing
+  before regeneration (506ab58): 347 pairs, independent DP exact, all25
+  remaining unpaired route rows coverage refusals, no control large difference.
+  Six raw flags remain explained rather than thresholds relaxed (C058).
+- S105 bounded sensitivity complete: M2−M0 −0.089004, conditional interval
+  [−1.880,+1.124]; all HR858 events remain uncovered. Other outcomes unchanged;
+  this does not replace frozen outcomes or the primary interval (C059).
+- DRD identification and DRC scoring work with unchanged numerical core,
+  TWO epochs and canonical IDs; synthetic actual-function proof retains a
+  one-day miss. A new scope-bound access preflight must precede S74–S97
+  requests/headers; old D065 does not authorise an arbitrary new manifest
+  (C060). No new access has been activated.
+- Accept locked retrospective DRC/internal-feature question and equal budgets;
+  qualify endpoint as measured-midpoint capture/midpoint-window minutes.
+  Full-transit/duration equivalence requires assumptions; ±2sigma is a
+  sensitivity, not a latent bound. Keep intended-population unknowns visible.
+  Replace the selected-training-gain feasibility threshold with a meaningful
+  precision/effect target or an honest held-host development projection.
+- T020 has an adverse developmental result (C061): same six rankings and
+  fixed pads on earlier/inspected2026/pooled roster-host outcomes, C2/zero,
+  always select no pad. Every positive-pad candidate loses to at least one
+  equal-budget comparator. Independent reaggregation checks216 candidate rows
+  and30 fold choices. No accepted case meets the >60min AND3sigma definition;
+  HR858b has no named matched DRC forecast. Do not interpret identical-policy
+  zero intervals as equivalence, power or a useful candidate.
+- Recommendation: no new-data freeze for the present candidate. Claude should
+  independently check the negative screen and reconcile whether to synthesise
+  the paper or justify a materially changed developmental question. No silent
+  pad/feature/cohort search for a positive result. T021 is not ready; no access
+  decision is requested from Barry.
+- Verification: 157 tests, one expected skip, no failures; exact evaluation
+  environment restored, native freeze verification zero mismatches. Parent
+  reaggregates S105 all3 scales and checks67 source/generated hashes. Sensitivity
+  bulk archive remotely checksum-verified; no frozen scientific file changed,
+  S74–S97 photometry/headers unopened, nothing released.
+- Full reasoning: docs/d074_response_2026-11-09.md; T017 amendment, S105,
+  identification and T020 reports. Status: repairs/development executed;
+  scientific recommendation awaits Claude's independent review.
+- Next: Claude — review the negative development result and scope before T021
+  or integrated three-product rewrite.
+
 ## New entry template
 
 ### D0XX — short title

@@ -2,7 +2,7 @@
 
 *Research brief · 9 November 2026 · held-out result. Claim IDs refer to the shared claims ledger.*
 
-> **Under scientific revision (9 November 2026).** Independent light-curve checks support HR 858 b's large timing departure and find its neighbour late, with remaining shape/identification limits. The new work distinguishes measured-time scores from observing capture. This historical brief and its older PDF will be rewritten after scope reconciliation; start with the D071 counter-review and Stage 0 reports in the repository.
+> **Under scientific revision (9 November 2026).** Independent light-curve checks support HR 858 b's large timing departure and find its neighbour late, with remaining shape/identification limits. The new work distinguishes measured-time scores from observing capture. The first bounded warning-rule development screen selects no added pad. This historical brief and its older PDF will be rewritten after scope reconciliation; start with the D071 counter-review and Stage 0 reports in the repository.
 
 ## The answer
 

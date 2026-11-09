@@ -1,6 +1,13 @@
 # Agent guide: using the transit-forecast-audit work
 
-**D072 revision status (9 November 2026):** Read
+**D074 revision status (9 November 2026):** Read
+`docs/d074_response_2026-11-09.md` and `docs/t020_development_results.md` first.
+The fixed T017 pairing is amended (347 pairs); controls are adjudicated. The
+S105 sensitivity preserves the qualitative score comparison. The bounded
+triage search chooses no added pad in both eras and their pooled development;
+no competitive candidate is ready for a new-data freeze.
+
+Historical D072 checkpoint: Read
 `docs/d071_counter_review_2026-11-09.md` and the T017/T018/T019 reports before
 the historical article/brief. The fixed independent-check tranche and repair
 products are complete; seven control-review triggers and external historical
@@ -76,7 +83,7 @@ Historical development account: `docs/sprint2_review.md`. The original `docs/spr
 
 ## 4. Environments
 
-- **Locked Python:** `.venv` built from `uv.lock`. Run analysis, scoring and tests with `.venv/bin/python`.
+- **Frozen evaluation runtime:** use `.venv/bin/python` directly after `scripts/freeze_manifest.py verify` passes. Match the manifest's observed Python/package list, not merely the project minimum dependencies. A project `uv run` can resynchronise a different Python/minimal environment and remove SciPy; do not use it to launch frozen evaluation or these development scripts. The pre-restoration environments are retained under ignored `data/derived/`. Measurement scripts keep their separate pinned environments.
 - **Photometry scripts:** PEP 723 inline-metadata files run with `uv run scripts/<name>.py`. They declare their own dependencies and a pinned Python range. Dependencies include `lightkurve==2.5.1`, `batman-package`, `astroquery`, `astropy`, `scipy` and `tess-point==0.9.5.post1`.
 - **R:** `scripts/independent_table5.R` is an independent base-R reproduction of the benchmark.
 - **Tests:** 70 pass at sprint 1; 75 with the sprint-2 tests.
