@@ -1,0 +1,47 @@
+{
+  "development_only": true,
+  "S74_S97_opened": false,
+  "extension_design_commit": "2e8c9e9",
+  "input_sha256": {
+    "results/prefreeze/attempt_ledger_development.csv.gz": "77ac9435c973fcb545221001c1d1c60bc83509d7fcbb4a6e7921f9e8c173db90",
+    "results/outcomes/t015v3/outcomes.csv.gz": "79c9d323b852f47a6519df7671764baad358486c558e3dad0dd36fc4b9437ef8",
+    "results/sprint2/freeze_candidate/roster.csv": "54492734189a942505747d9d32a343033642d84abe482dbe8ab8aeb7912382da",
+    "results/information_ledger/release_planets.csv": "56d2ca5ee3baea1eeab8325c0197aa2027a25e73e3db58873e362b46b255b72d",
+    "data/raw/osf/p298n/catalogue_of_ephemerides.txt": "2f1e4a3ad9dd3cc9f78e38f25c3a1d1e0ead1604ea0a86f66cc752ff1a666033",
+    "results/pilot_v1/covariance_completeness.csv": "a195f1e01e2aecffcd7c5362129f46eb8f986898b562985af297279c650033f4",
+    "results/prefreeze/candidate_models_core_matched.json": "907b53272e46176dd1b5a81857fa8c5dd025c443eecd468326d5eb91c6ba1f2c",
+    "docs/t020_development_design.md": "459a96cd54bcc4cd834015754e71a35d38b7a2b783bc6e124ce4ab695dc9473c",
+    "results/final_primary/terminal_ledger.csv.gz": "6a17c4646b42ec7f87af49cfc2f900ed1065c53bf4887f213f7ba65c9079c3f8",
+    "results/final_extension/terminal_ledger.csv.gz": "3cfc62c1799d790fe7c418b94639861648a0f2230b89ee24e9d4ad02c3012eca",
+    "results/final_primary/accepted_outcomes.csv": "2c2fa9559d24fd55ddb1890b2c8814a4ebb3f53a9dbabf934387341e46f8f62b",
+    "results/final_extension/accepted_outcomes.csv": "74a7f7276d578103ecd16019b59f81d81ec74b2939e86187a70d25902322f499",
+    "scripts/t020_development.py": "a854551e0cc92fd98115856c01240ed657ce923a79479c572077b7e508d5e96c",
+    "scripts/t020_longer_horizon.py": "902d013a78b1f6f838c814f87860b7e10d238fce290e13766d265afff2595e62"
+  },
+  "output_sha256": {
+    "summary.json": "f3c3f3481bcf85c962efc5895845ca8ff156127cc67b67a0296255a7d7eb43ef",
+    "zero_inspected_2026_capture_cost_curve.csv": "02c64d42152aa622e947daaddbed153e47ed581af604e835c171c5d3c5c4cb30",
+    "zero_pooled_capture_cost_curve.csv": "247bc82e05c7f12a53837ea848343f4a72aa6128276a3eca90d1561f3e8dea2c",
+    "candidate_search.csv": "235afe64556b3e17e8d0d4529ef23c9f76310457e5469cc9148797075fcbe556",
+    "zero_inspected_2026_crossfit_events.csv.gz": "27e4f2ee21a2a8cce76e441753bfdb299eb569f762c330a001c7cf1ce50e4a74",
+    "zero_pooled_crossfit_events.csv.gz": "c14378cb617931cf77276b05f20e93194f3491a337689eeae56ef035a6ba8ab9",
+    "zero_inspected_2026_candidate_events.csv.gz": "58a3f725875f1679728c48f6dddf74cbaff7e17c7c6b8425cd486a5164ecbfc3",
+    "c2_pooled_crossfit_events.csv.gz": "e6c98fc5c3f3c09ea1a7603c0c22514f16c271466bf655d9ffc26853128675f1",
+    "c2_inspected_2026_crossfit_events.csv.gz": "3e0e6e7aa30fe87646dc2e0b39d442e1a3b5dcb746e5def49a1b1d849c294583",
+    "c2_inspected_2026_capture_cost_curve.csv": "69ebba318f6499bff39067faf20613089f5a6744657fb279b90a566888570e3d",
+    "c2_pooled_capture_cost_curve.csv": "2c9b15c69ddc17fa657378a96d949a619d2dedf447229d46a31e862f91279eb6",
+    "c2_inspected_2026_candidate_events.csv.gz": "4b1da817fb991ba78ecc8adac31c3c05f0772d393ad6f799b6f8d399ed2b175b",
+    "zero_pooled_candidate_events.csv.gz": "cd654b220294557348c52419b506dae979efdf2ac8443ff006ee43bfba475548",
+    "c2_pooled_candidate_events.csv.gz": "a3b6ef3b7b60b921ebb72cef0a3451cd83cb1ebc10b088a2d6e508d9d0987908"
+  },
+  "seed": 2026110920,
+  "folds": 5,
+  "bootstrap_draws": 10000,
+  "limits": [
+    "All outcomes already inspected; no confirmatory inference.",
+    "Same six rankings and pad grid; no new tuning dimensions.",
+    "Fold intervals condition on realised selected rules.",
+    "Gross misses concern measured times, not known latent events.",
+    "Canonical cycles map from DRD opportunities, never observed timings."
+  ]
+}

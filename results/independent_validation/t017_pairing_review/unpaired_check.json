@@ -1,0 +1,252 @@
+[
+  {
+    "event_id": "GJ1132b|S99|DRD1849",
+    "planet": "GJ1132b",
+    "sector": 99,
+    "flux": "SAP_FLUX",
+    "independent_status": "insufficient_window_coverage",
+    "other_route_timed": true,
+    "other_route_difference_min": 0.8295227587223053,
+    "c050_checker_difference_min": null
+  },
+  {
+    "event_id": "GJ1252b|S101|DRD3132",
+    "planet": "GJ1252b",
+    "sector": 101,
+    "flux": "PDCSAP_FLUX",
+    "independent_status": "insufficient_window_coverage",
+    "other_route_timed": true,
+    "other_route_difference_min": 1.0210653394460678,
+    "c050_checker_difference_min": null
+  },
+  {
+    "event_id": "HAT-P-69b|S61|SPOC_120|D86",
+    "planet": "HAT-P-69b",
+    "sector": 61,
+    "flux": "SAP_FLUX",
+    "independent_status": "insufficient_window_coverage",
+    "other_route_timed": true,
+    "other_route_difference_min": 0.7701500505208969,
+    "c050_checker_difference_min": null
+  },
+  {
+    "event_id": "HR858b|S105|DRD644",
+    "planet": "HR858b",
+    "sector": 105,
+    "flux": "SAP_FLUX",
+    "independent_status": "insufficient_window_coverage",
+    "other_route_timed": true,
+    "other_route_difference_min": 3.9375049620866776,
+    "c050_checker_difference_min": null
+  },
+  {
+    "event_id": "TOI-157b|S98|DRD752",
+    "planet": "TOI-157b",
+    "sector": 98,
+    "flux": "PDCSAP_FLUX",
+    "independent_status": "insufficient_window_coverage",
+    "other_route_timed": false,
+    "other_route_difference_min": null,
+    "c050_checker_difference_min": -0.0990305095911026
+  },
+  {
+    "event_id": "TOI-157b|S98|DRD752",
+    "planet": "TOI-157b",
+    "sector": 98,
+    "flux": "SAP_FLUX",
+    "independent_status": "insufficient_window_coverage",
+    "other_route_timed": false,
+    "other_route_difference_min": null,
+    "c050_checker_difference_min": -0.21034486591815948
+  },
+  {
+    "event_id": "TOI-559b|S105|DRD315",
+    "planet": "TOI-559b",
+    "sector": 105,
+    "flux": "SAP_FLUX",
+    "independent_status": "insufficient_window_coverage",
+    "other_route_timed": true,
+    "other_route_difference_min": 0.9099461138248444,
+    "c050_checker_difference_min": null
+  },
+  {
+    "event_id": "TOI-559b|S105|DRD317",
+    "planet": "TOI-559b",
+    "sector": 105,
+    "flux": "SAP_FLUX",
+    "independent_status": "insufficient_window_coverage",
+    "other_route_timed": true,
+    "other_route_difference_min": -0.06255649030208588,
+    "c050_checker_difference_min": null
+  },
+  {
+    "event_id": "TOI-905b|S99|DRD390",
+    "planet": "TOI-905b",
+    "sector": 99,
+    "flux": "PDCSAP_FLUX",
+    "independent_status": "insufficient_window_coverage",
+    "other_route_timed": true,
+    "other_route_difference_min": 0.09481340646743774,
+    "c050_checker_difference_min": null
+  },
+  {
+    "event_id": "TOI-905b|S102|DRD410",
+    "planet": "TOI-905b",
+    "sector": 102,
+    "flux": "SAP_FLUX",
+    "independent_status": "insufficient_window_coverage",
+    "other_route_timed": true,
+    "other_route_difference_min": -0.40910661220550537,
+    "c050_checker_difference_min": null
+  },
+  {
+    "event_id": "WASP-126b|S98|DRD579",
+    "planet": "WASP-126b",
+    "sector": 98,
+    "flux": "SAP_FLUX",
+    "independent_status": "insufficient_window_coverage",
+    "other_route_timed": true,
+    "other_route_difference_min": -0.09506553411483765,
+    "c050_checker_difference_min": null
+  },
+  {
+    "event_id": "WASP-161b|S61|SPOC_120|D105",
+    "planet": "WASP-161b",
+    "sector": 61,
+    "flux": "SAP_FLUX",
+    "independent_status": "insufficient_window_coverage",
+    "other_route_timed": true,
+    "other_route_difference_min": -1.565733477473259,
+    "c050_checker_difference_min": null
+  },
+  {
+    "event_id": "WASP-170b|S99|DRD768",
+    "planet": "WASP-170b",
+    "sector": 99,
+    "flux": "PDCSAP_FLUX",
+    "independent_status": "insufficient_window_coverage",
+    "other_route_timed": true,
+    "other_route_difference_min": -0.16404591500759125,
+    "c050_checker_difference_min": null
+  },
+  {
+    "event_id": "WASP-184b|S102|DRD398",
+    "planet": "WASP-184b",
+    "sector": 102,
+    "flux": "SAP_FLUX",
+    "independent_status": "insufficient_window_coverage",
+    "other_route_timed": true,
+    "other_route_difference_min": 0.17000176012516022,
+    "c050_checker_difference_min": null
+  },
+  {
+    "event_id": "WASP-186b|S57|SPOC_120|D75",
+    "planet": "WASP-186b",
+    "sector": 57,
+    "flux": "PDCSAP_FLUX",
+    "independent_status": "insufficient_window_coverage",
+    "other_route_timed": true,
+    "other_route_difference_min": 0.2883850783109665,
+    "c050_checker_difference_min": null
+  },
+  {
+    "event_id": "WASP-20b|S107|DRD556",
+    "planet": "WASP-20b",
+    "sector": 107,
+    "flux": "SAP_FLUX",
+    "independent_status": "insufficient_window_coverage",
+    "other_route_timed": true,
+    "other_route_difference_min": -0.1227472722530365,
+    "c050_checker_difference_min": null
+  },
+  {
+    "event_id": "WASP-22b|S105|DRD1183",
+    "planet": "WASP-22b",
+    "sector": 105,
+    "flux": "PDCSAP_FLUX",
+    "independent_status": "insufficient_window_coverage",
+    "other_route_timed": true,
+    "other_route_difference_min": 0.845860093832016,
+    "c050_checker_difference_min": null
+  },
+  {
+    "event_id": "WASP-82b|S98|DRD1024",
+    "planet": "WASP-82b",
+    "sector": 98,
+    "flux": "PDCSAP_FLUX",
+    "independent_status": "insufficient_window_coverage",
+    "other_route_timed": true,
+    "other_route_difference_min": 0.6761681288480759,
+    "c050_checker_difference_min": null
+  },
+  {
+    "event_id": "WASP-82b|S98|DRD1035",
+    "planet": "WASP-82b",
+    "sector": 98,
+    "flux": "PDCSAP_FLUX",
+    "independent_status": "insufficient_window_coverage",
+    "other_route_timed": true,
+    "other_route_difference_min": 0.8406740427017212,
+    "c050_checker_difference_min": null
+  },
+  {
+    "event_id": "XO-3b|S59|SPOC_120|D383",
+    "planet": "XO-3b",
+    "sector": 59,
+    "flux": "SAP_FLUX",
+    "independent_status": "insufficient_window_coverage",
+    "other_route_timed": true,
+    "other_route_difference_min": -0.1575811207294464,
+    "c050_checker_difference_min": null
+  },
+  {
+    "event_id": "XO-3b|S59|SPOC_120|D385",
+    "planet": "XO-3b",
+    "sector": 59,
+    "flux": "SAP_FLUX",
+    "independent_status": "insufficient_window_coverage",
+    "other_route_timed": true,
+    "other_route_difference_min": -0.1822654902935028,
+    "c050_checker_difference_min": null
+  },
+  {
+    "event_id": "XO-3b|S59|SPOC_120|D387",
+    "planet": "XO-3b",
+    "sector": 59,
+    "flux": "SAP_FLUX",
+    "independent_status": "insufficient_window_coverage",
+    "other_route_timed": true,
+    "other_route_difference_min": 0.007367357611656189,
+    "c050_checker_difference_min": null
+  },
+  {
+    "event_id": "XO-3b|S59|SPOC_120|D388",
+    "planet": "XO-3b",
+    "sector": 59,
+    "flux": "SAP_FLUX",
+    "independent_status": "insufficient_window_coverage",
+    "other_route_timed": true,
+    "other_route_difference_min": -0.12142561376094818,
+    "c050_checker_difference_min": null
+  },
+  {
+    "event_id": "XO-3b|S59|SPOC_120|D389",
+    "planet": "XO-3b",
+    "sector": 59,
+    "flux": "SAP_FLUX",
+    "independent_status": "insufficient_window_coverage",
+    "other_route_timed": true,
+    "other_route_difference_min": -0.02692602574825287,
+    "c050_checker_difference_min": null
+  },
+  {
+    "event_id": "XO-3b|S59|SPOC_120|D390",
+    "planet": "XO-3b",
+    "sector": 59,
+    "flux": "SAP_FLUX",
+    "independent_status": "insufficient_window_coverage",
+    "other_route_timed": true,
+    "other_route_difference_min": -0.11822909116744995,
+    "c050_checker_difference_min": null
+  }
+]

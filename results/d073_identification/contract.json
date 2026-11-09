@@ -1,0 +1,50 @@
+{
+  "label": "synthetic interface contract; no astronomical observations",
+  "fit_stubs": [
+    "download",
+    "read",
+    "source-file digest",
+    "solution",
+    "time_windows"
+  ],
+  "actual_functions": [
+    "final_measure.measure_product",
+    "final_measure.coverage_at",
+    "final_evaluation.terminal_ledger",
+    "acceptance.terminal_status",
+    "final_evaluation.scoring_inputs",
+    "sprint1_outcome_adapter.score_outcomes"
+  ],
+  "identification_release": "DRD",
+  "identification_epoch": 10,
+  "scored_release": "DRC",
+  "scored_epoch": 2,
+  "solution_period_days": 3.0,
+  "identification_prediction_bjd_tdb": 2460030.0,
+  "scored_prediction_bjd_tdb": 2460031.0,
+  "forecast_residual_s": -86400.0,
+  "p_over_4_s": 64800.0,
+  "terminal_status": "accepted",
+  "measurement_coverage": [
+    {
+      "event_id": "synthetic|Pb|S60|DRD10",
+      "coverage_window_at_prediction": 1.0,
+      "coverage_in_transit_at_prediction": 1.0,
+      "coverage_basis": "quality-0 cadences at DRD prediction, unmasked light curve"
+    }
+  ],
+  "outside_windows": 0,
+  "m0_covered95": 0.0,
+  "m0_is95_minutes": 57494.671309349425,
+  "wrong_manifest_epoch_status": "unmatched_expected_event",
+  "wrong_gate_catalogue_status": "cycle_ambiguous",
+  "request_guard_was_development": true,
+  "candidate_photometry_or_headers_read": false,
+  "source_sha256": {
+    "scripts/d073_identification_contract.py": "fb435d9593a1e30918badc654e5c9200dc8929c25f6bcb9acced4622ee756870",
+    "scripts/final_measure.py": "67bbab8fa6f06b8c70a5673eaa2242181abe86cc0c10902a96bec8bbf6add3e5",
+    "scripts/final_evaluation.py": "b1741ac387cf9d9a3f747b474c49b07281dfeff67a3dce7540c5394479aeda99",
+    "scripts/acceptance.py": "3d3ccfebccf6c249f7ed7d8dfaab288bd4a81afc9d2da36e435f596a0b988209",
+    "scripts/sprint1_outcome_adapter.py": "cd853135d076005731ddc76610b381075b111c170f3187f36c1ad14bf503d0b5"
+  }
+}

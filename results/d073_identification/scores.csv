@@ -1,0 +1,5 @@
+event_id,observation_id,planet,host,method,release,weight,resampling_cluster,shape_group_id,parameter_version,is95_standardised,is95_minutes,is95_forecast_normalised,negative_log_score_seconds,covered68,covered95,width95_minutes,m0_predictive_sd_s
+synthetic|Pb|S60|DRD10,synthetic|Pb|S60|DRD10,Pb,P,M0,DRC,1.0,P,Pb|S60|SPOC_120,synthetic-interface-test,40654.87196493261,57494.671309349425,57494.671309349425,518405.3598566857,0.0,0.0,5.543615297398712,84.8528137423857
+synthetic|Pb|S60|DRD10,synthetic|Pb|S60|DRD10,Pb,P,M1,DRC,1.0,P,Pb|S60|SPOC_120,synthetic-interface-test,40654.87196493261,57494.671309349425,57494.671309349425,518405.3598566857,0.0,0.0,5.543615297398712,84.8528137423857
+synthetic|Pb|S60|DRD10,synthetic|Pb|S60|DRD10,Pb,P,M2,DRC,1.0,P,Pb|S60|SPOC_120,synthetic-interface-test,40654.87196493261,57494.671309349425,57494.671309349425,518405.3598566857,0.0,0.0,5.543615297398712,84.8528137423857
+synthetic|Pb|S60|DRD10,synthetic|Pb|S60|DRD10,Pb,P,M3,DRC,1.0,P,Pb|S60|SPOC_120,synthetic-interface-test,40654.87196493261,57494.671309349425,57494.671309349425,518405.3598566857,0.0,0.0,5.543615297398712,84.8528137423857

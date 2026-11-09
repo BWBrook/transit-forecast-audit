@@ -1,0 +1,17 @@
+scenario,method,HR858b_events,HR858b_covered95
+baseline,M0,16,0
+baseline,M1,16,0
+baseline,M2,16,0
+baseline,M3,16,0
+shift_only,M0,16,0
+shift_only,M1,16,0
+shift_only,M2,16,0
+shift_only,M3,16,0
+width_only,M0,16,0
+width_only,M1,16,0
+width_only,M2,16,0
+width_only,M3,16,0
+shift_and_width,M0,16,0
+shift_and_width,M1,16,0
+shift_and_width,M2,16,0
+shift_and_width,M3,16,0

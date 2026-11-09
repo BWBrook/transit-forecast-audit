@@ -1,6 +1,6 @@
 {
   "comparison_only_after_blind_fitting": true,
-  "script_sha256": "7d83875dd4439699a3597ec792f4c7658f48f74d4ef9323287207500e57b880e",
+  "script_sha256": "35ede747a1620c7b192682a9d99cff7b99847423e8ddf03e27d3172256571bf4",
   "input_sha256": {
     "results/final_primary/accepted_outcomes.csv": "2c2fa9559d24fd55ddb1890b2c8814a4ebb3f53a9dbabf934387341e46f8f62b",
     "results/final_primary/terminal_ledger.csv.gz": "6a17c4646b42ec7f87af49cfc2f900ed1065c53bf4887f213f7ba65c9079c3f8",
@@ -9,8 +9,8 @@
     "results/independent_validation/t017/measurement_receipt.json": "16838f5623398a7479ac30227f6e68b861afba34b9f5e4c9340bb49e33ddafb8"
   },
   "output_sha256": {
-    "comparison_summary.json": "65c03f816d62c3e4be0f9f449bf675a10eccf9514966251812f1fbc17b9678b6",
-    "timing_comparison.csv": "6dd55537e90cf2b2b4dfdd41fc129ad7ceb4fc8cd704e1ca6b28f39e6f8f65ce",
+    "comparison_summary.json": "b65755abe987d08e12a00a16af30fb97d4b75397ce250228e7b2b06b2581cae3",
+    "timing_comparison.csv": "0aa6286639b646013e7b23d8327beb40b7107a6ac965e0be1bebbc8852782ba2",
     "unscored_candidates.csv": "9c182375102064ad468315cd735231a242d7b3a301c2c744de917359ce76a92b"
   }
 }

@@ -1,0 +1,2 @@
+event_id,observation_id,planet,host,release,forecast_epoch,identification_epoch,predicted_bjd_tdb,forecast_variance_s2,parameter_version,M0_b,M0_s_log_lambda,M1_b,M1_s_log_lambda,M2_b,M2_s_log_lambda,M3_b,M3_s_log_lambda
+synthetic|Pb|S60|DRD10,synthetic|Pb|S60|DRD10,Pb,P,DRC,2,10,2460031.0,3600,synthetic-interface-test,1,0,1,0,1,0,1,0

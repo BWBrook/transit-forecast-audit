@@ -1,0 +1,1010 @@
+{
+  "c2_inspected_2026": {
+    "selected_rule": {
+      "feature": "forecast_sd_min",
+      "pad_min": 0.0,
+      "gain_proportional": 0.0,
+      "gain_additive": 0.0,
+      "minimum_gain": 0.0
+    },
+    "best_positive_pad": {
+      "feature": "negative_timing_count",
+      "pad_min": 15.0,
+      "gain_proportional": -0.10525681764721147,
+      "gain_additive": -0.2170040510079746,
+      "minimum_gain": -0.2170040510079746
+    },
+    "resubstitution": {
+      "intended_events": 2771,
+      "intended_planets": 129,
+      "hosts": 129,
+      "accepted_events": 1974,
+      "accepted_planets": 128,
+      "zero_accepted_planets": [
+        "TOI-269b"
+      ],
+      "flagged_planets": [
+        "GJ1132b",
+        "GJ1252b",
+        "GJ357b",
+        "HATS-23b",
+        "HATS-31b",
+        "HATS-40b",
+        "HATS-64b",
+        "HD219666b",
+        "HD86226c",
+        "TOI-269b",
+        "TOI-892b",
+        "WASP-159b",
+        "WASP-165b"
+      ],
+      "flagged_fraction": 0.10077519379844961,
+      "recovery_by_flag": {
+        "False": {
+          "intended": 2457,
+          "accepted": 1832
+        },
+        "True": {
+          "intended": 314,
+          "accepted": 142
+        }
+      },
+      "capture": {
+        "baseline": 0.6229182390604191,
+        "triage": 0.6229182390604191,
+        "proportional": 0.6229182390604191,
+        "additive": 0.6229182390604191
+      },
+      "scheduled_midpoint_window_minutes": {
+        "baseline": 23189.023873446433,
+        "triage": 23189.023873446433,
+        "proportional": 23189.023873446433,
+        "additive": 23189.023873446433
+      },
+      "gain": {
+        "proportional": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "planets": 128,
+          "hosts": 128
+        },
+        "additive": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "planets": 128,
+          "hosts": 128
+        }
+      },
+      "all_intended_binary_completion_bounds": {
+        "proportional": [
+          0.0,
+          0.0
+        ],
+        "additive": [
+          0.0,
+          0.0
+        ]
+      },
+      "accepted_plus_minus_2sigma_envelope": {
+        "proportional": [
+          0.0,
+          0.0
+        ],
+        "additive": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "host_crossfit": {
+      "intended_events": 2771,
+      "intended_planets": 129,
+      "hosts": 129,
+      "accepted_events": 1974,
+      "accepted_planets": 128,
+      "zero_accepted_planets": [
+        "TOI-269b"
+      ],
+      "flagged_planets": [
+        "GJ1252b",
+        "GJ357b",
+        "HATS-31b",
+        "HATS-40b",
+        "HATS-46b",
+        "HATS-64b",
+        "HATS-68b",
+        "HD219666b",
+        "HD86226c",
+        "NGTS-2b",
+        "TOI-269b",
+        "TOI-824b",
+        "TOI-892b",
+        "WASP-159b",
+        "WASP-165b"
+      ],
+      "flagged_fraction": 0.11627906976744186,
+      "recovery_by_flag": {
+        "False": {
+          "intended": 2369,
+          "accepted": 1756
+        },
+        "True": {
+          "intended": 402,
+          "accepted": 218
+        }
+      },
+      "capture": {
+        "baseline": 0.6229182390604191,
+        "triage": 0.6229182390604191,
+        "proportional": 0.6229182390604191,
+        "additive": 0.6229182390604191
+      },
+      "scheduled_midpoint_window_minutes": {
+        "baseline": 23189.023873446433,
+        "triage": 23189.023873446433,
+        "proportional": 23189.023873446433,
+        "additive": 23189.023873446433
+      },
+      "gain": {
+        "proportional": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "planets": 128,
+          "hosts": 128
+        },
+        "additive": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "planets": 128,
+          "hosts": 128
+        }
+      },
+      "all_intended_binary_completion_bounds": {
+        "proportional": [
+          0.0,
+          0.0
+        ],
+        "additive": [
+          0.0,
+          0.0
+        ]
+      },
+      "accepted_plus_minus_2sigma_envelope": {
+        "proportional": [
+          0.0,
+          0.0
+        ],
+        "additive": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "fold_choices": [
+      {
+        "fold": 0,
+        "feature": "forecast_sd_min",
+        "pad_min": 0.0,
+        "gain_proportional": 0.0,
+        "gain_additive": 0.0,
+        "minimum_gain": 0.0,
+        "train_hosts": 103,
+        "test_hosts": 26
+      },
+      {
+        "fold": 1,
+        "feature": "forecast_sd_min",
+        "pad_min": 0.0,
+        "gain_proportional": 0.0,
+        "gain_additive": 0.0,
+        "minimum_gain": 0.0,
+        "train_hosts": 103,
+        "test_hosts": 26
+      },
+      {
+        "fold": 2,
+        "feature": "forecast_sd_min",
+        "pad_min": 0.0,
+        "gain_proportional": 0.0,
+        "gain_additive": 0.0,
+        "minimum_gain": 0.0,
+        "train_hosts": 103,
+        "test_hosts": 26
+      },
+      {
+        "fold": 3,
+        "feature": "forecast_sd_min",
+        "pad_min": 0.0,
+        "gain_proportional": 0.0,
+        "gain_additive": 0.0,
+        "minimum_gain": 0.0,
+        "train_hosts": 103,
+        "test_hosts": 26
+      },
+      {
+        "fold": 4,
+        "feature": "forecast_sd_min",
+        "pad_min": 0.0,
+        "gain_proportional": 0.0,
+        "gain_additive": 0.0,
+        "minimum_gain": 0.0,
+        "train_hosts": 104,
+        "test_hosts": 25
+      }
+    ],
+    "gross_miss_planets": [],
+    "cross_release_offsets_over_P4": 0,
+    "longer_horizon_exclusions": {
+      "outside_roster_or_no_DRC": 394,
+      "outside_DRC_core_metadata": 229
+    }
+  },
+  "c2_pooled": {
+    "selected_rule": {
+      "feature": "forecast_sd_min",
+      "pad_min": 0.0,
+      "gain_proportional": 0.0,
+      "gain_additive": 0.0,
+      "minimum_gain": 0.0
+    },
+    "best_positive_pad": {
+      "feature": "negative_timing_count",
+      "pad_min": 15.0,
+      "gain_proportional": -0.10969369283844645,
+      "gain_additive": -0.22885038962801155,
+      "minimum_gain": -0.22885038962801155
+    },
+    "resubstitution": {
+      "intended_events": 4264,
+      "intended_planets": 129,
+      "hosts": 129,
+      "accepted_events": 3052,
+      "accepted_planets": 128,
+      "zero_accepted_planets": [
+        "TOI-269b"
+      ],
+      "flagged_planets": [
+        "GJ1252b",
+        "GJ357b",
+        "HATS-31b",
+        "HATS-40b",
+        "HATS-64b",
+        "HD219666b",
+        "HD86226c",
+        "LHS3844b",
+        "TOI-824b",
+        "TOI-892b",
+        "WASP-159b",
+        "WASP-165b",
+        "WASP-169b"
+      ],
+      "flagged_fraction": 0.10077519379844961,
+      "recovery_by_flag": {
+        "False": {
+          "intended": 3479,
+          "accepted": 2585
+        },
+        "True": {
+          "intended": 785,
+          "accepted": 467
+        }
+      },
+      "capture": {
+        "baseline": 0.597921572049593,
+        "triage": 0.597921572049593,
+        "proportional": 0.597921572049593,
+        "additive": 0.597921572049593
+      },
+      "scheduled_midpoint_window_minutes": {
+        "baseline": 29214.662715864855,
+        "triage": 29214.662715864855,
+        "proportional": 29214.662715864855,
+        "additive": 29214.662715864855
+      },
+      "gain": {
+        "proportional": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "planets": 128,
+          "hosts": 128
+        },
+        "additive": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "planets": 128,
+          "hosts": 128
+        }
+      },
+      "all_intended_binary_completion_bounds": {
+        "proportional": [
+          0.0,
+          0.0
+        ],
+        "additive": [
+          0.0,
+          0.0
+        ]
+      },
+      "accepted_plus_minus_2sigma_envelope": {
+        "proportional": [
+          0.0,
+          0.0
+        ],
+        "additive": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "host_crossfit": {
+      "intended_events": 4264,
+      "intended_planets": 129,
+      "hosts": 129,
+      "accepted_events": 3052,
+      "accepted_planets": 128,
+      "zero_accepted_planets": [
+        "TOI-269b"
+      ],
+      "flagged_planets": [
+        "GJ1252b",
+        "GJ357b",
+        "HATS-40b",
+        "HATS-46b",
+        "HATS-64b",
+        "HATS-68b",
+        "HD219666b",
+        "HD86226c",
+        "NGTS-2b",
+        "TOI-269b",
+        "TOI-824b",
+        "TOI-892b",
+        "WASP-159b",
+        "WASP-165b",
+        "WASP-169b"
+      ],
+      "flagged_fraction": 0.11627906976744186,
+      "recovery_by_flag": {
+        "False": {
+          "intended": 3703,
+          "accepted": 2760
+        },
+        "True": {
+          "intended": 561,
+          "accepted": 292
+        }
+      },
+      "capture": {
+        "baseline": 0.5979215720495931,
+        "triage": 0.5979215720495931,
+        "proportional": 0.5979215720495931,
+        "additive": 0.5979215720495931
+      },
+      "scheduled_midpoint_window_minutes": {
+        "baseline": 29214.662715864855,
+        "triage": 29214.662715864855,
+        "proportional": 29214.662715864855,
+        "additive": 29214.662715864855
+      },
+      "gain": {
+        "proportional": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "planets": 128,
+          "hosts": 128
+        },
+        "additive": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "planets": 128,
+          "hosts": 128
+        }
+      },
+      "all_intended_binary_completion_bounds": {
+        "proportional": [
+          0.0,
+          0.0
+        ],
+        "additive": [
+          0.0,
+          0.0
+        ]
+      },
+      "accepted_plus_minus_2sigma_envelope": {
+        "proportional": [
+          0.0,
+          0.0
+        ],
+        "additive": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "fold_choices": [
+      {
+        "fold": 0,
+        "feature": "forecast_sd_min",
+        "pad_min": 0.0,
+        "gain_proportional": 0.0,
+        "gain_additive": 0.0,
+        "minimum_gain": 0.0,
+        "train_hosts": 103,
+        "test_hosts": 26
+      },
+      {
+        "fold": 1,
+        "feature": "forecast_sd_min",
+        "pad_min": 0.0,
+        "gain_proportional": 0.0,
+        "gain_additive": 0.0,
+        "minimum_gain": 0.0,
+        "train_hosts": 103,
+        "test_hosts": 26
+      },
+      {
+        "fold": 2,
+        "feature": "forecast_sd_min",
+        "pad_min": 0.0,
+        "gain_proportional": 0.0,
+        "gain_additive": 0.0,
+        "minimum_gain": 0.0,
+        "train_hosts": 103,
+        "test_hosts": 26
+      },
+      {
+        "fold": 3,
+        "feature": "forecast_sd_min",
+        "pad_min": 0.0,
+        "gain_proportional": 0.0,
+        "gain_additive": 0.0,
+        "minimum_gain": 0.0,
+        "train_hosts": 103,
+        "test_hosts": 26
+      },
+      {
+        "fold": 4,
+        "feature": "forecast_sd_min",
+        "pad_min": 0.0,
+        "gain_proportional": 0.0,
+        "gain_additive": 0.0,
+        "minimum_gain": 0.0,
+        "train_hosts": 104,
+        "test_hosts": 25
+      }
+    ],
+    "gross_miss_planets": [],
+    "cross_release_offsets_over_P4": 0,
+    "longer_horizon_exclusions": {
+      "outside_roster_or_no_DRC": 394,
+      "outside_DRC_core_metadata": 229
+    }
+  },
+  "zero_inspected_2026": {
+    "selected_rule": {
+      "feature": "forecast_sd_min",
+      "pad_min": 0.0,
+      "gain_proportional": 0.0,
+      "gain_additive": 0.0,
+      "minimum_gain": 0.0
+    },
+    "best_positive_pad": {
+      "feature": "negative_timing_count",
+      "pad_min": 15.0,
+      "gain_proportional": -0.10525681764721147,
+      "gain_additive": -0.2170040510079746,
+      "minimum_gain": -0.2170040510079746
+    },
+    "resubstitution": {
+      "intended_events": 2771,
+      "intended_planets": 129,
+      "hosts": 129,
+      "accepted_events": 1974,
+      "accepted_planets": 128,
+      "zero_accepted_planets": [
+        "TOI-269b"
+      ],
+      "flagged_planets": [
+        "GJ1132b",
+        "GJ1252b",
+        "GJ357b",
+        "HATS-23b",
+        "HATS-31b",
+        "HATS-40b",
+        "HATS-64b",
+        "HD219666b",
+        "HD86226c",
+        "TOI-269b",
+        "TOI-892b",
+        "WASP-159b",
+        "WASP-165b"
+      ],
+      "flagged_fraction": 0.10077519379844961,
+      "recovery_by_flag": {
+        "False": {
+          "intended": 2457,
+          "accepted": 1832
+        },
+        "True": {
+          "intended": 314,
+          "accepted": 142
+        }
+      },
+      "capture": {
+        "baseline": 0.6229182390604191,
+        "triage": 0.6229182390604191,
+        "proportional": 0.6229182390604191,
+        "additive": 0.6229182390604191
+      },
+      "scheduled_midpoint_window_minutes": {
+        "baseline": 23187.222954222303,
+        "triage": 23187.222954222303,
+        "proportional": 23187.222954222303,
+        "additive": 23187.222954222303
+      },
+      "gain": {
+        "proportional": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "planets": 128,
+          "hosts": 128
+        },
+        "additive": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "planets": 128,
+          "hosts": 128
+        }
+      },
+      "all_intended_binary_completion_bounds": {
+        "proportional": [
+          0.0,
+          0.0
+        ],
+        "additive": [
+          0.0,
+          0.0
+        ]
+      },
+      "accepted_plus_minus_2sigma_envelope": {
+        "proportional": [
+          0.0,
+          0.0
+        ],
+        "additive": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "host_crossfit": {
+      "intended_events": 2771,
+      "intended_planets": 129,
+      "hosts": 129,
+      "accepted_events": 1974,
+      "accepted_planets": 128,
+      "zero_accepted_planets": [
+        "TOI-269b"
+      ],
+      "flagged_planets": [
+        "GJ1252b",
+        "GJ357b",
+        "HATS-31b",
+        "HATS-40b",
+        "HATS-46b",
+        "HATS-64b",
+        "HATS-68b",
+        "HD219666b",
+        "HD86226c",
+        "NGTS-2b",
+        "TOI-269b",
+        "TOI-824b",
+        "TOI-892b",
+        "WASP-159b",
+        "WASP-165b"
+      ],
+      "flagged_fraction": 0.11627906976744186,
+      "recovery_by_flag": {
+        "False": {
+          "intended": 2369,
+          "accepted": 1756
+        },
+        "True": {
+          "intended": 402,
+          "accepted": 218
+        }
+      },
+      "capture": {
+        "baseline": 0.6229182390604191,
+        "triage": 0.6229182390604191,
+        "proportional": 0.6229182390604191,
+        "additive": 0.6229182390604191
+      },
+      "scheduled_midpoint_window_minutes": {
+        "baseline": 23187.222954222303,
+        "triage": 23187.222954222303,
+        "proportional": 23187.222954222303,
+        "additive": 23187.222954222303
+      },
+      "gain": {
+        "proportional": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "planets": 128,
+          "hosts": 128
+        },
+        "additive": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "planets": 128,
+          "hosts": 128
+        }
+      },
+      "all_intended_binary_completion_bounds": {
+        "proportional": [
+          0.0,
+          0.0
+        ],
+        "additive": [
+          0.0,
+          0.0
+        ]
+      },
+      "accepted_plus_minus_2sigma_envelope": {
+        "proportional": [
+          0.0,
+          0.0
+        ],
+        "additive": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "fold_choices": [
+      {
+        "fold": 0,
+        "feature": "forecast_sd_min",
+        "pad_min": 0.0,
+        "gain_proportional": 0.0,
+        "gain_additive": 0.0,
+        "minimum_gain": 0.0,
+        "train_hosts": 103,
+        "test_hosts": 26
+      },
+      {
+        "fold": 1,
+        "feature": "forecast_sd_min",
+        "pad_min": 0.0,
+        "gain_proportional": 0.0,
+        "gain_additive": 0.0,
+        "minimum_gain": 0.0,
+        "train_hosts": 103,
+        "test_hosts": 26
+      },
+      {
+        "fold": 2,
+        "feature": "forecast_sd_min",
+        "pad_min": 0.0,
+        "gain_proportional": 0.0,
+        "gain_additive": 0.0,
+        "minimum_gain": 0.0,
+        "train_hosts": 103,
+        "test_hosts": 26
+      },
+      {
+        "fold": 3,
+        "feature": "forecast_sd_min",
+        "pad_min": 0.0,
+        "gain_proportional": 0.0,
+        "gain_additive": 0.0,
+        "minimum_gain": 0.0,
+        "train_hosts": 103,
+        "test_hosts": 26
+      },
+      {
+        "fold": 4,
+        "feature": "forecast_sd_min",
+        "pad_min": 0.0,
+        "gain_proportional": 0.0,
+        "gain_additive": 0.0,
+        "minimum_gain": 0.0,
+        "train_hosts": 104,
+        "test_hosts": 25
+      }
+    ],
+    "gross_miss_planets": [],
+    "cross_release_offsets_over_P4": 0,
+    "longer_horizon_exclusions": {
+      "outside_roster_or_no_DRC": 394,
+      "outside_DRC_core_metadata": 229
+    }
+  },
+  "zero_pooled": {
+    "selected_rule": {
+      "feature": "forecast_sd_min",
+      "pad_min": 0.0,
+      "gain_proportional": 0.0,
+      "gain_additive": 0.0,
+      "minimum_gain": 0.0
+    },
+    "best_positive_pad": {
+      "feature": "negative_timing_count",
+      "pad_min": 15.0,
+      "gain_proportional": -0.1094242962867223,
+      "gain_additive": -0.22885038962801155,
+      "minimum_gain": -0.22885038962801155
+    },
+    "resubstitution": {
+      "intended_events": 4264,
+      "intended_planets": 129,
+      "hosts": 129,
+      "accepted_events": 3052,
+      "accepted_planets": 128,
+      "zero_accepted_planets": [
+        "TOI-269b"
+      ],
+      "flagged_planets": [
+        "GJ1252b",
+        "GJ357b",
+        "HATS-31b",
+        "HATS-40b",
+        "HATS-64b",
+        "HD219666b",
+        "HD86226c",
+        "LHS3844b",
+        "TOI-824b",
+        "TOI-892b",
+        "WASP-159b",
+        "WASP-165b",
+        "WASP-169b"
+      ],
+      "flagged_fraction": 0.10077519379844961,
+      "recovery_by_flag": {
+        "False": {
+          "intended": 3479,
+          "accepted": 2585
+        },
+        "True": {
+          "intended": 785,
+          "accepted": 467
+        }
+      },
+      "capture": {
+        "baseline": 0.597921572049593,
+        "triage": 0.597921572049593,
+        "proportional": 0.597921572049593,
+        "additive": 0.597921572049593
+      },
+      "scheduled_midpoint_window_minutes": {
+        "baseline": 29211.758867561835,
+        "triage": 29211.758867561835,
+        "proportional": 29211.758867561835,
+        "additive": 29211.758867561835
+      },
+      "gain": {
+        "proportional": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "planets": 128,
+          "hosts": 128
+        },
+        "additive": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "planets": 128,
+          "hosts": 128
+        }
+      },
+      "all_intended_binary_completion_bounds": {
+        "proportional": [
+          0.0,
+          0.0
+        ],
+        "additive": [
+          0.0,
+          0.0
+        ]
+      },
+      "accepted_plus_minus_2sigma_envelope": {
+        "proportional": [
+          0.0,
+          0.0
+        ],
+        "additive": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "host_crossfit": {
+      "intended_events": 4264,
+      "intended_planets": 129,
+      "hosts": 129,
+      "accepted_events": 3052,
+      "accepted_planets": 128,
+      "zero_accepted_planets": [
+        "TOI-269b"
+      ],
+      "flagged_planets": [
+        "GJ1252b",
+        "GJ357b",
+        "HATS-40b",
+        "HATS-46b",
+        "HATS-64b",
+        "HATS-68b",
+        "HD219666b",
+        "HD86226c",
+        "NGTS-2b",
+        "TOI-269b",
+        "TOI-824b",
+        "TOI-892b",
+        "WASP-159b",
+        "WASP-165b",
+        "WASP-169b"
+      ],
+      "flagged_fraction": 0.11627906976744186,
+      "recovery_by_flag": {
+        "False": {
+          "intended": 3703,
+          "accepted": 2760
+        },
+        "True": {
+          "intended": 561,
+          "accepted": 292
+        }
+      },
+      "capture": {
+        "baseline": 0.5979215720495931,
+        "triage": 0.5979215720495931,
+        "proportional": 0.5979215720495931,
+        "additive": 0.5979215720495931
+      },
+      "scheduled_midpoint_window_minutes": {
+        "baseline": 29211.758867561835,
+        "triage": 29211.758867561835,
+        "proportional": 29211.758867561835,
+        "additive": 29211.758867561835
+      },
+      "gain": {
+        "proportional": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "planets": 128,
+          "hosts": 128
+        },
+        "additive": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "planets": 128,
+          "hosts": 128
+        }
+      },
+      "all_intended_binary_completion_bounds": {
+        "proportional": [
+          0.0,
+          0.0
+        ],
+        "additive": [
+          0.0,
+          0.0
+        ]
+      },
+      "accepted_plus_minus_2sigma_envelope": {
+        "proportional": [
+          0.0,
+          0.0
+        ],
+        "additive": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "fold_choices": [
+      {
+        "fold": 0,
+        "feature": "forecast_sd_min",
+        "pad_min": 0.0,
+        "gain_proportional": 0.0,
+        "gain_additive": 0.0,
+        "minimum_gain": 0.0,
+        "train_hosts": 103,
+        "test_hosts": 26
+      },
+      {
+        "fold": 1,
+        "feature": "forecast_sd_min",
+        "pad_min": 0.0,
+        "gain_proportional": 0.0,
+        "gain_additive": 0.0,
+        "minimum_gain": 0.0,
+        "train_hosts": 103,
+        "test_hosts": 26
+      },
+      {
+        "fold": 2,
+        "feature": "forecast_sd_min",
+        "pad_min": 0.0,
+        "gain_proportional": 0.0,
+        "gain_additive": 0.0,
+        "minimum_gain": 0.0,
+        "train_hosts": 103,
+        "test_hosts": 26
+      },
+      {
+        "fold": 3,
+        "feature": "forecast_sd_min",
+        "pad_min": 0.0,
+        "gain_proportional": 0.0,
+        "gain_additive": 0.0,
+        "minimum_gain": 0.0,
+        "train_hosts": 103,
+        "test_hosts": 26
+      },
+      {
+        "fold": 4,
+        "feature": "forecast_sd_min",
+        "pad_min": 0.0,
+        "gain_proportional": 0.0,
+        "gain_additive": 0.0,
+        "minimum_gain": 0.0,
+        "train_hosts": 104,
+        "test_hosts": 25
+      }
+    ],
+    "gross_miss_planets": [],
+    "cross_release_offsets_over_P4": 0,
+    "longer_horizon_exclusions": {
+      "outside_roster_or_no_DRC": 394,
+      "outside_DRC_core_metadata": 229
+    }
+  }
+}

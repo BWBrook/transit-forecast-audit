@@ -1,0 +1,235 @@
+{
+  "development_only": true,
+  "uses_t020_implementation_helpers": false,
+  "candidate_rows_checked": 144,
+  "fold_selections_checked": 20,
+  "maximum_candidate_contrast_error": 5.551115123125783e-17,
+  "settings": {
+    "c2_inspected_2026": {
+      "intended_events": 2771,
+      "intended_planets": 129,
+      "accepted_events": 1974,
+      "selected_feature": "forecast_sd_min",
+      "selected_pad_min": 0.0,
+      "fold_choices": [
+        {
+          "fold": 0,
+          "feature": "forecast_sd_min",
+          "pad_min": 0.0
+        },
+        {
+          "fold": 1,
+          "feature": "forecast_sd_min",
+          "pad_min": 0.0
+        },
+        {
+          "fold": 2,
+          "feature": "forecast_sd_min",
+          "pad_min": 0.0
+        },
+        {
+          "fold": 3,
+          "feature": "forecast_sd_min",
+          "pad_min": 0.0
+        },
+        {
+          "fold": 4,
+          "feature": "forecast_sd_min",
+          "pad_min": 0.0
+        }
+      ],
+      "host_fold_groups_preserved": true,
+      "all_selected_policy_windows_and_captures_identical": true,
+      "best_positive_pad": {
+        "feature": "negative_timing_count",
+        "pad_min": 15.0,
+        "gain_proportional": -0.10525681764721147,
+        "gain_additive": -0.2170040510079746,
+        "minimum_gain": -0.2170040510079746
+      },
+      "best_positive_pad_flagged_planets": 13,
+      "best_positive_pad_all_intended_minutes": {
+        "baseline": 23189.023873446426,
+        "triage": 32099.023873446426,
+        "proportional": 32099.023873446422,
+        "additive": 32099.023873446426
+      }
+    },
+    "c2_pooled": {
+      "intended_events": 4264,
+      "intended_planets": 129,
+      "accepted_events": 3052,
+      "selected_feature": "forecast_sd_min",
+      "selected_pad_min": 0.0,
+      "fold_choices": [
+        {
+          "fold": 0,
+          "feature": "forecast_sd_min",
+          "pad_min": 0.0
+        },
+        {
+          "fold": 1,
+          "feature": "forecast_sd_min",
+          "pad_min": 0.0
+        },
+        {
+          "fold": 2,
+          "feature": "forecast_sd_min",
+          "pad_min": 0.0
+        },
+        {
+          "fold": 3,
+          "feature": "forecast_sd_min",
+          "pad_min": 0.0
+        },
+        {
+          "fold": 4,
+          "feature": "forecast_sd_min",
+          "pad_min": 0.0
+        }
+      ],
+      "host_fold_groups_preserved": true,
+      "all_selected_policy_windows_and_captures_identical": true,
+      "best_positive_pad": {
+        "feature": "negative_timing_count",
+        "pad_min": 15.0,
+        "gain_proportional": -0.10969369283844643,
+        "gain_additive": -0.22885038962801155,
+        "minimum_gain": -0.22885038962801155
+      },
+      "best_positive_pad_flagged_planets": 13,
+      "best_positive_pad_all_intended_minutes": {
+        "baseline": 29214.662715864844,
+        "triage": 41304.66271586484,
+        "proportional": 41304.66271586485,
+        "additive": 41304.66271586485
+      }
+    },
+    "zero_inspected_2026": {
+      "intended_events": 2771,
+      "intended_planets": 129,
+      "accepted_events": 1974,
+      "selected_feature": "forecast_sd_min",
+      "selected_pad_min": 0.0,
+      "fold_choices": [
+        {
+          "fold": 0,
+          "feature": "forecast_sd_min",
+          "pad_min": 0.0
+        },
+        {
+          "fold": 1,
+          "feature": "forecast_sd_min",
+          "pad_min": 0.0
+        },
+        {
+          "fold": 2,
+          "feature": "forecast_sd_min",
+          "pad_min": 0.0
+        },
+        {
+          "fold": 3,
+          "feature": "forecast_sd_min",
+          "pad_min": 0.0
+        },
+        {
+          "fold": 4,
+          "feature": "forecast_sd_min",
+          "pad_min": 0.0
+        }
+      ],
+      "host_fold_groups_preserved": true,
+      "all_selected_policy_windows_and_captures_identical": true,
+      "best_positive_pad": {
+        "feature": "negative_timing_count",
+        "pad_min": 15.0,
+        "gain_proportional": -0.10525681764721147,
+        "gain_additive": -0.2170040510079746,
+        "minimum_gain": -0.2170040510079746
+      },
+      "best_positive_pad_flagged_planets": 13,
+      "best_positive_pad_all_intended_minutes": {
+        "baseline": 23187.222954222296,
+        "triage": 32097.222954222296,
+        "proportional": 32097.222954222296,
+        "additive": 32097.222954222296
+      }
+    },
+    "zero_pooled": {
+      "intended_events": 4264,
+      "intended_planets": 129,
+      "accepted_events": 3052,
+      "selected_feature": "forecast_sd_min",
+      "selected_pad_min": 0.0,
+      "fold_choices": [
+        {
+          "fold": 0,
+          "feature": "forecast_sd_min",
+          "pad_min": 0.0
+        },
+        {
+          "fold": 1,
+          "feature": "forecast_sd_min",
+          "pad_min": 0.0
+        },
+        {
+          "fold": 2,
+          "feature": "forecast_sd_min",
+          "pad_min": 0.0
+        },
+        {
+          "fold": 3,
+          "feature": "forecast_sd_min",
+          "pad_min": 0.0
+        },
+        {
+          "fold": 4,
+          "feature": "forecast_sd_min",
+          "pad_min": 0.0
+        }
+      ],
+      "host_fold_groups_preserved": true,
+      "all_selected_policy_windows_and_captures_identical": true,
+      "best_positive_pad": {
+        "feature": "negative_timing_count",
+        "pad_min": 15.0,
+        "gain_proportional": -0.1094242962867223,
+        "gain_additive": -0.22885038962801155,
+        "minimum_gain": -0.22885038962801155
+      },
+      "best_positive_pad_flagged_planets": 13,
+      "best_positive_pad_all_intended_minutes": {
+        "baseline": 29211.758867561824,
+        "triage": 41301.758867561824,
+        "proportional": 41301.758867561824,
+        "additive": 41301.758867561824
+      }
+    }
+  },
+  "interpretation": "No-pad policies are identical by construction. Zero contrasts/intervals are not equivalence or power evidence.",
+  "script_sha256": "bdbfb552f8187b167be6ea22435013919320c2be56b89d182a6e14df03a73f3e",
+  "input_sha256": {
+    "results/t020_development/longer_horizon/summary.json": "f3c3f3481bcf85c962efc5895845ca8ff156127cc67b67a0296255a7d7eb43ef",
+    "results/t020_development/longer_horizon/candidate_search.csv": "235afe64556b3e17e8d0d4529ef23c9f76310457e5469cc9148797075fcbe556",
+    "results/t020_development/longer_horizon/c2_inspected_2026_candidate_events.csv.gz": "4b1da817fb991ba78ecc8adac31c3c05f0772d393ad6f799b6f8d399ed2b175b",
+    "results/t020_development/longer_horizon/c2_inspected_2026_crossfit_events.csv.gz": "3e0e6e7aa30fe87646dc2e0b39d442e1a3b5dcb746e5def49a1b1d849c294583",
+    "results/t020_development/longer_horizon/c2_pooled_candidate_events.csv.gz": "a3b6ef3b7b60b921ebb72cef0a3451cd83cb1ebc10b088a2d6e508d9d0987908",
+    "results/t020_development/longer_horizon/c2_pooled_crossfit_events.csv.gz": "e6c98fc5c3f3c09ea1a7603c0c22514f16c271466bf655d9ffc26853128675f1",
+    "results/t020_development/longer_horizon/zero_inspected_2026_candidate_events.csv.gz": "58a3f725875f1679728c48f6dddf74cbaff7e17c7c6b8425cd486a5164ecbfc3",
+    "results/t020_development/longer_horizon/zero_inspected_2026_crossfit_events.csv.gz": "27e4f2ee21a2a8cce76e441753bfdb299eb569f762c330a001c7cf1ce50e4a74",
+    "results/t020_development/longer_horizon/zero_pooled_candidate_events.csv.gz": "cd654b220294557348c52419b506dae979efdf2ac8443ff006ee43bfba475548",
+    "results/t020_development/longer_horizon/zero_pooled_crossfit_events.csv.gz": "c14378cb617931cf77276b05f20e93194f3491a337689eeae56ef035a6ba8ab9",
+    "results/sprint2/freeze_candidate/roster.csv": "54492734189a942505747d9d32a343033642d84abe482dbe8ab8aeb7912382da",
+    "results/information_ledger/release_planets.csv": "56d2ca5ee3baea1eeab8325c0197aa2027a25e73e3db58873e362b46b255b72d",
+    "data/raw/osf/p298n/catalogue_of_ephemerides.txt": "2f1e4a3ad9dd3cc9f78e38f25c3a1d1e0ead1604ea0a86f66cc752ff1a666033",
+    "results/prefreeze/attempt_ledger_development.csv.gz": "77ac9435c973fcb545221001c1d1c60bc83509d7fcbb4a6e7921f9e8c173db90",
+    "results/outcomes/t015v3/outcomes.csv.gz": "79c9d323b852f47a6519df7671764baad358486c558e3dad0dd36fc4b9437ef8",
+    "results/final_primary/terminal_ledger.csv.gz": "6a17c4646b42ec7f87af49cfc2f900ed1065c53bf4887f213f7ba65c9079c3f8",
+    "results/final_extension/terminal_ledger.csv.gz": "3cfc62c1799d790fe7c418b94639861648a0f2230b89ee24e9d4ad02c3012eca",
+    "results/final_primary/accepted_outcomes.csv": "2c2fa9559d24fd55ddb1890b2c8814a4ebb3f53a9dbabf934387341e46f8f62b",
+    "results/final_extension/accepted_outcomes.csv": "74a7f7276d578103ecd16019b59f81d81ec74b2939e86187a70d25902322f499"
+  },
+  "initial_checker_commit": "8309328",
+  "extension_design_commit": "2e8c9e9",
+  "source_restriction_and_canonical_epoch_links_checked": true
+}

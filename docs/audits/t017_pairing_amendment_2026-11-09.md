@@ -33,7 +33,54 @@ comparison remains in commit `064cbf5`; the original fits are untouched.
 
 ## Execution and adjudication
 
-Pending after the amendment commit. Regenerated counts, input/output hashes
-and an independent check of C057 will be recorded here and in
-`results/independent_validation/t017_pairing_review/`. This is a recorded
-post-review amendment on already inspected evidence, not new qualification.
+Amendment/source/tests commit `506ab58` preceded comparison regeneration.
+The unchanged independent-fit files now supply **347 flux-route matched
+pairs**, formerly 340. Exactly four product/routes gain pairs:
+
+| Product/route | Original | Amended |
+|---|---:|---:|
+| HR858b S105 SAP | 2 | 4 |
+| TOI-157b S98 PDCSAP | 10 | 11 |
+| WASP-170b S99 PDCSAP | 4 | 5 |
+| WASP-82b S98 PDCSAP | 6 | 9 |
+
+An independent sorted dynamic-programming implementation maximizes valid
+pair count before summed distance, without calling the Hungarian solver.
+It reproduces every amended pair identity exactly. It also reconstructs all
+25 remaining unpaired flux-route rows: each is an
+`insufficient_window_coverage` refusal, and every row has a timing from the
+other flux route or Claude's C050 checker. None is an independently timed
+large disagreement. These are flux-route rows, not 25 distinct events.
+
+The amended summaries contain **zero large discrepancies among the ten
+controls**. The unchanged raw diagnostic still flags six control planets
+(formerly seven); TOI-157b drops below its unmatched-fraction threshold.
+The remaining flags are coverage refusals and WASP-18b's phase ambiguity.
+D073's adjudication supplies their interpretation; it does not erase the
+raw flags or relax their thresholds. They identify no frozen timing fault
+in the evidence examined, so a broader 2026 tranche is not warranted on
+this evidence. The HR858b S105 model/shape sensitivity remains separate.
+
+For WASP-18b, the SAP residual signal's phase is 0.50285, depth 451 ppm and
+duration 0.081 d (the transit's fitted duration). This is consistent with a
+secondary eclipse. The PDCSAP same-period signal is near phase 0.992,
+duration 0.24 d versus 0.081 d, and depth 259 ppm versus the transit's
+9,931 ppm. A phase curve or detrending residual is plausible. Saved phase,
+depth and duration alone do not independently prove astrophysical identity,
+and the broad residual should not be declared uniquely astrophysical.
+
+Reproduction (use a runtime containing NumPy/SciPy):
+
+```sh
+python -m unittest discover -s tests -p test_t017_pairing.py -v
+python scripts/t017_compare.py
+python scripts/t017_pairing_audit.py
+```
+
+Four targeted tests pass. Input hashes, pre-amendment comparison hash,
+pair-count changes, independent pair-set equality and all refusal/alternate
+checks are in `results/independent_validation/t017_pairing_review/receipt.json`
+and `unpaired_check.json`; comparison output hashes remain in the regenerated
+T017 `comparison_receipt.json`. No light curve or header was opened. This is
+a recorded post-review amendment on already inspected evidence, not new
+qualification or a replacement of the frozen outcomes.

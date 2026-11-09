@@ -1,0 +1,41 @@
+{
+  "base_commit": "2661f82",
+  "pairing_amendment_commit": "506ab58",
+  "initial_development_commit": "8309328",
+  "longer_development_design_commit": "2e8c9e9",
+  "source_and_generated_hash_checks": 67,
+  "parent_S105_reaggregation": {
+    "standardised": -0.08900422143979789,
+    "forecast_only": 0.0962042302623131,
+    "raw_minutes": -8.225569914285188
+  },
+  "independent_development_check": {
+    "candidate_rows": 216,
+    "fold_selections": 30,
+    "maximum_contrast_error": 1.1102230246251565e-16
+  },
+  "S74_S97_photometry_or_headers_opened": false,
+  "frozen_scientific_files_changed": false,
+  "environment_restored_to_frozen_pins": true,
+  "pre_restoration_environment": "data/derived/d074/runtime_before_restore",
+  "unit_tests": {
+    "command": ".venv/bin/python -m unittest discover -s tests -v",
+    "run": 157,
+    "skips": 1,
+    "failures": 0
+  },
+  "native_freeze_verifier": "zero mismatches",
+  "bulk_archive": {
+    "relative_path": "data/derived/d074/s105_sensitivity_working.tar.gz",
+    "bytes": 2231615,
+    "sha256": "1b45bb5e57a7b8d79dd99bce227d39952060e73015084c1d5e3f1f0ce4fe228c",
+    "data_store_copy": "nectar:/data/share/transit-forecast-audit/d074-2026-11-09/1b45bb5e57a7/s105_sensitivity_working.tar.gz",
+    "remote_checksum_verified": true
+  },
+  "primary_verdict_changed": false,
+  "new_access_or_release_authorised": false,
+  "historical_versions": {
+    "earlier_design": "6768a75:docs/t020_development_design.md; exact bytes retained beside first receipt",
+    "initial_independent_checker": "8309328:scripts/t020_independent_check.py; earlier receipt unchanged"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "HR858b|S105|DRD645": {
+    "frozen_tc_bjd_tdb": 2461216.20254945,
+    "consensus_tc_bjd_tdb": 2461216.2080625514,
+    "shift_s": 476.3319566845894,
+    "route_tc_bjd_tdb": {
+      "C050_PDCSAP_FLUX": 2461216.207575726,
+      "T017_PDCSAP_FLUX": 2461216.2084350735,
+      "C050_SAP_FLUX": 2461216.2076900294,
+      "T017_SAP_FLUX": 2461216.20993214
+    },
+    "route_difference_min": {
+      "C050_PDCSAP_FLUX": 7.237837091088295,
+      "T017_PDCSAP_FLUX": 8.475297689437866,
+      "C050_SAP_FLUX": 7.402434200048447,
+      "T017_SAP_FLUX": 10.631073564291
+    }
+  },
+  "HR858b|S105|DRD647": {
+    "frozen_tc_bjd_tdb": 2461223.38004905,
+    "consensus_tc_bjd_tdb": 2461223.3726012358,
+    "shift_s": -643.4911385178566,
+    "route_tc_bjd_tdb": {
+      "C050_PDCSAP_FLUX": 2461223.374535443,
+      "T017_PDCSAP_FLUX": 2461223.3728146697,
+      "C050_SAP_FLUX": 2461223.3723878018,
+      "T017_SAP_FLUX": 2461223.3689057357
+    },
+    "route_difference_min": {
+      "C050_PDCSAP_FLUX": -7.9395941644907,
+      "T017_PDCSAP_FLUX": -10.417507365345955,
+      "C050_SAP_FLUX": -11.032197251915932,
+      "T017_SAP_FLUX": -16.046372428536415
+    }
+  },
+  "HR858b|S105|DRD649": {
+    "frozen_tc_bjd_tdb": 2461230.5342707,
+    "consensus_tc_bjd_tdb": 2461230.5255626403,
+    "shift_s": -752.3763656616211,
+    "route_tc_bjd_tdb": {
+      "C050_PDCSAP_FLUX": 2461230.5312158926,
+      "T017_PDCSAP_FLUX": 2461230.525388768,
+      "C050_SAP_FLUX": 2461230.525736513,
+      "T017_SAP_FLUX": 2461230.5190297957
+    },
+    "route_difference_min": {
+      "C050_PDCSAP_FLUX": -4.398922696709633,
+      "T017_PDCSAP_FLUX": -12.789982259273529,
+      "C050_SAP_FLUX": -12.28922925889492,
+      "T017_SAP_FLUX": -21.946902349591255
+    }
+  }
+}
