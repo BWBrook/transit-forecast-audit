@@ -51,3 +51,4 @@ results/final_*/scores.receipt.json
 data/derived/final_*/*.log
 data/derived/final_*/measured_attempt1_relpath/
 data/derived/final_*/measured/grids/
+!results/independent_validation/

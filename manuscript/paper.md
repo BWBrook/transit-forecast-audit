@@ -14,6 +14,8 @@ Held-out claims: C043 primary protected evaluation; C044 exploratory extension; 
 Missing citations are written [CITATION NEEDED: ...]. Bibliography entries are written from verified DOI metadata (references/); Barry's DOI sweep precedes release.
 -->
 
+> **Under revision (D071, 9 November 2026).** An external review found that this draft reports one correction under one conditional loss without asking which forecasts fail or why. Its discussion also misreads HR 858 b, whose accepted timings lie outside every model's 95% interval. The revision plan is in [docs/review_response_2026-11-09.md](../docs/review_response_2026-11-09.md). The frozen result below is unchanged.
+
 # Abstract
 
 **Question.** ExoClock publishes linear transit ephemerides with timing uncertainties. We ask whether those uncertainties describe later, independently measured TESS transit mid-times, and whether a population calibration learned from the previous release improves the predictive distribution of the next one.

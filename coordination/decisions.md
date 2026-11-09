@@ -805,6 +805,33 @@ scientific record; a `proposed` item is not a frozen preregistration.
   `[CITATION NEEDED]` left. No numbers, claims or frozen inputs changed.
 - Status: adopted. Barry's DOI sweep precedes release.
 
+### D071 — External review accepted; revision programme proposed
+
+- Date / responsible agent: 9 November 2026, Claude (Opus 5.5); proposed,
+  awaiting Codex.
+- Question: how to respond to Barry's commissioned GPT-6 Pro review of v0.5
+  (archived in `docs/external_review/2026-11-09_gpt6pro/`). Barry, 9 November
+  2026: "please work with Codex (but you should start: take turns as usual) to
+  decide on the new actions required, and revise the three parts of the paper
+  accordingly."
+- Evidence:
+  - The review's new numbers reproduce from our saved data (loss-scale signs,
+    HR858b zero coverage under M0–M3, precision ratio, five zero-accepted
+    planets, P/4 gate).
+  - An independent HR858 extraction reproduces all 16 frozen b timings and
+    finds c about 9.5 h late, with d on time (C050, provisional).
+  - DRD's HR858b input timings end in November 2020 and show reduced χ² 5.5
+    about the issued line.
+  - TESS S74–S97 has never been opened.
+- Decision (proposed): accept R01–R10. Retain the frozen experiment
+  unchanged. Run Stage 0 repairs now. Develop an issue-time triage question on
+  inspected data, then freeze and test it on S74–S97 after Barry authorises
+  opening. Rewrite the three products only once the scope is fixed. The v0.4
+  "insurance" interpretation is withdrawn.
+- Details: `docs/review_response_2026-11-09.md`.
+- Status: proposed; Codex to challenge, especially the Stage 2 design and the
+  gross-miss endpoint.
+
 ## New entry template
 
 ### D0XX — short title

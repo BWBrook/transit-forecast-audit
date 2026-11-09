@@ -2,6 +2,8 @@
 
 *Research brief · 9 November 2026 · held-out result. Claim IDs refer to the shared claims ledger.*
 
+> **Under revision (9 November 2026).** An external review prompted further work, including an independent check that HR 858 b's six-hour departure is real: its neighbouring planet runs late by a matching amount. This brief will be rewritten; see the revision plan in the repository.
+
 ## The answer
 
 Most accepted transit times lie within the published ranges, but fewer than their nominal coverage implies. We tested ExoClock's predictions for 151 planets against 2,185 later TESS transits. Giving every planet equal weight, the quoted 95% ranges contained 90.8% of measured times. A correction learned from earlier data widened the ranges and increased coverage to 97.6%. It did not clearly improve the overall forecast score: the result is inconclusive, with uncertainty spanning substantial benefit and harm (C043). The result applies to transits we could measure, not to missed transits.

@@ -1,0 +1,15 @@
+{
+  "target": "HR 858 (TIC 178155732)",
+  "fits_dir": "data/raw/mast/TIC_178155732",
+  "out_dir": "results/independent_validation/hr858",
+  "flux_columns": ["PDCSAP_FLUX", "SAP_FLUX"],
+  "n_signals": 3,
+  "period_range_d": [1.0, 15.0],
+  "fit_window_d": 0.4,
+  "planets": {
+    "b": {"period_hint_d": 3.585, "reference_ephemeris": {"source": "Bonfanti et al. 2025 via NASA Exoplanet Archive default row", "t0_bjd_tdb": 2458409.19, "period_d": 3.585287}},
+    "c": {"period_hint_d": 5.974, "reference_ephemeris": {"source": "Bonfanti et al. 2025 via NASA Exoplanet Archive default row", "t0_bjd_tdb": 2458415.63344, "period_d": 5.973865}},
+    "d": {"period_hint_d": 11.23, "reference_ephemeris": {"source": "Bonfanti et al. 2025 via NASA Exoplanet Archive default row", "t0_bjd_tdb": 2458409.7324, "period_d": 11.230511}}
+  },
+  "compare_frozen": {"planet": "HR858b", "independent_name": "b", "outcomes": "results/final_primary/accepted_outcomes.csv", "forecasts": "results/final_primary/accepted_forecasts.csv"}
+}

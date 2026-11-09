@@ -1,0 +1,346 @@
+{
+  "pin": "629f466a2567152047d9cd75be336d865a1d68ad",
+  "scope": "Read-only saved-output verification plus independent Gaussian-event score calculation. No raw-photometry extraction or 2000-refit rerun.",
+  "new_analyses_status": "Exploratory review diagnostics; original frozen primary remains unchanged. New intervals use fixed parameters and multinomial host multiplicities.",
+  "input_sha256": {
+    "results/final_primary/terminal_ledger.csv.gz": "6a17c4646b42ec7f87af49cfc2f900ed1065c53bf4887f213f7ba65c9079c3f8",
+    "results/final_primary/joint_draws.json.gz": "0a50c499f956a5a233863a92661f97d70696cfe87af1a3a8486619b14fa5e1d2",
+    "results/final_primary/evaluation_summary.json": "8deacf156f9693de3a5baf7100d507eac3c9eed0b1bd3f8545efd4831f344a91",
+    "results/final_primary/descriptives.json": "c6ca96b9720e69d9ae376727409a7b30b2bd1015adf1d5d3e331108b2b97b0d2",
+    "results/final_secondaries/descriptive/planet_metrics.csv": "fdfefb9d61b5f7f71fb7535c7ffc7abc21b78fea690fd9bf2cff222f33fe20bf",
+    "data/derived/final_primary/measured/windows.csv.gz": "5988f039e79676c23e9813b06027a229a45b998ae71b88cd507c87b8f89e7152",
+    "data/derived/final_primary/measured/coverage.csv": "4748d3066aeaf246eccfdd160c0fce41206e92fd46f4b262f56eb24754a3e40d",
+    "results/prefreeze/forecasts_core_draft.csv.gz": "85f86291616093c226ff5be023581cadb73f8ef2cb8a45cba83d5be82f4832b8"
+  },
+  "terminal_counts": {
+    "accepted": 2185,
+    "no_cadence_coverage_at_prediction": 431,
+    "excluded_coverage": 290,
+    "integration_unresolved": 75,
+    "edge": 71,
+    "product_id_failed": 39,
+    "likelihood_support_unresolved": 12
+  },
+  "counts": {
+    "manifest": 3103,
+    "accepted_events": 2185,
+    "accepted_planets": 151,
+    "non_gaussian_events": 399
+  },
+  "max_saved_aggregate_error": 1.4210854715202004e-14,
+  "primary_delta": -0.12130780452395698,
+  "stored_joint_ci95_recomputed": [
+    -1.8397729107986793,
+    2.1956849634535907
+  ],
+  "stored_joint_s_ci95": [
+    1.2423401806385892,
+    2.715738831424854
+  ],
+  "planet_count_improved": 40,
+  "median_delta": 1.0453269265035008,
+  "summary": {
+    "is95_standardised": {
+      "M0": {
+        "mean": 11.334968248643618,
+        "review_conditional_ci95": [
+          5.195366402430034,
+          22.959557343149736
+        ]
+      },
+      "M1": {
+        "mean": 19.89542148752863,
+        "review_conditional_ci95": [
+          17.612663385303286,
+          23.449900182888104
+        ]
+      },
+      "M2": {
+        "mean": 11.213660444119661,
+        "review_conditional_ci95": [
+          6.162009563251346,
+          20.994245658698738
+        ]
+      },
+      "M3": {
+        "mean": 11.264718600503768,
+        "review_conditional_ci95": [
+          6.249907599518871,
+          20.966214353055545
+        ]
+      },
+      "M2_minus_M0": {
+        "mean": -0.12130780452395698,
+        "review_conditional_ci95": [
+          -2.0284254408605933,
+          1.1149648460258934
+        ]
+      }
+    },
+    "is95_minutes": {
+      "M0": {
+        "mean": 106.25155978479529,
+        "review_conditional_ci95": [
+          11.964455316810378,
+          292.7978585400543
+        ]
+      },
+      "M1": {
+        "mean": 78.65425114644836,
+        "review_conditional_ci95": [
+          42.953365256499346,
+          139.56244667227475
+        ]
+      },
+      "M2": {
+        "mean": 97.79111886763293,
+        "review_conditional_ci95": [
+          14.671633104949004,
+          260.98825288609174
+        ]
+      },
+      "M3": {
+        "mean": 97.5666727108676,
+        "review_conditional_ci95": [
+          14.88103837477208,
+          259.8438675351404
+        ]
+      },
+      "M2_minus_M0": {
+        "mean": -8.460440917162323,
+        "review_conditional_ci95": [
+          -34.18932461538113,
+          5.620740015520566
+        ]
+      }
+    },
+    "is95_forecast_normalised": {
+      "M0": {
+        "mean": 20.04107739279762,
+        "review_conditional_ci95": [
+          12.656375803173177,
+          33.00813591362734
+        ]
+      },
+      "M1": {
+        "mean": 39.408405386230015,
+        "review_conditional_ci95": [
+          37.84863687087022,
+          42.31978288398669
+        ]
+      },
+      "M2": {
+        "mean": 20.122582207816343,
+        "review_conditional_ci95": [
+          14.026307115469633,
+          31.172104864069322
+        ]
+      },
+      "M3": {
+        "mean": 20.2278482709501,
+        "review_conditional_ci95": [
+          14.179616116808099,
+          31.205506358037383
+        ]
+      },
+      "M2_minus_M0": {
+        "mean": 0.08150481501872205,
+        "review_conditional_ci95": [
+          -2.101912697316204,
+          1.6581401132908213
+        ]
+      }
+    },
+    "covered68": {
+      "M0": {
+        "mean": 0.618555857228915,
+        "review_conditional_ci95": [
+          0.575880274969571,
+          0.6597272705896712
+        ]
+      },
+      "M1": {
+        "mean": 0.9851220863664274,
+        "review_conditional_ci95": [
+          0.9687132379108111,
+          0.9956869624714773
+        ]
+      },
+      "M2": {
+        "mean": 0.6789912632977964,
+        "review_conditional_ci95": [
+          0.6378952950046796,
+          0.7188718912564095
+        ]
+      },
+      "M3": {
+        "mean": 0.6915468206137231,
+        "review_conditional_ci95": [
+          0.6517456435291307,
+          0.7308364434750572
+        ]
+      },
+      "M2_minus_M0": {
+        "mean": 0.06043540606888128,
+        "review_conditional_ci95": [
+          0.045098158510844005,
+          0.07729171173645645
+        ]
+      }
+    },
+    "covered95": {
+      "M0": {
+        "mean": 0.9079364975831289,
+        "review_conditional_ci95": [
+          0.8784540576637486,
+          0.9343971331230628
+        ]
+      },
+      "M1": {
+        "mean": 0.9933774834437086,
+        "review_conditional_ci95": [
+          0.9801324503311258,
+          1.0
+        ]
+      },
+      "M2": {
+        "mean": 0.9757619919679326,
+        "review_conditional_ci95": [
+          0.9577653263149443,
+          0.9889446357981985
+        ]
+      },
+      "M3": {
+        "mean": 0.977428169793051,
+        "review_conditional_ci95": [
+          0.9598727781781452,
+          0.9898807064133546
+        ]
+      },
+      "M2_minus_M0": {
+        "mean": 0.06782549438480384,
+        "review_conditional_ci95": [
+          0.04670379282195958,
+          0.09122804175830222
+        ]
+      }
+    },
+    "width95_minutes": {
+      "M0": {
+        "mean": 10.485120494440437,
+        "review_conditional_ci95": [
+          8.779084807157174,
+          12.496672688799672
+        ]
+      },
+      "M1": {
+        "mean": 56.371589313197326,
+        "review_conditional_ci95": [
+          42.5538996612474,
+          73.91846664115415
+        ]
+      },
+      "M2": {
+        "mean": 17.473022575232037,
+        "review_conditional_ci95": [
+          13.686748157541125,
+          22.232258432682972
+        ]
+      },
+      "M3": {
+        "mean": 17.799338198014553,
+        "review_conditional_ci95": [
+          13.922532943435977,
+          22.677281979957485
+        ]
+      },
+      "M2_minus_M0": {
+        "mean": 6.987902080791599,
+        "review_conditional_ci95": [
+          4.784174228517358,
+          9.825359192845902
+        ]
+      }
+    }
+  },
+  "HR858b": {
+    "accepted_events": 16,
+    "residual_hours_range": [
+      -6.734037850052118,
+      -5.919986888766289
+    ],
+    "residual_hours_median": -6.345327123999596,
+    "forecast_sd_minutes_range": [
+      15.902667431497143,
+      16.435730353592444
+    ],
+    "method_summaries": {
+      "M0": {
+        "is95_standardised": 831.7209200251068,
+        "is95_minutes": 13971.493637072115,
+        "is95_forecast_normalised": 863.8957108472114,
+        "covered68": 0.0,
+        "covered95": 0.0,
+        "width95_minutes": 65.97162127864308
+      },
+      "M1": {
+        "is95_standardised": 235.86939089966927,
+        "is95_minutes": 3957.726165939852,
+        "is95_forecast_normalised": 244.54755500156304,
+        "covered68": 0.0,
+        "covered95": 0.0,
+        "width95_minutes": 593.0442291189474
+      },
+      "M2": {
+        "is95_standardised": 723.0749358320288,
+        "is95_minutes": 12146.796674006022,
+        "is95_forecast_normalised": 751.0534721650394,
+        "covered68": 0.0,
+        "covered95": 0.0,
+        "width95_minutes": 162.03510464578815
+      },
+      "M3": {
+        "is95_standardised": 718.6224159936673,
+        "is95_minutes": 12071.95972326406,
+        "is95_forecast_normalised": 746.4247205395142,
+        "covered68": 0.0,
+        "covered95": 0.0,
+        "width95_minutes": 165.974065050423
+      }
+    },
+    "standardised_delta": -108.645984193078,
+    "contribution_to_mean": -0.7195098290932317,
+    "without_host_standardised_delta": 0.6021900380664033,
+    "without_host_raw_score": {
+      "M0": 13.816612602879804,
+      "M1": 52.79377171449232,
+      "M2": 17.464415166710356,
+      "M3": 17.737385707179666
+    },
+    "share_of_total_planet_weighted_M0_raw_score": 0.8708243729789512
+  },
+  "measurement_forecast_sigma_ratio_event_quantiles": {
+    "0.25": 1.7153998510563857,
+    "0.5": 2.693756390282246,
+    "0.75": 3.733624225262001,
+    "0.95": 6.34485682543676
+  },
+  "independent_gaussian_check": {
+    "ran": true,
+    "events_recomputed": 1786,
+    "planets_with_only_gaussian_accepted_events": 109,
+    "saved_planet_metric_comparison": {
+      "is95_standardised_max_abs_diff": 2.048849978564249e-11,
+      "is95_minutes_max_abs_diff": 6.328093604679452e-11,
+      "covered95_max_abs_diff": 1.1102230246251565e-16,
+      "width95_minutes_max_abs_diff": 6.328093604679452e-11
+    },
+    "method": "Independent adaptive quadrature on [-12,12] in standard-normal mixing variable; root solving for .975 quantile; closed-form M0.",
+    "non_gaussian_grids_recomputed": false
+  },
+  "limitations": [
+    "No public per-event score table or likelihood grids in this snapshot.",
+    "Stored-draw quantiles checked; original 2000 calibration refits not rerun.",
+    "Input tables are project products; no independent raw-light-curve identity validation."
+  ]
+}

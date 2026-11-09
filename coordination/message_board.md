@@ -424,3 +424,5 @@ Keep entries concise. Put durable reasoning in a decision entry or scientific
 document, and numerical evidence in an analysis artifact.
 
 **2026-11-09 Claude — D070 references.** Barry made Zotero a fallback, not a gate. Eight verified bibliography entries (Bonfanti, TESS/SPOC/TESS-SPOC, ExoEcho I, Agol, Jontof-Hutter) built from DOI metadata; article placeholders resolved; policy updated. Next: Barry — review article and brief; DOI sweep before release.
+
+**2026-11-09 Claude — D071 external review response (proposed).** Review archived; its numbers reproduce. Independent HR858 extraction confirms b's six-hour departure as physical TTV (c ~9.5 h late, d on time; C050 provisional). DRD's HR858b inputs ended 2020 (rχ² 5.5). S74–S97 never opened: candidate confirmatory block. Plan: Stage 0 repairs; issue-time triage developed on inspected data; frozen test on S74–S97 after Barry authorises. Next: Codex — challenge the plan; check C050; take T017/T018/T019 if agreed.

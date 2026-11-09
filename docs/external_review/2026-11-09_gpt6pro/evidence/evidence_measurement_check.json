@@ -1,0 +1,168 @@
+{
+  "audited_commit": "629f466a2567152047d9cd75be336d865a1d68ad",
+  "scope": "Independent arithmetic on saved tables only; no new astrophysical identification",
+  "input_sha256": {
+    "results/final_primary/terminal_ledger.csv.gz": "6a17c4646b42ec7f87af49cfc2f900ed1065c53bf4887f213f7ba65c9079c3f8",
+    "data/derived/final_primary/measured/windows.csv.gz": "5988f039e79676c23e9813b06027a229a45b998ae71b88cd507c87b8f89e7152",
+    "data/derived/final_primary/measured/products.csv": "63d5b108bf49dfcc5a5efd5f7c394123f409737e528615b192c8f81eeea02f92",
+    "data/derived/final_primary/measured/coverage.csv": "4748d3066aeaf246eccfdd160c0fce41206e92fd46f4b262f56eb24754a3e40d"
+  },
+  "terminal_counts": {
+    "no_cadence_coverage_at_prediction": 431,
+    "accepted": 2185,
+    "excluded_coverage": 290,
+    "integration_unresolved": 75,
+    "edge": 71,
+    "likelihood_support_unresolved": 12,
+    "product_id_failed": 39
+  },
+  "accepted_events": 2185,
+  "accepted_planets": 151,
+  "accepted_hosts": 151,
+  "accepted_unique_measurement_ids": 2185,
+  "coverage_qualified_events": 2369,
+  "accepted_coverage_qualified_events": 2181,
+  "accepted_fraction_all_opportunities": 0.7041572671608122,
+  "zero_coverage_status_rows": 431,
+  "zero_coverage_status_rows_with_positive_window_coverage": 0,
+  "accepted_rows_with_other_DRD_planets_masked": 0,
+  "accepted_timing_standards": {
+    "TDB|SOLARSYSTEM": 2185
+  },
+  "loo_shape_check": {
+    "available": 2163,
+    "median_absolute_shift_over_sigma": 0.018027895427192533,
+    "above_half_sigma": 13,
+    "above_one_sigma": 3,
+    "largest_ten": [
+      {
+        "event_id": "HATS-29b|S104|SPOC_120|D577",
+        "planet": "HATS-29b",
+        "absolute_shift_over_sigma": 3.057097834842356,
+        "shift_s": -694.539,
+        "sigma_s": 227.189
+      },
+      {
+        "event_id": "HD86226c|S100|SPOC_120|D478",
+        "planet": "HD86226c",
+        "absolute_shift_over_sigma": 1.7505533979295629,
+        "shift_s": 132.067,
+        "sigma_s": 75.443
+      },
+      {
+        "event_id": "HD110113b|S101|SPOC_120|D771",
+        "planet": "HD110113b",
+        "absolute_shift_over_sigma": 1.3035593362621374,
+        "shift_s": 465.853,
+        "sigma_s": 357.37
+      },
+      {
+        "event_id": "HR858b|S106|SPOC_120|D652",
+        "planet": "HR858b",
+        "absolute_shift_over_sigma": 0.8897912077859017,
+        "shift_s": -126.442,
+        "sigma_s": 142.103
+      },
+      {
+        "event_id": "HATS-38b|S100|SPOC_120|D529",
+        "planet": "HATS-38b",
+        "absolute_shift_over_sigma": 0.8348109962012994,
+        "shift_s": 237.563,
+        "sigma_s": 284.571
+      },
+      {
+        "event_id": "GJ3090b|S106|SPOC_120|D799",
+        "planet": "GJ3090b",
+        "absolute_shift_over_sigma": 0.8185286742554074,
+        "shift_s": -90.747,
+        "sigma_s": 110.866
+      },
+      {
+        "event_id": "TOI-122b|S102|SPOC_120|D534",
+        "planet": "TOI-122b",
+        "absolute_shift_over_sigma": 0.6625808843354003,
+        "shift_s": -196.601,
+        "sigma_s": 296.72
+      },
+      {
+        "event_id": "HD219666b|S104|SPOC_120|D317",
+        "planet": "HD219666b",
+        "absolute_shift_over_sigma": 0.6478443255955948,
+        "shift_s": -57.296,
+        "sigma_s": 88.441
+      },
+      {
+        "event_id": "HATS-34b|S102|SPOC_120|D982",
+        "planet": "HATS-34b",
+        "absolute_shift_over_sigma": 0.6465659165626035,
+        "shift_s": -126.853,
+        "sigma_s": 196.195
+      },
+      {
+        "event_id": "WASP-169b|S99|SPOC_120|D410",
+        "planet": "WASP-169b",
+        "absolute_shift_over_sigma": 0.5894524735964426,
+        "shift_s": 84.834,
+        "sigma_s": 143.92
+      }
+    ],
+    "limit": "LOO point-estimate shifts do not marginalise shape uncertainty or establish calibration."
+  },
+  "HR858b": {
+    "accepted_events": 16,
+    "epoch_range": [
+      643,
+      665
+    ],
+    "sectors": [
+      105,
+      106,
+      107
+    ],
+    "residual_minutes_range": [
+      -404.04227033257484,
+      -355.1992126554251
+    ],
+    "residual_minutes_mean": -380.63122120220214,
+    "local_period_days_centered_OLS": 3.583949766464514,
+    "linear_residual_rms_minutes": 4.260778959075804,
+    "measurement_sigma_minutes_range": [
+      1.7111666666666667,
+      11.103566666666667
+    ],
+    "max_LOO_absolute_shift_over_sigma": 0.8897912077859017,
+    "product_diagnostics": [
+      {
+        "sector": "105",
+        "tic": "TIC 178155732",
+        "id_snr": "30.04",
+        "id_period_found_d": "3.584453634788997",
+        "masked_cadence_fraction": "0.0",
+        "t14_min": "139.69",
+        "shape_rchi2": "2.712",
+        "shape_at_bound": "q2"
+      },
+      {
+        "sector": "106",
+        "tic": "TIC 178155732",
+        "id_snr": "30.95",
+        "id_period_found_d": "3.585251658936",
+        "masked_cadence_fraction": "0.0",
+        "t14_min": "165.37",
+        "shape_rchi2": "1.203",
+        "shape_at_bound": ""
+      },
+      {
+        "sector": "107",
+        "tic": "TIC 178155732",
+        "id_snr": "33.09",
+        "id_period_found_d": "3.5844646692966124",
+        "masked_cadence_fraction": "0.0",
+        "t14_min": "167.84",
+        "shape_rchi2": "1.461",
+        "shape_at_bound": "q2"
+      }
+    ],
+    "limit": "Coherence and good fit diagnostics do not independently verify planet identity or physical mechanism."
+  }
+}
