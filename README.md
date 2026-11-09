@@ -1,6 +1,21 @@
 # Transit Forecast Audit
 
-**Research seed and inspected development pilot · 4 November 2026 · no held-out results**
+**Protected evaluation independently reviewed · 9 November 2026 · primary result inconclusive**
+
+The frozen core evaluation accepts 2,185 of 3,103 intended transits on 151
+planets. The calibration's planet-balanced score difference is −0.121, with a
+95% joint-refit interval of [−1.84, 2.20]: neither improvement nor worsening is
+established. Coverage increases and intervals widen. The small mean gain is
+concentrated: removing HR858 in the declared fixed-parameter diagnostic changes
+the point difference to +0.602. No planet is removed from the primary result.
+
+Start with the [independent review](docs/audits/d065_review_2026-11-09.md),
+[primary result](docs/final_results_2026-11-08.md) and
+[completed declared secondaries](docs/final_secondaries_2026-11-09.md).
+Secondary intervals are conditional on scenario fits; they do not replace
+the frozen joint-refit result. The article and brief remain dated development
+drafts awaiting integration of these audited results. Earlier milestones below
+describe their status at the stated dates.
 
 A project for Barry W. Brook to evaluate the predictive reliability of exoplanet
 transit ephemerides using historical forecasts and later independent timing

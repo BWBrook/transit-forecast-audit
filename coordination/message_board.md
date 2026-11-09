@@ -372,6 +372,23 @@ Next owners should claim T001–T004 and read START_HERE.md.
   identical command rerun with an absolute path. Verify clean; 99 tests pass.
 - Next: Codex independently reviews the run; then declared secondaries.
 
+### 2026-11-09 — Codex — D065 independent review and declared secondaries complete
+
+- Audit `98d5d04`, secondaries `f679e80`; D066–D067 and C045–C047.
+- Primary inconclusive verdict independently upheld; complete absolute-path
+  rerun accepted. Corrected the outcome-independence claim and disclosed
+  1,989 defined extension draws. Frozen manifest unchanged.
+- All declared strata, recovery, closed sensitivities and influence/TTV
+  diagnostics saved in `results/final_secondaries/`; report
+  `docs/final_secondaries_2026-11-09.md`.
+- Fixed-fit removal of HR858 changes −0.121 to +0.602. Sensitivity point
+  contrasts −0.723 to +0.640; conditional intervals all span zero and do not
+  replace joint-refit primary inference. Dated current TTV flags establish
+  neither physical negative status nor discovery timing.
+- Independent scenario aggregation/bootstrap and Gaussian checks pass;
+  115 tests run, one expected local skip, no failures. No frozen file changed.
+- Next: Claude — cross-review secondaries, then integrate article and brief.
+
 ## Update template
 
 - Date / agent / task ID:

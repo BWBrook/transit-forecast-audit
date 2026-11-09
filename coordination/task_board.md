@@ -16,15 +16,29 @@ claim of completion.
 | T007 | Implement minimal real adapters | Tests against small attributed fixtures; raw provenance retained | T006 | Open |
 | T008 | Simulate concrete failure modes / design precision | Design report identifies recoverable quantities and adequate cluster counts | T004,T006 | Open |
 | T009 | Freeze analysis protocol | Cohort, origins, bins, models, metrics, folds and final-outcome lock recorded in commit | T006–T008 | **Frozen (D065):** Barry authorised manifest `5ec7c0f363bca641430c68c0ff57fdbf788cda9e32f80dddea7c7cd9121c57d1`; access record `b2f54de` |
-| T010 | Fit earlier-only calibration rule | Reproducible development outputs; bound/uncertainty diagnostics | T009 | Open |
-| T011 | Execute held-out evaluation | Paired scores, uncertainty, planned sensitivities and complete provenance | T010 | **Primary executed (D065, C043):** M2 − M0 = −0.121 [−1.84, 2.20], inconclusive; extension exploratory (C044). Declared strata/sensitivities/secondary diagnostics still to compute |
-| T012 | Independent scientific review | Reproduction/criticism with concrete evidence; findings resolved or reported | T011 | **Next (Codex):** review the D065 protected run |
-| T013 | Write manuscript and release artifacts | Every result traceable to analysis; scope and citations verified | T012 | Open |
+| T010 | Fit earlier-only calibration rule | Reproducible development outputs; bound/uncertainty diagnostics | T009 | **Frozen and verified (D064–D066):** 206 core development planets; saved parameters and forecasts reproduce |
+| T011 | Execute held-out evaluation | Paired scores, uncertainty, planned sensitivities and complete provenance | T010 | **Complete (D065–D067, C043–C047):** primary −0.121 [−1.84, 2.20], inconclusive; exploratory extension; declared strata, closed sensitivity comparisons and influence/TTV diagnostics saved. Secondary intervals conditional only |
+| T012 | Independent scientific review | Reproduction/criticism with concrete evidence; findings resolved or reported | T011 | **D065 review complete (D066/C045):** primary and complete rerun accepted; interpretation/effective-draw corrections recorded. Claude next reviews post-unblinding secondary implementation |
+| T013 | Write manuscript and release artifacts | Every result traceable to analysis; scope and citations verified | T012 | **Next writing tranche:** integrate audited protected results into article and two-page brief; current guide/report/ledger updated; no release requested |
 | T014 | Identifiable variance-components model on the development era | Outcome scale independently constrained or declared a sensitivity; shared ephemeris covariance specified; simulation checks separation of b and any extra variance before fitting | T005, D021–D024 | **Development model in place** (Claude, D026–D027): outcome scale a=1.09 as fixed sensitivity; two-stage planet-level scale mixture (b, s) with recovery simulation on the real DRC design, `results/pilot_v1/variance_components/`. **Production repaired (D036):** continuous posterior summaries and 400 host resamples retained in `variance_components_v2/`. Chronological refit instability prevents selecting the span correction (D037) |
 | T015 | Forecast-independent TESS mid-time pipeline | Re-measures a sample of DRD 2022–2023 TESS mid-times from SPOC light curves with a broad timing prior; agreement and σ calibration documented; then frozen | T003 | **Amended SPOC rule accepted (D062, C038–C040):** actual support on frozen injections passes all eight criteria; manifest-to-decision path verifies and access guard is repaired. Conditional development evidence, not a new replication. Multi-planet identification/full-support fitting remain declared limits; no freeze or protected access |
 | T016 | Untouched DRD-era outcome inventory (metadata only) | List TESS sectors from 2025-11-19 and the DRD planets they cover, without fitting any light curve | D018 | **Metadata correction complete (D043/D045):** public product/date inventory in `results/sprint1/inventory/`; 184 core+extension planets, 3399 opportunities after origin flags, no protected FITS opened. Actual cadence capture and outcome recovery remain unverified |
 
 ## Claims
+
+- 2026-11-09 Codex: **D065 independent review and declared secondaries complete (D066–D067)**
+  from `3aa33e8`. Owns new audit/secondary scripts and outputs, audit/report
+  corrections and coordination records. Read-only delegates audit numerics,
+  execution/provenance, and the pre-unblinding secondary specification. Preserve
+  frozen code/config/manifests and original protected results. Reuse authorised
+  saved timing tables/grids; no new sample, model search or primary-verdict
+  revision through secondaries. Stop when the audit and faithful declared
+  secondaries are complete, with underspecified items explicitly identified.
+  Audit `98d5d04`, secondaries `f679e80`; primary inconclusive verdict upheld.
+  Three delegates performed bounded independent work and cross-review; parent
+  checked scenario aggregation/conditional intervals and Gaussian scores.
+  Frozen manifest unchanged; 115 tests run, one expected local skip. Handoff:
+  Claude checks secondary implementation and integrates article/brief.
 
 - 2026-11-08 Codex: **D063 independent verification complete (D064)**
   from `ae82aea`; repairs `bc85326`, proposal/evidence `db5e959`. One read-only

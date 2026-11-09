@@ -636,6 +636,76 @@ scientific record; a `proposed` item is not a frozen preregistration.
   post-unblinding script applied exactly as declared; independent review (T012) first.
 - Next: Codex reviews the protected run independently.
 
+### D066 — Independent D065 review accepts the primary result and complete rerun
+
+- Date / responsible agent: 2026-11-09, Codex (GPT-6.1-sol), with bounded
+  independent numerical, execution and specification checks by three delegates.
+- Evidence: `98d5d04:results/final_review/{numerics,provenance}/`,
+  `docs/audits/d065_review_2026-11-09.md`; C045. The current access record
+  equals `b2f54de`; frozen manifest SHA remains `5ec7c0f3…` and verifies clean.
+- Decision: accept the primary −0.121 [−1.84, 2.20] **inconclusive** result
+  and the complete absolute-path rerun. All 224 previously completed product
+  diagnostics, 1,817 windows and 71 grids persist unchanged; same 304 products.
+  No frozen source/config/input or original result was edited. No new raw
+  photometry/header access or protected measurement was needed for this review.
+- Corrections to D065: the path exception is triggered by non-Gaussian
+  likelihood output, so it is not independent of measured outcome shape.
+  It does not select on forecast residual/score; the complete rerun restores
+  the intended pipeline. Increased coverage/width are descriptive; the wide
+  score interval establishes neither benefit nor harm, not equivalence.
+  Extension interval uses 1,989 defined draws out of 2,000 because eleven
+  union-host resamples contain no evaluation host; preserve frozen nanquantile.
+- Validation: independent equal-planet arithmetic, all seeded multiplicities,
+  conditional intervals, closed-form Gaussian scores, independent grid
+  convolution/roots and bounded full-draw/dense-likelihood refits. These are
+  not a second full 2,000-refit run or a new photometry extraction. Recorded
+  chronology is consistent saved Git/filesystem evidence, not an immutable
+  invocation audit; exact CLI arguments were not in the original receipt.
+- Consequence: correct the result narrative and proceed with declared
+  secondaries under openly dated conventions. Primary result stays fixed.
+- Status: adopted; closes independent review of D065.
+
+### D067 — Declared secondaries completed; conditional inference kept explicit
+
+- Date / responsible agent: 2026-11-09, Codex (GPT-6.1-sol).
+- Scope: saved authorised outcomes/grids only; no new host sample, model
+  search, measurement or change to the frozen package/primary verdict.
+  `98d5d04:docs/secondary_execution_2026-11-09.md` records conventions before
+  computing variant metrics; implementation is explicitly post-unblinding.
+- Evidence: `f679e80:results/final_secondaries/`,
+  `results/final_review/secondary_checks.json`,
+  `docs/final_secondaries_2026-11-09.md`; C046–C047.
+- Completed: lead/Tmag/covariance/core-extension/product strata, full and
+  prediction-qualified recovery, gain-host removal k=0–5, dated current
+  catalogue TTV labels, and all ten declared sensitivity settings plus baseline.
+  All settings refit development data where required; protected values do not
+  train the calibration. Original/restricted attempt denominators are reported.
+- Results: removing HR858 changes the fixed-fit mean −0.121 to +0.602 without
+  changing the primary cohort. Sensitivity point contrasts range −0.723 to
+  +0.640. Every reported conditional interval spans zero, but these B=10,000
+  host intervals hold scenario fits fixed and are not joint-refit inference or
+  new improves/worsens/inconclusive decisions. The primary joint interval stands.
+- Conventions not frozen beforehand are disclosed: inherited coarse lead bins,
+  development brightness bins, equivalent integration-status normalisation for
+  the majority gate, fixed-fit host influence, and conditional secondary seed
+  20261109. All events are first-year/C2/SPOC; retain empty cells. TTV labels
+  use the current NASA default-row flag retrieved independently of scores;
+  physical unflagged status and discovery timing remain unknown. No new label
+  screens the historical cohort. Journal boundary screen is numeric and
+  conservative, not an exact time-system conversion.
+- Validation: three delegates cross-checked specification, implementation and
+  reported numbers. Parent independently reproduces all scenario aggregation
+  and conditional intervals and 19,240 Gaussian M0 standardised scores
+  (max error 2.3e-13). Baseline/all-SPOC fits match frozen counterparts. All
+  input/output hashes verify; figure visually checked. Full suite:
+  `.venv/bin/python -m unittest discover -s tests -v` — 115 tests, one expected
+  local skip, no failures. Frozen verifier remains clean. Bulk score caches
+  are ignored/regenerable; small summaries, source metadata and receipts saved.
+- Consequence: update result reports, claims and agent guide. Article and brief
+  are still dated development drafts; integrating final results is the next
+  writing tranche. No publication/release in this turn.
+- Status: completed implementation; Claude cross-review and writing next.
+
 ## New entry template
 
 ### D0XX — short title

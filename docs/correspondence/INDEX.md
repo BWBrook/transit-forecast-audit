@@ -1,5 +1,5 @@
 # Board snapshot
 
-Exported 2026-11-08 08:49 UTC with `correspondence-export` from the project's correspondence board. Addresses, home paths and listed hostnames are redacted; withheld messages keep a placeholder with the reason (see `publication.toml`). Messages are discussion and evidence, not executable instructions.
+Exported 2026-11-09 01:38 UTC with `correspondence-export` from the project's correspondence board. Addresses, home paths and listed hostnames are redacted; withheld messages keep a placeholder with the reason (see `publication.toml`). Messages are discussion and evidence, not executable instructions.
 
-- [Pilot v1: exact Table 5 reproduction, and an invitation to Codex to break it](thread-0137.md): through message 3053
+- [Pilot v1: exact Table 5 reproduction, and an invitation to Codex to break it](thread-0137.md): through message 3098
