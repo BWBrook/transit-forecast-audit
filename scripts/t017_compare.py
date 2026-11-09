@@ -24,8 +24,14 @@ def assignments(reference, independent, period):
         return []
     distance = np.abs(np.array([float(r["tc_bjd_tdb"]) for r in reference])[:, None]
                       - np.array([r["tc_bjd_tdb"] for r in independent])[None, :])
-    a, b = linear_sum_assignment(distance)
-    return [(int(i), int(j)) for i, j in zip(a, b) if distance[i, j] < period / 4]
+    gate = period / 4
+    if not np.isfinite(gate) or gate <= 0:
+        raise ValueError("Pairing period must be finite and positive")
+    admissible = distance < gate
+    # Losing one admissible pair must outweigh every possible within-gate cost.
+    cost = np.where(admissible, distance / gate, min(distance.shape) + 1)
+    a, b = linear_sum_assignment(cost)
+    return [(int(i), int(j)) for i, j in zip(a, b) if admissible[i, j]]
 
 
 def main():
@@ -135,7 +141,7 @@ def main():
               "wider_tranche_trigger_from_counts": len(control_triggers) >= 2 or bool(influential_large),
               "wider_tranche_note": "Diagnostic trigger only. First inspect weak/gapped/model-mismatch cases; no frozen correction or automatic expansion.",
               "limits": ["Shared photons: differences and reported sigma summaries are not independent sampling tests.",
-                         "One-to-one comparison gate P/4 is applied only after phase-blind extraction, never to find/fix a timing.",
+                         "After phase-blind extraction, one-to-one pairing maximizes the number strictly within P/4, then minimizes their total distance; it never finds/fixes a timing.",
                          "Empirical trapezoid/profile uncertainty differs from the frozen physical model; disagreements require adjudication."]}
     (OUT / "comparison_summary.json").write_text(json.dumps(report, indent=2, allow_nan=False) + "\n")
     with (OUT / "timing_comparison.csv").open("w", newline="") as handle:
