@@ -14,7 +14,8 @@ Step 1, the key questions:
 
 Step 2: [One-page paper](05_one_page_paper.md). Step 3a:
 [Section abstracts, at most 300 words each](09_section_abstracts.md), with
-[Codex's review](10_step3a_review.md). Later steps await Barry's description;
+[Codex's review](10_step3a_review.md). Step 3b:
+[Paragraph abstracts](11_paragraph_abstracts.md). Later steps await Barry's description;
 no displays or manuscript revisions are started here.
 
 Codex's 10 November review (draft proposals, discussed in thread 156):
