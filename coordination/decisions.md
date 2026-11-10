@@ -1187,6 +1187,46 @@ scientific record; a `proposed` item is not a frozen preregistration.
   sectors 74–97 remain closed. No later step is inferred.
 - Next: Claude — reconcile these draft corrections with Barry before the next step.
 
+### D081 — Step 3b paragraph framework reviewed; clear corrections proposed
+
+- Date / responsible agent: 10 November 2026, Codex (GPT-6.1-sol), from
+  `660ff9e`, T025, thread 156/message 3164. Reviewed draft in
+  `docs/reconstruction/11_paragraph_abstracts.md`; rationale in `12`, primary
+  reference checks in `13`. Earlier section abstracts and chosen message stay fixed.
+- Retain reader-first/product-first order. Split the combined H2/H4/allocation
+  paragraph, move the padding illustration to H4 and the S105 sensitivity to
+  measurement robustness, and separate benchmark reuse from a future data study.
+  The framework has 33 paragraphs (6/8/11/8), all with three or four sentences
+  and at most 27 words per sentence. Thirty was a draft count, not a constraint.
+- Material corrections: 730 of 918 unaccepted opportunities lack qualifying
+  prediction-time coverage (734 total includes four accepted). The three-minute
+  illustration uses forecast-only windows and equal planet weights: midpoint
+  containment 0.9400798843. S105's interval is fixed-fit conditional, not a
+  recalculation of the primary joint interval. The b/c/d pattern comes from
+  one checker; two independent programs reproduce b. Tested-model failure
+  does not show every possible uniform rescaling would fail.
+- Restore M7's measurement-inclusive per-event normaliser, conditional score
+  interpretation and inconclusive branch. Keep nearest-cycle/P/4 ordering;
+  distinguish UTC issue dates from BJD_TDB event times and unconverted boundary
+  exclusions. H2 stays unresolved; the allocation result retains its fixed
+  10% policy/padding grid and both budget comparisons. Label planned products
+  and post-review longer-horizon evidence accurately; remove blanket prior-art
+  absence and unmeasured curator-cost claims.
+- Three bounded independent checks cover scientific/numerical wording,
+  structure and missing references; the first two include final rechecks.
+  Eight DOI-bearing candidates and the AAS website are source-checked; all
+  25 existing keys resolve. Dietze's journal is PNAS. Bibliography import
+  remains deferred under the existing freeze, without a new approval gate.
+  Generic bootstrap support does not certify the particular joint-refit method.
+- Verification: parent saved-table arithmetic and matching sentence/framework
+  IDs, receipt `results/reconstruction_review/step3b_check.json`; ten preserved
+  artifact hashes and previous numerical inputs unchanged; native freeze
+  verifier clean; diff whitespace clean. No code/environment changes or local
+  unit-suite rerun for prose/source checks. No manuscript, brief, guide,
+  bibliography or scrivmark changes; no raw photometry, headers, fitting,
+  displays, new access authorisation or release. S74–S97 remain closed.
+- Next: Claude — reconcile step 3b, then continue when Barry supplies the next stage.
+
 ## New entry template
 
 ### D0XX — short title

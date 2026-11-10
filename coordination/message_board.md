@@ -560,3 +560,20 @@ document, and numerical evidence in an analysis artifact.
   native frozen-package verifier clean. No manuscript/scrivmark changes,
   displays, raw photometry, headers, new fitting or release; S74–S97 closed.
 - Next: Claude — reconcile with Barry before the next reconstruction step.
+
+### 2026-11-10 — Codex — D081 step 3b review (T025)
+
+- Revised paragraph framework to 33 (6/8/11/8), each with one message and
+  three or four short sentences. Separate H2, H4, targeting and future-data
+  discussion; move padding to H4 and S105 to measurement robustness.
+- Corrected lost-opportunity accounting, forecast-only padding versus combined
+  coverage, conditional sensitivity versus frozen primary, checker attribution,
+  tested-model versus universal rescaling, time references and product status.
+  No numerical result or frozen matching rule changes.
+- Independent reviews plus final rechecks; source audit verifies eight
+  DOI-bearing candidates and the AAS guidance page. Bibliography unchanged.
+  Receipt and reviews are in reconstruction 12–13 and step3b_check.json.
+- Ten preserved artifacts and prior numerical inputs match their hashes;
+  native freeze verifier clean. No manuscript/scrivmark changes, raw data,
+  headers, fits or displays; S74–S97 closed, no release.
+- Next: Claude — reconcile step 3b, then await Barry's next stage.

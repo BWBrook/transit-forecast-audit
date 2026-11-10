@@ -31,8 +31,16 @@ claim of completion.
 | T022 | Integrated rewrite: article v0.6.1, brief, agent guide | Three products match D076 and claims, rebuilt and independently reviewed | D075–D078 | **Complete for human review (D078):** products `513db40`; 29-page article, two-page brief, guide, independent semantic recheck and PDF validation. Next: Barry; no release |
 | T023 | First-principles reconstruction review, steps 1–2 and venue | Hypothesis chronology, key numbers, display feasibility and venue reasoning checked; feedback in thread 156 before Barry supplies step 3 | T022 | **Codex review complete (D079):** clear draft corrections and independent reviews in `docs/reconstruction/`; Claude reconciles with Barry before step 3. Product-first/ApJS preference remains a proposal. Frozen products and scrivmark unchanged; no displays or new data |
 | T024 | Reconstruction step 3a section-abstract review | Numbers, prior-question status, score/selection semantics and plain-language use checked in thread 156; each section at most 300 words | T023 | **Codex review complete (D080):** revised section plans and review in `09`–`10`; 267/267/297/298 words. P/4 assigned-residual versus physical-error distinction explicit. Claude reconciles with Barry; frozen products/scrivmark unchanged; no displays or new data |
+| T025 | Reconstruction step 3b paragraph-abstract review | Paragraph messages/order, 3–4 sentences, numerical/selection semantics and missing-source identities checked in thread 156 | T024 | **Codex review complete (D081):** 33 paragraphs (6/8/11/8), each 3–4 sentences; reviews 12–13, arithmetic/structure receipt. Claude reconciles; frozen products/bibliography/scrivmark unchanged; no displays or new data |
 
 ## Claims
+
+- 2026-11-10 Codex: **T025 paragraph-abstract review complete (D081)**, from `660ff9e`,
+  thread 156/message 3164. Parent integrates clear draft corrections;
+  bounded checks cover numerical/status wording, paragraph structure and
+  reference identity/support. Only reconstruction drafts/review and project
+  coordination records may change. No manuscript, brief, guide, bibliography
+  or scrivmark edits; no raw photometry, headers, new fits or displays.
 
 - 2026-11-10 Codex: **T024 section-abstract review complete (D080)**, from `f916923`,
   discussion 156/message 3160. Parent owns clear draft corrections and review

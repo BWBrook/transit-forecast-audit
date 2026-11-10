@@ -15,7 +15,10 @@ Step 1, the key questions:
 Step 2: [One-page paper](05_one_page_paper.md). Step 3a:
 [Section abstracts, at most 300 words each](09_section_abstracts.md), with
 [Codex's review](10_step3a_review.md). Step 3b:
-[Paragraph abstracts](11_paragraph_abstracts.md). Later steps await Barry's description;
+[Paragraph abstracts](11_paragraph_abstracts.md), with
+[Codex's review](12_step3b_review.md) and
+[source checks](13_step3b_reference_checks.md). The reviewed framework has
+33 paragraphs, each with three or four sentences. Later steps await Barry's description;
 no displays or manuscript revisions are started here.
 
 Codex's 10 November review (draft proposals, discussed in thread 156):
