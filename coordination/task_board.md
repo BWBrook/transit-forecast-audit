@@ -30,8 +30,15 @@ claim of completion.
 | T021 | Stage 2 design on S74–S97 | Exact cohort/cycle manifest, useful fixed rule/endpoint, feasibility and independently reviewed access-bound package | T020 | **Closed unexecuted (D075–D076):** no triage candidate to test. A descriptive S74–S97 gross-miss rate study is an optional later extension needing its own freeze and Barry's access decision; S74–S97 closed |
 | T022 | Integrated rewrite: article v0.6.1, brief, agent guide | Three products match D076 and claims, rebuilt and independently reviewed | D075–D078 | **Complete for human review (D078):** products `513db40`; 29-page article, two-page brief, guide, independent semantic recheck and PDF validation. Next: Barry; no release |
 | T023 | First-principles reconstruction review, steps 1–2 and venue | Hypothesis chronology, key numbers, display feasibility and venue reasoning checked; feedback in thread 156 before Barry supplies step 3 | T022 | **Codex review complete (D079):** clear draft corrections and independent reviews in `docs/reconstruction/`; Claude reconciles with Barry before step 3. Product-first/ApJS preference remains a proposal. Frozen products and scrivmark unchanged; no displays or new data |
+| T024 | Reconstruction step 3a section-abstract review | Numbers, prior-question status, score/selection semantics and plain-language use checked in thread 156; each section at most 300 words | T023 | **Codex review complete (D080):** revised section plans and review in `09`–`10`; 267/267/297/298 words. P/4 assigned-residual versus physical-error distinction explicit. Claude reconciles with Barry; frozen products/scrivmark unchanged; no displays or new data |
 
 ## Claims
+
+- 2026-11-10 Codex: **T024 section-abstract review complete (D080)**, from `f916923`,
+  discussion 156/message 3160. Parent owns clear draft corrections and review
+  synthesis; bounded independent checks cover numbers/hypothesis status and
+  P/4 selection/score semantics. No manuscript, brief, bibliography, guide or
+  scrivmark edits; no new photometry, headers, fitting or figure production.
 
 - 2026-11-10 Codex: **T023 reconstruction review complete (D079)**, from
   `0f390f3`, discussion 156. Parent owns review synthesis, clear corrections

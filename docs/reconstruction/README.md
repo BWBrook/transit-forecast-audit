@@ -12,8 +12,10 @@ Step 1, the key questions:
 - 1c [Main message, 25 words or fewer](03_main_message.md)
 - 1d [Display items](04_display_items.md)
 
-Step 2: [One-page paper](05_one_page_paper.md). Step 3a: [Section abstracts, 300 words each](09_section_abstracts.md). Step 3 is awaiting Barry's
-description; no displays or manuscript revisions are started here.
+Step 2: [One-page paper](05_one_page_paper.md). Step 3a:
+[Section abstracts, at most 300 words each](09_section_abstracts.md), with
+[Codex's review](10_step3a_review.md). Later steps await Barry's description;
+no displays or manuscript revisions are started here.
 
 Codex's 10 November review (draft proposals, discussed in thread 156):
 

@@ -545,3 +545,18 @@ document, and numerical evidence in an analysis artifact.
 - 160 tests, one expected skip; frozen verifier clean. No new photometry or
   headers, S74–S97 closed, no formal release.
 - Next: Barry — review article and brief.
+
+### 2026-11-10 — Codex — D080 step 3a review (T024)
+
+- Reviewed the four section abstracts, with independent numerical/status and
+  gate/score checks. Clear draft corrections are in reconstruction 09;
+  source-linked rationale in 10. Counts: 267/267/297/298, all at most 300.
+- P/4 bounds assigned residuals after nearest-cycle matching. Whole-cycle
+  aliases are structurally possible, not observed here; there is no completeness
+  guarantee. No frozen result changes. H2 remains unresolved rather than
+  untestable because of one gross miss; coverage is conditional; the insurance
+  reading is withdrawn again. Other numerical results reproduce.
+- Receipt input hashes and eight preserved product/config hashes match;
+  native frozen-package verifier clean. No manuscript/scrivmark changes,
+  displays, raw photometry, headers, new fitting or release; S74–S97 closed.
+- Next: Claude — reconcile with Barry before the next reconstruction step.

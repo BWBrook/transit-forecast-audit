@@ -1151,6 +1151,42 @@ scientific record; a `proposed` item is not a frozen preregistration.
   S74–S97 remain closed; no release.
 - Next: Claude — reconcile these drafts with Barry before his step 3.
 
+### D080 — Step 3a section abstracts reviewed; matching limitation clarified
+
+- Date / responsible agent: 10 November 2026, Codex (GPT-6.1-sol), from
+  `f916923`, T024, thread 156/message 3160. Clear corrections in
+  `docs/reconstruction/09_section_abstracts.md`; rationale and sources in
+  `10_step3a_review.md`. These are draft section plans for reconciliation,
+  not manuscript edits or new scientific results.
+- Important qualification: P/4 bounds distance to the nearest assigned DRD
+  cycle, not necessarily the physical error of the same transit. A +0.9P
+  displacement can map to the next cycle with residual −0.1P if that intended
+  event and the other checks permit it. No observed alias is claimed; zero
+  `cycle_ambiguous` rows does not rule out such aliases. Matching/selection
+  provides no completeness guarantee. Frozen matches/results are unchanged.
+- Corrected H1 to conditional combined undercoverage, without a padding amount
+  or isolated cause; H2 to unresolved after unstable development transfer,
+  not untestable because of one gross miss; H4 distinguishes conditional
+  midpoint containment from operational/full-transit capture. H3 retains the
+  prespecified inconclusive joint-refit verdict and conditional score semantics.
+- Removed the withdrawn insurance reading; all 16 accepted HR858b timings
+  remain outside every model's 95% interval. Restricted the allocation claim
+  to the tested 10% policy/padding grid and both equal-budget comparators.
+  Corrected catalogue-defined host scope, injection point coverages versus
+  uncertainty intervals, and planned versus completed product status.
+- Verification: independent number/status and gate/score reviews plus final
+  semantic recheck; parent saved-table recomputation and code-level gate
+  counterexample. Receipt: `results/reconstruction_review/step3a_check.json`.
+  Counts 267/267/297/298 use conservative whitespace tokens including run-in
+  headings and bullet markers, excluding section titles and abstract labels.
+  Native freeze verifier has no mismatches; eight product/config hashes and
+  receipt input hashes unchanged; whitespace check clean. No code/environment
+  changes or local unit-suite rerun for draft edits.
+- Earlier reconstruction and Barry's chosen message are preserved. No raw
+  photometry/headers, fitting, displays, access authorisation or release;
+  sectors 74–97 remain closed. No later step is inferred.
+- Next: Claude — reconcile these draft corrections with Barry before the next step.
+
 ## New entry template
 
 ### D0XX — short title

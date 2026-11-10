@@ -1,0 +1,66 @@
+{
+  "review_only": true,
+  "source_commit_sha1": "f916923cf013decdfcbc3c16fcf32a034925b04c",
+  "accepted": 2185,
+  "accepted_planets": 151,
+  "intended": 3103,
+  "prediction_coverage_qualified": 2369,
+  "accepted_coverage_qualified": 2181,
+  "cycle_ambiguous_rows": 0,
+  "event_median_abs_error_min": 1.114775687456131,
+  "max_non_HR858_error_min": 26.298979595303535,
+  "HR858_max_error_min": 404.0422710031271,
+  "improved_planets": 40,
+  "worsened_planets": 111,
+  "tied_planets": 0,
+  "planet_balanced_coverage95": {
+    "M0": 0.9079364975831288,
+    "M2": 0.9757619919679327
+  },
+  "ratio_mean_width_M2_M0": 1.66645891999971,
+  "primary_point": -0.1213078045239569,
+  "joint_refit_ci95": [
+    -1.8397729107986793,
+    2.1956849634535907
+  ],
+  "HR858_covered95_by_method": {
+    "M0": 0.0,
+    "M1": 0.0,
+    "M2": 0.0,
+    "M3": 0.0
+  },
+  "gate_counterexample_period_units": {
+    "physical_displacement": 0.9,
+    "nearest_cycle": 1,
+    "assigned_residual": -0.1,
+    "passes_P_over_4": true,
+    "status": "structural possibility, not observed alias evidence"
+  },
+  "input_sha256": {
+    "results/final_primary/scores.csv": "3ba24636684e42d2d99dbbe68c336d2726aa702d70ea0ed7001005a7a223412c",
+    "results/final_primary/accepted_outcomes.csv": "2c2fa9559d24fd55ddb1890b2c8814a4ebb3f53a9dbabf934387341e46f8f62b",
+    "results/final_primary/accepted_forecasts.csv": "67c76e6432a1ce2b4b010c4f62daf6eba016451c9d5730fe80eaf3823e5f84ac",
+    "results/final_primary/terminal_ledger.csv.gz": "6a17c4646b42ec7f87af49cfc2f900ed1065c53bf4887f213f7ba65c9079c3f8",
+    "results/final_primary/evaluation_summary.json": "8deacf156f9693de3a5baf7100d507eac3c9eed0b1bd3f8545efd4831f344a91",
+    "configs/candidate_freeze.json": "9c17de62230add56f6f92246fe07d784f7ddd21071f01024c0a0853ef5a58cef",
+    "scripts/final_evaluation.py": "b1741ac387cf9d9a3f747b474c49b07281dfeff67a3dce7540c5394479aeda99",
+    "scripts/acceptance.py": "3d3ccfebccf6c249f7ed7d8dfaab288bd4a81afc9d2da36e435f596a0b988209"
+  },
+  "section_word_count_convention": "Whitespace tokens including run-in headings and bullet markers, excluding section title and Section abstract label.",
+  "section_word_counts": {
+    "1. Introduction": 267,
+    "2. Data and Methods": 267,
+    "3. Results": 297,
+    "4. Discussion": 298
+  },
+  "preserved_product_sha256": {
+    "manuscript/paper.md": "f61ce6a87ef1197530b132ca570def2733c39aa5dd11577e529608e4e5535a8d",
+    "docs/brief.md": "a80bf1aafff5e28a157b7b2010f82c173d5672837266ed74c51e7f551e353763",
+    "docs/brief.pdf": "bcc2e696c48731783b9c38fdcea8ec691722d19311324802bd5fa5ff8cd6ff46",
+    "docs/agent_guide.md": "b114aaf0d66173d2fa3af2e341b0844d9ea0ffb6c04775de6193ab3cf7c7ba88",
+    "references/references.bib": "fbe8f9892a8fcf98d4e549f0b95ed63969fec07ff372b5af7340a0af1b586cbe",
+    "references/references.csl.json": "e0c00de4745be4c8f9728671d624c21c0e3f7c53ac7ab2d7340fcbf7cc61605d",
+    "references/literature_evidence.json": "342bdc0c3cf8fe0f22936425becb40ffebd944723229f055373b7ea13b44fb2c",
+    "scrivmark.toml": "3d38952619e82c800813e9486a77007dcb516ac83486b3dd30cf05d6c37074f1"
+  }
+}
