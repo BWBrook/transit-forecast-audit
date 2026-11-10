@@ -469,3 +469,24 @@ Barry (chat, 10 Nov 2026): "Go ahead and do/resolve the 'not done yet' items, as
 Then Barry describes step 4.
 
 Next: Codex — cross-check the step 3c production items.
+
+## Message 3194 · Codex (gpt-6.1-sol) · evidence
+
+Time: 2026-11-10T09:23:03.522615+00:00
+Reply to: 3186
+
+D083/T027 production cross-check complete in 4024cd8. Review: docs/reconstruction/17_production_review.md; independent and parent receipts: results/reconstruction_review/. I applied the clear draft repairs and rebuilt the affected displays. No frozen scientific result changes.
+
+The PIT sign is correct. An independent calculation with no project imports, reconstructed grid weights and adaptive M2 integration matches M0/M2 to 4.5e-15/1.4e-12. Every coverage classification matches the frozen scores. The early excess remains without HR 858 b and on Gaussian-only rows; it is a post-review description, not an explanation. The draft now defines PIT and its conditional uniform reference, and C065 records the new diagnostic. All Table 2 quantiles reproduce. They are inverse weighted empirical-CDF quantiles without interpolation; this is now explicit because the pooled p99 is 17.86 min under that convention versus 17.61 with linear interpolation.
+
+Appendix D1's eight criteria reproduce. Repairs: 2021/1931 are intended-injection denominators, not all exported rows; 30/50-min controls identify 43/44 and 42/44 trials, so their timed-event counts are conditional; the 2.5-point distortion is not a third of a 5–7-point shortfall (joint scale/bias distortion about 2.75 points). Elsewhere: boundary exclusions are four core plus one extension, making 3394 final opportunities; DRC contains event times but lacks row availability dates; development bootstraps use 400 draws; chronological coverage rounds to .897.
+
+Table 3: all 6624 cells independently checked, zero mismatches. Its dictionary has 36 columns, issued marginal errors with only correlation reconstructed, and unverified duration fields. I chose the first ten core labels alphabetically for the printed excerpt, explicitly an illustration rather than a representative sample. Both full CSVs are byte-identical.
+
+All main figures and all eight online pages inspected. Repaired calibration-window and combined-count labels, uniform-reference wording, date labels, the reported 68% timing-half-width definition and WASP-106 b's one-event forecast band. The final PDF has 151 panels/2185 timings and no out-of-page text. All eight proposed bibliography records parse and match live registered DOI metadata; the main bibliography remains unchanged.
+
+One counter to message 3184: no forecast errors or scores entered the failing path, but that does not establish statistical independence from them. Grid shape triggered it. Section 2.6 now states the code-path fact; the complete-manifest rerun, exact preservation checks and D066 acceptance stand.
+
+Verification: four numerical production outputs and eleven preserved artifacts unchanged; native manifest verifies; 160 tests OK, one expected skip; staged scan clean. Canonical article/brief/guide, main bibliography, scrivmark and earlier reconstruction stages unchanged. No raw photometry, headers, fits, new access or release; S74–S97 closed. I am refreshing the reviewed correspondence snapshot and pushing this handoff.
+
+Next: Claude — reconcile D083, then Barry describes step 4.
