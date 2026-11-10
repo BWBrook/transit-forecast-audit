@@ -431,3 +431,41 @@ Step 3c reconciled at `5ae93bc`. D082's corrections are all accepted: Track R's 
 No disagreements are left open. Displays, Table 2's percentiles, the Fig. 3a choice and appendix assembly remain pending as you listed.
 
 Next: Barry — next reconstruction stage.
+
+## Message 3186 · Claude (claude-opus-5-5) · evidence
+
+Time: 2026-11-10T07:18:47.551430+00:00
+Reply to: 3184
+
+The step 3c "not done yet" items are drafted (`05ae64f`).
+
+Barry (chat, 10 Nov 2026): "Go ahead and do/resolve the 'not done yet' items, as best you can (in the spirit that we're still drafting, and Codex will cross-check), before we move to step 4!"
+
+**Built:**
+1. **Fig. 3a choice: exact predictive PIT.** `scripts/reconstruction_pit_table2.py` computes the PIT from saved forecasts and benchmark likelihood grids, using the adapter's grid convention and 384-node quadrature. It reproduces planet-weighted 95% coverage exactly: M0 0.90794, M2 0.97576.
+   - **New descriptive finding, in §3.4.** M0's misses are lopsided: planet-weighted tail mass is 0.064 below 0.025 (early transits) and 0.028 above 0.975. HR 858 b supplies 0.66 points of the early share. I report this as description, without interpretation. Please check whether a known sign convention or bias could explain it, given the injections' late bias of +0.07 SD, which runs the other way.
+2. **Table 2 percentiles** of absolute error: pooled p95/p99 are 6.36/17.86 min; equal-planet p95/p99 are 9.04/18.74 min. Medians reproduce at 1.1148/1.3149. Source: `results/reconstruction_displays/pit_table2.json`.
+3. **Figs 1–4 and the online figure set.** Built by a Claude Sonnet 5.5 subagent; script `scripts/build_reconstruction_figures.py`, plus `build_online_figure_set.py` for an 8-page PDF of O–C panels for all 151 planets. I viewed every figure and corrected Fig. 2c's 2026 label, which had read "development"; it now reads "held-out for DRD, inspected after the test". Fig. 4a is re-plotted from `hr858/summary.json` without the old frozen-b overlay. Fig. 4b shows the forecast-only band over the 2026 transits only. The receipt records every annotated number.
+   - Run the online script after the main one, because the main one rewrites the receipt.
+4. **Table 3.** Built by a Sonnet subagent with `scripts/build_table3.py`: 156 core rows, 28 extension rows, 35 columns, plus a dictionary and receipt.
+   - I independently recomputed its totals: 3,103 intended, 2,185 accepted, 2,369 coverage-qualified, mean coverage 0.90794/0.97576, and HR 858 b at 24/16.
+   - TTV literature status is `not_searched` for all planets except HR 858 b, and is never a negative.
+   - "New in DRD" rests on name matching, and the dictionary says so.
+   - The printed excerpt is declared extreme-ordered (five largest and five smallest maxima). If you prefer a representative rule, say so.
+5. **Appendices A–H** in `docs/reconstruction/16_appendices.md`, about 4,600 words, drafted by a Sonnet subagent from v0.6.1 with your file 12 and 15 corrections applied.
+   - My edits: I corrected the B.4 likelihood convention against `grid_quantiles`. The grid is stored as true minus reported time, and its reflected shape gives the reported time's distribution about the true one.
+   - I also removed a process remark from A.1 and an odd clause from D.3.
+   - **Not traced to claim text:** D1's per-criterion values (z-RMS, the Tmag endpoints, the control ratios) come from `results/prefreeze/injection_evidence_t015v3a.json`, cited by C038, and its ledger totals (2,021/1,931) are the subagent's sums of status counts. E1/E2 and D.3 trace to the v0.6.1 tables. Please check these first.
+6. **References.** `docs/reconstruction/references_additions.bib` holds 8 entries from doi.org BibTeX content negotiation; Gardner and Tinetti are abbreviated with "others", as in the existing bib. `references/references.bib` is untouched, to be merged after Barry's round.
+7. **Main-text correction.** E.2 shows that the "more than twofold" difference I cited compares mixture scales (DRB vs DRC, 2.3×) and single-scale fits across designs (2.7×), not a single scale across releases. §2.2 now says "fitted scales were unstable in development data, differing more than twofold between releases and between designs".
+
+**Please cross-check:**
+- every appendix number against the ledger and evidence files;
+- the PIT script (sign convention, grid reflection, M2 mixture);
+- the Table 3 schema and nulls;
+- whether the figures match their captions;
+- the bib entries against Crossref.
+
+Then Barry describes step 4.
+
+Next: Codex — cross-check the step 3c production items.
