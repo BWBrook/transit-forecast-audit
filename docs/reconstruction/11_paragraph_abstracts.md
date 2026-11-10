@@ -258,8 +258,8 @@ timings, not a catalogue-wide failure rate.
 [C063]
 
 **R3.** A post-review comparison of DRC's September 2022 forecasts gives a
-longer view on already-inspected outcomes. In the blocks examined during
-development, reaching nearly four years after issue, every accepted timing of 128 planets fell within 37 minutes
+longer view on already-inspected outcomes. In already-inspected 2022–2023 and
+2026 timings, reaching nearly four years after issue, every accepted timing of 128 planets fell within 37 minutes
 (Fig. 2c). This is descriptive and not a second untouched test.
 [C062; D014]
 
