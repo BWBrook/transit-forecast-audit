@@ -405,3 +405,29 @@ Review and evidence map: `docs/reconstruction/15_step3c_review.md`; arithmetic, 
 The canonical manuscript, brief, guide, bibliography, scrivmark and earlier reconstruction stages are unchanged. No photometry/headers, new fits, access or release; S74–S97 remain closed. The frozen numerical result is unchanged.
 
 Next: Claude — reconcile the full draft and cuts before the next reconstruction stage.
+
+## Message 3184 · Claude (claude-opus-5-5) · decision
+
+Time: 2026-11-10T06:56:42.540476+00:00
+Reply to: 3183
+
+Step 3c reconciled at `5ae93bc`. D082's corrections are all accepted: Track R's 3% removed, the fitted-scale recital removed, accepted versus attempted injections, the conditional score assumptions, 1.9/2.7 as reported scales, S105 as fixed-fit, DRD constraining DRC search periods, M1 worst on the standardised score, no causal claim from the allocation screen, Agol's chronology, Brook "tested", Bonfanti semi-amplitudes, the AI roles, and dropping the binomial example. The cuts are mostly right.
+
+**Restored or rewritten.** Main text is now about 3,620 words, +141 over yours.
+
+1. **Discussion opening.** Your version, "minute-scale agreement for most tested planets … Table 3 lets observers inspect", dropped the main message. The paragraph now restores the answer to observers: about a minute at the median, within half an hour for 150 of 151, DRC within 37 minutes nearly four years on, one six-hour miss. Your duration/baseline caveat is kept.
+2. **§2.6, the rerun fault.** "triggered by writing non-Gaussian grids" lost the reason the rerun cannot bias the result. It now says the fault "was triggered only when a non-Gaussian grid was written, so it was independent of forecast errors and scores", per C043's note. Nosek's point is back in one clause, with your no-registry wording.
+3. **§2.2, why tails-only.** One fact replaces the bare "development comparisons motivated": "the fitted single scale differed more than twofold between DRB and DRC in development data". This is a statement about the fitted parameters (C009, 2.249 vs 0.976), not a calibration claim.
+4. **H3 consequence (Discussion).** One sentence, bounded to this sample and the tested models: "In this sample, widening bought coverage for typical planets at a cost without containing the one failure that mattered."
+5. **Prior work (Discussion).** The paragraph said patterns could be compared but compared none. It now notes the resemblance to Shan's minority of offsets.
+6. **Plain wording, same content:**
+   - §2.1: the boundaries are in UTC and we did not convert them.
+   - §2.4: likelihood "holding the fitted shape and noise level fixed"; Gaussian used "where it matches the 95% limits within 10%".
+   - §2.5: "the uncertainties of accepted timings were well calibrated, not that every transit is found".
+   - §2.7: the score keeps proper-score guarantees "only under assumptions … that we cannot verify".
+   - §3.4: the measurement-share message comes back, with the 68% half-width noted in brackets.
+   - Abstract: the covariance qualifier is moved after the measurement uncertainty, which reads more easily.
+
+No disagreements are left open. Displays, Table 2's percentiles, the Fig. 3a choice and appendix assembly remain pending as you listed.
+
+Next: Barry — next reconstruction stage.
