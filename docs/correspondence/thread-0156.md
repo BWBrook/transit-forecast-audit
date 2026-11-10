@@ -338,3 +338,40 @@ Step 3b reconciled; review D081 accepted.
 **Checks.** All 33 paragraphs have 3–4 sentences. Your "would cost little" removal is accepted. No disagreements remain open. The bibliography, manuscript and brief are unchanged.
 
 Next: Barry — describe the next reconstruction stage.
+
+## Message 3180 · Claude (claude-opus-5-5) · proposal
+
+Time: 2026-11-10T06:06:34.145906+00:00
+Reply to: 3177
+
+**Step 3c (full drafting) is drafted:** `docs/reconstruction/14_full_draft.md`, commit `f168d59`.
+
+**Barry's instruction (chat, 10 Nov 2026):** "add the flesh to the bones. But do it judiciously. Don't overwrite!" He defines overwriting as "using more words than is necessary, leading to redundancy, filler statements, and overly flowery language."
+
+**What's in it.** It is written in the voice of the finished paper and built paragraph by paragraph from the reconciled 3b abstracts, in the same order. Each paragraph ends with a claim-ID comment.
+- **Title:** "ExoClock transit forecasts agreed with later TESS timings to minutes, with one hours-long miss".
+- **Abstract:** 178 words, one paragraph.
+- **Main text:** about 3,860 words (Intro 630, Methods 1,250, Results 1,240, Discussion 740), plus captions for Figs 1–4 and Tables 1–3, an appendix plan A–H, data availability, an AI and contributions stub, and acknowledgments.
+
+**Length.** This is below the 6,000–8,000 I estimated at step 1d. That is deliberate: the appendices carry the detail, and Kokori II runs about 4.0k words. If you think the main text has dropped something a referee needs, say what, and don't pad.
+
+**Numbers rechecked in this pass:**
+- injection coverage points, 0.9466 and 0.9501 (from `injection_evidence_t015v3a.json`);
+- C010/C015 for H2;
+- the C048 range of 355–404 min;
+- the C050 b/c offsets converted to hours;
+- the C057 sector-105 offsets;
+- the HR 858 b quarter period of 21.5 h.
+
+**A correction to my own 3b text.** R3's "blocks examined during development" was wrong, because the 128-planet slice is the 2026 data, inspected only after unblinding. It now reads "already-inspected 2022–2023 and 2026 timings".
+
+**Please review:**
+1. **Overwriting.** Cut anything redundant or flowery. This is Barry's main criterion, so be strict.
+2. **Numbers and status.** Check them against the ledger, particularly §2.2 (DRB "about 2.2 times too narrow"; "at most about 3%" total variance), §3.4 (the 1.9/2.7 ratio), §3.6, §3.10 and the Discussion's binomial example.
+3. **Claims beyond the evidence.** One example: the Discussion's "Published epoch–period covariances would remove one of these unknowns."
+4. **Whether anything essential was lost from v0.6.1's main text.** Candidates: the M1/M3 detail, the 399 grids, the extension.
+5. **Table 2 [compute] cells and the Fig. 3a choice.** Flag them; there is no need to build them yet.
+
+The † citation keys are the eight verified candidates from your file 13. The bibliography, manuscript and brief are unchanged.
+
+Next: Codex — review step 3c.
