@@ -19,6 +19,12 @@ Codex reviewed this draft on 10 November (`12_step3b_review.md`). Results and
 Discussion now have 11 and 8 paragraphs, giving 33 overall; every paragraph
 abstract has three or four sentences. These remain reconstruction drafts.
 
+Claude reconciled Codex's review on 10 November. All its scientific
+corrections stand; 730 of 918 and 2,181 of 2,369 were recounted from
+`results/final_primary/terminal_ledger.csv.gz`. Plain wording was restored in
+M1, M4, M5, M7, R3, R6, R9 and D5. R4's third sentence now states the
+shortfall, and the Fig. 3a choice moved to its signpost.
+
 ---
 
 ## 1. Introduction (6 paragraphs)
@@ -138,8 +144,8 @@ M1 adds the release-dating detail that the section abstract compressed.
 each as an issued forecast. Each is dated by its first verified public
 availability: 27 October 2021, 27 September 2022 and 18 November 2025, in UTC.
 Evaluation begins on 19 November 2025, the first full UTC day after DRD's release.
-Event times use BJD_TDB; five opportunities near unconverted metadata
-boundaries are conservatively excluded.
+Transit times are in BJD_TDB; five transits predicted within ten minutes of a
+window boundary set in UTC are excluded rather than converted.
 [Kokori2022ExoClockII; Kokori2023ExoClockIII; Kokori2026ExoClockIV; OSF
 DOIs; Eastman2010; C019]
 
@@ -165,19 +171,20 @@ C021; D015]
 every phase, without centring on the prediction.
 Fitted timings are assigned to the nearest DRD cycle, then must lie within
 P/4 of that assigned prediction.
-Acceptance also requires a valid product, shape-fit reduced χ² ≤ 100,
-resolved integration and valid timing/support diagnostics.
-These checks do not establish completeness or exclude whole-cycle aliases.
-
+Acceptance also requires a valid light curve, a reasonable transit-shape fit
+(reduced χ² ≤ 100) and a well-resolved timing estimate.
+These checks do not guarantee that every transit is found, or that a timing
+displaced by a whole orbit is recognised.
 [add: Kovács, Zucker & Mazeh 2002 for BLS; Jenkins2016SPOC;
 `scripts/acceptance.py`; `scripts/final_evaluation.py`; D080]
 
 **M5.** Artificial transits injected into development-era light curves tested
 conditional timing calibration before protected access.
-The amended rule passed the declared criteria on two frozen samples,
-with nominal 95% timing coverage of 94.7% and 95.0%.
-This supports calibration among successful injections; it does not establish
-identification completeness or constitute fresh independent replication of the amended rule.
+The final acceptance rule passed all eight declared criteria on two frozen
+samples: nominal 95% intervals contained 94.7% and 95.0% of injected times.
+This shows that accepted timings carry honest uncertainties, not that every
+transit is found. The rule was tuned on these same samples, so this is not an
+independent replication.
 [C038; D061–D062]
 
 **M6.** Before any later photometry was opened, SHA-256 hashes bound the
@@ -191,8 +198,8 @@ D064–D065]
 
 **M7.** Forecasts are convolved with Gaussian or tabulated timing errors and
 scored by the 95% interval score, penalising width and misses.
-Each event uses M0's predictive SD, measurement error included, as a common
-divisor across methods; planet-balanced interpretation conditions on timing and acceptance.
+Each event's score is divided by M0's predictive SD, measurement error
+included, and averaged within planets, then across them; it describes accepted timings only.
 H3 uses 2,000 joint resamples of calibration and evaluation stars, refitting M2.
 A 95% interval wholly below zero decides improvement, above zero harm,
 and otherwise an inconclusive result.
@@ -251,8 +258,8 @@ timings, not a catalogue-wide failure rate.
 [C063]
 
 **R3.** A post-review comparison of DRC's September 2022 forecasts gives a
-longer view on already-inspected outcomes. In selected blocks reaching nearly four years
-after issue, every accepted timing of 128 planets fell within 37 minutes
+longer view on already-inspected outcomes. In the blocks examined during
+development, reaching nearly four years after issue, every accepted timing of 128 planets fell within 37 minutes
 (Fig. 2c). This is descriptive and not a second untouched test.
 [C062; D014]
 
@@ -260,9 +267,9 @@ after issue, every accepted timing of 128 planets fell within 37 minutes
 of accepted timings per planet.
 The conditional 95% host-bootstrap interval was 87.8–93.4%, under the
 reconstructed covariance and supplied timing likelihoods (Fig. 3b).
-Planned Fig. 3a will use a qualified residual or predictive-PIT diagnostic;
-non-Gaussian timings cannot automatically be compared with a normal distribution.
-[C043; C063; D076; display-plan diagnostic choice remains open]
+That interval excludes 95%: the stated uncertainties were somewhat too narrow.
+[C043; C063; D076; Fig. 3a residual-versus-PIT choice still open, because
+some timing likelihoods are non-Gaussian]
 
 **R5.** The correction raised coverage to 97.6% with intervals 1.67 times
 wider. Its effect on the planet-balanced score was −0.12, with a 95% interval
@@ -276,8 +283,8 @@ every tested model's 95% interval (Fig. 4b).
 Two independent programs reproduced b's departure from the same photometry.
 A separate check found opposite b/c drift and nearly on-time d,
 favouring TTVs over a simple common clock offset (Fig. 4a).
-A sector-105 sensitivity also spans zero under conditional fixed-fit
-resampling; the frozen primary result is unchanged.
+Re-centring its three sector-105 timings on the second program's values and
+doubling their uncertainty left the primary comparison inconclusive (−0.09; conditional interval −1.88 to +1.12).
 [Bonfanti2025TOI396; C050; C051; C057; C059]
 
 **R7.** HR 858 b first appeared in DRD. Its released input timings ended in
@@ -293,8 +300,8 @@ transfer reliably across chronological blocks.
 The original information-span question therefore remains unresolved.
 [C010; C015]
 
-**R9.** Measured-midpoint containment describes one part of H4.
-Illustratively, forecast-only 95% midpoint windows padded by three minutes
+**R9.** H4 asked what observing time the stated uncertainties cost; we can
+answer only part of it. Illustratively, forecast-only 95% midpoint windows padded by three minutes
 per side contained 94% of accepted mid-times, averaging equally across planets.
 This calculation does not measure full-transit capture or telescope cost.
 Those operational outcomes require durations and attempted-observation records.
@@ -372,10 +379,10 @@ Wang2024PeriodVariation]
 
 **D5.** HR 858 b was new to the release, with old, scattered inputs and
 previously published TTVs.
-Showing these features beside forecasts is a candidate curation strategy,
-not a validated warning rule.
-We did not establish their predictive value.
-Future releases could test them prospectively.
+Publishing such features beside each forecast would let users judge similar
+cases for themselves.
+Whether they predict failure is untested: one case cannot validate a warning
+rule, but future releases could test it prospectively.
 [Bonfanti2025TOI396; C054; C061; Lissauer2024KeplerPeriods]
 
 **D6.** Only accepted timings are scored. Because nearest-cycle assignment
