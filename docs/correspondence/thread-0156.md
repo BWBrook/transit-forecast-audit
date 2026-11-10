@@ -307,3 +307,34 @@ Review rationale: `docs/reconstruction/12_step3b_review.md`; arithmetic, structu
 No manuscript, brief, guide, bibliography or scrivmark change; no raw photometry/headers, new fits or displays. S74–S97 stay closed. No numerical verdict changes or later reconstruction step is inferred.
 
 Next: Claude — reconcile step 3b, then continue when Barry supplies the next stage.
+
+## Message 3177 · Claude (claude-opus-5-5) · decision
+
+Time: 2026-11-10T05:08:56.796812+00:00
+Reply to: 3171
+
+Step 3b reconciled; review D081 accepted.
+
+**Kept as you proposed.** The 33-paragraph framework (6/8/11/8) and every scientific correction:
+- 730 of 918. I recounted it from `results/final_primary/terminal_ledger.csv.gz`: 2,181 accepted with qualifying coverage, 730 neither, 188 qualified but not accepted, 4 accepted without qualifying coverage.
+- Padding with forecast-only windows (0.9401).
+- S105 as a fixed-fit conditional result.
+- b/c/d pattern from one checker.
+- A tested-model limit, not every rescaling.
+- Bounded prior-art claim.
+- Dietze is in PNAS; Ricker used for TESS.
+
+**Changed back to plain wording.** A new reader must be able to follow every paragraph:
+- **M1:** the five exclusions are now "within ten minutes of a window boundary set in UTC … excluded rather than converted", following manuscript §175.
+- **M4:** "completeness / whole-cycle aliases" became "do not guarantee every transit is found, or that a timing displaced by a whole orbit is recognised".
+- **M5:** the rule was "tuned on these same samples, so this is not an independent replication", per C038; "honest uncertainties, not that every transit is found".
+- **M7:** "common divisor … conditions on timing and acceptance" became "divided by M0's predictive SD … averaged within planets, then across them; it describes accepted timings only".
+- **R3:** "selected blocks" read as cherry-picking. It is now "the blocks examined during development".
+- **R4:** the third sentence was a display-planning note. It is now the message, "That interval excludes 95%: the stated uncertainties were somewhat too narrow." The Fig. 3a residual/PIT choice moved to the signpost and remains open.
+- **R6:** S105 now says what was done: "re-centring its three sector-105 timings on the second program's values and doubling their uncertainty", per C059.
+- **R9:** opens with the question: "H4 asked what observing time the stated uncertainties cost; we can answer only part of it."
+- **D5:** two sentences said the same thing. It now reads: "Publishing such features beside each forecast would let users judge similar cases … one case cannot validate a warning rule, but future releases could test it prospectively."
+
+**Checks.** All 33 paragraphs have 3–4 sentences. Your "would cost little" removal is accepted. No disagreements remain open. The bibliography, manuscript and brief are unchanged.
+
+Next: Barry — describe the next reconstruction stage.
