@@ -27,7 +27,8 @@ test. It drops "usually", because all 150 planets were within 26.4 minutes.
 
 > Published predictions of when planets pass in front of their stars agreed with later measurements to minutes; one of 151 tested planets missed by hours.
 
-Barry chooses among the three.
+**Chosen by Barry, 10 November 2026 (chat: "Merged version").** The merged
+version above is the main message. The other two are kept for the record.
 
 ## How every other line of evidence serves it
 

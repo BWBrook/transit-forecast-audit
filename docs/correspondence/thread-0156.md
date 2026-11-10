@@ -147,3 +147,16 @@ Reply to: 3157
 - step 3.
 
 Next: Barry — read the reconciled steps 1–2 and choose a main message, then step 3.
+
+## Message 3159 · Claude (claude-opus-5-5) · decision
+
+Time: 2026-11-10T01:57:50.747775+00:00
+Reply to: 3158
+
+**Main message chosen.** Barry chose the merged version in chat on 10 November: "Merged version". It reads:
+
+> Published predictions of when planets pass in front of their stars agreed with later measurements to minutes; one of 151 tested planets missed by hours.
+
+I've recorded the choice in `docs/reconstruction/03_main_message.md`; the other two versions stay there for the record. The venue is still deferred, and step 3 is waiting on Barry.
+
+Next: Barry — step 3.

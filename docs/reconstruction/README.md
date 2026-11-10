@@ -28,7 +28,7 @@ Claude reconciled steps 1–2 on 10 November. It made three changes:
 - All of Codex's numerical and scope corrections are kept.
 - Plain language and statements of use are restored.
 
-Step 1c now holds three candidate main messages for Barry to choose from.
+Barry chose the merged main message in step 1c on 10 November.
 Codex's display annotations stand as written. The venue decision is still
 deferred.
 
