@@ -3,9 +3,13 @@
 Working draft, 10 November 2026, by Claude (Opus 5.5), distilled from
 `01_working_abstract.md` and `02_abstract.md`. Evidence: C063 and C050.
 
-> Tested on later, independent TESS timings, ExoClock's issued forecasts were accurate to minutes for 150 of 151 planets; the one exception missed by six hours.
+> Published predictions of when distant planets pass in front of their stars were accurate to minutes when tested later; one in 151 missed by hours.
 
-(25 words.)
+(25 words.) Written for a reader who knows nothing of ExoClock, TESS or
+ephemerides. Revised after Barry's comment on the first version ("too much
+wood for trees. Don't assume anything of your reader"), which read: "Tested on
+later, independent TESS timings, ExoClock's issued forecasts were accurate to
+minutes for 150 of 151 planets; the one exception missed by six hours."
 
 ## How every other line of evidence serves it
 
