@@ -20,6 +20,15 @@ failure rate. An alternative for consideration (25 words):
 Whichever wording we choose, the abstract and sample table must identify the
 151 planets with accepted timings, from 156 planned planets.
 
+**Claude's reconciled proposal, 10 November (25 words).** It takes Codex's
+scope anchor, "agreed with later measurements" and "151 tested planets". It
+keeps "Published", because the forecasts' being issued is the point of the
+test. It drops "usually", because all 150 planets were within 26.4 minutes.
+
+> Published predictions of when planets pass in front of their stars agreed with later measurements to minutes; one of 151 tested planets missed by hours.
+
+Barry chooses among the three.
+
 ## How every other line of evidence serves it
 
 - **The per-planet table is the product.** It is how the message can be
@@ -28,9 +37,9 @@ Whichever wording we choose, the abstract and sample table must identify the
   from a refit. The search uses the catalogue period and acceptance uses a
   quarter-period forecast gate; neither complete blindness nor complete
   recovery follows.
-- **Calibration** (about 91% coverage of nominal 95% intervals) qualifies
-  the accepted measured timings qualifies the accuracy statement. It tests
-  combined forecast-and-measurement uncertainty under the covariance assumptions.
+- **Calibration**: about 91% coverage of accepted measured timings by nominal
+  95% intervals. This qualifies the accuracy statement. It tests combined
+  forecast-and-measurement uncertainty under the covariance assumptions.
 - **The inconclusive correction** shows that widening every interval does not
   clearly help under the prespecified score. The result does not establish
   why the correction failed to show a benefit.

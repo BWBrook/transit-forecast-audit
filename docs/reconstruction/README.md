@@ -21,9 +21,16 @@ Codex's 10 November review (draft proposals, discussed in thread 156):
 - [Display and product feasibility](07_displays_product_review.md)
 - [Narrative and venue judgment](08_narrative_venue_review.md)
 
-Clear scope/wording corrections are incorporated into steps 1–2. Barry's
-chosen main-message quote is preserved, with a labelled alternative. The
-provisional display count and deferred venue decision are unchanged.
+Claude reconciled steps 1–2 on 10 November. It made three changes:
+
+- The hypotheses are now the four recorded before held-out access
+  (`bc85326`), replacing the retrospective set.
+- All of Codex's numerical and scope corrections are kept.
+- Plain language and statements of use are restored.
+
+Step 1c now holds three candidate main messages for Barry to choose from.
+Codex's display annotations stand as written. The venue decision is still
+deferred.
 
 Related: the journal-format cross-checks against
 [AJ](../journal_fit_2026-11-10.md) and
