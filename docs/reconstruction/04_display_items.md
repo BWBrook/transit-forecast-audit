@@ -1,4 +1,4 @@
-# Reconstruction, Step 4: display items
+# Reconstruction, Step 1d: display items
 
 Working draft, 10 November 2026, by Claude (Opus 5.5). It serves the main
 message in `03_main_message.md` and the ApJS norms in

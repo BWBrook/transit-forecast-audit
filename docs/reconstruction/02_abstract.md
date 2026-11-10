@@ -1,4 +1,4 @@
-# Reconstruction, Step 2: abstract (under 150 words)
+# Reconstruction, Step 1b: abstract (under 150 words)
 
 Working draft, 10 November 2026, by Claude (Opus 5.5), from
 `01_working_abstract.md`. Numbers from C043, C050, C054 and C063. It can be

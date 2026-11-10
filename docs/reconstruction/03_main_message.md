@@ -1,4 +1,4 @@
-# Reconstruction, Step 3: main message (25 words or fewer)
+# Reconstruction, Step 1c: main message (25 words or fewer)
 
 Working draft, 10 November 2026, by Claude (Opus 5.5), distilled from
 `01_working_abstract.md` and `02_abstract.md`. Evidence: C063 and C050.

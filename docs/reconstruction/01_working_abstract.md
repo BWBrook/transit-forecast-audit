@@ -1,4 +1,4 @@
-# Reconstruction, Step 1: working abstract
+# Reconstruction, Step 1a: working abstract
 
 Working document, 10 November 2026. Not for submission. Claude (Opus 5.5)
 drafted it for Barry's first-principles reconstruction of the article. It
@@ -55,7 +55,7 @@ sparse or TTV-affected ephemerides. The table can serve as a benchmark for
 future ephemeris methods. Freezing a forecast and then scoring it suits any
 published forecast with stated uncertainty.
 
-## Notes for Step 2
+## Notes for the next steps
 
 - **The long-standing question.** Are published uncertainties honest
   predictions of future error? This has been asked of weather, epidemiology,
