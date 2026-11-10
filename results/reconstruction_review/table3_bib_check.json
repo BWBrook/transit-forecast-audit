@@ -1,0 +1,230 @@
+{
+  "audit": "Independent Table 3 row, provenance and bibliography check",
+  "auditor": "Codex",
+  "date": "2026-11-10",
+  "source_commit": "cba6dbe",
+  "scope": {
+    "read_only_sources": true,
+    "raw_photometry_headers_fits_opened": false,
+    "main_bibliography_manuscript_scrivmark_opened": false,
+    "only_written_artifact": "results/reconstruction_review/table3_bib_check.json"
+  },
+  "audited_artifact_sha256": {
+    "scripts/build_table3.py": "6f169540e9f31a31b8e300c39fae0f01fc3e6216b7de1fd58a2a061fc19f1552",
+    "results/reconstruction_displays/table3_planets.csv": "a42a6f31023f2e74ced891ccd1ad04a8b43e98773b9d8779244e51906cde0206",
+    "results/reconstruction_displays/table3_extension.csv": "fc7cba066b193147b044d82bc9e92ca0e4c038c5736420357b883be424ef1353",
+    "results/reconstruction_displays/table3_dictionary.md": "09b1dc56cff06cd2f51e2371b26fd8cdae5eabee4a97290efabe6d1dc1a82f33",
+    "results/reconstruction_displays/table3_excerpt.md": "26269e439c17b4bdc19cb030ad177c858ea5a2c7948e6c941a90756723516e2a",
+    "results/reconstruction_displays/table3_receipt.json": "8da8e0c3236e885aa845a1c7d956d8e35ca828080532a43cd1733637905a9172",
+    "docs/reconstruction/references_additions.bib": "21d4c2c12186ece38405d0baa0fa224af261807a6e0c1192ee3f707e671741ae"
+  },
+  "row_checks": {
+    "columns": 36,
+    "column_names_unique": true,
+    "matching_core_extension_schema": true,
+    "cells_independently_compared": 6624,
+    "field_mismatches": [],
+    "numeric_comparison": "Full saved inputs recomputed with standard-library aggregation; output rounding tolerance of six significant digits. Issued epoch/period/last-input strings compared exactly.",
+    "roster_sets_exact": true,
+    "terminal_intended_ids_unique_and_equal": true,
+    "accepted_forecast_outcome_score_ids_exact": true,
+    "four_models_per_accepted_event": true,
+    "all_per_planet_terminal_counts_sum_to_intended": true,
+    "all_13_recorded_input_hashes_match": true,
+    "all_3_recorded_output_hashes_match": true
+  },
+  "cohorts": {
+    "core": {
+      "rows": 156,
+      "intended": 3103,
+      "accepted": 2185,
+      "coverage_qualified": 2369,
+      "accepted_coverage_qualified": 2181,
+      "status_totals": {
+        "accepted": 2185,
+        "no_cadence_coverage_at_prediction": 431,
+        "excluded_coverage": 290,
+        "integration_unresolved": 75,
+        "edge": 71,
+        "product_id_failed": 39,
+        "likelihood_support_unresolved": 12,
+        "unmatched_expected_event": 0
+      },
+      "zero_accepted_planets": [
+        "HIP94235b",
+        "TOI-251b",
+        "TOI-262b",
+        "TOI-269b",
+        "TOI-4308b"
+      ],
+      "all_five_accuracy_score_coverage_fields_empty_for_zero_accepted": true,
+      "new_by_name": {
+        "true": 27,
+        "false": 129
+      },
+      "literature_status": {
+        "not_searched": 155,
+        "verified_positive_case_audit_not_uniform": 1
+      },
+      "current_archive_flags": {
+        "0": 153,
+        "1": 3
+      }
+    },
+    "extension": {
+      "rows": 28,
+      "intended": 291,
+      "accepted": 72,
+      "coverage_qualified": 191,
+      "accepted_coverage_qualified": 72,
+      "status_totals": {
+        "accepted": 72,
+        "no_cadence_coverage_at_prediction": 51,
+        "excluded_coverage": 37,
+        "integration_unresolved": 9,
+        "edge": 40,
+        "product_id_failed": 72,
+        "likelihood_support_unresolved": 6,
+        "unmatched_expected_event": 4
+      },
+      "zero_accepted_planets_count": 23,
+      "all_five_accuracy_score_coverage_fields_empty_for_zero_accepted": true,
+      "new_by_name": {
+        "true": 12,
+        "false": 16
+      },
+      "literature_status": {
+        "not_searched": 28
+      },
+      "current_archive_flags": {
+        "0": 23,
+        "1": 5
+      }
+    }
+  },
+  "provenance_semantics": {
+    "all_covariance_tiers": "C2_candidate",
+    "rho_source": "released-input WLS reconstruction; not issued covariance",
+    "marginal_uncertainties": "Issued marginal T0 and period errors converted to seconds, not reconstructed WLS marginal errors. See scripts/sprint1_forecast_core.py:98 and scripts/sprint1_forecasts.py:220.",
+    "origin_ttv_flags": "All 184 false; source is publication-table transcription with exact forecast-origin availability unverified. False means not flagged in that release, not no TTV.",
+    "pre_origin_literature": "Only HR858b verified positive by case audit; other 183 not_searched. No literature-negative labels.",
+    "new_by_name": "Exact-name absence from both DRB and DRC, not an alias-resolved discovery or knowledge date.",
+    "released_inputs": "Descriptors of released rows, not independently certified fitting membership."
+  },
+  "excerpt": {
+    "selection_matches_declared_five_largest_plus_five_smallest_maximum_errors": true,
+    "caption_discloses_extreme_selection": true,
+    "zero_accepted_planets_excluded_explicitly": true,
+    "scientific_error_found": false,
+    "editorial_recommendation": "For a table-format illustration, ten alphabetically selected core rows avoid duplicating the extreme-case figures; retain the current selection only if an extreme-case comparison is intended.",
+    "alphabetical_first_ten": [
+      "EPIC246851721b",
+      "GJ1132b",
+      "GJ1252b",
+      "GJ3090b",
+      "GJ357b",
+      "HAT-P-64b",
+      "HAT-P-70b",
+      "HATS-18b",
+      "HATS-1b",
+      "HATS-22b"
+    ]
+  },
+  "findings": [
+    {
+      "path": "results/reconstruction_displays/table3_dictionary.md",
+      "field": "sigma_t0_s, sigma_p_s",
+      "severity": "material_documentation",
+      "confidence": "high",
+      "problem": "Dictionary calls these marginal uncertainties reconstructed from released inputs. The reconstruction applies to rho; the marginals are issued errors converted to seconds.",
+      "fix": "State issued marginal one-sigma errors converted to seconds; keep reconstructed rho/joint-covariance qualification in their own rows."
+    },
+    {
+      "path": "results/reconstruction_displays/table3_dictionary.md",
+      "field": "Left out / Transit duration",
+      "severity": "documentation",
+      "confidence": "high",
+      "problem": "Says duration_status is not present, but release_planets.csv contains duration_status and origin_transit_duration_minutes. The duration values are not verified and are blank.",
+      "fix": "Say no verified origin duration is held; duration_status records that limitation."
+    },
+    {
+      "path": "scripts/build_table3.py",
+      "field": "COLS / reported schema count",
+      "severity": "contract_description",
+      "confidence": "high",
+      "problem": "Actual shared CSV schema has 36 columns, whereas the review request describes 35. No malformed or extra CSV cell was found.",
+      "fix": "Update any 35-column descriptions to 36; no numerical change or arbitrary column removal is required."
+    }
+  ],
+  "bibliography": {
+    "entries": 8,
+    "pandoc_biblatex_to_csljson_parse": "pass, eight distinct keys, no warnings",
+    "identity_comparison_to_primary_source_audit_13": "All DOI, title, author identity/order, original year, journal/book, volume and page/article-number fields agree; intentional others abbreviations accepted. Kovács TeX accent parses correctly.",
+    "entries_checked": [
+      {
+        "key": "Gardner2023JWST",
+        "doi": "10.1088/1538-3873/acd1b5",
+        "verified_author_identity": "Gardner; Mather; Abbott; others",
+        "verified_publication": "PASP 135, 068001 (2023)",
+        "source": "docs/reconstruction/13_step3b_reference_checks.md"
+      },
+      {
+        "key": "Tinetti2018Ariel",
+        "doi": "10.1007/s10686-018-9598-x",
+        "verified_author_identity": "Tinetti; Drossart; Eccleston; others",
+        "verified_publication": "Experimental Astronomy 46, 135–209 (2018)",
+        "source": "docs/reconstruction/13_step3b_reference_checks.md"
+      },
+      {
+        "key": "Agol2005TTV",
+        "doi": "10.1111/j.1365-2966.2005.08922.x",
+        "verified_author_identity": "Agol; Steffen; Sari; Clarkson",
+        "verified_publication": "MNRAS 359, 567–579 (2005)",
+        "source": "docs/reconstruction/13_step3b_reference_checks.md"
+      },
+      {
+        "key": "HolmanMurray2005TTV",
+        "doi": "10.1126/science.1107822",
+        "verified_author_identity": "Holman; Murray",
+        "verified_publication": "Science 307, 1288–1291 (2005)",
+        "source": "docs/reconstruction/13_step3b_reference_checks.md"
+      },
+      {
+        "key": "Kovacs2002BLS",
+        "doi": "10.1051/0004-6361:20020802",
+        "verified_author_identity": "Kovács; Zucker; Mazeh",
+        "verified_publication": "A&A 391, 369–377 (2002)",
+        "source": "docs/reconstruction/13_step3b_reference_checks.md"
+      },
+      {
+        "key": "Dietze2018",
+        "doi": "10.1073/pnas.1710231115",
+        "verified_author_identity": "Dietze and 18 coauthors",
+        "verified_publication": "PNAS 115, 1424–1432 (2018)",
+        "source": "docs/reconstruction/13_step3b_reference_checks.md"
+      },
+      {
+        "key": "Nosek2018",
+        "doi": "10.1073/pnas.1708274114",
+        "verified_author_identity": "Nosek; Ebersole; DeHaven; Mellor",
+        "verified_publication": "PNAS 115, 2600–2606 (2018)",
+        "source": "docs/reconstruction/13_step3b_reference_checks.md"
+      },
+      {
+        "key": "DavisonHinkley1997",
+        "doi": "10.1017/CBO9780511802843",
+        "verified_author_identity": "Davison; Hinkley",
+        "verified_publication": "Cambridge University Press (1997)",
+        "source": "docs/reconstruction/13_step3b_reference_checks.md"
+      }
+    ],
+    "new_metadata_errors_detected": [],
+    "live_crossref_limitation": "Crossref API URLs were inaccessible through web; direct DOI content-negotiation requests failed DNS resolution in the local execution environment. Primary source checks from 13 were reused; Tinetti and Dietze publisher/PMC records were also reread. New issue-number fields and the two notes asserting exact Crossref author counts were not independently reconfirmed in this pass.",
+    "optional_simplification": "The exact Crossref author-count notes (1008 and 244) are unnecessary for correct et-al citations; omit them unless their metadata export is retained/verified."
+  },
+  "limitations": [
+    "No new score integration or bootstrap was run; per-planet metrics were independently aggregated from the exact expected event-score tables.",
+    "No primary photometry, headers or FITS were read.",
+    "This report audits cba6dbe, not subsequent parent edits."
+  ]
+}

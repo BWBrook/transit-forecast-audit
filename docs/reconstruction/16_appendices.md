@@ -13,7 +13,7 @@ marked with a dagger are verified candidates not yet in the bibliography.
 
 ### A.1 Public availability of the three releases
 
-We dated each release from OSF API logs for the project node and for each exact file. We assume that a file present in an already-public node, or added to one, is retrievable at the later of the two timestamps. DRD's files were uploaded on 17 November 2025 while the node was private, so its anchor is the public transition on 18 November. These logs show when a file was public, not whether it was discoverable or shared privately earlier. Evaluation opens on the first whole UTC day after the DRD anchor, 19 November 2025. The February 2026 journal date is a sensitivity anchor (Appendix C). Because those calendars are in UTC and event times in BJD_TDB, we excluded the five core transits predicted within ten minutes of a boundary instead of converting them.
+We dated each release from OSF API logs for the project node and for each exact file. We assume that a file present in an already-public node, or added to one, is retrievable at the later of the two timestamps. DRD's files were uploaded on 17 November 2025 while the node was private, so its anchor is the public transition on 18 November. These logs show when a file was public, not whether it was discoverable or shared privately earlier. Evaluation opens on the first whole UTC day after the DRD anchor, 19 November 2025. The February 2026 journal date is a sensitivity anchor (Appendix C). Because those calendars are in UTC and event times in BJD_TDB, we conservatively excluded four core and one extension opportunity that were numerically near a boundary, without converting those boundaries.
 
 **Table A1.** Release dates and the lag of each timing table behind its forecast file.
 
@@ -27,7 +27,7 @@ We dated each release from OSF API logs for the project node and for each exact 
 
 ### A.2 What the DRC timing table can and cannot date
 
-The DRC timing table carries no observation-time or first-availability field. A correction trained on the DRC file's timings therefore uses the file's addition as a proxy for when each timing was known, and cannot reproduce what a user could have fitted on the day DRC was issued. The development designs of Appendix E are labelled accordingly. No training event of the chronological split appears in the DRC timing table, and the release-transfer training events fall between 28 October and 30 December 2021. The inputs of every DRD source type stop before 4 January 2024 (nominal TDB).
+The DRC table contains event mid-times but no per-row first-availability timestamps. Its addition followed the forecast by 53 seconds on the same day; that timestamp does not establish deployability at the exact forecast origin. The development designs of Appendix E are labelled accordingly. No training event of the chronological split appears in the DRC timing table, and the release-transfer training events fall between 28 October and 30 December 2021. The inputs of every DRD source type stop before 4 January 2024 (nominal TDB).
 
 <!-- claims: C019, C032, C054, C055 -->
 
@@ -88,6 +88,28 @@ M1 has the worst standardised score and the best raw-minute score, so its rank d
 
 <!-- claims: C043, C052, C063 -->
 
+### B.6 Post-review PIT and error quantiles
+
+The predictive probability integral transform (PIT) evaluates each measured
+time in its modelled predictive CDF. Write the signed residual as
+$r = t_{\rm reported} - t_{\rm forecast}$ and the saved grid coordinate as
+$x = t_{\rm true} - t_{\rm reported}$. Measurement error is therefore $-x$,
+so a grid row contributes $\Phi((r+x)/(b\sigma_f\exp(sZ/2)))$, averaged over
+grid weights and standard-normal $Z$, with $\sigma_f$ the M0 forecast SD.
+For Gaussian timing errors their variance
+adds to the forecast variance instead. The calculation uses the frozen
+384-node convention; an independent adaptive integration reproduces it to
+$1.4\times10^{-12}$. This numerical agreement does not validate the observation
+or acceptance assumptions needed for a uniform PIT reference.
+
+Planets receive equal total weight and events within each planet equal weight.
+Error quantiles use the smallest observed error whose cumulative weight
+reaches the requested probability, without interpolation. Pooled quantiles
+instead give every event equal weight. The PIT asymmetry and percentile
+calculations were added after the outcomes were inspected.
+
+<!-- claims: C065; results/reconstruction_review/pit_independent_check.json -->
+
 ## Appendix C. Declared sensitivities
 
 ### C.1 Sensitivities refitted and rescored
@@ -132,7 +154,7 @@ Two samples were drawn from hosts with a single DRD-listed planet, Tmag below 13
 
 ### D.2 Criteria and results
 
-The criteria were fixed before any confirmation photometry was requested, with a 90% host-cluster percentile bootstrap of 10,000 draws. Each host has weight one. The margins come from a Gaussian coverage sensitivity: if outcome error is mis-scaled by 1.10, the nominal 95% interval covers 93.8% (outcome error equal to forecast error) or 92.5% (outcome error dominant), and 96.0% or 96.9% if mis-scaled by 1/1.10; a bias of 0.15 SD gives 94.9% or 94.7%. These bounds hold the measurement-induced distortion to about 2.5 percentage points, a third or less of M0's 5 to 7 point shortfall in development. Outcome error does dominate, at a median 2.6 times the forecast SD in the release-transfer events. In simulation the estimators are unbiased to within 0.007, but nominal 90% intervals cover 0.853 to 0.927, so the criteria are slightly anti-conservative.
+The criteria were fixed before any confirmation photometry was requested, with a 90% host-cluster percentile bootstrap of 10,000 draws. Each host has weight one. The margins come from a Gaussian coverage sensitivity: if outcome error is mis-scaled by 1.10, the nominal 95% interval covers 93.8% (outcome error equal to forecast error) or 92.5% (outcome error dominant), and 96.0% or 96.9% if mis-scaled by 1/1.10; a bias of 0.15 SD gives 94.9% or 94.7%. Individual perturbations permit about 2.5 percentage points of coverage distortion; the joint scale/bias example permits about 2.75 points, compared with the 5–7-point development shortfall. Outcome error does dominate, at a median 2.6 times the forecast SD in the release-transfer events. In simulation the estimators are unbiased to within 0.007, but nominal 90% intervals cover 0.853 to 0.927, so the criteria are slightly anti-conservative.
 
 **Table D1.** The final acceptance rule on the two injection samples, estimates with 90% intervals.
 
@@ -147,7 +169,7 @@ The criteria were fixed before any confirmation photometry was requested, with a
 | z-RMS at Tmag 13.5 (within 0.80 to 1.15) | [0.881, 1.003] | [0.866, 1.074] |
 | Window-removal control, β ratio (0.95 to 1.05) | 1.000 | 1.000 |
 | Window-removal control, residual RMS ratio (0.95 to 1.05) | 1.005 | 1.000 |
-| Ledger rows: accepted / all | 1,477 / 2,021 | 1,361 / 1,931 |
+| Accepted / intended-injection rows | 1,477 / 2,021 | 1,361 / 1,931 |
 
 All eight criteria passed in both samples. The adapter's support check accepted 136 of 137 and 232 of 239 non-Gaussian timings, and all criteria also passed in sensitivity scenarios in which every unexported non-Gaussian support check passed or every one failed. Calibration is conditional on successful identification and the fitted shape family; the replication's late bias of 0.07 SD is reported, not corrected. The original rule, which multiplied outcome errors by a brightness factor, failed its confirmation on coverage and the faint-star endpoint. After two implementation defects were corrected (a reversed side of the asymmetric coverage test, and product fallback conditioned on success), the uncorrected rule passed both samples. The final acceptance rule, replayed on the same samples with its likelihood grids checked, reproduced every saved timing. The acceptance threshold was chosen on these samples, so Table D1 is not an independent replication of the final rule.
 
@@ -155,7 +177,7 @@ All eight criteria passed in both samples. The adapter's support check accepted 
 
 ### D.3 Identification boundary tests
 
-With real transits subtracted and epochs uniform in phase, we injected trains offset from the catalogue period by up to ±0.6%, trains at 0.5, 2 and 3 times the period, and trains with every third transit displaced from the linear ephemeris (44 trials per scenario). Every trial identified for period offsets up to ±0.4%; at ±0.6%, outside the ±0.5% window, 18 of 44 identified and the 26 failures were all recorded as search-boundary failures. At 0.5 times the period, 37 of 44 identified and 327 of 629 observable events were timed; at 2 and 3 times, 42 of 44 identified and timings were conservative (z-RMS 0.32 and 0.28). Displacements of 30 minutes were all timed (93 of 93), 50 minutes mostly (85 of 93), 70 minutes rarely (13 of 96), and 90 and 120 minutes one and none. Transits displaced by more than about an hour from the sector's own ephemeris are therefore lost or mistimed, a finite stress test, not a universal cutoff, that bears on the selection limit in Section 4.
+With real transits subtracted and epochs uniform in phase, we injected trains offset from the catalogue period by up to ±0.6%, trains at 0.5, 2 and 3 times the period, and trains with every third transit displaced from the linear ephemeris (44 trials per scenario). Every trial identified for period offsets up to ±0.4%; at ±0.6%, outside the ±0.5% window, 18 of 44 identified and the 26 failures were all recorded as search-boundary failures. At 0.5 times the period, 37 of 44 identified and 327 of 629 observable events were timed; at 2 and 3 times, 42 of 44 identified and timings were conservative (z-RMS 0.32 and 0.28). At 30- and 50-minute displacements, identification succeeded in 43/44 and 42/44 trials; within identified trials, 93/93 and 85/93 observable events were timed. The corresponding conditional counts were 13/96 at 70 minutes, one at 90 and none at 120. Transits displaced by more than about an hour from the sector's own ephemeris are therefore lost or mistimed, a finite stress test, not a universal cutoff, that bears on the selection limit in Section 4.
 
 <!-- claims: C024 -->
 
@@ -171,7 +193,7 @@ An independent base-R calculation, run on hash-verified release files, reproduce
 
 ### E.2 Release transfer and the chronological split
 
-Four designs share the scoring and resampling of Section 2.7 and take outcome errors as the catalogue-reported σ times 1.087, the conditional REML estimate of the excess scatter of TESS timings (host-bootstrap interval 1.050 to 1.121). In release transfer, DRB forecasts are fitted against DRC-file timings of 2021 and DRC forecasts are scored against DRD-file timings from 28 September 2022 to 3 January 2024, with 15 training planets and 238 scored. In the chronological split, DRC forecasts are fitted on 2022 outcomes (133 planets) and scored from 2023 (206 planets). A delayed-origin reconstruction and a later-published training sensitivity vary the origin and the training sample. All four use proxy dates (Appendix A), and none is an issued correction or an untouched test.
+Four development designs use the same scoring with 400 host-refit resamples, rather than the final test's 2,000, and take outcome errors as the catalogue-reported σ times 1.087, the conditional REML estimate of the excess scatter of TESS timings (host-bootstrap interval 1.050 to 1.121). In release transfer, DRB forecasts are fitted against DRC-file timings of 2021 and DRC forecasts are scored against DRD-file timings from 28 September 2022 to 3 January 2024, with 15 training planets and 238 scored. In the chronological split, DRC forecasts are fitted on 2022 outcomes (133 planets) and scored from 2023 (206 planets). A delayed-origin reconstruction and a later-published training sensitivity vary the origin and the training sample. All four use proxy dates (Appendix A), and none is an issued correction or an untouched test.
 
 **Table E1.** Development scores for M0, M1 and M2 (planet-balanced).
 
@@ -180,7 +202,7 @@ Four designs share the scoring and resampling of Section 2.7 and take outcome er
 | Release transfer | M0 | none | 32.86 | 0.884 | 10.13 |
 | | M1 | $b$ = 2.685 | 30.50 | 0.957 | 16.53 |
 | | M2 | $s$ = 2.162 | 30.41 | 0.956 | 16.44 |
-| Chronological | M0 | none | 36.60 | 0.898 | 10.82 |
+| Chronological | M0 | none | 36.60 | 0.897 | 10.82 |
 | | M1 | $b$ = 7.343 | 34.94 | 0.982 | 41.23 |
 | | M2 | $s$ = 2.310 | 33.97 | 0.955 | 19.12 |
 
@@ -256,12 +278,12 @@ No accepted DRC error exceeded an hour. In the 2026 and pooled slices the best s
 
 ## Appendix H. The exploratory extension
 
-The extension adds 28 planets to the core's 156 (17.95%), with a period over 12 days or several DRD-listed planets per host, and brings the union to 184 planets on 175 hosts and 3,399 predicted opportunities. Our identification step is not validated in multi-planet systems, so the extension is exploratory. Of its 291 transits, 72 on 5 planets were accepted and 72 failed identification. M2 − M0 is −11.2 with a 95% interval from −56.4 to +6.3, inconclusive. The interval comes from 1,989 defined joint draws of 2,000: 11 draws select no extension host in the evaluation sample, so their scores are undefined and the frozen rule omits them. One host, TOI-178, carries the mean gain. The result is uninformative at five planets, and the extension events are scored under all four models in the replay package.
+The extension adds 28 planets to the core's 156 (17.95%), with a period over 12 days or several DRD-listed planets per host, and brings the union to 184 planets on 175 hosts. The inventory had 3,399 opportunities before the four core and one extension boundary exclusions; the final manifests contain 3,103 core plus 291 extension events, or 3,394 in total. Our identification step is not validated in multi-planet systems, so the extension is exploratory. Of its 291 transits, 72 on 5 planets were accepted and 72 failed identification. M2 − M0 is −11.2 with a 95% interval from −56.4 to +6.3, inconclusive. The interval comes from 1,989 defined joint draws of 2,000: 11 draws select no extension host in the evaluation sample, so their scores are undefined and the frozen rule omits them. One host, TOI-178, carries the mean gain. The result is uninformative at five planets, and the extension events are scored under all four models in the replay package.
 
 <!-- claims: C021, C044, C053 -->
 
 ## Online figure set
 
-The online figure set will give an observed-minus-calculated plot for each of the 151 planets with accepted timings, showing the accepted timings against the DRD prediction. The five planets with no accepted timing have no plot and appear in Table 3 with their statuses. *[location and file names on release]*
+The eight-page online figure set gives an observed-minus-calculated plot for each of the 151 planets with accepted timings, against the DRD prediction. Bands show forecast-only 95% intervals and bars the reported 68% timing half-widths. Single-timing panels show the forecast band over a local one-day display span. The five planets with no accepted timing have no plot and appear in Table 3 with their statuses. *[location and file names on release]*
 
 <!-- claims: C043, C046 -->

@@ -181,10 +181,7 @@ for k, (got, want) in checks.items():
     ok = abs(got - want) <= tol.get(k, 1e-9)
     results[k] = {"got": got, "expected": want, "pass": bool(ok)}
 
-# excerpt: 5 largest and 5 smallest maximum errors among the 151, HR 858 b is among the largest
-srt = sorted(acc, key=lambda r: r["max_abs_error_min"])
-sel = srt[::-1][:5] + srt[:5]
-assert any(r["planet"] == "HR858b" for r in sel)
+sel = sorted(core, key=lambda r: r["planet"])[:10]
 EX = [("planet", "Planet"), ("n_intended", "Intended"), ("n_accepted", "Accepted"),
       ("median_abs_error_min", "Median abs error (min)"), ("max_abs_error_min", "Max abs error (min)"),
       ("sigma_t0_s", "σT0 (s)"), ("m0_coverage95", "M0 cov95"), ("m2_coverage95", "M2 cov95"),
@@ -193,11 +190,10 @@ lines = ["| " + " | ".join(h for _, h in EX) + " |", "|" + "---|" * len(EX)]
 for r in sel:
     lines.append("| " + " | ".join(fmt(r[c], 4) if r[c] not in ("",) else "unknown" for c, _ in EX) + " |")
 md = ("# Table 3 excerpt (10 of 156 core planets; not the population)\n\n"
-      "Declared selection rule: among the 151 core planets with accepted "
-      "timings, the five with the largest and the five with the smallest maximum absolute error "
-      "(largest first, then smallest first). HR 858 b is among the five largest. The five planets "
-      "with no accepted timing are not rankable and appear only in the full table. The excerpt is "
-      "extreme-ordered by construction and says nothing about typical planets; the full tables are "
+      "Declared selection rule: the first ten core planets in alphabetical planet-label order, "
+      "without sorting on measured errors or acceptance. This illustrates the format and is not "
+      "a representative scientific sample. All 156 planets, including the five without accepted "
+      "timings, are retained in the full table; the full tables are "
       "`table3_planets.csv` (core) and `table3_extension.csv` (exploratory). Errors are accepted "
       "TESS mid-time minus DRD forecast; coverage is 95% coverage of measured time averaged within "
       "planet. Literature status values come from `origin_knowledge.csv`: 'not_searched' means "

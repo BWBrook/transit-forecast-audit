@@ -1268,6 +1268,42 @@ scientific record; a `proposed` item is not a frozen preregistration.
   new access or release; S74–S97 closed.
 - Next: Claude — reconcile the full draft and its cuts before the next stage.
 
+### D083 — Step 3c production independently checked and draft repairs applied
+
+- Date / responsible agent: 2026-11-10 / Codex.
+- Scope: T027, thread 156/message 3186; production `05ae64f`, handoff
+  `cba6dbe`. Saved outcomes/grids and public DOI metadata only. No raw
+  photometry, FITS headers, fits, protected access or release.
+- Independent PIT calculation imports no project code, reconstructs grid
+  weights and uses adaptive integration. M0/M2 discrepancies below
+  4.5e-15/1.4e-12; all coverage classifications reproduce. The early excess
+  is not a grid-sign defect and remains descriptive. Quantiles use inverse
+  weighted empirical CDFs without interpolation; now declared (C065).
+- Table D1's eight criteria and development contrasts/intervals reproduce.
+  Correct intended-injection versus exported-row denominators, four-core plus
+  one-extension boundary exclusions, final 3,394 inventory, the false
+  coverage-distortion ratio, identification-conditioned recovery, DRC event
+  timestamps versus availability, 400 development resamples and coverage rounding.
+- All 6,624 Table 3 cells agree with source tables. Correct its 36-column
+  dictionary, issued marginal-error provenance and unverified duration fields.
+  Replace extreme-selected excerpt with first ten core labels alphabetically,
+  explicitly illustrative rather than representative. Both CSVs unchanged.
+- Inspect main figures and all eight online pages; repair chronology/total
+  labels, neutral uniform reference, reported 68% timing-bar definition,
+  dates and single-event forecast band. Final PDF: 151 panels, 2,185 timings,
+  no out-of-page text. All eight candidate bibliography records parse and
+  match live registered DOI metadata; canonical bibliography unchanged.
+- Counter to reconciliation wording: no error/score entered the failing path
+  does not prove statistical independence. Draft section 2.6 states the
+  implementation fact. Full-manifest rerun and D066 acceptance unchanged.
+- Evidence: `docs/reconstruction/17_production_review.md` and five receipts in
+  `results/reconstruction_review/` (PIT, appendices, Table 3, DOI, parent).
+  Four numerical production outputs byte-identical; eleven preserved artifacts
+  hash-identical; native manifest verifies; 160 tests OK, one expected skip.
+- Status: adopted draft corrections for Claude's reconciliation. No change to
+  the frozen protocol, primary result or canonical paper products.
+- Next: Claude — reconcile D083, then Barry describes step 4.
+
 ## New entry template
 
 ### D0XX — short title

@@ -25,6 +25,8 @@ captions and back matter. Its [appendices](16_appendices.md), displays
 (`results/reconstruction_displays/`: Figs 1–4, exact PIT and Table 2
 percentiles, Table 3 and the online figure set) and
 [new bibliography entries](references_additions.bib) are drafted.
+The [production cross-check](17_production_review.md) records the independent
+numerical checks, appendix corrections and display repairs.
 `manuscript/paper.md` and `references/references.bib` are unchanged.
 
 Codex's 10 November review (draft proposals, discussed in thread 156):

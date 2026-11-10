@@ -1,0 +1,190 @@
+{
+  "audit": "Saved-evidence numerical review; no fits, photometry, headers or frozen-output changes",
+  "draft_commit": "cba6dbe",
+  "draft_sha256": "05e71246fb6098c83f87b24103e3a1aa29ba37cf98b7ba1bec2e76085345c2a8",
+  "checks": {
+    "D1": {
+      "confirm": {
+        "actual_support": {
+          "hosts": 104,
+          "events": 1477,
+          "z_rms": 0.9875,
+          "z_rms_ci90": [
+            0.9534,
+            1.0212
+          ],
+          "cover95": 0.9466,
+          "cover95_ci90": [
+            0.9338,
+            0.9587
+          ],
+          "mean_z": -0.0016,
+          "mean_z_ci90": [
+            -0.0547,
+            0.0509
+          ],
+          "z_rms_tmag9_ci90": [
+            0.971,
+            1.064
+          ],
+          "z_rms_tmag13.5_ci90": [
+            0.8808,
+            1.0032
+          ],
+          "noise_control": {
+            "host_products": 104,
+            "beta_ratio": 1.0,
+            "resid_rms_ratio": 1.0045,
+            "resid_rms_ratio_iqr": [
+              0.9828,
+              1.0226
+            ]
+          },
+          "verdict": {
+            "checks": {
+              "min_hosts": true,
+              "z_rms": true,
+              "cover95": true,
+              "mean_z": true,
+              "tmag9": true,
+              "tmag13.5": true,
+              "noise_beta_ratio": true,
+              "noise_resid_rms_ratio": true
+            },
+            "pass": true
+          }
+        },
+        "intended_rows": 2021,
+        "actual_state_sum": 2021,
+        "all_replay_rows": 2028,
+        "unmatched_window_statuses": {
+          "spurious_window:edge": 4,
+          "spurious_window:excluded_coverage": 3
+        }
+      },
+      "confirm2": {
+        "actual_support": {
+          "hosts": 100,
+          "events": 1361,
+          "z_rms": 1.0161,
+          "z_rms_ci90": [
+            0.9801,
+            1.0522
+          ],
+          "cover95": 0.9501,
+          "cover95_ci90": [
+            0.9381,
+            0.9614
+          ],
+          "mean_z": 0.0697,
+          "mean_z_ci90": [
+            0.0132,
+            0.1261
+          ],
+          "z_rms_tmag9_ci90": [
+            0.963,
+            1.1233
+          ],
+          "z_rms_tmag13.5_ci90": [
+            0.8664,
+            1.0741
+          ],
+          "noise_control": {
+            "host_products": 99,
+            "beta_ratio": 1.0,
+            "resid_rms_ratio": 0.9998,
+            "resid_rms_ratio_iqr": [
+              0.9802,
+              1.0184
+            ]
+          },
+          "verdict": {
+            "checks": {
+              "min_hosts": true,
+              "z_rms": true,
+              "cover95": true,
+              "mean_z": true,
+              "tmag9": true,
+              "tmag13.5": true,
+              "noise_beta_ratio": true,
+              "noise_resid_rms_ratio": true
+            },
+            "pass": true
+          }
+        },
+        "intended_rows": 1931,
+        "actual_state_sum": 1931,
+        "all_replay_rows": 1934,
+        "unmatched_window_statuses": {
+          "spurious_window:excluded_coverage": 2,
+          "spurious_window:timed": 1
+        }
+      }
+    },
+    "union": {
+      "core_events": 3103,
+      "extension_events": 291,
+      "final_union": 3394,
+      "excluded": {
+        "core": 4,
+        "extension": 1
+      },
+      "original_union": 3399
+    },
+    "tables": {
+      "B1": "all values and conditional interval scope match loss_scales.csv",
+      "B2": "primary max loss 5.85956761298287; listed gains and host-removal values match",
+      "B2_table": "all rounded parameters/scores/coverage/widths match final_primary/descriptives.json and candidate_parameters.json",
+      "C1": "all 11 rows match sensitivity summary fields and rounded arithmetic",
+      "D1": "all per-criterion estimates and intervals match actual_support; intended totals correct",
+      "D3": "all displayed counts match identification_summary.json, subject to conditional denominator note",
+      "E1": "scores/parameters/intervals/counts match except chronological M0 coverage rounding",
+      "E2": "all 12 contrast cells and intervals match convention_comparison.json",
+      "F1": "rounded matching numbers agree with saved comparison summaries and claims C050/C051",
+      "G1": "all displayed numbers agree with d075_accuracy_audit and oracle summaries",
+      "H": "extension accepted/status/contrast/interval values match; final union needs correction"
+    }
+  },
+  "mismatches": [
+    {
+      "section": "A.1/H",
+      "issue": "Boundary exclusions are four core and one extension; final union is 3394, original union 3399",
+      "source": "results/prefreeze/manifest_summary.json; results/prefreeze/manifest_boundary_excluded.csv"
+    },
+    {
+      "section": "D1 ledger label",
+      "issue": "2021/1931 count intended-truth rows, not all replay rows (2028/1934)",
+      "source": "results/prefreeze/replay/{confirm,confirm2}/ledger.csv.gz: truth_id,status"
+    },
+    {
+      "section": "D.2 margin rationale",
+      "issue": "2.5 points is about 36-50 percent of a 5-7 point shortfall, not at most one third; joint k=1.1 and bias=.15 allows 2.7487 points",
+      "source": "results/sprint2_review/statistics/analytic_margins.json: scenarios"
+    },
+    {
+      "section": "D.3",
+      "issue": "Observable-event recovery counts condition on identified trials; identification is 43/44 for 30 min and 42/44 for 50 min",
+      "source": "results/sprint2/dev/identification_summary.json: ttv_offset_min=30,ttv_offset_min=50"
+    },
+    {
+      "section": "A.2",
+      "issue": "DRC has BJD event mid-times, lacks per-row availability metadata; timing file appears 53.187979 seconds after forecast, not on a later date",
+      "source": "docs/sprint1_literature_review.md lines 93-100; results/information_ledger/source_chronology.json"
+    },
+    {
+      "section": "E.2 resampling",
+      "issue": "These development designs use 400 host-refit draws; referring without qualification to main Section 2.7 suggests 2000",
+      "source": "results/sprint1/forecasts/*__a_1.087__c2.json: host_refit.M2.replicates"
+    },
+    {
+      "section": "E1 minor rounding",
+      "issue": "Chronological M0 coverage is .897451150536914, which rounds to .897 rather than .898",
+      "source": "results/sprint1/forecasts/chronological__a_1.087__c2.json: metrics.M0.covered95"
+    }
+  ],
+  "limits": [
+    "PIT/reflection audit assigned separately; no independent quadrature or fitting rerun",
+    "Source identities and literature claims not reverified online",
+    "Some historical descriptive context checked against saved reports and claims rather than regenerated extraction"
+  ]
+}

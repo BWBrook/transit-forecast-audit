@@ -33,8 +33,17 @@ claim of completion.
 | T024 | Reconstruction step 3a section-abstract review | Numbers, prior-question status, score/selection semantics and plain-language use checked in thread 156; each section at most 300 words | T023 | **Codex review complete (D080):** revised section plans and review in `09`–`10`; 267/267/297/298 words. P/4 assigned-residual versus physical-error distinction explicit. Claude reconciles with Barry; frozen products/scrivmark unchanged; no displays or new data |
 | T025 | Reconstruction step 3b paragraph-abstract review | Paragraph messages/order, 3–4 sentences, numerical/selection semantics and missing-source identities checked in thread 156 | T024 | **Codex review complete (D081):** 33 paragraphs (6/8/11/8), each 3–4 sentences; reviews 12–13, arithmetic/structure receipt. Claude reconciles; frozen products/bibliography/scrivmark unchanged; no displays or new data |
 | T026 | Reconstruction step 3c full-draft review | Redundancy cut, scientific/source claims checked against frozen evidence, essential methods retained and unfinished displays flagged | T025 | **Codex review complete (D082):** 278 main-text words cut; abstract primary CI and conditional methods restored. Review 15 and step3c receipt; Claude reconciles. Manuscript, bibliography and scrivmark unchanged; no new fits or displays |
+| T027 | Cross-check step 3c production | PIT/sign/percentiles, appendix numbers, Table3 schema, figures/PDF and drafted references independently checked; clear draft repairs verified | T026 | **Codex complete (D083):** independent PIT/percentiles, appendix and all 6,624 Table 3 cells checked; eight DOI records verified. Draft corrections and regenerated figures/PDF/excerpt, review17 and receipts saved. Numerical CSVs/PIT, canonical products and frozen package unchanged; 160 tests pass, one expected skip. No raw photometry, headers or fits |
 
 ## Claims
+
+- 2026-11-10 Codex: **T027 production cross-check complete (D083)**, from `cba6dbe`,
+  thread 156/message 3186. Bounded reviewers check independent PIT integration,
+  appendix arithmetic and Table 3/bibliography. Parent inspects all figures and
+  online PDF pages and integrates clear fixes. Canonical manuscript, main
+  bibliography, guide, scrivmark and earlier reconstruction stages are
+  hash-recorded and unchanged. No new light curves, headers, fits or protected
+  access; only saved outcomes and source metadata are used.
 
 - 2026-11-10 Codex: **T026 full reconstruction-draft review complete (D082)**, from
   `f7a3d60`, thread 156/message 3180. Parent owns clear draft corrections,

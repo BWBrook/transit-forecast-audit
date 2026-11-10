@@ -156,7 +156,7 @@ N["fig1a_synthetic"] = {"forecast_half_width_min": fh, "measurement_half_width_m
 bx = fig.add_subplot(gs[1])
 D = lambda y, m, d: mdates.date2num(dt.datetime(y, m, d))
 t_drc, t_drd, t_frz = D(2022, 9, 27), D(2025, 11, 18), D(2026, 11, 8)
-t_dev0, t_dev1 = D(2022, 1, 1), D(2024, 1, 3)
+t_dev0, t_dev1 = D(2022, 9, 28), D(2024, 1, 3)
 s74 = D(2024, 1, 3)
 last_tc = max(float(out[e]["tc_bjd_tdb"]) for e in eid)
 t_end = mdates.date2num(jd_to_date(last_tc + 5))  # end of TESS exposures behind the scored timings (approx.)
@@ -173,7 +173,7 @@ bx.plot([t_frz], [ya + .26], "v", color=DARK, ms=6)
 bx.plot([t_drd, t_drd], [yo + .26, yo - .5], lw=.5, color=GREY, ls=":", zorder=0)
 bx.text(t_drc, yo + .36, "DRC issued\n27 Sep 2022", ha="center", va="bottom", fontsize=7)
 bx.text(t_drd, yo + .36, "DRD issued\n18 Nov 2025", ha="center", va="bottom", fontsize=7)
-bx.text((t_dev0 + t_dev1) / 2, yo - .2, "development TESS data\n1 Jan 2022 to 3 Jan 2024", ha="center", va="top", fontsize=7, color=BLUE)
+bx.text((t_dev0 + t_dev1) / 2, yo - .2, "final calibration window\n28 Sep 2022 to 3 Jan 2024", ha="center", va="top", fontsize=7, color=BLUE)
 bx.text((s74 + t_drd) / 2, yo - .2, "sectors 74-97, Jan 2024 to Nov 2025\nnever opened by this project", ha="center", va="top", fontsize=7, color="#555555")
 bx.text(t_drd + 20, yo - .2, "later TESS exposures\n(scored timings)", ha="left", va="top", fontsize=7, color="#9a6700")
 bx.text(t_frz - 25, ya + .22, "freeze and authorisation, 8 Nov 2026", ha="right", va="bottom", fontsize=7)
@@ -274,7 +274,7 @@ for i, (e, ttl) in enumerate(eras):
 cax[0].legend(loc="upper left", frameon=False, fontsize=7)
 fig.text(.52, .045, "Years since DRC issue (27 Sep 2022); axis gap between blocks omitted", ha="center", fontsize=8.5)
 cax[0].text(0, 1.2, "c", transform=cax[0].transAxes, fontsize=10, fontweight="bold", ha="right", va="bottom")
-cax[1].text(.98, .03, f"{len(c2):,} accepted timings, {len(pl2)} planets;\nretrospective comparison on already-inspected timings",
+cax[1].text(.98, .03, f"Both blocks: {len(c2):,} accepted timings, {len(pl2)} planets;\nretrospective comparison on already-inspected timings",
             transform=cax[1].transAxes, ha="right", va="bottom", fontsize=6.8, color="#444444")
 save(fig, "fig2_accuracy.png")
 
@@ -290,7 +290,7 @@ a.axvspan(0, .025, color="#eeeeee", zorder=0)
 a.axvspan(.975, 1, color="#eeeeee", zorder=0)
 a.bar(ctr - .012, h0, width=.023, color=BLUE, label="M0")
 a.bar(ctr + .012, h2, width=.023, color=ORANGE, label="M2")
-a.axhline(1, color=DARK, lw=.9, ls="--", label="uniform (perfect calibration)")
+a.axhline(1, color=DARK, lw=.9, ls="--", label="uniform reference")
 inside = {m: float(wn[(p >= .025) & (p <= .975)].sum()) for m, p in (("M0", pit0), ("M2", pit2))}
 tails = {m: [float(wn[p < .025].sum()), float(wn[p > .975].sum())] for m, p in (("M0", pit0), ("M2", pit2))}
 a.set_xlim(0, 1)

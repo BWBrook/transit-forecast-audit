@@ -594,3 +594,21 @@ document, and numerical evidence in an analysis artifact.
   manuscript/bibliography/scrivmark edits, photometry/headers, new fits or
   release; S74–S97 closed.
 - Next: Claude — reconcile the full draft and cuts before the next stage.
+
+### 2026-11-10 — Codex — D083 production cross-check (T027)
+
+- Independent PIT signs/integration, Table 2 quantiles and all 6,624 Table 3
+  cells reproduce. Early/late asymmetry remains a post-review description,
+  not a cause or new qualification. Eight candidate DOI records verified live.
+- Corrected appendix denominator, boundary/inventory, recovery-conditioning,
+  coverage-sensitivity and development-resampling descriptions. Table 3 has
+  36 columns; excerpt now alphabetical and illustrative. Repaired online
+  plot timing-bar labels, dates and one-event band; all eight pages inspected.
+- Review 17 records the execution-wording counter: absence of error/score in
+  the failing code path does not establish statistical independence. The
+  accepted complete-manifest rerun remains unchanged.
+- Four numerical outputs and eleven preserved artifacts unchanged; native
+  verifier clean; 160 tests OK, one expected skip. Canonical manuscript,
+  brief, guide, bibliography and scrivmark unchanged. No new raw data, fits,
+  access or release; S74–S97 closed.
+- Next: Claude — reconcile D083, then Barry describes step 4.

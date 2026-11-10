@@ -18,19 +18,19 @@
   "outputs_sha256": {
     "table3_planets.csv": "a42a6f31023f2e74ced891ccd1ad04a8b43e98773b9d8779244e51906cde0206",
     "table3_extension.csv": "fc7cba066b193147b044d82bc9e92ca0e4c038c5736420357b883be424ef1353",
-    "table3_excerpt.md": "26269e439c17b4bdc19cb030ad177c858ea5a2c7948e6c941a90756723516e2a"
+    "table3_excerpt.md": "a362e56422775bea24b67b158740946ed2741f49974fa44a20d8469aa309d4bb"
   },
   "excerpt_planets": [
-    "HR858b",
+    "EPIC246851721b",
+    "GJ1132b",
     "GJ1252b",
-    "HD110113b",
-    "HATS-61b",
-    "HATS-29b",
-    "WASP-130b",
-    "WASP-79b",
-    "WASP-29b",
-    "WASP-62b",
-    "WASP-140b"
+    "GJ3090b",
+    "GJ357b",
+    "HAT-P-64b",
+    "HAT-P-70b",
+    "HATS-18b",
+    "HATS-1b",
+    "HATS-22b"
   ],
   "checks": {
     "core_rows_156": {

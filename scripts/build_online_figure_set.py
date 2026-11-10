@@ -43,19 +43,26 @@ with PdfPages(OUT / "online_figure_set_oc.pdf") as pdf:
             v = sorted(by[p])
             d = np.array([date(x[0]) for x in v]); y = np.array([x[1] for x in v])
             e = np.array([x[2] for x in v]); b = np.array([x[3] for x in v])
-            ax.fill_between(d, -b, b, color=SKY, alpha=.45, lw=0, step=None)
+            if len(v) == 1:
+                ax.fill_between([d[0] - .5, d[0] + .5], [-b[0]] * 2, [b[0]] * 2,
+                                color=SKY, alpha=.45, lw=0)
+                ax.set_xlim(d[0] - 1, d[0] + 1)
+            else:
+                ax.fill_between(d, -b, b, color=SKY, alpha=.45, lw=0, step=None)
             ax.axhline(0, color="#555555", lw=.5)
             ax.errorbar(d, y, yerr=e, fmt="o", ms=2, lw=.5, color=VERM if p == "HR858b" else BLUE)
             ax.set_title(f"{p}  (n = {len(v)})", fontsize=7, loc="left", pad=2)
-            ax.xaxis.set_major_locator(mdates.AutoDateLocator(minticks=2, maxticks=3))
-            ax.xaxis.set_major_formatter(mdates.DateFormatter("%b %Y"))
+            locator = mdates.AutoDateLocator(minticks=2, maxticks=3)
+            ax.xaxis.set_major_locator(locator)
+            ax.xaxis.set_major_formatter(mdates.DateFormatter("%d %b\n%Y"))
             ax.tick_params(length=2, pad=1)
             ax.set_ylabel("min", fontsize=6, labelpad=1)
             for t in ax.get_xticklabels():
                 t.set_rotation(20); t.set_ha("right")
-        fig.suptitle("Accepted timings minus issued DRD forecast; light band = forecast-only 95% interval; bars = timing 1-sigma"
-                     f"   (page {pg + 1}/{npages})", fontsize=7, y=.995)
-        fig.tight_layout(rect=(0, 0, 1, .985))
+        fig.suptitle(f"Accepted timings minus issued DRD forecast (page {pg + 1}/{npages})\n"
+                     "Band: forecast-only 95% interval; bars: reported 68% timing half-width",
+                     fontsize=7, y=.995)
+        fig.tight_layout(rect=(.02, 0, .99, .975))
         pdf.savefig(fig); plt.close(fig)
 pdf_path = OUT / "online_figure_set_oc.pdf"
 rec_p = OUT / "figures_receipt.json"
@@ -63,6 +70,9 @@ rec = json.load(open(rec_p))
 rec["online_figure_set_oc"] = {"file": "online_figure_set_oc.pdf", "sha256": hashlib.sha256(pdf_path.read_bytes()).hexdigest(),
     "bytes": pdf_path.stat().st_size, "planets": len(planets), "events": 2185, "pages": npages, "panels_per_page": per,
     "hr858b_page": planets.index("HR858b") // per + 1, "band": "+/-1.96*sqrt(forecast_variance_s2)/60 min per event",
+    "timing_bars": "reported 68% half-width, not full non-Gaussian SD",
+    "single_timing_panels": [p for p in planets if len(by[p]) == 1],
+    "single_timing_band_display_days": 1,
     "inputs_sha256": {k: hashlib.sha256(p.read_bytes()).hexdigest() for k, p in srcs.items()}}
 json.dump(rec, open(rec_p, "w"), indent=1)
 print(pdf_path.stat().st_size, npages, rec["online_figure_set_oc"]["hr858b_page"])

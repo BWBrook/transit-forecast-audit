@@ -1,0 +1,100 @@
+{
+  "date": "2026-11-10",
+  "decision": "D083",
+  "source_commit": "cba6dbe",
+  "production_commit": "05ae64f",
+  "scope": "Saved tables and likelihood grids; live public DOI metadata; no raw photometry, headers, new fits, new access or release",
+  "independent_reviews_sha256": {
+    "results/reconstruction_review/pit_independent_check.json": "1e1c2ed10236cffb9cb02a56dae62369f939ac5d40cf42db1eaaf1db5b2a4689",
+    "results/reconstruction_review/appendix_production_check.json": "967482f76d0700344fb358c6c926eb7bd02a5917927ffaca6343581f4eaadc37",
+    "results/reconstruction_review/table3_bib_check.json": "9b5862b1e482c4bf86cf445fc58836aaea527bf59f5280a879887afe69e276c7",
+    "results/reconstruction_review/bib_crossref_live.json": "28686106c5908188102b8a2aca9eb298fb75cebf79f0a1aeaaf006484cb6a198"
+  },
+  "audit_version_note": "Independent receipts bind the reviewed handoff versions. Final hashes below bind corrected drafts and regenerated displays. Table 3 CSVs and both PIT products are byte-identical.",
+  "preserved_sha256": {
+    "manuscript/paper.md": "f61ce6a87ef1197530b132ca570def2733c39aa5dd11577e529608e4e5535a8d",
+    "docs/brief.md": "a80bf1aafff5e28a157b7b2010f82c173d5672837266ed74c51e7f551e353763",
+    "docs/brief.pdf": "bcc2e696c48731783b9c38fdcea8ec691722d19311324802bd5fa5ff8cd6ff46",
+    "docs/agent_guide.md": "b114aaf0d66173d2fa3af2e341b0844d9ea0ffb6c04775de6193ab3cf7c7ba88",
+    "references/references.bib": "fbe8f9892a8fcf98d4e549f0b95ed63969fec07ff372b5af7340a0af1b586cbe",
+    "references/references.csl.json": "e0c00de4745be4c8f9728671d624c21c0e3f7c53ac7ab2d7340fcbf7cc61605d",
+    "references/literature_evidence.json": "342bdc0c3cf8fe0f22936425becb40ffebd944723229f055373b7ea13b44fb2c",
+    "scrivmark.toml": "3d38952619e82c800813e9486a77007dcb516ac83486b3dd30cf05d6c37074f1",
+    "docs/reconstruction/03_main_message.md": "0ed7f0c107e49eb08373e8d33421893d4c7423783cb63da13d6f044b52e5afe5",
+    "docs/reconstruction/09_section_abstracts.md": "a4a67a82b51fe3750c2cb2ac4cdbe59e641191878e78c0625c3d49eaa095930a",
+    "docs/reconstruction/11_paragraph_abstracts.md": "c91ee51026f2c744ffcb45ada81cb22844dbdf2d7bd3e087f7a9534c1a93f32d"
+  },
+  "preserved_all_unchanged": true,
+  "numerical_products_sha256": {
+    "table3_planets.csv": "a42a6f31023f2e74ced891ccd1ad04a8b43e98773b9d8779244e51906cde0206",
+    "table3_extension.csv": "fc7cba066b193147b044d82bc9e92ca0e4c038c5736420357b883be424ef1353",
+    "pit_events.csv": "6c8caa681eedffbdb690a8a0bc3bba221121ee39b0d162ec2f0289e897090da8",
+    "pit_table2.json": "0d428c201b1d6a01ca1293cf476aecb78f431fe1aa30e338e0397871ce8f2eaf"
+  },
+  "numerical_products_all_unchanged": true,
+  "final_artifacts_sha256": {
+    "scripts/reconstruction_pit_table2.py": "84fdeace73af5d6f0bc4f46b23946a14adf400e0e5966e998ef55d3de12c5bc5",
+    "scripts/build_reconstruction_figures.py": "6c3cff9ee752e2a471346159d66bd86be88791a2b3f4497583b5b2cf1bd4e897",
+    "scripts/build_online_figure_set.py": "1ec559d716a897b853c816b3e485ef760791220fcfcb0f5c383fec8984ce1d54",
+    "scripts/build_table3.py": "ff800454b5d7cb3d57823971def674ec531787355428e538d1d8c5345726a369",
+    "docs/reconstruction/14_full_draft.md": "a9da76c60b4099e9f4b83b1549752c4fe836d2a890bd9e80e097bf9e5e16ef61",
+    "docs/reconstruction/16_appendices.md": "444e7378df76a4a2a4341edba6dd635e6ed78b5a67c7b0878160d8075a51a6b4",
+    "docs/reconstruction/17_production_review.md": "5f0e0a84277376837b348e070c0554263f317d37f42a0ec7a2f0783d2e9c3567",
+    "docs/reconstruction/references_additions.bib": "9d475dd92807d502e2c4fba632720eb9edf5f71ae2b69d299fcde74448008a9f",
+    "results/reconstruction_displays/fig1_schematic.png": "26deb3817cce1f788bfb5f5d9fa4d7693d39f48d8cb0b199dcb0c1b5fb9bd9fa",
+    "results/reconstruction_displays/fig2_accuracy.png": "9080d0064fed46fa96f47b922f93700a0c93a1287dd4cce851483e5a6c20bfc4",
+    "results/reconstruction_displays/fig3_calibration.png": "0634c74d670961b31ae36266846fab2d3a1946eff6f96c046520e0b58a718173",
+    "results/reconstruction_displays/fig4_hr858.png": "0d0b75176d0d363b613f0647368be7215c2047a77b966e407a1747361de56c0c",
+    "results/reconstruction_displays/figures_receipt.json": "2c0979a375cb88958cca05f7a1620c7e2159b60ee33805920f8f2c7620f2fd13",
+    "results/reconstruction_displays/online_figure_set_oc.pdf": "b6d825956b60643ebaefceb369db3f50ee9c029312cb74b9e72ca4f7fa6830e7",
+    "results/reconstruction_displays/pit_events.csv": "6c8caa681eedffbdb690a8a0bc3bba221121ee39b0d162ec2f0289e897090da8",
+    "results/reconstruction_displays/pit_table2.json": "0d428c201b1d6a01ca1293cf476aecb78f431fe1aa30e338e0397871ce8f2eaf",
+    "results/reconstruction_displays/table3_dictionary.md": "66e120e4ad0593dc86e9e7cfb1432c47ef2d6182c1dfe0e2553c885c356eb48c",
+    "results/reconstruction_displays/table3_excerpt.md": "a362e56422775bea24b67b158740946ed2741f49974fa44a20d8469aa309d4bb",
+    "results/reconstruction_displays/table3_extension.csv": "fc7cba066b193147b044d82bc9e92ca0e4c038c5736420357b883be424ef1353",
+    "results/reconstruction_displays/table3_planets.csv": "a42a6f31023f2e74ced891ccd1ad04a8b43e98773b9d8779244e51906cde0206",
+    "results/reconstruction_displays/table3_receipt.json": "80e2a171af90dc427137691638c406b721c268ea2553e1665ad32d83bf95e6d9",
+    "data/derived/revision_stage0/benchmark/specification/freeze_manifest.json": "5ec7c0f363bca641430c68c0ff57fdbf788cda9e32f80dddea7c7cd9121c57d1",
+    "data/derived/revision_stage0/benchmark/replayed/replay_receipt.json": "c42b2f016b6bbb5ce142e1f3fdf1a027c07836965af9075ca8aec85fc2be6e34"
+  },
+  "table3_checks_all_pass": true,
+  "table3_cells_independently_compared": 6624,
+  "table3_field_mismatches": [],
+  "visual_review": {
+    "main_figures": 4,
+    "online_pdf_pages": 8,
+    "final_pdf_pages_contact_sheet_inspected": true,
+    "single_timing_panel_inspected_at_full_page_size": true,
+    "pdf_text_and_panel_accounting": {
+      "pages": 8,
+      "panels": 151,
+      "events": 2185,
+      "out_of_page_text": []
+    }
+  },
+  "native_freeze_verification": {
+    "manifest_sha256": "5ec7c0f363bca641430c68c0ff57fdbf788cda9e32f80dddea7c7cd9121c57d1",
+    "mismatches": []
+  },
+  "unit_suite": {
+    "command": ".venv/bin/python -m unittest discover -s tests -v",
+    "tests_run": 160,
+    "skipped": 1,
+    "status": "OK",
+    "runtime_s": 7.27,
+    "log_sha256": "4046ccb2092884e9c637f53bdb7d5d6103b333402c2eaed9a2a99d1b2fc60f43"
+  },
+  "rebuild_commands": [
+    ".venv/bin/python scripts/reconstruction_pit_table2.py",
+    ".venv/bin/python scripts/build_reconstruction_figures.py",
+    ".venv/bin/python scripts/build_table3.py",
+    ".venv/bin/python scripts/build_online_figure_set.py"
+  ],
+  "rebuild_order_note": "Run the online builder after the main figures builder because both update figures_receipt.json. PIT was independently recalculated; its unchanged production outputs need not be rewritten.",
+  "scientific_status": "Descriptive post-review production. Frozen primary result unchanged; uniform PIT reference conditional on observation and acceptance assumptions.",
+  "bibliography_checks": {
+    "entries": 8,
+    "live_crossref_metadata_all_match": true,
+    "main_bibliography_unchanged": true
+  }
+}

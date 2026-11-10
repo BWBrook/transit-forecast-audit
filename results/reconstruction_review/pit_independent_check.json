@@ -1,0 +1,95 @@
+{
+  "source_commit": "cba6dbe",
+  "scope": "Saved-artifact independent calculation; no project modules imported, no fits, photometry or headers",
+  "events": 2185,
+  "planets": 151,
+  "gaussian_events": 1786,
+  "grid_events": 399,
+  "derivation": "r=reported-predicted; x=true-reported; measurement error E=-x. Thus observed residual R=forecast_error-X has CDF E_X Phi((r+x)/sd). M2 log variance is s*Z, variance=b^2*vf*exp(s*Z), not exp(2*s*Z).",
+  "independent_numerics": "Grid point masses independently reconstructed by trapezoidal widths; M2 standard-normal integral independently evaluated using scipy.integrate.quad over [-10,10], epsabs=epsrel=2e-11; omitted normal mass <1.6e-23. M0 uses direct CDF.",
+  "pit_comparison": {
+    "M0": {
+      "max_abs_difference_from_saved_pit": 4.440892098500626e-15,
+      "max_adaptive_integration_error_estimate": 0.0
+    },
+    "M2": {
+      "max_abs_difference_from_saved_pit": 1.3582468483264165e-12,
+      "max_adaptive_integration_error_estimate": 1.9999007257333585e-11
+    }
+  },
+  "coverage_tail_direction_hr858b": {
+    "M0": {
+      "coverage95": 0.9079364975831288,
+      "early_tail": 0.06421676104631323,
+      "late_tail": 0.027846741370558002,
+      "early_events": 117,
+      "late_events": 59,
+      "gaussian_early_global_mass": 0.05511017408553204,
+      "gaussian_late_global_mass": 0.02541026061467653,
+      "gaussian_early_conditional_mass": 0.06384938803280867,
+      "gaussian_late_conditional_mass": 0.029439747141484895,
+      "hr858b_early_mass": 0.006622516556291391,
+      "hr858b_pit_range": [
+        1.0486131836992327e-129,
+        8.938484328840749e-90
+      ],
+      "without_hr858b_early_reweighted": 0.05797820611995592,
+      "without_hr858b_late_reweighted": 0.028032386313028682,
+      "early_tail_with_nonnegative_raw_residual": 0,
+      "late_tail_with_nonpositive_raw_residual": 0
+    },
+    "M2": {
+      "coverage95": 0.9757619919679326,
+      "early_tail": 0.01963094401513968,
+      "late_tail": 0.004607064016927693,
+      "early_events": 50,
+      "late_events": 27,
+      "gaussian_early_global_mass": 0.012697259129993681,
+      "gaussian_late_global_mass": 0.004378088779810017,
+      "gaussian_early_conditional_mass": 0.014710754204583863,
+      "gaussian_late_conditional_mass": 0.005072353589562734,
+      "hr858b_early_mass": 0.006622516556291391,
+      "hr858b_pit_range": [
+        0.0006833925848932546,
+        0.0008902032192129509
+      ],
+      "without_hr858b_early_reweighted": 0.013095150308574081,
+      "without_hr858b_late_reweighted": 0.0046377777770405925,
+      "early_tail_with_nonnegative_raw_residual": 0,
+      "late_tail_with_nonpositive_raw_residual": 0
+    }
+  },
+  "covered95_disagreements_with_frozen_scores": {
+    "M0": 0,
+    "M2": 0
+  },
+  "error_percentiles_minutes": {
+    "pooled": {
+      "p50": 1.114775687456131,
+      "p95": 6.362337917089462,
+      "p99": 17.860334292054176,
+      "max": 404.0422710031271
+    },
+    "equal_planet": {
+      "p50": 1.3149476051330566,
+      "p95": 9.040780439972878,
+      "p99": 18.741974383592606,
+      "max": 404.0422710031271
+    },
+    "numpy_default_linear_pooled": {
+      "0.5": 1.114775687456131,
+      "0.95": 6.3613442927598935,
+      "0.99": 17.61196702122684
+    }
+  },
+  "quantile_definition": "Inverse weighted empirical CDF: first observed error at cumulative mass >= q. Exact rational weights used independently; pooled rank ceil(q*N); equal planet mass 1/(151*n_planet). This is not numpy default linear interpolation.",
+  "input_sha256": {
+    "data/derived/revision_stage0/benchmark/primary/accepted_outcomes.csv": "6a905c4ea5098a22966cae091801f6b3da0ba9458289fb51e1eb83b46f86ec3d",
+    "data/derived/revision_stage0/benchmark/primary/accepted_forecasts.csv": "67c76e6432a1ce2b4b010c4f62daf6eba016451c9d5730fe80eaf3823e5f84ac",
+    "data/derived/revision_stage0/benchmark/primary/expected_scores.csv": "3ba24636684e42d2d99dbbe68c336d2726aa702d70ea0ed7001005a7a223412c",
+    "scripts/reconstruction_pit_table2.py": "84fdeace73af5d6f0bc4f46b23946a14adf400e0e5966e998ef55d3de12c5bc5",
+    "results/reconstruction_displays/pit_events.csv": "6c8caa681eedffbdb690a8a0bc3bba221121ee39b0d162ec2f0289e897090da8"
+  },
+  "grid_hashes_combined_sha256": "a84c83a5a3e15e2df369dfc05bd16c1c07a4858e2a6641831f52dd3d6a6b00b2",
+  "interpretation": "Descriptive early/late imbalance among accepted timings under reconstructed covariance and supplied measurement kernel. Gaussian-only rows retain early excess, so grid reflection is not its explanation. No cause, selection completeness, latent-time calibration or fresh measurement qualification established."
+}

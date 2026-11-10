@@ -1,0 +1,386 @@
+{
+  "authority": "Crossref works API",
+  "retrieved_date": "2026-11-10",
+  "entries": [
+    {
+      "DOI": "10.1088/1538-3873/acd1b5",
+      "title": [
+        "The James Webb Space Telescope Mission"
+      ],
+      "container-title": [
+        "Publications of the Astronomical Society of the Pacific"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ]
+      },
+      "volume": "135",
+      "issue": "1048",
+      "page": "068001",
+      "publisher": "IOP Publishing",
+      "requested_doi": "10.1088/1538-3873/acd1b5",
+      "metadata_sha256": "6a7975e1dfa286ce3de2a6b84a9a138bc3a072dc4acd51cb1deba633c446b2d0",
+      "request": "Crossref DOI filter and selected fields",
+      "first_authors_source": "published Gardner paper, first page"
+    },
+    {
+      "requested_doi": "10.1007/s10686-018-9598-x",
+      "DOI": "10.1007/s10686-018-9598-x",
+      "title": [
+        "A chemical survey of exoplanets with ARIEL"
+      ],
+      "container-title": [
+        "Experimental Astronomy"
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "volume": "46",
+      "issue": "1",
+      "page": "135-209",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            9,
+            11
+          ]
+        ]
+      },
+      "first_authors": [
+        {
+          "given": "Giovanna",
+          "family": "Tinetti"
+        },
+        {
+          "given": "Pierre",
+          "family": "Drossart"
+        },
+        {
+          "given": "Paul",
+          "family": "Eccleston"
+        }
+      ],
+      "author_count": 244,
+      "metadata_sha256": "f4abcf432a86b5977ee6140414b88940987371481a33700ada943295bde3a6a9"
+    },
+    {
+      "requested_doi": "10.1111/j.1365-2966.2005.08922.x",
+      "DOI": "10.1111/j.1365-2966.2005.08922.x",
+      "title": [
+        "On detecting terrestrial planets with timing of giant planet transits"
+      ],
+      "container-title": [
+        "Monthly Notices of the Royal Astronomical Society"
+      ],
+      "publisher": "Oxford University Press (OUP)",
+      "volume": "359",
+      "issue": "2",
+      "page": "567-579",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2005,
+            5,
+            11
+          ]
+        ]
+      },
+      "first_authors": [
+        {
+          "given": "E.",
+          "family": "Agol"
+        },
+        {
+          "given": "J.",
+          "family": "Steffen"
+        },
+        {
+          "given": "R.",
+          "family": "Sari"
+        }
+      ],
+      "author_count": 4,
+      "metadata_sha256": "52bbd421f43da6dbb23929e0b2f221873acd94b4a5ccbec373e54a9972cb262b"
+    },
+    {
+      "requested_doi": "10.1126/science.1107822",
+      "DOI": "10.1126/science.1107822",
+      "title": [
+        "The Use of Transit Timing to Detect Terrestrial-Mass Extrasolar Planets"
+      ],
+      "container-title": [
+        "Science"
+      ],
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "volume": "307",
+      "issue": "5713",
+      "page": "1288-1291",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2005,
+            2,
+            25
+          ]
+        ]
+      },
+      "first_authors": [
+        {
+          "given": "Matthew J.",
+          "family": "Holman"
+        },
+        {
+          "given": "Norman W.",
+          "family": "Murray"
+        }
+      ],
+      "author_count": 2,
+      "metadata_sha256": "d2d0158fc90532609529626785f87d9976751019e853e362de9ebb73670755a4"
+    },
+    {
+      "requested_doi": "10.1051/0004-6361:20020802",
+      "DOI": "10.1051/0004-6361:20020802",
+      "title": [
+        "A box-fitting algorithm in the search for periodic transits"
+      ],
+      "container-title": [
+        "Astronomy &amp; Astrophysics"
+      ],
+      "publisher": "EDP Sciences",
+      "volume": "391",
+      "issue": "1",
+      "page": "369-377",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2002,
+            7,
+            29
+          ]
+        ]
+      },
+      "first_authors": [
+        {
+          "given": "G.",
+          "family": "Kov\u00e1cs"
+        },
+        {
+          "given": "S.",
+          "family": "Zucker"
+        },
+        {
+          "given": "T.",
+          "family": "Mazeh"
+        }
+      ],
+      "author_count": 3,
+      "metadata_sha256": "da39cd32167da0705a68c4460f4c68534efe33facd0465550d862e4ca397276d"
+    },
+    {
+      "requested_doi": "10.1073/pnas.1710231115",
+      "DOI": "10.1073/pnas.1710231115",
+      "title": [
+        "Iterative near-term ecological forecasting: Needs, opportunities, and challenges"
+      ],
+      "container-title": [
+        "Proceedings of the National Academy of Sciences"
+      ],
+      "publisher": "National Academy of Sciences",
+      "volume": "115",
+      "issue": "7",
+      "page": "1424-1432",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            1,
+            30
+          ]
+        ]
+      },
+      "first_authors": [
+        {
+          "given": "Michael C.",
+          "family": "Dietze"
+        },
+        {
+          "given": "Andrew",
+          "family": "Fox"
+        },
+        {
+          "given": "Lindsay M.",
+          "family": "Beck-Johnson"
+        }
+      ],
+      "author_count": 19,
+      "metadata_sha256": "487559754a9444a39d69b552a054c0a676d454c65e51fb14512c07b012b1c78a"
+    },
+    {
+      "requested_doi": "10.1073/pnas.1708274114",
+      "DOI": "10.1073/pnas.1708274114",
+      "title": [
+        "The preregistration revolution"
+      ],
+      "container-title": [
+        "Proceedings of the National Academy of Sciences"
+      ],
+      "publisher": "National Academy of Sciences",
+      "volume": "115",
+      "issue": "11",
+      "page": "2600-2606",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            3,
+            12
+          ]
+        ]
+      },
+      "first_authors": [
+        {
+          "given": "Brian A.",
+          "family": "Nosek"
+        },
+        {
+          "given": "Charles R.",
+          "family": "Ebersole"
+        },
+        {
+          "given": "Alexander C.",
+          "family": "DeHaven"
+        }
+      ],
+      "author_count": 4,
+      "metadata_sha256": "185e91d9c77d95d11a6228d509cbd11201a00baef8685c1d6417725452a0376d"
+    },
+    {
+      "requested_doi": "10.1017/CBO9780511802843",
+      "DOI": "10.1017/cbo9780511802843",
+      "title": [
+        "Bootstrap Methods and their Application"
+      ],
+      "container-title": [],
+      "publisher": "Cambridge University Press",
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1997,
+            10,
+            28
+          ]
+        ]
+      },
+      "first_authors": [
+        {
+          "given": "A. C.",
+          "family": "Davison"
+        },
+        {
+          "given": "D. V.",
+          "family": "Hinkley"
+        }
+      ],
+      "author_count": 2,
+      "metadata_sha256": "52b5570e0367d57a5a5c6d614e343d6d7217736b49af41ce2f9bf69bf6e37058"
+    }
+  ],
+  "comparison": {
+    "entries": 8,
+    "checks": [
+      {
+        "key": "Gardner2023JWST",
+        "doi": "10.1088/1538-3873/acd1b5",
+        "title_match": true,
+        "year_match": true,
+        "volume_match": true,
+        "issue_match": true,
+        "page_match": true,
+        "first_author_family_match": true
+      },
+      {
+        "key": "Tinetti2018Ariel",
+        "doi": "10.1007/s10686-018-9598-x",
+        "title_match": true,
+        "year_match": true,
+        "volume_match": true,
+        "issue_match": true,
+        "page_match": true,
+        "first_author_family_match": true
+      },
+      {
+        "key": "Agol2005TTV",
+        "doi": "10.1111/j.1365-2966.2005.08922.x",
+        "title_match": true,
+        "year_match": true,
+        "volume_match": true,
+        "issue_match": true,
+        "page_match": true,
+        "first_author_family_match": true
+      },
+      {
+        "key": "HolmanMurray2005TTV",
+        "doi": "10.1126/science.1107822",
+        "title_match": true,
+        "year_match": true,
+        "volume_match": true,
+        "issue_match": true,
+        "page_match": true,
+        "first_author_family_match": true
+      },
+      {
+        "key": "Kovacs2002BLS",
+        "doi": "10.1051/0004-6361:20020802",
+        "title_match": true,
+        "year_match": true,
+        "volume_match": true,
+        "issue_match": true,
+        "page_match": true,
+        "first_author_family_match": true
+      },
+      {
+        "key": "Dietze2018",
+        "doi": "10.1073/pnas.1710231115",
+        "title_match": true,
+        "year_match": true,
+        "volume_match": true,
+        "issue_match": true,
+        "page_match": true,
+        "first_author_family_match": true
+      },
+      {
+        "key": "Nosek2018",
+        "doi": "10.1073/pnas.1708274114",
+        "title_match": true,
+        "year_match": true,
+        "volume_match": true,
+        "issue_match": true,
+        "page_match": true,
+        "first_author_family_match": true
+      },
+      {
+        "key": "DavisonHinkley1997",
+        "doi": "10.1017/CBO9780511802843",
+        "title_match": true,
+        "year_match": true,
+        "first_author_family_match": true
+      }
+    ],
+    "all_match": true,
+    "Gardner_authors_crosscheck": "published paper first page; Crossref selected-fields query verifies journal/issue/article fields"
+  }
+}

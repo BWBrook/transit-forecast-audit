@@ -236,14 +236,19 @@
  },
  "online_figure_set_oc": {
   "file": "online_figure_set_oc.pdf",
-  "sha256": "7f33d6312f5cbeaf45d52c008cd0f714cc42ca289d9244fb4608c379281d91c3",
-  "bytes": 244294,
+  "sha256": "b6d825956b60643ebaefceb369db3f50ee9c029312cb74b9e72ca4f7fa6830e7",
+  "bytes": 244574,
   "planets": 151,
   "events": 2185,
   "pages": 8,
   "panels_per_page": 20,
   "hr858b_page": 3,
   "band": "+/-1.96*sqrt(forecast_variance_s2)/60 min per event",
+  "timing_bars": "reported 68% half-width, not full non-Gaussian SD",
+  "single_timing_panels": [
+   "WASP-106b"
+  ],
+  "single_timing_band_display_days": 1,
   "inputs_sha256": {
    "accepted_outcomes": "6a905c4ea5098a22966cae091801f6b3da0ba9458289fb51e1eb83b46f86ec3d",
    "accepted_forecasts": "67c76e6432a1ce2b4b010c4f62daf6eba016451c9d5730fe80eaf3823e5f84ac"

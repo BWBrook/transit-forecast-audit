@@ -2,6 +2,8 @@
 
 Files: `table3_planets.csv` (156 core planets, one row each, including the five with no accepted timing), `table3_extension.csv` (28 exploratory extension planets, same schema, `cohort = extension`; never pool with core for a confirmatory statement), `table3_excerpt.md` (10-row printed excerpt), `table3_receipt.json` (input SHA-256s, checks). Built by `scripts/build_table3.py` from saved files only; no TESS photometry or headers were opened.
 
+Schema: 36 columns in each CSV.
+
 Conventions. An empty cell means unknown or not applicable, never zero or "no"; the per-column entries say which. Counts are always filled (0 is a real zero). The "accepted" population is the registered accepted-timing set; planets with none have empty accuracy and coverage fields. Sources: `B/` = `data/derived/revision_stage0/benchmark/{primary|extension}/`; `IL/` = `results/information_ledger/`.
 
 | Column | Unit | Source | Definition; empty means |
@@ -12,7 +14,7 @@ Conventions. An empty cell means unknown or not applicable, never zero or "no"; 
 | tic | text | `results/sprint2/freeze_candidate/roster.csv` | TIC identifier of the host. |
 | drd_t0_bjd_tdb | BJD_TDB | `IL/release_planets.csv`, release = DRD | Published DRD reference mid-time T0. Not the integer `forecast_epoch`. |
 | drd_period_d | days | same | Published DRD period P. |
-| sigma_t0_s, sigma_p_s | seconds | `B/intended_forecasts.csv.gz` | Marginal 1-sigma uncertainties on T0 and P as used in the forecasts (sigma_p_s is the period uncertainty expressed in seconds). Reconstructed from released inputs, not issued by ExoClock as a joint posterior. |
+| sigma_t0_s, sigma_p_s | seconds | `B/intended_forecasts.csv.gz` | Issued marginal 1-sigma uncertainties on T0 and P, converted to seconds. These are published marginal errors; only rho is reconstructed from released inputs, and an issued joint posterior is not recovered. |
 | rho | dimensionless | intended forecasts | Reconstructed T0-P correlation (weighted-least-squares reconstruction from released inputs; not an issued covariance). |
 | covariance_tier | text | intended forecasts | Reconstruction tier of the covariance (`C2_candidate` for all rows). |
 | n_intended | count | terminal ledger | Fixed intended event opportunities (planet x sector x DRD cycle), selection fixed before outcomes. Metadata eligibility, not a recovered transit. |
@@ -37,6 +39,6 @@ Conventions. An empty cell means unknown or not applicable, never zero or "no"; 
 
 ## Left out, and why
 
-- Transit duration: the release ledger does not hold a verified origin duration (`duration_status` is not present), so it is omitted rather than approximated.
+- Transit duration: the release ledger does not hold a verified origin duration (`duration_status` and `origin_transit_duration_minutes` exist, but the latter is unverified and empty), so it is omitted rather than approximated.
 - A uniform literature TTV flag for every planet: needs curation not yet done.
 - Per-event rows: they live in the benchmark package (`B/`); this table is per planet.

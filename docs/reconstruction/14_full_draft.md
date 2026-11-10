@@ -220,8 +220,8 @@ external registry, is the record.
 
 One deviation occurred. The first measurement run failed to write likelihood
 grids for 71 of 304 light curves because of a relative output path. The fault
-was triggered only when a non-Gaussian grid was written, so it was independent
-of forecast errors and scores. We reran the identical code on the
+was triggered when a non-Gaussian grid was written; no forecast error or score
+entered the failing code path. We reran the identical code on the
 whole manifest with an absolute output path. An independent
 audit confirmed that every product, window and grid completed in the first
 attempt was unchanged in the rerun, and both attempts are archived.
@@ -318,12 +318,13 @@ and coverage falls short of nominal at every level from 50% to 99%.
 Measurement uncertainty is a large part of the combined interval: the
 reported timing uncertainty (a 68% half-width for non-Gaussian timings) is a
 median 1.9 times the forecast SD with planets weighted equally, and 2.7 times
-pooling events. Exact predictive PIT values (Fig. 3a) show that the misses
-were lopsided: 6.4% of timings, planet-weighted, fell below M0's 95% interval
+pooling events. In a post-review diagnostic, each timing's probability integral
+transform (PIT) locates it within the modelled predictive distribution (Fig. 3a).
+The misses were lopsided: 6.4% of timings, planet-weighted, fell below M0's 95% interval
 (early) and 2.8% above it (late); HR 858 b supplies 0.7 points of the early
-share.
+share. This is descriptive and does not identify the source of the asymmetry.
 
-<!-- claims: C043, C052, C063; D076; PIT and percentiles: results/reconstruction_displays/pit_table2.json (scripts/reconstruction_pit_table2.py) -->
+<!-- claims: C043, C052, C063, C065; D076; PIT and percentiles: results/reconstruction_displays/pit_table2.json (scripts/reconstruction_pit_table2.py) -->
 
 ### 3.5 The prespecified test (H3)
 
@@ -502,8 +503,8 @@ recovery and cycle identification.
 **Figure 1.** What is tested. (a) One forecast: the predicted mid-time and its
 95% interval, a measured mid-time with its own uncertainty, the
 measurement-convolved interval used for scoring, and a full observing window
-for contrast. (b) Timeline in two lanes. Observations: DRC issue, development
-blocks, sectors 74–97 (never opened), DRD issue on 18 November 2025 and later
+for contrast. (b) Timeline in two lanes. Observations: DRC issue, the final calibration window,
+sectors 74–97 (never opened), DRD issue on 18 November 2025 and later
 TESS exposures. Analyst access: the freeze and authorisation on 8 November
 2026, then first access to the later timings. Panel (a) is illustrative and
 not to scale. [`fig1_schematic.png`]
@@ -519,8 +520,8 @@ periods omitted. [`fig2_accuracy.png`]
 
 **Figure 3.** Calibration. (a) Planet-weighted histograms of exact predictive
 PIT values of the accepted timings under M0 and M2, computed from the saved
-forecasts and likelihood grids; calibrated forecasts give a flat histogram, and
-low values mean early transits. (b) Planet-balanced coverage of accepted timings
+forecasts and likelihood grids; low values mean early transits. The uniform
+reference assumes the stated observation model and ignorable acceptance. (b) Planet-balanced coverage of accepted timings
 against nominal central-interval probability for M0 and M2, with conditional
 host intervals. [`fig3_calibration.png`]
 
@@ -546,7 +547,9 @@ transits were intended. [`fig4_hr858.png`]
 
 **Table 2.** Headline results. Planet-balanced over 151 planets unless stated;
 smaller interval scores are better; coverage is of accepted measured timings
-under the measurement-convolved forecast.
+under the measurement-convolved forecast. Error quantiles use the inverse
+weighted empirical CDF without interpolation, using equal event weights or
+equal planet weights with equal event weights within each planet.
 
 | Quantity | M0 (reconstructed) | M2 (tails) |
 |---|---:|---:|
@@ -566,8 +569,9 @@ Columns: planet and host; DRD $T_0$, $P$ and their uncertainties; reconstructed
 correlation and tier; intended, coverage-qualified and accepted transits;
 terminal statuses; median and maximum absolute error; M0 and M2 coverage;
 release-input age, baseline and scatter; dated TTV-literature status, with
-unknown kept distinct from absent. The printed excerpt shows the five largest
-and five smallest maximum errors, a declared extreme-ordered selection.
+unknown kept distinct from absent. The printed excerpt uses the first ten
+planet labels alphabetically to illustrate the format; it is not a
+representative scientific sample.
 [`table3_planets.csv`, `table3_extension.csv`, `table3_dictionary.md`,
 `table3_excerpt.md`]
 
