@@ -3,9 +3,11 @@
 <!--
 Reconstruction step 3c: full draft. Claude (Opus 5.5), 10 November 2026,
 expanded from the reconciled paragraph abstracts in 11_paragraph_abstracts.md.
-Written in the voice of the finished paper. Not yet built or released:
-Fig. 1, Fig. 2, Fig. 3a, Fig. 4b and Table 3 are planned (04_display_items.md);
-Table 2 cells marked [compute] await the display build. manuscript/paper.md,
+Written in the voice of the finished paper. Displays are built in
+results/reconstruction_displays/ (scripts/build_reconstruction_figures.py,
+scripts/build_table3.py, scripts/reconstruction_pit_table2.py); appendices
+are in 16_appendices.md; the † references are in references_additions.bib.
+Nothing is released. manuscript/paper.md,
 docs/brief.md and references/references.bib are unchanged. Claim IDs for each
 paragraph are in trailing comments; the journal build strips them. Citation
 keys marked † are verified candidates (13_step3b_reference_checks.md) not yet
@@ -139,8 +141,9 @@ correlation with the published marginal errors in a Gaussian forecast.
 M2 multiplies M0's variance by a log-normal factor with median one
 and log-variance SD $s$, which adds tail mass without moving the centre.
 
-We chose a tails-only correction because the fitted single scale differed
-more than twofold between DRB and DRC in development data (Appendix E). Two further models complete the fixed set: M1 scales M0's SD, and
+We chose a tails-only correction because fitted scales were unstable in
+development data, differing more than twofold between releases and between
+designs (Appendix E). Two further models complete the fixed set: M1 scales M0's SD, and
 M3 fits both a scale and a tail parameter.
 We fitted the corrections by maximum likelihood on DRC's errors for
 206 planets, using 2,186 timings that our own pipeline measured between
@@ -315,9 +318,12 @@ and coverage falls short of nominal at every level from 50% to 99%.
 Measurement uncertainty is a large part of the combined interval: the
 reported timing uncertainty (a 68% half-width for non-Gaussian timings) is a
 median 1.9 times the forecast SD with planets weighted equally, and 2.7 times
-pooling events.
+pooling events. Exact predictive PIT values (Fig. 3a) show that the misses
+were lopsided: 6.4% of timings, planet-weighted, fell below M0's 95% interval
+(early) and 2.8% above it (late); HR 858 b supplies 0.7 points of the early
+share.
 
-<!-- claims: C043, C052, C063; D076 -->
+<!-- claims: C043, C052, C063; D076; PIT and percentiles: results/reconstruction_displays/pit_table2.json (scripts/reconstruction_pit_table2.py) -->
 
 ### 3.5 The prespecified test (H3)
 
@@ -499,27 +505,31 @@ measurement-convolved interval used for scoring, and a full observing window
 for contrast. (b) Timeline in two lanes. Observations: DRC issue, development
 blocks, sectors 74–97 (never opened), DRD issue on 18 November 2025 and later
 TESS exposures. Analyst access: the freeze and authorisation on 8 November
-2026, then first access to the later timings. *[planned drawing]*
+2026, then first access to the later timings. Panel (a) is illustrative and
+not to scale. [`fig1_schematic.png`]
 
 **Figure 2.** Accuracy of issued forecasts. (a) Absolute errors of 2,185
 accepted timings on a logarithmic minute scale, with the pooled median marked.
 (b) Each planet's largest accepted error, ranked, with the number of accepted
 timings shown; 150 planets lie within 26.4 minutes, and HR 858 b at about
-400 minutes. (c) DRC errors against years since issue, for the already-inspected
-2022–2023 and 2026 periods. *[planned, from saved tables]*
+400 minutes. (c) DRC forecast errors against years since DRC's issue for 3,052 accepted
+timings of 128 planets, in 2022–2023 and 2026, with binned medians; a
+retrospective comparison on already-inspected timings, with the gap between
+periods omitted. [`fig2_accuracy.png`]
 
-**Figure 3.** Calibration. (a) Distribution of standardised outcomes under M0
-*[diagnostic choice open: Gaussian-surrogate residuals or predictive PIT from
-saved likelihood grids]*. (b) Planet-balanced coverage of accepted timings
+**Figure 3.** Calibration. (a) Planet-weighted histograms of exact predictive
+PIT values of the accepted timings under M0 and M2, computed from the saved
+forecasts and likelihood grids; calibrated forecasts give a flat histogram, and
+low values mean early transits. (b) Planet-balanced coverage of accepted timings
 against nominal central-interval probability for M0 and M2, with conditional
-host intervals.
+host intervals. [`fig3_calibration.png`]
 
 **Figure 4.** HR 858. (a) Observed minus calculated transit times of planets b,
 c and d in sectors 105–107 against the published ephemerides of Bonfanti et
-al. (2025), from the independent checker, with frozen b timings overlaid.
-(b) HR 858 b's released input timings, ending in 2020, the issued DRD line and
-its forecast interval, and the 16 accepted 2026 timings; 24 transits were
-intended. *[(a) exists; (b) planned]*
+al. (2025), from an independent timing program. (b) HR 858 b against the
+issued DRD line: its 16 released input timings (2018–2020), the forecast-only
+95% interval over the 2026 transits, and the 16 accepted 2026 timings; 24
+transits were intended. [`fig4_hr858.png`]
 
 **Table 1.** Fate of the 3,103 intended transits in the core cohort.
 
@@ -541,7 +551,8 @@ under the measurement-convolved forecast.
 | Quantity | M0 (reconstructed) | M2 (tails) |
 |---|---:|---:|
 | Median absolute error, pooled / equal-planet (min) | 1.11 / 1.31 | — |
-| 95th and 99th percentile absolute error (min) | [compute] | — |
+| 95th / 99th percentile absolute error, pooled (min) | 6.4 / 17.9 | — |
+| 95th / 99th percentile absolute error, equal-planet (min) | 9.0 / 18.7 | — |
 | Largest error excluding HR 858 b / HR 858 b (min) | 26.3 / 404 | — |
 | 95% coverage | 0.908 | 0.976 |
 | Mean 95% width (min) | 10.5 | 17.5 |
@@ -555,9 +566,12 @@ Columns: planet and host; DRD $T_0$, $P$ and their uncertainties; reconstructed
 correlation and tier; intended, coverage-qualified and accepted transits;
 terminal statuses; median and maximum absolute error; M0 and M2 coverage;
 release-input age, baseline and scatter; dated TTV-literature status, with
-unknown kept distinct from absent. *[planned build]*
+unknown kept distinct from absent. The printed excerpt shows the five largest
+and five smallest maximum errors, a declared extreme-ordered selection.
+[`table3_planets.csv`, `table3_extension.csv`, `table3_dictionary.md`,
+`table3_excerpt.md`]
 
-## Appendices (moved from the main text)
+## Appendices (moved from the main text; drafted in `16_appendices.md`)
 
 - A. Release dating and the DRC timing-table chronology.
 - B. Loss scales, the per-planet contrast and influence diagnostics, and the
@@ -574,7 +588,8 @@ unknown kept distinct from absent. *[planned build]*
 - G. The allocation screen and its exact optimum.
 - H. The exploratory extension: its contrast and interval, and the 1,989 defined
   joint draws of 2,000, with 11 empty evaluation draws omitted by the frozen rule.
-- Online figure set: observed-minus-calculated plots for all 151 planets.
+- Online figure set: observed-minus-calculated plots for all 151 planets
+  (`results/reconstruction_displays/online_figure_set_oc.pdf`).
 
 ## Data availability
 
@@ -604,7 +619,7 @@ We acknowledge TESS observations obtained through MAST at STScI. The NASA
 Explorer Program supports TESS work at US institutions; AURA operates STScI
 under NASA contract NAS5-26555. We thank the ExoClock contributors.
 
-## References to import (†)
+## References to import (†, entries in `references_additions.bib`)
 
 Gardner2023JWST (10.1088/1538-3873/acd1b5); Tinetti2018Ariel
 (10.1007/s10686-018-9598-x); Agol2005TTV (10.1111/j.1365-2966.2005.08922.x);

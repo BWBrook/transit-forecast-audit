@@ -1,0 +1,118 @@
+{
+  "script": "scripts/build_table3.py",
+  "inputs_sha256": {
+    "results/sprint2/freeze_candidate/roster.csv": "54492734189a942505747d9d32a343033642d84abe482dbe8ab8aeb7912382da",
+    "results/information_ledger/release_planets.csv": "56d2ca5ee3baea1eeab8325c0197aa2027a25e73e3db58873e362b46b255b72d",
+    "results/information_ledger/origin_knowledge.csv": "f619cd89679f0727ef328f65118563f555cd1d483f1095a6408ccb68e8d67e87",
+    "data/derived/revision_stage0/benchmark/primary/terminal_ledger.csv.gz": "6a17c4646b42ec7f87af49cfc2f900ed1065c53bf4887f213f7ba65c9079c3f8",
+    "data/derived/revision_stage0/benchmark/primary/intended_forecasts.csv.gz": "85f86291616093c226ff5be023581cadb73f8ef2cb8a45cba83d5be82f4832b8",
+    "data/derived/revision_stage0/benchmark/primary/accepted_forecasts.csv": "67c76e6432a1ce2b4b010c4f62daf6eba016451c9d5730fe80eaf3823e5f84ac",
+    "data/derived/revision_stage0/benchmark/primary/accepted_outcomes.csv": "6a905c4ea5098a22966cae091801f6b3da0ba9458289fb51e1eb83b46f86ec3d",
+    "data/derived/revision_stage0/benchmark/primary/expected_scores.csv": "3ba24636684e42d2d99dbbe68c336d2726aa702d70ea0ed7001005a7a223412c",
+    "data/derived/revision_stage0/benchmark/extension/terminal_ledger.csv.gz": "3cfc62c1799d790fe7c418b94639861648a0f2230b89ee24e9d4ad02c3012eca",
+    "data/derived/revision_stage0/benchmark/extension/intended_forecasts.csv.gz": "08b0815ea25e301045bbbad92347b98dd5a9b01164a00c09475d79a482bf6cdb",
+    "data/derived/revision_stage0/benchmark/extension/accepted_forecasts.csv": "7d2cc88d87aa91487bf4f0e5773a4a8dd086b9e53e7a7ec2814415c87f19d9a4",
+    "data/derived/revision_stage0/benchmark/extension/accepted_outcomes.csv": "ef240376ea3fa23a678e751b2e6f5fce36b00de1524cea6e5d8711f18a3e52dc",
+    "data/derived/revision_stage0/benchmark/extension/expected_scores.csv": "685d8bdceb97795e710265d61f99be3c22cb274297520cb9fd7e5e69ffbfccd8"
+  },
+  "outputs_sha256": {
+    "table3_planets.csv": "a42a6f31023f2e74ced891ccd1ad04a8b43e98773b9d8779244e51906cde0206",
+    "table3_extension.csv": "fc7cba066b193147b044d82bc9e92ca0e4c038c5736420357b883be424ef1353",
+    "table3_excerpt.md": "26269e439c17b4bdc19cb030ad177c858ea5a2c7948e6c941a90756723516e2a"
+  },
+  "excerpt_planets": [
+    "HR858b",
+    "GJ1252b",
+    "HD110113b",
+    "HATS-61b",
+    "HATS-29b",
+    "WASP-130b",
+    "WASP-79b",
+    "WASP-29b",
+    "WASP-62b",
+    "WASP-140b"
+  ],
+  "checks": {
+    "core_rows_156": {
+      "got": 156,
+      "expected": 156,
+      "pass": true
+    },
+    "intended_sum_3103": {
+      "got": 3103,
+      "expected": 3103,
+      "pass": true
+    },
+    "accepted_sum_2185": {
+      "got": 2185,
+      "expected": 2185,
+      "pass": true
+    },
+    "coverage_qualified_sum_2369": {
+      "got": 2369,
+      "expected": 2369,
+      "pass": true
+    },
+    "accepted_among_coverage_qualified_2181": {
+      "got": 2181,
+      "expected": 2181,
+      "pass": true
+    },
+    "planets_with_accepted_151": {
+      "got": 151,
+      "expected": 151,
+      "pass": true
+    },
+    "pooled_median_abs_error_min_1.1148": {
+      "got": 1.1148,
+      "expected": 1.1148,
+      "pass": true
+    },
+    "max_abs_error_excl_HR858b_min_26.299": {
+      "got": 26.299,
+      "expected": 26.299,
+      "pass": true
+    },
+    "HR858b_intended_24": {
+      "got": 24,
+      "expected": 24,
+      "pass": true
+    },
+    "HR858b_accepted_16": {
+      "got": 16,
+      "expected": 16,
+      "pass": true
+    },
+    "HR858b_max_error_min_approx_404": {
+      "got": 404.0,
+      "expected": 404,
+      "pass": true
+    },
+    "planet_mean_M0_coverage95_0.90794": {
+      "got": 0.90794,
+      "expected": 0.90794,
+      "pass": true
+    },
+    "planet_mean_M2_coverage95_0.97576": {
+      "got": 0.97576,
+      "expected": 0.97576,
+      "pass": true
+    },
+    "extension_intended_291": {
+      "got": 291,
+      "expected": 291,
+      "pass": true
+    },
+    "extension_accepted_72": {
+      "got": 72,
+      "expected": 72,
+      "pass": true
+    },
+    "extension_planets_with_accepted_5": {
+      "got": 5,
+      "expected": 5,
+      "pass": true
+    }
+  },
+  "all_checks_pass": true
+}

@@ -1,0 +1,36 @@
+{
+  "events": 2185,
+  "planets": 151,
+  "abs_error_min": {
+    "pooled": {
+      "p50": 1.114775687456131,
+      "p95": 6.362337917089462,
+      "p99": 17.860334292054176,
+      "max": 404.0422710031271
+    },
+    "equal_planet": {
+      "p50": 1.3149476051330566,
+      "p95": 9.040780439972878,
+      "p99": 18.741974383592606,
+      "max": 404.0422710031271
+    }
+  },
+  "pit_coverage95_check": {
+    "M0": 0.9079364975831288,
+    "M2": 0.9757619919679326
+  },
+  "pit_tail_mass": {
+    "M0": {
+      "below_0.025": 0.06421676104631323,
+      "above_0.975": 0.027846741370558002
+    },
+    "M2": {
+      "below_0.025": 0.01963094401513968,
+      "above_0.975": 0.004607064016927693
+    }
+  },
+  "inputs_sha256": {
+    "data/derived/revision_stage0/benchmark/primary/accepted_outcomes.csv": "6a905c4ea5098a22966cae091801f6b3da0ba9458289fb51e1eb83b46f86ec3d",
+    "data/derived/revision_stage0/benchmark/primary/accepted_forecasts.csv": "67c76e6432a1ce2b4b010c4f62daf6eba016451c9d5730fe80eaf3823e5f84ac"
+  }
+}

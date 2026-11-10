@@ -20,9 +20,12 @@ Step 2: [One-page paper](05_one_page_paper.md). Step 3a:
 [source checks](13_step3b_reference_checks.md). The reviewed framework has
 33 paragraphs, each with three or four sentences. Step 3c:
 [Full draft](14_full_draft.md), with [Codex's review](15_step3c_review.md):
-about 3,500 words of main text after cuts, with display captions, appendix
-plan and back matter. No displays are built, and
-`manuscript/paper.md` is unchanged.
+about 3,600 words of main text after cuts and reconciliation, with display
+captions and back matter. Its [appendices](16_appendices.md), displays
+(`results/reconstruction_displays/`: Figs 1–4, exact PIT and Table 2
+percentiles, Table 3 and the online figure set) and
+[new bibliography entries](references_additions.bib) are drafted.
+`manuscript/paper.md` and `references/references.bib` are unchanged.
 
 Codex's 10 November review (draft proposals, discussed in thread 156):
 

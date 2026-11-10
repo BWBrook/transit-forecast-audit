@@ -65,4 +65,6 @@ data/derived/final_*/measured/grids/
 !results/d075_review_checks/
 !results/d075_accuracy_audit/
 !results/d075_oracle_audit/
+!results/reconstruction_review/
+!results/reconstruction_displays/
 .scrivmark/

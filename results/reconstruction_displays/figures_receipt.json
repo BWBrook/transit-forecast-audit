@@ -1,0 +1,252 @@
+{
+ "inputs_sha256": {
+  "pit_events": "6c8caa681eedffbdb690a8a0bc3bba221121ee39b0d162ec2f0289e897090da8",
+  "accepted_outcomes": "6a905c4ea5098a22966cae091801f6b3da0ba9458289fb51e1eb83b46f86ec3d",
+  "accepted_forecasts": "67c76e6432a1ce2b4b010c4f62daf6eba016451c9d5730fe80eaf3823e5f84ac",
+  "intended_forecasts": "85f86291616093c226ff5be023581cadb73f8ef2cb8a45cba83d5be82f4832b8",
+  "terminal_ledger": "6a17c4646b42ec7f87af49cfc2f900ed1065c53bf4887f213f7ba65c9079c3f8",
+  "c2_events": "a3b6ef3b7b60b921ebb72cef0a3451cd83cb1ebc10b088a2d6e508d9d0987908",
+  "coverage": "b7fb2d046da7e1d7a7df63dc1c19e50114dad7fc9a315eb4f538187303a3b907",
+  "hr858_summary": "918d3e7a36c8ae6532e13c8bb78b382b454bb9e03c0705adbd3a0ee17ffb190c",
+  "release_planets": "56d2ca5ee3baea1eeab8325c0197aa2027a25e73e3db58873e362b46b255b72d",
+  "released_timings": "533449b7a9bede2541d78c6a2697913762ad30262bce319c79d87f02f538348c"
+ },
+ "numbers": {
+  "fig2": {
+   "events": 2185,
+   "planets": 151,
+   "pooled_median_min": 1.114775687456131,
+   "median_of_planet_medians_min": 1.3555294275283813,
+   "planet_weighted_event_median_min": 1.3149476051330566,
+   "planets_max_le_26.4min": 150,
+   "max_excluding_HR858b_min": 26.298979595303535,
+   "HR858b_max_min": 404.0422710031271,
+   "HR858b_accepted_events": 16,
+   "accepted_count_range": [
+    1,
+    155
+   ],
+   "min_abs_error_min": 0.0013109296560287476
+  },
+  "fig1a_synthetic": {
+   "forecast_half_width_min": 10.0,
+   "measurement_half_width_min": 8.0,
+   "scoring_half_width_min": 12.806248474865697,
+   "window_half_width_min": 150.0,
+   "measured_offset_min": 4.0,
+   "note": "illustrative, not data"
+  },
+  "fig1b": {
+   "last_scored_timing_bjd_tdb": 2461288.96531764,
+   "later_exposures_bar_end": "2026-09-10"
+  },
+  "fig2c": {
+   "accepted_events": 3052,
+   "planets": 128,
+   "DRC_issue_jd_utc_approx": 2459850.142546296,
+   "convention": "years = (drc_prediction_bjd_tdb - JD of 2022-09-27T15:25:16 UTC)/365.25; BJD_TDB treated as JD (offset under ~1.5 min over the interval, negligible at year scale)",
+   "era_counts": {
+    "S56_S73": 1078,
+    "inspected_2026": 1974
+   },
+   "max_years": 3.9392777861852624,
+   "S56_S73": {
+    "years_range": [
+     0.3124845517973921,
+     1.181883468320064
+    ],
+    "median_abs_error_min": 0.9684645384550095,
+    "events": 1078,
+    "bin_medians_min": [
+     1.0391756147146225,
+     0.9923616796731949,
+     1.0845649614930153,
+     0.9907778352499008,
+     1.1592359840869904,
+     0.7549761235713959,
+     0.9535393863916397,
+     1.0067906230688095
+    ]
+   },
+   "inspected_2026": {
+    "years_range": [
+     3.1444094619681215,
+     3.9392777861852624
+    ],
+    "median_abs_error_min": 1.2006720900535583,
+    "events": 1974,
+    "bin_medians_min": [
+     1.196921020746231,
+     1.7005248740315437,
+     1.182577908039093,
+     1.341676488518715,
+     1.1551395803689957,
+     1.109015978872776,
+     1.1198373511433601,
+     0.9790129959583282
+    ]
+   }
+  },
+  "fig3a": {
+   "inside_0.025_0.975_planet_weighted": {
+    "M0": 0.9079364975831288,
+    "M2": 0.9757619919679326
+   },
+   "tail_mass_below_0.025_above_0.975": {
+    "M0": [
+     0.06421676104631323,
+     0.027846741370558
+    ],
+    "M2": [
+     0.019630944015139682,
+     0.004607064016927693
+    ]
+   },
+   "bins": 20,
+   "events": 2185,
+   "planets": 151,
+   "weights": "planet_weight, each planet 1 unit total, normalised",
+   "weight_sum": 1.0
+  },
+  "fig3b": {
+   "M0": {
+    "nominal": [
+     0.5,
+     0.682689492,
+     0.8,
+     0.9,
+     0.95,
+     0.99
+    ],
+    "coverage": [
+     0.43110023670204095,
+     0.618555857228915,
+     0.7415130800774874,
+     0.8450781036055801,
+     0.9079364975831289,
+     0.9714257901602743
+    ],
+    "ci95_lower": [
+     0.3950092336336922,
+     0.5771092733411923,
+     0.7023205395943322,
+     0.8112826882484127,
+     0.8777913807929647,
+     0.9505764919566242
+    ],
+    "ci95_upper": [
+     0.46708685135604994,
+     0.6590792402700401,
+     0.7786767577425004,
+     0.8752222165268025,
+     0.934031017378188,
+     0.9873015101196572
+    ]
+   },
+   "M2": {
+    "nominal": [
+     0.5,
+     0.682689492,
+     0.8,
+     0.9,
+     0.95,
+     0.99
+    ],
+    "coverage": [
+     0.4638175051915078,
+     0.6789912632977964,
+     0.8199848098025936,
+     0.9312795010728259,
+     0.9757619919679326,
+     0.9903697571743928
+    ],
+    "ci95_lower": [
+     0.4263827613860421,
+     0.6387223783386181,
+     0.7858115988036274,
+     0.9058634301195732,
+     0.9582051439784874,
+     0.974969646799117
+    ],
+    "ci95_upper": [
+     0.5005496405444192,
+     0.7179829275899964,
+     0.8514262104539058,
+     0.9529217594622474,
+     0.9889060356440096,
+     0.9995584988962473
+    ]
+   }
+  },
+  "fig4a": {
+   "b": {
+    "n": 17,
+    "o_minus_c_min_first_last": [
+     -374.12091900085215,
+     -422.0269506558543
+    ]
+   },
+   "c": {
+    "n": 11,
+    "o_minus_c_min_first_last": [
+     540.8721576412063,
+     598.681694428742
+    ]
+   },
+   "d": {
+    "n": 5,
+    "o_minus_c_min_first_last": [
+     -10.053394160422613,
+     0.6745493240305223
+    ]
+   },
+   "reference": "Bonfanti et al. 2025 via NASA Exoplanet Archive default row (summary.json config)",
+   "b_pdcsap_independent_minus_drd_min_range": [
+    -403.92471112310886,
+    -356.68395951390266
+   ]
+  },
+  "fig4b": {
+   "DRD_T0_bjd_tdb": 2458903.961,
+   "DRD_period_d": 3.585266,
+   "released_input_rows": 16,
+   "released_input_resid_rms_min": 10.705446673600802,
+   "last_input": "2020-11-15",
+   "intended_events": 24,
+   "terminal_status_counts": {
+    "no_cadence_coverage_at_prediction": 6,
+    "accepted": 16,
+    "integration_unresolved": 1,
+    "edge": 1
+   },
+   "accepted_events": 16,
+   "accepted_resid_hours_min_max": [
+    -6.734037850052118,
+    -5.919986888766289
+   ],
+   "forecast_only_95_halfwidth_hours_min_max": [
+    0.5186959063774982,
+    0.5369005248840198
+   ],
+   "accepted_resid_min_range": [
+    -404.0422710031271,
+    -355.1992133259773
+   ]
+  }
+ },
+ "online_figure_set_oc": {
+  "file": "online_figure_set_oc.pdf",
+  "sha256": "7f33d6312f5cbeaf45d52c008cd0f714cc42ca289d9244fb4608c379281d91c3",
+  "bytes": 244294,
+  "planets": 151,
+  "events": 2185,
+  "pages": 8,
+  "panels_per_page": 20,
+  "hr858b_page": 3,
+  "band": "+/-1.96*sqrt(forecast_variance_s2)/60 min per event",
+  "inputs_sha256": {
+   "accepted_outcomes": "6a905c4ea5098a22966cae091801f6b3da0ba9458289fb51e1eb83b46f86ec3d",
+   "accepted_forecasts": "67c76e6432a1ce2b4b010c4f62daf6eba016451c9d5730fe80eaf3823e5f84ac"
+  }
+ }
+}
