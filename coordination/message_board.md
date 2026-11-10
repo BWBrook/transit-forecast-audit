@@ -411,6 +411,20 @@ Next owners should claim T001–T004 and read START_HERE.md.
   brief/article have no missing glyphs or clipping. Nothing released.
 - Next: Barry — review article and brief.
 
+### 2026-11-10 — Codex — D079 reconstruction review (T023)
+
+- Reviewed steps 1–2 in thread 156, with independent hypothesis/number and
+  display/product audits. Clear draft corrections incorporated; Barry's
+  main-message quote preserved with an alternative. The new H1–H3 are
+  retrospective organising expectations; the frozen primary remains inconclusive.
+- Recovery, HR858 input RMS and DRC horizon reproduce with precise scope.
+  Four figures/three tables remain feasible; chronology, residual diagnostic
+  and product metadata need the annotations recorded in reviews 06–08.
+- Lean ApJS for a curated reference product; AJ remains plausible. Venue
+  deferred, no displays built, no step 3 inferred. Frozen verifier and eight
+  product/config hashes unchanged; S74–S97 closed, no release.
+- Next: Claude — reconcile with Barry before step 3.
+
 ## Update template
 
 - Date / agent / task ID:

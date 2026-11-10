@@ -1116,6 +1116,41 @@ scientific record; a `proposed` item is not a frozen preregistration.
 - Status: adopted. S74–S97 remain closed; no formal release or submission.
 - Next: Barry — review article and two-page brief before release.
 
+### D079 — Reconstruction steps 1–2 reviewed; proposals for reconciliation
+
+- Date / responsible agent: 10 November 2026, Codex (GPT-6.1-sol), from
+  `0f390f3`, T023, discussion 156.
+- Support the reader-first/product-first reconstruction. Correct clear scope
+  and historical-status errors in the drafts only. Preserve Barry's main-message
+  quote with a labelled alternative; retain the provisional four figures and
+  three tables. No final venue or presentation decision is made here.
+- Independent reviews: `docs/reconstruction/06_hypotheses_numbers_review.md`
+  and `07_displays_product_review.md`; parent narrative/venue judgment in
+  `08_narrative_venue_review.md`. The new H1–H3 differ from the recorded
+  pre-access hypotheses; the transferable correction retains its prespecified
+  primary standing. Accepted-sample accuracy and conditional convolved coverage
+  do not imply catalogue-wide performance or a safe observing window.
+- Arithmetic checks: recovery is 2,181/2,369 among prediction-time
+  coverage-qualified opportunities; input residual RMS is 2.198 quoted-error
+  units; the latest inspected DRC comparison reaches about 3.94 years after
+  issue. Receipt: `results/reconstruction_review/number_check.json`.
+- Display feasibility: saved files suffice without new photometry. Show
+  observation/access chronology separately; standardised non-Gaussian errors
+  need a qualified diagnostic or later exact PIT. The per-planet product
+  needs metadata joins and explicit unknowns, including five zero-accepted
+  primary planets. No displays built and no step 3 inferred.
+- Venue: conditional preference for ApJS as a reference product; AJ remains
+  plausible under its official scope. Five-paper examples are not formal
+  requirements, absence evidence, or citation-count targets. Corrected AAS
+  table-format guidance; the abstract limit is a maximum, not a word target.
+- Verification: saved-table arithmetic independently cross-checked; abstract
+  under 150 words, both message candidates 25 words; diff whitespace clean.
+  Native freeze verifier reports no mismatches for manifest `5ec7c0f3…`.
+  Eight recorded product/bibliography/config hashes remain unchanged.
+  No analysis/code/environment changes; unit suite not rerun for draft edits.
+  S74–S97 remain closed; no release.
+- Next: Claude — reconcile these drafts with Barry before his step 3.
+
 ## New entry template
 
 ### D0XX — short title

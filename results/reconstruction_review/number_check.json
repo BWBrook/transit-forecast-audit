@@ -1,0 +1,66 @@
+{
+  "review_only": true,
+  "new_photometry_or_headers_opened": false,
+  "source_commit": "0f390f3",
+  "recovery": {
+    "intended": 3103,
+    "accepted": 2185,
+    "accepted_fraction": 0.7041572671608122,
+    "prediction_coverage_qualified": 2369,
+    "accepted_and_prediction_qualified": 2181,
+    "qualified_fraction": 0.9206416209371042,
+    "accepted_outside_prediction_qualified": 4
+  },
+  "accuracy": {
+    "event_weighted_median_absolute_error_min": 1.114775687456131
+  },
+  "HR858_released_inputs": {
+    "n": 16,
+    "chi_square": 77.2872429152448,
+    "standardised_residual_rms": 2.1978290839377843,
+    "nominal_reduced_chi_square_Nminus2": 5.520517351088914
+  },
+  "DRC_issue_utc": "2022-09-27T15:25:16+00:00",
+  "horizon": {
+    "earlier": {
+      "accepted_events": 1078,
+      "event_id": "WASP-106b|S72|DRD252",
+      "maximum_drc_prediction_bjd_tdb": 2460281.8254831,
+      "predicted_calendar_label_tdb": "2023-12-03T07:48:41.739842",
+      "corresponding_observed_tc_bjd_tdb": 2460281.82514505,
+      "approximate_lead_days_numeric": 431.68293680390343,
+      "approximate_lead_julian_years": 1.181883468320064
+    },
+    "2026": {
+      "accepted_events": 1974,
+      "event_id": "WASP-53b|S107|DRD1179",
+      "maximum_drc_prediction_bjd_tdb": 2461288.9637577003,
+      "predicted_calendar_label_tdb": "2026-09-05T11:07:48.665305",
+      "corresponding_observed_tc_bjd_tdb": 2461288.96531764,
+      "approximate_lead_days_numeric": 1438.8212114041671,
+      "approximate_lead_julian_years": 3.9392777861852624
+    }
+  },
+  "time_scale_limit": "Calendar/approximate numeric lead only: BJD_TDB event labels minus the JD_UTC issue number, not a time conversion or exact elapsed-time/eligibility claim; the minute-scale reference difference is immaterial to the wording about 3.94 years.",
+  "hypothesis_history": {
+    "checked_pre_access_commit_sha1": "bc853261cd301d5e0b08e7ffd4eab8b5cab98f80",
+    "prior_project_brief_labels": [
+      "H1 conditional calibration without preferred direction",
+      "H2 information span beyond nominal precision",
+      "H3 transferable recalibration",
+      "H4 observing-window precision cost; real missed rate needs denominators"
+    ],
+    "frozen_primary": "M2 minus M0 planet-balanced standardisedIS95 with joint host refits; reconstruction H1\u2013H3 wording is not the recorded hypothesis set"
+  },
+  "input_sha256": {
+    "results/final_primary/terminal_ledger.csv.gz": "6a17c4646b42ec7f87af49cfc2f900ed1065c53bf4887f213f7ba65c9079c3f8",
+    "results/final_primary/accepted_outcomes.csv": "2c2fa9559d24fd55ddb1890b2c8814a4ebb3f53a9dbabf934387341e46f8f62b",
+    "results/final_primary/accepted_forecasts.csv": "67c76e6432a1ce2b4b010c4f62daf6eba016451c9d5730fe80eaf3823e5f84ac",
+    "results/t020_development/c2_candidate_events.csv": "45c534b767aab08be2d6a50c186a30718e7c5338623c2a5304216ec2424aecfd",
+    "results/t020_development/longer_horizon/c2_inspected_2026_candidate_events.csv.gz": "4b1da817fb991ba78ecc8adac31c3c05f0772d393ad6f799b6f8d399ed2b175b",
+    "data/raw/osf/wpjtn/catalogue_of_ephemerides.txt": "582a6ca8e65d85a5c840452f93e8dd5f0f0ef404b4c28fb4836e7b15efc094af",
+    "data/raw/osf/wpjtn/all_mid_time_data.txt": "533449b7a9bede2541d78c6a2697913762ad30262bce319c79d87f02f538348c",
+    "configs/candidate_freeze.json": "9c17de62230add56f6f92246fe07d784f7ddd21071f01024c0a0853ef5a58cef",
+    "docs/project_brief.md": "f6abb242f9c91e05dabee859fc54d0b80b82535304db143fa86c9405750f3241"
+  }
+}

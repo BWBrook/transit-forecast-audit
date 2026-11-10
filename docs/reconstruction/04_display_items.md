@@ -4,6 +4,10 @@ Working draft, 10 November 2026, by Claude (Opus 5.5). It serves the main
 message in `03_main_message.md` and the ApJS norms in
 `docs/journal_fit_apjs_2026-11-10.md`.
 
+Codex's feasibility annotations (10 November) retain the provisional four-figure,
+three-table plan. Detailed saved-file/column mappings are in
+`07_displays_product_review.md`. Nothing is built at this stage.
+
 ## Diagnosis of v0.6.1
 
 The draft has 8 figures and 7 tables. Almost all of them show interval
@@ -15,16 +19,22 @@ what a forecast, a window and a miss look like.
 
 | # | Item | Shows | Status |
 |---|---|---|---|
-| Fig. 1 | **Context schematic**, two panels. (a) One forecast: predicted time, 95% window and measured transit, with the error and a miss labelled. (b) Timeline: DRC issued (Sep 2022), development TESS data (2022–Jan 2024), sectors 74–97 never opened, DRD issued (18 Nov 2025), freeze, held-out TESS data. | What is tested, and why the test is out of sample | New |
-| Fig. 2 | **Accuracy, the main message**, three panels. (a) Distribution of absolute timing error for all 2,185 transits, log minutes, with the median marked. (b) Each planet's worst error, ranked: 150 planets under 26.4 min, then HR 858 b at about 400 min. (c) DRC 2022 forecasts: error against years since issue, for 128 planets (development data). | Accurate to minutes; one exception; holds over four years | New, from saved event tables |
-| Fig. 3 | **Calibration**, two panels. (a) Standardised residuals (error divided by combined forecast and measurement SD) against N(0,1), in the style of Kokori II and III. (b) Coverage against nominal probability for M0 and M2 (exists). | Intervals slightly narrow, by minutes; the correction overshoots | (a) new; (b) adapted |
-| Fig. 4 | **The exception**, two panels. (a) HR 858 b, c and d O–C in sectors 105–107 (exists). (b) HR 858 b's catalogue inputs ending in 2020, the issued line and its forecast window, against the measured 2026 transits. | The miss is real, physical and foreshadowed | (a) exists; (b) new |
-| Table 1 | **Sample and outcome flow**: 156 hosts, 3,103 predicted transits, observed, measured, accepted (2,185 on 151 planets). Merges the current Table 1 and the cohort text. | Who was tested; selection is visible | Adapted |
+| Fig. 1 | **Context schematic**, two panels. (a) One forecast: predicted mid-time, its interval, and a measured mid-time with its own uncertainty; distinguish the forecast interval from the convolved scoring interval and a full observing window. (b) Separate observation and analyst-access lanes: DRC issue, development blocks, closed sectors 74–97, DRD issue (18 Nov 2025), subsequent TESS exposures, freeze (8 Nov 2026), then access to previously uninspected outcomes. | What is tested, and why it is out of sample for the analysts | New |
+| Fig. 2 | **Accuracy, the main message**, three panels. (a) Absolute errors of 2,185 accepted timings, log minutes, with the pooled-event median marked; disclose weighting and handle any zero explicitly. (b) Each accepted planet's maximum error, ranked: 150 within 26.4 min, then HR 858 b at about 400 min; show unequal timing counts. (c) DRC errors against years since issue for 128 selected planets, in separated inspected development blocks reaching about 3.94 years. | Minute-scale agreement in the accepted sample; one exception | New, from saved event tables |
+| Fig. 3 | **Calibration**, two panels. (a) Proposed standardised-residual plot: combined SD does not make non-Gaussian timings normal. Either label this a Gaussian-surrogate diagnostic or later calculate exact predictive PIT values from the saved likelihood grids, stating assumptions and planet weights. (b) Coverage against nominal probability for M0 and M2 (exists). | Conditional calibration of measured timings, not catalogue uncertainty alone | (a) new, diagnostic choice unresolved; (b) adapted |
+| Fig. 4 | **The exception**, two panels. (a) HR 858 b, c and d O–C in sectors 105–107 (exists). (b) Its released input timings ending in 2020, the issued DRD line and its forecast-only interval, against 16 accepted 2026 timings; disclose 24 intended events and distinguish the convolved interval if also shown. | A coherent physical interpretation with antecedent warning features; no validated warning | (a) exists; (b) new from saved tables and released inputs |
+| Table 1 | **Sample and outcome flow**: all 156 hosts and 3,103 intended opportunities, prediction-time cadence coverage, terminal statuses and 2,185 accepted timings on 151 planets. Show 2,181/2,369 coverage-qualified recoveries separately from four other accepted timings. | Who was tested; selection is visible | Adapted |
 | Table 2 | **Headline numbers** in one place: error median, 95th and 99th percentiles and maximum; coverage under M0 and M2; width ratio; IS95 under M0 and M2; M2 − M0 with its joint interval. Event-weighted and planet-balanced columns. | Every number the abstract cites | Adapted from current Tables 2 and 3 |
-| Table 3 | **The product**: per-planet table, about 10 rows printed, full version machine-readable online. Columns: planet; DRD epoch, period and SDs; number of accepted transits; median and maximum error; coverage; flags (new in DRD, input span, input scatter, TTV literature). | The deliverable, citable and reusable | New, from the benchmark (C053) |
+| Table 3 | **The planned product**: about 10 rows printed, full version machine-readable. Retain all 156 primary planets, including five with no accepted timings, with statuses and null performance entries. Join issued epoch/period/errors, reconstructed covariance provenance, accepted counts, error summaries and coverage to release/input metadata. Historical TTV literature flags require dated sources; unsurveyed means unknown. Keep 28 extension planets separate. | A reference product with visible selection and source provenance | New curation and joins from C053 and existing ledgers; not yet released |
 
 The frozen M2 − M0 contrast appears as one line of Table 2 and one sentence of
 text. It does not need its own figure.
+
+Its status as the prespecified primary test and its inconclusive result must
+remain clear in the abstract, methods and headline table. Reordering the paper
+does not retrospectively change that status. Table 2 must distinguish the
+joint-refit primary interval from conditional secondary intervals, with
+weighting and each definition of an error percentile made explicit.
 
 ## Appendices or supplement
 
@@ -52,6 +62,8 @@ with many products to show. We have one product and one message.
 
 ## Work needed
 
-Figure 1 is drawn. Figure 2, Figure 3a, Figure 4b and Table 3 are generated
-from saved, frozen event tables, so no data are reopened. Generated items are
-Codex's in the current split.
+Figure 1 is planned as a drawing. The other new displays are feasible from
+saved outcomes, forecasts, likelihood grids, ledgers and already-downloaded
+released inputs, without new photometry or headers. Table 3 additionally needs
+metadata joins and source checks; C053 alone is not a finished catalogue.
+Codex builds the agreed items later, after Barry supplies the next step.

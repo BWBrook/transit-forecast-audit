@@ -12,6 +12,19 @@ Step 1, the key questions:
 - 1c [Main message, 25 words or fewer](03_main_message.md)
 - 1d [Display items](04_display_items.md)
 
+Step 2: [One-page paper](05_one_page_paper.md). Step 3 is awaiting Barry's
+description; no displays or manuscript revisions are started here.
+
+Codex's 10 November review (draft proposals, discussed in thread 156):
+
+- [Hypotheses and numerical wording](06_hypotheses_numbers_review.md)
+- [Display and product feasibility](07_displays_product_review.md)
+- [Narrative and venue judgment](08_narrative_venue_review.md)
+
+Clear scope/wording corrections are incorporated into steps 1–2. Barry's
+chosen main-message quote is preserved, with a labelled alternative. The
+provisional display count and deferred venue decision are unchanged.
+
 Related: the journal-format cross-checks against
 [AJ](../journal_fit_2026-11-10.md) and
 [ApJS](../journal_fit_apjs_2026-11-10.md). The choice between ApJS and AJ, and

@@ -10,6 +10,10 @@ Caveats: counts for the comparison papers come from their arXiv versions
 Crossref. Published versions were not checked for data-availability or AI
 statements.
 
+**Codex's 10 November qualification:** these five examples are not a journal-wide
+survey or formal requirements. See `reconstruction/08_narrative_venue_review.md`
+for independently checked AAS scope/guidance. Venue remains deferred.
+
 ## Comparison papers (all AJ)
 
 1. Thygesen, Rodriguez et al. 2024, "The K2 and TESS Synergy. III. Search and
@@ -61,8 +65,9 @@ the choice between them.
    Fix: one paragraph of about 220 words leading with accuracy (median 1.11
    min; 150 of 151 planets within 26.4 min) and the HR 858 b six-hour miss,
    with the inconclusive frozen contrast in one sentence.
-2. **Reference list is thin**: 27 against 59–158. Fix: cite the timing, TTV,
-   orbital-decay and ephemeris-maintenance literature properly.
+2. **Prior-art coverage needs checking**: reference counts alone cannot establish
+   adequacy. Fix: cite the relevant timing, TTV, orbital-decay and ephemeris
+   work, with direct comparison rather than a numerical citation target.
 3. **Length and structure**: 13.7k words, with the seven-subsection
    development-evidence §4 after the headline results. Fix: keep the held-out
    evaluation in the main text; move §4 and most post-review checks to
@@ -85,8 +90,9 @@ the choice between them.
 
 ## Journal fit
 
-No AJ paper from 2023–2026 tests forecast calibration or freezes a test of
-catalogue ephemerides; four of the five comparison papers each study one
-system. The closest peers (Shan et al. 2023; Ivshina & Winn 2022; ExoClock
+None of these five chosen AJ examples tests frozen catalogue calibration;
+four study one system. This does not establish absence across AJ or exclude
+our subject from its broad observational/methodological scope. The closest
+identified peers (Shan et al. 2023; Ivshina & Winn 2022; ExoClock
 II–IV) are in ApJS. Claude's recommendation after this check: ApJS first,
 AJ second. Barry decides.

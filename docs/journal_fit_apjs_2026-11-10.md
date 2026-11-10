@@ -11,7 +11,12 @@ Caveats:
 - Counts come from the arXiv versions of the papers (LaTeX source, or PDF text
   for Wang) and are approximate, to about ±10%. Published versions may differ.
 - Journals, DOIs and reference counts come from Crossref.
-- The AAS Data Guide could not be reached by script.
+- The initial script could not reach the AAS Data Guide. Codex read it
+  independently on 10 November; its table-format correction is incorporated below.
+
+**Codex's 10 November qualification:** these five examples are not formal
+requirements or a representative journal survey. Venue remains deferred;
+see `reconstruction/08_narrative_venue_review.md` for the independent judgment.
 
 **Corrections from verification.**
 
@@ -53,7 +58,10 @@ catalogue of 76 systems) is weaker on topic and is worth citing only.
 - **Scope.** "Extensive papers presenting significant new research",
   including catalogues and large data compilations. No length limit is given.
 - **Abstract.** One paragraph of at most 250 words, as in AJ.
-- **Large tables.** These must be machine-readable, in CDS/VizieR format.
+- **Large tables.** Structured machine-readable tables are encouraged. The
+  [Data Guide](https://journals.aas.org/data-guide/) permits raw delimited
+  tables at submission, with conversion and author verification later; initial
+  CDS formatting is not compulsory.
 - **Figures.** A figure may run to at most 3 printed pages; longer figure sets
   go online, with a truncated version in print.
 - **Supporting data.** Encouraged, and reviewed on scientific grounds.
@@ -70,8 +78,8 @@ catalogue of 76 systems) is weaker on topic and is worth citing only.
 3. **No ensemble figure and no sample table.**
    *Fix:* add an O–C or standardised-residual distribution against a Gaussian,
    in Kokori style, and a sample table.
-4. **References** number 27 against 115–655.
-   *Fix:* cite the ExoClock, Ivshina & Winn, Shan and Wang lines of work, and
+4. **Prior-art coverage:** reference counts of 27 versus 115–655 are not a quota.
+   *Fix:* substantively compare the ExoClock, Ivshina & Winn, Shan and Wang work, and
    the orbital-decay and TTV literature. Compare our results directly with
    Shan's 31 of 262 and with Kokori's drift scatter of twice the Gaussian
    expectation.
@@ -100,9 +108,9 @@ catalogue of 76 systems) is weaker on topic and is worth citing only.
 
 ## Verdict
 
-ApJS first is defensible, on one condition. If the paper releases the
-per-planet forecast-against-outcome table as a reviewed data product, it fits
-ApJS, and that journal's norms on appendices and data suit it better than
-AJ's. If it stays a pure test of forecast calibration, an ApJS editor may judge
-it out of scope, and AJ becomes the better first target. Neither pass favoured
-a third journal. Barry decides.
+Claude's original lean is ApJS for a reviewed reference product, AJ for an
+analysis-led paper. Codex agrees with the conditional ApJS preference but
+regards both as plausible: AJ explicitly covers observations, surveys and
+analysis techniques, while ApJS seeks significant extensive reference work.
+The product's scientific usefulness and curation matter more than a DOI or row
+count alone. Neither scope statement predicts acceptance. Barry decides later.

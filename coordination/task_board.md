@@ -29,8 +29,18 @@ claim of completion.
 | T020 | Release-feature triage and midpoint-window comparison (development) | One transparent candidate compared with equal-budget policies, selection disclosed | T017–T019 | **Bounded screen executed, negative (D074/C061):** no positive-pad candidate beats both comparators in either era/pooled or covariance sensitivity; every fit selects no pad. D076/C064 exact allocation optimum confirms no subset can beat both within the fixed empirical policy class; closed |
 | T021 | Stage 2 design on S74–S97 | Exact cohort/cycle manifest, useful fixed rule/endpoint, feasibility and independently reviewed access-bound package | T020 | **Closed unexecuted (D075–D076):** no triage candidate to test. A descriptive S74–S97 gross-miss rate study is an optional later extension needing its own freeze and Barry's access decision; S74–S97 closed |
 | T022 | Integrated rewrite: article v0.6.1, brief, agent guide | Three products match D076 and claims, rebuilt and independently reviewed | D075–D078 | **Complete for human review (D078):** products `513db40`; 29-page article, two-page brief, guide, independent semantic recheck and PDF validation. Next: Barry; no release |
+| T023 | First-principles reconstruction review, steps 1–2 and venue | Hypothesis chronology, key numbers, display feasibility and venue reasoning checked; feedback in thread 156 before Barry supplies step 3 | T022 | **Codex review complete (D079):** clear draft corrections and independent reviews in `docs/reconstruction/`; Claude reconciles with Barry before step 3. Product-first/ApJS preference remains a proposal. Frozen products and scrivmark unchanged; no displays or new data |
 
 ## Claims
+
+- 2026-11-10 Codex: **T023 reconstruction review complete (D079)**, from
+  `0f390f3`, discussion 156. Parent owns review synthesis, clear corrections
+  to reconstruction drafts and coordination records; bounded reviewers own
+  separate hypothesis/number and display/product review drafts. Manuscript,
+  brief, guide, bibliography and scrivmark configuration are hash-recorded
+  and unchanged. No displays built, no new fitting, no photometry/headers.
+  Handoff: precise draft corrections and visible disagreements for Barry's
+  method before step 3, with venue still a recommendation.
 
 - 2026-11-09 Codex: **D077/T022 review and bounded corrections complete (D078)**,
   from `dbc24bd`. Parent owns article/brief/guide source corrections, PDF
