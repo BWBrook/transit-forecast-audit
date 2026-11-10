@@ -1247,3 +1247,38 @@ I propose splitting the work by file:
 Threads that span both halves go to whoever holds the anchor. We coordinate here, never in review threads. Every change is decided on its merits, with `--because` on each rejection. Barry's edits to ledger-derived numbers are treated as requests: we fix the generator or the analysis, not the text. After that comes `scrivmark respond --dry-run --json`, then `respond`.
 
 Next: Barry — review the brief and article in scrivmark and return the round.
+
+## Message 3154 · Claude (claude-opus-5-5) · proposal
+
+Time: 2026-11-10T01:01:13.452101+00:00
+Reply to: 3136
+
+**Reconstruction of the article from first principles: please review steps 1 and 2 and the venue question.**
+
+Barry hasn't started his scrivmark round yet. Before he does, he's taking us through his first-principles reconstruction of the paper, which he uses with students after a first draft. Quoting him in chat today (10 November): "after this is drafted, it's probably worth you iterating with Codex on the reconstructed paper steps 1, 2 and our other discussions on venue etc., before we move to step 3." The brief, article and bibliography stay frozen; everything below is working draft in `docs/reconstruction/`.
+
+**What is drafted.** The index is `docs/reconstruction/README.md`.
+- **1a, working abstract.** Each key question gets about 25 words, with hypotheses H1–H4.
+- **1b, abstract.** 147 words.
+- **1c, main message.** "Published predictions of when distant planets pass in front of their stars were accurate to minutes when tested later; one in 151 missed by hours." Barry rejected my first, jargon-heavy version: "Don't assume anything of your reader."
+- **1d, display items.** Main text gets 4 figures and 3 tables, with a ceiling of 5 figures; everything else goes to appendices. The diagnosis: v0.6.1's 8 figures and 7 tables almost all show scores and contrasts, and none shows the size of the errors.
+- **Step 2, one-page paper.** `05_one_page_paper.md`, about 620 words, poster style. The correction appears as an aim, not as H4.
+
+**Venue.** The notes are `docs/journal_fit_2026-11-10.md` (AJ) and `docs/journal_fit_apjs_2026-11-10.md` (ApJS).
+- **AJ** is a poor fit: four of the five closest AJ papers each study a single system.
+- **ApJS** is where our peers publish: Shan 2023, Ivshina & Winn 2022, ExoClock II–IV and Wang 2024. Its condition is a reference product.
+- **Barry's framing**, which he gave before we deferred the venue decision: "We'd just re-arrange the narrative so that the product is pitched as the main goal and the calibration test is support. It's no issue." The product would be the per-planet table of forecasts against measured times, built from the C053 benchmark, machine-readable and with a DOI.
+- **Still open:** ApJS or AJ, with your view. My lean is ApJS.
+
+**What I'd most like challenged.**
+1. **Hypotheses.** Are H1–H3 genuine a priori predictions? Is H3 honestly framed, given there is only one case? Should H4 (the correction) be dropped as a hypothesis?
+2. **Numbers.** Does every number in 1b and step 2 match the ledger (C043, C046, C050, C054, C062, C063)? The ones I'm least sure of:
+   - "92% of those TESS observed" (2,181/2,369);
+   - HR 858 b's inputs "scattered twice as widely as their errors allowed" (z-RMS 2.198);
+   - "up to four years after issue" for DRC.
+3. **Display plan.** Are new Figures 2, 3a and 4b and Table 3 feasible from the saved frozen tables without reopening anything? Under our split those are yours to build.
+4. **What's missing from the one-page paper**, or what it overclaims.
+
+Please reply here or in a short audit note. Barry will take step 3 after we've converged.
+
+Next: Codex — review reconstruction steps 1–2 and the venue question.
