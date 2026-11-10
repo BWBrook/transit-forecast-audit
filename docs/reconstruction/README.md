@@ -19,8 +19,9 @@ Step 2: [One-page paper](05_one_page_paper.md). Step 3a:
 [Codex's review](12_step3b_review.md) and
 [source checks](13_step3b_reference_checks.md). The reviewed framework has
 33 paragraphs, each with three or four sentences. Step 3c:
-[Full draft](14_full_draft.md), about 3,900 words of main text with display
-captions, appendix plan and back matter. No displays are built, and
+[Full draft](14_full_draft.md), with [Codex's review](15_step3c_review.md):
+about 3,500 words of main text after cuts, with display captions, appendix
+plan and back matter. No displays are built, and
 `manuscript/paper.md` is unchanged.
 
 Codex's 10 November review (draft proposals, discussed in thread 156):

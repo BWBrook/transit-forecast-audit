@@ -17,15 +17,16 @@ in the bibliography.
 Observers schedule exoplanet transit observations from catalogue predictions
 and their stated uncertainties, but refitting a catalogue does not show how
 its earlier predictions performed. We compared one issued release of the
-ExoClock catalogue, DRD, with 2,185 transit times of 151 planets that TESS
-measured after its release, under measurement, acceptance and scoring rules
+ExoClock catalogue, DRD, with 2,185 accepted transit times of 151 planets
+measured from later TESS observations, under measurement, acceptance and scoring rules
 fixed before those data were opened. We provide the comparison as a per-planet
 table with a replayable scoring package. The pooled median absolute error was
 1.1 minutes, and every accepted timing of 150 planets fell within 26.4 minutes
-of prediction. Nominal 95% intervals, combined with measurement uncertainty,
+of prediction. Under reconstructed covariance, nominal 95% intervals combined with measurement uncertainty
 covered 91% of timings per planet, a modest shortfall. A correction learned
 from the previous release widened the intervals 1.7-fold; its prespecified
-interval-score comparison was inconclusive. The one large failure, HR 858 b,
+interval-score difference was −0.12 (95% interval −1.84 to +2.20), inconclusive.
+The one large failure, HR 858 b,
 arrived six hours early. Its neighbouring planets drifted in the pattern
 expected from mutual gravitational perturbations, and its catalogue inputs were
 old and scattered. One case cannot validate a warning rule, but such features
@@ -41,7 +42,7 @@ transmission spectroscopy and the planned Ariel survey both depend on it
 [@Gardner2023JWST†; @Tinetti2018Ariel†]. Each visit is scheduled from a
 predicted mid-time and its uncertainty, with baseline either side; one JWST
 observation of WASP-39 b, for example, spanned 8.2 hours around a 2.8-hour
-transit. The uncertainty matters as much as the prediction. Users treat it as
+transit. Users treat the uncertainty as
 a forecast of how wrong the prediction may be: too narrow, and the transit may
 be partly missed; too wide, and scarce telescope time is spent waiting.
 
@@ -63,19 +64,18 @@ transit-timing variations (TTVs) [@Agol2005TTV†; @HolmanMurray2005TTV†]. The
 formal fit errors of a linear ephemeris do not describe such shifts, and
 ephemerides degrade with time as a result [@Dragomir2020;
 @Lissauer2020Ephemerides; @Lissauer2024KeplerPeriods]. A published forecast of
-TRAPPIST-1 transits, for example, drifted by tens of minutes
-[@Agol2024TRAPPIST1Forecast]. Whether stated uncertainties stay honest after
-release is an empirical question.
+TRAPPIST-1 h transits, for example, drifted by tens of minutes
+[@Agol2024TRAPPIST1Forecast].
 
 Several studies have compared predictions with later TESS timings. Shan et al.
 compared archived ephemeris predictions for 262 hot Jupiters with TESS timings
 and found offsets for 31 [@Shan2023TESSTimings]. Large
 compilations have refitted hundreds of ephemerides from TESS and ground-based
 timings [@IvshinaWinn2022; @Mallonn2019; @Edwards2021ORBYTS;
-@Wang2024PeriodVariation]. For TRAPPIST-1, Agol et al. inflated forecast
-uncertainties by a factor of about three, estimated from leave-one-out
-predictions, and checked them against five later timings
-[@Agol2024TRAPPIST1Forecast]. Closest to our aim, ExoClock IV compared the
+@Wang2024PeriodVariation]. For TRAPPIST-1, Agol et al. inflated dynamical
+forecast uncertainties by 3.14 using leave-one-out predictions and checked
+five additional July 2024 timings outside the fit; their public preprint
+followed in September [@Agol2024TRAPPIST1Forecast]. Closest to our aim, ExoClock IV compared the
 DRB, DRC and DRD predictions with later TESS timings. It noted that the DRD
 comparison is optimistic, because some of those timings were used to build DRD
 [@Kokori2026ExoClockIV].
@@ -85,15 +85,15 @@ them by proper scoring rules. These reward accuracy and honest spread together
 and are applied to outcomes the forecaster could not see
 [@GneitingRaftery2007; @GneitingBalabdaouiRaftery2007]. Ecology adopted the
 same logic: Brook et al. fitted population-viability models to the first half
-of long time series and scored their predictions on the second half
+of long time series and tested their predictions on the second half
 [@Brook2000PVA], and near-term ecological forecasting now tests predictions
 iteratively against new data [@Dietze2018†]. In a bounded search of the 82
 works citing ExoClock III and IV, we found no study that froze an issued
 ephemeris release, measured later timings independently and scored its stated
 uncertainties this way.
 
-Here we compare DRD's issued predictions with transit times that TESS measured
-after DRD's release, for 156 planets. We publish the comparison as a per-planet
+Here we compare DRD's issued predictions with transit times measured from
+later TESS observations, for 156 intended planets. We publish the comparison as a per-planet
 table with a replayable scoring package (Table 3), recording for every intended
 planet the issued forecast, which transits were measured, and how far and how
 often they departed from prediction. Before any of these data were opened, we
@@ -120,9 +120,9 @@ private, so its date is the public transition. These logs establish when the
 files became public, not whether they were shared earlier. Evaluation begins
 on 19 November 2025, the first full UTC day after DRD's release; the journal
 publication of February 2026 serves as a sensitivity date (Appendix C).
-Transit times are in BJD_TDB [@Eastman2010]. Five transits predicted within
-ten minutes of an eligibility boundary set in UTC are excluded rather than
-converted.
+Transit times are in BJD_TDB [@Eastman2010]. Five numerically near-boundary
+events are conservatively excluded without converting the UTC metadata
+boundaries to BJD_TDB.
 
 <!-- claims: C019 -->
 
@@ -132,18 +132,16 @@ For transit $n$, counted from the reference epoch, the issued forecast is
 $T_0 + nP$ with variance
 $\sigma_{T_0}^2 + 2n\rho\,\sigma_{T_0}\sigma_P + n^2\sigma_P^2$.
 ExoClock does not publish the correlation $\rho$, so we reconstruct it by
-weighted least squares on each release's own input timings. For DRD the
-reconstruction changes the total predictive variance by at most about 3%, and
-we test correlations of 0 and ±1 as sensitivities. M0 is this Gaussian
-forecast. M2 multiplies M0's variance by a log-normal factor with median one
+weighted least squares on each release's own input timings. We test
+correlations of 0 and ±1 as sensitivities. M0 combines this reconstructed
+correlation with the published marginal errors in a Gaussian forecast.
+M2 multiplies M0's variance by a log-normal factor with median one
 and log-variance SD $s$, which adds tail mass without moving the centre.
 
-We chose a tails-only correction because development data showed that a single
-scale does not transfer between releases. DRB's forecasts were about 2.2 times
-too narrow at the median, whereas DRC's were calibrated at the median but had
-heavy tails between planets. Two further models complete the fixed set: M1
-scales M0's SD by one fitted factor, and M3 fits both a scale and a tail.
-Each correction was fitted once, by maximum likelihood, on DRC's errors for
+Development comparisons motivated a tails-only transfer rather than a single
+scale. Two further models complete the fixed set: M1 scales M0's SD, and
+M3 fits both a scale and a tail parameter.
+We fitted the corrections by maximum likelihood on DRC's errors for
 206 planets, using 2,186 timings that our own pipeline measured between
 28 September 2022 and 3 January 2024. The fits gave $s = 2.05$ for M2 and a
 scale of 9.35 for M1.
@@ -172,10 +170,12 @@ For each planet and sector, a box least-squares search [@Kovacs2002BLS†]
 within ±0.5% of the catalogue period scans every phase, so the predicted epoch
 does not centre the search. A detection needs a depth signal-to-noise ratio of
 at least 7, and other DRD planets on the host are masked. A transit shape is
-then fitted to the sector light curve, and each transit's mid-time receives a
-posterior on a grid centred on the data's own epoch, not the forecast. Where
-that posterior is not Gaussian within 10%, the full likelihood grid is kept for
-scoring.
+then fitted to the sector light curve, and each transit's timing likelihood
+is evaluated on a grid around the data's own epoch, conditional on that
+shape and the fitted noise treatment. Scoring uses a Gaussian when its 95%
+endpoints agree with that approximation within 10%; otherwise it uses the
+accepted likelihood grid. Calibration fits use Gaussian approximations
+for every accepted timing.
 
 Each fitted timing is assigned to the nearest DRD cycle and accepted only if
 it lies within a quarter period ($P/4$) of that cycle's prediction. Acceptance
@@ -189,15 +189,16 @@ whole orbit is recognised (Section 4).
 ### 2.5 Qualifying the measurement
 
 Before protected access, we injected artificial transits into real
-development-era light curves, after removing the real transits, and reran
+development-era light curves, after masking the original transit windows, and reran
 identification, shape fitting and timing. Every intended injection received a
-row before fitting, so failures stayed in the denominator. The final
+row before fitting: failures remain recorded for recovery accounting, while
+timing calibration is assessed among accepted injections. The final
 acceptance rule passed all eight declared criteria on two frozen samples:
 104 hosts with 1,477 timed injections, and 100 hosts with 1,361. Nominal 95%
 intervals contained 94.7% and 95.0% of injected times (90% host-bootstrap
 intervals 93.4–95.9% and 93.8–96.1%), with a small late bias of 0.07 SD in
-the second sample. This shows that accepted timings carry honest
-uncertainties, not that every transit is found. The rule was tuned on these
+the second sample. This supports conditional timing calibration, not complete
+transit recovery. The rule was tuned on these
 same samples, so this is not an independent replication (Appendix D).
 
 <!-- claims: C038; D061–D062 -->
@@ -207,18 +208,16 @@ same samples, so this is not an independent replication (Appendix D).
 Before any later photometry was opened, a manifest bound by SHA-256 hashes
 75 files and 780 likelihood grids: the code, locked environments, cohort,
 issued forecasts, fitted corrections, injection evidence and decision rule. A
-verifier recomputes every hash, and two agents built and checked it
-independently. The protected run refuses to start unless an access record
-cites the manifest and records the human lead's decision. That record was
-committed on 8 November 2026, before any data were requested. Fixing the
-analysis in advance separates a test of predictions from an explanation after
-the fact [@Nosek2018†]; we used no external registry, and the repository
-history is the record.
+verifier recomputes every hash; reciprocal review included verification by a
+separate implementation. Barry W. Brook's access authorisation, tied to that
+manifest, was committed on 8 November 2026 before any data were requested.
+We used the repository history rather than an external preregistration
+registry [@Nosek2018†].
 
 One deviation occurred. The first measurement run failed to write likelihood
 grids for 71 of 304 light curves because of a relative output path, a fault
-that depended on the shape of the measured likelihood but not on any forecast
-or score. We reran the identical code on the whole manifest. An independent
+triggered by writing non-Gaussian grids. We reran the identical code on the
+whole manifest with an absolute output path. An independent
 audit confirmed that every product, window and grid completed in the first
 attempt was unchanged in the rerun, and both attempts are archived.
 
@@ -231,11 +230,13 @@ Gaussian, or the tabulated likelihood), so that it predicts the measured, not
 the true, mid-time. We score it by the 95% interval score,
 $\mathrm{IS} = (u-l) + \tfrac{2}{\alpha}(l-x)_+ + \tfrac{2}{\alpha}(x-u)_+$
 with $\alpha = 0.05$, where $[l, u]$ is the central 95% interval and $x$ the
-measured mid-time [@GneitingRaftery2007]. The score penalises width and misses
-together; smaller is better. Each event's score is divided by M0's predictive
-SD, measurement error included, so planets with tight and loose forecasts
-count comparably. Scores are averaged within planets, then across planets, and
-describe accepted timings only.
+measured mid-time [@GneitingRaftery2007]. Smaller is better. Each event's score
+is divided by M0's predictive SD, measurement error included, with the same
+divisor for every model. Scores are averaged within planets, then across
+planets, and describe accepted timings only. The observation-derived divisor
+and timing likelihood make this a conditional weighted loss; proper-score
+guarantees require additional assumptions about measurement errors and
+selection, which are not established here (Appendix B).
 
 The H3 statistic is the difference M2 − M0. Its uncertainty comes from 2,000
 resamples of host stars, drawn jointly from the calibration and evaluation
@@ -283,9 +284,9 @@ The median absolute error was 1.1 minutes pooling all timings, and 1.3 minutes
 with each planet weighted equally (Fig. 2a; Table 2). For 150 of the 151
 planets, every accepted timing fell within 26.4 minutes of its prediction
 (Fig. 2b). The exception, HR 858 b, missed on all 16 of its accepted transits,
-by 355 to 404 minutes against a forecast SD of about 16 minutes. These figures
-describe accepted timings. Transits that were not recovered have no error, so
-the figures are not a catalogue-wide failure rate.
+by 355 to 404 minutes against a forecast SD of about 16 minutes.
+Errors for unrecovered transits are unknown, so these figures do not estimate
+a catalogue-wide failure rate.
 
 <!-- claims: C048, C062, C063 -->
 
@@ -293,7 +294,7 @@ the figures are not a catalogue-wide failure rate.
 
 The earlier DRC release, public in September 2022, gives a longer view. After
 the review, we scored its forecasts against already-inspected timings from
-2022–2023 and from 2026, with DRD used only to label transit cycles. Every
+2022–2023 and from 2026, with DRD constraining search periods and cycle labels. Every
 accepted planet stayed within 37 minutes in both periods: 92 planets in
 2022–2023 and 128 in 2026, reaching nearly four years after issue (Fig. 2c).
 Median errors were 1.0 and 1.2 minutes, and no error exceeded an hour. Because
@@ -309,10 +310,9 @@ nominal 95% intervals covered 90.8% of accepted timings per planet (Fig. 3b).
 The 95% host-bootstrap interval, 87.8–93.4%, excludes 95%: the combined
 uncertainties were somewhat too narrow. Pooling events instead gives 92.0%,
 and coverage falls short of nominal at every level from 50% to 99%.
-Measurement uncertainty is a large part of the combined interval: the
-timing SD is a median 1.9 times the forecast SD with planets weighted equally,
-and 2.7 times pooling events. Fig. 3a shows the full distribution of the
-standardised outcomes.
+The reported timing uncertainty is a median 1.9 times the forecast SD with
+planets weighted equally, and 2.7 times pooling events. For non-Gaussian timings
+this is a 68% half-width, distinct from the full-grid SD used in scoring.
 
 <!-- claims: C043, C052, C063; D076 -->
 
@@ -326,7 +326,7 @@ equivalence. Under M2, 111 of 151 planets scored worse, each by a bounded
 amount, and 40 scored better. Most of the average gain came from HR 858 b, and
 the sign of the contrast reverses when scores are divided by the forecast-only
 SD instead (Appendix B). The single-scale M1, whose factor of 9.35 was learned
-from DRC's errors, covered 99.3% and scored worst of the four models.
+from DRC's errors, covered 99.3% and had the worst standardised IS95.
 
 <!-- claims: C043, C046, C052 -->
 
@@ -335,8 +335,8 @@ from DRC's errors, covered 99.3% and scored worst of the four models.
 HR 858 b's 16 accepted timings, in sectors 105–107, arrived 5.9 to 6.7 hours
 early, outside every tested model's 95% interval (Fig. 4b). They form a
 coherent sequence, with a local period of 3.58395 days against DRD's 3.585266
-and a scatter of 4.3 minutes about a line. Two programs that share no code with
-our pipeline reproduced all 16 timings from the same light curves, to median
+and a scatter of 4.3 minutes about a line. Two independently written timing
+programs reproduced all 16 timings from the same light curves, to median
 differences of 0.5 and 2.2 minutes. One of them also timed the system's other
 planets against published ephemerides [@Bonfanti2025TOI396]: b ran 6.2 to 7.0
 hours early, c ran 9.0 to 10.0 hours late, and d was within 13 minutes
@@ -347,8 +347,9 @@ a common clock offset.
 These checks share photons with ours, so they cannot exclude every blend or
 identity error. In sector 105, the independent timings differed from three
 frozen ones by up to 22 minutes. Re-centring those three on the independent
-programs' median and doubling their uncertainty left the primary comparison
-inconclusive (−0.09; conditional interval −1.88 to +1.12).
+programs' median and doubling their uncertainty gave −0.09 under fixed-fit
+resampling (conditional interval −1.88 to +1.12). The frozen joint-refit primary
+result was unchanged.
 
 <!-- claims: C048, C050, C051, C057, C059 -->
 
@@ -359,8 +360,8 @@ The planet was new to DRD. Its 16 released input timings, all from space,
 spanned 756 days and ended in November 2020, so the forecast extrapolated more
 than five years beyond a two-year baseline. They scattered about the issued
 line by 2.2 times their quoted errors. Bonfanti et al. had reported
-significant TTVs for b and c, with simulated amplitudes up to about five
-hours, in a preprint posted a year before DRD [@Bonfanti2025TOI396]. DRD's own
+significant TTVs for b and c, with simulated semi-amplitudes of about two and
+five hours respectively, in a preprint posted a year before DRD [@Bonfanti2025TOI396]. DRD's own
 TTV flag follows its detection criterion and was not raised. These are
 documented features of one case, not validated predictors.
 
@@ -398,9 +399,8 @@ direct wider windows to the planets most likely to miss. The screen flagged
 evenly: scaling every window, or padding every window equally. On inspected
 DRC-era data, none of six release-file rankings beat both comparators. Even
 the best flagged set chosen with hindsight lost to at least one comparator, by
-3.7 to 8.8 percentage points of captured midpoints. Hour-scale misses were too
-rare in these samples for any allocation to pay; the result applies to this
-policy and to measured midpoints.
+3.7 to 8.8 percentage points of captured midpoints. This is a negative result
+within the tested policy class and measured-midpoint endpoint.
 
 <!-- claims: C061, C062, C064 -->
 
@@ -422,22 +422,18 @@ same outcomes.
 
 ## 4. Discussion
 
-For observers, the answer is reassuring, with one important exception. In this
-sample, ExoClock's issued forecasts agreed with later measured mid-times to
-about a minute at the median and within half an hour for 150 of 151 planets.
-The earlier DRC release stayed within 37 minutes up to four years after issue.
-One planet missed by six hours. Observers can weigh this as evidence when
-choosing margins, but it does not guarantee a safe window, which also depends
-on transit duration, baseline and scheduling. Table 3 shows, planet by planet,
-where agreement held and where it failed.
+The accepted timings show minute-scale agreement for most tested planets and
+one hours-long departure. Table 3 lets observers inspect each planet's errors
+and which transits were measured. These results concern measured midpoints;
+full-transit scheduling also needs duration, baseline and recovery information.
 
 The combined 95% intervals covered about 91% of accepted timings, a modest but
 clear shortfall. Minute-scale accuracy and undercoverage are compatible: the
 forecast windows are only minutes wide, so small absolute differences can fall
 outside them. Forecast errors, unmodelled timing variations, measurement error
 and our reconstructed covariance can all contribute, and testing their
-combination cannot say which is responsible. Published epoch–period
-covariances would remove one of these unknowns.
+combination cannot say which is responsible. Publishing epoch–period
+covariances would eliminate the need for this reconstruction.
 
 The correction raised coverage by widening intervals, but the interval score
 charges for width as well as misses. Most planets paid a small width penalty,
@@ -446,20 +442,13 @@ of two fixed intervals, the score difference between them stops growing, so
 widening can earn large gains on a far miss without capturing it
 (Appendix B). HR 858 b shows this: it supplied most of the mean gain, yet none
 of its timings fell inside any tested model's 95% interval, and removing it
-reverses the sign of the contrast. In this sample, a uniform tail correction
-bought coverage for typical planets at a cost without protecting against the
-failure that mattered most. Whether some other correction could do better is
-untested.
+reverses the sign of the contrast.
 
-Our results agree in pattern with earlier comparisons. Shan et al. found
-offsets for a minority of archival hot-Jupiter ephemerides
-[@Shan2023TESSTimings], and Agol et al. needed to inflate TRAPPIST-1 forecast
-uncertainties [@Agol2024TRAPPIST1Forecast]. ExoClock IV's DRD comparison partly
-reused its own fit data [@Kokori2026ExoClockIV]. Our test differs in three
-ways: it scores one issued release, against later timings measured
-independently of the catalogue, over a fixed list of intended transits that
-keeps losses visible. Cohorts, horizons and selection differ, so we compare
-patterns, not failure rates [@IvshinaWinn2022; @Wang2024PeriodVariation].
+Our test combines one issued release, independently measured later timings
+and a fixed opportunity list that keeps losses visible. Earlier comparisons
+differ in cohorts, horizons and selection, so patterns, not failure rates,
+can be compared [@Shan2023TESSTimings; @Kokori2026ExoClockIV;
+@IvshinaWinn2022; @Wang2024PeriodVariation].
 
 HR 858 b was new to the release, with old, scattered inputs and previously
 published TTVs. Most of these features can be computed from the release files
@@ -481,21 +470,15 @@ may host others. Our independent re-timings share photons with the frozen
 pipeline, so they test the software, not the data. Finally, a single gross
 failure carries most of the score contrast.
 
-The approach is not specific to ExoClock. Fixing forecasts and scoring rules
-before inspecting outcomes applies to other ephemeris catalogues, and to
-forecasts in other fields, including ecological models [@Brook2000PVA;
-@Dietze2018†]. The table and scoring package let future methods, such as a new
-correction, a TTV-aware ephemeris or another catalogue's predictions, be scored
-against the same outcomes. Interpretation requires the same explicit
-assumptions about which transits were observed and accepted.
+The table and scoring package let new corrections, TTV-aware ephemerides or
+another catalogue's predictions be compared against the same outcomes.
+The issued-forecast approach also applies to ecological models
+[@Brook2000PVA; @Dietze2018†], under explicit observation and selection assumptions.
 
-TESS sectors 74–97 remain unopened by this project. They could support a
-separately authorised study of how often issued forecasts fail by hours, on
-hosts we have never examined. Such a study needs a fixed cohort, forecasts
-issued before the data and qualified recovery and cycle identification, so
-that a gross failure is measured rather than lost. For scale, no failures among
-180 independent, fully observed hosts would bound the failure rate below
-about 2% (exact binomial 95% interval).
+Unopened TESS sectors 74–97 could support a separately authorised study of
+hour-scale forecast misses on previously unexamined hosts. Such a study needs
+a fixed cohort, forecasts issued before the observations, and qualified
+recovery and cycle identification.
 
 <!-- claims: C043, C045, C046, C049, C050, C053, C054, C055, C062, C063; D076, D080 -->
 
@@ -546,7 +529,7 @@ intended. *[(a) exists; (b) planned]*
 smaller interval scores are better; coverage is of accepted measured timings
 under the measurement-convolved forecast.
 
-| Quantity | M0 (issued) | M2 (tails) |
+| Quantity | M0 (reconstructed) | M2 (tails) |
 |---|---:|---:|
 | Median absolute error, pooled / equal-planet (min) | 1.11 / 1.31 | — |
 | 95th and 99th percentile absolute error (min) | [compute] | — |
@@ -569,7 +552,10 @@ unknown kept distinct from absent. *[planned build]*
 
 - A. Release dating and the DRC timing-table chronology.
 - B. Loss scales, the per-planet contrast and influence diagnostics, and the
-  bound on interval-score differences.
+  bound on interval-score differences; all four models' parameters and
+  outcomes. Conditional propriety requires ancillary measurement descriptors,
+  a correct observation model and ignorable acceptance. State the location-family
+  approximation used to turn a timing likelihood into an error distribution.
 - C. Declared sensitivities, including the journal-date anchor and the
   sector-105 rescore.
 - D. Measurement qualification: injection design, criteria and results.
@@ -577,7 +563,8 @@ unknown kept distinct from absent. *[planned build]*
   outcome-convention comparison.
 - F. Independent timing checks and their adjudication.
 - G. The allocation screen and its exact optimum.
-- H. The exploratory extension.
+- H. The exploratory extension: its contrast and interval, and the 1,989 defined
+  joint draws of 2,000, with 11 empty evaluation draws omitted by the frozen rule.
 - Online figure set: observed-minus-calculated plots for all 151 planets.
 
 ## Data availability
@@ -594,11 +581,12 @@ snapshot *[DOI on release]*.
 
 Barry W. Brook set the question, required that the later TESS data stay
 unopened until the protocol was frozen, authorised access on 8 November 2026
-and reviews the final text before release. Claude (Anthropic; Claude Opus 5.5) and Codex
-(OpenAI; GPT-6.1-sol, earlier gpt-6 and gpt-5.6-luna) designed and ran the
-analyses, wrote the code and drafted the paper, each reviewing the other's
-work; GPT-6 Pro (OpenAI) suggested the topic and reviewed an earlier draft.
-The full record of roles and the human–AI correspondence are in the
+and reviews the final text before release. Claude (Anthropic; Claude Opus 5.5)
+and Codex (OpenAI; GPT-6.1-sol and earlier models listed in the repository)
+designed and ran the analyses, wrote the code and reviewed each other's work.
+Claude Sonnet 5.5 drafted the initial article, brief and agent guide; both
+agents revised them. GPT-6 Pro (OpenAI) suggested the topic and reviewed an
+earlier draft. Detailed roles and reviewed correspondence snapshots are in the
 repository. *[expand per AAS LLM policy at journal build]*
 
 ## Acknowledgments

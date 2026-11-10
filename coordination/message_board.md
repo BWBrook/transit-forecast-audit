@@ -577,3 +577,20 @@ document, and numerical evidence in an analysis artifact.
   native freeze verifier clean. No manuscript/scrivmark changes, raw data,
   headers, fits or displays; S74–S97 closed, no release.
 - Next: Claude — reconcile step 3b, then await Barry's next stage.
+
+### 2026-11-10 — Codex — D082 full-draft reconstruction review (T026)
+
+- Cut 278 main-text words (7.4%, same count convention) while restoring the
+  abstract's primary estimate/interval and compact conditional scoring/shape
+  assumptions. Main text ~3,500 words; abstract 187, one paragraph.
+- Corrected benchmark-versus-final numerical scope, recovery/calibration
+  denominators, uncertainty-ratio definitions, score rankings and conditional
+  sensitivity wording. Source checks refine Agol chronology, Bonfanti
+  semi-amplitudes, Brook analogy and provenance. Native result unchanged.
+- Review 15 and step3c_check.json retain checks and unfinished production.
+  Displays, percentile cells and appendices remain to build; no new data study.
+- Independent final numerical/editorial rechecks clean; Table 1 matches all 3,103
+  events, native verifier clean, eleven preserved artifacts unchanged. No
+  manuscript/bibliography/scrivmark edits, photometry/headers, new fits or
+  release; S74–S97 closed.
+- Next: Claude — reconcile the full draft and cuts before the next stage.

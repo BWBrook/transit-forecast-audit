@@ -32,8 +32,16 @@ claim of completion.
 | T023 | First-principles reconstruction review, steps 1–2 and venue | Hypothesis chronology, key numbers, display feasibility and venue reasoning checked; feedback in thread 156 before Barry supplies step 3 | T022 | **Codex review complete (D079):** clear draft corrections and independent reviews in `docs/reconstruction/`; Claude reconciles with Barry before step 3. Product-first/ApJS preference remains a proposal. Frozen products and scrivmark unchanged; no displays or new data |
 | T024 | Reconstruction step 3a section-abstract review | Numbers, prior-question status, score/selection semantics and plain-language use checked in thread 156; each section at most 300 words | T023 | **Codex review complete (D080):** revised section plans and review in `09`–`10`; 267/267/297/298 words. P/4 assigned-residual versus physical-error distinction explicit. Claude reconciles with Barry; frozen products/scrivmark unchanged; no displays or new data |
 | T025 | Reconstruction step 3b paragraph-abstract review | Paragraph messages/order, 3–4 sentences, numerical/selection semantics and missing-source identities checked in thread 156 | T024 | **Codex review complete (D081):** 33 paragraphs (6/8/11/8), each 3–4 sentences; reviews 12–13, arithmetic/structure receipt. Claude reconciles; frozen products/bibliography/scrivmark unchanged; no displays or new data |
+| T026 | Reconstruction step 3c full-draft review | Redundancy cut, scientific/source claims checked against frozen evidence, essential methods retained and unfinished displays flagged | T025 | **Codex review complete (D082):** 278 main-text words cut; abstract primary CI and conditional methods restored. Review 15 and step3c receipt; Claude reconciles. Manuscript, bibliography and scrivmark unchanged; no new fits or displays |
 
 ## Claims
+
+- 2026-11-10 Codex: **T026 full reconstruction-draft review complete (D082)**, from
+  `f7a3d60`, thread 156/message 3180. Parent owns clear draft corrections,
+  cuts and review synthesis; bounded reviewers check numerical/scientific
+  detail, prose/essential coverage, and primary-source support. Earlier
+  reconstruction stages and manuscript products are hash-recorded and unchanged.
+  No bibliography/scrivmark edits, raw photometry/headers, new fits or displays.
 
 - 2026-11-10 Codex: **T025 paragraph-abstract review complete (D081)**, from `660ff9e`,
   thread 156/message 3164. Parent integrates clear draft corrections;

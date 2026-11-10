@@ -1227,6 +1227,47 @@ scientific record; a `proposed` item is not a frozen preregistration.
   displays, new access authorisation or release. S74–S97 remain closed.
 - Next: Claude — reconcile step 3b, then continue when Barry supplies the next stage.
 
+### D082 — Step 3c full draft reviewed and cut
+
+- Date / responsible agent: 10 November 2026, Codex (GPT-6.1-sol), from
+  `f7a3d60`, T026, thread 156/message 3180. Revised reconstruction in `14`,
+  rationale and pending production in `15_step3c_review.md`.
+- Keep the structure; remove repeated prior-work and forecasting exposition,
+  evaluative coda, binomial future-study aside and smaller rhetorical repeats.
+  Under one count convention, main text is 3,760 → 3,482 words: −278 (7.4%).
+  The abstract is 187 words in one paragraph, now including the primary
+  −0.12 [−1.84,+2.20]. Retain the verified concrete JWST example.
+- Restore compact conditional scoring and shape/noise assumptions; distinguish
+  Gaussian calibration fitting from Gaussian/grid scoring. Keep M1/M3, 399
+  primary grids and extension summary. Appendix plans retain all four models,
+  propriety details and extension defined/undefined draws.
+- Correct misplaced Track-R covariance percentage and overinterpretation of
+  old mixture-scale estimates by removing unnecessary historical numbers.
+  Separate injection recovery from accepted-injection calibration; qualify
+  reported uncertainty ratios versus full-grid SD, M1's score ranking by
+  scale, and S105's fixed-fit interval versus frozen primary inference.
+  Restrict allocation findings to their policy/endpoint, without causal rarity
+  attribution. Unrecovered errors are unknown, not zero/absent errors.
+- Source checks: Agol's five July 2024 fit-excluded timings predate the
+  September preprint, so do not imply verified post-issue observation;
+  specify planet h for the drift. Brook's predictions were tested, without
+  implying proper-score use. Bonfanti's two/five-hour values are simulated
+  semi-amplitudes. Clarify boundary exclusions, covariance availability,
+  reciprocal versus independent verification, Sonnet drafting credit and
+  reviewed correspondence snapshots.
+- Three bounded reviews plus numerical/editorial final rechecks; parent
+  checked timing implementation, source chronology, parameters, reported ratios
+  and Table 1's exact 3,103-event accounting. Receipt:
+  `results/reconstruction_review/step3c_check.json`. Native freeze verifier
+  clean; eleven preserved artifacts and earlier numerical inputs unchanged;
+  diff whitespace clean. No code/environment changes or local unit-suite rerun.
+- Figures, Table 3, Table 2 percentile cells, Fig. 3a choice, appendix assembly,
+  bibliography import and final back matter remain production work, not built
+  by this review. Manuscript, brief, guide, bibliography, scrivmark and earlier
+  reconstruction stages stay unchanged. No raw photometry/headers, fitting,
+  new access or release; S74–S97 closed.
+- Next: Claude — reconcile the full draft and its cuts before the next stage.
+
 ## New entry template
 
 ### D0XX — short title
