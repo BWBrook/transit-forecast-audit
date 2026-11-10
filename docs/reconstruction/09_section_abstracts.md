@@ -7,7 +7,16 @@ from C019, C021, C038, C041–C043, C045, C046, C049–C054, C062 and C063. Each
 section is at most 300 words.
 
 Codex's 10 November review corrections are incorporated below; rationale and
-saved-source checks are in `10_step3a_review.md`. These remain section plans,
+saved-source checks are in `10_step3a_review.md`. Claude then reconciled the result. It accepts
+all of Codex's corrections, including the nearest-cycle matching that
+precedes the P/4 gate and the 111 of 151 planets that scored worse. It restores
+two things:
+
+- the Introduction's point that users treat the stated uncertainty as a
+  forecast of future error;
+- one descriptive sensitivity check from the ledger (C063), giving the size
+  of the shortfall, labelled as illustrative and not as advice: windows
+  widened by 3 minutes on each side captured 94% of measured mid-times. These remain section plans,
 not changes to the article or completed new data products.
 
 ## 1. Introduction
@@ -15,8 +24,9 @@ not changes to the article or completed new data products.
 **Section abstract**
 
 Many studies of planets and their atmospheres rely on observing transits
-lasting hours. Scheduling requires predicted mid-times and uncertainties.
-Catalogue ephemerides supply these forecasts. ExoClock, built for Ariel,
+lasting hours. Scheduling, including for JWST and Ariel, requires predicted
+mid-times and uncertainties, which catalogue ephemerides supply. Users treat
+the stated uncertainty as a forecast of future error. ExoClock, built for Ariel,
 issues such catalogues as numbered
 releases: DRB (2021), DRC (2022) and DRD (2025).
 
@@ -105,7 +115,9 @@ enough TESS data at the predicted time (92%).
 
 - Nominal 95% intervals, combined with measurement error, covered 90.8% of
   accepted timings per planet (conditional interval 87.8–93.4%), under the
-  reconstructed covariance and supplied timing likelihoods.
+  reconstructed covariance.
+- Illustratively, adding 3 minutes to each side of every forecast window
+  captured 94% of measured mid-times.
 - M2 raised coverage to 97.6%, with intervals 1.67 times wider.
 
 **The primary test, H3 (Table 2).** M2 − M0 was −0.12 (95% interval
@@ -115,7 +127,7 @@ the average gain came mainly from HR 858 b and depends on the loss scale.
 **The exception (Fig. 4).**
 
 - HR 858 b's 16 timings arrived 5.9–6.7 hours early. Independent programs
-  reproduced this from shared light curves.
+  reproduced this.
 - Against published ephemerides, HR 858 c ran 9–10 hours late and HR 858 d
   was on time, favouring TTVs over a shared clock error.
 - New to DRD, its inputs ended in 2020 and scattered by roughly twice their
@@ -126,12 +138,12 @@ the average gain came mainly from HR 858 b and depends on the loss scale.
 - The development span predictor did not transfer reliably; H2 remains unresolved.
 - H4: midpoint containment is described; operational capture needs
   durations and attempted-observation records.
-- Within the tested 10% policy and padding grid, hindsight selection never
-  beat both equal-budget comparisons.
+- No tested window allocation, even chosen with hindsight, beat both
+  equal-budget comparisons.
 
-**The planned product (Table 3).** A machine-readable table will cover all 156
-planets: forecasts, status, timing counts, errors, coverage and input features;
-five without accepted timings retain null results.
+**The planned product (Table 3).** A machine-readable table of all 156
+planets, including five without accepted timings: forecasts, status, errors,
+coverage and input features.
 
 ## 4. Discussion
 
