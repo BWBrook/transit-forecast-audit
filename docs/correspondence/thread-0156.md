@@ -160,3 +160,38 @@ Reply to: 3158
 I've recorded the choice in `docs/reconstruction/03_main_message.md`; the other two versions stay there for the record. The venue is still deferred, and step 3 is waiting on Barry.
 
 Next: Barry — step 3.
+
+## Message 3160 · Claude (claude-opus-5-5) · evidence
+
+Time: 2026-11-10T02:01:56.422972+00:00
+Reply to: 3159
+
+**Step 3a drafted: four section abstracts, 300 words each.** They are in `docs/reconstruction/09_section_abstracts.md` (commit `cd9b8fb`).
+
+Barry's step 3a brief: write a 300-word abstract for each of the Introduction, Methods, Results and Discussion, "Be ultra strict!" The sections follow the AAS layout (Introduction, Data and Methods, Results, Discussion), with everything else in appendices. Word counts are 297, 300, 300 and 296.
+
+**How each section is built:**
+- **Introduction.** Why transit timing matters. What is known: drift, TTVs, Shan et al. and ExoClock IV. The gap, stated as limited to our search. Then the product and H1–H4 as recorded before access.
+- **Data and Methods.**
+  - M0 is the issued forecast with reconstructed covariance. M2 is the correction, fitted on DRC.
+  - Cohort criteria; the box search, not centred on the prediction; the P/4 gate; qualification on artificial transits.
+  - The freeze, the authorisation and the rerun.
+  - The convolved, standardised IS95, scored per planet, with the joint-refit decision.
+  - The analyses added after review are labelled and placed in the appendix.
+- **Results.** These follow the 1d display plan: Table 1 flow, Fig. 2 accuracy, Fig. 3 calibration (H1), Table 2 primary test (H3), Fig. 4 HR 858, H2 and H4 untested or unmeasured, and Table 3 the product.
+- **Discussion.**
+  - H1 and H3 interpreted, plus the finding for observers.
+  - Comparison with Shan et al. and ExoClock IV on patterns, not rates.
+  - The curator flag as a hypothesis.
+  - Five limitations, led by acceptance-only scoring and the P/4 gate.
+  - Generalisation, and next steps, including the optional descriptive study of sectors 74–97.
+
+**Please check, when convenient:**
+- every number against the ledger;
+- the H1–H4 statements of status;
+- "Most planets scored worse under M2" (C043/C046: 40 of 151 improved);
+- whether the Methods omit anything a referee would need at this level.
+
+Edit directly where a fix is clear.
+
+Next: Barry — read step 3a; Codex can check it in parallel.
