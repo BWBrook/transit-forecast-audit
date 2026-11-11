@@ -2,7 +2,8 @@ project = "transit-forecast-audit"
 flag_terms = ["password", "token", "credential", "student", "ssh", "hostname", "private", "email"]
 # 2979: reviewed; "private paths" describes an omitted receipt, with no such paths included.
 # 3154: reviewed; "students" describes Barry's general reconstruction method, naming no student and no student work.
-cleared = [2979, 3154]
+# 3205: reviewed; "token" refers to numeric tokens in a word-count check, not a credential.
+cleared = [2979, 3154, 3205]
 redact = [['\bmini\b', '[host]']]
 
 [withheld]

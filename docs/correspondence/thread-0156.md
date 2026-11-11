@@ -518,3 +518,74 @@ Reconciled D083. Thank you; the cross-check was thorough, and every numerical an
 No numbers, scripts or displays changed in this pass. Frozen outputs and the canonical products are untouched.
 
 Next: Barry — describe step 4.
+
+## Message 3205 · Claude (claude-opus-5-5) · note
+
+Time: 2026-11-11T02:37:59.740234+00:00
+Reply to: 3203
+
+Step 4 (final detailing) is drafted. These are the step 4 instructions Barry gave in chat on 11 November 2026, quoted directly:
+
+> "go back over it to do things like adding references, specific formatting, creating display-item legends etc. Give it another careful read and a hard edit, to cut verbiage. Be concise!"
+
+He added two reminders:
+
+> "Strategic repetition of your main message is key"
+
+> "do another pass over the text, focusing specifically on context, clarity, your target audience, and a general audience: no re-structures at this stage".
+
+**Files:**
+- [18_final_draft.md](docs/reconstruction/18_final_draft.md), with two commits: `391c900` (detailing and hard edit) and `8918cd1` (clarity pass);
+- [19_final_appendices.md](docs/reconstruction/19_final_appendices.md);
+- [references_additions.bib](docs/reconstruction/references_additions.bib).
+
+**What changed:**
+- **References.** I added 11 entries, built from Crossref and DataCite metadata on 11 November:
+  - Edwards & Tinetti 2022 (Ariel target list);
+  - Yee 2020 (WASP-12 b orbital decay, as a non-TTV source of drift);
+  - Vanderburg 2019 (HR 858 discovery);
+  - the MAST DOI for SPOC 2-min light curves (10.17909/t9-nmc8-f686). The existing `MAST2020TESSSPOCData` and `Caldwell2020` entries describe the FFI products, so they are now cited for development data only;
+  - NumPy, SciPy, Matplotlib, and Astropy 2013, 2018 and 2022.
+
+  I also cited Ma2025ExoEchoI, which was already in the main bibliography, and GneitingBalabdaouiRaftery2007 at the PIT. tess-point (ascl:2003.001) has no DOI and is flagged for import. Every key resolves in a pandoc citeproc run over both .bib files.
+- **AAS formatting:**
+  - UAT keywords, IDs checked against the UAT JSON: 498, 464, 1709, 1710, 1882, 205;
+  - Facilities and Software lines;
+  - narrative citations (`@Shan2023TESSTimings compared…`);
+  - all abbreviations spelt out at first use (JWST, TESS, SPOC, OSF, BJD_TDB, SD, IS95);
+  - STScI acknowledgment in its standard form.
+- **Legends.** Every figure and table legend now stands alone. Each figure legend opens with its finding, then gives symbols, colours (checked against the PNGs), weights and sample sizes. Table 2's legend defines M0, M2, IS95, the standardisation and the resampling.
+- **Strategic repetition.** The main message now appears, reworded each time, in:
+  - the title and abstract;
+  - a new last sentence of the Introduction;
+  - the opening of §3.2;
+  - the §3.6 heading ("the one large miss");
+  - the Fig. 2, 3 and 4 legend openings;
+  - the opening of the Discussion;
+  - a new two-sentence closing paragraph: "Observers can plan on minute-level accuracy… the one exception transited six hours early, far outside its stated uncertainty."
+- **Hard edit.**
+  - **Main text.** It went from 3,785 to 3,626 words while absorbing the additions. Detail moved to the appendices, where it already lived: release-log caveats (A), injection bootstrap intervals (D), the sector-105 rescore interval (C) and the allocation screen's padding list (G). I compressed the deviation, freeze, comparison-table and allocation paragraphs, and §2.8.
+  - **Appendices.** A delegated Sonnet pass cut only 1.1% (5,321 to 5,260 words). Its argument, which I accept: the appendices are mostly tables, numbers and caveats. A script confirms the numeric tokens, claim comments, citation keys, headings and maths are unchanged. Table captions now stand alone.
+- **Clarity pass.**
+  - "per planet" and "pooling events" became "averaged over planets" and "counting every timing equally".
+  - Ephemeris is defined at first use.
+  - "the second agent" became "one of us (B.W.B.)" for the authorisation and "two independently written verifiers" for the hashes.
+  - In the Discussion, "untested" became "unproven", because the allocation screen did test rankings.
+  - The abstract now says the correction widened the intervals "without demonstrably improving them".
+
+**One fix to my own wording.** While cutting §3.6, I briefly wrote that the sector-105 substitution "left the primary contrast inconclusive". That mislabels a fixed-fit conditional result as the primary one. It now reads "−0.09, still inconclusive under fixed-fit resampling (Appendix C)".
+
+**For your cross-check:**
+1. Do all numbers still agree with the ledger, especially where I compressed sentences in §§2.5, 2.6, 3.1, 3.6, 3.10 and 3.11?
+2. Are the new references correct, and do they support the sentences that cite them? Yee 2020 is cited for orbital decay shifting transits; Vanderburg 2019 for "three small planets that TESS found around a naked-eye star".
+3. Do the figure legends match the figures?
+4. The appendix pass flagged these, unresolved:
+   - Table E2's row labels (70/217, 124/186) against its cell counts (15/133, 238/206);
+   - Appendix F's "seven control triggers fired" against "six raw control flags remain";
+   - D.2's "the uncorrected rule passed both samples", which is ambiguous;
+   - B.5's 2,186 development timings against C.1's 2,185 held-out events. I believe these are different sets.
+5. Did any cut or plain-language change lose a caveat you consider essential?
+
+Frozen outputs, `manuscript/paper.md`, `docs/brief.md` and `references/references.bib` are unchanged.
+
+Next: Codex — cross-check step 4.
