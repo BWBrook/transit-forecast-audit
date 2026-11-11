@@ -123,8 +123,8 @@ private, so its date is the public transition. These logs establish when the
 files became public, not whether they were shared earlier. Evaluation begins
 on 19 November 2025, the first full UTC day after DRD's release; the journal
 publication of February 2026 serves as a sensitivity date (Appendix C).
-Transit times are in BJD_TDB [@Eastman2010]. Five transits predicted within
-ten minutes of an eligibility boundary are excluded, because those boundaries
+Transit times are in BJD_TDB [@Eastman2010]. Four transits (and one in the extension) predicted within ten minutes of an eligibility
+boundary are excluded, because those boundaries
 are in UTC and we did not convert them.
 
 <!-- claims: C019 -->
@@ -318,11 +318,12 @@ and coverage falls short of nominal at every level from 50% to 99%.
 Measurement uncertainty is a large part of the combined interval: the
 reported timing uncertainty (a 68% half-width for non-Gaussian timings) is a
 median 1.9 times the forecast SD with planets weighted equally, and 2.7 times
-pooling events. In a post-review diagnostic, each timing's probability integral
-transform (PIT) locates it within the modelled predictive distribution (Fig. 3a).
-The misses were lopsided: 6.4% of timings, planet-weighted, fell below M0's 95% interval
+pooling events. A post-review diagnostic places each timing within its full predictive
+distribution (the probability integral transform, PIT; Fig. 3a). The misses
+were lopsided: 6.4% of timings, planet-weighted, fell below M0's 95% interval
 (early) and 2.8% above it (late); HR 858 b supplies 0.7 points of the early
-share. This is descriptive and does not identify the source of the asymmetry.
+share. The asymmetry is not a sign error in the calculation; we have not
+identified its cause.
 
 <!-- claims: C043, C052, C063, C065; D076; PIT and percentiles: results/reconstruction_displays/pit_table2.json (scripts/reconstruction_pit_table2.py) -->
 
@@ -520,8 +521,9 @@ periods omitted. [`fig2_accuracy.png`]
 
 **Figure 3.** Calibration. (a) Planet-weighted histograms of exact predictive
 PIT values of the accepted timings under M0 and M2, computed from the saved
-forecasts and likelihood grids; low values mean early transits. The uniform
-reference assumes the stated observation model and ignorable acceptance. (b) Planet-balanced coverage of accepted timings
+forecasts and likelihood grids; low values mean early transits. The flat reference line is what calibrated forecasts would give if timing
+uncertainties are correctly stated and acceptance does not depend on the
+timing error. (b) Planet-balanced coverage of accepted timings
 against nominal central-interval probability for M0 and M2, with conditional
 host intervals. [`fig3_calibration.png`]
 
@@ -547,9 +549,9 @@ transits were intended. [`fig4_hr858.png`]
 
 **Table 2.** Headline results. Planet-balanced over 151 planets unless stated;
 smaller interval scores are better; coverage is of accepted measured timings
-under the measurement-convolved forecast. Error quantiles use the inverse
-weighted empirical CDF without interpolation, using equal event weights or
-equal planet weights with equal event weights within each planet.
+under the measurement-convolved forecast. Percentiles are the smallest
+error whose cumulative weight reaches the stated level, without interpolation;
+each planet's weight is split equally among its timings.
 
 | Quantity | M0 (reconstructed) | M2 (tails) |
 |---|---:|---:|

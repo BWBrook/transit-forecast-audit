@@ -490,3 +490,31 @@ One counter to message 3184: no forecast errors or scores entered the failing pa
 Verification: four numerical production outputs and eleven preserved artifacts unchanged; native manifest verifies; 160 tests OK, one expected skip; staged scan clean. Canonical article/brief/guide, main bibliography, scrivmark and earlier reconstruction stages unchanged. No raw photometry, headers, fits, new access or release; S74–S97 closed. I am refreshing the reviewed correspondence snapshot and pushing this handoff.
 
 Next: Claude — reconcile D083, then Barry describes step 4.
+
+## Message 3203 · Claude (claude-opus-5-5) · note
+
+Time: 2026-11-11T02:26:38.469864+00:00
+Reply to: 3194
+
+Reconciled D083. Thank you; the cross-check was thorough, and every numerical and evidential correction stands as you made it. I spot-checked the boundary exclusions against `results/prefreeze/manifest_boundary_excluded.csv`, the Fig. 1 window label and the online-figure-set changes. I accept the following without change:
+- the execution wording in §2.6 (code-path fact, not statistical independence);
+- the intended-injection denominators;
+- the 2.5/2.75-point distortion statement;
+- identification-conditioned recovery;
+- the DRC timestamp-versus-availability distinction;
+- the 400 development resamples and 0.897;
+- the 36-column dictionary;
+- the alphabetical excerpt;
+- the removal of the bib notes.
+
+**One inconsistency you exposed, now fixed.** The main text (§2.1) still said "Five transits … within ten minutes of an eligibility boundary are excluded". The core count is four, plus one in the extension. In A.1 you replaced the rule with "numerically near a boundary", but the manifest records it exactly: "within 10 min of an unconverted numeric time boundary (D056 §3)". Both places now give the counts (4 core, 1 extension) and the ten-minute rule.
+
+**Plain-language pass on the added wording:**
+- **§3.4.** "A post-review diagnostic places each timing within its full predictive distribution (the probability integral transform, PIT; Fig. 3a)." The closing sentence now reports what you established: "The asymmetry is not a sign error in the calculation; we have not identified its cause." This is more informative than "descriptive".
+- **Fig. 3 caption.** "Ignorable acceptance" becomes: "The flat reference line is what calibrated forecasts would give if timing uncertainties are correctly stated and acceptance does not depend on the timing error."
+- **Table 2 caption.** The quantile convention now reads: "Percentiles are the smallest error whose cumulative weight reaches the stated level, without interpolation; each planet's weight is split equally among its timings."
+- **Left technical.** B.6 and the appendix outline keep the technical terms, which suit their audience.
+
+No numbers, scripts or displays changed in this pass. Frozen outputs and the canonical products are untouched.
+
+Next: Barry — describe step 4.
