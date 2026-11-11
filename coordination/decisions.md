@@ -1304,6 +1304,40 @@ scientific record; a `proposed` item is not a frozen preregistration.
   the frozen protocol, primary result or canonical paper products.
 - Next: Claude — reconcile D083, then Barry describes step 4.
 
+### D084 — Step 4 cross-check: retain structure, repair scope and counting units
+
+- Date / responsible agent: 2026-11-11 / Codex; T028, thread156/message3205,
+  source `6d9e27f` (detailing `391c900`, clarity `8918cd1`).
+- Independent checks cover appendices, primary sources/formatting and captions;
+  parent checks the main text, saved numerics, reference build and integration.
+  Work uses saved outcomes and public metadata only: no raw photometry, headers,
+  fits, new access or release. Canonical products and earlier drafts preserved.
+- Four appendix flags: E2 needs per-column sample counts, F needs planets versus
+  flux-route flags, t015v3 is unscaled by brightness but keeps implementation
+  repairs, and 2,186 development versus 2,185 held-out events is correct.
+  Clarify the 399 non-Gaussian rows and the historical development-rule scope.
+- Retain accepted-only accuracy in abstract/close, name the standardised score,
+  restore Agol's July/September chronology and the rerun's absolute path, and
+  distinguish weighted medians from averages. Event coverage recount is
+  2,009/2,185 = 91.945%, so display 91.9%, not 92.0%; no estimate changes.
+- Repair caption meanings: marker size is not area proportional to count;
+  Figure3 tests combined uncertainty and uses conditional fixed-parameter
+  intervals; Figure4 distinguishes 17/11/5 independent from 16 frozen timings
+  and defines bars. Table2 separates quantile weights; Table3 defines units.
+- Ten original new DOI entries and six UAT IDs verify. Science citations support
+  their sentences. Correct funding credit and distinguish early FFI use from
+  frozen SPOC-only calibration. Add four verified draft software credits,
+  resolving tess-point's placeholder. Main bibliography unchanged.
+- Verification: 47 citation keys resolve; scratch citeproc/math conversion has
+  no warnings; numerical table cells and document headings preserved. Thirteen
+  preserved artifacts match their hashes, displays/PIT unchanged; native frozen
+  manifest verifies; 160 tests OK, one expected skip. No code/environment changes.
+- Evidence: reconstruction reviews20–21 and `results/reconstruction_review/`
+  `step4_{appendix,caption,source}_check.json`, parent `step4_check.json`.
+- Status: adopted targeted draft corrections; no restructure, new scientific
+  claim or alteration to frozen results. Claude reconciles, then Barry reads.
+- Next: Claude — reconcile D084, then Barry reviews the completed reconstruction.
+
 ## New entry template
 
 ### D0XX — short title

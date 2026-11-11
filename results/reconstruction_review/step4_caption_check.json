@@ -1,0 +1,143 @@
+{
+  "audit": "Independent step4 caption and communicative-scope check",
+  "date": "2026-11-11",
+  "source_commit": "6d9e27f",
+  "scope": "Read-only saved drafts, source code, tables, receipts and figures; no raw photometry/FITS/headers, new fits, protected access or canonical-product edits",
+  "reviewed_sha256_at_source_commit": {
+    "docs/reconstruction/18_final_draft.md": "79c445ba10a5d545f732470fc09d8ccf824459a4d74bb3477df0ebb66965eb3c",
+    "docs/reconstruction/19_final_appendices.md": "899ee2933f24ebd1ff275d5efb615b26567a93fa2611ab540ba58c3452b7e4fb",
+    "scripts/build_reconstruction_figures.py": "6c3cff9ee752e2a471346159d66bd86be88791a2b3f4497583b5b2cf1bd4e897",
+    "scripts/independent_timing_check.py": "345e156197ae774a7a9016e9bfa5ce1e48316ee66d1bb3ad75a773e42ecc3263",
+    "results/reconstruction_displays/figures_receipt.json": "2c0979a375cb88958cca05f7a1620c7e2159b60ee33805920f8f2c7620f2fd13",
+    "results/reconstruction_displays/pit_table2.json": "0d428c201b1d6a01ca1293cf476aecb78f431fe1aa30e338e0397871ce8f2eaf",
+    "results/reconstruction_displays/table3_dictionary.md": "66e120e4ad0593dc86e9e7cfb1432c47ef2d6182c1dfe0e2553c885c356eb48c",
+    "results/reconstruction_displays/table3_planets.csv": "a42a6f31023f2e74ced891ccd1ad04a8b43e98773b9d8779244e51906cde0206",
+    "results/reconstruction_displays/table3_extension.csv": "fc7cba066b193147b044d82bc9e92ca0e4c038c5736420357b883be424ef1353",
+    "results/reconstruction_displays/table3_excerpt.md": "a362e56422775bea24b67b158740946ed2741f49974fa44a20d8469aa309d4bb",
+    "results/revision_stage0/selection/planet_balanced_precision_ratio.csv": "7266c4e4c000a07462668e097879dd9f4378e90fa67c04b9f40fb6d9a614a612",
+    "results/reconstruction_displays/fig1_schematic.png": "26deb3817cce1f788bfb5f5d9fa4d7693d39f48d8cb0b199dcb0c1b5fb9bd9fa",
+    "results/reconstruction_displays/fig2_accuracy.png": "9080d0064fed46fa96f47b922f93700a0c93a1287dd4cce851483e5a6c20bfc4",
+    "results/reconstruction_displays/fig3_calibration.png": "0634c74d670961b31ae36266846fab2d3a1946eff6f96c046520e0b58a718173",
+    "results/reconstruction_displays/fig4_hr858.png": "0d0b75176d0d363b613f0647368be7215c2047a77b966e407a1747361de56c0c"
+  },
+  "visual_inspection": {
+    "figures": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "all_readable": true,
+    "colors_and_symbols_match_png": true,
+    "no_new_graphical_defect_identified": true
+  },
+  "positive_checks": {
+    "fig1_chronology_matches_receipt": true,
+    "fig2_2185_151_3052_128_match": true,
+    "fig3_coverage_0908_0976_matches": true,
+    "fig4_independent_bcd_counts": [
+      17,
+      11,
+      5
+    ],
+    "fig4_frozen_b_accepted": 16,
+    "table1_status_accounting_and_four_outside_coverage_explanation": true,
+    "table2_quantile_values_match": true,
+    "table3_rows_156_core_28_extension_and_five_zero_accepted": true,
+    "table3_alphabetical_illustrative_selection_matches": true,
+    "likelihood_support_rejections_retained_in_table1_and_methods": true
+  },
+  "findings": [
+    {
+      "id": "caption-01",
+      "priority": 2,
+      "location": "18_final_draft.md:506-516",
+      "finding": "Figure3 opening refers to stated uncertainties, whereas plotted coverage includes the timing likelihood and reconstructed covariance; issued forecast uncertainty is not isolated. Caption also omits sample/model definitions needed to stand alone.",
+      "proposed_fix": "Open with combined forecast-and-timing intervals, conditional on the reconstructed covariance and supplied likelihoods. Add that both panels use2,185 accepted timings of151planets, M0 is the reconstructed issued forecast, and M2 its tails-only correction. Mark the PIT as post-review; define equal planet weight and circle/square symbols briefly.",
+      "evidence": [
+        "results/reconstruction_displays/figures_receipt.json:numbers.fig3a/fig3b",
+        "results/revision_stage0/interpretability/coverage_vs_nominal.csv",
+        "scripts/build_reconstruction_figures.py:308-322"
+      ]
+    },
+    {
+      "id": "caption-02",
+      "priority": 2,
+      "location": "18_final_draft.md:553-555",
+      "finding": "Table2 caption describes only equal-planet percentile weighting, although table contains pooled percentiles.",
+      "proposed_fix": "Percentiles are the smallest error whose cumulative weight reaches the level, without interpolation; pooled summaries give each timing equal weight, while equal-planet summaries split each planet's weight equally among its timings.",
+      "evidence": [
+        "results/reconstruction_displays/pit_table2.json:abs_error_min",
+        "docs/reconstruction/19_final_appendices.md:106-110"
+      ]
+    },
+    {
+      "id": "clarity-01",
+      "priority": 2,
+      "location": "18_final_draft.md:301-302",
+      "finding": "The phrase median1.9 times forecast SD averaged over planets blurs a weighted median with an arithmetic average. The saved statistic is an inverse-CDF weighted median.",
+      "proposed_fix": "The median ratio is1.9 when planets receive equal weight, and2.7 when timings receive equal weight. Retain the68%half-width qualification.",
+      "evidence": [
+        "results/revision_stage0/selection/planet_balanced_precision_ratio.csv",
+        "results/d075_accuracy_audit/audit.json:measurement_sigma_over_forecast_event_median"
+      ]
+    },
+    {
+      "id": "scope-01",
+      "priority": 2,
+      "location": "18_final_draft.md:473-475",
+      "finding": "Observers can plan on minute-level accuracy for nearly every tested planet sounds like operational assurance for all tested planets, although only70%intended transits and151/156coreplanets yielded scored timings. Neither full-transit capture nor unaccepted forecast errors was measured.",
+      "proposed_fix": "Among the timings we could accept, issued ExoClock forecasts usually agreed with TESS to minutes. HR858b is the exception: it transited six hours early, far outside its stated uncertainty.",
+      "evidence": [
+        "docs/reconstruction/18_final_draft.md:452-463",
+        "results/reconstruction_displays/table3_receipt.json",
+        "coordination/claims.md:C063"
+      ]
+    },
+    {
+      "id": "caption-03",
+      "priority": 2,
+      "location": "18_final_draft.md:518-528",
+      "finding": "Figure4a has17b/11c/5d independent timings, not the16acceptedb timings in4b; counts and timing error-bar definitions are absent.",
+      "proposed_fix": "Add17,11and5independent timings for b,c,d in4a. Define bars as conditional profile timing uncertainties in4a; quoted1sigma errors for released inputs and reported68%timing half-widths for accepted outcomes in4b. The independent checks share photons.",
+      "evidence": [
+        "results/reconstruction_displays/figures_receipt.json:numbers.fig4a",
+        "scripts/build_reconstruction_figures.py:334-340,371-391",
+        "scripts/independent_timing_check.py:128-140"
+      ]
+    },
+    {
+      "id": "caption-04",
+      "priority": 3,
+      "location": "18_final_draft.md:569-579",
+      "finding": "Table3 caption does not define M0/M2 or give marginal-uncertainty units, although full dictionary does.",
+      "proposed_fix": "Add uncertainties in seconds, M0 reconstructed issued forecast, M2 tails correction, and coverage of accepted measured timings convolved with timing uncertainty. No table data changes.",
+      "evidence": [
+        "results/reconstruction_displays/table3_dictionary.md",
+        "results/reconstruction_displays/table3_excerpt.md"
+      ]
+    },
+    {
+      "id": "caption-05",
+      "priority": 3,
+      "location": "19_final_appendices.md:41,79,160,199,220,239,268",
+      "finding": "Several appendix captions rely on surrounding prose for model, score or resampling definitions. TableB2 alone does not define M1/M2/M3; TableE1 lacks model definitions/score divisor; TableF1 does not expand PDCSAP; TableG1 point gains are percentage points.",
+      "proposed_fix": "Add concise defining phrases where a caption must be read independently; reuse or point to a common table note rather than repeating full methods. Preserve conditional vs joint-refit distinctions already explicit in B1/C1.",
+      "evidence": [
+        "docs/reconstruction/19_final_appendices.md:75-88,195-212,235-252,264-276"
+      ]
+    },
+    {
+      "id": "caption-06",
+      "priority": 2,
+      "location": "18_final_draft.md:497-499",
+      "finding": "Parent identified that marker area is not proportional to accepted count. Plot script sets scatter area to6+4.2*sqrt(count).",
+      "proposed_fix": "Marker size indicates the number of accepted timings (see size legend). No display rebuild needed.",
+      "evidence": [
+        "scripts/build_reconstruction_figures.py:217-219"
+      ],
+      "attribution": "Parent finding, script checked by this reviewer."
+    }
+  ],
+  "interpretation": "No numerical or display-data defect identified. Principal changes are estimand-safe wording, percentile-weight definition and stand-alone caption completeness. Parent owns prose corrections."
+}

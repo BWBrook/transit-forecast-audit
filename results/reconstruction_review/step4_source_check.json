@@ -1,0 +1,936 @@
+{
+  "date": "2026-11-11",
+  "source_commit": "6d9e27f",
+  "scope": "Public source metadata and saved drafts only; no raw light curves or headers",
+  "registered_metadata": [
+    {
+      "key": "EdwardsTinetti2022ArielTargets",
+      "metadata_url": "https://api.crossref.org/works/10.3847%2F1538-3881%2Fac6bf9",
+      "response_sha256": "8b97e55b935c97e0b417fda178746051931dd8443845f06839f05eb9ae3098f2",
+      "metadata": {
+        "DOI": "10.3847/1538-3881/ac6bf9",
+        "title": [
+          "The Ariel Target List: The Impact of TESS and the Potential for Characterizing Multiple Planets within a System"
+        ],
+        "container-title": [
+          "The Astronomical Journal"
+        ],
+        "volume": "164",
+        "issue": "1",
+        "page": "15",
+        "published": {
+          "date-parts": [
+            [
+              2022,
+              6,
+              17
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2022,
+              7,
+              1
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2022,
+              6,
+              17
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.3847/1538-3881/ac6bf9",
+        "authors": [
+          {
+            "given": "Billy",
+            "family": "Edwards"
+          },
+          {
+            "given": "Giovanna",
+            "family": "Tinetti"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Yee2020WASP12",
+      "metadata_url": "https://api.crossref.org/works?filter=doi%3A10.3847%2F2041-8213%2Fab5c16&select=DOI%2Ctitle%2Cauthor%2Ccontainer-title%2Cvolume%2Cissue%2Cpage%2Cpublished%2Cpublished-print%2Cpublished-online%2CURL&rows=1",
+      "prior_error": "HTTP Error 429: Too Many Requests",
+      "response_sha256": "7b1bd84f215e165ece413a20e5da3e5707d3c606deeb37885a61573af8de2fdb",
+      "metadata": {
+        "issue": "1",
+        "published-print": {
+          "date-parts": [
+            [
+              2020,
+              1,
+              1
+            ]
+          ]
+        },
+        "DOI": "10.3847/2041-8213/ab5c16",
+        "page": "L5",
+        "title": [
+          "The Orbit of WASP-12b Is Decaying"
+        ],
+        "volume": "888",
+        "published-online": {
+          "date-parts": [
+            [
+              2019,
+              12,
+              27
+            ]
+          ]
+        },
+        "container-title": [
+          "The Astrophysical Journal Letters"
+        ],
+        "URL": "https://doi.org/10.3847/2041-8213/ab5c16",
+        "published": {
+          "date-parts": [
+            [
+              2019,
+              12,
+              27
+            ]
+          ]
+        },
+        "authors": [
+          {
+            "given": "Samuel W.",
+            "family": "Yee"
+          },
+          {
+            "given": "Joshua N.",
+            "family": "Winn"
+          },
+          {
+            "given": "Heather A.",
+            "family": "Knutson"
+          },
+          {
+            "given": "Kishore C.",
+            "family": "Patra"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Vanderburg2019HR858",
+      "metadata_url": "https://api.crossref.org/works/10.3847%2F2041-8213%2Fab322d",
+      "response_sha256": "43d359326955016cd48abd551eda364d1395cf3a79dddec7e9f517e6a8d5cef7",
+      "metadata": {
+        "DOI": "10.3847/2041-8213/ab322d",
+        "title": [
+          "TESS Spots a Compact System of Super-Earths around the Naked-eye Star HR 858"
+        ],
+        "container-title": [
+          "The Astrophysical Journal Letters"
+        ],
+        "volume": "881",
+        "issue": "1",
+        "page": "L19",
+        "published": {
+          "date-parts": [
+            [
+              2019,
+              8,
+              9
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2019,
+              8,
+              10
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2019,
+              8,
+              9
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.3847/2041-8213/ab322d",
+        "authors": [
+          {
+            "given": "Andrew",
+            "family": "Vanderburg"
+          },
+          {
+            "given": "Chelsea X.",
+            "family": "Huang"
+          },
+          {
+            "given": "Joseph E.",
+            "family": "Rodriguez"
+          },
+          {
+            "given": "Juliette C.",
+            "family": "Becker"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Harris2020NumPy",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41586-020-2649-2",
+      "response_sha256": "5852a2a9f46328365b59f46b9d4087b02957d6087f84a876aa249a4392d397f6",
+      "metadata": {
+        "DOI": "10.1038/s41586-020-2649-2",
+        "title": [
+          "Array programming with NumPy"
+        ],
+        "container-title": [
+          "Nature"
+        ],
+        "volume": "585",
+        "issue": "7825",
+        "page": "357-362",
+        "published": {
+          "date-parts": [
+            [
+              2020,
+              9,
+              16
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2020,
+              9,
+              17
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2020,
+              9,
+              16
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1038/s41586-020-2649-2",
+        "authors": [
+          {
+            "given": "Charles R.",
+            "family": "Harris"
+          },
+          {
+            "given": "K. Jarrod",
+            "family": "Millman"
+          },
+          {
+            "given": "St\u00e9fan J.",
+            "family": "van der Walt"
+          },
+          {
+            "given": "Ralf",
+            "family": "Gommers"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Virtanen2020SciPy",
+      "metadata_url": "https://api.crossref.org/works?filter=doi%3A10.1038%2Fs41592-019-0686-2&select=DOI%2Ctitle%2Cauthor%2Ccontainer-title%2Cvolume%2Cissue%2Cpage%2Cpublished%2Cpublished-print%2Cpublished-online%2CURL&rows=1",
+      "prior_error": "HTTP Error 429: Too Many Requests",
+      "response_sha256": "4bd3bd89227a3c0f412bd34bc88a446ed564692d541d466fa5f6be39b3050192",
+      "metadata": {
+        "issue": "3",
+        "published-print": {
+          "date-parts": [
+            [
+              2020,
+              3,
+              2
+            ]
+          ]
+        },
+        "DOI": "10.1038/s41592-019-0686-2",
+        "page": "261-272",
+        "title": [
+          "SciPy 1.0: fundamental algorithms for scientific computing in Python"
+        ],
+        "volume": "17",
+        "published-online": {
+          "date-parts": [
+            [
+              2020,
+              2,
+              3
+            ]
+          ]
+        },
+        "container-title": [
+          "Nature Methods"
+        ],
+        "URL": "https://doi.org/10.1038/s41592-019-0686-2",
+        "published": {
+          "date-parts": [
+            [
+              2020,
+              2,
+              3
+            ]
+          ]
+        },
+        "authors": [
+          {
+            "given": "Pauli",
+            "family": "Virtanen"
+          },
+          {
+            "given": "Ralf",
+            "family": "Gommers"
+          },
+          {
+            "given": "Travis E.",
+            "family": "Oliphant"
+          },
+          {
+            "given": "Matt",
+            "family": "Haberland"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Hunter2007Matplotlib",
+      "metadata_url": "https://api.crossref.org/works?filter=doi%3A10.1109%2FMCSE.2007.55&select=DOI%2Ctitle%2Cauthor%2Ccontainer-title%2Cvolume%2Cissue%2Cpage%2Cpublished%2Cpublished-print%2Cpublished-online%2CURL&rows=1",
+      "prior_error": "HTTP Error 429: Too Many Requests",
+      "response_sha256": "76a6713b40a6dc85faaa292fd878e6c34739cb57aa564e98dc48510e322ae8e0",
+      "metadata": {
+        "issue": "3",
+        "published-print": {
+          "date-parts": [
+            [
+              2007
+            ]
+          ]
+        },
+        "DOI": "10.1109/mcse.2007.55",
+        "page": "90-95",
+        "title": [
+          "Matplotlib: A 2D Graphics Environment"
+        ],
+        "volume": "9",
+        "container-title": [
+          "Computing in Science &amp; Engineering"
+        ],
+        "URL": "https://doi.org/10.1109/mcse.2007.55",
+        "published": {
+          "date-parts": [
+            [
+              2007
+            ]
+          ]
+        },
+        "authors": [
+          {
+            "given": "John D.",
+            "family": "Hunter"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Astropy2013",
+      "metadata_url": "https://api.crossref.org/works/10.1051%2F0004-6361%2F201322068",
+      "response_sha256": "51f1a3de37f103e328064ea377ecde716261203df66feb517b90ab67cbd911cd",
+      "metadata": {
+        "DOI": "10.1051/0004-6361/201322068",
+        "title": [
+          "Astropy: A community Python package for astronomy"
+        ],
+        "container-title": [
+          "Astronomy &amp; Astrophysics"
+        ],
+        "volume": "558",
+        "page": "A33",
+        "published": {
+          "date-parts": [
+            [
+              2013,
+              9,
+              30
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2013,
+              10
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2013,
+              9,
+              30
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1051/0004-6361/201322068",
+        "authors": [
+          {
+            "name": "The Astropy Collaboration"
+          },
+          {
+            "given": "Thomas P.",
+            "family": "Robitaille"
+          },
+          {
+            "given": "Erik J.",
+            "family": "Tollerud"
+          },
+          {
+            "given": "Perry",
+            "family": "Greenfield"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Astropy2018",
+      "metadata_url": "https://api.crossref.org/works/10.3847%2F1538-3881%2Faabc4f",
+      "response_sha256": "e7c9fdc05f6a7dfc41f99758ed82866c4c8220c2a0e3a046df31d170f6147d03",
+      "metadata": {
+        "DOI": "10.3847/1538-3881/aabc4f",
+        "title": [
+          "The Astropy Project: Building an Open-science Project and Status of the v2.0 Core Package\n                    <sup>*</sup>"
+        ],
+        "container-title": [
+          "The Astronomical Journal"
+        ],
+        "volume": "156",
+        "issue": "3",
+        "page": "123",
+        "published": {
+          "date-parts": [
+            [
+              2018,
+              8,
+              24
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2018,
+              9,
+              1
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2018,
+              8,
+              24
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.3847/1538-3881/aabc4f",
+        "authors": [
+          {
+            "name": "The Astropy Collaboration"
+          },
+          {
+            "given": "A. M.",
+            "family": "Price-Whelan"
+          },
+          {
+            "given": "B. M.",
+            "family": "Sip\u0151cz"
+          },
+          {
+            "given": "H. M.",
+            "family": "G\u00fcnther"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Astropy2022",
+      "metadata_url": "https://api.crossref.org/works/10.3847%2F1538-4357%2Fac7c74",
+      "response_sha256": "005489b2c6f47304610cfa6d9372ddb6611d321c2dc2bc81a7e272fd867ee556",
+      "metadata": {
+        "DOI": "10.3847/1538-4357/ac7c74",
+        "title": [
+          "The Astropy Project: Sustaining and Growing a Community-oriented Open-source Project and the Latest Major Release (v5.0) of the Core Package*"
+        ],
+        "container-title": [
+          "The Astrophysical Journal"
+        ],
+        "volume": "935",
+        "issue": "2",
+        "page": "167",
+        "published": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              1
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              1
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              24
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.3847/1538-4357/ac7c74",
+        "authors": [
+          {
+            "family": "The Astropy Collaboration"
+          },
+          {
+            "given": "Adrian M.",
+            "family": "Price-Whelan"
+          },
+          {
+            "given": "Pey Lian",
+            "family": "Lim"
+          },
+          {
+            "given": "Nicholas",
+            "family": "Earl"
+          }
+        ]
+      }
+    },
+    {
+      "key": "MAST2021TESSLightCurves",
+      "metadata_url": "https://api.datacite.org/dois/10.17909/t9-nmc8-f686",
+      "response_sha256": "07b11fa1732818ab3d5b270b0d3ca0547e1f567ef734818dfb6e13f1e6e5430e",
+      "metadata": {
+        "doi": "10.17909/t9-nmc8-f686",
+        "creators": [
+          {
+            "name": "TESS Team",
+            "affiliation": [],
+            "nameIdentifiers": []
+          }
+        ],
+        "titles": [
+          {
+            "lang": "en",
+            "title": "TESS Light Curves - All Sectors"
+          }
+        ],
+        "publisher": "STScI/MAST",
+        "publicationYear": 2021,
+        "url": "http://archive.stsci.edu/doi/resolve/resolve.html?doi=10.17909/t9-nmc8-f686",
+        "types": {
+          "ris": "DATA",
+          "bibtex": "misc",
+          "citeproc": "dataset",
+          "schemaOrg": "Dataset",
+          "resourceType": "Astronomical Data",
+          "resourceTypeGeneral": "Dataset"
+        }
+      }
+    }
+  ],
+  "uat": {
+    "url": "https://raw.githubusercontent.com/astrothesaurus/UAT/master/UAT.json",
+    "response_sha256": "78037869f5b8ca3d26a971b1894db25335ce9c228461ae81e7f06655089ebe75",
+    "matches": [
+      {
+        "uri": "http://astrothesaurus.org/uat/1710",
+        "name": "Transit timing variation method"
+      },
+      {
+        "uri": "http://astrothesaurus.org/uat/1709",
+        "name": "Transit photometry"
+      },
+      {
+        "uri": "http://astrothesaurus.org/uat/498",
+        "name": "Exoplanets"
+      },
+      {
+        "uri": "http://astrothesaurus.org/uat/1882",
+        "name": "Astrostatistics"
+      },
+      {
+        "uri": "http://astrothesaurus.org/uat/205",
+        "name": "Catalogs"
+      },
+      {
+        "uri": "http://astrothesaurus.org/uat/464",
+        "name": "Ephemerides"
+      }
+    ]
+  },
+  "additional_software_metadata": [
+    {
+      "key": "Kreidberg2015Batman",
+      "metadata_url": "https://api.crossref.org/works?filter=doi%3A10.1086%2F683602&select=DOI%2Ctitle%2Cauthor%2Ccontainer-title%2Cvolume%2Cissue%2Cpage%2Cpublished%2Cpublished-print%2Cpublished-online%2CURL&rows=1",
+      "response_sha256": "782e3b633b8abb5e88d71529561e791bc2daac74d6e45adf01b95d12d501a715",
+      "metadata": {
+        "issue": "957",
+        "published-print": {
+          "date-parts": [
+            [
+              2015,
+              11
+            ]
+          ]
+        },
+        "DOI": "10.1086/683602",
+        "page": "1161-1165",
+        "title": [
+          "<tt>batman</tt>\n                    : BAsic Transit Model cAlculatioN in Python"
+        ],
+        "volume": "127",
+        "container-title": [
+          "Publications of the Astronomical Society of the Pacific"
+        ],
+        "URL": "https://doi.org/10.1086/683602",
+        "published": {
+          "date-parts": [
+            [
+              2015,
+              11
+            ]
+          ]
+        },
+        "authors": [
+          {
+            "given": "Laura",
+            "family": "Kreidberg"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Ginsburg2019Astroquery",
+      "metadata_url": "https://api.crossref.org/works?filter=doi%3A10.3847%2F1538-3881%2Faafc33&select=DOI%2Ctitle%2Cauthor%2Ccontainer-title%2Cvolume%2Cissue%2Cpage%2Cpublished%2Cpublished-print%2Cpublished-online%2CURL&rows=1",
+      "response_sha256": "775fd1df930e81d8c69b008f28a2a61b1035d0e89da53c16ebc859469cfd770f",
+      "metadata": {
+        "issue": "3",
+        "DOI": "10.3847/1538-3881/aafc33",
+        "page": "98",
+        "title": [
+          "<tt>astroquery</tt>\n                    : An Astronomical Web-querying Package in Python"
+        ],
+        "volume": "157",
+        "published-online": {
+          "date-parts": [
+            [
+              2019,
+              2,
+              6
+            ]
+          ]
+        },
+        "container-title": [
+          "The Astronomical Journal"
+        ],
+        "URL": "https://doi.org/10.3847/1538-3881/aafc33",
+        "published": {
+          "date-parts": [
+            [
+              2019,
+              2,
+              6
+            ]
+          ]
+        },
+        "authors": [
+          {
+            "given": "Adam",
+            "family": "Ginsburg"
+          },
+          {
+            "given": "Brigitta M.",
+            "family": "Sip\u0151cz"
+          },
+          {
+            "given": "C. E.",
+            "family": "Brasseur"
+          },
+          {
+            "given": "Philip S.",
+            "family": "Cowperthwaite"
+          }
+        ]
+      }
+    }
+  ],
+  "base_bibliography_sha256": "a1f844426127c8eb05050cbd08427a71616249766ca3b33a4bcf462c06ab2f40",
+  "comparison": {
+    "new_entries": 10,
+    "all_match": true,
+    "checks": [
+      {
+        "key": "EdwardsTinetti2022ArielTargets",
+        "doi_match": true,
+        "title_match": true,
+        "year_match": true,
+        "volume_match": true,
+        "issue_match": true,
+        "page_match": true,
+        "first_author_match": true
+      },
+      {
+        "key": "Yee2020WASP12",
+        "doi_match": true,
+        "title_match": true,
+        "year_match": true,
+        "volume_match": true,
+        "issue_match": true,
+        "page_match": true,
+        "first_author_match": true
+      },
+      {
+        "key": "Vanderburg2019HR858",
+        "doi_match": true,
+        "title_match": true,
+        "year_match": true,
+        "volume_match": true,
+        "issue_match": true,
+        "page_match": true,
+        "first_author_match": true
+      },
+      {
+        "key": "Harris2020NumPy",
+        "doi_match": true,
+        "title_match": true,
+        "year_match": true,
+        "volume_match": true,
+        "issue_match": true,
+        "page_match": true,
+        "first_author_match": true
+      },
+      {
+        "key": "Virtanen2020SciPy",
+        "doi_match": true,
+        "title_match": true,
+        "year_match": true,
+        "volume_match": true,
+        "issue_match": true,
+        "page_match": true,
+        "first_author_match": true
+      },
+      {
+        "key": "Hunter2007Matplotlib",
+        "doi_match": true,
+        "title_match": true,
+        "year_match": true,
+        "volume_match": true,
+        "issue_match": true,
+        "page_match": true,
+        "first_author_match": true
+      },
+      {
+        "key": "Astropy2013",
+        "doi_match": true,
+        "title_match": true,
+        "year_match": true,
+        "volume_match": true,
+        "page_match": true,
+        "first_author_match": true
+      },
+      {
+        "key": "Astropy2018",
+        "doi_match": true,
+        "title_match": true,
+        "year_match": true,
+        "volume_match": true,
+        "issue_match": true,
+        "page_match": true,
+        "first_author_match": true
+      },
+      {
+        "key": "Astropy2022",
+        "doi_match": true,
+        "title_match": true,
+        "year_match": true,
+        "volume_match": true,
+        "issue_match": true,
+        "page_match": true,
+        "first_author_match": true
+      },
+      {
+        "key": "MAST2021TESSLightCurves",
+        "doi_match": true,
+        "title_match": true,
+        "year_match": true,
+        "first_author_match": true
+      }
+    ],
+    "year_convention": "Issue/print year, when available. Yee online27Dec2019, print1Jan2020: cited2020 valid.",
+    "title_normalization": "Case, punctuation, HTML entities and footnote markers ignored."
+  },
+  "primary_source_support": [
+    {
+      "key": "EdwardsTinetti2022ArielTargets",
+      "url": "https://discovery.ucl.ac.uk/id/eprint/10148955/1/Tinetti_Edwards_2022_AJ_164_15.pdf",
+      "location": "Abstract and section3, page13",
+      "finding": "Ariel candidate list; ephemeris follow-up explicitly names ExoClock and citizen-science efforts. Supports draft context."
+    },
+    {
+      "key": "Yee2020WASP12",
+      "url": "https://arxiv.org/abs/1911.09131",
+      "finding": "Primary paper abstract reports decreasing transit intervals and evidence favoring orbital decay over precession. Supports orbital decay as noninteraction source of drift."
+    },
+    {
+      "key": "Vanderburg2019HR858",
+      "url": "https://oro.open.ac.uk/66383/1/66383.pdf",
+      "location": "Abstract and introduction, pages1-2",
+      "finding": "TESS discovery of three approximately two-Earth-radius planets around V6.4 naked-eye HR858. Supports the citing sentence."
+    },
+    {
+      "key": "MAST2021TESSLightCurves",
+      "url": "https://doi.org/10.17909/T9-NMC8-F686",
+      "finding": "MAST landing page explicitly defines all-sector 2-minute light-curve collection. Distinct from TESS-SPOC FFI collection10.17909/t9-wpz1-8s54."
+    }
+  ],
+  "formatting_sources": [
+    {
+      "url": "https://journals.aas.org/aas-style-guide/",
+      "finding": "Use UAT concepts and facility keywords; software names required with appropriate citations encouraged."
+    },
+    {
+      "url": "https://journals.aas.org/facility-keywords/",
+      "finding": "TESS and MAST are both listed tags."
+    },
+    {
+      "url": "https://journals.aas.org/aastex-v7-author-guide/",
+      "finding": "Facilities/software macros belong after acknowledgments. Software versions aid reproducibility; this is future journal-build formatting, not a new review gate."
+    },
+    {
+      "url": "https://heasarc.gsfc.nasa.gov/docs/tess/faq.html",
+      "finding": "TESS standard funding acknowledgement names NASA Science Mission Directorate, not NASA Explorer Program."
+    },
+    {
+      "url": "https://archive.stsci.edu/manual/chap1.html",
+      "finding": "Official archive handbook supports STScI/AURA and NAS5-26555 wording; no contract-number change proposed."
+    }
+  ],
+  "software_citation_sources": [
+    {
+      "url": "https://numpy.org/citing-numpy/",
+      "key": "Harris2020NumPy"
+    },
+    {
+      "url": "https://scipy.org/citing-scipy/",
+      "key": "Virtanen2020SciPy"
+    },
+    {
+      "url": "https://matplotlib.org/stable/users/project/citing.html",
+      "key": "Hunter2007Matplotlib",
+      "note": "Web extractor empty; identity separately confirmed in registered metadata."
+    },
+    {
+      "url": "https://www.astropy.org/acknowledging.html",
+      "finding": "All three papers encouraged; these references do not claim the runtime was one of those old package versions.",
+      "citations": "Astropy2013/Astropy2018/Astropy2022"
+    },
+    {
+      "url": "https://ascl.net/2003.001",
+      "key": "Burke2020TESSPoint",
+      "finding": "Identifier and preferred citation verified."
+    },
+    {
+      "url": "https://github.com/tessgi/tess-point",
+      "key": "Burke2020TESSPoint",
+      "finding": "Project supplies the matching BibTeX entry."
+    },
+    {
+      "url": "https://lightkurve.github.io/lightkurve/about/citing.html",
+      "key": "Lightkurve2018",
+      "finding": "Preferred package citation is ASCL1812.013; version-specific DOI optional."
+    },
+    {
+      "url": "https://arxiv.org/abs/1507.08285",
+      "key": "Kreidberg2015Batman"
+    },
+    {
+      "url": "https://par.nsf.gov/servlets/purl/10103970",
+      "key": "Ginsburg2019Astroquery"
+    }
+  ],
+  "findings": [
+    {
+      "id": "S1",
+      "disposition": "correct",
+      "finding": "Exactly10 new DOI entries, not11, in base step4 addition."
+    },
+    {
+      "id": "S2",
+      "disposition": "correct",
+      "finding": "Data availability must distinguish early mixed FFI development from frozen SPOC-only calibration/evaluation. configs/candidate_freeze.json explicitly requires SPOC120s, noFFIfallback."
+    },
+    {
+      "id": "S3",
+      "disposition": "correct",
+      "finding": "Funding phrase should name NASA Science Mission Directorate."
+    },
+    {
+      "id": "S4",
+      "disposition": "resolve",
+      "finding": "No Barry import needed for tess-point: primary ASCL/project metadata verified; add local draft entry."
+    },
+    {
+      "id": "S5",
+      "disposition": "add_credit",
+      "finding": "batman used by frozen timing core; Lightkurve/astroquery used by acquisition. Add these directly used packages to Software line with verified citations."
+    }
+  ],
+  "source_files_at_review_commit_sha256": {
+    "docs/reconstruction/18_final_draft.md": "79c445ba10a5d545f732470fc09d8ccf824459a4d74bb3477df0ebb66965eb3c",
+    "docs/reconstruction/19_final_appendices.md": "899ee2933f24ebd1ff275d5efb615b26567a93fa2611ab540ba58c3452b7e4fb",
+    "docs/reconstruction/references_additions.bib": "a1f844426127c8eb05050cbd08427a71616249766ca3b33a4bcf462c06ab2f40",
+    "configs/candidate_freeze.json": "9c17de62230add56f6f92246fe07d784f7ddd21071f01024c0a0853ef5a58cef",
+    "scripts/t015_timing_pipeline.py": "2e1a1f1d9b4992bf05502f23fe194abf08d79743ba747c7239b2b7e730c1617e",
+    "scripts/final_measure.py": "67bbab8fa6f06b8c70a5673eaa2242181abe86cc0c10902a96bec8bbf6add3e5"
+  },
+  "suggested_four_entries_pandoc_parse": {
+    "entries": 4,
+    "keys": [
+      "Burke2020TESSPoint",
+      "Kreidberg2015Batman",
+      "Ginsburg2019Astroquery",
+      "Lightkurve2018"
+    ]
+  },
+  "source_note_sha256": "ceeea3a0cd7beca44c8333f87eadd71e119ed6e41c9d06661cb8e737069aad76"
+}

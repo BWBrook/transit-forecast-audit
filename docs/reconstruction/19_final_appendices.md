@@ -52,7 +52,7 @@ The primary statistic divides each event's interval score by M0's predictive SD,
 
 Under M2, 111 of 151 planets score worse (median difference +1.05 standardised units; none loses more than 6). The 40 that score better include four whose issued forecasts missed badly: HR 858 b (−109), TOI-905 b (−48), WASP-184 b (−14) and TOI-559 b (−12). HR 858 b alone contributes −0.720 to the mean of −0.121. The declared influence curve fixes the frozen parameters and drops hosts in order of their contribution to the mean gain: removing HR 858 gives +0.602 and removing the five largest-gain hosts +1.165. No host was removed from the primary analysis.
 
-We matched all 184 frozen targets to the default parameter rows of the NASA Exoplanet Archive, retrieved blind to scores. Eight carry a TTV flag; three are in the accepted set (HR 858 b, WASP-18 b and WASP-43 b) and average −36.7, almost wholly HR 858 b, against +0.619 for the other 148. An unflagged row does not show that a planet lacks timing variations, and the archive does not date when variations became known, so the label is a current diagnostic and never defines the cohort.
+We matched all 184 frozen targets to the default parameter rows of the NASA Exoplanet Archive, retrieved without using scores. Eight carry a TTV flag; three are in the accepted set (HR 858 b, WASP-18 b and WASP-43 b) and average −36.7, almost wholly HR 858 b, against +0.619 for the other 148. An unflagged row does not show that a planet lacks timing variations, and the archive does not date when variations became known, so the label is a current diagnostic and never defines the cohort.
 
 <!-- claims: C046; D067 -->
 
@@ -68,7 +68,7 @@ For symmetric widening the bounds are $-19\Delta w$ and $+\Delta w$. The differe
 
 We score the measured mid-time, and both the divisor and the likelihood come from the measurement. The score therefore keeps its propriety only conditionally: the measurement descriptors must be ancillary, the observation model correct and acceptance ignorable. Appendix D supports the observation model for accepted timings on two tuned samples; nothing establishes the other two conditions. A small synthetic control shows the convention matters: in a complete-white Gaussian case, the M2 − M0 score contrast in minutes was +6.06 against the latent time, −50.33 against the measured time with no measurement convolution, and −0.72 with the reported likelihood convolved (12 runs, 48 truths; no inference).
 
-Each timing likelihood is computed on a flat-prior grid over ±60 minutes about the fitted epoch, with the fitted transit shape and noise level held fixed rather than marginalised. We convert it to a measurement-error distribution by a location-family approximation: the grid is stored as true minus reported mid-time, and its reflected shape is used as the distribution of the reported mid-time about the true one. Where a Gaussian reproduces the 2.5% and 97.5% posterior quantiles within 10%, scoring uses the Gaussian; all but 399 accepted timings qualify, and those are scored from the grid. The forecast is convolved with the measurement error exactly for M0 and M1, and for the mixtures by quadrature with 384 nodes, checked against 192. The calibration fits use the Gaussian approximation throughout.
+Each timing likelihood is computed on a flat-prior grid over ±60 minutes about the fitted epoch, with the fitted transit shape and noise level held fixed rather than marginalised. We convert it to a measurement-error distribution by a location-family approximation: the grid is stored as true minus reported mid-time, and its reflected shape is used as the distribution of the reported mid-time about the true one. Where a Gaussian reproduces the 2.5% and 97.5% posterior quantiles within 10%, scoring uses the Gaussian. The remaining 399 accepted timings are scored from the grid. The forecast is convolved with the measurement error exactly for M0 and M1, and for the mixtures by quadrature with 384 nodes, checked against 192. The calibration fits use the Gaussian approximation throughout.
 
 <!-- claims: C030, C039, C043, C052, C056; scripts/acceptance.py, scripts/final_evaluation.py -->
 
@@ -93,8 +93,8 @@ M1 has the worst standardised score and the best raw-minute score, so its rank d
 
 The predictive probability integral transform (PIT) evaluates each measured
 time in its modelled predictive CDF. Write the signed residual as
-$r = t_{\rm reported} - t_{\rm forecast}$ and the saved grid coordinate as
-$x = t_{\rm true} - t_{\rm reported}$. Measurement error is therefore $-x$,
+$r = t_{\mathrm{reported}} - t_{\mathrm{forecast}}$ and the saved grid coordinate as
+$x = t_{\mathrm{true}} - t_{\mathrm{reported}}$. Measurement error is therefore $-x$,
 so a grid row contributes $\Phi((r+x)/(b\sigma_f\exp(sZ/2)))$, averaged over
 grid weights and standard-normal $Z$, with $\sigma_f$ the M0 forecast SD.
 For Gaussian timing errors, their variance adds to the forecast variance
@@ -172,7 +172,7 @@ The criteria were fixed before any confirmation photometry was requested, with a
 | Window-removal control, residual RMS ratio (0.95 to 1.05) | 1.005 | 1.000 |
 | Accepted / intended-injection rows | 1,477 / 2,021 | 1,361 / 1,931 |
 
-All eight criteria passed in both samples, and also in sensitivity scenarios in which every unexported non-Gaussian support check passed or every one failed; the adapter's check accepted 136 of 137 and 232 of 239 non-Gaussian timings. Calibration is conditional on successful identification and the fitted shape family; the replication's late bias of 0.07 SD is reported, not corrected. The original rule, which multiplied outcome errors by a brightness factor, failed confirmation on coverage and the faint-star endpoint. After two implementation defects were corrected (a reversed side of the asymmetric coverage test, and product fallback conditioned on success), the uncorrected rule passed both samples. The final rule, replayed on the same samples with its likelihood grids checked, reproduced every saved timing. Its acceptance threshold was chosen on these samples, so Table D1 is not an independent replication of it.
+All eight criteria passed in both samples, and also in sensitivity scenarios in which every unexported non-Gaussian support check passed or every one failed; the adapter's check accepted 136 of 137 and 232 of 239 non-Gaussian timings. Calibration is conditional on successful identification and the fitted shape family; the replication's late bias of 0.07 SD is reported, not corrected. The original rule, which multiplied outcome errors by a brightness factor, failed confirmation on coverage and the faint-star endpoint. After two implementation defects were corrected (a reversed side of the asymmetric coverage test, and product fallback conditioned on success), t015v3 without the brightness multiplier passed both samples on SPOC 120-s products. The final rule, replayed on the same samples with its likelihood grids checked, reproduced every saved timing. Its acceptance threshold was chosen on these samples, so Table D1 is not an independent replication of it.
 
 <!-- claims: C022, C023, C028, C036, C038; evidence results/prefreeze/injection_evidence_t015v3a.json; D061 -->
 
@@ -215,16 +215,16 @@ Mixture fits to development residuals gave DRB $b$ = 2.249, $s$ = 1.093 and DRC 
 
 ### E.3 The outcome-convention comparison
 
-To test whether a correction fitted under catalogue outcome errors transfers to our pipeline, we remeasured every supported development transit of 321 planets with the frozen timing rule and refitted M1 to M3 under the catalogue and our own outcome conventions (4,615 events attempted, 3,946 timed, 294 planets). Table E2 gives M2 − M0 under the catalogue convention and two versions of our rule, with and without a brightness multiplier. On matched transits sign and decision agree across the three, and every cell is inconclusive. M2 again raised 95% coverage, for example from 0.883 to 0.962 in matched release transfer.
+To test whether a correction fitted under catalogue outcome errors transfers to our pipeline, we remeasured every supported development transit of 321 planets with the then-frozen development timing rule and refitted M1 to M3 under the catalogue and our own outcome conventions (4,615 events attempted, 3,946 timed, 294 planets). Table E2 gives M2 − M0 under the catalogue convention and two versions of our rule, with and without a brightness multiplier. On matched transits sign and decision agree across the three, and every cell is inconclusive. M2 again raised 95% coverage, for example from 0.883 to 0.962 in matched release transfer.
 
-**Table E2.** M2 − M0 by outcome convention, with 95% host-refit intervals (400 resamples); training / scored planets in parentheses. Catalogue-convention cells for all timed transits are the earlier development fits (15 and 133 training planets; 238 and 206 scored).
+**Table E2.** M2 − M0 by outcome convention, with 95% host-refit intervals (400 resamples). Parentheses on matched-transit rows give training / scored planets for every column. On all-timed rows, the catalogue column uses 15 / 238 planets for release transfer and 133 / 206 for the chronological split; both versions of our rule use 70 / 217 and 124 / 186, respectively.
 
 | Design | Catalogue σ × 1.087 | Our rule, brightness multiplier | Our rule, no multiplier |
 |---|---|---|---|
 | Release transfer, matched transits (7 / 216) | −1.249 [−3.90, 2.66] | −2.195 [−5.06, 1.72] | −2.031 [−4.84, 1.74] |
 | Chronological, matched transits (123 / 185) | −1.080 [−3.62, 1.32] | −1.465 [−4.75, 1.53] | −1.376 [−4.65, 1.53] |
-| Release transfer, all timed (70 / 217) | −2.445 [−5.76, 0.19] | −2.154 [−5.15, 0.12] | −1.972 [−5.00, 0.28] |
-| Chronological, all timed (124 / 186) | −2.628 [−6.35, 0.07] | −0.026 [−5.10, 15.04] | −0.082 [−5.11, 14.84] |
+| Release transfer, all timed | −2.445 [−5.76, 0.19] | −2.154 [−5.15, 0.12] | −1.972 [−5.00, 0.28] |
+| Chronological, all timed | −2.628 [−6.35, 0.07] | −0.026 [−5.10, 15.04] | −0.082 [−5.11, 14.84] |
 
 For the same photons, our mid-times differ from ExoClock's by a median of −0.18 s (chronological, 3,416 pairs) and −0.33 s (release transfer, 2,230), with z-RMS 0.37; shared photons mean agreement of centres does not calibrate either set of errors. One falsely timed window drives the last row: in WASP-54 b sector 50, the recorded search windows sit about 12.18 hours from the true train, two were flagged at the prior edge and one was timed with z = 55; the chronological fit then moves $s$ from 2.33 to 3.24 and the contrast from −1.37 to −0.08, and the single-scale fit gives $b$ near 190. It is one case among 3,946 timings, and the final rule's shape gate excludes it.
 
@@ -249,7 +249,7 @@ Two timing programs sharing no code with the frozen pipeline were written after 
 
 For HR 858 b, Claude's checker on SAP flux gives a median absolute difference of 0.78 minutes and a maximum of 12.3. Against the published ephemerides of Bonfanti et al. [@Bonfanti2025TOI396], PDCSAP timings put planet b 374 to 422 minutes early, c 541 to 599 minutes late (SAP reaches 631) and d within −12.8 to +0.7 minutes. We did not verify the published time scale as TDB. Opposite offsets of b and c with d on time disfavour a simple common clock shift, but not every extraction, blend or identity error.
 
-Seven control triggers fired in the original comparison. After the pairing amendment, the 25 route rows still unpaired were all checker coverage refusals, each timed by another route or by the HR 858 checker, and no control showed a large discrepancy. Six raw control flags remain, all explained. The half-phase signal in WASP-18 b is consistent with its secondary eclipse (phase 0.503). The three sector-105 timings of HR 858 b flagged as local-shape departures led to the sensitivity in C.2. These controls did not warrant broader sampling of 2026 products. All checks use the same photons, so they test software, not data, and the combined-error z-RMS of the pairs is not an independent calibration of the uncertainties.
+Seven control planets triggered review in the original comparison. After the pairing amendment, six still triggered review, spanning seven flux-route flags because WASP-18 b triggered on both flux versions; TOI-157 b no longer exceeded the unmatched-fraction threshold. The 25 timing rows still unpaired were all checker coverage refusals, each timed by another route or by the HR 858 checker, and no control showed a large discrepancy. All remaining triggers were explained. The half-phase signal in WASP-18 b is consistent with its secondary eclipse (phase 0.503). The three sector-105 timings of HR 858 b flagged as local-shape departures led to the sensitivity in C.2. These controls did not warrant broader sampling of 2026 products. All checks use the same photons, so they test software, not data, and the combined-error z-RMS of the pairs is not an independent calibration of the uncertainties.
 
 <!-- claims: C050, C051, C057, C058; D071, D073 -->
 

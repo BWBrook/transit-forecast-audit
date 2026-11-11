@@ -18,14 +18,17 @@ references/references.bib are unchanged.
 Observers schedule exoplanet transit observations from catalogue predictions
 and their stated uncertainties, but refitting a catalogue does not show how
 its earlier predictions performed. We tested one issued release of the
-ExoClock catalogue, DRD, against 2,185 transit times of 151 planets measured
+ExoClock catalogue, DRD, against 2,185 accepted transit times of 151 planets measured
 from later TESS observations, under measurement, acceptance and scoring rules
-fixed before those data were opened, and we release the comparison as a
+fixed before those data were opened, and we provide the comparison as a
 per-planet table with a replayable scoring package. The forecasts were
 accurate to minutes: the pooled median absolute error was 1.1 minutes, and
 every accepted timing of 150 planets fell within 26.4 minutes of prediction.
 Nominal 95% intervals, combined with measurement uncertainty and a
-reconstructed epoch–period correlation, covered 91% of timings averaged over planets, a modest shortfall. A correction learned from the previous release widened the intervals 1.7-fold without demonstrably improving them: its prespecified interval-score difference was −0.12 (95% interval −1.84 to +2.20), inconclusive. The one large failure, HR 858 b,
+reconstructed epoch–period correlation, covered 91% of timings averaged over
+planets, a modest shortfall. A correction learned from the previous release
+widened the intervals 1.7-fold; its prespecified standardised interval-score difference was
+−0.12 (95% interval −1.84 to +2.20), inconclusive. The one large failure, HR 858 b,
 transited six hours early. Its neighbouring planets drifted in the pattern
 expected from mutual gravitational perturbations, and its catalogue inputs
 were old and scattered. One case cannot validate a warning rule, but such
@@ -79,7 +82,8 @@ refitted hundreds of ephemerides from space and ground-based timings
 [@IvshinaWinn2022; @Mallonn2019; @Edwards2021ORBYTS;
 @Wang2024PeriodVariation; @Ma2025ExoEchoI]. @Agol2024TRAPPIST1Forecast
 inflated TRAPPIST-1 forecast uncertainties 3.14-fold from leave-one-out
-predictions and checked five later timings. Closest to our aim, @Kokori2026ExoClockIV compared
+predictions and checked five fit-excluded July 2024 timings; the public
+preprint followed in September. Closest to our aim, @Kokori2026ExoClockIV compared
 the DRB, DRC and DRD predictions with later TESS timings, noting that the DRD
 comparison is optimistic because some of those timings were used to build DRD.
 
@@ -102,7 +106,8 @@ its nominal precision. H3, the prespecified primary test, asked whether a
 correction learned from the previous release improves the next. H4 asked what
 observing-window cost follows from the stated uncertainty. We answer H1 and
 H3, report why H2 remains open, and answer part of H4. In brief, the issued
-forecasts were good to minutes for all but one planet, which missed by hours.
+forecasts agreed with accepted timings to minutes for all but one planet,
+which missed by hours.
 
 <!-- claims: C019 (search, docs/sprint1_literature_review.md); hypotheses at bc85326:docs/project_brief.md; freeze D065 -->
 
@@ -208,7 +213,8 @@ the record.
 One deviation occurred: a relative output path stopped the first measurement
 run from writing likelihood grids for 71 of 304 light curves. The fault arose
 when a non-Gaussian grid was written, and no forecast error or score entered
-that code. We reran the identical code on the whole manifest; an independent
+that code. We reran the identical code on the whole manifest with an absolute
+output path; an independent
 audit confirmed that everything completed in the first attempt was unchanged,
 and both attempts are archived.
 
@@ -295,11 +301,12 @@ untouched test.
 Under the reconstructed covariance and the supplied timing likelihoods, M0's
 nominal 95% intervals covered 90.8% of accepted timings, averaged over planets (Fig. 3b).
 The 95% host-bootstrap interval, 87.8–93.4%, excludes 95%: the combined
-uncertainties were somewhat too narrow. Counting every timing equally gives 92.0%, and
+uncertainties were somewhat too narrow. Counting every timing equally gives 91.9%, and
 coverage falls short of nominal at every level from 50% to 99%. Measurement
 uncertainty is a large part of the combined interval: the reported timing
 uncertainty (a 68% half-width for non-Gaussian timings) is a median 1.9 times
-the forecast SD averaged over planets, and 2.7 times counting every timing equally.
+the forecast SD when planets receive equal weight, and 2.7 times when timings
+receive equal weight.
 A post-review diagnostic places each timing within its full predictive
 distribution (the probability integral transform, PIT; Fig. 3a)
 [@GneitingBalabdaouiRaftery2007]. The misses were lopsided: 6.4% of timings,
@@ -400,8 +407,8 @@ Table 3 lists all 156 core planets, including the five without accepted
 timings, as a machine-readable table: the issued ephemeris, the reconstructed
 covariance, the fate of every intended transit, error and coverage summaries,
 and dated release-input features (input age, baseline and scatter about the
-issued line). Unknown values are kept distinct from absent ones, and each row
-links to the full ledger of intended transits. A portable package of 499 hash-bound files, including 463 timing
+issued line). Unknown values are kept distinct from absent ones, and planet
+names join the table to the full ledger of intended transits. A portable package of 499 hash-bound files, including 463 timing
 likelihood grids, rescores every accepted event under all four models and
 replays the saved scores exactly, so other forecasts can be scored against
 the same outcomes.
@@ -470,9 +477,9 @@ separately authorised study of hour-scale misses on previously unexamined
 hosts, given a fixed cohort, forecasts issued before the observations, and
 qualified recovery and cycle identification.
 
-Observers can plan on minute-level accuracy from an issued ExoClock forecast
-for nearly every planet we tested. They should not assume it for every
-planet: the one exception transited six hours early, far outside its stated uncertainty.
+For nearly every planet with accepted timings, the issued forecasts agreed
+with those measurements to minutes. HR 858 b was the exception: its transits
+came six hours early, far outside the stated uncertainty.
 
 <!-- claims: C043, C045, C046, C049, C050, C053, C054, C055, C062, C063; D076, D080 -->
 
@@ -495,7 +502,7 @@ exception. (a) Histogram of absolute errors of the 2,185 accepted timings of
 151 planets, on a logarithmic minute scale; the vertical line marks the
 pooled median, 1.11 minutes, and the arrow HR 858 b's timings, up to
 404 minutes. (b) Each planet's largest accepted error, ranked, with marker
-area proportional to its number of accepted timings; the dashed line marks
+size indicating its number of accepted timings (legend); the dashed line marks
 26.4 minutes, at or below which 150 of 151 planets lie. HR 858 b (vermilion) is the outlier. (c) DRC forecast errors against years since DRC's issue, for
 3,052 accepted timings of 128 planets in two blocks: 2022–2023 (sectors 56–73,
 development data) and 2026 (held out for the DRD test and inspected after
@@ -503,8 +510,11 @@ it). Points are individual timings and the line joins binned medians; the
 gap between blocks is omitted. This panel is a retrospective comparison on
 already-inspected timings. [`fig2_accuracy.png`]
 
-**Figure 3.** The stated uncertainties were somewhat too narrow, with more
-early than late misses. (a) Planet-weighted histograms of the predictive
+**Figure 3.** M0's combined forecast and timing uncertainties were somewhat too
+narrow, with more early than late misses. The 2,185 accepted timings of 151
+planets receive equal total weight per planet. M0 is the issued forecast with
+reconstructed epoch–period correlation; M2 adds the tails-only correction.
+(a) Post-review histograms of the predictive
 probability integral transform (PIT) of each accepted timing under M0 (blue) and M2 (orange), computed from the saved forecasts and likelihood grids. Low
 values mean the transit came earlier than forecast; shaded strips mark the
 tails outside the central 95% interval, which contains 0.908 of timings under
@@ -512,20 +522,24 @@ M0 and 0.976 under M2. The dashed line is the flat histogram that calibrated
 forecasts would give if timing uncertainties are correctly stated and
 acceptance does not depend on the timing error. (b) Planet-weighted coverage
 of accepted timings against nominal central-interval probability for M0 and
-M2; vertical bars are conditional 95% host-bootstrap intervals, and the dashed
+M2 (circles and squares); vertical bars are 95% host-bootstrap intervals
+conditional on fixed forecasts and fitted parameters, and the dashed
 line marks perfect calibration. [`fig3_calibration.png`]
 
 **Figure 4.** HR 858: the one large miss. (a) Observed minus published
 transit times, in hours, of planets b (blue), c (orange) and d (grey) in TESS
 sectors 105–107 (June to September 2026), measured by an independent timing
-program against the ephemerides of @Bonfanti2025TOI396. Planet b runs about
+program against the ephemerides of @Bonfanti2025TOI396 (17, 11 and 5 timings,
+respectively). Planet b runs about
 six hours early and c about nine to ten hours late, while d stays on time.
 (b) HR 858 b against the issued DRD ephemeris (horizontal line at zero): its
 16 released input timings of 2018–2020 (black), the forecast-only 95%
 interval over the 2026 transits (blue band), and the 16 accepted 2026 timings (vermilion), which lie 5.9 to 6.7 hours early. Of 24 intended transits,
 6 had no cadence at the prediction, one timing was at the edge of its prior
 and one integration was unresolved. The axis gap between 2021 and 2026 is
-omitted. [`fig4_hr858.png`]
+omitted. Bars show conditional $\Delta\chi^2=1$ profile half-widths in (a),
+quoted one-SD errors for released timings and reported 68% half-widths for
+accepted timings in (b). [`fig4_hr858.png`]
 
 **Table 1.** Fate of the 3,103 intended transits of the 156 core planets.
 Each transit has one terminal status. The italic row counts transits whose
@@ -551,8 +565,8 @@ measurement uncertainty. IS95 is the 95% interval score (smaller is better);
 the standardised score divides each event's IS95 by M0's predictive SD. The
 M2 − M0 interval comes from 2,000 joint host resamples with refitting.
 Percentiles are the smallest error whose cumulative weight reaches the stated
-level, without interpolation; each planet's weight is split equally among its
-timings.
+level, without interpolation. Pooled quantiles weight timings equally;
+equal-planet quantiles split each planet's weight equally among its timings.
 
 | Quantity | M0 (reconstructed) | M2 (tails) |
 |---|---:|---:|
@@ -575,7 +589,9 @@ DRD $T_0$, $P$ and their uncertainties; reconstructed correlation and its
 provenance tier; intended, coverage-qualified and accepted transits; terminal
 statuses; median and maximum absolute error (minutes); M0 and M2 coverage;
 release-input age, baseline and scatter; and dated TTV-literature status,
-with unknown kept distinct from absent. [`table3_planets.csv`,
+with unknown kept distinct from absent. Epochs are BJD_TDB, periods are days,
+and marginal uncertainties are seconds. M0 is the reconstructed issued
+forecast; M2 adds the tails-only correction. [`table3_planets.csv`,
 `table3_extension.csv`, `table3_dictionary.md`, `table3_excerpt.md`]
 
 ## Appendices (in `19_final_appendices.md`)
@@ -601,9 +617,10 @@ Code, results, the claims ledger and the decision log are at
 github.com/BWBrook/transit-forecast-audit (code MIT; text, figures and derived
 data CC BY-SA 4.0). The ExoClock releases are on OSF under CC BY 4.0
 (10.17605/OSF.IO/WNA5E, 10.17605/OSF.IO/P298N, 10.17605/OSF.IO/WPJTN). The
-held-out timings use TESS SPOC two-minute light curves from the Mikulski
-Archive for Space Telescopes (MAST) [@MAST2021TESSLightCurves†]; development
-used TESS-SPOC full-frame-image light curves [@Caldwell2020TESSSPOC;
+frozen calibration and held-out timings use TESS SPOC two-minute light curves
+from the Mikulski Archive for Space Telescopes (MAST)
+[@MAST2021TESSLightCurves†]. Early development also used TESS-SPOC
+full-frame-image light curves [@Caldwell2020TESSSPOC;
 @MAST2020TESSSPOCData]. The comparison table and scoring package will be
 deposited on Zenodo with this snapshot *[DOI on release]*.
 
@@ -611,7 +628,9 @@ deposited on Zenodo with this snapshot *[DOI on release]*.
 
 *Software:* NumPy [@Harris2020NumPy†], SciPy [@Virtanen2020SciPy†],
 Astropy [@Astropy2013†; @Astropy2018†; @Astropy2022†], Matplotlib
-[@Hunter2007Matplotlib†], tess-point *[ascl:2003.001, entry to import]*.
+[@Hunter2007Matplotlib†], batman [@Kreidberg2015Batman†], Lightkurve
+[@Lightkurve2018†], astroquery [@Ginsburg2019Astroquery†] and tess-point
+[@Burke2020TESSPoint†].
 
 ## Author contributions and use of AI
 
@@ -630,7 +649,7 @@ Detailed roles and reviewed correspondence snapshots are in the repository.
 
 This paper includes data collected by the TESS mission, obtained from MAST at
 the Space Telescope Science Institute (STScI). Funding for the TESS mission
-is provided by the NASA Explorer Program. STScI is operated by the
+is provided by NASA's Science Mission Directorate. STScI is operated by the
 Association of Universities for Research in Astronomy, Inc., under NASA
 contract NAS5-26555. We thank the ExoClock contributors, whose open releases
 made this test possible.
@@ -646,5 +665,8 @@ MAST2021TESSLightCurves (10.17909/t9-nmc8-f686), Harris2020NumPy
 (10.1038/s41586-020-2649-2), Virtanen2020SciPy (10.1038/s41592-019-0686-2),
 Hunter2007Matplotlib (10.1109/MCSE.2007.55), Astropy2013
 (10.1051/0004-6361/201322068), Astropy2018 (10.3847/1538-3881/aabc4f),
-Astropy2022 (10.3847/1538-4357/ac7c74). Not DOI-registered: tess-point,
-ascl:2003.001.
+Astropy2022 (10.3847/1538-4357/ac7c74). Software-credit additions checked
+on 11 November: Kreidberg2015Batman (10.1086/683602),
+Ginsburg2019Astroquery (10.3847/1538-3881/aafc33), Burke2020TESSPoint
+(ascl:2003.001) and Lightkurve2018 (ascl:1812.013); the ASCL entries follow
+the projects' preferred citations.

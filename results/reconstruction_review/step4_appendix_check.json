@@ -1,0 +1,377 @@
+{
+  "source_commit": "6d9e27f",
+  "date": "2026-11-11",
+  "scope": "Read-only comparison of saved appendices and saved result evidence; no raw photometry, FITS headers, new fits, downloads or protected access",
+  "reviewed_source_sha256": {
+    "docs/reconstruction/16_appendices.md": "e11ce4c3b4170ad43c00dc029cb99df61e621adf400a7e7a937c74584a3e99c0",
+    "docs/reconstruction/19_final_appendices.md": "899ee2933f24ebd1ff275d5efb615b26567a93fa2611ab540ba58c3452b7e4fb"
+  },
+  "evidence_sha256": {
+    "results/sprint2/forecasts/convention_comparison.json": "1722b179d39d2446a36a0b3b5669ae8c2de485324ed7af1252ce02957fae1ac8",
+    "results/prefreeze/candidate_parameters.json": "e68cc5291ce6abb55f88bb9907cf0eabe0ac930c35e73dc07ed056059309f99f",
+    "results/final_primary/evaluation_summary.json": "8deacf156f9693de3a5baf7100d507eac3c9eed0b1bd3f8545efd4831f344a91",
+    "results/final_secondaries/sensitivities/summary.json": "cff6a71f4e8ceaef37bb2249abc2c8ea0cb10356314061f262e9b2a3614dc4c5",
+    "results/independent_validation/t017/comparison_summary.json": "b65755abe987d08e12a00a16af30fb97d4b75397ce250228e7b2b06b2581cae3",
+    "results/independent_validation/t017_adjudication/summary.json": "2ac2d220aee23bbbf451c54e28a05b630077216a31fa18c0fa7c3bb92d1efc16",
+    "results/independent_validation/t017_pairing_review/receipt.json": "c73f3168920b8cd46eae8483a7dc27ce5515eb12558dd18915c2f3c31226229b",
+    "results/sprint2_review/statistics/confirm_corrected_summary.json": "ab6f6331951863b307261c00dfde06e978a279b521e206a1424f2b48c487f444",
+    "results/sprint2_review/statistics/confirm2_corrected_summary.json": "1d60a9eae9f48a1b6659e66b1c41207f9f597e5888ba872d67ff1856c1152f01",
+    "results/prefreeze/injection_evidence_t015v3a.json": "4b4f87ce857ca19e2151344d5743e661f0156eefb2f5f2458a86351c028e608b"
+  },
+  "old_comparison": {
+    "commit": "064cbf5",
+    "path": "results/independent_validation/t017/comparison_summary.json",
+    "sha256": "65c03f816d62c3e4be0f9f449bf675a10eccf9514966251812f1fbc17b9678b6"
+  },
+  "cut_invariants": {
+    "headings": {
+      "old_count": 28,
+      "new_count": 28,
+      "sequence_equal": true
+    },
+    "citations": {
+      "old_count": 2,
+      "new_count": 2,
+      "sequence_equal": true
+    },
+    "claim_ids": {
+      "old_count": 61,
+      "new_count": 61,
+      "sequence_equal": true
+    },
+    "math": {
+      "old_count": 45,
+      "new_count": 45,
+      "sequence_equal": true
+    },
+    "numeric_tokens_excluding_comments_and_model_label_digits": {
+      "old_count": 675,
+      "new_count": 675,
+      "sequence_equal": true
+    }
+  },
+  "findings": [
+    {
+      "id": "S4A1",
+      "section": "E.3 / Table E2",
+      "severity": "P2",
+      "finding": "All-timed row parenthetical counts describe our timing columns, not the catalogue column. Numerical score cells are correct, but a single row-level count is misleading.",
+      "suggested_caption": "M2 minus M0 by outcome convention, with 95% host-refit intervals (400 resamples). Training/scored planet counts are 7/216 for matched release transfer and 123/185 for the matched chronological split. In the all-timed rows, catalogue counts are 15/238 and 133/206, whereas our two timing conventions use 70/217 and 124/186, respectively.",
+      "suggested_row_labels": [
+        "Release transfer, matched",
+        "Chronological, matched",
+        "Release transfer, all timed",
+        "Chronological, all timed"
+      ],
+      "evidence": {
+        "release_transfer": {
+          "exoclock_matched": {
+            "train_events": 60,
+            "train_planets": 7,
+            "test_events": 2170,
+            "test_planets": 216
+          },
+          "ours_matched": {
+            "train_events": 60,
+            "train_planets": 7,
+            "test_events": 2170,
+            "test_planets": 216
+          },
+          "ours_matched_raw": {
+            "train_events": 60,
+            "train_planets": 7,
+            "test_events": 2170,
+            "test_planets": 216
+          },
+          "ours_all": {
+            "train_events": 804,
+            "train_planets": 70,
+            "test_events": 2328,
+            "test_planets": 217
+          },
+          "ours_all_raw": {
+            "train_events": 804,
+            "train_planets": 70,
+            "test_events": 2328,
+            "test_planets": 217
+          },
+          "exoclock_all": {
+            "train_events": 172,
+            "train_planets": 15,
+            "test_events": 2324,
+            "test_planets": 238
+          }
+        },
+        "chronological": {
+          "exoclock_matched": {
+            "train_events": 1633,
+            "train_planets": 123,
+            "test_events": 1783,
+            "test_planets": 185
+          },
+          "ours_matched": {
+            "train_events": 1633,
+            "train_planets": 123,
+            "test_events": 1783,
+            "test_planets": 185
+          },
+          "ours_matched_raw": {
+            "train_events": 1633,
+            "train_planets": 123,
+            "test_events": 1783,
+            "test_planets": 185
+          },
+          "ours_all": {
+            "train_events": 1677,
+            "train_planets": 124,
+            "test_events": 1936,
+            "test_planets": 186
+          },
+          "ours_all_raw": {
+            "train_events": 1677,
+            "train_planets": 124,
+            "test_events": 1936,
+            "test_planets": 186
+          },
+          "exoclock_all": {
+            "train_events": 1696,
+            "train_planets": 133,
+            "test_events": 1925,
+            "test_planets": 206
+          }
+        }
+      }
+    },
+    {
+      "id": "S4A2",
+      "section": "F",
+      "severity": "P2",
+      "finding": "Seven control planets triggered originally; six control planets trigger after amended pairing. There are seven flagged flux-route rows after amendment because WASP-18 b triggers on both routes. Counts refer to different comparison versions, not an unexplained loss of a flag.",
+      "suggested_wording": "Seven control planets triggered review in the original comparison. After the pairing amendment, six still triggered review; TOI-157 b no longer exceeded the unmatched-fraction threshold. All remaining flags were explained, and no control showed a large timing discrepancy.",
+      "old_control_planets": [
+        "TOI-157b",
+        "WASP-126b",
+        "WASP-170b",
+        "WASP-18b",
+        "WASP-20b",
+        "WASP-22b",
+        "WASP-82b"
+      ],
+      "amended_control_planets": [
+        "WASP-126b",
+        "WASP-170b",
+        "WASP-18b",
+        "WASP-20b",
+        "WASP-22b",
+        "WASP-82b"
+      ],
+      "old_pairs": 340,
+      "amended_pairs": 347
+    },
+    {
+      "id": "S4A3",
+      "section": "D.2",
+      "severity": "P2",
+      "finding": "Uncorrected means without the brightness multiplier, not before the implementation defects were fixed. Qualification is for SPOC 120-s; FFI 200-s fails replication.",
+      "suggested_wording": "After two implementation defects were corrected (a reversed side of the asymmetric coverage test, and product fallback conditioned on success), t015v3 without the brightness multiplier passed both samples on SPOC 120-s products.",
+      "evidence": {
+        "confirm": {
+          "t015v3|remove|SPOC_120|all": {
+            "hosts": 104,
+            "events": 1483,
+            "z_rms": 0.9863,
+            "z_rms_ci90": [
+              0.9524,
+              1.0192
+            ],
+            "cover95": 0.9481,
+            "cover95_ci90": [
+              0.9361,
+              0.9595
+            ],
+            "verdict": {
+              "checks": {
+                "min_hosts": true,
+                "z_rms": true,
+                "cover95": true,
+                "mean_z": true,
+                "tmag9": true,
+                "tmag13.5": true,
+                "noise_beta_ratio": true,
+                "noise_resid_rms_ratio": true
+              },
+              "pass": true
+            }
+          },
+          "t015v3c|remove|SPOC_120|all": {
+            "hosts": 104,
+            "events": 1483,
+            "z_rms": 1.0559,
+            "z_rms_ci90": [
+              1.0194,
+              1.0927
+            ],
+            "cover95": 0.9318,
+            "cover95_ci90": [
+              0.9182,
+              0.9449
+            ],
+            "verdict": {
+              "checks": {
+                "min_hosts": true,
+                "z_rms": true,
+                "cover95": false,
+                "mean_z": true,
+                "tmag9": true,
+                "tmag13.5": false,
+                "noise_beta_ratio": true,
+                "noise_resid_rms_ratio": true
+              },
+              "pass": false
+            }
+          },
+          "t015v3|remove|TESS-SPOC_200|all": {
+            "hosts": 106,
+            "events": 1475,
+            "z_rms": 0.9929,
+            "z_rms_ci90": [
+              0.9512,
+              1.0359
+            ],
+            "cover95": 0.9499,
+            "cover95_ci90": [
+              0.9374,
+              0.9615
+            ],
+            "verdict": {
+              "checks": {
+                "min_hosts": true,
+                "z_rms": true,
+                "cover95": true,
+                "mean_z": true,
+                "tmag9": true,
+                "tmag13.5": true,
+                "noise_beta_ratio": true,
+                "noise_resid_rms_ratio": true
+              },
+              "pass": true
+            }
+          }
+        },
+        "confirm2": {
+          "t015v3|remove|SPOC_120|all": {
+            "hosts": 100,
+            "events": 1374,
+            "z_rms": 1.0144,
+            "z_rms_ci90": [
+              0.978,
+              1.0506
+            ],
+            "cover95": 0.9502,
+            "cover95_ci90": [
+              0.9383,
+              0.9615
+            ],
+            "verdict": {
+              "checks": {
+                "min_hosts": true,
+                "z_rms": true,
+                "cover95": true,
+                "mean_z": true,
+                "tmag9": true,
+                "tmag13.5": true,
+                "noise_beta_ratio": true,
+                "noise_resid_rms_ratio": true
+              },
+              "pass": true
+            }
+          },
+          "t015v3c|remove|SPOC_120|all": {
+            "hosts": 100,
+            "events": 1374,
+            "z_rms": 1.0852,
+            "z_rms_ci90": [
+              1.0449,
+              1.1259
+            ],
+            "cover95": 0.9278,
+            "cover95_ci90": [
+              0.914,
+              0.9412
+            ],
+            "verdict": {
+              "checks": {
+                "min_hosts": true,
+                "z_rms": false,
+                "cover95": false,
+                "mean_z": true,
+                "tmag9": true,
+                "tmag13.5": false,
+                "noise_beta_ratio": true,
+                "noise_resid_rms_ratio": true
+              },
+              "pass": false
+            }
+          },
+          "t015v3|remove|TESS-SPOC_200|all": {
+            "hosts": 102,
+            "events": 1360,
+            "z_rms": 1.0883,
+            "z_rms_ci90": [
+              0.9896,
+              1.2069
+            ],
+            "cover95": 0.9336,
+            "cover95_ci90": [
+              0.9106,
+              0.9534
+            ],
+            "verdict": {
+              "checks": {
+                "min_hosts": true,
+                "z_rms": false,
+                "cover95": false,
+                "mean_z": true,
+                "tmag9": false,
+                "tmag13.5": false,
+                "noise_beta_ratio": true,
+                "noise_resid_rms_ratio": true
+              },
+              "pass": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "S4A4",
+      "section": "B.5 versus C.1",
+      "severity": "none",
+      "finding": "No inconsistency. The core development fit uses 2,186 accepted timings on 206 planets in 2022–2023, while the protected evaluation uses 2,185 accepted timings on 151 planets. Preserve both values and their stated populations.",
+      "development_training_events": 2186,
+      "development_training_planets": 206,
+      "evaluation_accepted_events": 2185,
+      "evaluation_accepted_planets": 151
+    },
+    {
+      "id": "S4A5",
+      "section": "B.4",
+      "severity": "P2",
+      "new_in_step4": true,
+      "finding": "The new pronoun in all but 399 accepted timings qualify, and those are scored from the grid can wrongly assign grid scoring to the Gaussian-qualifying majority.",
+      "suggested_wording": "Where a Gaussian reproduces the 2.5% and 97.5% posterior quantiles within 10%, scoring uses the Gaussian; all but 399 accepted timings qualify, and the remaining 399 are scored from the grid.",
+      "evidence": {
+        "nonGaussian_scored": 399
+      }
+    },
+    {
+      "id": "S4A6",
+      "section": "B.2",
+      "severity": "wording",
+      "new_in_step4": true,
+      "finding": "Retrieved blind to scores may imply formal analyst blinding. The previous literal description is safer without adding verbiage.",
+      "suggested_wording": "retrieved without using scores"
+    }
+  ],
+  "overall": "No changed numerical result, citation, claim ID, heading or mathematical expression. One new substantive ambiguity in Gaussian/grid assignment; three historical labels/wordings should be made explicit. The development-versus-evaluation count difference is valid."
+}

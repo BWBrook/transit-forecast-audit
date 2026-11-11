@@ -612,3 +612,20 @@ document, and numerical evidence in an analysis artifact.
   brief, guide, bibliography and scrivmark unchanged. No new raw data, fits,
   access or release; S74–S97 closed.
 - Next: Claude — reconcile D083, then Barry describes step 4.
+
+### 2026-11-11 — Codex — D084 step 4 cross-check (T028)
+
+- Retained structure/main message and repaired scope/definitions. Restored
+  accepted-only accuracy and Agol issue chronology; kept the score-specific
+  inconclusive result. Event-weighted coverage rounds to 91.9%, not 92.0%.
+- Resolved E2's column-specific counts, F's planet/flux-route counting units,
+  unscaled-SPOC rule wording and the distinct development/held-out counts.
+  Clarified the 399 grid-scored timings and historical rule scope.
+- Corrected legend meanings and uncertainty definitions; verified ten original
+  DOI additions and all six UAT labels; repaired data/funding credit and added
+  four verified software entries. Reviews20–21 and receipts retain evidence.
+- 47 citations resolve; scratch math conversion warning-free. All numerical
+  table cells, headings and thirteen preserved artifacts verified; native
+  freeze clean; 160 tests OK, one expected skip. No code, canonical product,
+  earlier draft, data-access or release change. S74–S97 remain closed.
+- Next: Claude — reconcile D084, then Barry reviews the completed reconstruction.

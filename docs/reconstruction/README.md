@@ -28,11 +28,15 @@ percentiles, Table 3 and the online figure set) and
 The [production cross-check](17_production_review.md) records the independent
 numerical checks, appendix corrections and display repairs.
 Step 4: [Final draft](18_final_draft.md) and
-[appendices](19_final_appendices.md). This step added 11 verified references,
+[appendices](19_final_appendices.md). This step added ten DOI-verified references,
 UAT keywords, Facilities and Software lines, and standalone display legends.
 It made a hard edit to about 3,600 words of main text and moved detail to the
 appendices. A second pass edited for clarity and a general audience, without
 restructuring.
+The [step 4 cross-check](20_step4_review.md) resolves the appendix counts,
+checks the captions and restores material conditions. Its
+[source checks](21_step4_source_checks.md) verify the additions and supply
+four further software credits, including tess-point.
 `manuscript/paper.md` and `references/references.bib` are unchanged.
 
 Codex's 10 November review (draft proposals, discussed in thread 156):

@@ -1,0 +1,125 @@
+{
+  "date": "2026-11-11",
+  "decision": "D084",
+  "source_commit": "6d9e27f",
+  "scope": "Saved evidence and public primary-source metadata only; no raw photometry, FITS headers, fits, new access or release",
+  "base_draft_sha256": {
+    "docs/reconstruction/18_final_draft.md": "79c445ba10a5d545f732470fc09d8ccf824459a4d74bb3477df0ebb66965eb3c",
+    "docs/reconstruction/19_final_appendices.md": "899ee2933f24ebd1ff275d5efb615b26567a93fa2611ab540ba58c3452b7e4fb"
+  },
+  "final_draft_sha256": {
+    "docs/reconstruction/18_final_draft.md": "3a8b5b08a986573c9876f85afbc445f87e31ac5c39ca7881d042a2afe9eef538",
+    "docs/reconstruction/19_final_appendices.md": "6de64679552d662366b45e71c508fc57e724b7375618e5ca16ba4e58e89451e3",
+    "docs/reconstruction/references_additions.bib": "bb2e9d78c69d9cea97a3a79b99957b90d990d11b874ca9bdd4053a1244145b7d"
+  },
+  "independent_review_sha256": {
+    "docs/reconstruction/20_step4_review.md": "b14aa9a87b1fbd36863c331de70f8147b3c4533898fd03081624d3ddefe19692",
+    "docs/reconstruction/21_step4_source_checks.md": "ceeea3a0cd7beca44c8333f87eadd71e119ed6e41c9d06661cb8e737069aad76",
+    "results/reconstruction_review/step4_appendix_check.json": "7dbe0483188a25bcd3259e02d6ee7d1861c1d8155792081fffdebe9b650abb0a",
+    "results/reconstruction_review/step4_caption_check.json": "06c6b6e0e2bd2e25371701e0215019a2a7ae3da10f64b412bef23fc62933c919",
+    "results/reconstruction_review/step4_source_check.json": "16ce51bb1dfd2fe18ad5fe068e0a853a0a334cfb63bf6b993eb9e2aa8909c0ae"
+  },
+  "independent_review_version_note": "Independent receipts bind the original reviewed draft. Parent hashes bind the integrated corrections; caption/weighting changes received a final independent read.",
+  "preserved_sha256": {
+    "manuscript/paper.md": "f61ce6a87ef1197530b132ca570def2733c39aa5dd11577e529608e4e5535a8d",
+    "docs/brief.md": "a80bf1aafff5e28a157b7b2010f82c173d5672837266ed74c51e7f551e353763",
+    "docs/brief.pdf": "bcc2e696c48731783b9c38fdcea8ec691722d19311324802bd5fa5ff8cd6ff46",
+    "docs/agent_guide.md": "b114aaf0d66173d2fa3af2e341b0844d9ea0ffb6c04775de6193ab3cf7c7ba88",
+    "references/references.bib": "fbe8f9892a8fcf98d4e549f0b95ed63969fec07ff372b5af7340a0af1b586cbe",
+    "references/references.csl.json": "e0c00de4745be4c8f9728671d624c21c0e3f7c53ac7ab2d7340fcbf7cc61605d",
+    "references/literature_evidence.json": "342bdc0c3cf8fe0f22936425becb40ffebd944723229f055373b7ea13b44fb2c",
+    "scrivmark.toml": "3d38952619e82c800813e9486a77007dcb516ac83486b3dd30cf05d6c37074f1",
+    "docs/reconstruction/03_main_message.md": "0ed7f0c107e49eb08373e8d33421893d4c7423783cb63da13d6f044b52e5afe5",
+    "docs/reconstruction/09_section_abstracts.md": "a4a67a82b51fe3750c2cb2ac4cdbe59e641191878e78c0625c3d49eaa095930a",
+    "docs/reconstruction/11_paragraph_abstracts.md": "c91ee51026f2c744ffcb45ada81cb22844dbdf2d7bd3e087f7a9534c1a93f32d",
+    "docs/reconstruction/14_full_draft.md": "d322d0f0de59fcf9d49afb3af2e0b13c5348499f61979049605d1f938c5d5153",
+    "docs/reconstruction/16_appendices.md": "e11ce4c3b4170ad43c00dc029cb99df61e621adf400a7e7a937c74584a3e99c0"
+  },
+  "all_preserved_unchanged": true,
+  "display_outputs_sha256": {
+    "results/reconstruction_displays/fig1_schematic.png": "26deb3817cce1f788bfb5f5d9fa4d7693d39f48d8cb0b199dcb0c1b5fb9bd9fa",
+    "results/reconstruction_displays/fig2_accuracy.png": "9080d0064fed46fa96f47b922f93700a0c93a1287dd4cce851483e5a6c20bfc4",
+    "results/reconstruction_displays/fig3_calibration.png": "0634c74d670961b31ae36266846fab2d3a1946eff6f96c046520e0b58a718173",
+    "results/reconstruction_displays/fig4_hr858.png": "0d0b75176d0d363b613f0647368be7215c2047a77b966e407a1747361de56c0c",
+    "results/reconstruction_displays/figures_receipt.json": "2c0979a375cb88958cca05f7a1620c7e2159b60ee33805920f8f2c7620f2fd13",
+    "results/reconstruction_displays/online_figure_set_oc.pdf": "b6d825956b60643ebaefceb369db3f50ee9c029312cb74b9e72ca4f7fa6830e7",
+    "results/reconstruction_displays/pit_events.csv": "6c8caa681eedffbdb690a8a0bc3bba221121ee39b0d162ec2f0289e897090da8",
+    "results/reconstruction_displays/pit_table2.json": "0d428c201b1d6a01ca1293cf476aecb78f431fe1aa30e338e0397871ce8f2eaf",
+    "results/reconstruction_displays/table3_dictionary.md": "66e120e4ad0593dc86e9e7cfb1432c47ef2d6182c1dfe0e2553c885c356eb48c",
+    "results/reconstruction_displays/table3_excerpt.md": "a362e56422775bea24b67b158740946ed2741f49974fa44a20d8469aa309d4bb",
+    "results/reconstruction_displays/table3_extension.csv": "fc7cba066b193147b044d82bc9e92ca0e4c038c5736420357b883be424ef1353",
+    "results/reconstruction_displays/table3_planets.csv": "a42a6f31023f2e74ced891ccd1ad04a8b43e98773b9d8779244e51906cde0206",
+    "results/reconstruction_displays/table3_receipt.json": "80e2a171af90dc427137691638c406b721c268ea2553e1665ad32d83bf95e6d9"
+  },
+  "display_outputs_unchanged": true,
+  "headings_unchanged": {
+    "docs/reconstruction/18_final_draft.md": true,
+    "docs/reconstruction/19_final_appendices.md": true
+  },
+  "numerical_table_cells_unchanged": {
+    "docs/reconstruction/18_final_draft.md": true,
+    "docs/reconstruction/19_final_appendices.md": true
+  },
+  "input_evidence_sha256": {
+    "results/final_primary/evaluation_summary.json": "8deacf156f9693de3a5baf7100d507eac3c9eed0b1bd3f8545efd4831f344a91",
+    "results/final_primary/descriptives.json": "c6ca96b9720e69d9ae376727409a7b30b2bd1015adf1d5d3e331108b2b97b0d2",
+    "results/final_primary/terminal_ledger.csv.gz": "6a17c4646b42ec7f87af49cfc2f900ed1065c53bf4887f213f7ba65c9079c3f8",
+    "results/prefreeze/candidate_parameters.json": "e68cc5291ce6abb55f88bb9907cf0eabe0ac930c35e73dc07ed056059309f99f",
+    "results/d073_s105_rescore/summary.csv": "a06ca63349537b7df5440d734213de20cefc2ac02fcb2f15a27aa0407f32d218",
+    "results/revision_stage0/benchmark_export_receipt.json": "fed6904278c36cfddae87b81a17bbe171e2f4ed482b4b9724ab625db3167a176",
+    "results/reconstruction_displays/pit_events.csv": "6c8caa681eedffbdb690a8a0bc3bba221121ee39b0d162ec2f0289e897090da8",
+    "results/sprint2/forecasts/convention_comparison.json": "1722b179d39d2446a36a0b3b5669ae8c2de485324ed7af1252ce02957fae1ac8",
+    "results/revision_stage0/selection/planet_balanced_precision_ratio.csv": "7266c4e4c000a07462668e097879dd9f4378e90fa67c04b9f40fb6d9a614a612"
+  },
+  "parent_numerical_recount": {
+    "terminal_counts": {
+      "no_cadence_coverage_at_prediction": 431,
+      "accepted": 2185,
+      "excluded_coverage": 290,
+      "integration_unresolved": 75,
+      "edge": 71,
+      "likelihood_support_unresolved": 12,
+      "product_id_failed": 39
+    },
+    "intended": 3103,
+    "coverage_qualified": 2369,
+    "accepted_with_coverage": 2181,
+    "nonaccepted_without_coverage": 730,
+    "event_M0_coverage95": {
+      "covered": 2009,
+      "total": 2185,
+      "fraction": 0.9194508009153318,
+      "percent_1decimal": "91.9"
+    },
+    "calibration_events": 2186,
+    "calibration_planets": 206,
+    "primary_delta_M2_M0": -0.12130780452395717,
+    "primary_joint_ci95": [
+      -1.8397729107986793,
+      2.1956849634535907
+    ],
+    "decision": "inconclusive"
+  },
+  "citations": {
+    "keys": 47,
+    "missing": [],
+    "draft_bib_entries": 22,
+    "original_step4_DOI_entries": 10,
+    "further_software_entries": 4,
+    "pandoc_citeproc_exit": 0,
+    "math_conversion_warnings": [],
+    "scratch_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "native_freeze_verification": {
+    "manifest_sha256": "5ec7c0f363bca641430c68c0ff57fdbf788cda9e32f80dddea7c7cd9121c57d1",
+    "mismatches": []
+  },
+  "tests": {
+    "command": ".venv/bin/python -m unittest discover -s tests -v",
+    "run": 160,
+    "skipped": 1,
+    "status": "OK",
+    "seconds": 4.574,
+    "log_sha256": "8a72f7b4ab3e56732b9c3a3ebc73d61db004431ac7e9465ba5159ecb15ad730c"
+  }
+}
