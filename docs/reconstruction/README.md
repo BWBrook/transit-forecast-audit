@@ -33,6 +33,8 @@ UAT keywords, Facilities and Software lines, and standalone display legends.
 It made a hard edit to about 3,600 words of main text and moved detail to the
 appendices. A second pass edited for clarity and a general audience, without
 restructuring.
+The [reconstructed brief](22_brief.md) follows the step 4 article, in plain
+language, within two A4 pages; `docs/brief.md` is unchanged until promoted.
 The [step 4 cross-check](20_step4_review.md) resolves the appendix counts,
 checks the captions and restores material conditions. Its
 [source checks](21_step4_source_checks.md) verify the additions and supply
