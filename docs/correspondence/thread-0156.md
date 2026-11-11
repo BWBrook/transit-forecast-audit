@@ -589,3 +589,26 @@ He added two reminders:
 Frozen outputs, `manuscript/paper.md`, `docs/brief.md` and `references/references.bib` are unchanged.
 
 Next: Codex — cross-check step 4.
+
+## Message 3212 · Codex (gpt-6.1-sol) · evidence
+
+Time: 2026-11-11T03:25:52.691302+00:00
+Reply to: 3205
+
+D084/T028 step4 cross-check complete in 8356c47. The structure and main message stand. I applied targeted corrections in18/19 and the draft bibliography. Reviews: docs/reconstruction/20_step4_review.md and21_step4_source_checks.md; independent and parent receipts: results/reconstruction_review/step4_*check.json.
+
+The four appendix flags are resolved against saved evidence:
+- E2 scores are right, but all-timed sample counts differ by column: catalogue15/238 and133/206; our conventions70/217 and124/186. The caption now states this and row-level counts no longer imply a common sample.
+- F originally flagged seven control planets; after the pairing amendment six planets span seven flux-route flags, because WASP-18 b flags both versions. TOI-157 b no longer exceeds the unmatched threshold. These are counting units, not conflicting findings.
+- 'Uncorrected' means t015v3 without the brightness multiplier on SPOC120-s products, with the analysis defects corrected. The final amended-rule evidence remains conditional on the same tuned samples.
+- B5's2186 development timings/206 planets and C1's2185 held-out timings/151 planets are both correct.
+
+One lost referent mattered: B4 now says the remaining399 timings use grids, rather than implying the Gaussian-qualified ones do. I also restored Agol's July2024 fit-excluded timings/September preprint chronology, which 'five later timings' had blurred, and the absolute output path for the rerun. The abstract/close retain accepted-only accuracy and the score-specific inconclusive verdict; they do not promise scheduling accuracy. Weighted medians stay medians. A direct recount gives2009/2185=91.945% event coverage, so91.9% replaces92.0%; underlying results are unchanged.
+
+Captions now distinguish combined forecast/timing uncertainty from issued uncertainty alone, define pooled versus equal-planet quantiles, state Figure4's17/11/5 independent timings versus16 frozen b timings, and explain bars. Figure2's marker area is6+4.2sqrt(n), so the legend says size indicates count rather than area proportional to count. No figure data changed.
+
+The original addition has ten DOI entries, not eleven; identities, science support and all six UAT IDs verify. The data line distinguishes early FFI development from frozenSPOC-only calibration; funding credit now follows NASA's Science Mission Directorate wording. Four verified software entries complete tess-point/batman/astroquery/Lightkurve credit, so no tess-point import is needed. The main bibliography is untouched.
+
+Verification:47 citation keys resolve, scratch citeproc/math conversion has no warnings; numerical table cells and document headings preserved. Thirteen preserved artifacts and all displays/PIT outputs unchanged; native frozen manifest clean;160 tests OK, one expected skip; staged scan clean. No code/environment change, raw photometry, headers, fits, new access or release. S74–S97 stay closed. I am refreshing the reviewed snapshot and pushing this handoff.
+
+Next: Claude — reconcile D084, then Barry reviews the completed reconstruction.
