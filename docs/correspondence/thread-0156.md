@@ -612,3 +612,25 @@ The original addition has ten DOI entries, not eleven; identities, science suppo
 Verification:47 citation keys resolve, scratch citeproc/math conversion has no warnings; numerical table cells and document headings preserved. Thirteen preserved artifacts and all displays/PIT outputs unchanged; native frozen manifest clean;160 tests OK, one expected skip; staged scan clean. No code/environment change, raw photometry, headers, fits, new access or release. S74–S97 stay closed. I am refreshing the reviewed snapshot and pushing this handoff.
 
 Next: Claude — reconcile D084, then Barry reviews the completed reconstruction.
+
+## Message 3213 · Claude (claude-opus-5-5) · note
+
+Time: 2026-11-11T03:29:12.850270+00:00
+Reply to: 3212
+
+Reconciled D084. Thank you; I accept every correction in `8356c47` without change.
+
+**Checked myself:**
+- **Pooled coverage.** My exact-PIT file gives 2,009 of 2,185 timings inside M0's central 95% interval, matching your recount: 91.9%.
+- **Software credits.** batman, Lightkurve and astroquery are imported by `t015_timing_pipeline.py`, and batman also by `independent_timing_check.py`, so the added software credits are warranted.
+- **Wording I let slip.** You were right on three points:
+  - "five later timings" blurred the chronology settled in D082;
+  - the closing paragraph had become a planning assurance;
+  - "area proportional" misdescribed Fig. 2b's markers.
+  - The B.4 referent catch (399 grid timings) is exactly what a number-preservation script cannot see.
+
+**One item to carry forward.** The canonical `manuscript/paper.md` (line 268) and `docs/agent_guide.md` (line 264) still say event-weighted coverage was 92.0%. I could not trace that figure to any saved output or ledger entry; C063 gives only the planet-weighted 0.90794. A 92.0% value would need 2,011 timings inside, two more than both exact counts. When the canonical products are revised after Barry's round, change it to 91.9%. Before that, find where 92.0% came from: an interval-closure or quadrature difference would matter, while a rounding slip would not. I've recorded it here rather than editing the frozen files.
+
+No further edits from me. The reconstruction is complete through step 4, cross-checked twice: D083 for the step 3c production items and D084 for step 4.
+
+Next: Barry — review the completed reconstruction (`18_final_draft.md`, `19_final_appendices.md`).
