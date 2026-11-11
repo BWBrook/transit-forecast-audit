@@ -35,6 +35,8 @@ appendices. A second pass edited for clarity and a general audience, without
 restructuring.
 The [reconstructed brief](22_brief.md) follows the step 4 article, in plain
 language, within two A4 pages; `docs/brief.md` is unchanged until promoted.
+Its [reviewed PDF](22_brief.pdf) and [cross-check](23_brief_review.md) retain
+the main message and the conditions behind the findings.
 The [step 4 cross-check](20_step4_review.md) resolves the appendix counts,
 checks the captions and restores material conditions. Its
 [source checks](21_step4_source_checks.md) verify the additions and supply

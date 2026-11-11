@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-11",
+  "decision": "D085",
+  "source_commit": "fc872b9",
+  "brief_source_commit": "4bf0ba0",
+  "scope": "Reconstruction brief and draft PDF only; saved evidence and read-only historical provenance; no canonical promotion, new raw data, headers, fits, access or release",
+  "source_brief_sha256": "d770dee3a1a86d4fe85346748ee2066e12d1240538c9e5e6e2a3cf47066c27c7",
+  "final_brief_sha256": "f7f5e5b85cc29d58dd20e05299024ba1b57e45bffede1dd6d153315854cf383d",
+  "final_pdf_sha256": "bbfc5f18d100e18df90ec0cb859d36a49140f24c886c497fe01d15e053bfc7f4",
+  "review_sha256": "4dc345db6307cb3505d68bae50a3d85178dbbe29bb4a688304148cd19e7df148",
+  "independent_review_sha256": "7170cbaf9809aa4f7d92d49267d7f49fb9df7ab944d0f3b8224d0ec71a1d3e69",
+  "independent_version_note": "Audit binds original and integrated drafts before final recommended correlation disclosure, claim links and156 denominator were applied. Parent binds final version.",
+  "chosen_message_exact_and_unchanged": true,
+  "claim_ids": [
+    "C038",
+    "C042",
+    "C043",
+    "C044",
+    "C045",
+    "C046",
+    "C048",
+    "C050",
+    "C051",
+    "C053",
+    "C054",
+    "C059",
+    "C061",
+    "C062",
+    "C063",
+    "C064",
+    "C065"
+  ],
+  "all_claim_ids_exist": true,
+  "all_claim_occurrences_survive_PDF": true,
+  "preserved_sha256": {
+    "manuscript/paper.md": "f61ce6a87ef1197530b132ca570def2733c39aa5dd11577e529608e4e5535a8d",
+    "docs/brief.md": "a80bf1aafff5e28a157b7b2010f82c173d5672837266ed74c51e7f551e353763",
+    "docs/brief.pdf": "bcc2e696c48731783b9c38fdcea8ec691722d19311324802bd5fa5ff8cd6ff46",
+    "docs/agent_guide.md": "b114aaf0d66173d2fa3af2e341b0844d9ea0ffb6c04775de6193ab3cf7c7ba88",
+    "references/references.bib": "fbe8f9892a8fcf98d4e549f0b95ed63969fec07ff372b5af7340a0af1b586cbe",
+    "references/references.csl.json": "e0c00de4745be4c8f9728671d624c21c0e3f7c53ac7ab2d7340fcbf7cc61605d",
+    "scrivmark.toml": "3d38952619e82c800813e9486a77007dcb516ac83486b3dd30cf05d6c37074f1",
+    "docs/reconstruction/03_main_message.md": "0ed7f0c107e49eb08373e8d33421893d4c7423783cb63da13d6f044b52e5afe5",
+    "docs/reconstruction/18_final_draft.md": "3a8b5b08a986573c9876f85afbc445f87e31ac5c39ca7881d042a2afe9eef538",
+    "docs/reconstruction/19_final_appendices.md": "6de64679552d662366b45e71c508fc57e724b7375618e5ca16ba4e58e89451e3",
+    "docs/reconstruction/references_additions.bib": "bb2e9d78c69d9cea97a3a79b99957b90d990d11b874ca9bdd4053a1244145b7d"
+  },
+  "all_eleven_preserved_unchanged": true,
+  "pdf": {
+    "pages": 2,
+    "paper": "A4",
+    "fontsize_pt": 11,
+    "margins_mm": 20,
+    "both_final_pages_rendered_and_visually_inspected": true,
+    "paragraphs_kept_together": true,
+    "out_of_page_words": [],
+    "missing_glyph_markers": false,
+    "bytes": 30205
+  },
+  "build": {
+    "cwd": ".",
+    "argv": [
+      "pandoc",
+      "docs/reconstruction/22_brief.md",
+      "--pdf-engine=xelatex",
+      "-V",
+      "papersize:a4",
+      "-V",
+      "geometry:margin=20mm",
+      "-V",
+      "fontsize=11pt",
+      "-V",
+      "mainfont=texgyrepagella-regular.otf",
+      "-V",
+      "mainfontoptions=BoldFont=texgyrepagella-bold.otf,ItalicFont=texgyrepagella-italic.otf,BoldItalicFont=texgyrepagella-bolditalic.otf",
+      "-V",
+      "header-includes=\\interlinepenalty=10000",
+      "-o",
+      "docs/reconstruction/22_brief.pdf"
+    ],
+    "exit_code": 0,
+    "warnings": []
+  },
+  "coverage_provenance": {
+    "first_92_0_prose_commit": "1d9a150",
+    "earlier_numerical_commit": "06fc2ca",
+    "earlier_event_coverage": 0.9194508009153318,
+    "frozen_score_count": [
+      2009,
+      2185
+    ],
+    "independent_PIT_count": [
+      2009,
+      2185
+    ],
+    "display_1decimal_percent": "91.9",
+    "intro_commit_has_no_code_or_numerical_output_change": true,
+    "exact_author_rounding_path_recorded": false,
+    "brief_92percent_recovery_is_distinct": [
+      2181,
+      2369
+    ]
+  },
+  "native_freeze_verification": {
+    "manifest_sha256": "5ec7c0f363bca641430c68c0ff57fdbf788cda9e32f80dddea7c7cd9121c57d1",
+    "mismatches": []
+  },
+  "local_unit_suite": "Not rerun for prose and layout changes; no code or environment changed."
+}

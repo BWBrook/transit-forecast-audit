@@ -629,3 +629,18 @@ document, and numerical evidence in an analysis artifact.
   freeze clean; 160 tests OK, one expected skip. No code, canonical product,
   earlier draft, data-access or release change. S74–S97 remain closed.
 - Next: Claude — reconcile D084, then Barry reviews the completed reconstruction.
+
+### 2026-11-11 — Codex — D085 reconstructed brief review (T029)
+
+- Numbers reproduce. Clarified main test versus added diagnostics, conditional
+  injection evidence, accepted-only replay, combined uncertainty/weighting,
+  bounded targeting, exploratory recovery and the tested-edition host criterion.
+  Main message unchanged; stronger claim links and 156 planned planets stated.
+- Two-page A4 draft PDF at 11 point/20-mm margins built and inspected. Review23,
+  independent scientific check and parent receipt retain evidence/build hashes.
+- Traced 92.0% to prose introduced after the saved 0.9194508 audit; no alternate
+  numerical run accompanies it. Canonical correction remains for promotion;
+  the brief's 92% recovery has its own correct denominator.
+- Eleven preserved artifacts and frozen manifest unchanged. No code, raw
+  photometry, headers, fits, new access or release; S74–S97 stay closed.
+- Next: Barry — review the reconstructed article and brief.

@@ -1338,6 +1338,34 @@ scientific record; a `proposed` item is not a frozen preregistration.
   claim or alteration to frozen results. Claude reconciles, then Barry reads.
 - Next: Claude — reconcile D084, then Barry reviews the completed reconstruction.
 
+### D085 — Reconstructed brief checked, clarified and built for Barry's read
+
+- Date / responsible agent: 2026-11-11 / Codex; T029, thread156/message3220,
+  source `fc872b9`, brief `4bf0ba0`.
+- Independent scientific/lay check and parent evidence/layout review find no
+  numerical discrepancy. Preserve Barry's chosen message, article/appendices,
+  canonical products, bibliography and scrivmark; eleven hashes checked.
+- Targeted brief corrections: main-test versus post-inspection chronology,
+  accepted/tuned injection evidence, accepted-only replay, combined coverage
+  and planet weighting, estimated missing uncertainty, bounded DRC allocation
+  with both comparators, exploratory recovery, DRD-listed host criterion,
+  shared-clock wording and strengthened C045/C048/C059 links. Add 156 intended
+  planets to expose the five with no accepted timings. No result change.
+- Final draft PDF: two A4 pages, 11-point type, 20-mm margins. Both pages
+  rendered/inspected; no clipping or missing text, findings kept together.
+  Claims and build/hashes in `results/reconstruction_review/brief_check.json`;
+  independent check `brief_science_check.json`; review23 and draft PDF linked
+  from reconstruction README. No code/environment changes or local unit rerun.
+- Related D084 follow-up: 92.0% first appears as prose in `1d9a150`, while
+  prior saved coverage is already 0.9194508009153318 at `06fc2ca`. No alternate
+  calculation or numerical change accompanies it. Exact 2,009/2,185 gives
+  91.9%; canonical correction waits for promotion. The brief's 92% recovery
+  (2,181/2,369) is distinct and correct.
+- Native frozen manifest verifies. No raw photometry, headers, fits, new access
+  or release; S74–S97 closed. Status: reviewed reconstruction ready for Barry;
+  canonical products remain unchanged.
+- Next: Barry — review the reconstructed article and brief.
+
 ## New entry template
 
 ### D0XX — short title

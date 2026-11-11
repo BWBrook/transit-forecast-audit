@@ -1,0 +1,201 @@
+{
+  "date": "2026-11-11",
+  "source_commit": "fc872b9",
+  "scope": "Bounded independent scientific/lay review; saved artifacts only, no raw photometry/FITS headers, fits, candidate-sector access or canonical edits. Only this audit file was written.",
+  "original_brief_sha256": "d770dee3a1a86d4fe85346748ee2066e12d1240538c9e5e6e2a3cf47066c27c7",
+  "integrated_brief_sha256_at_final_read": "c6f8af99dabbf8c883910a4f541d6756552bfd92e3f61fb634c8e0e5c138f621",
+  "version_note": "Findings concern the original handoff; integrated_status records the parent changes visible at final read. Parent may subsequently tighten cited claim IDs or wording.",
+  "evidence_sha256": {
+    "coordination/claims.md": "dc4b35df8b853b6eff3804273d89de03c45030aae2e394c254916433e0cfcb76",
+    "docs/reconstruction/03_main_message.md": "0ed7f0c107e49eb08373e8d33421893d4c7423783cb63da13d6f044b52e5afe5",
+    "docs/reconstruction/18_final_draft.md": "3a8b5b08a986573c9876f85afbc445f87e31ac5c39ca7881d042a2afe9eef538",
+    "docs/reconstruction/19_final_appendices.md": "6de64679552d662366b45e71c508fc57e724b7375618e5ca16ba4e58e89451e3",
+    "results/final_primary/evaluation_summary.json": "8deacf156f9693de3a5baf7100d507eac3c9eed0b1bd3f8545efd4831f344a91",
+    "results/final_primary/descriptives.json": "c6ca96b9720e69d9ae376727409a7b30b2bd1015adf1d5d3e331108b2b97b0d2",
+    "results/final_extension/evaluation_summary.json": "97bd9d7a55c91478d272da82f96ffc0af296954c489fe8c97e1326dcde148dab",
+    "results/reconstruction_displays/pit_table2.json": "0d428c201b1d6a01ca1293cf476aecb78f431fe1aa30e338e0397871ce8f2eaf",
+    "results/reconstruction_displays/figures_receipt.json": "2c0979a375cb88958cca05f7a1620c7e2159b60ee33805920f8f2c7620f2fd13",
+    "results/final_secondaries/descriptive/planet_deltas.csv": "a5adceaa9690f03304dddfc9cf12888b7c7fa6d2ba9bf5d84a4a898c63fa0a74",
+    "results/final_secondaries/descriptive/recovery_by_stratum.csv": "1efa9587cc19b1d64c3acccb2f4ccf796341e95d5de54933e7a17017de1644b1",
+    "results/t020_review/summary.json": "e48c58df9cc163fce260808500cca59e6fdcdc4499a4a704d639ca4e28ee1886",
+    "results/independent_validation/hr858/summary.json": "918d3e7a36c8ae6532e13c8bb78b382b454bb9e03c0705adbd3a0ee17ffb190c",
+    "results/prefreeze/injection_evidence_t015v3a.json": "4b4f87ce857ca19e2151344d5743e661f0156eefb2f5f2458a86351c028e608b"
+  },
+  "chosen_message_unchanged_and_exact": true,
+  "original_cited_claim_ids": [
+    "C038",
+    "C042",
+    "C043",
+    "C044",
+    "C045",
+    "C046",
+    "C050",
+    "C051",
+    "C053",
+    "C054",
+    "C061",
+    "C062",
+    "C063",
+    "C064",
+    "C065"
+  ],
+  "all_original_cited_claim_ids_exist": true,
+  "number_checks": {
+    "accepted_events": 2185,
+    "accepted_planets": 151,
+    "intended_events": 3103,
+    "pooled_median_absolute_error_min": 1.114775687456131,
+    "non_HR858_max_error_min": 26.298979595303535,
+    "planets_all_accepted_errors_within_26_4_min": 150,
+    "M0_planet_balanced_coverage95": 0.9079364975831289,
+    "M2_planet_balanced_coverage95": 0.9757619919679326,
+    "ratio_mean95_width": 1.6664589199997102,
+    "planets_scored_worse": 111,
+    "primary_point": -0.12130780452395717,
+    "primary_joint_CI95": [
+      -1.8397729107986793,
+      2.1956849634535907
+    ],
+    "primary_decision": "inconclusive",
+    "HR858_accepted_timings": 16,
+    "HR858b_primary_offsets_min": [
+      355,
+      404
+    ],
+    "HR858c_PDCSAP_published_reference_offsets_min": [
+      541,
+      599
+    ],
+    "HR858d_PDCSAP_published_reference_offsets_min": [
+      -12.8,
+      0.7
+    ],
+    "recovery_all_intended": [
+      2185,
+      3103
+    ],
+    "recovery_qualified": [
+      2181,
+      2369
+    ],
+    "extension_accepted_planets": 5
+  },
+  "positive_findings": [
+    "All numerical findings reproduce at the stated rounding.",
+    "The chosen one-sentence message matches03 exactly.",
+    "Nine to ten hours for HR858c is correct for independent PDCSAP timings; the additional SAP route can reach10.5h but need not be reported in this short brief.",
+    "Expected perturbation pattern is appropriately nonexclusive; it does not claim proof of a unique cause.",
+    "Shared-data and catalogue-wide failure-rate limitations are useful and remain.",
+    "The integrated scope/tuning/policy edits address the material simplification risks."
+  ],
+  "minor_optional_wording": [
+    "About six hours reflects rounded5.9\u20136.7h.",
+    "Use the planet's atmosphere rather than its atmosphere to remove the star/planet pronoun ambiguity.",
+    "Timing ranges is more literal than whole forecasts for a central95% interval score."
+  ],
+  "findings": [
+    {
+      "id": "brief-01",
+      "priority": 2,
+      "location": "original22:38-46,57-63,77-80",
+      "finding": "Every rule first overstates pre-access fixing: DRC comparison, PIT asymmetry and allocation screen were post-review additions on inspected outputs.",
+      "proposed_wording": [
+        "We fixed the main test first.",
+        "The 2022-edition comparison, early/late pattern and targeting screen were later descriptive checks of measurements already inspected."
+      ],
+      "evidence": [
+        "18:2.8,3.3,3.4,3.10",
+        "C062,C064,C065"
+      ],
+      "integrated_status": "Resolved in the current draft."
+    },
+    {
+      "id": "brief-02",
+      "priority": 2,
+      "location": "original22:41-42",
+      "finding": "Conditional accepted-injection calibration omits that the final rule was tuned on the same samples.",
+      "proposed_wording": [
+        "Artificial transits in real data gave appropriately calibrated ranges for accepted timings, on the same development samples used to tune the rule."
+      ],
+      "evidence": [
+        "18:2.5",
+        "C038"
+      ],
+      "integrated_status": "Resolved in the current draft."
+    },
+    {
+      "id": "brief-03",
+      "priority": 2,
+      "location": "original22:48-58,84-85,94-95",
+      "finding": "Counts and benchmark replay concern accepted timings, not all attempts or measured/rejected timings.",
+      "proposed_wording": [
+        "We provide a package that reproduces the saved scores for every accepted timing.",
+        "We accepted 2,185 timings of 151 planets."
+      ],
+      "evidence": [
+        "C043,C046,C053,C063"
+      ],
+      "integrated_status": "Product and first sample statement now explicitly say accepted; remaining measured wording is interpreted within that defined sample."
+    },
+    {
+      "id": "brief-04",
+      "priority": 2,
+      "location": "original22:60-63,88-90",
+      "finding": "The baseline coverage tests combined forecast-and-measurement uncertainty with reconstructed correlation; 91% is an equal-planet average, not issued-error-only or an event average.",
+      "proposed_wording": [
+        "The combined prediction and measurement ranges were a little too narrow.",
+        "About 91%, averaging planets equally.",
+        "After the linked-uncertainty explanation: We had to estimate that missing link."
+      ],
+      "evidence": [
+        "18:2.2,3.4",
+        "C063"
+      ],
+      "integrated_status": "Combined range and equal-planet conditions are resolved. Parent advised to disclose that the missing correlation link was estimated."
+    },
+    {
+      "id": "brief-05",
+      "priority": 2,
+      "location": "original22:77-80",
+      "finding": "No rule beat even spending sounds broader than the six rankings and restricted allocation policy; outcomes were inspected DRC forecasts, not a fresh warning-rule trial.",
+      "proposed_wording": [
+        "On inspected 2022-edition forecasts, none of the tested schemes beat both simple equal-budget alternatives."
+      ],
+      "evidence": [
+        "18:3.10",
+        "C061,C064"
+      ],
+      "integrated_status": "Resolved in the current draft, including both comparators and measured midpoints."
+    },
+    {
+      "id": "brief-06",
+      "priority": 2,
+      "location": "original22:98-102",
+      "finding": "One catalogued planet means one listed in the tested edition, not physically single or absent from all catalogues. The exploratory extension combines long-period/multiplanet targets and yielded only five accepted planets; the recovery method is not validated for multiplanet systems.",
+      "proposed_wording": [
+        "One planet listed in the tested edition.",
+        "The wider exploratory sample yielded accepted timings for only five planets; finding transits on multi-planet stars is not yet validated."
+      ],
+      "evidence": [
+        "18:2.3,3.1,Discussion",
+        "C044"
+      ],
+      "integrated_status": "Resolved in the current draft."
+    },
+    {
+      "id": "brief-07",
+      "priority": 3,
+      "location": "original22:65-76 and freeze paragraph",
+      "finding": "Direct claim links can be strengthened for primary offsets, all-model noncapture and pre-origin features. Slight is subjective and unnecessary.",
+      "proposed_wording": [
+        "111 scored worse",
+        "C046,C059 for gain/noncapture; C048,C050,C051 for HR858 offsets/checks; C048,C054 for prior features; C042,C045 for package and pre-access execution chronology."
+      ],
+      "evidence": [
+        "C042,C045,C048,C050,C051,C054,C059"
+      ],
+      "integrated_status": "Slight removed. Parent advised on tighter claim-ID links."
+    }
+  ],
+  "conclusion": "No numerical defect; material initial scope omissions now addressed, with small claim-link and missing-correlation disclosure recommendations sent to parent."
+}
