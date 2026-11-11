@@ -65,7 +65,7 @@ prediction (C043, C063). Predictions from the 2022 edition still held within
 That comparison, the early/late check below and the targeting check were added
 after the data were inspected.
 
-**The combined prediction and measurement ranges were a little too narrow.** A range labelled "95%" should
+**The ranges were a little too narrow.** A range labelled "95%" should
 contain 95% of outcomes. Combined with our measurement uncertainty, these
 ranges contained about 91%, averaging equally across planets (C063). Transits that fell outside were more often
 early than late, for reasons we have not identified (C065).
@@ -83,11 +83,7 @@ on time: the pattern expected when neighbouring planets tug on each other, and e
 edition, its prediction rested on observations that ended in 2020 and fitted
 poorly, and its timing variations had been published a year earlier (C048, C054).
 These are good reasons for scrutiny. One case, though, cannot validate a
-warning rule. On the inspected 2022-edition forecasts, none of the tested
-schemes for giving selected planets wider windows captured more measured
-midpoints than both even-spending alternatives: equal extra minutes per
-window or equal proportional increases, with the same total time budget
-(C061, C064).
+warning rule. On the inspected 2022-edition forecasts, no tested scheme for widening selected planets' windows captured more measured midpoints than both ways of spreading the same extra time evenly across all windows (C061, C064).
 
 ## What it means
 
@@ -129,4 +125,4 @@ timing variations from Bonfanti et al. 2025, doi:10.1051/0004-6361/202451300.*
 *Barry W. Brook set the question, authorised the opening of the protected
 data and reviews release versions. Claude Opus 5.5 (Anthropic) and Codex
 GPT-6.1-sol (OpenAI) designed and ran the analyses, each built an independent
-timing check, and reviewed each other's work. Claude drafted this brief. Code: MIT. Text: CC BY-SA 4.0.*
+timing check, and reviewed each other's work. Claude drafted this brief and Codex cross-checked it. Code: MIT. Text: CC BY-SA 4.0.*
