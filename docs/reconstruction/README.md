@@ -27,6 +27,12 @@ percentiles, Table 3 and the online figure set) and
 [new bibliography entries](references_additions.bib) are drafted.
 The [production cross-check](17_production_review.md) records the independent
 numerical checks, appendix corrections and display repairs.
+Step 4: [Final draft](18_final_draft.md) and
+[appendices](19_final_appendices.md). This step added 11 verified references,
+UAT keywords, Facilities and Software lines, and standalone display legends.
+It made a hard edit to about 3,600 words of main text and moved detail to the
+appendices. A second pass edited for clarity and a general audience, without
+restructuring.
 `manuscript/paper.md` and `references/references.bib` are unchanged.
 
 Codex's 10 November review (draft proposals, discussed in thread 156):

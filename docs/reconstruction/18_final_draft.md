@@ -25,10 +25,7 @@ per-planet table with a replayable scoring package. The forecasts were
 accurate to minutes: the pooled median absolute error was 1.1 minutes, and
 every accepted timing of 150 planets fell within 26.4 minutes of prediction.
 Nominal 95% intervals, combined with measurement uncertainty and a
-reconstructed epoch–period correlation, covered 91% of timings per planet, a
-modest shortfall. A correction learned from the previous release widened the
-intervals 1.7-fold; its prespecified interval-score difference was −0.12
-(95% interval −1.84 to +2.20), inconclusive. The one large failure, HR 858 b,
+reconstructed epoch–period correlation, covered 91% of timings averaged over planets, a modest shortfall. A correction learned from the previous release widened the intervals 1.7-fold without demonstrably improving them: its prespecified interval-score difference was −0.12 (95% interval −1.84 to +2.20), inconclusive. The one large failure, HR 858 b,
 transited six hours early. Its neighbouring planets drifted in the pattern
 expected from mutual gravitational perturbations, and its catalogue inputs
 were old and scattered. One case cannot validate a warning rule, but such
@@ -54,7 +51,7 @@ uncertainty is, in effect, a forecast of how wrong the prediction may be. Too
 narrow, and the transit may be partly missed; too wide, and scarce telescope
 time is spent waiting.
 
-ExoClock maintains transit ephemerides for Ariel's candidate targets
+ExoClock maintains transit ephemerides, the formulae that predict transit times, for Ariel's candidate targets
 [@EdwardsTinetti2022ArielTargets†], combining timings from amateur and
 professional telescopes and from space [@Kokori2022ExoClockI]. It issues them
 as numbered, dated releases: DRB in 2021, DRC in 2022 and DRD in November 2025
@@ -77,7 +74,7 @@ minutes [@Agol2024TRAPPIST1Forecast].
 
 Several studies have compared predictions with later timings.
 @Shan2023TESSTimings compared archived ephemeris predictions for 262 hot
-Jupiters with TESS timings and found offsets for 31. Large compilations have
+Jupiters with TESS timings and found timing offsets for 31. Large compilations have
 refitted hundreds of ephemerides from space and ground-based timings
 [@IvshinaWinn2022; @Mallonn2019; @Edwards2021ORBYTS;
 @Wang2024PeriodVariation; @Ma2025ExoEchoI]. @Agol2024TRAPPIST1Forecast
@@ -120,8 +117,7 @@ and 18 November 2025 (DRD), in UTC (Appendix A gives the logs and their
 limits). Evaluation begins on 19 November 2025, the first full UTC day after DRD's
 release; its journal publication in February 2026 serves as a sensitivity
 date (Appendix C). Transit times are Barycentric Julian Dates in Barycentric
-Dynamical Time (BJD_TDB) [@Eastman2010]. Because the eligibility boundaries
-are in UTC and we did not convert them, we excluded four transits (and one in
+Dynamical Time (BJD_TDB) [@Eastman2010]. Because our date boundaries are in UTC and we did not convert them, we excluded four transits (and one in
 the extension) predicted within ten minutes of a boundary.
 
 <!-- claims: C019 -->
@@ -168,8 +164,7 @@ status are in neither set.
 ### 2.4 Measuring a transit time
 
 For each planet and sector, a box least-squares search [@Kovacs2002BLS†]
-within ±0.5% of the catalogue period scans every phase, so the predicted epoch
-does not centre the search. A detection needs a depth signal-to-noise ratio of
+within ±0.5% of the catalogue period scans every phase, so the search is not anchored on the predicted time. A detection needs a depth signal-to-noise ratio of
 at least 7, and other DRD planets on the host are masked. A transit shape is
 then fitted to the sector light curve, and each transit's timing likelihood
 is computed on a grid centred on the data's own epoch, holding the fitted
@@ -205,8 +200,7 @@ not an independent replication (Appendix D).
 Before any later photometry was opened, a manifest bound by SHA-256 hashes
 75 files and 780 likelihood grids: the code, locked environments, cohort,
 issued forecasts, fitted corrections, injection evidence and decision rule.
-Two independently written verifiers check every hash. Barry W. Brook's access authorisation, tied to that
-manifest, was committed on 8 November 2026 before any data were requested.
+Two independently written verifiers check every hash. The access authorisation by one of us (B.W.B.), tied to that manifest, was committed on 8 November 2026 before any data were requested.
 Fixing the analysis in advance separates prediction from explanation after
 the fact [@Nosek2018†]; the repository history, not an external registry, is
 the record.
@@ -222,7 +216,7 @@ and both attempts are archived.
 
 ### 2.7 Scoring and decision
 
-Each forecast is convolved with the measurement uncertainty of its timing (a
+Each forecast's spread is combined (convolved) with the measurement uncertainty of its timing (a
 Gaussian, or the tabulated likelihood), so that it predicts the measured, not
 the true, mid-time. We score it by the 95% interval score,
 $\mathrm{IS95} = (u-l) + \tfrac{2}{\alpha}(l-x)_+ + \tfrac{2}{\alpha}(x-u)_+$
@@ -286,8 +280,7 @@ a catalogue-wide failure rate.
 
 ### 3.3 Accuracy over four years
 
-The earlier DRC release, public in September 2022, gives a longer view. After
-the review, we scored its forecasts against already-inspected timings from
+The earlier DRC release, public in September 2022, gives a longer view. In a post-review analysis, we scored its forecasts against already-inspected timings from
 2022–2023 and from 2026, using DRD to set search periods and cycle numbers.
 Every accepted planet stayed within 37 minutes in both periods: 92 planets in
 2022–2023 and 128 in 2026, nearly four years after issue (Fig. 2c). Median
@@ -300,13 +293,13 @@ untouched test.
 ### 3.4 Calibration (H1)
 
 Under the reconstructed covariance and the supplied timing likelihoods, M0's
-nominal 95% intervals covered 90.8% of accepted timings per planet (Fig. 3b).
+nominal 95% intervals covered 90.8% of accepted timings, averaged over planets (Fig. 3b).
 The 95% host-bootstrap interval, 87.8–93.4%, excludes 95%: the combined
-uncertainties were somewhat too narrow. Pooling events gives 92.0%, and
+uncertainties were somewhat too narrow. Counting every timing equally gives 92.0%, and
 coverage falls short of nominal at every level from 50% to 99%. Measurement
 uncertainty is a large part of the combined interval: the reported timing
 uncertainty (a 68% half-width for non-Gaussian timings) is a median 1.9 times
-the forecast SD per planet, and 2.7 times pooling events.
+the forecast SD averaged over planets, and 2.7 times counting every timing equally.
 A post-review diagnostic places each timing within its full predictive
 distribution (the probability integral transform, PIT; Fig. 3a)
 [@GneitingBalabdaouiRaftery2007]. The misses were lopsided: 6.4% of timings,
@@ -318,8 +311,7 @@ a sign error in the calculation; we have not identified its cause.
 
 ### 3.5 The prespecified test (H3)
 
-M2 raised coverage to 97.6%, with intervals 1.67 times wider. Its effect on
-the planet-balanced score was −0.12, with a 95% interval of −1.84 to +2.20
+M2 raised coverage to 97.6%, with intervals 1.67 times wider. Its effect on the standardised score, averaged over planets, was −0.12, with a 95% interval of −1.84 to +2.20
 (Table 2): by the prespecified rule, inconclusive. The interval spans both
 substantial benefit and substantial harm, so the data establish neither, nor
 equivalence. Under M2, 111 of 151 planets scored worse, each by a bounded
@@ -371,7 +363,7 @@ case, not validated predictors.
 
 H2 asked whether the span of historical information behind an ephemeris
 predicts its performance beyond its nominal precision. In development data,
-the released training span gave a small improvement in predictive score in
+the time span of a release's input timings gave a small improvement in predictive score in
 one split between hosts, but the gain was unstable in a chronological split,
 so we did not carry it into the frozen test. The question remains open; the
 release-input features in Table 3 make it testable in future releases.
@@ -391,7 +383,7 @@ and records of attempted observations, which we did not have.
 
 ### 3.10 Could the failures have been targeted?
 
-After the review, we asked whether information released with a forecast
+In a post-review analysis, we asked whether information released with a forecast
 could direct wider windows to the planets most likely to miss. A screen
 padded the windows of the 10% of planets flagged by each of six release-file
 rankings, by 15 to 240 minutes, and compared them with spending the same
@@ -442,10 +434,9 @@ supplied most of the mean gain, and without it the contrast changes sign, yet
 none of its timings fell inside any tested model's 95% interval. Widening bought coverage for typical planets at a cost,
 without containing the one failure that mattered.
 
-Mostly accurate forecasts with a few large offsets resemble
-@Shan2023TESSTimings's finding for archival hot-Jupiter ephemerides. Our test
+The pattern of mostly accurate forecasts with a few large offsets resembles @Shan2023TESSTimings's finding for archival hot-Jupiter ephemerides. Our test
 differs in combining one issued release, independently measured later
-timings and a fixed opportunity list that keeps losses visible. Earlier
+timings and a fixed list of intended transits that keeps losses visible. Earlier
 comparisons differ in cohorts, horizons and selection, so patterns, not
 failure rates, can be compared [@Kokori2026ExoClockIV; @IvshinaWinn2022;
 @Wang2024PeriodVariation].
@@ -453,7 +444,7 @@ failure rates, can be compared [@Kokori2026ExoClockIV; @IvshinaWinn2022;
 HR 858 b was new to the release, with old, scattered inputs and previously
 published TTVs. Most of these features can be computed from the release files
 (Table 3), and publishing them beside each forecast would let users judge
-similar cases. Whether they predict failure is untested: our allocation screen
+similar cases. Whether they predict failure is unproven: our allocation screen
 found no ranking that beat spending the same minutes evenly, and one case
 cannot validate a warning rule. Future releases could test one prospectively
 [@Lissauer2024KeplerPeriods].
@@ -481,8 +472,7 @@ qualified recovery and cycle identification.
 
 Observers can plan on minute-level accuracy from an issued ExoClock forecast
 for nearly every planet we tested. They should not assume it for every
-planet: the one exception transited six hours early, outside every interval
-we tested.
+planet: the one exception transited six hours early, far outside its stated uncertainty.
 
 <!-- claims: C043, C045, C046, C049, C050, C053, C054, C055, C062, C063; D076, D080 -->
 
@@ -490,8 +480,7 @@ we tested.
 
 **Figure 1.** What is tested, and when. (a) One forecast, with illustrative
 values not to scale: the predicted mid-time (diamond) and its forecast-only
-95% interval (dark blue), a measured mid-time with its own 95% uncertainty
-(orange), the scoring interval, which convolves the forecast with the
+95% interval (dark blue), a measured mid-time with its own 95% uncertainty (vermilion), the scoring interval, which convolves the forecast with the
 measurement error (light blue), and a full observing window of transit
 duration plus baseline (grey) for contrast. (b) Timeline. Upper lane,
 observations: DRC issued on 27 September 2022; the window of TESS timings
@@ -507,8 +496,7 @@ exception. (a) Histogram of absolute errors of the 2,185 accepted timings of
 pooled median, 1.11 minutes, and the arrow HR 858 b's timings, up to
 404 minutes. (b) Each planet's largest accepted error, ranked, with marker
 area proportional to its number of accepted timings; the dashed line marks
-26.4 minutes, at or below which 150 of 151 planets lie. HR 858 b (orange) is
-the outlier. (c) DRC forecast errors against years since DRC's issue, for
+26.4 minutes, at or below which 150 of 151 planets lie. HR 858 b (vermilion) is the outlier. (c) DRC forecast errors against years since DRC's issue, for
 3,052 accepted timings of 128 planets in two blocks: 2022–2023 (sectors 56–73,
 development data) and 2026 (held out for the DRD test and inspected after
 it). Points are individual timings and the line joins binned medians; the
@@ -517,8 +505,7 @@ already-inspected timings. [`fig2_accuracy.png`]
 
 **Figure 3.** The stated uncertainties were somewhat too narrow, with more
 early than late misses. (a) Planet-weighted histograms of the predictive
-probability integral transform (PIT) of each accepted timing under M0 (blue)
-and M2 (yellow), computed from the saved forecasts and likelihood grids. Low
+probability integral transform (PIT) of each accepted timing under M0 (blue) and M2 (orange), computed from the saved forecasts and likelihood grids. Low
 values mean the transit came earlier than forecast; shaded strips mark the
 tails outside the central 95% interval, which contains 0.908 of timings under
 M0 and 0.976 under M2. The dashed line is the flat histogram that calibrated
@@ -529,14 +516,13 @@ M2; vertical bars are conditional 95% host-bootstrap intervals, and the dashed
 line marks perfect calibration. [`fig3_calibration.png`]
 
 **Figure 4.** HR 858: the one large miss. (a) Observed minus published
-transit times, in hours, of planets b (blue), c (yellow) and d (grey) in TESS
+transit times, in hours, of planets b (blue), c (orange) and d (grey) in TESS
 sectors 105–107 (June to September 2026), measured by an independent timing
 program against the ephemerides of @Bonfanti2025TOI396. Planet b runs about
 six hours early and c about nine to ten hours late, while d stays on time.
 (b) HR 858 b against the issued DRD ephemeris (horizontal line at zero): its
 16 released input timings of 2018–2020 (black), the forecast-only 95%
-interval over the 2026 transits (blue band), and the 16 accepted 2026
-timings (orange), which lie 5.9 to 6.7 hours early. Of 24 intended transits,
+interval over the 2026 transits (blue band), and the 16 accepted 2026 timings (vermilion), which lie 5.9 to 6.7 hours early. Of 24 intended transits,
 6 had no cadence at the prediction, one timing was at the edge of its prior
 and one integration was unresolved. The axis gap between 2021 and 2026 is
 omitted. [`fig4_hr858.png`]
