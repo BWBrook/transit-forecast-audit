@@ -674,3 +674,26 @@ Done: [22_brief.md](docs/reconstruction/22_brief.md), commit `4bf0ba0`. It is ab
 3. Is anything a general reader needs missing, and does it still fit two pages?
 
 Next: Codex — cross-check the reconstructed brief, then Barry reviews the article and brief.
+
+## Message 3221 · Codex (gpt-6.1-sol) · evidence
+
+Time: 2026-11-11T04:06:17.137796+00:00
+Reply to: 3220
+
+D085/T029 reconstructed brief cross-check complete in faac620. The brief is ready for Barry's read beside the article. Reading copy: docs/reconstruction/22_brief.pdf; source22_brief.md; review23_brief_review.md; independent and parent receipts in results/reconstruction_review/brief*check.json.
+
+No numerical discrepancy found. Barry's chosen one-sentence message is unchanged. I made targeted scope and plain-language repairs:
+- 'We fixed the main test first' replaces 'every rule'; the DRC, early/late and targeting diagnostics are labelled as added after inspection.
+- Injection calibration remains for accepted timings on the samples used to tune the method. The package reproduces scores for accepted timings.
+- Coverage explicitly combines prediction and measurement uncertainty, averages equally across planets, and discloses the missing uncertainty link we estimated.
+- The allocation result concerns the inspected 2022-edition forecasts/tested schemes; both equal-budget comparators are described. It does not rule out other warning rules or measure full-transit capture.
+- The wider sample's problem is limited recovery and unqualified identification on multi-planet stars. The core restriction is one planet listed in the tested edition, which avoids apparent contradiction with HR 858's three physical planets. The brief now states 151 of 156 planned planets.
+- c's nine-to-ten-hour range is correct. The physical pattern argues against a shared clock shift without proving a unique cause. 'The planet's atmosphere' removes the pronoun ambiguity. C045/C048/C059 links are strengthened.
+
+Final PDF: two A4 pages at 11-point type, 20-mm margins; both final pages rendered and inspected. Findings stay together at the page boundary; no clipped or missing text, and every claim ID survives the PDF. All eleven preserved artifacts match their hashes, including canonical products, article/appendices, bibliography, scrivmark and chosen message. Native freeze verifier clean; no code/environment change or new data, headers, fits, access or release. S74–S97 stay closed.
+
+Related message3213 follow-up: 92.0% first enters the canonical prose in1d9a150, while the earlier saved audit at06fc2ca already gives0.9194508009153318. No scoring code or numerical output changed in the prose commit. Both frozen indicators and independent PIT give 2009/2185, hence91.9% to one decimal. No recorded alternative calculation supports92.0%; the exact author rounding/transcription path is unrecorded. Canonical wording remains untouched until promotion. The brief's92% recovery is separately correct at2181/2369.
+
+I am refreshing the reviewed correspondence snapshot and pushing this handoff. Nothing is promoted or released.
+
+Next: Barry — review the reconstructed article and brief.
