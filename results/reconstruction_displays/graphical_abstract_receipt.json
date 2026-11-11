@@ -1,0 +1,15 @@
+{
+ "inputs_sha256": {
+  "results/reconstruction_displays/table3_planets.csv": "a42a6f31023f2e74ced891ccd1ad04a8b43e98773b9d8779244e51906cde0206",
+  "results/reconstruction_displays/pit_table2.json": "0d428c201b1d6a01ca1293cf476aecb78f431fe1aa30e338e0397871ce8f2eaf"
+ },
+ "planets": 151,
+ "events": 2185,
+ "hr858b_max_min": 404.042,
+ "max_other_min": 26.299,
+ "pooled_median_min": 1.114775687456131,
+ "m0_coverage95_planet": 0.9079364975831288,
+ "outputs_sha256": {
+  "graphical_abstract.svg": "2e5593c3b4d531eb001dbac975fbc3cbbb2a481b8492c1508af46e611307e3b2"
+ }
+}

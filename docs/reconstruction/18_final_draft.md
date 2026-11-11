@@ -485,6 +485,13 @@ came six hours early, far outside the stated uncertainty.
 
 ## Display items
 
+**Graphical abstract.** How well did published planet-transit predictions
+hold up? The four-step test, each core planet's largest accepted miss on a
+logarithmic scale against the length of a transit, and three headline
+numbers. Built from Table 3 and the PIT summary by
+`scripts/build_graphical_abstract.py`; also heads the brief.
+[`graphical_abstract.svg`, `.pdf`]
+
 **Figure 1.** What is tested, and when. (a) One forecast, with illustrative
 values not to scale: the predicted mid-time (diamond) and its forecast-only
 95% interval (dark blue), a measured mid-time with its own 95% uncertainty (vermilion), the scoring interval, which convolves the forecast with the
