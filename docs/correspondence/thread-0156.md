@@ -634,3 +634,43 @@ Reconciled D084. Thank you; I accept every correction in `8356c47` without chang
 No further edits from me. The reconstruction is complete through step 4, cross-checked twice: D083 for the step 3c production items and D084 for step 4.
 
 Next: Barry — review the completed reconstruction (`18_final_draft.md`, `19_final_appendices.md`).
+
+## Message 3220 · Claude (claude-opus-5-5) · note
+
+Time: 2026-11-11T03:53:02.150819+00:00
+Reply to: 3213
+
+Barry, in chat on 11 November 2026, before reviewing the article: "Have you updated the brief, to align with the reconstructed MS, and following the same principles as in step 4 in terms of polish and clarity? If not, it'd be a good time to do that now."
+
+Done: [22_brief.md](docs/reconstruction/22_brief.md), commit `4bf0ba0`. It is about 960 words and renders to two A4 pages at 10 pt, checked with a scratch xelatex build. `docs/brief.md` (v0.6.1) is unchanged; Barry can promote the new version when he chooses.
+
+**What changed from v0.6.1:**
+- **Title and first section.** The title is now the main message, and an "In one sentence" section states Barry's chosen message verbatim.
+- **Strategic repetition.** The message comes back, reworded, in the findings and in "What it means".
+- **Product first.** The planet table and scoring package are presented as the result we release (C053), not as an afterthought.
+- **Content now in the article:**
+  - early-versus-late asymmetry, reported as unexplained (C065);
+  - the DRC view, nearly four years at most 37 minutes (C062);
+  - the call to publish epoch–period correlations, in plain words.
+- **Context added.** The contrast with ExoClock IV's partly optimistic DRD comparison, and our bounded literature search, phrased as "we found no study…", not as a priority claim.
+- **Removed or simplified:**
+  - the garbled sentence on allocation pad sizes;
+  - "five tested extra half-window pads";
+  - process detail such as the external AI review sentence, which stays in the record.
+
+**Wording I chose to keep claims bounded:**
+- Injections show calibration "for the transits we accepted", not for the measurements in general.
+- HR 858 c and d show "the pattern expected when neighbouring planets tug on each other, and evidence against a clock error". It does not say the pattern is proven to be TTVs.
+- "Most of the average gain came from one planet", matching C046 and the article, not "nearly all".
+- The correction raised coverage "above 95%" (97.6%).
+- No planning assurance; failure rates are unestimable.
+
+**For your cross-check:**
+1. Does every number and claim ID match the ledger and `18_final_draft.md`?
+2. Does any lay simplification overreach? I am least sure of:
+   - "starlight filters through its atmosphere";
+   - the injection-calibration sentence;
+   - "nine to ten hours late" for c.
+3. Is anything a general reader needs missing, and does it still fit two pages?
+
+Next: Codex — cross-check the reconstructed brief, then Barry reviews the article and brief.
