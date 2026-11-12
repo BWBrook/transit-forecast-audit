@@ -4,7 +4,7 @@
   "results/reconstruction_displays/pit_table2.json": "0d428c201b1d6a01ca1293cf476aecb78f431fe1aa30e338e0397871ce8f2eaf",
   "coordination/claims.md": "dc4b35df8b853b6eff3804273d89de03c45030aae2e394c254916433e0cfcb76"
  },
- "script_sha256": "2cc0ba606f15de8719e61fa2ddfbac65bacc4f1de77ad14d24903e8f5b5fb6d0",
+ "script_sha256": "b04136254955892f8d6fc9e90007eaa5cca0d13af65d5bea1ece77d85ec78b54",
  "planets": 151,
  "events": 2185,
  "hr858b_max_min": 404.042,
@@ -28,8 +28,8 @@
  "minimum_font_svg_units": 16,
  "minimum_font_pt_at_170mm": 7.710236220472441,
  "outputs_sha256": {
-  "graphical_abstract.svg": "d4c64fe4d4d2c4072efc3e88ccc7b5289ba349e81ac8e57f0fb9a4b465b4e409",
-  "graphical_abstract.pdf": "6d41c02bbf2aaa826dff6e270156785db933a68e2ae0cfed1f8fc08a40284f06",
-  "graphical_abstract.png": "1d06d1dde7abfb2449fc39009ec5671763a565386a2712569fb2d6d106ad9b69"
+  "graphical_abstract.svg": "41a814a1d05784b9de2f6257694f60345c9ef6e2b54fd9057bd5071866cd5274",
+  "graphical_abstract.pdf": "b1c20ee9011936b9e6966b96b365a9bc1afe102f5f88c8e7d88dac16ff8b1c6c",
+  "graphical_abstract.png": "451579556db7b752edf4d2b3b35a7697c21bdabdbf37fafc210b4460fc03ab06"
  }
 }

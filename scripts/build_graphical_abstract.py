@@ -109,8 +109,8 @@ def main():
 
     steps = [("clock", "Predictions issued", "November 2025"),
              ("lock", "Main test locked", "before data access"),
-             ("dip", "Timings measured", "after lock, own code"),
-             ("target", "Accepted times scored", "range width + misses")]
+             ("dip", "Timings measured", "from later TESS data"),
+             ("target", "Accepted times scored", "for miss and range")]
     sx = [40 + i * 235 for i in range(4)]
     for i, (k, a, b) in enumerate(steps):
         cx, cy = sx[i] + 20, 122
@@ -145,7 +145,6 @@ def main():
     e.append(text(X1 + 10, ly + 39, f"on all {hr_events} accepted timings", 16, 400, INK2, "end"))
     e.append(text(X1 + 10, ly + 58, "Neighbour was hours late", 16, 400, INK2, "end"))
     e.append(text(X1 + 10, ly + 77, "on a separate published timetable", 16, 400, INK2, "end"))
-    e.append(f'<path d="M{hx:.1f} {ly+87} V{ymid-12}" stroke="{INK2}" stroke-width="1.2"/>')
     e.append(text((X0 + X1) / 2, base - 15,
                   f"Accepted: {n_events:,} of {intended:,} predicted transits; {n_planets} of {core_planets} planets",
                   16, 400, INK2, "middle"))
@@ -168,7 +167,7 @@ def main():
         e.append(text(cx + 20, cy0 + 64, l1, 16, 400, INK2))
         e.append(text(cx + 20, cy0 + 84, l2, 16, 400, INK2))
     e.append(text(W / 2, 615,
-                  "Ranges include timing uncertainty. Widening’s score benefit: inconclusive.",
+                  "Ranges include our timing uncertainty. Widening them gave no clear overall gain.",
                   16, 400, INK2, "middle"))
 
     svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" '

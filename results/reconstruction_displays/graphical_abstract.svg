@@ -16,12 +16,12 @@
 <circle cx="530" cy="122" r="19" fill="#e6f1f8"/>
 <path d="M517 117 H524 L527 128 H533 L536 117 H543" stroke="#0072B2" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="558.0" y="119.0" font-size="16" font-weight="600" fill="#1f2328" text-anchor="start">Timings measured</text>
-<text x="558.0" y="139.0" font-size="16" font-weight="400" fill="#4b535c" text-anchor="start">after lock, own code</text>
+<text x="558.0" y="139.0" font-size="16" font-weight="400" fill="#4b535c" text-anchor="start">from later TESS data</text>
 <path d="M732 117 L737 122 L732 127" stroke="#7a828b" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 <circle cx="765" cy="122" r="19" fill="#e6f1f8"/>
 <circle cx="765" cy="122" r="10" stroke="#0072B2" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="765" cy="122" r="5" stroke="#0072B2" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="765" cy="122" r="1.2" fill="#0072B2"/>
 <text x="793.0" y="119.0" font-size="16" font-weight="600" fill="#1f2328" text-anchor="start">Accepted times scored</text>
-<text x="793.0" y="139.0" font-size="16" font-weight="400" fill="#4b535c" text-anchor="start">range width + misses</text>
+<text x="793.0" y="139.0" font-size="16" font-weight="400" fill="#4b535c" text-anchor="start">for miss and range</text>
 <line x1="40" y1="160" x2="960" y2="160" stroke="#d0d5da" stroke-width="1"/>
 <circle cx="145.1" cy="306.0" r="4.0" fill="#0072B2" stroke="#ffffff" stroke-width="1"/>
 <circle cx="151.4" cy="314.8" r="4.0" fill="#0072B2" stroke="#ffffff" stroke-width="1"/>
@@ -182,7 +182,6 @@
 <text x="960.0" y="243.8" font-size="16" font-weight="400" fill="#4b535c" text-anchor="end">on all 16 accepted timings</text>
 <text x="960.0" y="262.8" font-size="16" font-weight="400" fill="#4b535c" text-anchor="end">Neighbour was hours late</text>
 <text x="960.0" y="281.8" font-size="16" font-weight="400" fill="#4b535c" text-anchor="end">on a separate published timetable</text>
-<path d="M863.9 291.8 V294" stroke="#4b535c" stroke-width="1.2"/>
 <text x="510.0" y="403.0" font-size="16" font-weight="400" fill="#4b535c" text-anchor="middle">Accepted: 2,185 of 3,103 predicted transits; 151 of 156 planets</text>
 <line x1="70" y1="418" x2="950" y2="418" stroke="#7a828b" stroke-width="1"/>
 <line x1="219.0" y1="418" x2="219.0" y2="424" stroke="#7a828b" stroke-width="1"/>
@@ -209,5 +208,5 @@
 <text x="690.0" y="526.0" font-size="26" font-weight="600" fill="#1f2328" text-anchor="start">Open table</text>
 <text x="690.0" y="552.0" font-size="16" font-weight="400" fill="#4b535c" text-anchor="start">predictions + accepted timings</text>
 <text x="690.0" y="572.0" font-size="16" font-weight="400" fill="#4b535c" text-anchor="start">to test better forecasts</text>
-<text x="500.0" y="615.0" font-size="16" font-weight="400" fill="#4b535c" text-anchor="middle">Ranges include timing uncertainty. Widening’s score benefit: inconclusive.</text>
+<text x="500.0" y="615.0" font-size="16" font-weight="400" fill="#4b535c" text-anchor="middle">Ranges include our timing uncertainty. Widening them gave no clear overall gain.</text>
 </svg>
