@@ -1,0 +1,92 @@
+{
+  "date": "2026-11-12",
+  "source_commit": "72ea688",
+  "auditor": "Codex independent visual review",
+  "scope": "Original graphical abstract and two-page brief, rendered inspection plus vector/font geometry. No source, figure, canonical product, raw photometry, FITS/header, fit, data-access, commit or board mutation.",
+  "reviewed_artifacts_sha256": {
+    "results/reconstruction_displays/graphical_abstract.svg": "2e5593c3b4d531eb001dbac975fbc3cbbb2a481b8492c1508af46e611307e3b2",
+    "results/reconstruction_displays/graphical_abstract.pdf": "2a21cdfff6d8cfc2aa3d3010094a17b3de1d4b25a6833085fc8845c14f6ea097",
+    "results/reconstruction_displays/graphical_abstract.png": "6bed48052d84e63bd39a2eea7a9a9021637fd5c2538db30bdd0df2c5fd328cb8",
+    "docs/reconstruction/22_brief.pdf": "4e7f883ec144747e92e0cad2c47d30b94019c392c222af82484862428cd16311",
+    "docs/reconstruction/22_brief.md": "9104bbf7691c59cc626c3854e355ba36c4be2f0471f315d2cd2cc72aa79e5519",
+    "scripts/build_graphical_abstract.py": "03f59f0e462475c433724da701ea19c69020beef7bc48dd018575da64d57fa24"
+  },
+  "visual_inspection": {
+    "native_png": true,
+    "brief_pdf_pages": [
+      1,
+      2
+    ],
+    "brief_render_dpi": 130,
+    "original_pdf_A4_pages": 2,
+    "clipping_or_overlaps_observed": false,
+    "missing_glyphs_observed": false,
+    "text_flow_readable": true,
+    "main_chart_form_suitable": true
+  },
+  "print_geometry": {
+    "native_pdf_width_pt": 750,
+    "native_svg_width_px": 1000,
+    "embedding_scale_from_matching_word_widths": 0.6425300024329286,
+    "embedded_image_width_pt": 481.8975018246964,
+    "embedded_image_width_mm": 170.00272981037898,
+    "original_min_svg_font_px": 13.5,
+    "original_min_print_font_pt": 6.505616274633401,
+    "recommended_min_svg_font_px": 16,
+    "recommended_print_font_pt": 7.710360029195143,
+    "original_figure_height_pt": 294.9212711167142,
+    "text_height_pt_A4_20mm_margin": 728.5041732283464,
+    "figure_share_of_text_height": 0.4048312720156133,
+    "note": "Visible graphic content is inset within the SVG. Comparing visible bounds with the PDF image bounds would underestimate font size; native-versus-embedded word widths give the actual full 170 mm embedding."
+  },
+  "keep": [
+    "The beeswarm/log-axis hero communicates the spread of planet maxima while preserving the one isolated gross miss.",
+    "The question-led title, four simple method icons, blue cluster and labelled vermilion outlier establish a useful hierarchy.",
+    "The card medians across all timings remain distinct from the per-planet maximum represented by each dot; keep those denominators explicit.",
+    "Approximately 40% of the page text height is a reasonable allocation at the current aspect ratio and two-page constraint."
+  ],
+  "colour_and_grayscale": {
+    "categorical_reading_does_not_require_colour": true,
+    "redundant_cues": [
+      "spatial isolation",
+      "larger outlier marker",
+      "explicit one-planet label",
+      "callout leader"
+    ],
+    "palette_CVD_simulation_rerun": false,
+    "note": "No independent claim about the reported CVD delta-E calculation is made; the reading survives absence of colour from its redundant visual encoding."
+  },
+  "findings": [
+    {
+      "id": "design01",
+      "priority": 2,
+      "finding": "Secondary copy prints at about6.5\u20137pt. Main chart is readable but its supporting labels are small for the brief audience.",
+      "proposed_fix": "Raise small SVG copy to at least 16 px, about 7.7 pt at full 170 mm embedding, shortening subtitle/callout copy as needed. Full-width placement is already correct."
+    },
+    {
+      "id": "design02",
+      "priority": 2,
+      "finding": "Muted axis/caption text is less legible at small print size than the dark secondary text.",
+      "proposed_fix": "Use the existing dark #4b535c secondary colour for critical axis/caption/scope copy; keep #7a828b for rules/arrows."
+    },
+    {
+      "id": "design03",
+      "priority": 2,
+      "finding": "The generic1\u20134h duration band visually resembles cohort-measured context, but cohort durations were not established.",
+      "proposed_fix": "Remove it as parent intends; use the recovered space for accepted-sample scope. Existing 1-hour and 6-hour ticks retain understandable scale."
+    },
+    {
+      "id": "design04",
+      "priority": 2,
+      "finding": "A stand-alone graphical abstract gives undercoverage and an accuracy success but omits the inconclusive primary widening result.",
+      "proposed_fix": "A short readable footer such as Wider ranges: score improvement inconclusive would complete the scientific message without a fourth card. If preserving readable labels makes that infeasible, keep the result prominent in the adjacent brief text."
+    },
+    {
+      "id": "design05",
+      "priority": 2,
+      "finding": "Current labels say every prediction and every transit, 26 minutes, and of each planet. These must be fixed before final output; the parent already identified the evidence issues.",
+      "proposed_fix": "Accepted timings scored; allaccepted timings within 26.4 minutes for 150 planets; 91% averaged over planets with measurement uncertainty included; distinct published timetable for neighbouring planet."
+    }
+  ],
+  "final_QA_needed": "Parent should render the corrected full brief and standalone figure, inspect both final pages and remeasure minimum print type after font/layout changes. This receipt reviews the original source, not unobserved revised output."
+}

@@ -644,3 +644,19 @@ document, and numerical evidence in an analysis artifact.
 - Eleven preserved artifacts and frozen manifest unchanged. No code, raw
   photometry, headers, fits, new access or release; S74–S97 stay closed.
 - Next: Barry — review the reconstructed article and brief.
+
+### 2026-11-12 — Codex — D086 graphical abstract and trim critique (T030)
+
+- Kept the strong chart form. Corrected26→26.4, every-prediction→accepted-only,
+  explicit acceptance denominators, neighbour's separate timetable, coverage
+  weighting and timing uncertainty. Removed illustrative duration band and
+  added a compact inconclusive-primary footer. No numerical result changed.
+- Restored brief qualifications lost in the trim. Enlarged graphic copy to
+  about7.7pt minimum; illustrated brief remains two A4 pages at11pt after
+  cuts to repetition. Article body and canonical products unchanged.
+- Builder now checks ledger values and binds code/inputs/all outputs. Three
+  deliberate headline-drift probes fail closed; independent science/design
+  reviews and final-diff check clean. Review24/parent receipt save evidence.
+- Native manifest verifies;160 tests OK/one skip. No raw data, headers, fits,
+  environment change, new access or release; S74–S97 closed.
+- Next: Barry — review the reconstructed article and illustrated brief.

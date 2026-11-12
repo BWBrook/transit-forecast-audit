@@ -1366,6 +1366,37 @@ scientific record; a `proposed` item is not a frozen preregistration.
   canonical products remain unchanged.
 - Next: Barry — review the reconstructed article and brief.
 
+### D086 — Graphical abstract repaired and illustrated brief verified
+
+- Date / responsible agent: 2026-11-12 / Codex; T030, thread156/message3254;
+  source `72ea688`, production `f5ae2a5`.
+- Keep the chart/colour/label hierarchy. Independent scientific and visual
+  checks plus parent print/code checks identify presentation defects, with no
+  numerical-data or primary-result defect.
+- Change 26 to 26.4 minutes: 149 planets satisfy 26, 150 satisfy 26.4.
+  Change “every prediction” to accepted timings; expose 2,185/3,103 and
+  151/156 denominators. Remove unmeasured generic duration band. Distinguish
+  neighbour's published reference, equal-planet coverage and timing error;
+  retain primary inconclusive verdict in a compact footer.
+- Restore trim losses in22: main-test versus added analyses, accepted/tuned
+  injection evidence, measured-midpoint endpoint, tested-edition cohort and
+  exploratory recovery/identification limit. Chosen message restored exactly.
+- Minimum graphic type now16 SVG units, about7.7pt at170mm; darker copy and
+  redundant position/size/labels. Figure about42% of a page's text height;
+  illustrated brief two A4 pages at11pt,20-mm margins. Both final pages and
+  standalone graphic inspected. Context/method repetition cut, not type size.
+- Builder reads relevant ledger claims and validates displayed quantities;
+  receipt binds script, inputs, ledger and SVG/PDF/PNG. Three scratch probes
+  reject wrong weighting, median drift and26-minute bound before output.
+- Evidence: reconstruction24 and `results/reconstruction_review/`
+  `graphical_{science,design}_check.json`, parent `graphical_check.json`.
+  Final scientific diff check clean;160 tests OK/one skip; frozen manifest
+  verifies. No code in the frozen analysis, data or environment changed.
+- Status: adopted display/brief corrections. Canonical products, article body,
+  appendix, main bibliography and scientific inputs unchanged. No raw
+  photometry, headers, fits, new access or release; S74–S97 closed.
+- Next: Barry — review the reconstructed article and illustrated brief.
+
 ## New entry template
 
 ### D0XX — short title

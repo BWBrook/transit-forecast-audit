@@ -1,0 +1,204 @@
+{
+  "date": "2026-11-12",
+  "source_commit": "72ea688",
+  "scope": "Independent saved-artifact scientific/code audit. No raw photometry, FITS headers, new fits, protected access, canonical edits, commits or board posts. Only this receipt written.",
+  "reviewed_source_sha256": {
+    "scripts/build_graphical_abstract.py": "03f59f0e462475c433724da701ea19c69020beef7bc48dd018575da64d57fa24",
+    "docs/reconstruction/22_brief.md": "9104bbf7691c59cc626c3854e355ba36c4be2f0471f315d2cd2cc72aa79e5519",
+    "docs/reconstruction/18_final_draft.md": "02e64d16e20e4d0003718cf6970bf0213fae5d9f5fd7aaead7c597f66a39062d",
+    "results/reconstruction_displays/graphical_abstract_receipt.json": "4981f61e3db7a1695c495cad5ccd65f4f4b5cfd46e3c06513754c94e1b8671e0"
+  },
+  "evidence_sha256": {
+    "coordination/claims.md": "dc4b35df8b853b6eff3804273d89de03c45030aae2e394c254916433e0cfcb76",
+    "results/reconstruction_displays/table3_planets.csv": "a42a6f31023f2e74ced891ccd1ad04a8b43e98773b9d8779244e51906cde0206",
+    "results/reconstruction_displays/pit_table2.json": "0d428c201b1d6a01ca1293cf476aecb78f431fe1aa30e338e0397871ce8f2eaf",
+    "data/derived/revision_stage0/benchmark/primary/accepted_outcomes.csv": "6a905c4ea5098a22966cae091801f6b3da0ba9458289fb51e1eb83b46f86ec3d",
+    "data/derived/revision_stage0/benchmark/primary/accepted_forecasts.csv": "67c76e6432a1ce2b4b010c4f62daf6eba016451c9d5730fe80eaf3823e5f84ac",
+    "data/derived/revision_stage0/benchmark/primary/expected_scores.csv": "3ba24636684e42d2d99dbbe68c336d2726aa702d70ea0ed7001005a7a223412c",
+    "results/prefreeze/manifest_summary.json": "a2ebf7fcc16bdd9a0aed886246e477a7cd7b768784d3c23eb9898362d845022d",
+    "results/independent_validation/hr858/summary.json": "918d3e7a36c8ae6532e13c8bb78b382b454bb9e03c0705adbd3a0ee17ffb190c",
+    "results/final_extension/evaluation_summary.json": "97bd9d7a55c91478d272da82f96ffc0af296954c489fe8c97e1326dcde148dab"
+  },
+  "independent_reaggregation": {
+    "core_planets": 156,
+    "intended_events": 3103,
+    "accepted_events": 2185,
+    "accepted_planets": 151,
+    "planets_all_errors_le26min": 149,
+    "planets_all_errors_le26_4min": 150,
+    "planet_between26_and26_4": [
+      "GJ1252b"
+    ],
+    "max_nonHR_error_min": 26.298979595303535,
+    "HR858b_error_min_range": [
+      355.1992133259773,
+      404.0422710031271
+    ],
+    "pooled_median_error_min": 1.114775687456131,
+    "M0_cov95_equal_planet": 0.9079364975831288,
+    "M0_cov95_event_weighted": 0.9194508009153318,
+    "per_planet_M0_cov95_range": [
+      0.0,
+      1.0
+    ],
+    "published_reference_PDCSAP_offsets": {
+      "b": {
+        "n": 17,
+        "reference_offset_min_range": [
+          -422.0269506558543,
+          -374.12091900085215
+        ]
+      },
+      "c": {
+        "n": 11,
+        "reference_offset_min_range": [
+          540.8721576412063,
+          598.681694428742
+        ]
+      },
+      "d": {
+        "n": 5,
+        "reference_offset_min_range": [
+          -12.788083523773821,
+          0.6745493240305223
+        ]
+      }
+    }
+  },
+  "source_data_match_existing_claims": true,
+  "new_primary_scoring_defect_found": false,
+  "findings": [
+    {
+      "id": "G01",
+      "severity": "material",
+      "location": "Graph hero bracket",
+      "finding": "Only149 planets are within26.0min; GJ1252b reaches26.29898.150 are within26.4. Data are correct but the label is wrong.",
+      "proposed_fix": "Render26.4 from the same bound checked against the data, with accepted-timing scope.",
+      "evidence": [
+        "C063",
+        "accepted outcome/forecast join"
+      ]
+    },
+    {
+      "id": "G02",
+      "severity": "material",
+      "location": "Step4, subtitle and article graphical caption",
+      "finding": "Every prediction scored implies full recovery; only2185/3103 intended events on151/156 planned planets were accepted. Each core planet also implies plotting the five zero-accepted planets.",
+      "proposed_fix": "Say accepted timings scored; expose intended denominators; caption should say each planet with accepted timings.",
+      "evidence": [
+        "C043",
+        "C046",
+        "manifest_summary.json"
+      ]
+    },
+    {
+      "id": "G03",
+      "severity": "material",
+      "location": "Coverage card and brief coverage paragraph",
+      "finding": "90.79365% is an average of planet-specific coverages, not a rate attained by each planet. Individual coverage spans0\u2013100%. Event-weighted coverage is91.94508%, rounding92%. Standalone graph omits measurement uncertainty and reconstructed covariance.",
+      "proposed_fix": "Say averaged across planets/equal planet weights and95% ranges combine forecast and timing uncertainty.",
+      "evidence": [
+        "C063",
+        "C065",
+        "expected_scores.csv"
+      ]
+    },
+    {
+      "id": "G04",
+      "severity": "material",
+      "location": "Transit-duration band",
+      "finding": "The60\u2013240min band is hard-coded, not measured for this cohort, and invites an unsupported HR858b duration comparison.",
+      "proposed_fix": "Remove, or unmistakably label an illustrative range unmeasured here. Removing avoids small text.",
+      "evidence": [
+        "C054",
+        "generator fixed60/240 values"
+      ]
+    },
+    {
+      "id": "G05",
+      "severity": "material",
+      "location": "Neighbour callout and HR858 brief paragraph",
+      "finding": "Planet c offsets use a separate published ephemeris, not the DRD forecast tested for b.",
+      "proposed_fix": "Name the separate published timetable for c/d, or omit the neighbour from the graph.",
+      "evidence": [
+        "C050",
+        "hr858 summary reference_ephemeris config"
+      ]
+    },
+    {
+      "id": "G06",
+      "severity": "reproducibility",
+      "location": "Generator guards",
+      "finding": "The generator never reads the ledger. It asserts151/2185 and broad maxima, but not displayed median/coverage or the26-minute rendered label.",
+      "proposed_fix": "Derive displayed bounds from checked variables and check headline values against C063-compatible values. Read/hash relevant ledger evidence or accurately call this saved-input validation; no broad parser needed.",
+      "evidence": [
+        "build_graphical_abstract.py main"
+      ]
+    },
+    {
+      "id": "G07",
+      "severity": "reproducibility",
+      "location": "Graphical receipt",
+      "finding": "Only SVG output is fingerprinted; PDF/PNG and generator version are not bound.",
+      "proposed_fix": "Add script and all three output hashes.",
+      "evidence": [
+        "graphical_abstract_receipt.json"
+      ]
+    },
+    {
+      "id": "B01",
+      "severity": "material",
+      "location": "Trimmed method paragraph",
+      "finding": "Every rule locked overstates the freeze because DRC/PIT/allocation diagnostics came later. Accepted-injection conditioning was removed although the tuning caveat remains.",
+      "proposed_fix": "Use main-test rules and accepted artificial transits on tuning samples; retain post-inspection labels.",
+      "evidence": [
+        "C038",
+        "C043",
+        "C061",
+        "C065"
+      ]
+    },
+    {
+      "id": "B02",
+      "severity": "material",
+      "location": "Trimmed limits",
+      "finding": "One listed planet needs tested-edition scope or it contradicts physically multi-planet HR858. Multi-planet stars gave too few hides unqualified identification/recovery; extension also includes long-period single-planet hosts.",
+      "proposed_fix": "Say one planet listed in the tested edition; wider exploratory sample accepted only five planets and multi-planet identification is unqualified.",
+      "evidence": [
+        "C044",
+        "article cohort/limits",
+        "AppendixH"
+      ]
+    },
+    {
+      "id": "B03",
+      "severity": "scope",
+      "location": "Novelty and selection wording",
+      "finding": "The bounded-search phrase disappears from no study, and the150-planet bound again says every transit rather than accepted timing.",
+      "proposed_fix": "Use among the studies we checked and accepted timings.",
+      "evidence": [
+        "C019",
+        "C063"
+      ]
+    },
+    {
+      "id": "B04",
+      "severity": "minor",
+      "location": "Main message/plain language",
+      "finding": "Same words as chosen message, but Published is lowercased after inline lead. Period is less plain than interval between transits.",
+      "proposed_fix": "Capitalize Published for exact preservation; use interval between transits.",
+      "evidence": [
+        "03_main_message.md",
+        "previous reviewed22"
+      ]
+    }
+  ],
+  "print_size_note": {
+    "drawing_width": 1000,
+    "minimum_font_units": 13.5,
+    "at170mm_min_pt": 6.505511811023623,
+    "interpretation": "About6.5pt at170mm, rather than6.7; parent judges print readability."
+  },
+  "optional_standalone_note": "A compact wider forecasts had inconclusive score benefit footer would retain C043 primary verdict without replacing the hero chart.",
+  "stop_condition": "Material numerical/scope/integrity issues resolved; parent owns fixes and rendering."
+}

@@ -486,9 +486,11 @@ came six hours early, far outside the stated uncertainty.
 ## Display items
 
 **Graphical abstract.** How well did published planet-transit predictions
-hold up? The four-step test, each core planet's largest accepted miss on a
-logarithmic scale against the length of a transit, and three headline
-numbers. Built from Table 3 and the PIT summary by
+hold up? The main test, the largest accepted miss of each of 151 planets on a
+logarithmic scale, the accepted-sample counts and three headline cards.
+Coverage is averaged over planets and includes timing uncertainty; the
+widening test is inconclusive. The neighbour's offset uses a separate
+published timetable. Built from Table 3, the PIT summary and the claims ledger by
 `scripts/build_graphical_abstract.py`; also heads the brief.
 [`graphical_abstract.svg`, `.pdf`]
 

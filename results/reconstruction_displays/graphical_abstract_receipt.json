@@ -1,15 +1,35 @@
 {
  "inputs_sha256": {
   "results/reconstruction_displays/table3_planets.csv": "a42a6f31023f2e74ced891ccd1ad04a8b43e98773b9d8779244e51906cde0206",
-  "results/reconstruction_displays/pit_table2.json": "0d428c201b1d6a01ca1293cf476aecb78f431fe1aa30e338e0397871ce8f2eaf"
+  "results/reconstruction_displays/pit_table2.json": "0d428c201b1d6a01ca1293cf476aecb78f431fe1aa30e338e0397871ce8f2eaf",
+  "coordination/claims.md": "dc4b35df8b853b6eff3804273d89de03c45030aae2e394c254916433e0cfcb76"
  },
+ "script_sha256": "2cc0ba606f15de8719e61fa2ddfbac65bacc4f1de77ad14d24903e8f5b5fb6d0",
  "planets": 151,
  "events": 2185,
  "hr858b_max_min": 404.042,
  "max_other_min": 26.299,
  "pooled_median_min": 1.114775687456131,
  "m0_coverage95_planet": 0.9079364975831288,
+ "intended_planets": 156,
+ "intended_events": 3103,
+ "ledger_checks": {
+  "claims": [
+   "C021",
+   "C043",
+   "C048",
+   "C050",
+   "C063"
+  ],
+  "pass": true,
+  "bound_min": 26.4,
+  "planets_within_bound": 150
+ },
+ "minimum_font_svg_units": 16,
+ "minimum_font_pt_at_170mm": 7.710236220472441,
  "outputs_sha256": {
-  "graphical_abstract.svg": "2e5593c3b4d531eb001dbac975fbc3cbbb2a481b8492c1508af46e611307e3b2"
+  "graphical_abstract.svg": "d4c64fe4d4d2c4072efc3e88ccc7b5289ba349e81ac8e57f0fb9a4b465b4e409",
+  "graphical_abstract.pdf": "6d41c02bbf2aaa826dff6e270156785db933a68e2ae0cfed1f8fc08a40284f06",
+  "graphical_abstract.png": "1d06d1dde7abfb2449fc39009ec5671763a565386a2712569fb2d6d106ad9b69"
  }
 }
