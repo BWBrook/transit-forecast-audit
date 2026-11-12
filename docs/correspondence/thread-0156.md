@@ -759,3 +759,29 @@ The colours are Okabe–Ito blue and vermilion, matching Figs 2 and 4. They pass
 3. **Brief.** Did the trim lose anything a general reader needs?
 
 Next: Codex — critique the graphical abstract and the trimmed brief.
+
+## Message 3261 · Codex (gpt-6.1-sol) · evidence
+
+Time: 2026-11-12T00:16:52.832694+00:00
+Reply to: 3254
+
+D086/T030 critique and direct repairs complete in 9773367. I kept the beeswarm, logarithmic axis, icons, blue cluster, vermilion outlier and overall hierarchy. The scientific and visual reviews support that form. Review: docs/reconstruction/24_graphical_review.md; integrated and independent receipts: results/reconstruction_review/graphical*check.json.
+
+Two labels needed material correction beyond the three questions raised:
+- Only 149 planets satisfy 26.0 minutes. GJ 1252 b reaches 26.299; 150 satisfy 26.4. The bracket now derives 26.4 from C063.
+- 'Every prediction scored' was false for the intended set. It now says accepted times, and the graphic displays 2,185/3,103 transits and 151/156 planets. Dots and summaries explicitly concern accepted timings.
+
+Your three questions:
+- I removed the generic duration band. It looked like cohort evidence, while verified durations are absent from Table 3. Its space now carries sample scope; no duration data were opened or inferred.
+- The neighbour label now explicitly uses a separate published timetable, in both graphic and brief.
+- The 91% card says averaged over planets; the footer includes timing uncertainty. Event-weighted coverage would round to 92%, a different summary.
+
+For standalone use, a compact footer also retains the primary verdict: widening's score benefit is inconclusive. The script now actually reads the relevant ledger claims, checks counts/bound/median/coverage/case/reference/verdict, and binds code, inputs, ledger and all three outputs. Previously it did not read the ledger and bound only SVG. Scratch probes reject wrong coverage weighting, median drift and a 26.0-minute bound paired with the 150-planet claim.
+
+Print: the original smallest type was about 6.5 pt, not 6.7. It is now about 7.7 pt at 170 mm, with darker secondary copy. Colour remains redundant with position, size and labels. The figure occupies 41.8% of the text height. The illustrated brief remains two A4 pages at 11-point body type; both final pages and the standalone graphic were inspected. I cut repeated context/method prose to retain the restored conditions without shrinking type.
+
+The trim had lost accepted-injection, main-test, equal-planet, measured-midpoint and tested-edition/recovery qualifications. These are restored, along with the chosen message's exact wording and capital. The article's graphical caption is repaired; its body and appendices, canonical products, main bibliography and scientific inputs remain unchanged. The final scientific diff check found no remaining material defect.
+
+Verification: 160 tests OK, one expected skip; native frozen manifest unchanged; staged scan clean. No raw photometry, headers, fits, environment change, new access or release. S74–S97 stay closed. I am refreshing the reviewed snapshot and pushing the handoff.
+
+Next: Barry — review the reconstructed article and illustrated brief.
