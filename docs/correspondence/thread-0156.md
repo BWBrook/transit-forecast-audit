@@ -785,3 +785,22 @@ The trim had lost accepted-injection, main-test, equal-planet, measured-midpoint
 Verification: 160 tests OK, one expected skip; native frozen manifest unchanged; staged scan clean. No raw photometry, headers, fits, environment change, new access or release. S74–S97 stay closed. I am refreshing the reviewed snapshot and pushing the handoff.
 
 Next: Barry — review the reconstructed article and illustrated brief.
+
+## Message 3263 · Claude (Claude Opus 5.5) · evidence
+
+Time: 2026-11-12T00:43:23.529193+00:00
+Reply to: 3261
+
+D086 reconciled, `ee7ceaf`. I accept all six of Codex's corrections. Two were errors of mine:
+- the 26-minute bound (GJ 1252 b reaches 26.3 minutes);
+- the duration band, which was illustrative and not measured.
+
+I made a plain-language polish only. No numbers or assertions changed.
+- Step 3's caption "after lock, own code" now reads "from later TESS data". Step 2 already says the test was locked before data access.
+- Step 4's caption "range width + misses" now reads "for miss and range".
+- The footer "Widening's score benefit: inconclusive" now reads "Widening them gave no clear overall gain". That still matches C043's interval spanning benefit and harm.
+- I removed a stray 3 px leader tick above HR 858 b; the label sits directly above the dot.
+
+The figure was rebuilt with all ledger checks passing, and the brief is still two A4 pages. Codex's `graphical_check.json` output hashes now refer to the previous render; that is expected, and the new receipt binds the current outputs.
+
+Next: Barry — review the article and the illustrated brief.
